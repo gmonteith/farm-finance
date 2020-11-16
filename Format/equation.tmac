@@ -1,0 +1,457 @@
+
+.\" This is used in Section 4 for instance to line up the series equations. It
+.\" is also used in other places to line up equations that are very long.
+.EQ
+define hphantom 'vcenter special hphntmsrc'
+.EN
+
+.\" This is used to line up equations with the equal sign
+.EQ
+define lm '~mark =~~'
+.EN
+
+.\" This is for the inline equations found in the text.
+.EQ
+delim ##
+.EN
+
+.EQ
+define cancel 'special Ca'
+.EN
+
+.\" Therefore symbol.
+.EQ
+define tf '~~\[tf]~~'
+.EN
+
+.\" These definitions are for the CCTF flow charts
+.EQ
+
+define cctfaia #
+1 - t  over { 1 + i }
+#
+
+define ncctfaia #
+1 - $1  over { 1 + $2 }
+#
+
+define cctfaia2 #
+1 - t  over { (1 + i) sup 2 }
+#
+
+define ncctfaia2 #
+1 - $1  over { ( 1 + $2 ) sup 2 }
+#
+
+define pvucc #
+UCC left ( dt over {  i + d  } right )
+times 1 over { ( 1 + i ) sup { n -1 } }
+#
+
+define pvs #
+S ~ left ( dt over {  i + d  } right )
+times 1 over { ( 1 + i ) sup n }
+#
+
+define pvs2 #
+S ~ left ( dt over {  i + d  } right )
+times 1 over { ( 1 + i ) sup { n + 1 } }
+#
+
+define balc # 
+{ t( S - UCC  ) } over { ( 1 + i ) sup  n }
+#
+
+define bala # 
+{ t( UCC - S ) } over { ( 1 + i ) sup  n }
+#
+
+define ucc # 
+UCC = I ~ ( 1 - d ) sup { n -1 }
+#
+
+define salvage #
+S over { ( 1 + i ) sup n }
+#
+
+define cgt #
+{ t( S - I ) } over { ( 1 + i ) sup n }
+#
+
+define ncgt #
+{ $1 ( $2  - $3 ) } over { ( 1 + $4 ) sup $5 }
+#
+.EN
+
+.\" These definitions are specific to single asset pools
+.EQ
+define cctfsa #
+1 - 
+left [ dt over {  i + d  }
+- { dt over {  i + d  } }
+left ( {  1 - d  }  over { 1 + i  } right ) sup n 
+right ]
+#
+
+define ncctfsa #
+1 - 
+left [ { ($1)($2) } over {  $3 + $1  }
+- { { ($1)($2) } over {  $3 + $1  } }
+left ( {  1 - $1  }  over { 1 + $3  } right ) sup $4 
+right ]
+#
+
+.EN
+
+.\" These definitions are specific to CCTF flow chart B2
+.EQ
+
+define cctf2 #
+1 -  dt
+over {  ( i + d ) ( 1 + i )  }
+#
+
+define pvucc2 #
+UCC ~ left ( dt over {  ( i + d ) ( 1 + i )  } right )
+times 1 over { ( 1 + i ) sup { n -1 } }
+#
+
+define balc2 # 
+{ t( S - UCC) } over { ( 1 + i ) sup { n + 1 } }
+#
+
+define bala2 # 
+{ t( UCC - S) } over { ( 1 + i ) sup { n + 1 } }
+#
+
+define cgt2 #
+{ t( S - I ) } over { ( 1 + i ) sup { n + 1} }
+#
+.EN
+
+.\" These definitions are for the ROE flow charts
+.EQ
+define roe #
+"Net Income" over Equity
+#
+define Nroe #
+13,500 over 23,000
+#
+
+define roa #
+"Net Income" over Total Assets
+#
+define Nroa #
+13,500 over 70,000
+#
+
+define lev #
+"Total Assets" over Equity
+#
+define Nlev #
+195,623 over 109,741
+#
+
+define txb #
+"Net Income" over EBT
+#
+define Ntxb #
+21,694 over 27,118
+#
+
+define ib #
+EBT over EBIT
+#
+define Nib #
+27,118 over 22,750
+#
+
+define em #
+EBIT over Revenues
+#
+define Nem #
+32,750 over 233,800
+#
+
+define np #
+"Net Income" over Revenues
+#
+define Nnp #
+21,694 over 223,800
+#
+
+define at #
+Revenues over "Total Assets"
+#
+define Nat #
+223,800 over 195,623
+#
+
+define roa #
+"Net Income" over "Total Assets"
+#
+define Nroa #
+21,694 over 233,800
+#
+.EN
+
+
+.\" Capital cost tax factors
+.EQ
+
+define cctf #
+1 - dt over {  i + d  } 
+#
+
+define ncctf #{
+1 - { { $1 times $2 }  over {  $3 + $1  } }
+}#
+
+define ncctf2 #{
+1 - { $1 times $2 }
+over {  ( $3 + $1 ) ( 1 + $3 )  } 
+}#
+
+define npvs #{
+$1 ~ left ( { $2 times $3 } over {  $4 + $2  } right )
+times 1 over { ( 1 + $4 ) sup $5 }
+}#
+
+define nbalc2 #{ 
+{ $3 ( $2 - $1 ) } over { ( 1 + $4 ) sup { $5 + 1 } }
+}#
+
+define nucc #{ 
+~ ( 1 - $1 ) sup { $2 -1 }
+}#
+
+define npvucc #{
+~ left ( { $1 times $2 } over {  $3 + $1  } right )
+times 1 over { ( 1 + $3 ) sup { $4 - 1 } }
+}#
+
+define nbalc #{ 
+{ $3 ( $2 - $1 ) } over { ( 1 + $4 ) sup  $5 }
+}#
+
+define nsalvage #{
+$1 over { ( 1 + $2 ) sup $3 }
+}#
+
+define npvucc2 #
+left ( { $1 times $2 }  over {  ( $3 + $1 ) ( 1 + $3 )  } right )
+times 1 over { ( 1 + $3 ) sup { $4 -1 } }
+#
+.EN
+
+.\" Engineering Economics
+.EQ
+
+define spca # {
+F $1 P ^ ( 1 + i ) sup n
+}#
+
+define sppw # {
+P $1 F ^ ( 1 + i ) sup -n
+}#
+
+define nsppw #
+(1 + $1 ) sup {- $2}
+#
+
+define ussf #{ 
+A $1 F ^ left [ i over { { ( 1 + i ) sup n }  - 1  } right ] 
+}#
+
+define nussf #{ 
+~left [ $1 over { { ( 1 + $1 ) sup $2 }  - 1  } right ] 
+}#
+
+define usca # {
+F $1 A ^
+left [
+{ ( 1 + i ) sup n - 1 } over i
+right ]
+}#
+
+define nusca # {
+left [
+{ ( 1 + $1 ) sup $2 - 1 } over $1
+right ]
+}#
+
+define uspw #
+P $1 A ^ left [ { ( 1 + i ) sup n - 1 } over { i ( 1 + i ) sup n } right ]
+#
+
+define nuspw # {
+left [ { ( 1 + $1 ) sup $2 - 1 } over { $1 ( 1 + $1 ) sup $2 } right ]
+}#
+
+define caprec #
+A $1 P ^ left [ { i( 1 + i ) sup n  } over {  (1 + i ) sup n -1  } right ]
+#
+
+define lcaprec #
+left [ { i( 1 + i ) sup n  } over {  (1 + i ) sup n -1  } right ]
+#
+
+define ncaprec #{
+^left [ { $1( 1 + $1 ) sup $2  } over {  ( 1 + $1 ) sup $2 -1  } right ]
+}#
+
+define ggpw #{ 
+P $1 A sub 1 ^  left [ { 1 -  left ( ( 1 + g ) sup n ( 1 + i ) sup -n right )  }
+over { i - g } right ]
+}#
+
+define nggpw #{ 
+^ left [ { 1 -  left ( ( 1 + $1 ) sup $3 ( 1 + $2 ) sup {- $3} right )  }
+over { $2 - $1 } right ]
+}#
+
+define ggca #{
+F $1 A sub 1 ^
+left [  { (1 + i ) sup n  - ( 1 + g ) sup n } over { i - g } right ]   
+}#
+
+define nggca #{
+left [  { (1 + $2 ) sup $3  - ( 1 + $1 ) sup $3 } over { $2 - $1 } right ]   
+}#
+
+define dggpw #{
+P $1 A sub 1 ^
+{ left [  1 -  left ( ( 1 - g ) sup n ( 1 + i ) sup -n right ) right ] }
+over { i + g }
+}#
+
+define ndggpw #{
+{ left [  1 -  left ( ( 1 - $1 ) sup n ( 1 + $2 ) sup -$3 right ) right ] }
+over { $2 + $1 }
+}#
+
+define ccf #{
+P $1 A over i
+}#
+
+define agpw #
+P $1 G ^
+left [
+{ ( 1 + i ) sup n - 1 } over { i sup 2 ( 1 + i ) sup n } 
+-
+n over { i (1 + i ) sup n }
+right ]
+#
+
+define nagpw # {
+left [
+{ ( 1 + $1 ) sup $2 - 1 } over { $1 sup 2 ( 1 + $1 ) sup $2 } 
+-
+$2 over { $1 (1 + $1 ) sup $2 }
+right ]
+}#
+
+define agfw # {
+F $1 G ^
+left [
+{ ( 1 + i ) sup n - 1 } over { i sup 2 } 
+-
+n over i
+right ]
+}#
+
+define nagfw # {
+left [
+{ ( 1 + $1 ) sup $2 - 1 } over { $1 sup 2 } 
+-
+$2 over $1
+right ]
+}#
+
+
+define agus # {
+A $1 G ^
+left [
+{ 1 over i }  - n over { ( 1 + i ) sup n - 1 }  
+right ]
+}#
+
+define nagus # {
+left [
+{ 1 over $1 }  - $2 over { ( 1 + $1 ) sup $2 - 1 }  
+right ]
+}#
+
+.EN
+
+.\" Investment Cost Equations
+.EQ
+
+define sansv #
+-I(CCTF) 
+# 
+
+define sasvlucc #
+-I(CCTF) + S(CCTF) (P/F, i%, n)
+# 
+
+define sasvgucc #
+-I(CCTF) 
++
+left [ S - t
+left (
+{ UCC (1 + i)d }  over {  i + d  } 
++
+( S - UCC  )
+right )
+right ]
+^(P/F, i%, n)
+# 
+
+define ct2nsv #
+-I(CCTF) + 
+left [ 
+{ t( UCC - S) } over { 1 + i }
+right ]
+^ (P/F, i%, n)
+# 
+
+define ct2svucc #
+-I^(CCTF) +
+left [ S
+-
+{ UCC^dt } over { i + d } 
+right ]
+^ (P/F, i%, n)
+# 
+
+define ct2svlucc #
+-I(CCTF)
++ 
+left [ 
+S - t
+left ( 
+{ UCC^d } over { i + d }
+-
+{ ( UCC - S) } over { 1 + i }
+right )
+right ]
+^(P/F, i%, n)
+# 
+
+define ct2svgi #
+-I(CCTF)
++ 
+left [ 
+S - t
+left (
+{ UCC^d } over { i + d }
++
+{ 2S - UCC - I } over { 1 + i }
+right )
+right ]
+^(P/F, i%, n)
+# 
+
+.EN
+

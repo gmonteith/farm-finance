@@ -1,0 +1,66 @@
+.nr PS 10
+.nr GROWPS 3
+.nr PSINCR 1.5p
+.nr PO 0.75i
+.nr LL 6.7i
+.nr FM 0.5i
+.ds CF DRAFT
+.\".DA
+
+.\" Macro defitions to use with ms, i.e. EXTensions to MS
+.\"*****************************************************************************
+.ig
+Name: NHTOC
+Function: print a numbered header at the required level
+and save the header number and page as string
+variables, available to the user. Add the properly
+indented entry to the table of contents.
+Inputs:
+1 - level of the header, integer
+2 - header number, string variable
+3 - header page, string variable
+4 - header name, text string
+..
+.de NHTOC
+.NH \\$1\"                   put the numbered header at its level
+\\$4\"                       heading name
+.ds \\$2 \\*[SN-NO-DOT]\"    set the header number 
+.ds \\$3 \\n%\"              set the page number of the header
+.XS\"                        add TOC entry with the header page,
+\h'\\$1-1'\\*[SN-DOT] \\$4\" indented number and the name
+.XE\"                        end of TOC entry
+..
+.
+.de hphntmsrc
+.nr 0h 0
+.nr 0d 0
+.nr 0skew 0
+.nr 0skern 0
+.ds 0s \\&\h'\\n(0wu'
+..
+.
+.de Ca
+.  ds 0s \
+\Z'\\*(0s'\
+\v'\\n(0du'\
+\D'l \\n(0wu -\\n(0hu-\\n(0du'\
+\v'\\n(0hu'
+..
+
+.\" Macro for table numbers
+.nr g! 0 +1
+.de tP
+.ce
+.ta 0.6i
+\s-2Table \\n+(g!.	\\$1\s0
+.sp 0.5
+..
+
+.\" Macro for figures numbers
+.nr g! 0 +1
+.de fP
+.ce
+.ta 0.6i
+\s-2Figure \\n+(g!.	\\$1\s0
+.sp 0.5
+..

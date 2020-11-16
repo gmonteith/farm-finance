@@ -1,0 +1,25 @@
+.PS
+
+define rhombus { [
+	line up $1 right $2 \
+	then down $1 right $2 \
+	then down $1 left $2 \
+	then up $1 left $2
+] $3 }
+
+
+define gtr { box ">" width 0.3 height 0.3 } 
+
+define lthn { box invis "\[<=]" width 0.1 height 0.3 } 
+
+define yes { box invis "YES" width 0.3 height 0.3 } 
+
+define no { box invis "NO" width 0.3 height 0.3 }
+
+define task { box invis width $1 height $2  $3 }
+
+define sum { box "Sum all calculations" width 1.1 height 0.5 rad 0.3 }
+
+define fin { box "Finished" width 1.1 height 0.5 rad 0.3 }
+
+.PE

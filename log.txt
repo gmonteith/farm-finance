@@ -1,0 +1,66 @@
+This file is simply a log of the commit that could be recovered from the
+previously corrupted repository.
+
+
+commit 0a9eb28c434bf6a9b09b600a9d072a595c66784d
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Nov 16 11:56:25 2020 +0000
+
+    Changes to the source path
+
+commit 73e7267d4645cb2405c652a195068ec490f64497
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Nov 16 11:53:58 2020 +0000
+
+    Changes to the source path
+    
+    Addition of a todo list
+
+commit 24324aaffb37a0c55c5020bd55039bf0429986d6
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Oct 15 08:47:04 2020 +0100
+
+    Add sections on types of maintenance plans.
+    
+    The types of plans are reactive, preventative, predictive, reliability
+
+commit 1fbe0d866b83f0b735ba2cd204c037e1bf73618e
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Oct 12 09:28:45 2020 +0100
+
+    Add graph - bathtub
+    
+    The bathtub graph shows and idealised view of failure over the product
+    lifecycle.
+
+commit cfd7df8581dd0e5ac15c746aea0c6fdcf1537160
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Oct 12 09:26:54 2020 +0100
+
+    Create initial file for repair section.
+    
+    This is to cover the concept of repair and maintenance and how to manage
+    the risks.
+
+commit 05762b40b075740d0ea948ac62fef425b6d1c0f9
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Oct 7 10:36:47 2020 +0100
+
+    Add examples
+    
+    One example uses a bond the other two examples are based on NPV.
+
+commit 65b63460b63ce9ec55a22ea759cf9e5e7fedd728
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Oct 5 10:15:50 2020 +0100
+
+    Add sections and expand
+    
+    Change to the layout. There are now three sections:
+    Traditional
+    Discounted cash flow
+    Hybrid
+    
+    Include a graph and a better explanation of the failings of IRR in the section
+    on the MIRR.
+    

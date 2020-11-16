@@ -1,0 +1,9 @@
+.RP
+.TL
+.LG
+.nf
+MATHEMATICS & FINANCE
+FOR HOME AND BUSINESS
+.fi
+.AU
+Graham Monteith
