@@ -175,10 +175,45 @@ industry and is often referred to as the Life Cycle Costing (LFC), Total Cost
 of Ownership (TCO), Total Cost Bidding (TCB), Whole Life Costing and
 Cradle-to-Grave Costing to name a few.
 .LP
-In the automotive, off highwaya and fleet management industry life cyclce costs
+In the automotive, off highway and road haulage industry life cyclce costs
 analysis is often refered to as total cost of ownership (TCO). Total cost of
 ownership (TCO) places a single value on the complete lifecycle of a capital
-purchase. 
+purchase and can be defined as: the total cost of an item through out its life,
+including the cost of planning, acquisition, operations, maintenance, and
+disposal, less any residual value, or the total cost of providing, owning and
+maintaining the equipment over a predetermined evaluation period. The
+predetermined evaluation period is important as it is not uncommon that
+equipment is only operated as long as it is possible to purchase a repair and
+maintenance contract.
+.LP
+A life cycle cost could be simply calculated as:
+.EQ I
+"Life cycle cost" lm "initial cost"
+.EN
+.sp -0.6v
+.EQ I
+lineup +~~
+"maintenance costs"
+.EN
+.sp -0.6v
+.EQ I
+lineup +~~
+"repair costs"
+.EN
+.sp -0.6v
+.EQ I
+lineup +~~
+"fuel costs"
+.EN
+.sp -0.6v
+.EQ I
+lineup -~~
+"salvage value"
+.EN
+However, the more effort that is put into the life cycle cost analysis the more
+likely it is that all the costs will be captured. We will now look in more
+detail at some of the considerations involved in calculating the life cycle
+cost of a piece of equipment.
 .
 .NHTOC 3 eac:intr:num eac:intr:page "Scope and goals"
 .LP
