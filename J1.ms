@@ -35,4 +35,3 @@ tyre cost is substantial it is not uncommon to subtract the tyre cost from the
 purchase cost and move the cost to the operating costs. If this is not done the
 operating costs could be understated in the early years. The tyre cost should
 include both replacement and repair.
-.RE
