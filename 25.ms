@@ -83,17 +83,17 @@ amounts have lower variable costs in proportion to total costs. Operating
 income typically consists of income before interest and income taxes or EBIT.
 .sp
 Degree of operating leverage can be calculated in a number of ways:
-.EQ
+.EQ I
 "Degree of operating leverage"
 =
 "change in operating income" over "changes in sales"
 .EN
-.EQ
+.EQ I
 "Degree of operating leverage"
 =
 "contribution margin" over "operating income"
 .EN
-.EQ
+.EQ I
 "Degree of operating leverage"
 =
 "contribution margin %" over "operating margin %"
@@ -142,7 +142,7 @@ important to make sure you compare apples with apples and this is an income
 statement so it includes non cash charges. The "Capital Charge" has been
 deducted based on the previous calculation in Section 20.3.1 and it is inserted
 to show the value that has been created for the shareholder. 
-.EQ
+.EQ I
 "Degree of operating leverage"
 =
 "contribution margin" over "EBIT" = 75,000 over 31,000 = 2.42
@@ -166,24 +166,24 @@ is both time consuming and unnecessary. Using the operating leverage approach,
 you can quickly estimate the percentage change in operating income by
 multiplying the DOL by the anticipated percentage change in sales. Using the
 income statement a 10% increase in sales would have the following result.
-.EQ
+.EQ I
 "Percentage increase in operating income" = 2.42 times 10% = 24.20%
 .EN
 .LP
 The 24.2% change represents the "increase" in operating income due to a 10%
 increase in sales. To determine the GBP change in profit, multiple the
 percentage change in EBIT times the original profit of 31,000
-.EQ
+.EQ I
 "GBP change in operating income" = 24.2% times 31,000 = 7,502
 .EN
 .LP
 Operating income is expected to increase by 7,502 if sales increase by 10%. To
 determine the estimated new profit level as a result of the change, either add
 the original profit to the increase or multiply the original value by 1.242
-.EQ
+.EQ I
 "Estimated new EBIT"= 7,502 + 31,000 = 38,502
 .EN
-.EQ
+.EQ I
 "Estimated new EBIT" = (1 + 24.2%) times 31,000 = 1.242 times 31,000 = 38,502
 .EN
 .LP
@@ -203,7 +203,7 @@ _
 .LP
 Note that a similar effect occurs if revenue is expected to decline. Leverage
 works in both directions. The new EBIT value can be calculated as follows:
-.EQ
+.EQ I
 "Estimated new EBIT" = ( 1 - 24.2%)  times 31,000 = 0.758 times 31,000 = 23,500
 .EN
 .
