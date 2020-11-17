@@ -394,83 +394,16 @@ whether the equipment is used. However, even allowing for these problems in the
 exact classification of certain costs it is essential to understnd the
 distinction between fixed and variable costs. 
 .
-.NHTOC 3 eac:intr:num eac:intr:page "Benefits of life cycle analysis"
+.SH
+CHAPTER NOT COMPETE
 .LP
-In order to perform an LCCA scoping is critical - what aspects are to be
-included and what not? If the scope becomes too large the tool may become
-impractical to use and of limited ability to help in decision-making and
-consideration of alternatives; if the scope is too small then the results may
-be skewed by the choice of factors considered such that the output becomes
-unreliable or partisan.
-.LP
-The primary benefit is that costs which occur after an asset has been
-constructed or acquired, such as maintenance, operation, disposal, become an
-important consideration in decision-making. Previously, the focus has been on
-the up-front capital costs of creation or acquisition, and organisations may
-have failed to take account of the longer-term costs of an asset.
-.LP
-Budget with certainty. When you receive total cost information from your
-vendors, you can create a meaningful budget and manage it with precision
-and accuracy.•   
-.LP
-Enhance strategic decision making. The more you know about the product you’re
-buying, the better you’re able to make decisions that are in the best long-term
-interests of your community. • Maximize investment value.
-.LP
-Capturing a more complete cost picture will allow you to allocate your limited
-resources to equipment that delivers the highest return over the long run.
-.LP
-Not every factor, however, can be reduced to a number and inserted into a model
-.LP
-The accuracy and availability of data can also contribute to inaccuracy. For
-instance, data from generic processes may be based on averages,
-unrepresentative sampling, or outdated results.[64] Additionally, social
-implications of products are generally lacking in LCAs.
-.LP
-Systems engineering integrates other disciplines and specialty groups into a
-team effort, forming a structured development process that proceeds from
-concept to production to operation and disposal. Systems engineering considers
-both the business and the technical needs of all customers, with the goal of
-providing a quality product that meets the user's needs
-.
-.NHTOC 3 eac:intr:num eac:intr:page "Risks"
-.LP
-However, LCA the method is also the most complex to implement and is often as
-much an art as science. One major assumption implicit in the lifecycle approach
-is that future maintenance and repair costs can be forecasted with reasonable
-certainty. 
-.LP
-To be advantageous any replacement asset must offer better econmoic performance
-than the one it replaces. However, because the new asset is not as well
-understood it carries with it additional risk.
-.LP
-cost of change.
-.LP
-A new grain drier maybe more complex to install than expected and a new fence
-maybe encounter more stony ground than anticipated. Even if the replacemtn is
-deemed simple there mybe problems. Computers have long been associated with the
-phrase, "plug and play" which has often beem changed to, "plug and pray" to
-make light of the problems assoicated with such a simple change.
-.LP
-There is also the risk that new equipment does not perform as expected or
-advertised. New software can have bigs, lorries can fail to produced the fuel
-savings that are expected and grain diers can fail to dry the promesed tonnes
-per hour. Unfortunatley not only do new machines fail to perform as expected
-but when they do the savings are small, but when construction of other costs
-associated to change go over budget the amounts are often significant.
-.LP
-There are exceptions when the risk of extending the life of existing equipment
-exceeds that of new equipment. That is typically when replacement is to avoid
-the risk of catastrophic failure. The most obvious example is the aircraft
-industry when an engine is replaced at a allocated time to avoid the cost and
-reputational damage of a catastrophic failure. The other exception is when the
-risk of unplanned replacement are very high.
-.LP
-Usullay equipment is replaced beaxuse the performance of the old equipment has
-degraded, the equpment has become obsolete or the requirements have changed.
-Excepte of catastropiv failure and unplanned replacemtn the risks associated
-with nrew products tend to greater than existing products.
-
+To add:
+.IP 3
+Comprehensive example
+.IP 3
+Benefits of life cycle analysis
+.IP 3
+Risks of life cycle analysis
 
 
 .bp
