@@ -1,5 +1,5 @@
-.so /home/gpm/Documents/Work/Capital_allocation/Format/format.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Format/equation.tmac
+.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/format.tmac
+.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
 .
 .sp 5
 .NHTOC 1 sec:capex:num sec:capex:page "Understanding the impact of tax"
@@ -594,3 +594,4 @@ If you have loses you cost base rises.
 .LP
 Lower taxation means higher costs. - sub marginal producer.
 .bp
+

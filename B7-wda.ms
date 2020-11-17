@@ -1,9 +1,9 @@
 .
 .nr HM 0.7i
 .
-.so /home/gpm/Documents/Work/Capital_allocation/Format/format.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Format/equation.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Format/pic.tmac
+.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/format.tmac
+.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
+.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/pic.tmac
 .
 .SH 1
 Writing down allowance

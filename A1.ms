@@ -1,5 +1,5 @@
-.so /home/gpm/Documents/Work/Capital_allocation/Format/format.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Format/equation.tmac
+.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/format.tmac
+.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
 .
 .XS
 APPENDIX A - Impact of WDA on capital costs
