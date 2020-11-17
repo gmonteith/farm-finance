@@ -398,11 +398,11 @@ distinction between fixed and variable costs.
 CHAPTER NOT COMPETE
 .LP
 To add:
-.IP 3
+.IP \(en
 Comprehensive example
-.IP 3
+.IP \(en
 Benefits of life cycle analysis
-.IP 3
+.IP \(en
 Risks of life cycle analysis
 
 
