@@ -404,6 +404,6 @@ Comprehensive example
 Benefits of life cycle analysis
 .IP \(en
 Risks of life cycle analysis
-
+.LP
 
 .bp
