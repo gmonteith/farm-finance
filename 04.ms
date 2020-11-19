@@ -2,8 +2,7 @@
 .so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
 .
 .sp 5
-.NHTOC 1 sec:annu:num sec:annu:page "Ordinary Annuities"
-.sp
+.NHTOC 1 x x "Ordinary Annuities"
 .LP
 An annuities is constant amount paid or received for a given number of periods.
 The most common annuity is an ordinary annuity, where the cash flow is made at
@@ -790,3 +789,11 @@ larger 39th payment or a smaller 40th payment. You can not really make a
 fractional payment, either the payment was made or it was not made, it can not
 be partially made.  
 .bp
+.ds p dog
+.
+.sp
+\*p
+.
+\n(cn
+.CHAPTER "Ordinary Annuities"
+.
