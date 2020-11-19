@@ -3,7 +3,7 @@
 .
 .sp 5
 .NHTOC 1 sec:time:num sec:time:page "Time Value of Money"
-.PP
+.LP
 The Time Value of Money takes into account the fact that money received today
 is worth more than money received in the future because the money today can be
 invested and subsequently grow through the magic of compounding. Time Value of
@@ -154,7 +154,7 @@ expressed as a log is 3.7, which is 3.7 ticks up on the Y axis from 1791 on the
 X axis. The line finishes at 322,000 which has a log of 5.5 and therefore we
 look to find the end of the line 5.5 ticks up the Y axis from 1891 on the X
 axis.
-.PP
+.LP
 Constant growth rates are in reality unlikely to persist for long periods of
 time because of the rapid changes in the size and the subsequent limits to that
 growth. The limits may appear in forms of resource restriction, market size
