@@ -1,8 +1,10 @@
 .so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/format.tmac
 .so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
 .
-.sp 5
-.NHTOC 1 sec:intro:num sec:intro:page "Introduction"
+.sp |4i
+.ce
+\s+4\fBINTRODUCTION\fP\s0
+.sp 2
 .LP
 More about how to do things than what to do. The what can be based on
 probability management judgement or a combination of the two.
@@ -83,7 +85,8 @@ means of allocating capital. Break even analysis has its place in monitoring
 ongoing performance and also looking at the possibility that an investment
 could add value to a business.
 .
-.NHTOC 2 sec:usedoc:num sec:usedoc:page "How to use this document"
+.SH
+How to use this document
 .LP
 You can of course read it from cover to cover if you have both time and a keen
 interest in the maths. The sections are all number so it should also work well
@@ -94,7 +97,8 @@ you can skip sections 5 through to 10. Section 1 through to 4 contain the nuts
 and bolts of finance and section 11 on Engineering Economics provides the
 formulas that are used through the latter practical chapters.
 .
-.NHTOC 2 sec:dc:num sec:dc:page "Diagrams and conventions"
+.SN
+Diagrams and conventions
 .LP
 I have tried to display the data using both tables and a cash flow diagram. Most
 people use a spreadsheet so they are more accustomed to seeing data presented
@@ -148,7 +152,8 @@ types of annuity. These differences will be highlighted at the start of the
 appropriate section.
 .KE
 .
-.NHTOC 2 sec:dc:num sec:dc:page "Compound periods and the periodic interest rate"
+.SH
+Compound periods and the periodic interest rate
 .LP
 In compound interest calculations interest rates are often quoted at the annual
 rate ( also called the nominal rate, this is covered in detail in Section XX)
@@ -160,7 +165,8 @@ As an example, if a problem stated that money was to be invested at the rate of
 8% annual interest compounded monthly over 5 years then #i# would be 8%/12 or
 0.67% and #n# would be 5 times 12 or 60 compounding periods. 
 .
-.NHTOC 2 sec:dc:num sec:dc:page "Positive and negative sign conventions"
+.SH
+Positive and negative sign conventions
 .LP
 It pays to be consistent when working with postive cash flows and negative cash
 flows to avoid both confusion and errors. If the problem has both costs and
