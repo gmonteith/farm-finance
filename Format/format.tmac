@@ -2,7 +2,7 @@
 .nr GROWPS 3
 .nr PSINCR 1.5p
 .nr PO 0.75i
-.nr LL 6.7i
+.nr LL 6.5i
 .nr FM 0.5i
 .ds CF DRAFT
 .\".DA
@@ -22,7 +22,7 @@ Inputs:
 4 - header name, text string
 ..
 .de NHTOC
-.NH \\$1\"                   put the numbered header at its level
+.NH \\$1										\"  put the numbered header at its level
 \\$4\"                       heading name
 .ds \\$2 \\*[SN-NO-DOT]\"    set the header number 
 .ds \\$3 \\n%\"              set the page number of the header
@@ -30,6 +30,22 @@ Inputs:
 \h'\\$1-1'\\*[SN-DOT] \\$4\" indented number and the name
 .XE\"                        end of TOC entry
 ..
+
+.\" Chapter number
+.nr cn 0 1
+.
+.de CHAPTER
+.sp |2i
+.ce
+\s+6\fBChapter \\n+(cn\fP\s0
+.sp
+.ce
+\s+4\fB\\$1\fP\s0
+.sp 2
+.LP
+..
+
+
 .
 .de hphntmsrc
 .nr 0h 0
@@ -64,3 +80,4 @@ Inputs:
 \s-2Figure \\n+(g!.	\\$1\s0
 .sp 0.5
 ..
+.
