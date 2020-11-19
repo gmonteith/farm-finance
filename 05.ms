@@ -1,5 +1,3 @@
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/format.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
 .
 .sp 5
 .NHTOC 1 sec:annud:num sec:annud:page "Annuities Due"

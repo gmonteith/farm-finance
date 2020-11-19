@@ -1,6 +1,5 @@
 .nr HM 0.7i
 .
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
 .
 .SH 1
 .ce 

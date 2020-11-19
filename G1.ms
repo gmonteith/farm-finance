@@ -1,433 +1,484 @@
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/format.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
+.
 .
 .XS
-APPENDIX X - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+APPENDIX H - Loans
 .XE
 .
 .ce 100
-\s+8\fBAPPENDIX X\s0\fP
+\s+8\fBAPPENDIX H\s0\fP
 .sp 20
 .B
 .LG
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+LOANS
 .R
 .ce 0
 .bp
 .
 .SH 1
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Loans
 .LP
-This Appendix provides the workings for the table in Section 18.2.1
+The Appendix looks at the amortization of different types of loans from Section
+3. The term amortisation refers to loans where each payment is made up of both
+principal and interest components.  
+.SH
+Fixed Repayment - Section 3.2
 .LP
-Wilbur has a hay and straw business, and he runs trucks with a draw bar
-trailer. The couplings between the tractor unit and the trailer have a limited
-life under the arduous farm conditions and heavy loads. Wilbur has the choice
-of two couplings. brand A costs 2,000 and is expected to last 5 years, and
-brand B cost 1,500 and is expected to last 3 years.
-.LP
-The salvage values for the couplings are shown in the table below.
-.TS
-tab (#) center ;
-lp-2  lp-2  lp-2 .
-#_#_#
-#Brand A#Brand B#
-.T&
-l  n  n  .
-_
-Salvage value after 1 year#1,000#750
-Salvage value after 2 years#700#300
-Salvage value after 3 years#400#0
-Salvage value after 4 years#200#0
-_
-.TE
-.LP
-We will now calculate the EAC for 3, 4, 6, 8, 10 and 12 year study periods.
-.br
-.sp
-.UL Method
-.sp 0.5
-For each year of each brand the expenditure will have to be restated as a
-present value from which the EAC can be established.
-.RS
-.IP "Step 1:" 10
-Establish the purchase price
-.IP "Step 2:" 10
-Establish the salvage value to adjust for the periods between the start and the
-end of the life of the coupling. Convert the salvage value to a present value
-using the Single Payment Present Worth factor. The PW or NPV is the value
-within the [] brackets.
-.IP "Step 3:" 10
-The net present value is then converted, into an annuity, the equivalent annual
-cost using the Capital Recovery factor. 
-.LP
-Remember in this calculation that the costs are shown as a postivce value,
-therefore the salvage value is negative.
-.RE
-.sp
-.UL Calculation
-.sp 0.5
-.IP "Brand A" 15
-.sp 0.5
+This is the most common common type of loan. At the beginning of the loan the
+interest component is at its largest and over time reduces as the principal is
+slowly paid down causing the percentage of the payment apportioned to the
+outstanding principal balance to increase.
+.PS
+A: [  box invis wid 0.20 ht 0.20 "0"
+		arrow up 0.3 at last box.n
+		"5,000" above at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.20 ht 0.20 "1"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.20 ht 0.20 "2"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.20 ht 0.20 "3"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.20 ht 0.20 "4"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.20 ht 0.20 "5"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
+.PE
 .
-Year 3
-.RS
-.EQ L
-EAC lm left [ 2,000 - 400(P/F, 15%, 3) right ] times (A/P, 15%, 3)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-left [ 2,000 - 400(0.6575) right ] times 0.4380
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-1,737 times 0.4380
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-761
-.EN
-.RE
-.
-Year 4
-.RS
-.EQ L
-EAC lineup =~~
-left [ 2,000 - 200(P/F, 15%, 4) right ] times (A/P, 15%, 4)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-left [ 2,000 - 200(0.5718) right ] times 0.3503
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-1,886 times 0.3503
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-661
-.EN
-.RE
-.
-Year 5
-.RS
-.EQ L
-EAC lineup =~~
-2,000 times (A/P, 15%, 5)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-2,000 times 0.2983
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-597
-.EN
-.RE
-.
-Year 8
-.RS
-.EQ L
-EAC lineup =~~
-left [ 2,000 + 2,000(P/F 15%, 5) - 400(P/F, 15%, 8) right ] times (A/P, 15%, 8)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-left [ 2,000 + 2,000(0.4972) - 400(0.3269) right ] times 0.2229 
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-2,863 times 0.229
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-638
-.EN
-.RE
-.
-.KS
-Year 11
-.RS
-.EQ L
-EAC lineup =~~
-left [ 2,000 + 2,000(P/F 15%, 5) + 2,000(P/F 15%, 10)
--1000(P/F, 15%, 11) right ] 
-.EN
-.sp -0.7v
-.EQ L
-lineup { hphantom{=~~ } }  times (A/P, 15%, 11)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-left [ 2,000 + 2,000(0.4972) +2,000(0.2472) - 1000(0.2149) right ] times 0.1911
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-3,274 times 0.1911
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-626
-.EN
-.RE
-.KE
-.
-Year 15
-.RS
-.EQ L
-EAC lineup =~~
-left [ 2,000 + 2,000(P/F 15%, 5) + 2,000(P/F, 15%, 10) right ] times (A/P, 15%, 10)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-left [ 2,000 + 2,000(0.4972) + 2,000(0.2472) right ] times (0.1710)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-3,488 times 0.1710
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-597\(dg
+.UL "Year 1"
+.EQ I
+"Periodic payment" lm "Opening balance "^(A/P, 8%, 5)\(dd
 .EN
 .FS
-\(dg This calculation is unessecary as it yields the same value as year 5 for
-brand A. Any multiple of 5 years will yield the same result, therefore, years
-5, 10 and 15 share the same EAC. The logic for this was established in Section
-17.4.  I have shown the calculation to demonstrate that the logic holds true.
+\(dd This is the capital recovery factor from Section 11.6
 .FE
-.RE
-.IP "Brand B" 15
-.sp 0.5
+.sp -0.6v
+.EQ I
+lineup =~~
+5,000 ncaprec(0.08, 5)
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+5,000(0.2505)
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+1,252
+.EN
 .
-Year 3
-.RS
-.EQ L
-EAC lineup =~~
-1,500(A/P, 15%, 3)
+.EQ I
+Interest lineup =~~
+"Opening balance" times rate%
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-1,500(0.4380)
+5,000 times 8 over 100
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-657
+400
 .EN
-.RE
 .
-Year 4
-.RS
-.EQ L
-EAC lineup =~~
-left [ 1,500 + 1,500(P/F, 15%, 3) - 750(P/F, 15%, 4) right ] times (A/P, 15%, 4)
+.EQ I
+"Principal repayment" lineup =~~
+"Periodic payment" - interest
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-left [ 1,500 + 1,500(0.6575) - 750(0.5718) right ] times (0.3503)
+1,252 - 400
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-2,057 times 0.3503
+852
 .EN
-.sp -0.7v
-.EQ L
-lineup =~~
-721
-.EN
-.RE
 .
-Year 5
-.RS
-.EQ L
-EAC lineup =~~
-left [ 1,500 + 1,500(P/F, 15%, 3) - 300(P/F, 15%, 5) right ] times (A/P, 15%, 5)
+.EQ I
+"Balance outstanding" lineup =~~
+"Opening balance" - "principal repayment"
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-left [ 1,500 + 1,500(0.6575) - 300(0.4972) right ] times (0.2983)
+5,000 - 852
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-2,337 times 0.2983
+4,148
 .EN
-.sp -0.7v
-.EQ L
-lineup =~~
-697
-.EN
-.RE
 .
-.KS
-Year 8
-.RS
-.EQ L
-EAC lineup =~~
-left [ 1,500 + 1,500(P/F, 15%, 3) + 1,500(P/F, 15%, 6)
-.EN
-.sp -0.7v
-.EQ L
-lineup { hphantom{=~~ } } - 300(P/F, 15%, 8)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-1,500 + 1,500(0.6575) + 1,500(0.4323) - 300(0.3269)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-3,037
-.EN
-.sp -0.7v
-.EQ L
-EAC lineup =~~
-3,037(A/P, 15%, 8)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-3,037 (0.2229)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-EAC = 676
-.EN
-.RE
-.KE
-.
-Year 11
-.RS
-.EQ L
-PW lineup =~~
-1,500 + 1,500(P/F, 15%, 3) + 1,500(P/F, 15%, 6)
-.EN
-.sp -0.7v
-.EQ L
-lineup { hphantom{=~~ } }
-+ 1,500(P/F, 15%, 9) - 300(P/F, 15%, 11)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-1,500 + 1,500(0.6575) + 1,500(0.4323) + 1,500(0.2843)
-.EN
-.sp -0.7v
-.EQ L
-lineup { hphantom{=~~ } }
-- 300(0.2149)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-3,497
-.EN
-.sp -0.7v
-.EQ L
-EAC lineup =~~
-3,497(A/P, 15%, 11)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-3,497 (0.1911)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-668
-.EN
-.RE
-.
-Year 15
-.RS
-.EQ L
-PW lineup =~~
-1,500 (1 + (P/F, 15%, 3) + (P/F, 15%, 6) + (P/F, 15%, 9)
-.EN
-.sp -0.7v
-.EQ L
-lineup { hphantom{=~~ } }
-+ (P/F, 15%, 12) )
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-1,500 ( 1 + 0.6575 + 0.4323 + 0.2843 + 0.1869 )
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-3,842
-.EN
-.sp -0.7v
-.EQ L
-EAC lineup =~~
-3,842(A/P, 15%, 15)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-3,842 (0.1710)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-657\(dd
-.EN
-.RE
-.FS
-\(dd This calculation is unessecary as it yields the same value as year 3 for
-brand B. Any multiple of 3 years will yield the same result, therefore, years
-3, 6, 9, 12 and 15 share the same EAC. The logic for this was established in
-Section 17.4. I have shown the calculation to demonstrate that the logic holds
-true.
-.FE
-.UL Solution
+.UL "Remaining Years"
+.LP
+For the next years the process is repeated with the balance from the previous
+year until the loan is paid off in year 5.
 .TS
-tab (#) center ;
-l cp-3 s s 
-lp-2  lp-2  lp-2 lp-2.
-#Equivalent Annual Cost
-#_#_#_#
-#Brand A#Brand B#A -B
-.T&
-l  n  n  n .
+tab (#) center;
+lp-2 lp-2 lp-2 lp-2 lp-2
+l n n n n .
 _
-Year 3#761#657#104
-Year 4#661#721#(60)
-Year 5#597#697#(100)
-Year 8#638#676#(38)
-Year 11#626#668#(42)
-Year 15#597#657#(60)
+PERIOD#PAYMENT#INTEREST#PRINCIPLE#BALANCE
+_
+Year 0####(5,000)
+Year 1#1,252#400#852#(4,148)
+Year 2#1,252#332#920#(3,228)
+Year 3#1,252#258#994#(2,234)
+Year 4#1,252#179#1,073#(1,161)
+Year 5#1,252#93#1,159#(2)\(dg
 _
 .TE
+.FS
+\(dg The use of only integer values has left a small outstanding balance. The
+actual repayment value is 1,252.28
+.FE
+.sp -1v
+.UL "Total Interest"
 .LP
-The table above shows that brand A is the lowest cost option except in year 3.
-In year 3 the full life of the brand B has been utilised but the more expensive
-brand A still has 2 years remaining, this results in matching brand B at its
-most efficient with brand A when the residual value is neglible.
+The interest paid over the life of this loan is: 1,262. The interest can
+obviously be calculated by adding the interest column, but it may not always be
+to hand. In more general terms the interest is calculated by:
+.EQ I
+"Total interest" lineup =~~
+"Total payments" - "loan value"
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+( 5 times 1,252 ) - 5,000
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+1,260\(dg
+.EN
+.
+.KS
+.SH
+Fixed Principal Repayment - Section 3.4
+.LP
+Fixed principal repayment loans are not so common. However, they do have some
+advantages, as the cash flow diagram shows the payments reduce with time as the
+interest burden decreases. The advantage lies in the fact that it is harder to
+forecast cash flows in the future so the uncertain cash flows are matched to a
+reducing periodic payment.
+.PS
+A: [  box invis wid 0.20 ht 0.20 "0"
+		arrow up 0.3 at last box.n
+		"5,000" above at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.20 ht 0.20 "1"
+		arrow down 0.28 at last box.s
+		"1,400" below at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.20 ht 0.20 "2"
+		arrow down 0.26 at last box.s
+		"1,320" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.20 ht 0.20 "3"
+		arrow down 0.24 at last box.s
+		"1,240" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.20 ht 0.20 "4"
+		arrow down 0.22 at last box.s
+		"1,160" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.20 ht 0.20 "5"
+		arrow down 0.2 at last box.s
+		"1,080" below at end of last arrow
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
+.PE
+.KE
+The interest is calculated as previously demonstrated. The principal repayment,
+if it is to be fixed, is the principal amount divided by the number of periods
+in the loan.
+.LP
+.UL "Year 1"
+.EQ I
+"Periodic payment" lineup =~~
+Interest + principal
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+400 + 1,000
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+1,400 
+.EN
+.
+.EQ I
+Interest lineup =~~
+"Opening balance" times rate%
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+5,000 times 8 over 100
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+400
+.EN
+.
+.EQ I
+"Principal repayment" lineup =~~
+"Opening balance" over "number of periods"
+.EN
+.sp -0.5v
+.EQ I
+lineup =~~
+5,000 over 5
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+1,000
+.EN
+.
+.EQ I
+"Balance outstanding" lineup =~~
+"Opening balance" - "Principal repayment"
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+5,000 - 1,000
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+4,000
+.EN
+.UL "Remaining Years"
+.LP
+For the next years the process is repeated with the balance from the previous
+year until the loan is paid off in year 5.
+.TS
+tab (#) center;
+lp-2 lp-2 lp-2 lp-2 lp-2
+l n n n n .
+_
+PERIOD#PAYMENT#INTEREST#PRINCIPLE#BALANCE
+_
+Year 0####(5,000)
+Year 1#1,400#400#1,000#(4,000)
+Year 2#1,320#320#1,000#(3,000)
+Year 3#1,240#240#1,000#(2,000)
+Year 4#1,160#160#1,000#(1,000)
+Year 5#1,080#80#1,000#(0)
+_
+.TE
+.UL "Total Interest"
+.EQ I
+"Total interest" lineup =~~
+"Total payments" - "loan value"
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+( 1,400 + 1,320 + 1,240 + 1,160 + 1,080) - 5,000
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+1,200
+.EN
+The interest paid over the life of this loan is: 1,200. This is lower than
+fixed repayment loan because of the increased size of the periodic principal
+repayment which accelerates the reduction in the outstanding balance.
+.KS
+.SH
+Balloon Payment - Section 3.5
+.LP
+Loans with a balloon payment have become more popular in recent years as it
+allows the lender to reduce the periodic payment due by the borrower. A loan
+incorporating a balloon payment is particularly popular when used to finance
+vehicles. The borrowers repayment is used to finance the depreciation in asset
+value due to use and the passage of time. At the end of the loan the borrower
+can take the option to make the payment ant acquire the asset.  If the borrower
+does not make the balloon payment the lender disposes of the asset and the
+salvage value on disposal \fBshould\fP equal the remaining balance.
+.LP
+The interest is the same as previously stated. The periodic payment amount
+would be calculated by the lender to match the \fBexpected\fP depreciation. The
+principal repayment is the amount left after the interest has been deducted
+from the periodic payment.
+.LP
+The balloon payment is the interest on the outstanding balance and the
+remaining balance.
+.PS
+A: [  box invis wid 0.20 ht 0.20 "0"
+		arrow up 0.3 at last box.n
+		"5,000" above at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.20 ht 0.20 "1"
+		arrow down 0.2 at last box.s
+		"1,000" below at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.20 ht 0.20 "2"
+		arrow down 0.2 at last box.s
+		"1,000" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.20 ht 0.20 "3"
+		arrow down 0.2 at last box.s
+		"1,000" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.20 ht 0.20 "4"
+		arrow down 0.2 at last box.s
+		"1,000" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.20 ht 0.20 "5"
+		arrow down 0.4 at last box.s
+		"2,480" below at end of last arrow
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
+.PE
+.KE
+.UL "Year 1"
+.EQ I
+"Periodic payment" lineup =~~
+1,000 ^ "this value is selected by the lender"
+.EN
+.
+.EQ I
+Interest lineup =~~
+"Opening balance" times rate%
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+5,000 times 8 over 100
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+400
+.EN
+.
+.EQ I
+"Principal repayment" lineup =~~
+"Periodic payment" - interest
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+1,000 - 400
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+600
+.EN
+.
+.EQ I
+"Balance outstanding" lineup =~~
+"Opening balance" - "principal repayment"
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+5,000 - 600
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+4,400
+.EN
+.UL "Years 2 to 4"
+.LP
+For the next years the process is repeated with the balance from the previous
+year until year 4.
+.sp
+.UL "Year 5"
+.LP
+Year 5, balloon payment:
+.EQ I
+"interest on balance outstanding" lineup =~~
+"balance outstanding" times rate%
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+2,296 times 8 over 100
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+184
+.EN
+.EQ I
+"balloon payment\(dd" lineup =~~
+"outstanding balance + interest"
+.EN
+.FS
+The balloon payment can also be expressed as: # "outstanding balance " times (
+1 + rate% ) # is you are not interested in the interest amount. # 2,296 times
+1.08 = 2,480 #
+.FE
+.sp -0.6v
+.EQ I
+lineup =~~
+2,296 + 184
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+2,480
+.EN
+.
+.KS
+.TS
+tab (#) center;
+lp-2 lp-2 lp-2 lp-2 lp-2
+l n n n n .
+_
+PERIOD#PAYMENT#INTEREST#PRINCIPLE#BALANCE
+_
+Year 0####(5,000)
+Year 1#1,000#400#600#(4,400)
+Year 2#1,000#352#648#(3,752)
+Year 3#1,000#300#700#(3,052)
+Year 4#1,000#244#756#(2,296)
+Year 5#2,480#184#2,296#(0)
+_
+.TE
+.KE
+.UL "Total Interest"
+.EQ I
+"Total interest" lineup =~~
+"Total payments" - "loan value"
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+left [ (1,000 times 4) + 2,480 right ]  - 5,000
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+1,480
+.EN
+The interest paid over the life of this loan is: 1,480. This is higher than
+both the fixed repayment loan and the fixed principal repayment loan because of
+the reduced size of the principal repayment. The borrower has a reduced
+periodic repayment, but it comes at the cost of a higher interest charge over
+the life of the loan.

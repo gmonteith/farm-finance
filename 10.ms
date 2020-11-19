@@ -1,5 +1,3 @@
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/format.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
 .
 .EH '%''\fBSection 12: Growing Perpituities\fP'
 .OH '\fBSection 12: Growing Perpituities\fP''%'

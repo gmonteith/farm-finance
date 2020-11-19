@@ -1,4 +1,3 @@
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
 .
 .XS
 APPENDIX C - Engineering Econonomics Equations

@@ -1,9 +1,6 @@
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/format.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
 .
 .sp 5
 .NHTOC 1 sec:annug:num sec:annug:page "Growing Ordinary Annuities"
-.sp
 .LP
 There are also some instances of growing annuities such as valuation models
 where dividends grow at a constant rate for a given period of time.  Another

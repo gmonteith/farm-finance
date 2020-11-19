@@ -1,6 +1,3 @@
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/format.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/equation.tmac
-.so /home/gpm/Documents/Work/Capital_allocation/Publish/Format/pic.tmac
 .
 .sp 5
 .NHTOC 1 sec:roe:num sec:roe:page "Return On Equity"
