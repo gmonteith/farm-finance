@@ -1,0 +1,107 @@
+.LP
+.nr !? 1
+.af !? i
+.nr !! 2
+.af !! i
+.ds CF
+.ds CH
+.am NP
+.ds CF
+.nr !! +1
+.if e .if \\n%>6 \{\
+.		ds LH \\\\*(cH
+.		ds RH \\\\*(cP
+\}
+.if o .if \\n%>6 \{\
+.		ds RH \\\\*(cH
+.		ds LH \\\\*(cP
+\}
+..
+.rs
+.sp 3.0i
+.ce
+\fB\s+5Book Title\s0\fP
+.bp
+.rs
+.bp
+.ce
+\fB\s+5Author\s0\fP
+.sp 15
+.ce 2
+\s+2Organisation Name
+City, State, zip\s0
+.sp 16
+.ce 2
+Publisher
+Address
+.bp
+.rs
+.sp 3.0i
+.ce 	\"number of lines in dedication
+Dedication
+.bp
+.rs
+.nr % 6
+.bp
+.rs
+.sp 4
+.nr !? \n%
+.ds CF \\n(!?
+.ds cH \fB\s-1Contents\s0\fP
+.ds cP \\n(!!
+.ce
+\fB\s+5Contents\s0\fR
+.sp
+.TS
+center;
+l l l .
+Preface		Page Number
+
+Acknowledgment		Page Number
+
+Chapter 1	Chaper 1 Title\a	1
+	1. Section 1 Title	Page Number
+.TE
+.ds cH
+.ds cP
+.bp
+.if e \{\
+.			rs
+.			bp \}
+.nr !? \n%
+.ds CF \\n(!?
+.ds cH \fB\s-1Foreword\s0\fP
+.ds cP \\n(!!
+.ce
+\fB\s+5Foreword\s0\fR
+.sp 5
+Foreword
+.ds cH
+.ds cP
+.bp
+.if e \{\
+.			rs
+.			bp \}
+.nr !? \n%
+.ds CF \\n(!?
+.ds cH \fB\s-1Preface\s0\fP
+.ds cP \\n(!!
+.cd
+\fB\s+5Preface\s0\fR
+.sp
+Preface
+.ds cH
+.ds cP
+.bp
+.if e \{\
+.			rs
+.			bp \}
+.nr !? \n%
+.ds CF \\n(!?
+.ds cH \fB\s-1Acknowledgement\s0\fP
+.ds cP \\n(!!
+.ce
+\fB\Acknowledgment\s0\fR
+.sp 5
+Acknowledgement
+
