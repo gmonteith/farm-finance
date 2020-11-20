@@ -1,709 +1,407 @@
 .
-.sp 5
-.NHTOC 1 rpa:intr:num rpa:intr:page "Mutually Exclusive Projects"
+.NHTOC 1 rpa:intr:num rpa:intr:page "Replacement Analysis"
 .sp
 .LP
-Mutually exclusinve alternatives are those where only one can be selected from
-a range of choices. The reasons for mutually exclusivity are varied:
-.IP \(bu
-Physical: Only one tractor of several specifications available from a number of
-manufacturers is required. Only one building type is required, for instance the
-choice between a grain silo or on floor storage. Only one type of floor is
-required for the on floor grains storage.
-.IP \(bu
-Organisational: The organisation may favour one alternative over another.
-Whether to rear lambs for sale as stores vs buyting lambs in the market for
-fattening over the winter months.
-.IP \(bu
-Regulatory: The regulatory regime may only allow for one alternative. For
-instance the establishment of certain crops to meet environmental targets.
-.IP \(bu
-Resources: The scacity of skilled personnel to drive trucks or IT skills to
-implement a propossed system.
+Total equipment costs are comprised of two separate components: ownership costs
+and operating costs. Except for initial capital cost of purchasing the machine,
+ownership costs are fixed costs that are incurred each year, regardless of
+whether the equipment is operated or idle. Operating costs are the costs
+incurred only when the equipment is used. Ownership costs diminish
+significantly over time while operating costs rise slightly, primarily due to
+increasing maintenance and repair costs.
 .LP
-We are going to concern orselves with the physical constraints to choosing
-amongst a number of alternatives. Typically the type of project or the use of
-the equipment defines the study period or time horizon required when analysing
-the alternatives. It makes sense that all alternatives must be analysed over a
-common study period if apples are to be comapres with apples. This is implicit
-when equivalent annual techinques are used, however, it must be expicit when
-used with Net Present Value or Present Worth and the Replacement Chain method.
+Replacement analysis is typically concerned with such a scenario: Wilbur's 10
+year old truck costs more to run and maintain than a new truck, but the new
+truck requires a large capital investment. Should the new truck be purchased?
 .LP
-In Section 13 we examined how to establish the cost of capital required to
-discount a given project. When there are mutually exclusive alternatives, only
-\fBone\fP interest rate is used to evaluate all of these alternatives. This
-interest rate is called the Minimum Acceptable Rate of Return (MARR), and it is
-inferred at this MARR that there is enought capital to fund even the most
-expensive investment , if justified by the analysis.  
-.LP
-When lives of the mutually exlusive alternatives are the same, the selction
-process as we learnt in Section 14 is clear. Select the project with the
-largest NPV, we can now extend this to say  the lagest NPV or EAW or the
-smallest EAC.
+The solution is to find the best life and its equivalent annual cost for the
+challenger (new equipment) and then establish if the existing equipments life
+can be extended at a lower cost.
 .
+.NHTOC 2 eac:intr:num eac:intr:page "Reasons for changes in equipment"
+.LP
+Primarily replacement analysis deals with situations where aged equipment is
+replaced with new, or newer, equiment. The aging equipment is usually sold,
+scrapped, donated to another entity, broken for parts, however, it could also
+be kept as backup for emergencies. Some equipment is constructed in such a way
+that an overhaul is possible as an alternative to replacement.
+.LP
+Replacent also includes retirements, when a fleet size is reduced due to
+changes in the market. For instance Wilbur may decided to retire his sheep only
+livestock box because there is insufficient work to justify employing the
+capital in the business.
+.LP
+Replacement analysis also includes augmenting aging equipment with new
+equipment when additional capacity is required. The decision between replacing
+the existing equipment with larger capacity new equipment, or keeping the
+existing equipemnt and augmenting it with new lower capacity equipment.
+.LP
+Equipment is typically replaced for the following reasons:
 .sp
-.NHTOC 2 eac:intr:num eac:intr:page "Comparing projects with diffretn lives"
-.LP
-In many cases mutually exclusive alternatives do not have lives of the same
-length and often the difference between the two alternatives is the length of
-the lives. For instance a pump made from steel will have a longer life than one
-made from brass, and a new piece of equipment will have a longer life than a
-used peice of equipment.
-.LP
-There are two commonly used methods to adjust for this conflict:
-.IP \(bu
-Replacement Chain Method: Used with Net Present Value and Present Worth.
-.IP \(bu
-Equivalent Annual Annuity: The preferred method.
-.LP
-When comparing alternatives with lives of diffrent lengths the study period is
-defined by:
-.IP \(bu
-Explicity assuming, in the case of NPV or PW, or implicity in the case EAW and
-EAC, that the investment repeats itself over time with the same costs and
-benefits.
-.IP \(bu
-Terminating one or more alternatives early and using the residual values to
-account for the remaining life.
+.IP "Reduced performance" 10
+Older equipment is less efficient and repair costs rise with age. However, the
+bigger concern is often the "down time" associated with an unscheduled
+breakdown. In the early years of a machines life the cost of purchase and
+installation form the largest part of the yearly cost, but with the passage of
+time the increasing maintenance and downtime costs dominate the yearly cost. 
+.IP "Altered requirements" 10
+Situations change and this often leads to a reappraisal of the requirements. If
+Wilbur was to take on more land to farm he would require a large tractor to
+cover the acres in the availble time. It can also be the case that the existing
+equipment was incorrectly specified. Wilbur has a tractor to pull his 6 meter
+disks but it is on the limit of its performance and a large tractor of a
+different spcification should have been selected at the time. The question is
+whether to continue with the "not quite right" equipment or replace it.
+.IP "Obsolescence" 10
+Constant improvements in technoloyg ensure that all equipment is on the slow
+march to the scrap heap. The requirements for a piece of machinery may not
+change at all, but the new equipment may get the job done faster.
+.IP "Risk of failure" 10
+Scheduled replacements can be scheduled to coinside with quiet periods and be
+completed as inexpensively as possible with the least disuption. The
+requirement to replace equipment due to a catastrophic failure can cause
+significant diruptiont to the business in both lost sales and the service to
+the customer. The costs to life and the reputation of an airline mean that many
+items of an aircraft have a designated life and are never take to failure
+before being overhauled or replaced.
 .
-.KS
-.NHTOC 3 eac:intr:num eac:intr:page "Replacement Chain"
+.NHTOC 3 eac:intr:num eac:intr:page "Type of lives"
+.IP "Economic" 10
+Economic life is based on decreasing ownership costs with the increase in
+operating costs and the period that these costs are equivalent is called the
+economic life. Establishing the economic life is an exercise to asertain the
+period of time that a piece of capital equipment should be owned or leased for
+to provide the lowest cost. Therefore the economic life is a narrow time period
+where the ownership and operating costs are equivalent.
+.IP "Profit" 10
+The period of time when a machine is generating a profit. This is the period
+where the costs of operation are less than the revenues. The profit life
+differs from the economic life in that it includes the cash flow into the
+business as well as the costs flowing out. The profit life does not take into
+account the lowest cost, but simply that the equipment would be profitable even
+if the costs were not at their lowest point. 
+.IP "Physical" 10
+The life of asset from creation until it is scrapped.
+.IP "Accounting" 10
+The time it takes to fully depreciate the assets on the ballance sheet. For tax
+purposes HMRC uses a declining balance at 18% per year, which that the
+accounting life is in actual fact the life of the business! The management
+accounts may of course use a different means of depreciation in which case the
+management accounting life will difer from the tax accounting life.
+.IP "Ownership" 10
+The life from purchase to disposal.
+.IP "Service" 10
+The time the equipment must be available for use.
+.
+.NHTOC 2 eac:intr:num eac:intr:page "Common means of establishing the \
+replacement point"
 .LP
-Below we have the choice of investing in two different projects which have
-different lives.
-.sp
-.br
-Project E
+The general life of piece of equipment is as follows; a machine is purchased
+and has a low repair and maintenance costs. With the passage of time the
+ownership costs reduce, as the initial investment can be spreadover a longer
+period of time and rate of decline in the residual value slows, the repair
+costs rise until they become larger than the ownership costs. If a piece of
+equipment is kept past the end of its profitable life the costs of keeping it
+going, and the productive time lost to repairs, will exceed its earnings during
+the periods when it is operational. Therefore, the owner or operator of the
+equipment needs to identify the point in time where retaining a given piece of
+equipment is no longer profitable so that the machine can be replaced by either
+purchasing a new piece or by leasing an equivalent piece. There are a number of
+different methods that individuals and businesses use to determine the
+replacement point of a piece of equipment:
+.IP "Intuitive method"
+The Intuitive method for determining the replacement point is most common in
+small business due to its simplicity and reliance on individual judgment.
+Equipment is often replaced when a major repair, service or rebuild becomes due
+or there is an increase in the level of work and concerns about the reliability
+of the equipment. If the existing piece of equipment is adequately performing
+its function it will probably be kept in service as replacement would
+significantyly increase the ownership costs. The long term maintenance and
+operating costs are disregarded in favour of "personal judgement".
+.
+.IP "Replacement at an established interval"
+Under this method a piece of equipment is replaced when it reaches its target
+age, mileage or hours. On a tractor it maybe 5 years on 5,000 hours and on a
+truck 5 years or 500,000 km. Individual pieces of equipment may have their
+maintenance and repair costs monitored against a group of like machines and if
+their costs begin to significantly exceed the average cost they are replaced.
+The advantage of the interval replacement method is its simplicity of
+implementation. It removes subjectivity and judgment from the replacement
+decision process however it does not take into account the time value of money
+nor does it try to balance the ownership costs against the operating costs.
+.
+.IP "Replacement when the repair exceeds a given value"
+Replacing when repairing exceeds value approach keeps the equipment in
+operation until it requires a major repair that exceeds a given value. It is
+often the case that the cut off value is usually a percentage of the current
+salvage it maybe as low as 50% or as high as 100 of the salvage value. Once a
+major failure occurs, the equipment usually has little resale value and the
+owner can either repair the equipment or sell it in its failed state. Selling
+the equipment, even if it is not in working order, is generally preferable to
+repairing it because the cost of the repair is often not completely recoverable
+from selling the equipment after it has been repaired. If the owner decides not
+to sell the equipment in its failed state but to keep it and repair it the
+investment will need to be recovered by extending the life of the equipment.
+The best time to sell a piece of equipment is just before a major repair is
+required, however, the problem lies in forecasting with any level of confidence
+when the failure will occur and is the major disadvantage to the replace when
+repairing exceeds a given value approach.
+.
+.IP "Economic life"
+When the operating costs exceed the ownership costs a piece of equipment is
+costing more to operate than to own. Thus, to maximize profits the replacement
+of a piece of equipment should occur when the ownership costs equal the
+operating costs, this is sometimes referred to as the optimum economic life.
+For equipment in place the economic life continues until the cost to continue
+with the existing equipment exceeds the economic life of the new equipment.
+Life cycle cost analysis is the tool used to establish the costs so that the
+economic life maybe calculated.
+.LP
+Among the four methods, the economic life is preferred because it results in
+the lowest cost and takes into account the time value of money.
+.
+.NHTOC 2 eac:intr:num eac:intr:page "Life cycle cost analysis"
+.LP
+Life cycle analysis looks beyond the initial purchase cost to encompase the
+entire costs of a piece of equipment, over its life, from purchase or
+conception through operating to disposal or decommisioning. Life cycle cost
+analysis has existed for many years but gain in popularity as IT systems became
+a large and complex item of capital expenditure where the service and
+maintenance cost could be many times the installation costs over the lifetime
+of the system. Life cycle analysis is known by many names depending on the
+industry and is often referred to as the Life Cycle Costing (LFC), Total Cost
+of Ownership (TCO), Total Cost Bidding (TCB), Whole Life Costing and
+Cradle-to-Grave Costing to name a few.
+.LP
+In the automotive, off highway and road haulage industry life cyclce costs
+analysis is often refered to as total cost of ownership (TCO). Total cost of
+ownership (TCO) places a single value on the complete lifecycle of a capital
+purchase and can be defined as: the total cost of an item through out its life,
+including the cost of planning, acquisition, operations, maintenance, and
+disposal, less any residual value, or the total cost of providing, owning and
+maintaining the equipment over a predetermined evaluation period. The
+predetermined evaluation period is important as it is not uncommon that
+equipment is only operated as long as it is possible to purchase a repair and
+maintenance contract.
+.LP
+A life cycle cost could be simply calculated as:
+.EQ I
+"Life cycle cost" lm "initial cost"
+.EN
+.sp -0.6v
+.EQ I
+lineup +~~
+"maintenance costs"
+.EN
+.sp -0.6v
+.EQ I
+lineup +~~
+"repair costs"
+.EN
+.sp -0.6v
+.EQ I
+lineup +~~
+"fuel costs"
+.EN
+.sp -0.6v
+.EQ I
+lineup -~~
+"salvage value"
+.EN
+However, the more effort that is put into the life cycle cost analysis the more
+likely it is that all the costs will be captured. We will now look in more
+detail at some of the considerations involved in calculating the life cycle
+cost of a piece of equipment.
+.
+.NHTOC 3 eac:intr:num eac:intr:page "Scope and goals"
+.LP
+It is paramount to define the scope of the analysis, so that everyone
+understands the boundaries of the analysis. Where the boundary is drawn can
+have a significant impact on the analysis especially if a factor was left out
+by design, failure to understand the lifecycle, or bias later has a serial
+impact on the outcome. To get a complete picture of the lifecycle of a piece of
+equipment it is best to include as many people from different functions and
+encourage debate what should be included and what should be left out and the
+reasons why.
+.IP "Purpose" 10
+Define what is needed, why and who needs it. For instance, Wilbur has a mixed
+farm a contracting business and a livestock haulage business and is going to
+investigate the replacement of his feeder wagon used to provide rations to cows
+a the dairy. What is the feeder wagon, why is excessive repairs and old
+technolgy and who is the dairy business.
+.IP "Goal" 10
+The goal usually is to either establish the lowest cost option for an operation
+using the economic life calculation or the comparisson of competing pieces of
+equipment such as tractors for the arable operation.
+.IP "Cost boundaries" 10
+If we again use Wilbur's business as an example we can come up with pertinent
+questions that would require consideration if he was looking to replace his
+loader tractor. Is the loader included in the cost of replacement or just the
+tractor? What about the costs of installation and removal of the loader? Can
+the loader be upgraded at this time, maybe a different or new controller for
+the operator can be fitted? Should continuing with the existing loader be
+compared with a new loader which may offer quicker cycle times? Simillarly if
+Wilbur was replacing one of his livestock lorries the questions maybe as
+follows: Does the replacement include the livestock box? Does the cost include
+a new flat bed on the lorry? Can the hitch on the lorry be overhauled or will a
+new one be required?
+.IP "Time" 10
+The time period is either a fixed period, as is often the case when comparing
+two competing pieces of equipment, or the economic life.
+.IP "Utilisation" 10
+The amount of work that the equipment is expected to do in each time period
+will have a direct impact on the variable costs. Typically the utilisation is
+measure in hours or kilometers.
+.IP "Environment" 10
+The environment is important to understanding the rate of wear on certain
+components or the load on the engine when estimating fuel consumption. A
+tractor will consume different amounts of fuel when used on PTO work vs road
+haulage. A truck will have different repair costs if it is doing local work
+down narrow lanes where the risk of tree damage is higher vs driving on a
+motorway.
+.IP "Establishing Costs" 10
+There should be a clear process on how to estimate the various costs. For
+instance the maintenance costs associated with a lorry maybe sourced by
+requesting the information from the OEM dealer. The process to establish the
+maintenance costs maybe very stringent and only allow this source as the
+figures are a significant part of the capital cost and need to be verifieable.
+On the other hand the salvage value maybe obtained by refering to trade
+magazines and auctions. The requirement in this instance may not be so
+stringent as the salvage value occurs some distance in the future and their is
+a range of possible outcomes. However, it maybe deemed best practise to use a
+slections of sources to get the best idea of the salvage value.
+.IP "Inflation" 10
+At present inflation is rather benign, but this has not always been the case.
+It has to be expected that there will be some form of inflation, in the general
+economy and in the costs, over the life of a piece of equipment. Inflation and
+how to account for it has been covered in more detail in Appendix K. In general
+we will always use nominal rates for the both the cash flows and the discount
+rate includes which means they include the inflation expectations.
+.
+.NHTOC 3 eac:intr:num eac:intr:page "Costs to include"
+.LP
+Once the scope of the project and the goals have been established the costs can
+be calculated. Costs are usually broken down into two types for the purpose of
+understanding the implications of owning, operating, maintianing and disposing
+of a piece of equipment:
+.IP "Fixed/ownership costs" 5
+Fixed costs generally include the costs that are incurred regardless of whether
+the machine is actually used in production. These costs do not vary with the
+amount of machine use. Fixed costs are sometimes referred to as ownership
+and/or overhead costs.
 .RS
-.TS
-tab (#) ;
-lp-2 lp-2 lp-2 lp-2 lp-2 lp-2 lp-2 lp-2 .
-#_#_#_#_#_#_#_#
-#CF0#CF1#CF2#CF3#CF4#CF5#CF6
-.T&
-lp-2 
-a n n n n n n n .
-_
-CASH FLOWS#
-Operating cash flows#(40,000)#8,000#14,000#13,000#12,000#11,000#10,000
-#_#_#_#_#_#_#_
-.sp 3p
-.T&
-lp-2 l l l l l
-a c c c c c c 
-a n n n n n n .
-DISCOUNTED CASH FLOW#
-Discount factor @12%#1#0.893#0.797#0.712#0.636#0.567#0.507
-#_#_#_#_#_#_#_
-Present value#(40,000)#7,144#11,158#9,256#7,632#6,237#5,070
-_
-NPV#6,497
-_
-.TE
-.RE
-.
-.sp
-Project F
-.RS
-.KE
-.
-.TS
-tab (#) ;
-lp-2 lp-2 lp-2 lp-2 lp-2 .
-#_#_#_#_#
-#CF0#CF1#CF2#CF3
-.T&
-lp-2 
-a n n n n .
-_
-CASH FLOWS#
-Operating cash flows#(20,000)#7,000#13,000#12,000
-#_#_#_#_#
-.sp 3p
-.T&
-lp-2 l l l 
-a c c c c 
-a n n n n .
-DISCOUNTED CASH FLOW#
-Discount factor @12%#1#0.893#0.797#0.712
-#_#_#_#_
-PV#(20,000)#6,251#10,361#8,544#
-_
-NPV#5,156
-_
-.TE
-.RE
-.
-.LP
-If a company had to choose between the two alternatives above we can see that
-Project E, when discounted at a 12 percent, has the higher NPV and thus appears
-to be the better project. However If we choose Project F, we will have an
-opportunity to make a similar investment in three years, and if cost and
-revenue conditions remain at the same levels, this second investment will also
-be profitable. 
-.LP
-As previous stated we must construct a common life for the projects so that a
-comparison can be made. Therefore, to make a proper comparison of Projects E
-and F, using the Replacement Chain we would need to extend the life for project
-F to six years. When extending the project we assume that the costs, revenues
-and cost of capital will stay the same.
-.
-.TS
-tab (#)  ;
-lp-2 lp-2 lp-2 lp-2 lp-2 lp-2 lp-2 lp-2 .
-#_#_#_#_#_#_#_#
-#CF0#CF1#CF2#CF3#CF4#CF5#CF6
-.T&
-lp-2 
-a n n n n n n n .
-_
-CASH FLOWS#
-Operating cash flows 1#(20,000)#7,000#13,000#12,000###
-Operating cash flows 2####(20,000)#7,000#13,000#12,000
-#_#_#_#_#_#_#_
-Total#(20,000)#7,000#13,0000#(8,000)#7,000#13,000#12,000
-.sp 3p
-.T&
-lp-2 l l l l l l l
-a c c c c c c c
-a n n n n n n n .
-DISCOUNTED CASH FLOW#
-Discount 12%#1#0.893#0.797#0.712#0.636#0.567#0.507
-#_#_#_#_#_#_#_
-Present value#(20,000)#6,251#10,361#(5,696)#4,452#7,371#6,084
-_
-NPV#8,823
-_
-.TE
-The NPV of this extended Project F is 8,824, which is greater than the 6,491
-NPV of Project E and therefore Project F should be selected.
-.LP
-The Replacement Chain Method can be used as a decision criterion to select
-an investment proposal.
-.IP \(bu
-Select the proposal with the highest Replacement Chain Net Present Value.
-.SH 3
-Advantages of Replacement Chain Method:
-.IP \(bu
-The Replacement Chain Method is easy to conceptulise and explain to management.
-.SH 3
-Disadvantages of Replacement Chain Method:
-.IP \(bu
-The replacement chain method requires that the Lowest Common Multiple (LCM) be
-found for the two projects. With the example here of 3 years and 6 years it is
-clearly 6 years. However if one project was 6 years and the other 10 years the
-LCM would be 30 years\(dg.
-.FS
-\(dg LCM of 6 and 10: #2 times 3# and #2 times 5# = #2 times 3 times 5 = 30#
-.br
-Genereal process to find the LCM.  E.g. 15, 8, 12 18
-.br
-1) Write out the prime factors for each number: #15 = 3 times 5#, #8=2 sup 3#,
-#12=2 sup 2 times 3#, #18= 2 times 3 sup 2#
-.br
-2) Write the product of each prime factor: #2 times 3 times 5#
-.br
-3) Use the largest exponent required for each factor:
-#2 sup 3 times 3 sup 2 times 5 = 360#
-.FE
-.LP
-We mentioned that it could be possible to use a residual value to account for
-the different length of the lives. The use of a residual value occurs if a time
-horizon is picked that is not a Lowest Common Multiple of the alternatives. In
-most cases using the Lowest Common Multiple is preferable to assumbing arbitart
-residual values\(dd.
-.FS
-\(dd The example used in 18.2.1 uses residual values. The full workings are shown in
-Appendix G.
-.FE
-.
-.sp
-.NHTOC 3 eac:intr:num eac:intr:page "Equivalent Annual Annuities"
-.LP
-We should be quite happy with the concept of an Equivalent Annual Annuity from
-Section 17. The Capital Recovery factor from Section 11.6 is used to convert
-the NPV into an annuity. Once the two NPVs have been converted into annuities
-we can compare them directly.
-.LP
-Project E
-.EQ
-EAW ~~mark =~~ 6,497(A/P, 12%, 6)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-6,497(0.2432)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-1,580
-.EN
-Project F
-.EQ
-EAW ~~=~~ 5,156(A/P, 12%, 3)
-.EN
-.sp -0.7
-.EQ
-lineup =~~
-5,156(0.4163)
-.EN
-.sp -0.7
-.EQ
-lineup =~~
-2,147
-.EN
-Since project F has the higher equivalent annuity than project E we should
-chooses project F.
-.SH 3
-Advantages of Eqivalent Annual Annuity:
-.IP \(bu
-The Equivalent Annual Annuity is easier to apply than the replacement Chain
-Method.
-.SH 3
-Disadvantages of Eqivalent Annual Annuity:
-.IP \(bu
-The Eqivalent Annual Annuity method is harder to explain and conceptualise for
-management.
-.
-.sp
-.NHTOC 3 eac:intr:num eac:intr:page "Resolve EAC to Replacement Chain"
-.LP
-If return to the replacement chain we can see that project E had an NPV of 6,497
-and Project F 8,823 when extended out over the same 6 years.
-.LP
-Using the knowledge of eqivalence that we established in Section 3, if the EAW
-for Project F (2,147) is converted to a present valuing using the Uniform
-Series Present Worth factor, from Section 11.5, it should equal the NPV
-established by the Replacement Chain.
-.LP
-The logic being that if the costs and revenue relationship does not change then
-then if the annuity payment is extened to six years it should generate the same
-NPV as the replacement chain method.
-.EQ
-NPV ~~=~~ 2,147(P/A, 12%, 6)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-2,147(4.1114)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-8,827
-.EN
-.LP
-The difference between 8,823 and 8,827 is a rounding error between the three
-decimal places in the table and the nine used by the calculator.
-.LP
-In the Replacement Chain method we explicity stated that the study period was
-six years, which as the LCM of 3 and 6. With the EAW the study period was
-implicit, and specifically the EAW is same for any integer multiple of its life
-if identical repitions are assumed. This is also consistent with our methods in
-Section 17.4.
-.LP
-The implicit study period is the least common multiple of the lives of the
-mutually exclusive alternatives. Therefore, in this example, it is taken that
-the EAW is accurate with identical repitions and with a study period equal to
-the LCM.
-.LP
-If the service period is indefinite, then it is acceptable to say that one
-alternative has a lower EAC or higher EAW without stating exactly what the
-differences are. Therefore the equivalent annuities are approximations of
-unknown values and the exact differences are less important than thire general
-magnitiude.
-.
-.sp
-.NHTOC 2 eac:intr:num eac:intr:page "Are Equivalent Annuities Reasonable?"
-.LP
-The real question is the equivalent annuity a reasonable way of choosing
-mutually exclusive alternatives? It is highly unlikey that the cash flows will
-be repeated for many reasons:
-.IP \(bu
-It is likely that new equipment purchased in the future will cost more than the
-equipment it replaces.
-.IP \(bu
-It is reasonalbe to expect sales prices and operating costs are likely to
-change over time.
-.IP \(bu
-Technolo constantly advances improving the efficiency of products.
-.LP
-If the above points are true surely the stability built into the analysis is
-invalid.
-.
-.sp
-.NHTOC 3 eac:intr:num eac:intr:page "Creditbility due to discounting"
-.LP
-If alternatives of 15 years and 20 years were compared it would imply a life of
-60 years. Obvioulsy the cash flows would be expected change to change quite
-significantly over this time period. It is also to be expected that the largest
-changes would occur towards the end of the life. We have learnt through our
-study of the time value of money that the impact of discounting is largest in
-the future. This means that even though we can expect large changes to the cash
-flows in the future the impact will not be as large as you might expect.
-.LP
-We look at two examples to demonstrate this point. One example over a short
-period of time and one over a longer peiod of time.
-.
-.NHTOC 4 eac:intr:num eac:intr:page "Short study period"
-.LP
-Wilbur has a hay and straw business, and he runs trucks with a draw bar
-trailer. The couplings between the tractor unit and the trailer have a limited
-life under the arduous farm conditions and heavy loads. 
-.LP
-Wilbur has the choice of two couplings. Brand A costs 2,000 and is expected to
-last 5 years, and Brand B cost 1,500 and is expected to last 3 years.
-.LP
-The salvage values for the couplings are shown in the table below.
-.TS
-tab (#) center ;
-lp-2  lp-2  lp-2 .
-#_#_#
-#Brand A#Brand B#
-.T&
-l  n  n  .
-_
-Salvage after 1 year#1,000#750
-Salvage after 2 years#700#300
-Salvage after 3 years#400#0
-Salvage after 4 years#200#0
-_
-.TE
-.LP
-We will now calculate the EACs for 3, 4, 5, 8, 11 and 15 year study periods. The
-calcuations for the table below are shown in Appendix G.
-.TS
-tab (#) center ;
-l cp-3 s s 
-lp-2  lp-2  lp-2 lp-2.
-#Equivalent Annual Cost
-#_#_#_#
-#Brand A#Brand B#A -B
-.T&
-l  n  n  n .
-_
-Year 3#761#657#104
-Year 4#661#721#(60)
-Year 5#597#697#(100)
-Year 8#638#676#(38)
-Year 11#626#668#(42)
-Year 15#597#657#(60)
-_
-.TE
-.LP
-The table above shows that brand A is the lowest cost option except in year 3.
-In year 3 the full life of the brand B has been utilised but the more expensive
-brand A still has 2 years remaining, this results in matching brand B at its
-most efficient with brand A when the residual value is neglible.
-year 3.
-.LP
-The EAC in the example above has an implied lenght of 15 years. This is the LCM
-of 5 and 3. However the use of an 11 year study period would only increase the
-costs by 4.86% #(597 -> 626)# for brand A and 1.67% #(657 -> 668)# for brand B.
-If the study period is 8 years the costs increase by 6.87% #(597 -> 638)# for
-brand A and 2.89% #(657 -> 676)# for brand B.
-.
-.NHTOC 4 eac:intr:num eac:intr:page "Long study period"
-.LP
-Wilbur has a flat root that needs repairing on one of the farm buildings. The
-expectaion is that the building will be in use for at least the next 100 years.
-If the cost of capital is 12% which of the options is the most cost efficient?
-.LP
-The cost in the table below are in m\[S2]
-.TS
-tab (#) center ;
-lp-2  lp-2  lp-2 lp-2.
-#_#_#_#
-#Felt#EPDM Rubber#GRP
-.T&
-l  n  n  n .
-_
-Buy#40#50#80
-Install#15#10#10
-Annual maintenance#4#2#1
-Life#15#30#25
-_
-.TE
-.UL Principle
+.IP "Initial Cost" 5
+This is the cost to purhase the piece of equipment and should also account for
+any tax, installation, pre delivery inspections, freight and any other costs
+incured in the purchase. 
+.IP "Insurance" 5
+Insurance represents the cost of fire, theft, accident, and liability insurance
+for the equipment. Insurance is a relatively fixed cost, however, the cost of
+insuring a new vehicle is generally slightly higher during the first few
+years of ownership due to the higher replacement value in the event of an
+accident. The new safety features which are increasily being added to new
+vechiles are heloping to reduce the risk of a colission and subsequently a
+large payout and the new safety technolgy is therefore helping to reduce the
+premium of new vechiles over older vechiles.
+.IP "Storage" 5
+The cost of rent, maintenance and security for the equipment on an owned or
+leased site.
+.IP "Taxes" 5
+The vehicle tax as imposed by the goverment agency.
+.IP "Finance costs" 5
+This is commonly the interest cost of the debt incurred in purchasing the
+equipment. Ensure that the cost of capital used includes the cost of all of the
+capital involved in the investment.
+.IP "Operator" 5
+Sometimes the cost of the operator is included and sometimes the cost is split
+out seperately. However, the operator costs should include overtime,
+compensation insurance, health care, National Insurance contributions and
+bonus.
+.IP "Parts inventory" 5
+xxxxxxxxxxxx
+.IP "Decommissioning costs or removal costs" 5
+xxxxxxxxxxxx
+.IP "Salvage" 5
+The salvage value refers to value that is expected on the disposal of the
+asset. We will quickly mention sunk costs which are the costs that have
+allready been incurred, maybe in recently replacing an expensive component, and
+they are typically irrelevant to the replacement decision. Ignoring sunk costs
+can be a difficult economic principle for some people to accept. However, it
+must be accepted and withit the knowledge that mistakes can be made in
+specifiying machines and understanding depreciation costs. The only value that
+matters is the expected salvage value on disposal of the equipment now. The
+only time sunk costs are relevant is on an after tax basis. If the sunk costs
+will generate a tax loss then income taxes will be reduced or possibly
+reclaimed. The larger the loss or credit the larger the income tax benefit and
+the greater the tax incentive to replace the asset. If there are tax benefits
+to replacing the equipment these should be accounted for as an extra item. 
 .sp 0.5
-.RS
-.LP
-Theroretically it is only possible to compare the EACs, of the three options,
-over the common life, which in this instance is the 150 years (the lCM of 13,
-30 and 25). However, in practise the EAC would be calculated for the life of
-each product, by using the capital recovery factor, and taken to be
-representative of the expected
+Depreciation represents the decline in market value of a piece of equipment due
+to age, wear, deterioration, and obsolescence. Depreciation tends to be
+greatest in the early years due to the release of new technology and the loss
+of prestige associated with new equipment. We are interested in depreciation in
+so far as as we need to estimate the salvage value. We do not use depreciation
+in the capital recovery, if you are unsure on this point see chapter XX
+.
+.RE
+.IP "Variable/operating costs" 5
+Variable costs generally include those costs that are incurred as a direct
+result of the machine being used. These costs vary as machine use varies, a
+tractor on heavy use with a PTO will consume a different amount of fuel to a
+tractor used for haulage. Variable costs are often referred to as operating
 costs.
-.RE
+.RS
+.IP "Fuel" 5
+Typicaly a rising fuel price is factored into the calculation To improve data
+accuracy, share application information with all bidders and request fuel
+consumption data from historical records or on-board technologies.
+.IP "Maintenance" 5
+This includes all scheduled maintenance as per the operators manual for the
+accumulated use of the equipemt. Typically the maintenance would also include
+the filter, lubrication oil, grease (FOG) costs and consumables involved in
+performing the maintenance.
+.IP "Special items" 5
+The cost of replacing high wear items such a dozer, grader, and scraper blade
+cutting and end bits, as well as ripper tips, shanks, and shank protectors,
+should be calculated as a separate item of operating expense. As usual, unit
+cost is divided by expected life to yield cost per hour.
+.IP "Repairs" 5
+When weighting the replacement of an existing piece of equipment it is not
+enough to focus on short term repair costs. If the expected future repair costs
+are not taken into considereation the short term costs can be used to avoid a
+larger capital cost every year. Following this logic over a number of years you
+would save a whole series of short term costs that would exceed the larger
+capital costs that could have been made some years previously.
 .sp
-.UL Calculation
-.sp 0.5
-.RS
-.EQ
-EAC sub Felt = (40 + 15)(A/P, 12%, 15) + 4
-~~=~~
-55(0.1468) + 4
-~~=~~
-12.08 " per m\[S2]"
-.EN
-.sp -0.7v
-.EQ
-EAC sub EPDM = (50 + 10)(A/P, 12%, 30) + 2
-~~=~~
-60(0.1241) + 2
-~~=~~
-9.45 " per m\[S2]"
-.EN
-.sp -0.7v
-.EQ
-EAC sub GRP = (80 + 10)(A/P, 12%, 25) + 1
-~~=~~
-90(0.1275) + 1
-~~=~~
-12.47 " per m\[S2]"
-.EN
+In the previous chapter we stated that repair costs dominste over life time of
+an asset. Therefore, if an asset is up for replacement it is not enough to look
+at the short term repair costs but the longterm repair costs must be estimated.
+.IP "Tyres" 5
+Tyres can be a large component of the operating cost on some machines. If the
+tyre cost is substantial it is not uncommon to subtract the tyre cost from the
+purchase cost and move the cost to the operating costs. If this is not done the
+operating costs could be understated in the early years. The tyre cost should
+include both replacement and repair.
+.IP "Downtime" 5
 .RE
-.UL Solution
-.sp 0.5
-.RS
 .LP
-The EPDM is the lowest cost option by quite a margin. The remaining two options
-have very similar costs.
-.RE
-.sp
-.LP
-What would be the impact if Wilbur decided that in 60 years the yard would not
-be maintained. He has a generational tenancy on this land and after 60 years he
-expects his family will have lost their access to that farm. 
-.LP
-.UL Principle
-.sp 0.5
-.RS
-This particular type of cash flow is called a deffred annuity. There are two
-approaches to the problem:
-.IP "1" 5
-The EACs for the felt and the EPDM would not change as 15 and 30 are multiples
-of 30. The GRP will be installed in year 0 and replaced in years 25 and 50.
-Logically there will be no salvage value for the 10 year old roof at year 60.
-.sp 0.5v
-Calculate the PW for the roofs using the single payment present worth factor
-for each cash flow. Once the PW is established we can convert it to an EAC over
-the 60 year times span using the capital recovery factor.
-.IP "2" 5
-Previously we calculated the EAC for the GRP roof. We know that the roof is
-going to be replaced at years 25 and 50, therefore, the previously calculated
-EAC infers a life of 75 years. Therefore the PW can be calculated by using the
-uniform present worth factor and the previously calculted yearly payment over
-75 years. Once the PW is established we can convert it to an EAC over the 60
-year times span using the capital recovery factor. 
-.RE
-.sp
-.UL Calculation
-.sp 0.5
-.RS
-.IP "Method 1" 15
-.sp 0.5
+It is not always clear into which category a costs falls. Depreciation for
+instance is affected by, amongst other things, the passage of time and the
+accumulation in hours, and some maintenance must be carried out regardless of
+whether the equipment is used. However, even allowing for these problems in the
+exact classification of certain costs it is essential to understnd the
+distinction between fixed and variable costs. 
 .
-.EQ 
-PW ~~mark =~~ -90 - 90(P/F, 12%, 25) - 90(P/F, 12%, 50)
-.EN
-.sp -0.7v
-.EQ 
-lineup =~~
--90 - 90(0.0588) - 90(0.0035)
-.EN
-.sp -0.7v
-.EQ 
-lineup =~~
--90 - (5.29) - 0.32
-.EN
-.sp -0.7v
-.EQ 
-lineup =~~
--95.61
-.EN
-.
-.KS
-.EQ 
-EAC lineup =~~
-95.61(A/P, 12%, 60) + 1
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-95.61(0.1201) + 1
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-11.49 + 1
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-12.49 
-.EN
-.KE
-.IP "Method 2" 15
-.sp 0.5
-.EQ 
-PW lineup =~~
--90(0.1275) = -11.48
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
--11.48(P/A, 12%, 75)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
--11.48(8.3316)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
--95.65
-.EN
-.
-.EQ 
-EAC lineup =~~
-95.65(A/P, 12%, 60) + 1
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-95.65(0.1201) + 1
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-11.49 + 1
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-12.49 
-.EN
-.RE
-.UL Solution
-.sp 0.5
-.RS
+.SH
+CHAPTER NOT COMPETE
 .LP
-It would appear that the adjust to the time period from 100 to 60 years has
-changed the cost by 2 pence! What is more the theoretical life for comparison
-is 150 years and we have halfed the life with little impact on the result.
+To add:
+.IP \(en
+Comprehensive example
+.IP \(en
+Benefits of life cycle analysis
+.IP \(en
+Risks of life cycle analysis
 .LP
-The explanation can be found in our previous work. We learnt in Section 9 that
-a perpetuity was an annuity without end, and that therefore an annuity is a bit
-of a perpetuity. If discounting is done over very long periods then values far
-enough in the future have little impact on the present value. This can be seen
-in method 1: 
-.RS
-.RS
-.RS
-.EQ
-PW lineup =~~
--90 - (5.29) - 0.32
-.EN
-.RE
-.RE
-.RE
-.LP
-The replacemnt of the roof at year 50 adds 0.32 to the cost. As the value being
-added it would be logical to suggest that the PW is approaching the limit which
-would be the perpetuity value.
-.LP
-The perpetuity value can be calculated using the capitalized cost formula.
-.RS
-.RS
-.RS
-.EQ
-Perpetuity lineup =~~
-11.48(P/A, 12%)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-11.48(8.3333)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
-95.67
-.EN
-.RE
-.RE
-.RE
-.LP
-After 25 years the costs have allready risen to 95% of the perpetuity value so
-any change in the time frame is going to have a very limited inmapct on the
-results.
-.RS
-.RS
-.RS
-.EQ
-PW lineup =~~
--11.48(P/A, 12%, 25)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
--11.48(7.483)
-.EN
-.sp -0.7v
-.EQ
-lineup =~~
--90.04
-.EN
-.RE
-.RE
-.RE
-.RE
-.
-.sp
-.NHTOC 3 eac:intr:num eac:intr:page "Creditbility due to the estimated life"
-.LP
-The exact life of project and investments is rarely known. The expected life of
-a product of 5 years might be between 4 and 8 years. With longer projects the
-period of use is often even less certain. The 20, 30 or 50 year horizon is the
-limit of the time that the costs and revenuies are to be consifered over, but
-the life of the product maybe far longer.
-.LP
-The life of each alternative is not known exactly and the study period is also
-not precise. Therefore it make little sense to take the approach of Section
-18.2.1.1, where we calculted the EAC over different lives using residual
-values. The work was done to show how to use the residual values and the
-limitied impact of the compuataion. The preferred method is to assume an
-indefinite life and calculate the EACs or EAWs. 
-.LP
-The lives of alternatives are often adapted to match changing circumstances.
-Wilbur decides to contiue to rent a yard for his livestock haulage business for
-the next 3 years. After 3 years he is given the opportunity to buy the site,
-however, he has decided that he would be better of in another area as the
-majority of work his south of his current location thereby increasing the
-amount of time he is running empty. He dicides to continue renting as he looks
-for somewhere 20 miles south of his current location, the rental cost can not
-be recovered but the cost of purchasing a site and then selling it in the
-next 2 years would be more expensive.
-.LP
-The logic for working with the uncertaiinty is as follows. We will return to
-the example 18.2.1.1 with the couplers. The time horizon for either alternative
-is less than the life of the lorry they are to be used with. Hopothetically the
-lorry has a life of 10 years and the two alternatives have lives of 5 and 3
-years. Replacements will be purchased later, when better estimates will be
-availbe for both the remainig life of the lorry and replacement couplings
-themselves. However, it makes sense to use the best information at any given
-point in time and compare the alternatives over their "best life" and the
-choose the lowest cost option.
-.LP
-There are exceptions to any rule. It obviously does not make sense to use this
-rule for a short term contract with a low probability of being reknewed. The
-comparission of very short lived alternatives with far longer alternatives, as
-often encountered when replacing equipment, requires that the study period be
-carefully defined.
-.sp
-.NHTOC 2 eac:intr:num eac:intr:page "Conclusion"
-.
+
 

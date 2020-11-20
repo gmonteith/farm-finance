@@ -1,557 +1,413 @@
 .
 .sp 5
-.NHTOC 1 sec:annud:num sec:annud:page "Annuities Due"
+.NHTOC 1 sec:annug:num sec:annug:page "Growing Ordinary Annuities"
+.LP
+There are also some instances of growing annuities such as valuation models
+where dividends grow at a constant rate for a given period of time.  Another
+example would be commercial real estate leases where payment is at the period
+end with an upward only revision to the lease. \(dg
+.FS
+\(dg Typically leases are an annuity due, the payment is made in advance of the
+service. In this instance we have stated that the payment is at the period end,
+so it is a type of ordinary annuity.
+.FE
 .sp
+.NHTOC 2 sec:pvg:num sec:pvg:page "PV given an Growing Ordinary Annuity"
 .LP
-Lease payments, rent, insurance premiums, and tuition are examples of prepaid
-expenses that occur at each period's beginning. Payment is made before the
-period of service begins. This beginning of period annuity is called an annuity
-due. A financial caclulator usually has function BEGIN and END for use with
-annuities. If you are dealing with an annuity due you will set the calculator
-to BEGIN.
-.PS
-box invis wid 0.25 ht 0.20 "0"
-arrow down 0.3 from last box.s
-line up 0.3 from last box.n
-line right 0.3 from last box.e
-box invis wid 0.25 ht 0.20 "1"
-arrow down 0.3 at last box.s
-line right 0.3 from last box.e
-box invis wid 0.25 ht 0.20 "2"
-arrow down 0.3 at last box.s
-line right 0.3 from last box.e 
-box invis wid 0.25 ht 0.20 "3"
-arrow dashed down 0.3 at last box.s
-line dashed right 0.3 from last box.e 
-.PE
-.
-.NHTOC 2 sec:pvannud:num sec:pvannud:page "PV given an Annuity Due"
-.LP
-We will look at an example and then compare an annuity due with an ordinary
-annuity. 
-.LP
-Wally pays 250 rent per week at the beginning of the week. He is considering
-paying a whole year's rent in advance. Given at interest rate of 5.2%, how much
-is would Wally have to pay in advance to cover the whole year's rent?
-.sp -1v
-.PS
-A: [ box invis wid 0.25 ht 0.20 "0"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			move down 0.2
-			arrow down 0.3 
-			"PV" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "1"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "2"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e 
-			line down 0.20 dashed right 0.15
-			line up 0.40 dashed right 0.15
-			line down 0.20 dashed right 0.15
-			line right 0.3 
-			box invis wid 0.25 ht 0.20 "49"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "50"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "51"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-		]
-box invis "i = (5.20/100)/52" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.1)
-box invis "n = 52" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
-.PE
-The cash flow series would be as follows:
+The factored form for the series of an ordinary annuity is:
 .EQ
-250 
-~~+~~ 250 { 1  over { (1 + i) sup 1 } } 
-~~+~~ 250 { 1  over { (1 + i) sup 2 } } 
-...~~... + 250 { 1  over { (1 + i) sup 49 } } 
-~~+~~ 250 { 1  over { (1 + i) sup 50 } } 
-~~+~~ 250 { 1  over { (1 + i) sup 51} }
-.EN
-The factored form the series in our example is as follows:
-.EQ
-250 times left [ 1
-+ 1  over { (1 + i) sup 1 }
+PMT times left [  1  over { (1 + i) sup 1 } 
 + 1  over { (1 + i) sup 2 } 
-...~~...~
-+ 1  over { (1 + i) sup 49 }
-+ 1  over { (1 + i) sup 50 }
-+ 1  over { (1 + i) sup 51 } right ]
++ 1  over { (1 + i) sup 3 } 
++ 1  over { (1 + i) sup 4 } 
+...~~... 
++ 1  over { (1 + i) sup n } right ]
 .EN
+.LP
+The growing annuity differers only in that there is a constant rate of growth,
+represented by # 1 + g # which starts at the second cash flow.
+.EQ
+PMT times left [  
+1  over { (1 + i) sup 1 } 
++ { 1( 1 + g) } over { (1 + i) sup 2 } 
++ { 1( 1 + g) sup 2 }  over { (1 + i) sup 3 } 
++ { 1( 1 + g) sup 3 }  over { (1 + i) sup 4 } 
+...~~... + 
+{ 1( 1 + g) sup n-1 }  over { (1 + i) sup n } 
+right ]
+.EN
+.LP
 The values for the first term "a" and the common ratio "r" can now be
 established from the series.
 .EQ
-a = 1  ~~~~~~~~~ "Common Ratio: " left [ b over a = c over b right ] 
-~~->~~
-{ left ( 1  over { (1 + i) sup 1 } right ) over  1  } 
-= { left ( 1  over { (1 + i) sup 2 } right )
-over
-left ( 1  over { (1 + i) sup 1 } right ) } 
+a = 1  over { (1 + i) sup 1 } 
+~~~~~~~~~ 
+"Common Ratio: " left [ b over a = c over b right ] 
 ~~->~~ 
-r = 1  over { (1 + i) sup 1 } 
+{ left ( { (1 + g) } over { (1 + i) sup 2 } right ) 
+over left ( 1  over { (1 + i) sup 1 } right )} 
+= { left ( { (1 + g) sup 2} over { (1 + i) sup 3 } right ) 
+over left ( { (1 + g) } over { (1 + i) sup 2 } right )} 
+~~->~~ 
+r = { (1 + g) } over {  (1 + i) }
 .EN
-To establish the future value of  the annuity we can the formula for the sum of
-a geometric series with a common ratio less than 1:
-.EQ
-S sub n = {  a(1 - r sup n ) } over { ( 1 - r ) }  
-~~~~~~~
-"where r < 1 (disconting)" 
-~~~->~~~
-PV sub ad = PMT left [  {  a(1 - r sup n ) } over { ( 1 - r ) } right ]
-.EN
-.
-.EQ
-PV sub ad
-lm
-PMT left [  {  a(1 - r sup n ) } over { ( 1 - r ) } right ]
-~~~->~~~ 
-PMT left { { 1 left [ 1 - { left ( 1  over { (1 + i) } right ) sup n } right ] } 
-over 
-{ 1 - left ( 1  over { (1 + i)  } right ) } right } 
-~~~->~~~ 
-PMT left { { 1 left [ 1 - { left ( 1  over { (1 + i) } right ) sup n } right ] } 
-over 
-{ left ({ (1 + i) - 1 }  over {  (1 + i)  } = { i over { ( 1 + i ) } } right ) } right } 
-.EN
-.EQ
-lineup ->~~ 
-PMT left { 1 { left (  { ( 1 + i ) } over i right ) }
-{ left [ 1 - { left ( 1  over { (1 + i) } right ) sup n } right ] } right } 
-~~~->~~~ 
-PMT{ left (  { ( 1 + i ) } over i right ) }
-{ left [ 1 - { left ( 1  over { (1 + i) } right ) sup n } right ] }
-~~~->~~~ 
-{( 1 + i ) }{left ( PMT over i right ) } 
-{ left [ 1 - { 1  over { (1 + i) sup n }} right ] }
-.EN
-.EQ
-lineup ->~~ 
-{( 1 + i ) }{left ( PMT over i right ) } 
-{ left [ 1 - { 1  over { (1 + i) sup n }} right ] }
-.EN
-Now the formula for an annuity due has been established we can calculate the
-value of a years rent for Wally.
-.EQ
-PV sub ad = { left ( 1 + { 5.2 over { 100 times 52 } }  right ) }
-{left ( 250 over { 5.2 over { 100 times 52 } } right ) } 
-{ left [ 1 - { 1 over { left ( 1 + { 5.2 over { 100 times 52 } } 
-right ) sup 52 } } right ] } 
-~~=~~ 
-12,674.28
-.EN
-There is much confusion surrounding annuity due. The difference is only in the
-shifting of the cash flow from the end of the payment period to the beginning.
-If we look at the cash flow diagram for the rent again from the perspective of
-both an annuity due and an ordinary annuity.
-.sp
-.UL Annuity 
-.UL Due:
-.PS
-A: [ box invis wid 0.25 ht 0.20 "0"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			move down 0.2
-			arrow down 0.3 
-			"PV" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "1"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "2"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e 
-			line down 0.20 dashed right 0.15
-			line up 0.40 dashed right 0.15
-			line down 0.20 dashed right 0.15
-			line right 0.3 
-			box invis wid 0.25 ht 0.20 "49"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "50"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "51"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-		]
-box invis "i = (5.20/100)/52" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.1)
-box invis "n = 52" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
-.PE
-.
-.EQ
-PV sub ad = {( 1 + i ) }{PMT over i } 
-{ left [ 1 - { 1 over { (1 + i) sup n } } right ] }
-.EN
-.UL Ordinary
-.UL Annuity:
-.PS
-A: [ box invis wid 0.25 ht 0.20 "0"
-			line down 0.3 from last box.s
-			arrow down 0.3 
-			"PV" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "1"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "2"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e 
-			line down 0.20 dashed right 0.15
-			line up 0.40 dashed right 0.15
-			line down 0.20 dashed right 0.15
-			line right 0.3 
-			box invis wid 0.25 ht 0.20 "50"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "51"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "52"
-			arrow down 0.3 at last box.s
-			"250" below at end of last arrow
-		]
-box invis "i = (5.20/100)/52" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.1)
-box invis "n = 52" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
-.PE
-.
-.EQ
-PV = PMT over i left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
-.EN
-Note:
-.IP \(bu
-The ordinary annuity has the same number of individual cash flows but the first
-one is a time period zero and the last one an time period #CF sup n-1#. 
-.IP \(bu
-As the first cash flow in the annuity due is at time zero, it leads to a small
-change in the formula for the PV. The formula for an annuity due has the
-additional multiplication by #(1 + i)#
-.IP \(bu
-The PV of an ordinary annuity can be converted to the PV of an annuity due by
-multiplying the PV of an ordinary annuity by #(1 + i)#
-.IP \(bu
-The PV of an annuity due can be converted to the PV of an ordinary annuity by
-dividing the PV of the annuity due by #(1 + i)#
-.
-.NHTOC 2 sec:pmtd:num sec:pmtd:page "PMT given an PV"
 .LP
-The formula for the annuity due can be rearranged to resovle for the PMT:
+The equation for the sum of a geometric series can now be used to establish
+the present value of the annuity.
 .EQ
-PV = {( 1 + i ) }{PMT over i } 
-{ left [ 1 - { 1 over { (1 + i) sup n } } right ] }
+PMT times { a(1 - r sup n ) } over { ( 1 - r ) } 
 ~~~->~~~
-PV(i) = ( 1 + i ) PMT { left [ 1 - { 1 over { (1 + i) sup n } } right ] }
-~~~->~~~
-.EN
-.EQ
-PMT sub ad = {PV(i) ( 1 + i )} over 
-{ left [ 1 - { 1 over { (1 + i) sup n } } right ] }
-.EN
-.NHTOC 2 sec:perd:num sec:perd:page "n given a PV"
-.LP
-The formula for the annuity due can be rearranged to resovle for the number of
-compounding periods:
-.EQ
-PV = {( 1 + i ) }{PMT over i } 
-{ left [ 1 - { 1 over { (1 + i) sup n } } right ] }
-~~~->~~~
-PV over { ( 1 + i ) } = {PMT over i } 
-{ left [ 1 - { 1 over { (1 + i) sup n } } right ] }
-~~~->~~~
-PV(i) over { ( 1 + i ) } = PMT 
-{ left [ 1 - { 1 over { (1 + i) sup n } } right ] }
-~~~->
-.EN
-.EQ
-...~~~
-PV(i) over { ( 1 + i ) PMT} = 
-{ left [ 1 - { 1 over { (1 + i) sup n } } right ] }
-~~~->~~~
-1- { PV(i) over { ( 1 + i ) PMT} } = 1 over { (1 + i) sup n } 
+PMT times left { { 1 over { ( 1 + i ) }  left [ 1 - left ( { (1 + g) } 
+over {  (1 + i) } right ) sup n right ] } 
+over { 1 - { (1 + g) } over {  (1 + i) } } right } 
 ~~~->~~~
 .EN
 .EQ
 ...~~~
-left ( 1- { PV(i) over { ( 1 + i ) PMT} } right ) sup -1 = (1 + i) sup n 
+PMT times left { { 1 over { ( 1 + i ) }  left [ 1 - left ( { (1 + g) } 
+over {  (1 + i) } right ) sup n right ] } 
+over {  { (1 + i ) - (1 + g) } 
+over {  (1 + i) } 
+= { { ( i - g ) }  over { ( 1 + i ) } } } right } 
 ~~~->~~~
-ln left [ left ( 1- { PV(i) over { ( 1 + i ) PMT} } right ) sup -1 right ]
-= "n ln"(1 + i)
+PMT times left ( { { ( 1 + i ) } over { ( i - g ) } } right ) { left ( 1 
+over { ( 1 + i ) } right )  left [ 1 - left ( { (1 + g) } 
+over {  (1 + i) } right ) sup n right ] } 
 ~~~->~~~
 .EN
 .EQ
-n sub ad = 
-{ ln left [ left ( 1- { PV(i) over { ( 1 + i ) PMT} } right ) sup -1 right ] }
-over 
-{ ln (1 + i) }
+PV sub ga =  PMT over { i - g } 
+left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
 .EN
-.KS
-.NHTOC 2 sec:annud:num sec:annud:page "FV given and Annuity Due"
 .LP
-Wally has deciced to pay 800 into an account at the beginning of each month for
-5 years at the an interest rate of 5% per annum. What is the future value?
+A suitably sketchy scenario. Wally has decided to invest in some commercial
+property. The terms of the lease investment are that the annual end of year
+lease payments for the next 10 years will increase by 5% a year. If the first
+years lease payment is 3,000 and an appropriate interest rate is 8%, what is
+the most Wally can pay for these lease payments? 
 .PS
 A: [ box invis wid 0.25 ht 0.20 "0"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
+			arrow down 0.5 from last box.s 
+			"PV" below at end of last arrow
+			line right 0.7 from last box.e
 			box invis wid 0.25 ht 0.20 "1"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
+			arrow up 0.4 at last box.n
+			"3,000" above at end of last arrow
+			line right 0.7 from last box.e
 			box invis wid 0.25 ht 0.20 "2"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
+			arrow up 0.45 at last box.n
+			"3,000#(1.05)#" above at end of last arrow
 			line right 0.3 from last box.e 
 			line down 0.20 dashed right 0.15
 			line up 0.40 dashed right 0.15
 			line down 0.20 dashed right 0.15
 			line right 0.3 
-			box invis wid 0.25 ht 0.20 "57"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "58"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "59"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "60"
+			box invis wid 0.25 ht 0.20 "9"
 			arrow up 0.5 at last box.n
-			"FV" above at end of last arrow
+			"3,000#(1.05) sup 8#" above at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.20 "10"
+			arrow up 0.55 at last box.n
+			"3,000#(1.05) sup 9#" above at end of last arrow
 		]
-box invis "i = 5.0/100/12" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.1)
-box invis "n = 60" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
+box invis "i = 8.0/100" wid 0.6 ht 0.25 with .s at A.n + (0.55,0.4)
+box invis "n = 10" wid 0.6 ht 0.25 with .n at A.s + (0.40,0.25)
 .PE
-If the series was examined from the perspective of Wally making the deposits it
-would show that each deposit would be subject to the following amount of
-compounding:
+.sp
 .EQ
-800 (1 + i) sup 60 
-~~+~~ 800 (1 + i) sup 59 
-~~+~~ 800 (1 + i) sup 58  
-...~~... 
-+ 800 (1 + i) sup 3 
-+ 800 (1 + i) sup 2 
-~~+~~ 800 (1 + i) sup 1
-.EN
-.KE
-The series has been reorganised from smallest to largest value for factoring as
-the common ration is required to be greater than one as the series is
-compounding. The factored form of the series in our example is as follows:
-.EQ
-800 times left [ ( 1 + i ) sup 1 + ( 1 + i ) sup 2 + ( 1 + i ) sup 3 
-...~~... 
-+ ( 1 + i ) sup 58 
-+ ( 1 + i ) sup 59 
-+ ( 1 + i ) sup 60 right ]
-.EN
-The values for the first term "a" and the common ratio "r" can now be
-established from the series.
-.EQ
-a = ( 1 + i ) 
-~~~~~~~~~
-"Common Ratio: " left [ b over a = c over b right ]
-~~->~~ 
-{ (1 + i ) sup 1 } over  { (1 + i ) sup 2 } 
-= { ( 1 + i ) sup 3 } over { ( 1 + i ) sup 2 } 
-~~~->~~~
-r = ( 1 + i ) 
-.EN
-To establish the future value of  the annuity we can the formula for the sum of
-a geometric series with a common ratio greater than 1:
-.EQ
-S sub n = {  a({ r sup n } -1  ) } over { ( r - 1 ) }
-~~~~~~~ 
-"where r > 1 (compounding)"
-~~~->~~~
-FV = PMT times {  a({ r sup n } -1  ) } over { ( r - 1 ) } 
-.EN
-.EQ
-PMT left {  { ( 1 + i ) ( { { ( 1 + i ) sup n }  - 1 } ) } 
-over {  ( 1 + i ) - 1 } right } 
-~~~->~~~
-{ PMT (  1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
-over i
-.EN
-Now the formula for the future value of an annuity due has been established we
-can solve the problem.  
-.EQ
-FV sub ad = { PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
-over i
-~~~=~~~
-{ 800 left ( 1 + { 5.0 over { 100 times 12 } } right ) 
-left ( { left ( 1 + { 5.0 over { 100 times 12 } } right ) sup 60 } - 1 right )} 
-over { left ( 5.0 over { 100 times 12 } right ) }
+PV sub ga =  PMT over { i - g } 
+left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
 ~~~=~~~ 
-54,631.56
-.EN
-We will again examine the difference between the annuity due and an ordinary
-annuity. The difference is only in the shifting of the cash flow from the end
-of the payment period to the beginning.  If we look at the cash flow diagrams
-for the savings from the perspective of both an annuity due and an ordinary
-annuity.
-.KS
-.sp
-.UL Annuity 
-.UL Due:
-.PS
-A: [ box invis wid 0.25 ht 0.20 "0"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "1"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "2"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e 
-			line down 0.20 dashed right 0.15
-			line up 0.40 dashed right 0.15
-			line down 0.20 dashed right 0.15
-			line right 0.3 
-			box invis wid 0.25 ht 0.20 "57"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "58"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "59"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "60"
-			arrow up 0.5 at last box.n
-			"FV" above at end of last arrow
-		]
-box invis "i = (5.20/100)/52" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.1)
-box invis "n = 60" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
-.PE
-.KE
-.
-.EQ
-FV sub ad = { PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
-over i
+3000 over { 0.08 - 0.05 } 
+left [  
+1 -  left ( { 1 + 0.05 } over { 1 + 0.08 } right ) sup 10  
+right ]   
+~~~=~~~ 
+100,000
+left [  
+0.24551
+right ]   
+~~=~
+24,550
 .EN
 .sp
-.UL Ordinary
-.UL Annuity:
-.PS
-A: [ box invis wid 0.25 ht 0.20 "0"
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "1"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "2"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "3"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e 
-			line down 0.20 dashed right 0.15
-			line up 0.40 dashed right 0.15
-			line down 0.20 dashed right 0.15
-			line right 0.3 
-			box invis wid 0.25 ht 0.20 "58"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "59"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.25 ht 0.20 "60"
-			arrow down 0.3 at last box.s
-			"800" below at end of last arrow
-			arrow up 0.5 at last box.n
-			"FV" above at end of last arrow
-		]
-box invis "i = (5.20/100)/52" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.1)
-box invis "n = 60" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
-.PE
-.
-.EQ
-FV = { PMT ({ { ( 1 + i ) sup n }  - 1 } ) } 
-over i
-.EN
-Note:
-.IP \(bu
-The annuity due has the same number of individual cash flows but the first one
-is a time period zero and the last one an time period #CF sup n-1#. 
-.IP \(bu
-As the first cash flow in the annuity due is at time zero, it leads to a small
-change in the formula for the FV. The formula for an annuity due has the
-additional multiplication by #(1 + i)#
-.IP \(bu
-The FV of an ordinary annuity can be converted to the FV of an annuity due by
-multiplying the FV of an ordinary annuity by #(1 + i)#
-.IP \(bu
-The FV of an annuity due can be converted to the FV of an ordinary annuity by
-dividing the FV of the annuity due by #(1 + i)#
-.NHTOC 2 sec:pmtfvd:num sec:pmtfvd:page "PMT given a FV"
+.NHTOC 3 sec:pvg:num sec:pvg:page "Growth rate exceeds the discount rate"
 .LP
-The formula for the future value of an annuity due can be rearranged to resovle
-for the PMT:
-.EQ
-FV = { PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
-over i
-~~~->~~~
-FV(i) =  PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) 
-~~~->~~~
-.EN
-.EQ
-PMT sub ad = FV(i) over { ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) }
-.EN
-.KS
-.NHTOC 2 sec:perfvd:num sec:perfvd:page "n given a FV"
+In the left side of the equation the denominator has the value #i - g# which
+leads to the question as to what would happen if the growth rate #g# exceeds
+the interest rate #i#.
 .LP
-The formula for the future value of an annuity due can be rearranged to resovle
-for the number of compounding periods:
+The concept of the growth rate exceeding the interest creates some theoretical
+problems. In is generally accepted that industries with growth rates in excess
+of the discount rate will quickly attract capital, thereby increasing the
+capacity of the industry and reducing the returns down towards the cost of
+capital.
+.LP
+It is possible that an industry could exbibit a growth rate in excess of the
+discount rate for a \fBshort\fP period of time. However, the greater the value
+of #n# the more unrealistic the number returned by the equation. #n# represents
+the time frame, so the greater the value of #n# the longer the time period in
+which the growth rate is expected to exceed the discount rate.
+.LP
+The equation as presented here will return a positive number. The growth rate
+being in excess of the discount rate will cause both the left and right
+component of the equation to become negative. A negative multiplied by a
+negative results in a positive number. 
+.LP
+The larger the value of #n# the greater the negative value of #left [  1 - left
+( { 1 + g } over { 1 + i } right ) sup n  right ]# which means the series never
+approaches a limit. In fact the series is diverging and the PV keeps rising
+with larger values of #n#.
+.LP
+The lack of a limit is a problem. The very basis of the TVM equation is that
+money today is worth more than money tomorrow. It is this basic premise that
+creates the limit, cash flows far enough in the future become increasing
+worthless. Once the growth rate exceeds the interest rate, a cash flow can be
+greater than the one that preceded it.
+.sp
+.NHTOC 2 sec:pmtg:num sec:pmtg:page "Initial PMT given a PV"
+.LP
+The formula can be rearranged to resolve for the initial payment:
 .EQ
-FV = { PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
-over i
-~~~->~~~
-FV(i) =  PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) 
-~~~->~~~
-FV(i) over { PMT  ( 1 + i ) } =  { ( 1 + i ) sup n }  - 1
-~~~->
+PV =  PMT over { i - g } 
+left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
+~~~->~~~ 
+PV( i - g ) =  PMT 
+left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
+~~~->~~~ 
+.EN
+.EQ
+PMT sub ga =
+{ PV( i - g ) } over  
+left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
+.EN
+.LP
+As the payment grows with each compounding period the PMT in any given period
+can be calculated as the cash flow diagram shows by using the following
+equation: # PMT times ( 1 + g ) sup n-1 #
+.LP
+Therefore the payment in period 8 would be:
+.EQ
+PMT sup n=8 = 3,000 times (1.05) sup 7 = 4,221.30
+.EN
+.sp
+.NHTOC 2 sec:perg:num sec:perg:page "n given a PV"
+.LP
+Lastly the formula can be rearranged to resolve for the number of compound
+periods:
+.EQ
+PV =  PMT over { i - g } 
+left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
+~~~->~~~ 
+PV( i - g ) =  PMT 
+left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
+~~~->~~~ 
+{ PV( i - g ) }  over  PMT = 
+left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]
+~~~->~~~ 
 .EN
 .EQ
 ...~~~
-FV(i) over { PMT  ( 1 + i ) }  + 1 =  ( 1 + i ) sup n 
-~~~->~~~
-ln left [ FV(i) over { PMT  ( 1 + i ) } + 1 right ] =  "n ln"( 1 + i )
-~~~->
+1 - left ( { PV( i - g ) }  over  PMT right ) = 
+left ( { 1 + g } over { 1 + i } right ) sup n 
+~~~->~~~ 
+ln left [ 1 - left ( { PV( i - g ) }  over  PMT right ) right ] = 
+n ln left [ left ( { 1 + g } over { 1 + i } right ) right ]
+~~~->~~~ 
 .EN
 .EQ
-n sub ad =
-{ ln left [ FV(i) over { PMT  ( 1 + i ) } + 1 right ] } over { ln( 1 + i ) }
+n sub ga = { ln left [ 1 - left ( { PV( i - g ) }  over  PMT right ) right ] } 
+over
+{ ln left [ left ( { 1 + g } over { 1 + i } right ) right ] }
 .EN
-.KE
+.sp
+.NHTOC 2 sec:fvga:num sec:fvga:page "FV given a Growing Ordinary Annuity"
+.LP
+The future value of a growing annuity can be established by referring back to
+our earlier discourse on equivalence in section 3. Once we have established the
+PV of the growing annuity the multiplication of this value by the TVM equation
+for FV will give the future value for the growing annuity. We are moving the PV
+"n" number of years into the future at the given interest rate.
+.EQ
+FV sub ga = PV sub ga ~times~ (1 + i) sup n
+.EN
+.LP
+We can now establish the equation for the future value of a growing annuity.
+.EQ
+FV sub ga =  PMT over { i - g } 
+left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
+times
+(1 + i) sup n
+~~~->~~~
+PMT over { i - g } 
+left [  
+{ (1 + i ) sup n  - ( 1 + g ) sup n }  over { ( 1 + i )  sup n }
+right ]   
+times
+(1 + i) sup n
+~~~->~~~
+.EN
+.EQ
+...~~~
+PMT over { i - g } 
+left [  
+{ (1 + i ) sup n  - ( 1 + g ) sup n (1 + i) sup n } 
+over 
+{ ( 1 + i )  sup n }
+right ]   
+~~~->~~~
+PMT over { i - g } 
+left [  
+{ (1 + i ) sup n  - ( 1 + g ) sup n } 
+right ]   
+~~~->~~~
+.EN
+.EQ
+FV sub ga =
+PMT 
+left [  
+{ (1 + i ) sup n  - ( 1 + g ) sup n } 
+over 
+{ i - g } 
+right ]   
+.EN
+.LP
+Wally has decided to go travelling when he retires in 25 years. If the annual
+(year-end) amount he saves each year increase annually at a 3%, the growth rate
+of his salary and he proposes to start with a 1,000 at year end. Wally believes
+he can  earn 8 % on his savings, how much will his travel fund be worth in 25
+years?
+.PS
+A: [ box invis wid 0.25 ht 0.20 "0"
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.20 "1"
+			arrow down 0.4 at last box.s
+			"1,000" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.20 "2"
+			arrow down 0.45 at last box.s
+			"1,000#(1.03)#" below at end of last arrow
+			line right 0.3 from last box.e 
+			line down 0.20 dashed right 0.15
+			line up 0.40 dashed right 0.15
+			line down 0.20 dashed right 0.15
+			line right 0.3 
+			box invis wid 0.25 ht 0.20 "24"
+			arrow down 0.50 at last box.s
+			"1,000#(1.03) sup 23#" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.20 "25"
+			arrow down 0.55 at last box.s
+			"1,000#(1.03) sup 24#" below at end of last arrow
+			arrow up 0.5 from last box.n
+			"FV" above at end of last arrow
+		]
+box invis "i = 8.0/100" wid 0.6 ht 0.25 with .s at A.n + (0.35,-0.3)
+box invis "n = 25" wid 0.6 ht 0.25 with .n at A.s + (0.40,0.35)
+.PE
+.sp
+.EQ
+FV sub ga =  
+PMT 
+left [  
+{ (1 + i ) sup n  - ( 1 + g ) sup n } 
+over 
+{ i - g } 
+right ]   
+~~~->~~~ 
+1,000 ~
+left [  
+{ (1 + 0.08 ) sup 25  - ( 1 + 0.03 ) sup 25 } 
+over 
+{ 0.08 - 0.03 } 
+right ]   
+~~=~~ 
+95,093.95
+.EN
+.sp
+.NHTOC 2 sec:pmtfvg:num sec:pmtfvg:page "Initial PMT given a FV"
+.LP
+The formula can be rearranged to resolve for the initial payment:
+.EQ
+FV = 
+PMT 
+left [  
+{ (1 + i ) sup n  - ( 1 + g ) sup n } 
+over 
+{ i - g } 
+right ]   
+.EN
+.EQ
+PMT sub ga =
+FV over
+left [  
+{ (1 + i ) sup n  - ( 1 + g ) sup n } 
+over 
+{ i - g } 
+right ]   
+.EN
+.sp
+.NHTOC 2 sec:perfvg:num sec:perfvg:page "n given a FV"
+.LP
+Lastly the formula can be rearranged to resolve for the number of compound
+periods:
+.EQ
+FV = 
+PMT 
+left [  
+{ (1 + i ) sup n  - ( 1 + g ) sup n } 
+over 
+{ i - g } 
+right ]   
+~~~->~~~ 
+PMT over FV
+~=~
+left [  
+{ (1 + i ) sup n  - ( 1 + g ) sup n } 
+over 
+{ i - g } 
+right ]   
+~~~->~~~ 
+.EN
+.EQ
+...~~~
+left ( PMT over FV right ) times left (  i - g right )
+~=~
+(1 + i ) sup n  - ( 1 + g ) sup n
+.EN
+.LP
+The above equation resolves to:
+.EQ
+4.75 = 1.08 sup n - 1.03 sup n
+.EN
+.LP
+The only solution to the problem of the number of compound periods is to graph
+for incremental values of #n# on the right side of the equation. If the values
+of #n# are set on the x axis the results can be set on the y axis. The
+incremental values of #n# should yield a graph from which the result can be
+read.
+.G1
+frame invis ht 2 wid 3 left solid bot solid
+label bot "Years (\fIn\fP) " 
+label left "Future" unaligned "Value" left 0.2
+a=1.08
+b=1.03
+N=27
+R=25
+ticks bot out from 0 to N by 5
+ticks left out from 0 to 6 by 1
+define FV X (a)^$1 - (b)^$1 X
+draw A solid
+for i from 1 to N by +1 do
+{
+	next A at i, FV(i)
+}
+line dotted from R,0 to R,FV(R)
+line dotted from R,FV(R) to 0,4.75
+"4.75" size -1 ljust at (20, 5.5 )
+arrow from (22.5, 5.4) to (R, FV(R)) 
+.G2
+.LP
+You could of course use a computer to resolve the problem, be that with a
+spreadsheet or by writing a little bit of code.
 

@@ -1,694 +1,1105 @@
 .
 .sp 5
-.NHTOC 1 sec:cctf:num sec:cctf:page "Using the investment cost equations "
+.NHTOC 1 eac:intr:num eac:intr:page "Equivalent Annual Cost"
+.sp
 .LP
-Now that we have established the investment cost equations we can answer two
-important questions; what are thery for and how do I use them?
+Equivalent Annual Cost (EAC) is the cost per year of owning and operating an
+asset over its entire lifespan. Equivalent Annual Worth (EAW) is the benefit of
+owning an asset over its lifetime. The EAC or EAW is calculated by multiplyng
+the NPV, or Present Worth (PW) as it is sometimes known, of a project by the
+Capital Recovery Factor established in Section 11.6 and shown below.
+.EQ
+caprec(=)
+.EN
+.LP
+If we turn back a few pages to Section 16.2.3 we can see that in the example we
+established a NPV of 45,589. If we wished to convert this to an Equivalent
+Annual Worth we would multiply the NPV by the captial recovery factor. In the
+example in Section 16.2.3 the interest rate #i# is 15%, and the number of years
+#n# is 6.
+.EQ
+NPV lm 45,589 (A/P, 15%, 6)
+.EN
+.sp -0.7v
+.EQ
+lineup =~~
+45,589 ncaprec(0.15, 6)
+.EN
+.sp -0.7v
+.EQ
+lineup =~~
+45,489 times 0.26424
+.EN
+.sp -0.7v
+.EQ
+lineup =~~
+12,046
+.EN
+.LP
+It is important to grasp the meaning of the numbers when the NPV is converted
+into an annuity. We are answering the question: given an NPV of 45,589 what
+would be the annuity over the same time period with the same interest rate?
+With our knowledge of Equivalence from Section 3 we know that the annuity value
+and the NPV are equivalent.
+.LP
+Accountants tend to favour NPV and engineers the EAC or EAW, the difference in
+preference is purely down to familiarity and proffessional education as opposed
+to the actual merits of either method.  
+.LP
+The equivalent annual methods or annuity methods are best for compariing cost
+or savings that are measured in years. Also stating that this investment will
+cost or save 5,000 pounds per year makes intuitive sense to many people who are
+familliar with annual budgets.
+.LP
+We will also demonsttate in Section 18 that equivalent annual measures are
+particulairy useful when comparing projects of different lenghts. For instance
+a stainless steel pump may last longer than a brass design. The question is:
+"Does the longer life of the stainless steel pump make up for its higher
+initial cost?" Equivalent annual costs make the analysis of this scenario clear
+and easy to understand.
+.LP
+Equivalent Annual Worth uses the same sign conventions as the NPV. If you are
+dealing only with costs, so you are calculating an equivalent annual cost
+(EAC), the convention is that the costs are all positive. The important rule is
+to be consistent with the signs that you use and not to mix EAC and EAW. If
+there are costs and benefits then use EAW.
+.sp
 .
-.NHTOC 1 sec:cctf:num sec:cctf:page "What is the purpose of the investment cost equations?"
+.B1
+.B
+.ce
+.SM
+Note
 .LP
-The purpose of the investment cost equation is to reduce the work requied to
-establish the after tax NPV. The investment cost equations are not designed to
-be used to forecasting after tax earnings or net income.
+The same discount rate is used through out the examples for the sake of
+simplicity. This is not accurate as interest is tax deductible and would reduce
+the cost of capital.
+.sp
+.B2
+.
+.sp
+.NHTOC 2 eac:intr:num eac:intr:page "Examples"
 .LP
-The assumption is that the NPV is positive, otherwise why would you make the
-investment, and that taxation will need to be paid at the appropriate rate.
+For the purposes of the following examples the government allowable
+depreciation or Writing Down Allowance is 18% as represented by #d#, the
+discount rate #i# is 15%, the tax #t# is 29% for Self Assesment Tax and 19% for
+Corporation Tax.
+.LP
+Use the Capital Cost Tax Factor flow charts in Appendix B to aid with the after
+tax calculations. Unless otherwise stated it is \fBalways\fP presumed that
+Corporation Tax commences at time period two.
+.LP
+This section and the ones following rely heavily on the equations from Section
+11 on Engineering Economics. I will usually state the section in which the
+eqation was derived, but it may help to have the equations from Appendic C to
+hand to avoid too much page turning.
+.LP
+The last point is the use of the terms "investment cost" and "capital cost".
+When a project is made then you would view it as an "investment cost". However,
+when you are working out the tax that "investment cost" has been placed on the
+balance sheet and is refereed to as a "capitalised cost". This "capitalised
+cost" refers to the cost of the asset on the balance sheet.
+.
+.NHTOC 3 eac:intr:num eac:intr:page "No Salvage Value"
+.LP
+Wilbur has decided that the slurry pump uses in his diary needs replacing. The
+new slurry pump has an initial purchase cost of 70,000, it will cost 10,000 to
+remove the old pump and install the nem pump. The annual operating costs for
+energy and maintenance will total 12,000, the expected life is 10 years after
+which the salvage value will be zero. If the interest rate is 15% what will be
+the EAC?
+.PS
+A: [ box invis wid 0.25 ht 0.15 "0"
+			arrow down 0.7 at last box.s
+			"70,000" below at end of last arrow
+			move down 0.3
+			"10,000"
+			move down 0.1
+			move left 0.3
+			line right 0.65
+			move down 0.1
+			move left 0.33
+			"80,000"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "1"
+			arrow down 0.35 at last box.s
+			"12,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "2"
+			arrow down 0.35 at last box.s
+			"12,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "3"
+			arrow down 0.35 at last box.s
+			"12,000" below at end of last arrow
+			line dashed right 0.3 from last box.e
+			line down 0.20 dashed right 0.15
+			line up 0.40 dashed right 0.15
+			line down 0.20 dashed right 0.15
+			line dashed right 0.3 
+			box invis wid 0.25 ht 0.15 "8"
+			arrow down 0.35 at last box.s
+			"12,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "9"
+			arrow down 0.35 at last box.s
+			"12,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "10"
+			arrow down 0.35 at last box.s
+			"12,000" below at end of last arrow
+		]
+box invis "i = 15/100" wid 0.6 ht 0.25 with .s at A.n + (0.3,0.2)
+box invis "n = 10" wid 0.6 ht 0.25 with .n at A.s + (0.3,0.5)
+.PE
+.UL Method
+.sp 0.5
+.RS
+.IP "Step 1:" 10
+Use the capital recovery factor to convert the investment costs into an
+equivalent annual cost.
+.IP "Step 2:" 10
+Add the equivalent annual cost of the investment to the annual operating costs.
+It is important to realise that the 12,000 is already an annual payment and
+therefore an annuity. If you were to creat a present worth from an annuiyt and
+then convert the present worth back to an annuiyt you would end up where you
+started. If you revert back to Sections 11.5 and 11.6 you will that the
+equations for the Uniform Series Preset Worth and Capital Recovery are
+reciprocals of each other\(dg. The implication of the 12,000 already being an
+annuity is that the series started at time period one to be consistent with the
+equation derived in chapter 4. 
+.FS
+\(dg The reciprocal of a number is #1 over number#, which is its inverse.
+Therefore the reciprocal of #2# is #1 over 2#. If you multiple 10 by 2 and then
+by #1 over 2# you will end up where you started. #10 times 2 = 20 times 1 over
+2 = 10#. The reciprocal of a fraction is its inverse, therefore the reciprocal
+of #3 over 4# is #4 over 3#
+.FE
+.RE
+.sp
+.UL Calculation
+.sp 0.5
+.RS
+.IP "No Tax" 10
+.EQ L
+EAC lm
+"80,000(A/P, 15.0%, 10)" + 12,000
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+80,000(0.1993) + 12,000
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+15,940 + 12,000
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+27,940
+.EN
+.IP "Tax" 10
+For this example we will presume that Walter is running a limited company, tax
+is payable at 20%, tax payable commences in time period 2, the investment is
+not in a single asset pool and the AIA will be utilised.
+.sp 0.5v
+As there is no salvage value simply multiply the investment cost by the #CCTF
+sub AIA2#. The tax benefit arising from the annual operating costs being an
+expense of buiness must be be kept consistent with the tax benefits accruing
+from the capital investment.
+.sp 0.5v
+The tax benefit will need to be separated from the cost as the first tax effect
+is at time period 2 and the first cash flow at time period one.
+.EQ L
+"After tax EAC " lm
+80,000(A/P, 15.0%, 10)( CCTF sub AIA2 )
+.EN
+.sp -0.7v
+.EQ L
+lineup { hphantom{=~~} } 
++ 12,000 - 12,000(t)(P/F, 15%, 1)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+80,000(0.1993)(0.8488) + 12,000 - 12,000(0.2)(0.8696)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+13,533 + 12,000 - 2,087
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+23,446
+.EN
+It would seem more logical to multiply the initial investment by the CCTF then
+the annuity factor. However, remeber that the result is the same regardless of
+the order in which numbers are multiplied together. #2 times 3# and #3 times 2#
+give the same result.
+.sp 0.5v
+The tax benefits assoicated with the 12,000 cost appears to have gone through a
+strange transformation. If you refer back to Chapter 4 on ordinary annuities
+you will see that the series starts at time period 1 and creates a PV at time
+period zero. We have a tax benefit of 12,000(t) which is equivalent to an
+annuity where the series commenced at time period one, however, in this
+scenario the first tax effect is a time period two so we use the Single Payment
+Present Worth factor and our knowledge of equivalence to discount by an extra
+period (P/F, 15%, 1).
+.RE
+.
+.LP
+Key points:
+.IP \(bu
+If there is no salvage value then calculating the after tax EAW or EAC is very
+simple for the investment. The process, as we have just demonstrated, required
+only that the capitalised costs be multiplied by the appropriate CCTF.
+.IP \(bu
+Ensuring the costs maintain there consistency with the capital investment is 
+add a little complexity at time period 2.
+.IP \(bu
+In reality the tax effect would have little bearing on the decision to invest
+in the slurry pump and was probably unnecessary.
+.
+.NHTOC 3 eac:intr:num eac:intr:page "Salvage Value"
+.LP
+Wilbur is thinking of investing in a GPS system for his arable operation. The
+system cost 15,000 to buy and Wilbur must also pay a neighbour 1,000 per year
+to access his RTK signal to get the level of accuracy he wants. Wilbur expects
+to keep the system of the next 5 years after which the expected salvage value
+is 15% of the purchase price. Given a cost of capital of 14%, how much must
+Wilbur save in seed, fertiliser, diesel and hours each year to justify the
+purchase?
+.sp -1
+.PS
+A: [ box invis wid 0.25 ht 0.15 "0"
+			arrow down 0.7 at last box.s
+			"15,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "1"
+			arrow down 0.35 at last box.s
+			"1,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "2"
+			arrow down 0.35 at last box.s
+			"1,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "3"
+			arrow down 0.35 at last box.s
+			"1,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "4"
+			arrow down 0.35 at last box.s
+			"1,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "5"
+			arrow down 0.3 at last box.s
+			"1,000" below at end of last arrow
+			arrow up 0.3 at last box.n
+			"2,250" above at end of last arrow
+		]
+box invis "i = 14/100" wid 0.6 ht 0.25 with .s at A.n + (0.3,0.2)
+box invis "n = 5" wid 0.6 ht 0.25 with .n at A.s + (0.3,0.0)
+.PE
+.UL Method
+.sp 0.5
+.RS
+.IP "Step 1:" 10
+Establish the investment cost as the first present value.
+.IP "Step 2:" 10
+Convert the salvage value to a present value using the Single Payment Present
+Worth factor.
+.IP "Step 3:" 10
+Convert the present values to an EAC using the Capital Recovery factor and add
+to the 1,000 which is allready an annual cost.
+.RE
+.LP
+.sp
+.UL Calculation
+.sp 0.5
+.RS
+.EQ L
+EAC lm
+1,000 + left [ 15,000 - 2,250(P/F, 14%, 5) right ] times (A/P, 14%, 5)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+1,000 + left [ 15,000 - 2,250(0.5194) right ] times 0.2913
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+1,000 + left [ 15,000 - 1,169 right ] times 0.2913
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+1,000 + left [ 13,831 right ] times 0.2913
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+1,000 + 4,029
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+5,029
+.EN
+.RE
+.
+.LP
+Key points:
+.IP \(bu
+In the case of an ordinary annuity there is an implied cost in the final year
+for the RTK.
+.IP \(bu
+The tax has not been calculated as it is not a consideration in the decision to
+invest in the equipment. If there were tax concessions for investing in the
+equipment that could lower the initinal investment cost then the tax would
+become a consideration.
+.
+.NHTOC 3 eac:intr:num eac:intr:page "Salvage Value"
+.LP
+Wilbur has decided to purchase a new ATV for use in his sheep contracting
+business. The ATV cost 10,000 and Wilbur has opted to purchase a service plan
+that costs 300 per year to cover maintenance for the 5 years he expects to own
+the vehicle. After 5 years the estimated salvage value is 4,000 pounds. If the
+cost of capital is 12% what is the equivalent annual cost of the ATV?
+.sp -1
+.PS
+A: [ box invis wid 0.25 ht 0.15 "0"
+			arrow down 0.7 at last box.s
+			"10,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "1"
+			arrow down 0.35 at last box.s
+			"300" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "2"
+			arrow down 0.35 at last box.s
+			"300" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "3"
+			arrow down 0.35 at last box.s
+			"300" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "4"
+			arrow down 0.35 at last box.s
+			"300" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "5"
+			arrow up 0.3 at last box.n
+			"2,000" above at end of last arrow
+		]
+box invis "i = 12/100" wid 0.6 ht 0.25 with .s at A.n + (0.3,0.2)
+box invis "n = 5" wid 0.6 ht 0.25 with .n at A.s + (0.3,0.0)
+.PE
+.UL Method
+.sp 0.5
+.RS
+.IP "Step 1:" 10
+Establish the investment cost as the first present value.
+.IP "Step 2:" 10
+The service contract in this instance does not cover a service in the year of
+disposal. The lack of service is probably a moot point as the salvage value
+will in all likely hood reflect the fact that a service is required. In essence
+if the ATV was serviced a given salvage value could be expected and if a
+service was required the salvage value would be reduced by the cost of the
+service. The result is that the equivalent costs is unchanged. However for
+the purpose of this exercise we will follow the cash flow diagram. 
+.sp 0.5v
+The 300 cost implies an annuity over the 5 years, but the servicing is only
+over 4 years. Convert the 300 into present value using the Uniform Seirres
+Present Worth factor.
+.IP "Step 3:" 10
+Convert the salvage value to a present value using the Single Payment Present
+Worth factor.
+.IP "Step 4:" 10
+Convert the present values to and EAW using the Capital Recovery factor.
+.RE
+.LP
+.sp
+.UL Calculation
+.sp 0.5
+.RS
+.IP "No Tax" 10
+.EQ L
+EAC lm
+left [ 10,000 + 300(P/A, 12%, 4) - 2,000(P/F, 12%, 5) right ] times (A/P, 12%, 5)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+left [ 10,000 + 300(3.0373) - 2,000(0.5674) right ] times 0.2774
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+left [ 10,000 + 911 - 1,135 right ] times 0.2774
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+left [ 9,776 right ] times 0.2774
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+2,712
+.EN
+.IP "Tax" 10
+For the tax calculation we are going assume that Walter is a sole trader and
+his tax is due in time period one and the CCTF for the WDA in a continuous pool
+will be used. The tax rate #t# can assumed to be 29%, the declining balance
+rate #d# is 18%.
+.RS
+.IP "Step 1:" 10
+Establish the value of the appropriate CCTF.
+.IP "Step 2:" 10
+Calculate the after tax, after salvage present value of the investment using
+the investment cost equation.
+.IP "Step 3:" 10
+Recalculate the EAC.
+.RE
+.EQ L
+CCTF sub WDA = left [ cctf right ]
+~~=~~
+ncctf(0.18, 0.29, 0.12)
+~~=~~
+0.826
+.EN
+.EQ L
+"Investment cost" lm
+I left [ CCTF sub WDA right ] 
+- S left [ CCTF sub WDA right ] times  (P/F, i%, n)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+10,000 left [ 0.826 right ] - S left [ 0.826 right ] times (P/F, 12%, 5)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+8,260 - 1,652 times (0.5674)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+7,323
+.EN
+.
+.EQ L
+EAC lm
+left [ 7,323 + 300(1 -t)(P/A, 12%, 4) right ] times (A/P, 12%, 5)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+left [ 7,323 + 300(1 - 0.29)(3.0373) right ] times 0.2774
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+left [ 7,323 + 647 right ] times 0.2774
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+left [ 7,970 right ] times 0.2774
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+2,211
+.EN
+.RE
+.
+.LP
+Key points:
+.IP \(bu
+The calculation of the service plan over 4 years and not 5 adds additional
+complexity. 
+.IP \(bu
+The tax calculation is not too onerous with the use of the investment cost
+equations.
+.IP \(bu
+When calculating the after tax EAC it is important to remember that the salvage
+value has been included in the investment cost equation and the cost of the
+service plan must be reduced by the tax rate.
+.
+.NHTOC 3 eac:intr:num eac:intr:page "Salvage Value"
+.LP
+Wilbur has decided to investigate if it is worth installing a diesel tank on
+the farm as it would allow him to bulk buy his fuel. Wibur uses 90,000 liters a
+year and estimates he can save 5p per liter. The diesel storage system would
+cost 25,000 pounds and the maintenance would be 150 pounds per year and the
+expectation is that they would rise at 3% per year. After 15 years the
+estimated salvage value is 2,000 pounds. If the cost of capital is 15% is this
+a good investment?
+.PS
+A: [ box invis wid 0.25 ht 0.15 "0"
+			arrow down 2.0 at last box.s
+			"25,000" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "1"
+			arrow up 0.35 at last box.n
+			"4,500" above at end of last arrow
+			arrow down 0.35 at last box.s
+			"150" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "2"
+			arrow up 0.35 at last box.n
+			"4,500" above at end of last arrow
+			arrow down 0.55 at last box.s
+			"150#(1 + 0.03)#" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "3"
+			arrow up 0.35 at last box.n
+			"4,500" above at end of last arrow
+			arrow down 0.75 at last box.s
+			"150#(1 + 0.03) sup 2#" below at end of last arrow
+			line dashed right 0.3 from last box.e
+			line down 0.20 dashed right 0.15
+			line up 0.40 dashed right 0.15
+			line down 0.20 dashed right 0.15
+			line dashed right 0.3 
+			box invis wid 0.25 ht 0.25 "13"
+			arrow up 0.35 at last box.n
+			"4,500" above at end of last arrow
+			arrow down 0.95 at last box.s
+			"150#(1 + 0.03) sup 12#" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "14"
+			arrow up 0.35 at last box.n
+			"4,500" above at end of last arrow
+			arrow down 1.15 at last box.s
+			"150#(1 + 0.03) sup 13#" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "15"
+			arrow up 0.35 at last box.n
+			"4,500" above at end of last arrow
+			move up 0.2
+			arrow up 0.3
+			"2,000" above at end of last arrow
+			arrow down 1.35 at last box.s
+			"150#(1 + 0.03) sup n-1#" below at end of last arrow
+		]
+box invis "i = 15/100" wid 0.6 ht 0.25 with .s at A.n + (0.3,-0.2)
+box invis "n = 15" wid 0.6 ht 0.25 with .n at A.s + (0.3,0.2)
+.PE
+There are two ways of approaching the problem:
+.br
+.UL "Method 1"
+.sp 0.5
+.RS
+You could calculate the EAW by working the postive and negative cash flows
+calculating the annuities as required. The logic is to establish all the cash
+flows as present values and then convert them to the EAC.
+.IP "Step 1:" 10
+The 2,000 from the salvage must be converted to a present value using the
+Single Payment Presnet Worth factor. 
+.IP "Step 2:" 10
+The maintenance charge of 150 can be convered to a annuity by using the
+Geometric Gradient Presnet Worth factor.
+.IP "Step 3:" 10
+Once all the present values have been created the annuiyt can be established
+using the Capital Recovery factor,
+.IP "Step 4:" 10
+this can then be added to the annual savings of of 90,000 times 0.05 which
+totals 4,500 and is allready an annuity.
+.RE
+.sp
+.UL Calculation
+.sp 0.5
+.RS
+.EQ L
+EAW lm
+[ (-25,000 + 2,000(P/F, 15%, 15) - 150(P/A, 3.0%, 15.0%, 15) ) ~(A/P, 15.%, 15) ]   + 4,500 
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+[ (-25,000 + 2,000(0.1229) - 150(6.7378) ) ~(0.1710) ]  + 4,500
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+[ (-25,000 + 246 - 1,011 ) ~(0.1710) ]  + 4,500
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+[ -25,765 ~(0.1710) ]  + 4,500
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-4,406  + 4,500
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+94
+.EN
+.RE
+.
+.UL "Method 2"
+.sp 0.5
+.RS
+You could calculate the costs and the benefits seperatly. If benefits are
+greater than the costs then the investment is acceptable. Remember that the
+costs should have a negative sign and the benefits a positive sign to avoid
+confusion.
+.IP "Benefits" 10
+.RS
+.IP "Step 1:" 10
+First the salvage value of 2,000 must be discount to create a present value
+using the single payment present worth in Section 11.2,
+.IP "Step 2:" 10
+and then the capital recovery factor must be used to convert the present worth
+into an equivalent benefit.
+.IP "Step 3:" 10
+The equivalent benefit can be combined with the 5p savings on each liter to
+give the total benefits. Again the benefits per liter are allready stated in
+annual terms so no additional calculations are required.
+.RE
+.IP "Costs" 10
+.RS
+.IP "Step 1:" 10
+The maintenance costs need to be converted to a present value using the
+geometric gradient present worth factor.
+.IP "Step 2:" 10
+This present value can be added to the intitial cost and this can be converted
+to an equivalent cost using the capital recovery factor.
+.RE
+.LP
+Once the costs and benefits have been established the difference betweem the
+two can be established and the viability of investment can be assessed.
+.RE
+.sp
+.UL Calculation
+.sp 0.5
+.RS
+.EQ L
+Benefits lm 
+"2,000(P/F, 15%, 15)(A/P, 15%, 15)" + (90,000 times 0.05)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+2,000(0.1229)(0.1710) + 4,500
+=
+42 + 4,500
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+4,542
+.EN
+.sp
+.EQ L 
+Costs lineup =~~
+left ( -150(P/A, 3.0%, 15.0%, 15) - 25,000 right ) (A/P, 15.%, 15)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+left ( -150(6.7378) - 25,000 right ) (0.1710) 
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-4,448
+.EN
+.EQ L
+EAW lineup =~~ benefits - costs
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+4,542 - 4,448\(dd
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+94
+.EN
+.FS
+\(dd A little reminder on the signs. The addition is actually 4,542 + (-4,448)
+when the parenthesis are removed it becomes 4,542 - 4,448. If you mistakenly
+enter 4,542 - -4,448 into a calculator you will be calculating 4,545 - (-4,448)
+which on removal of the parenthesis is equal to 4,545 + 4,448 the result of
+which is 8,993! There is a footnote in Appendix B which covers very briefly the
+logic of mathematical signs.
+.FE
+.
+.RE
+.LP
+Key points:
+.IP \(bu
+The proposition is marginal before the tax and Wilbur would be ill advised to
+make the investment.
+.IP \(bu
+As the investment decisions is marginal before tax the added effort of
+calculating the tax would only further reduce the NPV. If an investment is
+unattractive before tax it is seldom worth the effort of calculating the tax
+impact.
+.IP \(bu
+It is worth notiing that the salvage value is often so heavily discounted that
+it has little impact on the calculation. It can be seen in the benefits
+calculation that the salvage has a EAW of 42.
+.
+.NHTOC 2 eac:intr:num eac:intr:page "EAC - Overhaul Cost"
+.LP
+Wilbur has an option to extend the life of a piece of equipment by 3 years with
+an overhaul at year 5. If the cost of the overhaul is 4,500, and the cost of
+capital is 10% what is the EAC for the overhaul?
+.LP
+The first stage is to understand the pattern of cash flows.
+.PS
+A: [ box invis wid 0.25 ht 0.25 "0"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "1"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "2"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "3"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "4"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "5"
+			arrow down 0.50 at last box.s
+			"4,500" below at end of last arrow
+			line dashed up at last box.n
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "6"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "7"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.25 "8"
+		]
+box invis "i = 10/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.1)
+box invis "n = 8" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.3)
 
-The logic is that tax
-losses are a "sunk cost" and as such the after tax NPV derived by using an
-investment cost equation may differ materially from the after tax cash earnings
-received from the investment over its life time if there are existing losses in
-the business which can be used to shield the earnings from taxation.
-.LP
-As much as is possible the merits of each investment are look at in isolation.
-There will of course always be an impact from other business decisions that
-impact the after tax these are disregarded
+EL: box invis wid 1.0 ht 0.2 "Extended Life" at A.n + (1.4, -0.3)
+arrow dashed left 0.3 from EL.w
+arrow dashed right 0.3 from EL.e
+.PE
+.UL Method
+.sp 0.5
+.RS
+It is presumed that Wilbur is having this discussion before the purchase of the
+machine and not at year 5 and therefore the overhaul cost is spread over the
+life of the piece of equipment and not just the period by which it is extended.
+.IP "Step 1:" 10
+Convert the overhaul cost to a present value using the Single Payment Present
+Worth factor.
+.IP "Step 2:" 10
+Convert the present value to an annuity over 8 years using the Capital
+Revcovery factor.
+.RE
+.sp
+.UL Calculation
+.sp 0.5
+.RS
+.EQ L
+EAC lm
+4,500 (P/F, 10%, 3) (A/P, 10%, 8)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+4,500(0.7513)(0.1874)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+644
+.EN
+.RE
+Key points:
+.IP \(bu
+This is unlikely to be a capitalised cost so there is no need to complete a tax
+calculation.
+.IP \(bu
+The value is very small and therefore the tax is unlikely to be a consideration.
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "How to use the equations"
+.NHTOC 2 eac:intr:num eac:intr:page "Deferred Annuity"
 .LP
-The standard from is to:
-.IP 1.
-Multiply the investment cost by the appropriate equation.
-.IP 1.
-Multiply the positive cash flows by the apropriate rate of taxation.
-.LP
-As an illustraction we will use the same cash flows from an example from
-Appendix B on the AIA in time period one. Walter makes an investment of 15,000
-in a peice of capital equipment and an accompanying investment in working
-capital of 8,000 which will be returned at the end of the investment life. The
-investment after costs yeilds a surplus of 25,000 each year. The investment has
-a life of 5 years and no salvage value, the rate of taxation is 20% and the
-discount rate 15%. 
-.
-.NHTOC 2 sec:cctf:num sec:cctf:page "No salvage value"
-.LP
-We will look first at using the equatins when there is no salvage value. The
-first step is to draw the cash flow diagram:
+Wilbur has decied to purchase a new 4WD for the farm. The 4WD comes with 3
+years free servicing after which time it will incurr servicing costs of 1,500
+pounds per year. If the interest rate is 12% what is a EAC of the repair costs
+over the 10 year life of the 4WD? 
 .sp -1
 .PS
-A: [ box invis wid 0.20 ht 0.20 "0"
-			arrow down 0.5 at last box.s
-			"15,000" below at end of last arrow
-			move down 0.25
-			"8,000"
-			move down 0.1
-			move left 0.3
-			line right 0.65
-			move down 0.1
-			move left 0.33
-			"23,000"
+A: [ box invis wid 0.25 ht 0.15 "0"
 			line right 0.3 from last box.e
-			box invis wid 0.20 ht 0.20 "1"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
+			box invis wid 0.25 ht 0.15 "1"
 			line right 0.3 from last box.e
-			box invis wid 0.20 ht 0.20 "2"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
-			line right 0.3 from last box.e 
-			box invis wid 0.20 ht 0.20 "3"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
-			line right 0.3 from last box.e 
-			box invis wid 0.20 ht 0.20 "4"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
-			line right 0.3 from last box.e 
-			box invis wid 0.20 ht 0.20 "5"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
-			move up 0.2
-			arrow up 0.3
-			"8,000" above at end of last arrow
+			box invis wid 0.25 ht 0.15 "2"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "3"
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "4"
+			arrow down 0.35 at last box.s
+			"1,500" below at end of last arrow
+			line dashed right 0.3 from last box.e
+			line down 0.20 dashed right 0.15
+			line up 0.40 dashed right 0.15
+			line down 0.20 dashed right 0.15
+			line dashed right 0.3 
+			box invis wid 0.25 ht 0.15 "8"
+			arrow down 0.35 at last box.s
+			"1,500" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "9"
+			arrow down 0.35 at last box.s
+			"1,500" below at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.25 ht 0.15 "10"
+			arrow down 0.35 at last box.s
+			"1,500" below at end of last arrow
 		]
-box invis "i = 15/100" wid 0.6 ht 0.25 with .s at A.n + (0.3,-0.2)
-box invis "n = 5" wid 0.6 ht 0.25 with .n at A.s + (0.3,0.8)
+box invis "i = 12/100" wid 0.6 ht 0.25 with .s at A.n + (0.6,0.2)
+box invis "n = 10" wid 0.6 ht 0.25 with .n at A.s + (0.6,0.1)
 .PE
-We will now calculate the NPV using some different investment cost equations. 
-.SH
-AIA - time period 1
-.LP
-The investment costs equation for AIA in time period 1 is:
+This particular type of cash flow is called a deffred annuity. There are two
+approaches to the problem:
+.sp 0.5
+.br
+.UL "Method 1"
+.sp 0.5
+.RS
+Convert everything to a present value and then calculate the EAC.
+.IP "Step 1:" 10
+Establish the annuity value for 7 years using the Uniform Series Present Worth
+Factor. This will establish a PV at year 3,
+.IP "Step 2:" 10
+however, this will now need to been shifted to time of purchase using the
+Single Payment Present Worth.
+.IP "Step 3:" 10
+Lastly the PV at time of purchase can now be converted to an annuity over the
+10 year life using the Capital Recovery Factor.
+.RE
+.sp
+.UL Calculation
+.sp 0.5
+.RS
 .EQ L
-"Investment cost" lm -I^ left [ CCTF sub AIA right ] 
-tf
--I^ left [ cctfaia right ]
-tf
--I^ left [ 1 - 0.2 over { ( 1 + 0.15 ) } right ]
+EAC lm 
+1,500(P/A, 12%, 7)(P/F, 12%, 3)(A/P, 12%, 10)
 .EN
 .sp -0.7v
 .EQ L
 lineup =~~
--15,000 [ 0.8261 ]
+1,500(4.564)(0.712)(0.177) 
 .EN
 .sp -0.7v
 .EQ L
 lineup =~~
--12,392
+863
 .EN
-The NPV then can be calculated using the factors from Chapter XX on
-enginneering economics:
-.EQ L
-NPV lm -12,392 -8,000 + 25,000(1 - t)(P/A, 15%, 5) + 8,000(P/F, 15%, 5)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--12,392 -8,000 + 25,000(1 - 0.2)(3.3522) + 8,000(0.4972)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--20,392 + 67,044 + 3,978 
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-50,630
-.EN
-An alternative method maybe to use the CCTF in conjunction with a table:
-.TS
-tab (#) center;
-lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
-#_#_#_#_#_#_
-#CF0#CF1#CF2#CF3#CF4#CF5
-.T&
-lp-2 
-a n n n n n n .
-_
-CASH FLOWS#
-Equipment investment#(12,392)####
-Working capital#(8,000)####
-Operating cash flow##25,000#25,000#25,000#25,000#25,000
-Tax @ 20%##(5,000)#(5,000)#(5,000)#(5,000)#(5,000)
-Salvage value#####
-Working capital return######8,000
-#_#_#_#_#_#_
-Net cash flow##20,000#20,000#20,000#20,000#28,000
-.sp 3p
-.T&
-lp-2 l l l l  
-a c c c c c 
-a n n n n n .
-DISCOUNTED CASH FLOW#
-Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
-#_#_#_#_#_#_
-Present value#(20,392)#17,400#15,120#13,160#11,440#13,916
-_
-NPV#50,644
-_
-.TE
-The table above contains working capital. Typically working capital is not
-subject to tax. If you have inventory of 10,000 and decide to discontinue the
-product line the inventory will be sold and any profits will incur taxes as
-they pass through the profit and loss account. The balance sheet will show a
-reduction in the inventory and an increase in cash, as the inventory being sold
-down is not replaced. Hypothetically the balance sheet value of assets stays
-the same, the 10,000 reduction in inventory is matched by a 10,000 increase in
-cash and you are not taxed for shuffling the balance sheet. 
-.SH
-WDA - time period 2
-.LP
-It is important to understand that the cash flow diagram shows the pattern of
-the cash flows and not the pattern of the tax effect. Regardless of whether the
-tax effect is in time period one or two the 25,000, in this example, is in the
-same position.
-.LP
-We will start this time by calculating the CCTF:
-.EQ L
-CCTF sub WDA2 lm cctf2
-~~=~~
-ncctf2(0.18, 0.2, 0.15)
-~~=~~
-0.9051
-.EN
-We can now calculate the investment cost:
-.EQ L
-"Investment cost" lm -I^ left [ CCTF sub WDA2 right ] 
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--15,000 [ 0.9051 ]
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--13,577
-.EN
-The NPV can now be calculated:
-.EQ L
-NPV lm -13,577 -8,000 -25,000(t)(P/A, 15%, 5)(P/F, 15%, 1) + 25,000(P/A, 15%, 5) + 8,000(P/F, 15%, 5)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--13,577 -8,000 -25,000(0.2)(3.3522)(0.8696) + 25,000(3.3522) + 8,000(0.4972)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--21,577 - 14,575 + 83,805 + 3,978
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-51,631
-.EN
-Notice that this time we have had to calculate the tax effect seperately from
-the positive cash flows. Previously we were able to multiply the positive cash
-flow by #(1 - t)#, however, as the tax has been shifted by one period this will
-not work here. The tax has been calculated with by multiplying the positive
-cash flow by the tax rate, #25,000(t)#. Then this annuiyt has been converted
-into a present value by multiplying by, #(P/F, 15%, 5)#. Lastly this would
-present value has to time period zero by multiplying by #(P/F, 15%, 1)#,
-remember the annuity factor presumes that the cash flow is at time period one
-and calculates the PV at time peirod zero. In this instance the cash flow is at
-time period 2 and the annuity calcualtes the PV at time period 1 so we use the
-Single Payment Present Worth factor to discount the PV by an extra period.
-.LP
-Again a table can be used in conjunction with the investment cost equation:
-.TS
-tab (#) center;
-lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
-#_#_#_#_#_#_#_
-#CF0#CF1#CF2#CF3#CF4#CF5#CF6
-.T&
-lp-2 
-a n n n n n n n .
-_
-CASH FLOWS#
-Equipment investment#(13,577)####
-Working capital#(8,000)####
-Operating cash flow##25,000#25,000#25,000#25,000#25,000
-Tax @ 20%###(5,000)#(5,000)#(5,000)#(5,000)#(5,000)
-Working capital return######8,000
-#_#_#_#_#_#_#_
-Net cash flow##25,000#20,000#20,000#20,000#28,000#(5,000)
-.sp 3p
-.T&
-lp-2 l l l l l
-a c c c c c c
-a n n n n n n .
-DISCOUNTED CASH FLOW#
-Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
-#_#_#_#_#_#_#_
-Present value#(21,577)#21,750#15,120#13,160#11,440#13,916#(2,160)
-_
-NPV#51,649
-_
-.TE
+.RE
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Salvage value"
+.UL "Method 2"
+.sp 0.5
+.RS
+Convert everything to a future value and then calculate the EAC.
+.IP "Step 1:" 10
+Establsih the FV of the 7 year annuity for the serving costs using the Uniform
+Series Compound Amount.
+.IP "Step 2:" 10
+The FV can now be converted to an annuiyt over the 10 year life using the
+Uniform Series Sinking Fund factor.
+.RE
+.sp
+.UL Calculation
+.sp 0.5
+.RS
+.EQ L
+EAC lm 
+1,500(F/A, 12%, 7)(A/F, 12%, 10)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+1,500(10.089)(0.0570) 
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+863
+.EN
+.RE
+Key points:
+.IP \(bu
+Method 2 has less steps and is mathematically simpler.
+.IP \(bu
+The reason that method 2 has one less step is that the 1,500 is stated in terms
+of its value at year 3, the start of the servicing cost. Therefore, it can be
+compouned forward to reach a future value, is this is unclear refer back to
+Chapter 3 section 6 on equivalence, but when establishing a present value the
+1,500 must be discounted to establish its equivalent value in terms of year
+zero.
+.IP \(bu
+In this scenario we are not proposing to capitalise the cost and the tax is not
+a consideration in the investment decision.
+.
+.NHTOC 2 eac:intr:num eac:intr:page "Repeated Renewals - start time period zero"
 .LP
-The scenario stays the sames except that on dispoal in year 5 there is a
-salvage value of 7,000. We will redraw the cash flow diagram to reflect the
-change:
-.sp -1
+Wilbur has installed a new wash facility for his livestock haulage business
+with a design life of 25 years. The wash includes a steam cleaner that cost
+5,000 pounds which will last 5 years. The steam cleaner has no salvage value
+and the energy costs are not seperated from other costs. If the cost of capial
+is 13% find the Equivalent Annual Cost for a series of 5 steam cleaners?
 .PS
-A: [ box invis wid 0.20 ht 0.20 "0"
-			arrow down 0.5 at last box.s
-			"15,000" below at end of last arrow
-			move down 0.25
-			"8,000"
-			move down 0.1
-			move left 0.3
-			line right 0.65
-			move down 0.1
-			move left 0.33
-			"23,000"
-			line right 0.3 from last box.e
-			box invis wid 0.20 ht 0.20 "1"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
-			line right 0.3 from last box.e
-			box invis wid 0.20 ht 0.20 "2"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
-			line right 0.3 from last box.e 
-			box invis wid 0.20 ht 0.20 "3"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
-			line right 0.3 from last box.e 
-			box invis wid 0.20 ht 0.20 "4"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
-			line right 0.3 from last box.e 
-			box invis wid 0.20 ht 0.20 "5"
-			arrow up 0.4 at last box.n
-			"25,000" above at end of last arrow
-			move up 0.2
-			arrow up 0.3
-			"8,000" above at end of last arrow
-			move up 0.25
-			"7,000"
+A: [ box invis wid 0.25 ht 0.15 "0"
+			arrow down 0.35 at last box.s
+			"5,000" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "5"
+			arrow down 0.35 at last box.s
+			"5,000" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "10"
+			arrow down 0.35 at last box.s
+			"5,000" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "15"
+			arrow down 0.35 at last box.s
+			"5,000" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "20"
+			arrow down 0.35 at last box.s
+			"5,000" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "25"
 		]
-box invis "i = 15/100" wid 0.6 ht 0.25 with .s at A.n + (0.3,-0.2)
-box invis "n = 5" wid 0.6 ht 0.25 with .n at A.s + (0.3,0.8)
+box invis "i = 13/100" wid 0.6 ht 0.25 with .s at A.n + (0.5,0.2)
+box invis "n = 10" wid 0.6 ht 0.25 with .n at A.s + (0.5,-0.3)
 .PE
+.LP
+.UL Method
+.sp 0.5
+.RS
+Each steam cleaner lasts 5 years, and has the same cost, so each steam cleaner
+will have the same EAC. As the EAC is uniform over each 5 year period it is the
+EAC for the 25 year design life.
+.RE
+.sp
+.UL Calculation
+.sp 0.5
+.RS
+.EQ L
+EAC lm 5,000(A/P, 13%, 5)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+5,000(0.2843)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+1,422
+.EN
+.RE
+Key points:
+.IP \(bu
+This principle can be generalized for the costs of a project that are incurred
+periodically but not every year.
+.IP \(bu
+EAW and EAC provide a simple solution to problems where repeated reknewals
+occur. If the results are to be reliable then two constants must be accepted:
+.RS
+.IP 1.
+The repeated costs are constant.
+.IP 2.
+The interval is constant.
+.RE
 .
-.sp -1
-.SH
-WDA - time period 1
+.NHTOC 2 eac:intr:num eac:intr:page "Repeated Renewals - no intial or final cash flow"
 .LP
-We will start by calculating the CCTF:
+Wilbur has installed a number of new roads on his farm with a design life of 25
+years. The total length of the roads is 2.3 KM. The roads will require
+maintenance to the surface every 5 years at a cost of 30 pounds per meter. If
+the cost of capital is 11% find the EAC for the series of operations to
+resurface the road.
+.LP
+The first stage is to understand the pattern of cash flows.
+.PS
+A: [ box invis wid 0.25 ht 0.15 "0"
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "5"
+			arrow down 0.35 at last box.s
+			"Resurface" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "10"
+			arrow down 0.35 at last box.s
+			"Resurface" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "15"
+			arrow down 0.35 at last box.s
+			"Resurface" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "20"
+			arrow down 0.35 at last box.s
+			"Resurface" below at end of last arrow
+			line right 0.7 from last box.e
+			box invis wid 0.25 ht 0.15 "25"
+			arrow down 0.7 at last box.s
+			"New Road" below at end of last arrow
+		]
+box invis "i = 11/100" wid 0.6 ht 0.25 with .s at A.n + (0.5,0.2)
+box invis "n = 10" wid 0.6 ht 0.25 with .n at A.s + (0.5,0.1)
+.PE
+.UL Method
+.sp 0.5
+.RS
+As the cash flow diagram shows there are only 4 resurfacing operations. The
+road does not require resurfacing when it is intitially constructed, and in the
+25th year you are not going to resurface the road and then replace it.
+.IP "Step 1:" 10
+In five years time Wilbur will have had to have saved #2,300 times 30# pounds
+to resurface the roads. Therefore, the resurfacing cost must be multiplied by
+the Uniform Seried Sinking Fund annuity factor.
+.IP "Step 2:" 10
+This annuity will then be constant until year 20, after which there is no
+requirment to occur funds to resurface the road as it will be replaced. The
+annuity must be converted to a present value using the Uniform Series Present
+Worth factor.
+.IP "Step 3:" 10
+We have created an annuity and converted to a present value. However, the
+present value now needs to be apportioned over the life of 25 years. Use the
+Capital Recovery factor with #n# equal to 25.
+.RE
+.sp
+.UL Calculation
+.sp 0.5
+.RS
+.IP "No Tax" 10
 .EQ L
-CCTF sub WDA lm cctf
-~~=~~
-1 - 0.18(0.2) over {  ( 0.15 + 0.18 ) }
-~~=~~
-0.8909
-.EN
-Now we can calculate the investment cost:
-.EQ L 
-"Investment cost" lm
--I^ left [ CCTF sub AIA right ] 
-+ S left [ CCTF sub WDA right ]
-times
-( P/F, %i, n )
+EAC lm (2,300 times 30) (A/F, 11%, 5) (P/A, 11, 20) (A/P, 11, 25)
 .EN
 .sp -0.7v
 .EQ L
 lineup =~~
--15,000(0.8261) + 7,000(0.8909)(P/F, 15%, 5)
+69,000(0.1606)(7.9633)(0.1187)
 .EN
 .sp -0.7v
 .EQ L
 lineup =~~
--15,000(0.8261) + 7,000(0.8909)(0.4972)
+10,475
 .EN
-.sp -0.7v
-.EQ L
-lineup =~~
--12,392 + 3,101
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-9,291
-.EN
-When using the investment cost equations the #n# in the #(P/F, i%, n)#
-\fBalways\fP refers to the year the asset is disposed off.
-.LP
-The NPV then can be calculated :
-.EQ L
-NPV lm -9,291 -8,000 + 25,000(1 - t)(P/A, 15%, 5) + 8,000(P/F, 15%, 5)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--9,291 -8,000 + 25,000(1 - 0.2)(3.3522) + 8,000(0.4972)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--17,291 + 67,044 + 3,978 
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-53,731
-.EN
-We can also construct a table:
-.TS
-tab (#) center;
-lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
-#_#_#_#_#_#_
-#CF0#CF1#CF2#CF3#CF4#CF5
-.T&
-lp-2 
-a n n n n n n .
-_
-CASH FLOWS#
-Equipment investment#(9,291)####
-Working capital#(8,000)####
-Operating cash flow##25,000#25,000#25,000#25,000#25,000
-Tax @ 20%##(5,000)#(5,000)#(5,000)#(5,000)#(5,000)
-Salvage value#####
-Working capital return######8,000
-#_#_#_#_#_#_
-Net cash flow##20,000#20,000#20,000#20,000#28,000
-.sp 3p
-.T&
-lp-2 l l l l  
-a c c c c c 
-a n n n n n .
-DISCOUNTED CASH FLOW#
-Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
-#_#_#_#_#_#_
-Present value#(17,291)#17,400#15,120#13,160#11,440#13,916
-_
-NPV#53,745
-_
-.TE
-It is important to note that the table does not contain the salvage value. The
-investment cost equation incorporates the effect of the salvage. The idea of
-the investment cost equation is to seperate the capital cost and its associated
-cash flows from the other cash flows arising from the investment.
-.
-.SH
-WDA - time period 2
-.LP
-We have previously calculated the #CCTF sub WDA2# and found it to be 0.9051 and
-are therefore going to start with the appropriate investment cost equation:
-.EQ L 
-"Investment cost" lm
--I^ left [ CCTF sub WDA2 right ] 
-+ S left [ CCTF sub WDA2 right ]
-times
-( P/F, %i, n )
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--15,000[0.9051] + 7,000[0.9051] times (P/F, 15%, 5)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--15,000[0.9051] + 7,000[0.9051] times 0.4972
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--13,577 + 3,150
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--10,426
-.EN
-We can now calculate the NPV:
-.EQ L
-NPV lm -10,426 -8,000 -25,000(t)(P/A, 15%, 5)(P/F, 15%, 1) + 25,000(P/A, 15%, 5) + 8,000(P/F, 15%, 5)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--10,426 -8,000 -25,000(0.2)(3.3522)(0.8696) + 25,000(3.3522) + 8,000(0.4972)
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
--10,426 - 8,000 - 14,575 + 83,805 + 3,978
-.EN
-.sp -0.7v
-.EQ L
-lineup =~~
-54,782
-.EN
-A combination of the investment cost equation and a table:
-.TS
-tab (#) center;
-lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
-#_#_#_#_#_#_#_
-#CF0#CF1#CF2#CF3#CF4#CF5#CF6
-.T&
-lp-2 
-a n n n n n n n .
-_
-CASH FLOWS#
-Equipment investment#(10,426)####
-Working capital#(8,000)####
-Operating cash flow##25,000#25,000#25,000#25,000#25,000
-Tax @ 20%###(5,000)#(5,000)#(5,000)#(5,000)#(5,000)
-Working capital return######8,000
-#_#_#_#_#_#_#_
-Net cash flow#18,426#25,000#20,000#20,000#20,000#28,000#(5,000)
-.sp 3p
-.T&
-lp-2 l l l l l
-a c c c c c c
-a n n n n n n .
-DISCOUNTED CASH FLOW#
-Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
-#_#_#_#_#_#_#_
-Present value#(18,426)#21,750#15,120#13,160#11,440#13,916#(2,160)
-_
-NPV#54,800
-_
-.TE
-.
-.NHTOC 2 sec:cctf:num sec:cctf:page "Self Assesment Tax"
-.LP
-Self Assessment Tax creates some problems because of the personal allowance and
-the different tax rates dependent on the earnings of the business. We will
-start with the the problem of the personal allowance sheltering some of the
-income from taxation. Appendix F looks at how to calculate the rate of taxation
-in some detail.
-.
-.NHTOC 3 sec:cctf:num sec:cctf:page "Personal allowance incorporated into rate of taxation"
-.LP
-You can create a flat rate of taxation using the method show in Appendix F if
-you accept that the investment is going to utilise the personal allowance, and
-that the personal allowance has not been applied to other earnings in the
-business. Once you have created this flat rate of tax you can use it as we have
-previously demonstrated. However, it can be argued that if you earnings change
-so will the rate of taxation. This is true, however, as the table below shows
-from Appendix F it is possible to calculate the flat of tax incorporating the
-personal allowance for a range of earnings. 
-.TS
-tab (#) center;
-l n n n n n n n .
-_
-.sp 5p
-Earnings#20,000#25,000#30,000#40,000#50,000#60,000#70,000
-Income Tax#(1,500)#(2,500)#(3,500)#(5,500)#(7,500)#(11,500)#(15,500)
-National Insurance#(1,179)#(1,629)#(2,079)#(2,979)#(3,879)#(4,079)#(4,279)
-_
-Total Tax#(2,679)#(4,129)#(5,579)#(8,479)#(11,379)#(15,579)#(19,779)
-.sp 5p
-Net Income#17,321#20,871#24,421#31,521#38,621#44,421#50,221
-_
-Flat Rate %#13#17#19#21#23#26#28
-_
-..
-.tP "Self Assessment rates of tax 2019"
-.TE
-Once you have a table for the rate of taxation over a range of earnings you can
-choose a flat rate of taxation that better reflects your earnings. Even thought
-this sounds rather vague it is worth bearing in mind that the rates of taxation
-change over time and also the earnings that you have forecast may not
-materialise. The aim is to be roughly right. Remember that the rate of taxation
-has a bearing on the cost of capital as interest is tax deductible and you may
-need to recalculate the weighted average cost of capital for this project. 
-.
-.NHTOC 3 sec:cctf:num sec:cctf:page "Personal allowance has already been applied."
-.LP
-If you allready have a business making in excess of the personal allowance than
-your next investment will be taxed at the prevailing rate of taxation for the
-earnings. For instance, if the business is earning 20,000 and an investment is
-made that will generate additonal taxable profits of 20,000 then this, as of
-2019, will be taxed at 20% for the income and 9% for the NIC. Remember that the
-rate of taxation has a bearing on the cost of capital as interest is tax
-deductible and you may need to recalculate the weighted average cost of capital
-for this project. 
-.
-.NHTOC 3 sec:cctf:num sec:cctf:page "Earnings across two tax bands."
-.LP
-This scenario is covered again in Appendix F. The basic logic is that you will
-need to calcualte a weighted avaerage of the tax rates. Again, as the earnings
-with which the tax rate is dependent are a projection into the future it pays
-to be confident that the earnings will materialise and push you well into the
-next tax rate. Currently there is a change in the tax rate at 50,000 it would
-not add much to the accuracny of the NPV by calculating the weighted average of
-the rate of taxaton if the earnings were projected to be 51,000. 
-.
-.NHTOC 2 sec:cctf:num sec:cctf:page "Limited taxation"
-.LP
-If the level of taxable profits is low then it may not be possible to claim the
-full writing down allowance. This applies to both Self Assesment Tax and
-Corporation Tax in this instance you will need to check that the taxable
-profits exceed the first years writing down allowance. If you make a capital
-investment of 50,000 and the writing down allowance is 18% then the taxable
-profits need to exceed #50,000 times 0.18 = 9,000# to be able to utilise the
-full writing down allowance. The equations used to calculate the investment
-cost can be used with any value for the declining balance #d#. The obvious
-impact is that the investment cost will rise and the NPV will fall as the tax
-benefit is claimed over a longer period of time.
-.
-.NHTOC 2 sec:cctf:num sec:cctf:page "Marginal profitability"
-.LP
-If the business has inconsistent earnings and does not consistently pay tax I
-would advise against using the investment cost equations. In reality if the
-investment is made in the same business, which is currently sporadically
-profitable, then the NPV itself maybe more aspirational than factual.
-.LP
-In cyclical businesses the ration of good years to bad years needs to be in
-favour of the good years to have any confidence that taxation is a concern.
-.LP
-In both scenarios above concerning businsess with marginal profitablity the
-chances are that there are loses which have been carried forward and are
-available to shield the profits from taxation.  
-.
-.NHTOC 2 sec:cctf:num sec:cctf:page "Existing losses"
-.LP
-We have previously stated that we regard existing losses as a sunk cost. This
-is true and we do not try and account for them in the investment cost equations
-as it creates significant complications. However, they can not be totally
-ignored and if your business has substantial losses and a large pool where the
-WDA has not been claimed it is obvious that there is a tax impact. In such
-situations it would make sense to calculate the NPV as if there was no
-taxation. Remember if calculate the NPV without taxation you will have to use a
-pretax cost of capital. 
-.
-.NHTOC 2 sec:cctf:num sec:cctf:page "Small pool and balancing charge"
-.LP
-There can be situations where the expcecations is that a balancing charge will
-have to be paid. For instance if your business is not very capital intensive,
-you may have a small farm, you have bought a tractor kept it for a long period
-of time and then it is disposed of when there the main pool has a value of zero
-generating a balancing charge. Alternatively you have purchased an expensive
-piece of equipment, in this instance a second hand combine, and on disposal the
-inflation in the capital asset prices by the OEM's has been so great as to
-generate a balancing charge. First you must suitably confident that there will
-be a balancing charge, second remember the impact of the balancing charge
-deminishes because of the compounding. If you still wish to account for the
-impact of the balancing charge you can use the investment cost equations for
-the single asset pool without respect for the 8 years currently allowed for by
-the goverment. You can of course compare the investment cost equations using
-the main pool where the equation does not allow for a balancing charge and
-compare it with the single asset pool equation that does allow for a balancing
-charge.
-.
-.NHTOC 2 sec:cctf:num sec:cctf:page "Scenarios not covered by the cost equations"
-.LP
-I do not propose to go through every eventuality that buiness can throw up and
-how to use the investment cost equations. Mostly I expect the investment cost
-equations to be used within the continuing pool and either the AIA or the WDA
-to be utilised. There is nothing to stop you splitting an investment between
-the AIA and the WDA. With our knowledge of equivalence gained in Chapter 3
-there is nothing to stop you starting the WDA at point other than period 1,
-provided there is no salvage value, and moving the tax benefit to period zero.
-.LP
-Appendix B aims to be comprehensive and contains flow charts, graphs, tables
-and the maths behind the investment cost equaitons. With this information it
-should be possible to build your own tools to calculate the tax benefits
-accruing in any given situation.  
-.
-.NHTOC 2 sec:tim:num sec:tim:page "The false precision of numbers"
-.LP
-Numbers can be reather misleading in seeming to provide an accurate answer when
-in actual fact what you have calculated is exactly wrong which is a disapinting
-distance from roughly right. The NPV is a number which is masquerading as
-reliable when it is highly dependent on both the veracity of the assumptions
-and the viscitudes of the future.
-.LP
-Listed below are some of the many issues that can lead to a wildly misleading
-NPV.
-.IP "Discount rate" 15
-The discount rate is easy to calculate when working with only debt. The cost of
-equity is challenging to determine with confidence. However, money can not be
-lent for free so a value must be given for the equity. An inaccurate discount
-rate will lead to inaccurate NPV.
-.IP "Operating cash flows" 15
-Forecasting operating cash flows is not easy when the time frame is short. The
-longer the time frame the less reliable the number, once the cash flows extend
-a longway into the future they enter the realm of fantasy.
-.IP "Tax rates" 15
-When it comes to forecasting after tax cash flows you are compelled to forecast
-the tax rate as well. The investment cost equations persume that the tax rate
-existing at the point when the investment is made continue for the life of the
-investment. Tax rates, in recent years, have fallen so this assumption has
-tended to be favourable to the NPV.
-.IP "Salvage values" 15
-Estimating a salvage value many years into the future is an exercise in
-futility. The affects of compoinding also mean that the impact of the salvage
-value is very limited.
-.IP "Length of ownership" 15
-When the decision is made to invest in a piece of capital equipment it is
-assumed that the time frame used in the NPV calculation is objective reflection
-of the needs of business and the economic life of the asset. There are many
-reasons that the ownership of the asset may not match that used in the NPV. For
-instance; the needs of the business may change or the equipment may not peform
-as expected or the equipment may not have been specified correctly.
-.LP
-The short list above highlights some of the difficulties in producing a
-reliable NPV. The investment cost equations get progressivly more complicated
-when they are required to account for more and more variables and subsequently
-the range of possible outcomes also increases. It is presumed that those
-investment cost equations covering the continuose pools will be most heavily
-used and particulary those equations that calculate the investment cost with
-either no salvage value or a salvage value without capital gains. 
-.
-.NHTOC 2 sec:cctf:num sec:cctf:page "Is it worth calculating the after tax NPV?"
-.LP
-Due to the inherent problems in generating a reliable NPV it could be argued
-that the after tax cash flow estimate is likely to be less reliable than the
-pretax cash flow. This is a valid point and the more complex a business the
-more difficult it is to tie tax benefits to individual investments. In many
-companies there is no effort made to calculate the after tax NPV, the
-investment decision is based upon exceeding a given hurdle rate. More often
-than not the management of the company measures EBIT or operating profit and if
-there is a requirment to allow for it then the EBIT is multiplied by (1 - tax
-rate). Appendix E looks into SVA which uses EBIT to establish if an investment
-should be pursued.
-.LP
-In smaller companies where there are not multiple disparate divisions working
-in different tax jurisdictions the investment cost equations offer a quick and
-simple means of establishing an after tax NPV with which to aid in investment
-decisions. In general if the tax is not going to affect the decision then it is
-not neceassary to calculate the after tax NPV, however, as we shall see with
-leases the tax effects can be integral to establishing the lowest cost
-alternative. As a last thought neither life or business can be simplified into
-one equations so one should always beware of; "Geeks bearing formulas".
+.RE
+Key points:
+.IP \(bu
+It is important to understand the pattern of cash flows before attempting the
+calculation and the cash flow diagrams is useful visual aid.
+

@@ -1,339 +1,595 @@
 .
 .sp 5
-.NHTOC 1 sec:tax:num sec:tax:page "Structure of UK Tax"
+.NHTOC 1 sec:capex:num sec:capex:page "Understanding the impact of tax"
 .LP
-Taxes always matter to the business, but sometimes taxes can be ignored when
-making a decision. the decision to purchase a one type of widget over another
-is unlikely to be influenced by the tax. To save time and focus on the
-important items, it is often the case that the income taxes are ignored where
-they will not have a significant impact.
+Most people intuitively understand that tax has impact on the cash that is
+going to be recienved by the business owner. However tax also has an impact on
+the costs associated with any business and as we shall see the impact on the
+capital costs is dependent on the capital allowance.
 .LP
-The purpose of this section on tax is to explain the concept of taxation in the
-UK in the most general terms. I do not want to go into much detail as tax laws
-and rates are constantly evolving. However, the section should convey the idea
-of how tax function. Furthermore there are many differnt types of taxation from
-VAT to inheritance tax. The plethora of different tax are important in
-themselves but not important to us in our desire to understand the taxation of
-capital investments.
-.sp
-.NHTOC 2 sec:satax:num sec:satax:page "Types of taxation"
-.LP
-There are a number of different types of taxation in the UK this section is
-going to limit itself to the three below:
-.IP "Income tax" 5
-Income Tax is a tax you pay on your income. You do not have to pay tax on all
-types of income for instance: income from ISAs, premium bond or Lottery wins.
-Most people in the UK get a Personal Allowance of tax-free income. This is the
-amount of income you can have before you pay tax. Furthermore The amount of
-tax you pay can also be reduced by tax reliefs if you qualify for them.
-.
-.IP "National insurance" 5
-You pay National Insurance contributions to qualify for certain benefits and
-the State Pension.
+We are going to start by use the base case below to measure the impact of the
+tax on a capital investment under differing scenarios. The example below is
+very simple, there is no working capital or salavage value.
 .TS
 tab (#) center;
-l l .
+lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
+#_#_#_#_#_#_
+#CF0#CF1#CF2#CF3#CF4#CF5
+.T&
+lp-2 
+a n n n n n n .
 _
-Class#Payer
+CASH FLOWS#
+Equipment investment#(1,000)#####
+Sales##5,000#7,000#9,000#11,000#13,000
+Operating costs##(2,000)#(3,000)#(4,000)#(5,000)#(6,000)
+#_#_#_#_#_#_
+Operating cash flow##3,000#4,000#5,000#6,000#7,000
+.sp 3p
+.T&
+lp-2 l l l l l 
+a c c c c c 
+a n n n n n .
+DISCOUNTED CASH FLOW#
+Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
+#_#_#_#_#_#_
+Present value#(1,000)#2,610#3,024#3,290#3,432#3,479
 _
-Class 1#Employees with earning above a thershold and under State Pension age.
-Class 1A/B#Employers pay these directly on their employee's expenses or benefits.
-Class 2#Self-employed - you do not have to pay if you earn less than a given threshold.
-Class 3#Voluntary contributions - to fill or avoid gaps in your National Insurance record.
-Class 4#Self-employed people earning profits over a given threshold.
+NPV#14,835
 _
 .TE
-.IP "Capital gains tax" 5
-You pay Capital Gains Tax if you are self-employed sole trader or in a
-business partnership. Other organisations like limited companies pay
-Corporation Tax on profits from selling their assets.
-.sp 0.5v
-You may have to pay Capital Gains Tax if you make a profit ("gain") when you
-sell (or "dispose of") all or part of a business asset.
+.tP "NPV with no tax"
 .
-.NHTOC 2 sec:satax:num sec:satax:page "Means of collection"
+The cash flows can also be calculated making use of the equations from Section
+XX on Engineering Econmonics.
+.EQ L
+NPV lm Investment + PV sub Anuuity + PV sub Gradient
+.EN
+.EQ L
+lineup =~~
+-1,000 + 3,000 (P/A, 15%, 5) + 1,000 (P/G, 15%, 5)
+.EN
+.EQ L
+lineup =~~ -1,000
++
+3,000 ~ nuspw(0.15, 5)
++
+1,000 nagpw(0.15, 5)
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~
+-1,000 + 3,000(3.352) + 1,000(5.775)
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~
+-1,000 + 10,056 + 5,775
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-1,000 + 15,831
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~ 14,831
+.EN
+This is our base case and we will look at the impact on the NPV of tax paid
+under utilising the AIA and the WDA. It can be seen from the equation that the
+investment cost is 1,000 and the positive cash flows generated from the
+investment are 15,831 if there is no tax.
 .LP
-In the UK there are 3 main ways that tax is collected:
-.IP  "Pay As You Earn (PAYE)" 5
-PAYE or "pay as you earn" refers to income tax which is deducted from your
-salary before you receive it. Introduced in 1944, this is now the way most
-employees pay their income tax. National Insurance and student loan repayments
-may also be deducted through the PAYE system. There is a short appendix that
-covers a general PAYE calculation.
-.IP "Self Assessment Taxation" 5
-If you are self-employed, you will need to submit a self-assessment tax return
-every year, to pay income tax and National Insurance on your profits. This
-includes both sole traders and those in a business partnership. Limited company
-directors may need to pay tax on dividends through their Self Assessment.  
-.IP "Corporation Tax" 5
-You must pay Corporation Tax on profits from doing business as a limited
-company, a club, co-operative or other unincorporated association. Taxable
-profits for Corporation Tax include the money your company or association makes
-from: doing business ("trading profits"), investments and selling assets for
-more than they cost ("chargeable gains").
-.
-.NHTOC 2 sec:satax:num sec:satax:page "Accounting Methods"
+We will reuse the annuity factor of 3.352 and the gradient factor of 5.775 to
+reduce in other examples to reduce the repition of recalculating the factor.
 .LP
-HMRC allows you to submit your tax returns using two methods:
-.IP "Cash basis" 5
-.RS
-.IP \(bu
-With this method, you only record income or expenses when you receive money or
-pay a bill. This means you will not need to pay Income Tax on money you have
-not yet received in your accounting period.
-.IP \(bu
-If you are using cash basis, you can only claim capital allowances on cars. The
-cost of all other equipment and vehicles is an allowable expense in working out
-your business profits.
-.IP \(bu
-If you are using cash basis accounting you can only a small amount in interest
-and bank charges.
-.IP \(bu
-There are thresholds concerning the size of a business that can operate using
-cash accounting.
-.IP \(bu
-There are restrictions as to what type of enterprise can use cash accounting, I
-do not propose to list them, however, it is important to be aware that it is
-not an option for limited companies and limited liability partnerships or
-farming businesses with a current herd basis election and farming and
-creative businesses utilising  profit averaging election.
-.RE
-.
-.IP "Traditional accounting" 5
-.RS
-.IP \(bu
-Many businesses use traditional accounting where you record income and expenses
-by the date you invoiced or were billed.
-.IP \(bu
-Under traditional accounting you can claim capital allowances, where
-permissible, on items that you keep to use in your business.
-.RE
-.
 .sp
-.NHTOC 2 sec:satax:num sec:satax:page "Capital Allowances"
+.
+.B1
+.B
+.ce
+.SM
+Note
 .LP
-It is important to understand that in the UK, HMRC does not allow depreciation
-as an expense. There is depreciation in the company accounts\(dd but it is
-added back for the purpose of calculating the Income Tax. The UK instead has a
-system of capital allowances.
+The same discount rate is used through out the examples for the sake of
+simplicity. This is not accurate as interest is tax deductible and would reduce
+the cost of capital.
+.sp
+.B2
+.
+.NHTOC 2 sec:capex:num sec:capex:page "Tax and capital investments"
+.LP
+The impact of Income Tax is not the same for all types of business costs. Some
+costs are called "expenses", and are deducted in full in the year in which they
+are incurred. Other costs called "capital expenditures", are recorded on the
+balance sheet in the year that they are incurred and subsequently written off
+over a number of future periods. The amount written off each year for the
+purpose of determining the taxable income is depends on how the capital
+allowances has been utilised.
+.LP
+It is assumed in the following discussion of the capital allowances that the
+company is profitable. If the company is not profitable then there is no tax
+shield and neither the expenses or capital investments are reduced by taxation.
+.LP
+If the rate of Income Tax is #30%#, an outlay of #\[Po] 1.00# allowable as an
+expense will reduce Income Taxes by #30p# of the amount that would otherwise be
+payable in the year. This can be seen in the table below, the tax payable is
+reduced from #1.5 ~->~ 1.2# a reduction of #30p#. Thus a #\[Po] 1.00# outlay as
+an expense has a net cost to the business of #Expense times (1 - "tax rate")#
+which in this instance is # 1( 1 - 0.3) = \[Po] 0.7# or #70p#. The table shows
+that the \fIExpenses\fP have increased from # 5 ~->~ 6# an increase of #\[Po]
+1# but the \fINet\fP \fIIncome\fP has only reduced from #3.5 ~->~ 2.8# a
+reduction of #70p#.
+.TS
+tab (#) center;
+l n | n l .
+_
+.sp 5p
+Revenue#10.0#10.0#
+Expense#5.0#6.0# increase by 1.0
+Taxable Profit#5.0#4.0# decrease by 1.0
+.sp 5p
+_
+Tax @ 30%#1.5#1.2# decrease by 0.3
+_
+Net Income#3.5#2.8# decrease by 0.7
+=
+.TE
+.tP "Income statement"
+The same pound, when spent on a capital asset has a varying impact on taxes
+payable year to year, due to the tax treatment of capital expenditures.
+.
+.NHTOC 3 sec:capex:num sec:capex:page "Annual Investment Alowance \
+& First Year Allowance"
+.LP
+The Annual Investment Allowance and the First Year Allowance allow for entire
+value of a capital expenditure to be written down in the first year for tax
+purposes. Therefore, in this scenario, the #\[Po] 1# which is used to purchase
+an asset is written down immediatley meaning the cost of the investment is
+theoretically equal to:
+.EQ
+Investment times ( 1 - "tax rate" )
+.EN
+However the equation above does not take into account the time value of money.
+We will draw up a table to show the PV of the tax savings:
+.TS
+tab (#) center;
+l c c c c c
+^ c c c c c
+l n n n n n .
+_
+.sp 5p
+Year#Pool Value#Allowance#Income Tax#Discount Rate# PV
+#@ Year End\(dg#100%#30%#15%#Tax Savings
+_
+1#1,000#1,000#300#0.8696#261
+.T&
+l s n n n n
+l s n n n n . 
+#_#_##_#
+Total#1,000#300##261
+#=#=##=#
+.TE
+We will now adjust the table showing our base scenario to tax into account the
+tax impact of using the AIA:
+.TS
+tab (#) center;
+lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
+#_#_#_#_#_#_
+#CF0#CF1#CF2#CF3#CF4#CF5
+.T&
+lp-2 
+a n n n n n n .
+_
+CASH FLOWS#
+Equipment investment#(1,000)#####
+Sales##5,000#7,000#9,000#11,000#13,000
+Operating costs##(2,000)#(3,000)#(4,000)#(5,000)#(6,000)
+#_#_#_#_#_#_
+Operating cash flow##3,000#4,000#5,000#6,000#7,000
+.sp 1p
+.T&
+lp-2 
+a n n n n n n .
+TAX CALCULATION#
+AIA##(1,000)####
+Taxable cash flow##2,000#4,000#5,000#6,000#7,000
+Tax @30%##(600)#(1,200)#(1,500)#(1,800)#(2,100)
+#_#_#_#_#_#_
+.sp 1p
+.T&
+lp-2 
+a n n n n n n .
+AFTER TAX CASH FLOW#
+Operating cash flow##3,000#4,000#5,000#6,000#7,000
+Tax ##(600)#(1,200)#(1,500)#(1,800)#(2,100)
+#_#_#_#_#_#_
+After tax cash flow##2,400#2,800#3,500#4,200#4,900
+.sp 3p
+.T&
+lp-2 l l l l l 
+a c c c c c 
+a n n n n n .
+DISCOUNTED CASH FLOW#
+Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
+#_#_#_#_#_#_
+Present value#(1,000)#2,088#2,117#2,303#2,402#2,435
+_
+NPV#10,345
+_
+.TE
+.tP "NPV using the AIA"
+.
+The table has become somewhat more complicated in an attempt to show the tax
+workings. It is best to seperate the tax savings from the tax payment for two
+reasons:
+.IP 1. 5
+The tax can simply be calculated by multiplying the pre tax cash flow by the
+appropriate tax rate.
+.IP 2. 5
+It is easier to establish the investment cost.
+.LP
+In Appendix A we examined the impact of the WDA on the tax. The tax savings
+before discounting were found to be:
+.EQ
+"Tax savings" lm Idt
+.EN
+As the AIA can allows for 100% write down in the first year the equation can be
+reframed for this example as:
+.EQ
+"Tax savings" lm 1,000(1)(0.3)
+.EN
+.sp -0.7v
+.EQ
+lineup =~~
+300
+.EN
+We can now construct the table below:
+.TS
+tab (#) center;
+lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
+#_#_#_#_#_#_
+#CF0#CF1#CF2#CF3#CF4#CF5
+.T&
+lp-2 
+a n n n n n n .
+_
+CASH FLOWS#
+Equipment investment#(1,000)#####
+Sales##5,000#7,000#9,000#11,000#13,000
+Operating costs##(2,000)#(3,000)#(4,000)#(5,000)#(6,000)
+#_#_#_#_#_#_
+Operating cash flow##3,000#4,000#5,000#6,000#7,000
+.sp 1p
+.T&
+lp-2 
+a n n n n n n .
+TAX CALCULATION#
+Tax @30%##(900)#(1,200)#(1,500)#(1,800)#(2,100)
+Tax savings -AIA##300####
+#_#_#_#_#_#_
+After tax cash flow##2,400#2,800#3,500#4,200#4,900
+.sp 3p
+.T&
+lp-2 l l l l  
+a c c c c c 
+a n n n n n .
+DISCOUNTED CASH FLOW#
+Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
+#_#_#_#_#_#_
+Present value#(1,000)#2,088#2,117#2,303#2,402#2,435
+_
+NPV#10,345
+_
+.TE
+.LP
+We NPV can again be calculated using equations. The investment has to be
+multiplied by the CCTF for the AIA and the annuiyt and gradient components by
+the tax rate.
+.EQ L
+NPV lm Investment (CCTF) + left [ PV sub Anuuity + PV sub Gradient right ]
+( 1 - "tax rate" )
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~
+-1,000 left [ 1 - t  over { 1 + i } right ]
++ left [ 3,000(3.552) + 1,000(5.775) right ] ( 1 - t )
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~
+-1,000 left [ 1 - 0.3  over { 1 + 0.15 } right ]
++ left [ 10,056 + 5,775 right ] ( 1 - 0.3 )
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~
+-1,000[0.739] + left [ 15,831 right ] ( 0.7)
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~ -739 + 11,082
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+10,343
+.EN
+.B
+Note
+.IP \(bu
+The use of the capital cost factor makes it very easy to see the investment
+cost which is 739.
+.IP \(bu
+The ease of use of converting the pre tax cash flows to post tax cash flows.
+The #CCTF sub AIA# incorportes all the tax benefits associated with an
+investment so the cash inflows simply have to be multiplied by # 1 - "tax rate"
+#.
+.IP \(bu
+The tax reduces the size of the cash inflows but it also reduces the cost of an
+investment. The cash inflows have been reduced by exactly the rate of tax (30%)
+from 15,831 to 11,082, this is not surprising they were multiplied by # ( 1 -
+"tax rate" ) #, but the investment cost has been reduced by only 26.1% from
+1,000 to 739. The tax benefit for a cost would normally be # ( 1 - "tax rate" )
+# as previously discussed, which in this case would be 300, however, as the tax
+benefit has been discouted by one period at 15% it has been reduced to 261,
+which is the differemce between 1,000 and 739.
+.IP \(bu
+The NPV has been reduced from 14,835 to 10,343 when the AIA is utilised.
+.
+.NHTOC 3 sec:capex:num sec:capex:page "Writting Down Allowance"
+.LP
+The writing down allowance allows only for a proportion of the capital
+expenditure to be written down each year for tax purposes. Therefore, the
+#\[Po] 1# which is used to purchase an asset is written down over a number of
+years. Taking into account the time value of money, it is clear that the after
+tax cost of capital expenditure will be greater than if the same amount was
+classified as an expense or the AIA was utilised.
+.LP
+The table below shows the impact of spending 1,000 on a capital asset over a
+period of 10 years. The tax rate has been assumed to be #30%# and the discount
+rate is #15%#
+.TS
+tab (#) center;
+l c c c c c
+^ c c c c c
+l n n n n n .
+_
+.sp 5p
+Year#Pool Value#Allowance#Income Tax#Discount Rate# PV
+#@ Year End\(dg#18%#30%#15%#Tax Savings
+_
+1#1,000#180#54#0.8696#47
+2#820#148#44#0.7561#33
+3#672#121#36#0.6575#24
+4#551#99#30#0.5718#17
+5#452#81#24#0.4972#12
+6#371#67#20#0.4323#9
+7#304#55#16#0.3759#6
+8#249#45#13#0.3269#4
+9#204#37#11#0.2843#3
+10#168#30#9#0.2472#2
+.T&
+l s n n n n
+l s n n n n . 
+#_#_##_#
+1 to 10#863#259##158
+Future Years#137#41##6
+#_#_##_#
+Total#1,000#300##164
+#=#=##=#
+.TE
 .FS
-\(dd There are many different types of accounts: companys accounts for
-investors, management accounts for the officers of the company and tax accounts
-for HMRC. Each set of accounts is designed to satisfy the needs of those using
-them.
+\(dg This is the value before any deductions for allowances.
 .FE
+.tP "Impact of tax on capital costs"
+The table shows that the tax saving on 1,000 does total 300, however, it is
+spread over a number of years. The present value of the tax savings only amount
+to 164 when the discount rate is 15%. Therefore, taking into consideration the
+time value of money, 1,000 recorded as an expense today has an after tax cost
+of 700, where as 1,000 recorded as a capital asset has at after tax cost of
+836, or 1,000 - 164, which is the capital cost less the tax saving.
 .LP
-You can claim plant and machinery allowances if you have a business and you buy
-assets for that business which you keep to use in that business. You can claim
-if you are:
-.IP \(bu
-self-employed
-.IP \(bu
-a member of a partnership
-.IP \(bu
-a company or organisation that pays Corporation Tax
-.IP \(bu
-a landlord (but not for residential properties that are not holiday lets)
-.IP \(bu
-An employee who buys certain equipment that you need to do your job, because
-your employer does not provide them.
+Appendix A includes information concerning the mathematics behind the table
+which are used in the construction of the Capital Cost Tax Factors (CCTF)
+required to simplify the tax calculations.
 .LP
-Capital allowances for items, such as plant, machinery, tools, equipment or
-computers, are called "plant and machinery" allowances. What qualifies as plant
-and machinery is not clearly defined and there are restrictions on what can be
-claimed for.
+The tax saving for the 1,000 investment are shown in the table below:
+.TS
+tab (#) center;
+l c c c c
+l c c c c
+l c c c c
+l n n n n .
+_
+.sp 5p
+#Pool###Pool
+#Before#Allowance#Tax Savings#After
+Year#Allowances#18%#30%#Allowances
+_
+1#1,000#180#54#820
+2#820#148#44#672
+3#672#121#36#551
+4#551#99#30#452
+5#452#81#24#371
+.T&
+l s n n
+l s n n . 
+#_#_#
+Total#548#164
+#_#_#
+.TE
+However, the table terminates at year 5 and we need to calculate the tax
+savings available in the future.
+.EQ L
+"Tax savings to infinity" lm
+371 ( 1 - CCTF sub WDA )
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+371 left [ cctf right ]
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+371 left [ ncctf(0.18, 0.3, 0.15) right ]
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+371 ( 1 - 0.836 )
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+61
+.EN
+We will return to our base case and show the impact in the table:
+.TS
+tab (#) center;
+lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
+#_#_#_#_#_#_
+#CF0#CF1#CF2#CF3#CF4#CF5
+.T&
+lp-2 
+a n n n n n n .
+_
+CASH FLOWS#
+Equipment investment#(1,000)#####
+Sales##5,000#7,000#9,000#11,000#13,000
+Operating costs##(2,000)#(3,000)#(4,000)#(5,000)#(6,000)
+#_#_#_#_#_#_
+Operating cash flow##3,000#4,000#5,000#6,000#7,000
+.sp 1p
+.T&
+lp-2 
+a n n n n n n .
+TAX CALCULATION#
+Tax @30%##(900)#(1,200)#(1,500)#(1,800)#(2,100)
+Tax savings -WDA##54#44#36#30#24
+Tax savings -Future######61
+#_#_#_#_#_#_
+After tax cash flow##2,154#2,844#3,536#4,230#4,985
+.sp 3p
+.T&
+lp-2 l l l l  
+a c c c c c 
+a n n n n n .
+DISCOUNTED CASH FLOW#
+Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
+#_#_#_#_#_#_
+Present value#(1,000)#1,874#2,150#2,327#2,420#2,478
+_
+NPV#10,249
+_
+.TE
+.tP "NPV using the WDA"
 .
-.NHTOC 3 sec:satax:num sec:satax:page "Types of plant and machinery \
-allowance pools"
+The table has adjuseted to show the benefits of the WDA. 
 .LP
-There are 3 types of pools where you put the cost of your bought or gifted
-items
-.IP "main pool" 5
-Use the main pool for the majority of equipment bought by your business. The
-main pool can not include cars with high CO2 emissions. This pool has a rate of
-18%.
-.IP "special rate" 5
-Use the special rate pool for items that cannot go into the main pool. There
-are restrictions on what can go in the pool but typically it is for long life
-assets, which is equipment with an expected business life of 25 years or more,
-and cars with high CO2 emissions. This pool has a rate of 6%.
-.IP "single asset" 5
-Items of equipment (including cars) you use for both business and private
-purposes do not go into your main or special rate pool. Instead, you put the
-cost of each into its own single asset pool. You can also put items with a
-short life into a single asset pool but you must move the balance into your
-main pool in your next accounting period or tax year if you are still using the
-item after 8 years. The pool ends when you sell the asset. This means you can
-claim the capital allowances over a shorter period. The rate of the pool is
-same as would be applied if the item was in the main or special rate pool so
-18% or 6% depending on the item.
+The annuity equation below is used to calculate the investment cost. This
+equation comes from Appendix A and is not important to know or remember. It is
+not used anywhere else in the document.
+.EQ L
+NPV lm Investment left [ CCTF sub WDA right ] 
++ left [ PV sub Anuuity + PV sub Gradient right ] ( 1 - "tax rate" )
+.EN
+.EQ L
+lineup =~~
+-1,000 left [ cctf right ]
++ left [ 3,000(3.552) + 1,000(5.775) right ] ( 1 - t )
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~
+-1,000 left [ ncctf(0.18, 0.3, 0.15) right ]
++ left [ 10,056 + 5,775 right ] ( 1 - 0.3 )
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~
+-1,000[0.836] + left [ 15,831 right ] ( 0.7)
+.EN
+.sp -0.5v
+.EQ L
+lineup =~~ -836 + 11,082
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+10,246
+.EN
+.B
+Note
+.IP \(bu
+The rather ugly annuity equation does the job of revealing the investment cost
+to be 867.
+.IP \(bu
+As the tax rate is unchanged from the previous example the after tax cash
+inflows are stable at 11,082. The change from using the AIA to the WDA has been
+incorported into the investment where it belongs.
+.IP \(bu
+The investment cost has been reduced by only 13.3%, the percentage difference
+between 1,000 and 867. As table XX showed the use of the WDA means the tax
+benefits accrue over a longer period of time and have a lower present value
+increasing the cost.
 .
-.NHTOC 3 sec:satax:num sec:satax:page "How you can claim"
-.
+.SH
+Investment cost using the tables.
 .LP
-You must claim in the accounting period you bought the item if you want to
-claim the full value under the first year allowance or the annual investment
-allowance. If you do not want to claim the full value you can claim part of it
-using writing down allowances. You can utilise the writing down allowance at
-any time as long as you still own the item.
-.IP "First year allowance" 5
-.RS
-.IP \(bu
-If you buy an asset that qualifies for first year allowances you can deduct the
-full cost from your profits before tax. You can claim first year allowances in
-addition to annual investment allowance. You can currently claim first year
-allowances for a range of energy and water efficient equipment
-.IP \(bu
-You claim first year allowances before you add the cost of the item to the
-pool. So, if you claim a first year allowance the amount you add to the pool
-for that piece of equipment is nil. But if you later sell it, you deduct the
-price you receive from the pool, this can result in a balancing charge. 
-.RE
+We have used the equations to establish the investment cost. It is also
+possible to establish the investment cost from the tables as shown below.
+.TS
+tab (#) center;
+lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
+#_#_#_#_#_#_
+#CF0#CF1#CF2#CF3#CF4#CF5
+.T&
+lp-2 
+a n n n n n n .
+_
+CASH FLOWS#
+Equipment investment#(1,000)#####
+Tax savings -WDA##54#44#36#30#24
+Tax savings -Future######61
+#_#_#_#_#_#_
+Total##154#44#36#30#85
+.sp 3p
+.T&
+lp-2 l l l l  
+a c c c c c 
+a n n n n n .
+DISCOUNTED CASH FLOW#
+Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
+#_#_#_#_#_#_
+Present value#(1,000)#47#33#24#17#42
+_
+Investment cost#(837)
+_
+.TE
+.tP "NPV using the WDA"
 .
-.IP "Annual investment allowance (AIA)" 5
-.RS
-.IP \(bu
-You can claim an AIA to use against your taxable profits for the year you
-bought it. You cannot claim AIA for the cost of cars or for items you received
-as a gift, or for items you bought for another reason before you started to use
-them in bour business.
-.IP \(bu
-You can can claim AIA on most plant and machinery upto the AIA amount.
-.IP \(bu
-To claim:
-.RS
-.IP \(bu
-add the cost of the item to the appropriate pool
-.IP \(bu
-work out the amount of AIA you can claim 
-.IP \(bu
-take away the AIA from the amount you added to the pool
-.RE
-.RE
-.
-.IP "Writting down allowance" 5
-.RS
-.IP \(bu
-When you buy business assets you can usually deduct the full value from your
-profits before tax using annual investment allowance (AIA). Use writing down
-allowances instead if:
-.RS
-.IP \(bu
-you have already claimed AIA on items worth a total of more than the AIA amount
-.IP \(bu
-the item does not qualify for AIA (for example, cars, gifts or things you owned
-before you used them in your business)
-.IP \(bu
-You have limited profits.
-.RE
-.IP \(bu
-Claiming the writing down allowance:
-.RS
-.IP \(bu
-Start with any balance left in the pool from the year before.
-.IP \(bu
-add the costs of any items you bought where you have not claimed AIA
-.IP \(bu
-take away the amount you got for any items you sold
-.IP \(bu
-take away the market value of any items your business stopped using and which
-you kept for yourself
-.RE
-This will give you your new pool balance. You can now claim the WDA. 
-.RE
-Note that assets are generally not written down individually it is only the
-balance left on the pool that is considered. As the method used is a declining
-balance it is theoretically impossible to have a zero balance. The small pools
-allowance exists to compensate for the very small monetary deductions that
-would occur as the pool reduces in size. Under the small pools allowance you
-can write off all the balance in your main pool or the special rate pool when
-your pool's value is \[Po]1,000 or less you claim this instead of claiming a
-WDA.
-.
-.NHTOC 3 sec:satax:num sec:satax:page "Asset disposals"
+.NHTOC 3 sec:capex:num sec:capex:page "Losses"
 .LP
-When you sell something that you claimed plant and machinery allowances on
-(including AIA or first year allowance) you deduct the amount you get for
-selling it from the balance in your pool before you work out the allowances you
-can claim for that year.
-.LP
-You also make a deduction if you stop using the item in your business for
-whatever reason. The amount you deduct depends on why you stopped using it. If
-it was lost or destroyed you deduct the amount you get from any insurance. If
-you had no insurance you deduct its market value. If you kept it for yourself
-or gave it to a family member you deduct the market value.
-.LP
-Over the years the rules for pooling were extended so as largely to eliminate
-the need for balancing allowances and charges, however they can still occur. 
+Losses offer a tax shield to the cash inflows. You can not logically have a tax
+benefit unless you are paying tax. If you have losses, though, you can shield
+the cash inflow from tax. If the loses were to extend over the five years of
+this example the NPV would be the same as if there was no taxation.
 .
-.IP "Balancing charge" 5
-If you sell an item you claimed capital allowances for, and the sale or value
-of the item is more than the balance in the pool, you add the difference
-between the 2 amounts to your taxable profits. This is a balancing charge. You
-can have a pool even if you have claimed AIA on all your costs. The balance in
-the pool can be nil.
-.
-.IP "Balancing allowance" 5
-If your business stops trading, you can claim any balance left in the pool
-after you take away the amounts you get for selling it (or the market value of
-things you do not sell) as a balancing allowance.
-.sp 0.5v
-You take balancing allowances off your taxable profits. You only get a
-balancing allowance in the main or special rate pool when you stop your
-business. You can get a balancing allowance in a single asset pool when you
-sell or dispose of the asset that is in it.
-.
-.NHTOC 3 sec:satax:num sec:satax:page "Losses"
+.SH
+Conclusion
 .LP
-If you have loses you can get tax relief by offsetting the loss against your
-other gains or profits of in the same accounting period. You can also choose to
-carry the loss back to a previous tax period, if you do not it will be carried
-forward to another accounting period.
+The above table highlights the reason that businesses like to accelerate the
+deprecation of an asset for tax purposes.
 .LP
-Be aware that there are rules and limits concerning the utilisation of losses.
-.
-.NHTOC 2 sec:satax:num sec:satax:page "Sole trader vs corporation tax "
+Tax reduces the investment cost.
 .LP
-Coporation Tax differes, in a general sense, from that of a sole trader in the
-following : the rate of taxation, the lack of personal allowance, the timing of
-the tax payments, there is no capital gains tax.
-.
-.NHTOC 2 sec:satax:num sec:satax:page "Question that you should ask \
-your accountant"
+Tax can not make the NPV negative it simply reduces the size of tit.
 .LP
-This section covers, in the most general sense, the structure of some of the UK
-tax system. Below are a list of questions that it maybe useful to understna
-with the help of your accountant:
-.IP \(bu
-What are the thresholds for National Insurance under the self assesment tax
-regime.
-.IP \(bu
-What are the thresholds for Income tax under the self assesment tax regime.
-.IP \(bu
-If I buy a piece of plant or machinery, when date does HMRC define as the
-"bought" date?
-.IP \(bu
-What items qualify for first year allowances?
-.IP \(bu
-What can be included in the cost of an item?
-.IP \(bu
-What are the rules concerning capital allowances and hire purchase?
-.IP \(bu
-Have there been any changes to the size of AIA and what is the impact on the
-amount that can be claimed?
-.IP \(bu
-As a sole trader can I use loses against capital gains tax?
-.IP \(bu
-What is "sideways loss relief"
-.IP \(bu
-Are there different rules about how to utilise losses in a new business?
-.IP \(bu
-If I close my business any make a loss in the last year, how far back can I
-carry this lose?
-.IP \(bu
-Do I have to claim the capital allowance at 18% or is 18% the maximum amount
-that can be claimed in any year?
-.IP \(bu
-Would it be beneficial to use single asset pools for my mobile plant that on
-average has a 5 year service life?
+If you have loses you cost base rises.
+.LP
+Lower taxation means higher costs. - sub marginal producer.
+
 

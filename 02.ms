@@ -1,323 +1,550 @@
 .
 .\" .sp 5
-.\" .NHTOC 1 sec:time:num sec:time:page "Time Value of Money"
+.\" .XXXX 1 sec:equiv:fum sec:equiv:page "Equivalence"
+.\" .XXXX! \\n(cn 1 sec:equiv:fum sec:equiv:page "Equivalence"
 .LP
-The Time Value of Money takes into account the fact that money received today
-is worth more than money received in the future because the money today can be
-invested and subsequently grow through the magic of compounding. Time Value of
-Money (TVM) is typically expressed by the following equation:
+We have established that there is relationship between the present value and
+the future value through the TV'S equation:
 .EQ I
-FV = PV( 1 + i ) sup n
+FV lm PV( 1 + i ) sup n
 .EN
-.sp -0.5v
-.EQ I
-"Future Value" 
-= 
-"Present Value" times ( 1 + "interest rate" ) sup "number of compound periods"
-.EN
-Most people may not know this equation as the basis of finance but we still
-place our money with banks and like to see it grow over time. It is this
-equation that leads to the increase in the value of savings over time. As I
-write this we are living in a period where the Government Bonds of Europe have
-negative yields, that with standing the equation is still the basis of finance.
-Below is a graph\(dg to show the impact of compounding on \[Po]1 deposited in a
-bank account that pays the unrealistically high interest rate \fIi\fP of 25%
-per year.
-.FS
-\(dg This graph is taken from page 37 of Document Formatting and Typesetting on
-the UNIX System - Volume 2.
-.FE
-.sp -2
-.G1
-r=0.25; pl=1+r; p=1; yrs=5
-frame top invis right invis
-coord x 0, yrs y 0, 5
-label bot "Years"\
-				"(Future Value = Principal #(1+i) sup n#)" down 0.1
-label left "Pounds" unaligned "Sterling" left 0.2
-draw solid
-0, 1
-for i = 1 to yrs do
-{
-	p = p*pl; next at (i, p)
-}
-line dashed from (0,1) to (yrs, 1)
-line dotted from (yrs, 1) to (yrs, p)
-"earned" rjust at 4.85, 2.0
-"interest" rjust at 4.85, 1.7
-plot p "\[Po]%.2f" at (yrs, p+0.25)
-arrow from (2.8, 4.0) to (3.25, 2.3)
-"Principal = \[Po]1.00" ljust at (2.1, 4.5)
-"Rate(\fIi\fP) = 0.25" ljust at (2.1, 4.1)
-.G2
-There is a quote, often attributed to Albert Einstein, even though there is no
-evidence that he ever uttered the words, that succinctly conveys the power of
-compounding: 
-.QP
-.sp
-"Compound interest is the eighth wonder of the world. He who understands it,
-earns it ... he who doesn't ... pays it."
-.sp
+If an investor is indifferent to receiving the PV or alternatively waiting for
+#n# compounding periods at a given interest rate #i# to receive the FV, it is
+reasonable to suggest that the two alternative are equivalent.
 .LP
-To highlight the power of compounding and stick with the theme of famous people
-we will look at the affairs of Benjamin Franklin. Benjamin Franklin, according
-to the American Bankers Association, left 5,000 USD to the residents of Boston
-in 1791, with the understanding that it should be allowed to accumulate for a
-hundred years. By 1891 the 5,000 has grown to 322,000. A school was built, and
-92,000 was set aside for a second hundred years of growth. In 1960, this second
-century fund had reached 1,400,000. 
+Equivalence means that different cash flows at different times are equal in
+economic value at a given interest rate. Equivalence uses an interest rate or
+discount rate to adjust for the time value of money. Since 1 today and 1 in the
+future have different economic values, the adjustment must occur before the cash
+flows can be added together.
 .LP
-.KS
-There is a graph below to show the exponential nature of the power of
-compounding over the first 100 years.
-.sp -3
-.G1
-frame invis ht 2 wid 3 left solid bot solid
-label bot "Years" 
-label left "US" unaligned "Dollars" left 0.5
-PV=5000
-r=0.0425
-S=1791
-E=1891
-N=E-S
-coord x 1791,1891 y 0, PV * (1 + r)^N
-ticks bot out from S to E by 25
-define FV X PV * ( (1 + r )^ ($1-(S-1) ) )  X
-draw A solid
-for i from S to E by +1 do
-{
-	next A at i, FV(i)
-}
-.G2
-.KE
-If you wish to establish the interest rate (return)  for the first one hundred
-years the TVM equation can be rearranged for "i".
-.EQ I
-FV = PV ( 1 + i ) sup n
-~~\[tf]~~ 
-FV over PV = { ( 1 + i ) sup n } 
-tf
-{ left [ FV over PV right ] } sup {1 over n} =  1 + i 
-tf
-{ left [ FV over PV right ] } sup {1 over n} - 1 =  i 
-.EN
-.EQ I
-"Return" = { left [ 322,000 over 5,000 right ] } sup {1 over 100} - 1 
-~~=~~ 64.40 sup {0.01} -1
-~~=~~ 1.0425 -1
-~~=~~ 0.425 times 100
-~~=~~ 4.25% 
-.EN
-.B Caveat:
-Compounding only continues its endless upward trajectory provided you 
-.B NEVER 
-lose money. Hence, the first rule of investing is, don't lose money. The second
-rule is, don't forget the first rule....
-.LP
-It is important to understand that the compounding is a form of exponential
-growth. As we have shown the growth rate was 4.25%, however, the first chart
-showed dramatic increases in value over time. The increases in value were not
-due to an increase in growth rate but because the growth rate remains
-\fBconstant\fP regardless of the amount of capital.
-.LP
-The graph below has been plotted with a logarithmic y-axis and shows that the
-growth rate is constant over the 100 year period.
-.sp -2
-.G1
-frame invis ht 2 wid 3 left solid bot solid
-label bot "Years" 
-PV=5000
-r=0.0425
-S=1791
-E=1891
-N=E-S
-coord x 1791,1891 y 1, PV * (1 + r)^N log y
-ticks bot out from S to E by 25
-define FV X PV * ( (1 + r )^ ($1-(S-1) ) )  X
-draw A solid
-for i from S to E by +1 do { next A at i, FV(i)}
-.G2
-A quick note on logarithms. Logarithms are artifical numbers originally
-invented by John Napier and later improved by Henry Briggs in order to
-facilitate long calculations. The logarithm is the inverse of exponentation
-which means the log of a number is the exponent to which a base number must be
-raise to produce #x#. For instance the log of 8 to base 2 is 3 and the log of 8
-to base 10 is 0.9031. The graph above has a logarithmic scale using base 10,
-which means that an increase in the log number by one is an increase in the
-actual number by 10 times. The log of 10 to base 10 is 1, when working with
-logs if the base is not explicity given, as in #log sub 2# to represent a log
-to base 2, it is taken to be base 10 therefore log 10 is 1, and log 100 is 2
-and log 1000 is 3 and so on. The graph above starts at 5,000 which when
-expressed as a log is 3.7, which is 3.7 ticks up on the Y axis from 1791 on the
-X axis. The line finishes at 322,000 which has a log of 5.5 and therefore we
-look to find the end of the line 5.5 ticks up the Y axis from 1891 on the X
-axis.
-.LP
-Constant growth rates are in reality unlikely to persist for long periods of
-time because of the rapid changes in the size and the subsequent limits to that
-growth. The limits may appear in forms of resource restriction, market size
-etc.  Over time even very small constant growth rates will have a large impact.
-If inflation is 2% a year it will halve the real value of money over a 35 year
-period.\(dg
-.FS
-\(dg The rule of 72 is often used in finance to estimate the doubling time of a
-given compound interest rate. #72 over 2 ~=~ "36" #. The actual doubling time
-if found by rearranging the TVM equation for #n# with 1 as the PV and 2 as the
-FV. Therefore #n = {ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
-= {ln { left ( 2 over 1 right ) }} over {ln { ( 1 + 0.02 ) }}# = 35.  The
-"\fIln\fP" refers to the natural logarithm #e# which is often used with
-patterns exhibiting exponential growth. In chapter XX we will find an
-approximation of the  value of #e# when examining continuous compounding and
-the force of interest as discovered by Bernoulli. If working with continuos
-compounding 69 gives a better approximation than 72.
-.FE
+If your business had the opportunity to borrow 5,000 at 8% over 5 years a
+number of different types of debt instrument maybe available. The cash flows
+for each of the debt instruments below are different but the present value of
+the 5,000 loan is equivalent at the interest rate of 8%.
 .
-The real problems come not in forecasting that things will change but in
-making predictions based on things staying the same. It pays always to
-remember that trees do not grow to the sky.
+.\" .NHTOC 2 sec:zero:num sec:zero:page "Zero Coupon Bond"
+.\" .XXXX 0 2 "Revolving credit with a bank"
+.\" .NHTOC! \\n(cn 1 "Zero coupon bond"
+.XXXX \\n(cn 1 "Zero coupon bond"
 .LP
-As we are mostly looking to value future cash projections in today's money it
-is discounting and the equation must be rearranged to calculate the present
-value given a future value.
-.EQ I
-PV = FV over { ( 1 + i ) sup n }
-.EN
-There can be found tables which include the discount factors for various
-interest/discount rates. As a basic check the factor in the tables should be
-less than one if it is to be used for discounting and greater than one if it is
-to be used for compounding. Any number multiplied by a number less than one
-will get smaller which makes sense for discounting and conversely any number
-multiplied by a number greater than one will get bigger as you would expect
-with compounding.
-.LP
-You can also calculate the discount factor yourself by setting the PV to 1 and
-resolving the equation. The example below uses an discount rate of 10% as the
-interest (i) and shows the factor required to discount one (FV) pound back to
-today's value for years (n) zero, one, two and three at the rate of 10%.
-.EQ I
-PV = 1 over { ( 1 + 10/100 ) sup 0 } = 1  over (1.1) sup 0 = 1 over 1 = 1
-.EN
-.EQ I
-PV = 1 over { ( 1 + 10/100 ) sup 1 } = 1  over (1.1) sup 1 = 1 over 1.1 = 0.909
-.EN
-.EQ I
-PV = 1 over { ( 1 + 10/100 ) sup 2 } = 1  over (1.1) sup 2 = 1 over 1.21 = 0.826
-.EN
-.EQ I
-PV = 1 over { ( 1 + 10/100 ) sup 3 } = 1  over (1.1) sup 3 = 1 over 1.331 
-= 0.751
-.EN
-As a side note any number raised to the power of zero is always equal to one.
-Year zero is typically taken to be the year than the investment commences.
-Using the information above we can calculate the value of 100 GBP received in 3
-years discounted to today at 10%.
-.EQ I
-PV = 100 times 0.751 = 75.10 " GBP"
-.EN
-The TVM equation can also be rearranged to resolve for the number of years.
-.EQ I
-FV = PV(1 + i) sup n
-tf
-FV over PV = ( 1 + i ) sup n
-tf
-ln { left ( FV over PV right ) } = n ln { ( 1 + i ) }
-tf
-n = {ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
-.EN
-.EQ I
-n = {ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
-~~=~~ {ln { left ( 322,000 over 5,000 right ) }} over {ln { ( 1 + 0.0425 ) }}
-~~=~~ 4.1651 over 0.0416
-~~=~~ "100 years"
-.EN
-.
-Another note on the logarithms, I have assumed a certain level of mathamatical
-knowledge in writing this paper but I have also added some maths pointers where
-I felt there maybe some confusion. In the equation above where we confirmed the
-length of the compounding as 100 years the choice of logarithm is arbitary. The
-HP12C is a financial calculator and has natural log #ln# key and its inverse
-#e# key to resolve continuouse compounding problems. Many non financial
-calculators only have a log key for working with base 10, if you use the log
-key on your calculator you will get the same answer. Here is where it gets a
-little ugly as I am presuming you have both a basic understanding of logarithms
-and can remeber a little about how to manipulate them. The formula to calculate
-logs to anybase is usually expressed as:
-.EQ I (1)
-log sub a x = { log sub 10 x } over { log sub 10 a } 
-~~~~
-"or"
-~~~~
-log sub a x = { ln x } over { ln a } 
-~~~~
-"or"
-~~~~
-log sub a x = { log sub b x } over { log sub b a } 
-.EN
-We can express #log sub a x = y# in its exponential form as #x = a sup y# this
-#a sup y# in the TVM equation is represented by #(1 + i ) sup n# where the base
-is #(1 + i )#. The expression #x = a sup y# is one of the intermediatory steps
-we took in transposing the TVM equation to resolve for n 
-.EQ I
-FV over PV = ( 1 + i ) sup n
-.EN
-Equation 1 for the change of a base tell us that we can resolve for the base
-#log sub a x# using any other base. We used the natural log #ln# but #log sub
-10# or any other base would have yielded the correct result. Just to prove the
-point we complete the transformation of the TVM equation using an arbitary
-base, we will use base 7
-.EQ I
-FV = PV(1 + i) sup n
-tf
-FV over PV = ( 1 + i ) sup n
-tf
-log sub 7 { left ( FV over PV right ) } = n log sub 7 { ( 1 + i ) }
-tf
-n = {log sub 7 { left ( FV over PV right ) }} over {log sub 7 { ( 1 + i ) }}
-.EN
-.EQ I
-n = {log sub 7 { left ( FV over PV right ) }} over {log sub 7 { ( 1 + i ) }}
-~~=~~ {log sub 7 { left ( 322,000 over 5,000 right ) }} over {log sub 7 { ( 1 + 0.0425 ) }}
-~~=~~ 2.1404 over 0.0214
-~~=~~ "100 years"
-.EN
-.sp
-.KS
-.UL Summary
-.LP
-The basic TVM equation: #FV = PV(1 + i) sup n# is used to express the relation
-ship for an
-.B INDIVIDUAL
-cash flow. That is to say the cash flow diagram should match the pattern below,
-with one cash outflow and one cash inflow:
-.sp -1
 .PS
-A: [ box invis wid 0.25 ht 0.20 "0"
-      arrow down 0.3 at last box.s 
-			"5,000" below at end of last arrow
-			line right from last box.e
-			line right 
-			line right
-			line down 0.20 dashed right 0.15
-			line up 0.40 dashed right 0.15
-			line down 0.20 dashed right 0.15
-			line right
-			line right 
-			line right 
-			box invis wid 0.30 ht 0.20 "100"
-			arrow up 0.35 at last box.n
-			"322,000" above at end of last arrow
+A: [  box invis wid 0.25 ht 0.20 "0"
+		arrow up 0.3 at last box.n
+		"5,000" above at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "1"
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "2"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "3"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "4"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "5"
+		arrow down 0.3 at last box.s
+		"7,347" below at end of last arrow
 		]
-box invis "i = 4.25/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.1)
-box invis "n = 100" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
+.PE
+.sp -1v
+.EQ I
+PV =~~
+FV over { (1 +i) sup n }
+=~~
+7,347 over { (1 + 8/100) sup 5 }
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+5,000
+.EN
+.
+.EQ I
+FV =~~
+PV( 1 + i ) sup n
+=~~
+5,000(1 + 8/100) sup 5
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+7,347
+.EN
+This is the simplest example and has one cash outflow and one cash inflow.
+.
+.XXXX 0 2 "Instalment loan"
+.LP
+.PS
+A: [  box invis wid 0.25 ht 0.20 "0"
+		arrow up 0.3 at last box.n
+		"5,000" above at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "1"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "2"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "3"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "4"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "5"
+		arrow down 0.2 at last box.s
+		"1,252" below at end of last arrow
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
+.PE
+.
+.EQ I 
+PV lm
+1,252 over { (1 + 8/100) sup 1 }
++ 1,252 over { (1 + 8/100) sup 2 }
++ 1,252 over { (1 + 8/100) sup 3 }
++ 1,252 over { (1 + 8/100) sup 4 }
++ 1,252 over { (1 + 8/100) sup 5 }
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+1,159
++ 1,073
++ 994
++ 921
++ 853
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+5,000
+.EN
+It is important to understand that equivalence allows us to move money both
+forwards (compounding) and backwards (discounting) in time. Therefore, all
+these cash flows at the given interest rate should represent the same FV.
+.EQ I
+FV lineup = 
+1,252 (1 + 8/100) sup 4
++ 1,252 (1 + 8/100) sup 3
++ 1,252 (1 + 8/100) sup 2
++ 1,252 (1 + 8/100) sup 1
++ 1,252 (1 + 8/100) sup 0
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+1,703 + 1,577 + 1,460 + 1,352 + 1,252
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+7,344\(dg
+.EN
+.FS
+\(dg In reality to have a FV of 7,347 the value of the repayment would be
+1,252.34. As only the integer value of 1,252 is used it leads to the lesser
+value of 7,344.
+.FE
+.
+.XXXX 0 2 "Coupon Bond"
+.LP
+.PS
+A: [  box invis wid 0.25 ht 0.20 "0"
+		arrow up 0.3 at last box.n
+		"5,000" above at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "1"
+		arrow down 0.2 at last box.s
+		"400" below at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "2"
+		arrow down 0.2 at last box.s
+		"400" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "3"
+		arrow down 0.2 at last box.s
+		"400" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "4"
+		arrow down 0.2 at last box.s
+		"400" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "5"
+		arrow down 0.2 at last box.s
+		"400" below at end of last arrow
+		move down 0.2
+		arrow down 0.2 
+		"5,000" below at end of last arrow
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
+.PE
+.
+.EQ I 
+PV sub coupon lm 
+400 over { (1 + 8/100) sup 1 }
++ 400 over { (1 + 8/100) sup 2 }
++  400 over { (1 + 8/100) sup 3 }
++ 400 over { (1 + 8/100) sup 4 }
++  400 over { (1 + 8/100) sup 5 }
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+1,597
+.EN
+.
+.EQ I
+PV sub "Principal repayment" lineup =~~
+5,000 over { (1 + 8/100) sup 1 } 
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+3,403
+.EN
+.
+.EQ I
+PV sub Total lineup =~~
+1,597 + 3,403
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+5,000
+.EN
+The relationship to the future value can be established by compounding the
+interest payments, called coupons, received by the investor.
+.EQ I
+FV sub Coupon lineup =~~
+400 (1 + 8/100) sup 4
++ 400 (1 + 8/100) sup 3
++ 400 (1 + 8/100) sup 2
++ 400 (1 + 8/100) sup 1
++ 400 (1 + 8/100) sup 0
+.EN
+.
+.EQ I
+FV sub "Principal repayment" lineup =~~
+5,000 (1 + 8/100) sup 0
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+5,000
+.EN
+.
+.EQ I
+FV sub Total lineup =~~
+2,347 + 5,000 
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+7,347
+.EN
+.
+.XXXX 0 2 "Constant Principal Repayment"
+.LP
+.PS
+A: [  box invis wid 0.25 ht 0.20 "0"
+		arrow up 0.3 at last box.n
+		"5,000" above at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "1"
+		arrow down 0.28 at last box.s
+		"1,400" below at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "2"
+		arrow down 0.26 at last box.s
+		"1,320" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "3"
+		arrow down 0.24 at last box.s
+		"1,240" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "4"
+		arrow down 0.22 at last box.s
+		"1,160" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "5"
+		arrow down 0.2 at last box.s
+		"1,080" below at end of last arrow
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
+.PE
+.
+.EQ I
+PV lm
+1,400 over { (1 + 8/100) sup 1 }
++ 1,320 over { (1 + 8/100) sup 2 }
++  1,240 over { (1 + 8/100) sup 3 }
++ 1,160 over { (1 + 8/100) sup 4 }
++  1,080 over { (1 + 8/100) sup 5 } 
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+1,296 + 1,132 + 984 + 853 + 735
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+5000
+.EN
+Again the future value can be established from the individual cash flows.
+.EQ I
+FV lineup =~~
+1,400 over { (1 + 8/100) sup 4 }
++ 1,320 over { (1 + 8/100) sup 3 }
++ 1,240 over { (1 + 8/100) sup 2 }
++ 1,160 over { (1 + 8/100) sup 1 }
++ 1,080 over { (1 + 8/100) sup 0 }
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+1,905 + 1,663 + 1,446 + 1,253 + 1,080
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+7,347
+.EN
+.
+.XXXX 0 2 "Balloon Payment"
+.LP
+.PS
+A: [  box invis wid 0.25 ht 0.20 "0"
+		arrow up 0.3 at last box.n
+		"5,000" above at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "1"
+		arrow down 0.2 at last box.s
+		"1,000" below at end of last arrow
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "2"
+		arrow down 0.2 at last box.s
+		"1,000" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "3"
+		arrow down 0.2 at last box.s
+		"1,000" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "4"
+		arrow down 0.2 at last box.s
+		"1,000" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.2 ht 0.15 "5"
+		arrow down 0.4 at last box.s
+		"2,480" below at end of last arrow
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
+.PE
+.
+.EQ I
+PV lm 
+1,000 over { (1 + 8/100) sup 1 }
++ 1,000 over { (1 + 8/100) sup 2 }
++ 1,000 over { (1 + 8/100) sup 3 }
++ 1,000 over { (1 + 8/100) sup 4 }
++ 2,480 over { (1 + 8/100) sup 5 } 
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+926 + 857 + 794 + 735 + 1,688
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+5000
+.EN
+Again the future value can be established from the individual cash flows.
+.EQ I
+FV lineup =~~
+1,000 (1 + 8/100) sup 4 
++ 1,000 (1 + 8/100) sup 3
++ 1,000 (1 + 8/100) sup 2 
++ 1,000 (1 + 8/100) sup 1 
++ 1,688 (1 + 8/100) sup 0
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+1,360 + 1,260 + 1,166 + 1,080 + 2,480
+.EN
+.sp -0.7v
+.EQ I
+lineup =~~
+7,347
+.EN
+It should now be clear that all of the debt structures above are equivalent in
+their economic value, that means there PV and their FV. The FV, which is the
+return available to the lender, hinges on the ability of the lender to
+reinvest the interest payments, called coupons in the case of bonds, at the 8%
+interest rate. The exception to this rule is the zero-coupon bond which has, by
+definition, no periodic interest payments and the lender will receive the 8%
+return unless there is a default. 
+.
+.XXXX 0 2 "Revolving credit with a bank"
+.\" .NHTOC 2 sec:irreg:num sec:irreg:page "Revolving credit with a bank"
+.LP
+To emphasis that amounts can be moved around by discounting or compounding, we
+will look at another scenario. Suppose that you owe your bank 2,000 due in 2
+years and a further 2,500 due in five years at 8% interest. The cash flow
+diagram would be as follows:
+.PS
+A: [  box invis wid 0.25 ht 0.20 "0"
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "1"
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "2"
+		arrow down 0.26 at last box.s
+		"2,000" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "3"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "4"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "5"
+		arrow down 0.3 at last box.s
+		"2,500" below at end of last arrow
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.0)
+.PE
+If you had a discussion with your bank and requested to pay the loans today,
+what would the payment be? The first step is to redraw the cash flow diagram
+.PS
+A: [  box invis wid 0.25 ht 0.20 "0"
+		line invis down 0.62 from last box.s
+		"Today" below at end of last line
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "1"
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "2"
+		arrow down 0.26 at last box.s
+		"2,000" below at end of last arrow
+		move down 0.2
+		line dashed down 0.2
+		arrow "Discount" above dashed left 0.85
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "3"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "4"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "5"
+		arrow down 0.3 at last box.s
+		"2,500" below at end of last arrow
+		move down 0.2
+		line dashed down 0.3
+		arrow "Discount" below dashed left 2.5
+
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.0)
+.PE
+The 2,000 has to be discounted for two years and the 2,500 for five years to
+arrive at the value today.
+.EQ I
+PV =~~ FV over { (1 +i) sup n }
+=~~
+2,000 over { (1 + 8/100) sup 2 }
++ 2,500 over { (1 + 8/100) sup 5 }
+=~~
+3,416
+.EN
+.LP
+If you notice the amount paid back is less than 4,500 which is the original
+payment values of 2,000 and 2,500. This is because the money has been paid back
+early depriving the bank of interest.  However, as the bank has received the
+money early they can lend it out again and get back the interest from the early
+repayment therefore restoring the FV. We have, as we did in the previous
+section, assumed there is no "reinvestment risk", that is that the bank can
+relend the money to someone else at the same rate they lent it to you.
+.LP
+.KS
+If you requested to pay the loan back in 2 years, how much would you pay? Again
+the cash flow diagram must be adjusted.
+.PS
+A: [  box invis wid 0.25 ht 0.20 "0"
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "1"
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "2"
+		arrow down 0.26 at last box.s
+		"2,000" below at end of last arrow
+		move down 0.2
+		arrow  dashed down 0.3
+		"Year 2" below at end of last arrow
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "3"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "4"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "5"
+		arrow down 0.3 at last box.s
+		"2,500" below at end of last arrow
+		move down 0.2
+		line dashed down 0.32
+		arrow "Discount" below dashed left 1.4
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.0)
 .PE
 .KE
-Which ever value (FV, PV, N, i) is unknown can then be resolved by using the
-appropriate arrangement of the TVM formula:
+The 2,000 does not require discounting as the payment is at year 2. The 2,500
+has to be discounted for 3 years to move it from year 5 to year 2.
 .EQ I
-FV = PV(1 + i ) sup n 
-~~~~~~~~~~~~ PV = FV over { (1 + i) sup n }
-~~~~~~~~~~~~ i = { left [ FV over PV right ] } sup {1 over n} - 1
-~~~~~~~~~~~~ n = {ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
+PV =~~
+FV over { (1 +i) sup n }
+=~~
+2,000 over { (1 + 8/100) sup 0 }
++ 2,500 over { (1 + 8/100) sup 3 } 
+=~~
+4,381
 .EN
-As we shall see in the later sections the majority of finance is concerned with
-how to sum various patterns of individual discounted cash flows.
+The amount paid back is less than 4,500 again. However, it is only the 2,500
+from year 5 which has been deprived of interest this time.
+.LP
+If you requested to pay back both amounts at the end of five years what would
+the payment be?
+.PS
+A: [  box invis wid 0.25 ht 0.20 "0"
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "1"
+		line right 0.3 from last box.e
+		box invis wid 0.25 ht 0.15 "2"
+		arrow down 0.26 at last box.s
+		"2,000" below at end of last arrow
+		move down 0.3
+		line dashed down 0.28
+		arrow "Compound" below dashed right 1.36
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "3"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "4"
+		line right 0.3 from last box.e 
+		box invis wid 0.25 ht 0.15 "5"
+		arrow down 0.3 at last box.s
+		"2,500" below at end of last arrow
+		move down 0.2
+		arrow dashed down 0.25
+		"Year 5" below at end of last arrow
+		]
+box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.0)
+.PE
+.
+.EQ I
+FV = PV(1 + i) sup n 
+~~~=
+2,000 (1 + 8/100) sup 3
++ 2,500 (1 + 8/100) sup 0 
+~=~ 5,019
+.EN
+The 2,000 has to be compounded for 3 years to reach year 5. The total value now
+exceed 4,500 as the bank has extracted extra interest from you by extending the
+loan for 3 years.

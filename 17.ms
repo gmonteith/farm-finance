@@ -1,596 +1,694 @@
 .
 .sp 5
-.NHTOC 1 sec:cctf:num sec:cctf:page "Investment cost equations "
+.NHTOC 1 sec:cctf:num sec:cctf:page "Using the investment cost equations "
 .LP
-The purpose of this section is to use some mathematics to reduce the amount of
-work required to estimate the NPV of a given investment, where tax is a
-consideration. The mathematics behind the equations is covered in Appendix A
-and B.
-.LP
-It is important to understand that the investment cost equations come in two
-forms, postive and negative. In the preface we discussed the sign conventions
-and that costs are assumed to be negative when working with NPV and positive
-when comparisions are being made with other costs. Therefore, the equations
-have both a negative form to use when working with NPVs and a postive form for
-cost comparisions.
+Now that we have established the investment cost equations we can answer two
+important questions; what are thery for and how do I use them?
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Capital Cost Tax Factors (CCTF)"
+.NHTOC 1 sec:cctf:num sec:cctf:page "What is the purpose of the investment cost equations?"
 .LP
-We are going to introduce the concept of the Capital Cost Tax Factor (CCFT) and
-build on our knowledge of series and tax. The CCTF acts as a constant which can
-be used to simplify the after tax NPV of an investment. The CCTF will remain
-the same provided the tax, declining balance rate, and discount rate remain the
-same.
+The purpose of the investment cost equation is to reduce the work requied to
+establish the after tax NPV. The investment cost equations are not designed to
+be used to forecasting after tax earnings or net income.
 .LP
-The purpose of the CCTF is to calculate the after tax, after salvage present
-value of an investment. The CCTF calculates the tax benefits accruing from the
-use of the capital allowances to infinity, because, in the main pool it is not
-possible to generate a balancing allowance unless the business ceases to trade
-which means that there could be tax benefits available to the business after
-the asset has been disposed of. The mathematics behind the CCTFs is covered in
-Appendix A and Appendix B.
-.
-.NHTOC 2 sec:tim:num sec:tim:page "Types of Pool"
-.LP
-For the purposes of the investment cost equations there are two types of pool:
-.IP "Continuous Pools" 5
-The investment cost equations within a continuing pool assume the following:
-.RS
-.IP \(bu
-The investment are in the main pool or the special rate pool.
-.IP \(bu
-The government allows the pooling of assets to reduce as much as is possible
-the possibility for the requirement to calculate a balancing charges or a
-balancing allowance. Therefore it is there is always sufficient value in the
-pool that no balancing adjustments ever occur even if the disposal triggers a
-capital gain.
-.IP \(bu
-It is possible to generate a balancing charge in any pool at any time. The
-investment cost equations in continuous pools do not allow for this
-eventuallity.
-.IP \(bu
-Capital gains tax is charged at the same rate of tax used in the rest of the
-calculation
-.RS
-.LP
-The government has very specifc rules on capital gains tax, however, for the
-purpose of calculating the investment cost I am going to disreagrd them and
-charge the capital gains tax at the same rate of taxation as the rest of the
-equation. The reasons for this are enumeratied below:
-.RS
-.IP \(bu
-The salvage value tends to occur far in the future and has a limited impact on
-the present value.
-.IP \(bu
-Estimating the salvage value is a fraught experience and the probability of
-being right is limited the further in the future the event occurs.
-.IP \(bu
-Tax rates change, so even if used the correct capital gains rate today it may
-not be right at the time the asset is disposed off.
-.IP \(bu
-Corporate profits do not incur capital gains tax and I wanted these equations
-to be useful for measuring the impact of capital allowances on a capital
-investment under both Self Assesment and Corporate Tax regimes.
-.RE
-.RE
-.RE
-.IP "Single Asset Pool" 5
-The investment cost equations within a single asset pool assume the following:
-.RS
-.IP \(bu
-The disposal of the asset can generate a balancing allowance or a balancing
-charge.
-.IP \(bu
-The equation is the same if there is a balancing allowance or balancing charge,
-the maths behind this is covered in Appendix B.
-.IP \(bu
-The same capital gains logic that was used with continuous pools applies to
-single asset pools.
-.IP \(bu
-The government also allows single asset pools which have a maximum life of 8
-years, it is upto you to abide by this rule.
-.RE
-.
-.NHTOC 2 sec:tim:num sec:tim:page "Timings of tax payments"
-.LP
-It is generally assumed that tax is payable in arrears. The cash flow diagram
-below is a generalisation of tax paid in arrears. It also shows the
-accumulation of tax flows at the end of each period when discounting.
-.PS
-A: [ box invis wid 0.25 ht 0.25 "0"
-			arrow down 0.50 at last box.s
-			"Investment" below at end of last arrow
-			line right 0.2 from last box.e
-			arrow up 0.2
-			line right 0.2 from last line.e
-			arrow up 0.2
-			line right 0.2 from last line.e
-			arrow up 0.2
-			line right 0.2 from last line.e
-			arrow up 0.2
-			line right 0.2 from last line.e
-			arrow up 0.2
-			line right 0.2 from last line.e
-			box invis wid 0.25 ht 0.25 "1"
-			line dotted up 0.7 at last box.n
-			"Time period" at end of last line
-			line dotted down 0.4 at last box.s
-			"Tax calculation " at last line.s
-			line right 0.6 from last box.e
-			arrow down 0.2
-			line right 0.6 from last line.e
-			box invis wid 0.25 ht 0.25 "2"
-			line dotted up 0.7 at last box.n
-			"Time period" at end of last line
-			line dotted down 0.4 at last box.s
-		]
+The assumption is that the NPV is positive, otherwise why would you make the
+investment, and that taxation will need to be paid at the appropriate rate.
 
-CF1: box invis wid 1.0 ht 0.2 "cash flows" at (0.8, 0.2) 
-line dashed up 0.1 at last box.n
-arrow dashed right
-TX1: box invis wid 1.0 ht 0.2 "tax payment" at (2.3, -0.4) 
-line dashed down 0.1 at last box.s
-arrow dashed right
-.PE
-.UL "Self Assesment Tax"
+The logic is that tax
+losses are a "sunk cost" and as such the after tax NPV derived by using an
+investment cost equation may differ materially from the after tax cash earnings
+received from the investment over its life time if there are existing losses in
+the business which can be used to shield the earnings from taxation.
 .LP
-With Self Assessment tax in the UK this is not so clear cut into which period
-the tax payment falls. The UK the tax year runs from 6th April to the 5th of
-April. However payments for tax are typically taken on account and each payment
-is half the previous year's tax bill.  
+As much as is possible the merits of each investment are look at in isolation.
+There will of course always be an impact from other business decisions that
+impact the after tax these are disregarded
+.
+.NHTOC 2 sec:cctf:num sec:cctf:page "How to use the equations"
 .LP
-The deadlines for paying your tax bill are:
-.IP "31 January" 15
-for any tax you owe for the previous tax year (known as a balancing payment)
-and your first payment on account
-.IP "31 July" 15
-for your second payment on account
+The standard from is to:
+.IP 1.
+Multiply the investment cost by the appropriate equation.
+.IP 1.
+Multiply the positive cash flows by the apropriate rate of taxation.
 .LP
-The example below is taken from HMRC website:
-.QS
+As an illustraction we will use the same cash flows from an example from
+Appendix B on the AIA in time period one. Walter makes an investment of 15,000
+in a peice of capital equipment and an accompanying investment in working
+capital of 8,000 which will be returned at the end of the investment life. The
+investment after costs yeilds a surplus of 25,000 each year. The investment has
+a life of 5 years and no salvage value, the rate of taxation is 20% and the
+discount rate 15%. 
+.
+.NHTOC 2 sec:cctf:num sec:cctf:page "No salvage value"
 .LP
-Your bill for the 2017 to 2018 tax year is \[Po]3,000. You made 2 payments on
-account last year of \[Po]900 each (\[Po]1,800 in total).
-.LP
-The total tax to pay by midnight on 31 January 2019 is #\[Po]2,700#. This
-includes:
-.IP \(bu
-your balancing payment of \[Po]1,200 for the 2017 to 2018 tax year
-(\[Po]3,000 minus \[Po]1,800)
-.IP \(bu
-the first payment on account of #\[Po]1,500# (half your 2017 to 2018 tax bill)
-towards your 2018 to 2019 tax bill
-.LP
-You have to pay your second payment on account of #\[Po]1,500# by midnight on
-31 July 2019.
-.LP
-If your tax bill for the 2018 to 2019 tax year is more than #\[Po]3,000# (the
-total of your 2 payments on account), you'll need to make a balancing payment
-by 31 January 2020. 
-.QE
-.LP
-I have created a cash flow diagram below as a visual aid to understanding the
-timing of the payments:
+We will look first at using the equatins when there is no salvage value. The
+first step is to draw the cash flow diagram:
+.sp -1
 .PS
-A: [  box invis wid 0.50 ht 0.25 "01/1/18"
-		arrow colour "red" down 0.3 from last box.s
-		"P1 = 900" below at end of last arrow
-		line right 0.4 from last box.e
-		box invis wid 0.50 ht 0.25 "05/04/18"
-		line dashed up 0.6 from last box.n
-		"FY End 18" above at end of last line
-		arrow dashed down 1.0 at last box.s
-		"3,000" below at end of last arrow 
-		move down 0.2
-		line dashed down 0.1
-		"Tax calc" below at end of last line 
-		line right 0.4 from last box.e
-		box invis wid 0.50 ht 0.25 "31/07/18"
-		arrow colour "red" down 0.3 from last box.s
-		"P2 = 900" below at end of last arrow
-		line right 0.4 from last box.e 
-		box invis wid 0.50 ht 0.25 "31/01/19"
-		arrow colour "red" down 0.3 at last box.s
-		"BP = 1,200" below at end of last arrow 
-		move down 0.2
-		arrow colour "blue" down 0.3 
-		"P1 = 1,500" below at end of last arrow 
-		line right 0.4 from last box.e 
-		box invis wid 0.50 ht 0.25 "05/04/19"
-		line dashed up 0.6 from last box.n
-		"FY End 19" above at end of last line
-		arrow dashed down 1.0 at last box.s
-		"?" below at end of last arrow 
-		move down 0.2
-		line dashed down 0.1
-		"Tax calc" below at end of last line 
-		line right 0.4 from last box.e 
-		box invis wid 0.50 ht 0.25 "31/07/19"
-		arrow colour "blue" down 0.8 at last box.s
-		"P2 = 1,500" below at end of last arrow 
-		line right 0.4 from last box.e 
-		box invis wid 0.50 ht 0.25 "31/01/20"
-		arrow dashed down 0.3 at last box.s
-		"BP = ?" below at end of last arrow 
-		move down 0.2
-		arrow dashed down 0.3 
-		"P1 = ?" below at end of last arrow 
-		]
-.PE
-As the diagram shows the tax is payable both in arrears and in advance based on
-the previous earnings, with a balancing payment to account for changes in
-earnings. Furthermore, the tax calculation for any incremental investment is
-complicated by the fact that the current tax position may already have taken
-advantage of any tax free allowances. It is also possible that the previous
-years tax is high enough that the earnings from the new investment are forced
-into a higher rate tax bracket.
-.LP
-For simplicities sake when computing the after tax cashflows under Self
-Assesment for a NPV the tax is deemed to be payable in tax period one.
-.br
-.sp
-.UL "Corporation Tax"
-.LP
-The deadline to pay your Corporation Tax bill is usually 9 months and one day
-after the end of the accounting period. This means the tax is paid in arrears
-and falls in the accounting period after the cash has been received. This will
-typically be time period two. 
-.LP
-The logic is as follows for the discounted cash flow calculation; The
-investment is made in time period zero, the investment is therefore not subject
-to any discounting. The first years cash flows from the investment are received
-during time period one and accounted for at the end of the time period. The tax
-is then calculated at the end of time period one but is not due until nine
-months and one day later, remember all cash flows for the purpose of the
-discounting are recorded at the end of the time period, therefore the tax
-payment is at time period two. 
-.LP
-There are exceptions to the general logic. If the first cash flow was on the
-last day of the accounting period then the first tax impact would be at time
-period one.
-.PS
-A: [ box invis wid 0.25 ht 0.25 "0"
-			arrow down 0.50 at last box.s
-			"Investment" below at end of last arrow
-			line right 0.8 from last box.e
-			LN1: line dashed up 0.7
-			move up 0.1
-			"FY End"
-			line dashed down 0.4 at LN1.s
+A: [ box invis wid 0.20 ht 0.20 "0"
+			arrow down 0.5 at last box.s
+			"15,000" below at end of last arrow
+			move down 0.25
+			"8,000"
 			move down 0.1
-			"Tax calculation" 
-			line right 0.8 from LN1
-			arrow down 0.2
-			line right from last line.e
-			box invis wid 0.25 ht 0.25 "1"
-			line dotted up 0.7 at last box.n
-			"Time period" at end of last line
-			line dotted down 0.6 at last box.s
-			line right at last box.e
+			move left 0.3
+			line right 0.65
+			move down 0.1
+			move left 0.33
+			"23,000"
+			line right 0.3 from last box.e
+			box invis wid 0.20 ht 0.20 "1"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.20 ht 0.20 "2"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			line right 0.3 from last box.e 
+			box invis wid 0.20 ht 0.20 "3"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			line right 0.3 from last box.e 
+			box invis wid 0.20 ht 0.20 "4"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			line right 0.3 from last box.e 
+			box invis wid 0.20 ht 0.20 "5"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			move up 0.2
+			arrow up 0.3
+			"8,000" above at end of last arrow
 		]
-
-TX1: box invis wid 1.0 ht 0.2 "tax payment" at (1.85, -0.4) 
-line dashed down 0.1 at last box.s
-arrow dashed right
-D1: box invis wid 0.4 ht 0.2 "1 day" at (0.6, 0.1) 
-arrow dashed right 0.2 at last box.e
-arrow dashed left 0.2 at last box.w
+box invis "i = 15/100" wid 0.6 ht 0.25 with .s at A.n + (0.3,-0.2)
+box invis "n = 5" wid 0.6 ht 0.25 with .n at A.s + (0.3,0.8)
 .PE
-The above situation is worth contemplation as it is not uncommon that
-investments are made at the end of the accounting period to make use of capital
-allowances. The flow charts in Appendinx B allow for this occurence.
+We will now calculate the NPV using some different investment cost equations. 
+.SH
+AIA - time period 1
 .LP
-If the first cash flow is on the 1st day of the accounting period then first
-tax impact is at time period 2. This is the same as the general assumptions
-with regard to the accumulation of cash flows at the end of the time period,
-however, we will show the cash flow diagram for clarity.
+The investment costs equation for AIA in time period 1 is:
+.EQ L
+"Investment cost" lm -I^ left [ CCTF sub AIA right ] 
+tf
+-I^ left [ cctfaia right ]
+tf
+-I^ left [ 1 - 0.2 over { ( 1 + 0.15 ) } right ]
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-15,000 [ 0.8261 ]
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-12,392
+.EN
+The NPV then can be calculated using the factors from Chapter XX on
+enginneering economics:
+.EQ L
+NPV lm -12,392 -8,000 + 25,000(1 - t)(P/A, 15%, 5) + 8,000(P/F, 15%, 5)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-12,392 -8,000 + 25,000(1 - 0.2)(3.3522) + 8,000(0.4972)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-20,392 + 67,044 + 3,978 
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+50,630
+.EN
+An alternative method maybe to use the CCTF in conjunction with a table:
+.TS
+tab (#) center;
+lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
+#_#_#_#_#_#_
+#CF0#CF1#CF2#CF3#CF4#CF5
+.T&
+lp-2 
+a n n n n n n .
+_
+CASH FLOWS#
+Equipment investment#(12,392)####
+Working capital#(8,000)####
+Operating cash flow##25,000#25,000#25,000#25,000#25,000
+Tax @ 20%##(5,000)#(5,000)#(5,000)#(5,000)#(5,000)
+Salvage value#####
+Working capital return######8,000
+#_#_#_#_#_#_
+Net cash flow##20,000#20,000#20,000#20,000#28,000
+.sp 3p
+.T&
+lp-2 l l l l  
+a c c c c c 
+a n n n n n .
+DISCOUNTED CASH FLOW#
+Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
+#_#_#_#_#_#_
+Present value#(20,392)#17,400#15,120#13,160#11,440#13,916
+_
+NPV#50,644
+_
+.TE
+The table above contains working capital. Typically working capital is not
+subject to tax. If you have inventory of 10,000 and decide to discontinue the
+product line the inventory will be sold and any profits will incur taxes as
+they pass through the profit and loss account. The balance sheet will show a
+reduction in the inventory and an increase in cash, as the inventory being sold
+down is not replaced. Hypothetically the balance sheet value of assets stays
+the same, the 10,000 reduction in inventory is matched by a 10,000 increase in
+cash and you are not taxed for shuffling the balance sheet. 
+.SH
+WDA - time period 2
+.LP
+It is important to understand that the cash flow diagram shows the pattern of
+the cash flows and not the pattern of the tax effect. Regardless of whether the
+tax effect is in time period one or two the 25,000, in this example, is in the
+same position.
+.LP
+We will start this time by calculating the CCTF:
+.EQ L
+CCTF sub WDA2 lm cctf2
+~~=~~
+ncctf2(0.18, 0.2, 0.15)
+~~=~~
+0.9051
+.EN
+We can now calculate the investment cost:
+.EQ L
+"Investment cost" lm -I^ left [ CCTF sub WDA2 right ] 
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-15,000 [ 0.9051 ]
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-13,577
+.EN
+The NPV can now be calculated:
+.EQ L
+NPV lm -13,577 -8,000 -25,000(t)(P/A, 15%, 5)(P/F, 15%, 1) + 25,000(P/A, 15%, 5) + 8,000(P/F, 15%, 5)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-13,577 -8,000 -25,000(0.2)(3.3522)(0.8696) + 25,000(3.3522) + 8,000(0.4972)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-21,577 - 14,575 + 83,805 + 3,978
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+51,631
+.EN
+Notice that this time we have had to calculate the tax effect seperately from
+the positive cash flows. Previously we were able to multiply the positive cash
+flow by #(1 - t)#, however, as the tax has been shifted by one period this will
+not work here. The tax has been calculated with by multiplying the positive
+cash flow by the tax rate, #25,000(t)#. Then this annuiyt has been converted
+into a present value by multiplying by, #(P/F, 15%, 5)#. Lastly this would
+present value has to time period zero by multiplying by #(P/F, 15%, 1)#,
+remember the annuity factor presumes that the cash flow is at time period one
+and calculates the PV at time peirod zero. In this instance the cash flow is at
+time period 2 and the annuity calcualtes the PV at time period 1 so we use the
+Single Payment Present Worth factor to discount the PV by an extra period.
+.LP
+Again a table can be used in conjunction with the investment cost equation:
+.TS
+tab (#) center;
+lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
+#_#_#_#_#_#_#_
+#CF0#CF1#CF2#CF3#CF4#CF5#CF6
+.T&
+lp-2 
+a n n n n n n n .
+_
+CASH FLOWS#
+Equipment investment#(13,577)####
+Working capital#(8,000)####
+Operating cash flow##25,000#25,000#25,000#25,000#25,000
+Tax @ 20%###(5,000)#(5,000)#(5,000)#(5,000)#(5,000)
+Working capital return######8,000
+#_#_#_#_#_#_#_
+Net cash flow##25,000#20,000#20,000#20,000#28,000#(5,000)
+.sp 3p
+.T&
+lp-2 l l l l l
+a c c c c c c
+a n n n n n n .
+DISCOUNTED CASH FLOW#
+Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
+#_#_#_#_#_#_#_
+Present value#(21,577)#21,750#15,120#13,160#11,440#13,916#(2,160)
+_
+NPV#51,649
+_
+.TE
+.
+.NHTOC 2 sec:cctf:num sec:cctf:page "Salvage value"
+.LP
+The scenario stays the sames except that on dispoal in year 5 there is a
+salvage value of 7,000. We will redraw the cash flow diagram to reflect the
+change:
+.sp -1
 .PS
-A: [ 	box invis wid 0.25 ht 0.25 "0"
-			line left 0.8 at last box.w
-			line dashed up 0.7 
-			move up 0.1
-			"FY Start"
-			line dashed down 0.8 at last line.s 
-			arrow down 0.50 at last box.s
-			"Investment" below at end of last arrow
-			line right 0.8 from last box.e
-			box invis wid 0.25 ht 0.25 "1"
-			line dotted up 0.7 at last box.n
-			"Time period" at end of last line
-			line dotted down 0.4 at last box.s
-			"Tax calculation " at last line.s
-			line right 0.6 from last box.e
-			arrow down 0.2
-			line right 0.6 from last line.e
-			box invis wid 0.25 ht 0.25 "2"
-			line dotted up 0.7 at last box.n
-			"Time period" at end of last line
-			line dotted down 0.7 at last box.s
+A: [ box invis wid 0.20 ht 0.20 "0"
+			arrow down 0.5 at last box.s
+			"15,000" below at end of last arrow
+			move down 0.25
+			"8,000"
+			move down 0.1
+			move left 0.3
+			line right 0.65
+			move down 0.1
+			move left 0.33
+			"23,000"
+			line right 0.3 from last box.e
+			box invis wid 0.20 ht 0.20 "1"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			line right 0.3 from last box.e
+			box invis wid 0.20 ht 0.20 "2"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			line right 0.3 from last box.e 
+			box invis wid 0.20 ht 0.20 "3"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			line right 0.3 from last box.e 
+			box invis wid 0.20 ht 0.20 "4"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			line right 0.3 from last box.e 
+			box invis wid 0.20 ht 0.20 "5"
+			arrow up 0.4 at last box.n
+			"25,000" above at end of last arrow
+			move up 0.2
+			arrow up 0.3
+			"8,000" above at end of last arrow
+			move up 0.25
+			"7,000"
 		]
-
-TX1: box invis wid 1.0 ht 0.2 "tax payment" at (2.7, -0.4) 
-line dashed down 0.1 at last box.s
-arrow dashed right
-
-D1: box invis wid 0.4 ht 0.2 "1 day" at (0.4, 0.1) 
-arrow dashed right 0.2 at last box.e
-arrow dashed left 0.2 at last box.w
+box invis "i = 15/100" wid 0.6 ht 0.25 with .s at A.n + (0.3,-0.2)
+box invis "n = 5" wid 0.6 ht 0.25 with .n at A.s + (0.3,0.8)
 .PE
-The investment cost equations have been presented to use with the tax effect
-starting at both time period one and two.
 .
-.
-.NHTOC 2 sec:cctf:num sec:cctf:page "Time period 1"
+.sp -1
+.SH
+WDA - time period 1
 .LP
-We are now going to examine the investment cost equations where the tax impact
-is at time period one. These equations would typically used when estimating an
-NPV under Self Assesment Tax, but they can also be used for Corporation Tax in
-certain instances.
-.
-.NHTOC 3 sec:cctf:num sec:cctf:page "CCTF"
-.LP
-The CCTFs are the foundation of the investment cost equations which are
-developed for a range of scenarios. There are two CCTFs for calculations in
-timer period one are:
-.EQ
-CCTF sub AIA lm 
-left [ cctfaia right ] 
-.EN
-.EQ
-CCTF sub WDA lm 
-left [ cctf right ] 
-.EN
-.
-.NHTOC 3 sec:cctf:num sec:cctf:page "Continuous Pools"
-.LP
-.UL "Annual Investment Allowance & Yearly Allowance"
-.LP
-The yearly allowacne and the AIA can both utilise the same CCTF as they share
-the same structure but cover different capital assets.
-.IP "No salvage value" 5
+We will start by calculating the CCTF:
 .EQ L
+CCTF sub WDA lm cctf
+~~=~~
+1 - 0.18(0.2) over {  ( 0.15 + 0.18 ) }
+~~=~~
+0.8909
+.EN
+Now we can calculate the investment cost:
+.EQ L 
 "Investment cost" lm
--I left [ CCFT sub AIA right ] 
+-I^ left [ CCTF sub AIA right ] 
++ S left [ CCTF sub WDA right ]
+times
+( P/F, %i, n )
 .EN
-.IP "Salvage value" 5
+.sp -0.7v
 .EQ L
-"Investment cost" lineup =~~
--I left [ CCTF sub AIA right ]  + S left [ CCTF sub WDA right ]  (P/F, i%, n)
+lineup =~~
+-15,000(0.8261) + 7,000(0.8909)(P/F, 15%, 5)
 .EN
-.IP "Salvage value and capital gains" 5
+.sp -0.7v
 .EQ L
-"Investment cost" lineup =~~
--I left [ CCTF sub AIA right ]
-+ left ( S left [ CCTF sub WDA right ] - t(S - I ) right ) 
-(P/F, i%, n)
+lineup =~~
+-15,000(0.8261) + 7,000(0.8909)(0.4972)
 .EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-12,392 + 3,101
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+9,291
+.EN
+When using the investment cost equations the #n# in the #(P/F, i%, n)#
+\fBalways\fP refers to the year the asset is disposed off.
 .LP
-.UL "Writting Down Allowance"
-.IP "No salvage value" 5
+The NPV then can be calculated :
 .EQ L
-"Investment cost" lineup =~~
--I left [ CCFT sub WDA right ] 
+NPV lm -9,291 -8,000 + 25,000(1 - t)(P/A, 15%, 5) + 8,000(P/F, 15%, 5)
 .EN
-.IP "Salvage value" 5
+.sp -0.7v
 .EQ L
-"Investment cost" lineup =~~
--I left [ CCTF sub WDA right ]  + S left [ CCTF sub WDA right ]  (P/F, i%, n)
+lineup =~~
+-9,291 -8,000 + 25,000(1 - 0.2)(3.3522) + 8,000(0.4972)
 .EN
-.IP "Salvage value and capital gains" 5
+.sp -0.7v
 .EQ L
-"Investment cost" lineup =~~
--I left [ CCTF sub WDA right ]
-+ left ( S left [ CCTF sub WDA right ] - t(S - I ) right ) 
-(P/F, i%, n)
+lineup =~~
+-17,291 + 67,044 + 3,978 
 .EN
+.sp -0.7v
+.EQ L
+lineup =~~
+53,731
+.EN
+We can also construct a table:
+.TS
+tab (#) center;
+lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
+#_#_#_#_#_#_
+#CF0#CF1#CF2#CF3#CF4#CF5
+.T&
+lp-2 
+a n n n n n n .
+_
+CASH FLOWS#
+Equipment investment#(9,291)####
+Working capital#(8,000)####
+Operating cash flow##25,000#25,000#25,000#25,000#25,000
+Tax @ 20%##(5,000)#(5,000)#(5,000)#(5,000)#(5,000)
+Salvage value#####
+Working capital return######8,000
+#_#_#_#_#_#_
+Net cash flow##20,000#20,000#20,000#20,000#28,000
+.sp 3p
+.T&
+lp-2 l l l l  
+a c c c c c 
+a n n n n n .
+DISCOUNTED CASH FLOW#
+Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
+#_#_#_#_#_#_
+Present value#(17,291)#17,400#15,120#13,160#11,440#13,916
+_
+NPV#53,745
+_
+.TE
+It is important to note that the table does not contain the salvage value. The
+investment cost equation incorporates the effect of the salvage. The idea of
+the investment cost equation is to seperate the capital cost and its associated
+cash flows from the other cash flows arising from the investment.
 .
-.NHTOC 3 sec:tim:num sec:tim:page "Single Asset Pool"
+.SH
+WDA - time period 2
 .LP
-.IP "No salvage value" 5
-.EQ L
+We have previously calculated the #CCTF sub WDA2# and found it to be 0.9051 and
+are therefore going to start with the appropriate investment cost equation:
+.EQ L 
 "Investment cost" lm
--I^ left [ CCTF sub WDA right ] 
-+ UCC left [ t - ( 1 - CCTF sub WDA ) ( 1 + i )\(dg right ] 
+-I^ left [ CCTF sub WDA2 right ] 
++ S left [ CCTF sub WDA2 right ]
 times
 ( P/F, %i, n )
 .EN
-.FS
-\(dg The ( 1 + i ) is equivalent to #(F/P, i%, 1)# and can be read from an
-engineering economics factor table.
-.FE
-.IP "Salvage value equal to the UCC" 5
+.sp -0.7v
 .EQ L
-"Investment cost" lineup =~~
--I^ left [ CCTF sub WDA right ] 
-+ left [ S - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) } right ]
-times 
-( P/F, %i, n )
+lineup =~~
+-15,000[0.9051] + 7,000[0.9051] times (P/F, 15%, 5)
 .EN
-.IP "Salvage value less than the UCC" 5
+.sp -0.7v
 .EQ L
-"Investment cost" lineup =~~
--I^ left [ CCTF sub WDA right ] 
-+
-left [ 
-S left ( 1 - t right )
-+
-UCC left ( t - ( 1 - CCTF sub WDA ) ( 1 + i ) right )
-right ] 
-times
-( P/F, %i, n )
+lineup =~~
+-15,000[0.9051] + 7,000[0.9051] times 0.4972
 .EN
-.IP "Salvage value greater than the UCC" 5
+.sp -0.7v
 .EQ L
-"Investment cost" lineup =~~
--I^ left [ CCTF sub WDA right ] 
-+
-left [ 
-S left ( 1 - t right )
-+
-UCC left ( t - ( 1 - CCTF sub WDA ) ( 1 + i ) right )
-right ] 
-times
-( P/F, %i, n )
+lineup =~~
+-13,577 + 3,150
 .EN
-.IP "Salvage value greater than the UCC with a capital gain" 5
+.sp -0.7v
 .EQ L
-"Investment cost" lineup =~~
--I^ left [ CCTF sub WDA right ] 
-+ left [ 
-S
-+ UCC left (
-t - [ 1 - CCTF sub WDA ] ( 1 + i )
-right )
-- t left ( 2S - I right ) right ]
-times
-( P/F, %i, n )
+lineup =~~
+-10,426
 .EN
+We can now calculate the NPV:
+.EQ L
+NPV lm -10,426 -8,000 -25,000(t)(P/A, 15%, 5)(P/F, 15%, 1) + 25,000(P/A, 15%, 5) + 8,000(P/F, 15%, 5)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-10,426 -8,000 -25,000(0.2)(3.3522)(0.8696) + 25,000(3.3522) + 8,000(0.4972)
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+-10,426 - 8,000 - 14,575 + 83,805 + 3,978
+.EN
+.sp -0.7v
+.EQ L
+lineup =~~
+54,782
+.EN
+A combination of the investment cost equation and a table:
+.TS
+tab (#) center;
+lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
+#_#_#_#_#_#_#_
+#CF0#CF1#CF2#CF3#CF4#CF5#CF6
+.T&
+lp-2 
+a n n n n n n n .
+_
+CASH FLOWS#
+Equipment investment#(10,426)####
+Working capital#(8,000)####
+Operating cash flow##25,000#25,000#25,000#25,000#25,000
+Tax @ 20%###(5,000)#(5,000)#(5,000)#(5,000)#(5,000)
+Working capital return######8,000
+#_#_#_#_#_#_#_
+Net cash flow#18,426#25,000#20,000#20,000#20,000#28,000#(5,000)
+.sp 3p
+.T&
+lp-2 l l l l l
+a c c c c c c
+a n n n n n n .
+DISCOUNTED CASH FLOW#
+Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
+#_#_#_#_#_#_#_
+Present value#(18,426)#21,750#15,120#13,160#11,440#13,916#(2,160)
+_
+NPV#54,800
+_
+.TE
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Time period 2"
+.NHTOC 2 sec:cctf:num sec:cctf:page "Self Assesment Tax"
 .LP
-We are now going to examine the investment cost equations where the tax impact
-is at time period one. These equations would typically used when estimating an
-NPV under Self Assesment Tax, but they can also be used for Corporation Tax in
-certain instances.
+Self Assessment Tax creates some problems because of the personal allowance and
+the different tax rates dependent on the earnings of the business. We will
+start with the the problem of the personal allowance sheltering some of the
+income from taxation. Appendix F looks at how to calculate the rate of taxation
+in some detail.
 .
-.NHTOC 3 sec:cctf:num sec:cctf:page "CCTF"
+.NHTOC 3 sec:cctf:num sec:cctf:page "Personal allowance incorporated into rate of taxation"
 .LP
-The CCTFs are the foundation of the investment cost equations which are
-developed for a range of scenarios. There are two CCTFs for calculations in
-timer period one are:
-.EQ
-CCTF sub AIA2 lm 
-left [ cctfaia2 right ] 
-.EN
-.EQ
-CCTF sub WD2A lineup =~~
-left [ cctf2 right ] 
-.EN
+You can create a flat rate of taxation using the method show in Appendix F if
+you accept that the investment is going to utilise the personal allowance, and
+that the personal allowance has not been applied to other earnings in the
+business. Once you have created this flat rate of tax you can use it as we have
+previously demonstrated. However, it can be argued that if you earnings change
+so will the rate of taxation. This is true, however, as the table below shows
+from Appendix F it is possible to calculate the flat of tax incorporating the
+personal allowance for a range of earnings. 
+.TS
+tab (#) center;
+l n n n n n n n .
+_
+.sp 5p
+Earnings#20,000#25,000#30,000#40,000#50,000#60,000#70,000
+Income Tax#(1,500)#(2,500)#(3,500)#(5,500)#(7,500)#(11,500)#(15,500)
+National Insurance#(1,179)#(1,629)#(2,079)#(2,979)#(3,879)#(4,079)#(4,279)
+_
+Total Tax#(2,679)#(4,129)#(5,579)#(8,479)#(11,379)#(15,579)#(19,779)
+.sp 5p
+Net Income#17,321#20,871#24,421#31,521#38,621#44,421#50,221
+_
+Flat Rate %#13#17#19#21#23#26#28
+_
+..
+.tP "Self Assessment rates of tax 2019"
+.TE
+Once you have a table for the rate of taxation over a range of earnings you can
+choose a flat rate of taxation that better reflects your earnings. Even thought
+this sounds rather vague it is worth bearing in mind that the rates of taxation
+change over time and also the earnings that you have forecast may not
+materialise. The aim is to be roughly right. Remember that the rate of taxation
+has a bearing on the cost of capital as interest is tax deductible and you may
+need to recalculate the weighted average cost of capital for this project. 
 .
-.NHTOC 3 sec:cctf:num sec:cctf:page "Continuous Pools"
+.NHTOC 3 sec:cctf:num sec:cctf:page "Personal allowance has already been applied."
 .LP
-.UL "Annual Investment Allowance & Yearly Allowance"
-.LP
-The yearly allowacne and the AIA can both utilise the same CCTF as they share
-the same structure but cover different capital assets.
-.IP "No salvage value" 5
-.EQ L
-"Investment cost" lm
--I left [ CCFT sub AIA2 right ] 
-.EN
-.IP "Salvage value" 5
-.EQ L
-"Investment cost" lineup =~~
-I left [ CCTF sub AIA2 right ]
--
-S left [ CCTF sub WDA2 right ]
-times
-(P/F, i%, n)
-.EN
-.IP "Salvage value and capital gains" 5
-.EQ L
-"Investment cost" lineup =~~
-I left [ CCTF sub AIA2 right ]
-- left ( S left [ CCTF sub WDA2 right ]
-- t( S - I )( 1 + i ) sup -1 
-right ) 
-times (P/F, i%, n)
-.EN
-.LP
-.UL "Writting Down Allowance"
-.IP "No salvage value" 5
-.EQ L
-"Investment cost" lineup =~~
-I left [ CCFT sub WDA2 right ] 
-.EN
-.IP "Salvage value" 5
-.EQ L
-"Investment cost" lineup =~~
-I left [ CCTF sub WDA2 right ]  - S left [ CCTF sub WDA2 right ] (P/F, i%, n)
-.EN
-.IP "Salvage value and capital gains" 5
-.EQ L
-"Investment cost" lineup =~~
-I left [ CCTF sub WDA2 right ]
-- left ( S left [ CCTF sub WDA2 right ] - t(S - I )(1 + i ) sup -1 \(dd right ) 
-times
-(P/F, i%, n)
-.EN
-.FS
-\(dd The #( 1 + i ) sup -1# is equivalent to #(P/F, i%, 1)# and can be read
-from an engineering economics factor table.
-.FE
+If you allready have a business making in excess of the personal allowance than
+your next investment will be taxed at the prevailing rate of taxation for the
+earnings. For instance, if the business is earning 20,000 and an investment is
+made that will generate additonal taxable profits of 20,000 then this, as of
+2019, will be taxed at 20% for the income and 9% for the NIC. Remember that the
+rate of taxation has a bearing on the cost of capital as interest is tax
+deductible and you may need to recalculate the weighted average cost of capital
+for this project. 
 .
-.NHTOC 3 sec:tim:num sec:tim:page "Single Asset Pool"
+.NHTOC 3 sec:cctf:num sec:cctf:page "Earnings across two tax bands."
 .LP
-.IP "No salvage value" 5
-.EQ L
-"Investment cost" lm
-I^ left [ CCTF sub WDA2 right ] 
-- UCC left [  t(1 + i ) sup -1 - ( 1 - CCTF sub WDA2 ) ( 1 + i ) right ] 
-times
-( P/F, %i, n )
-.EN
-.IP "Salvage value equal to the UCC" 5
-.EQ L
-"Investment cost" lm
-I^ left [ CCTF sub WDA2 right ] 
-- left [ S - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) } right ]
-times 
-( P/F, %i, n )
-.EN
-.IP "Salvage value less than the UCC" 5
-.EQ L
-"Investment cost" lm
-I^ left [ CCTF sub WDA2 right ] 
--
-left [ 
-S left ( 1 - t(1 + i ) sup -1 right )
-+ UCC left ( t( 1 + i ) sup -1
-- [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
-right ) 
-right ] 
-times
-( P/F, %i, n )
-.EN
-.IP "Salvage value greater than the UCC" 5
-.EQ L
-"Investment cost" lm
-I^ left [ CCTF sub WDA2 right ] 
--
-left [ 
-S left ( 1 - t(1 + i ) sup -1 right )
-+ UCC left ( t( 1 + i ) sup -1
-- [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
-right ) 
-right ] 
-times
-( P/F, %i, n )
-.EN
-.IP "Salvage value greater than the UCC with a capital gain" 5
-.EQ L
-"Investment cost" lm
-I^ left [ CCTF sub WDA2 right ] 
-- left [ 
-S
-+ UCC left (
-t(1 + i ) sup -1 - [ 1 - CCTF sub WDA2 ] ( 1 + i )
-right )
-- t(1 + i ) sup -1 left ( 2S - I right ) right ]
-times
-( P/F, %i, n )
-.EN
+This scenario is covered again in Appendix F. The basic logic is that you will
+need to calcualte a weighted avaerage of the tax rates. Again, as the earnings
+with which the tax rate is dependent are a projection into the future it pays
+to be confident that the earnings will materialise and push you well into the
+next tax rate. Currently there is a change in the tax rate at 50,000 it would
+not add much to the accuracny of the NPV by calculating the weighted average of
+the rate of taxaton if the earnings were projected to be 51,000. 
 .
-.NHTOC 2 sec:tim:num sec:tim:page "Conclusion"
+.NHTOC 2 sec:cctf:num sec:cctf:page "Limited taxation"
 .LP
-It can be seen that the investment cost equations get progressively more
-complicated. The simplest equations are those used with the continuous pool. It
-is envisaged that the equations relating to the continuous pools will be the
-most heavily used. However, an effort has been made to have a consistence
-presentation accross the equations so that moving from one equation to another
-is relatively easy.
+If the level of taxable profits is low then it may not be possible to claim the
+full writing down allowance. This applies to both Self Assesment Tax and
+Corporation Tax in this instance you will need to check that the taxable
+profits exceed the first years writing down allowance. If you make a capital
+investment of 50,000 and the writing down allowance is 18% then the taxable
+profits need to exceed #50,000 times 0.18 = 9,000# to be able to utilise the
+full writing down allowance. The equations used to calculate the investment
+cost can be used with any value for the declining balance #d#. The obvious
+impact is that the investment cost will rise and the NPV will fall as the tax
+benefit is claimed over a longer period of time.
+.
+.NHTOC 2 sec:cctf:num sec:cctf:page "Marginal profitability"
 .LP
-The equations may look quite complicated but with the calculation of a few
-constants and the use of a factor table it should be possible the after tax
-capital cost of an investment.
-
+If the business has inconsistent earnings and does not consistently pay tax I
+would advise against using the investment cost equations. In reality if the
+investment is made in the same business, which is currently sporadically
+profitable, then the NPV itself maybe more aspirational than factual.
+.LP
+In cyclical businesses the ration of good years to bad years needs to be in
+favour of the good years to have any confidence that taxation is a concern.
+.LP
+In both scenarios above concerning businsess with marginal profitablity the
+chances are that there are loses which have been carried forward and are
+available to shield the profits from taxation.  
+.
+.NHTOC 2 sec:cctf:num sec:cctf:page "Existing losses"
+.LP
+We have previously stated that we regard existing losses as a sunk cost. This
+is true and we do not try and account for them in the investment cost equations
+as it creates significant complications. However, they can not be totally
+ignored and if your business has substantial losses and a large pool where the
+WDA has not been claimed it is obvious that there is a tax impact. In such
+situations it would make sense to calculate the NPV as if there was no
+taxation. Remember if calculate the NPV without taxation you will have to use a
+pretax cost of capital. 
+.
+.NHTOC 2 sec:cctf:num sec:cctf:page "Small pool and balancing charge"
+.LP
+There can be situations where the expcecations is that a balancing charge will
+have to be paid. For instance if your business is not very capital intensive,
+you may have a small farm, you have bought a tractor kept it for a long period
+of time and then it is disposed of when there the main pool has a value of zero
+generating a balancing charge. Alternatively you have purchased an expensive
+piece of equipment, in this instance a second hand combine, and on disposal the
+inflation in the capital asset prices by the OEM's has been so great as to
+generate a balancing charge. First you must suitably confident that there will
+be a balancing charge, second remember the impact of the balancing charge
+deminishes because of the compounding. If you still wish to account for the
+impact of the balancing charge you can use the investment cost equations for
+the single asset pool without respect for the 8 years currently allowed for by
+the goverment. You can of course compare the investment cost equations using
+the main pool where the equation does not allow for a balancing charge and
+compare it with the single asset pool equation that does allow for a balancing
+charge.
+.
+.NHTOC 2 sec:cctf:num sec:cctf:page "Scenarios not covered by the cost equations"
+.LP
+I do not propose to go through every eventuality that buiness can throw up and
+how to use the investment cost equations. Mostly I expect the investment cost
+equations to be used within the continuing pool and either the AIA or the WDA
+to be utilised. There is nothing to stop you splitting an investment between
+the AIA and the WDA. With our knowledge of equivalence gained in Chapter 3
+there is nothing to stop you starting the WDA at point other than period 1,
+provided there is no salvage value, and moving the tax benefit to period zero.
+.LP
+Appendix B aims to be comprehensive and contains flow charts, graphs, tables
+and the maths behind the investment cost equaitons. With this information it
+should be possible to build your own tools to calculate the tax benefits
+accruing in any given situation.  
+.
+.NHTOC 2 sec:tim:num sec:tim:page "The false precision of numbers"
+.LP
+Numbers can be reather misleading in seeming to provide an accurate answer when
+in actual fact what you have calculated is exactly wrong which is a disapinting
+distance from roughly right. The NPV is a number which is masquerading as
+reliable when it is highly dependent on both the veracity of the assumptions
+and the viscitudes of the future.
+.LP
+Listed below are some of the many issues that can lead to a wildly misleading
+NPV.
+.IP "Discount rate" 15
+The discount rate is easy to calculate when working with only debt. The cost of
+equity is challenging to determine with confidence. However, money can not be
+lent for free so a value must be given for the equity. An inaccurate discount
+rate will lead to inaccurate NPV.
+.IP "Operating cash flows" 15
+Forecasting operating cash flows is not easy when the time frame is short. The
+longer the time frame the less reliable the number, once the cash flows extend
+a longway into the future they enter the realm of fantasy.
+.IP "Tax rates" 15
+When it comes to forecasting after tax cash flows you are compelled to forecast
+the tax rate as well. The investment cost equations persume that the tax rate
+existing at the point when the investment is made continue for the life of the
+investment. Tax rates, in recent years, have fallen so this assumption has
+tended to be favourable to the NPV.
+.IP "Salvage values" 15
+Estimating a salvage value many years into the future is an exercise in
+futility. The affects of compoinding also mean that the impact of the salvage
+value is very limited.
+.IP "Length of ownership" 15
+When the decision is made to invest in a piece of capital equipment it is
+assumed that the time frame used in the NPV calculation is objective reflection
+of the needs of business and the economic life of the asset. There are many
+reasons that the ownership of the asset may not match that used in the NPV. For
+instance; the needs of the business may change or the equipment may not peform
+as expected or the equipment may not have been specified correctly.
+.LP
+The short list above highlights some of the difficulties in producing a
+reliable NPV. The investment cost equations get progressivly more complicated
+when they are required to account for more and more variables and subsequently
+the range of possible outcomes also increases. It is presumed that those
+investment cost equations covering the continuose pools will be most heavily
+used and particulary those equations that calculate the investment cost with
+either no salvage value or a salvage value without capital gains. 
+.
+.NHTOC 2 sec:cctf:num sec:cctf:page "Is it worth calculating the after tax NPV?"
+.LP
+Due to the inherent problems in generating a reliable NPV it could be argued
+that the after tax cash flow estimate is likely to be less reliable than the
+pretax cash flow. This is a valid point and the more complex a business the
+more difficult it is to tie tax benefits to individual investments. In many
+companies there is no effort made to calculate the after tax NPV, the
+investment decision is based upon exceeding a given hurdle rate. More often
+than not the management of the company measures EBIT or operating profit and if
+there is a requirment to allow for it then the EBIT is multiplied by (1 - tax
+rate). Appendix E looks into SVA which uses EBIT to establish if an investment
+should be pursued.
+.LP
+In smaller companies where there are not multiple disparate divisions working
+in different tax jurisdictions the investment cost equations offer a quick and
+simple means of establishing an after tax NPV with which to aid in investment
+decisions. In general if the tax is not going to affect the decision then it is
+not neceassary to calculate the after tax NPV, however, as we shall see with
+leases the tax effects can be integral to establishing the lowest cost
+alternative. As a last thought neither life or business can be simplified into
+one equations so one should always beware of; "Geeks bearing formulas".
