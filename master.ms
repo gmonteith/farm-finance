@@ -5,56 +5,56 @@
 ./" \n(cn
 ./" .CHAPTER "Ordinary Annuities"
 ./" 
-.so 01.ms \" Introduction
+.so 00.ms \" Introduction
 .bp
 .CHAPTER "Time value of money"
-.so 02.ms \" Time value of money
+.so 01.ms \" Time value of money
 .bp
 .CHAPTER "Equivalence"
-.so 03.ms \" Equivalence
+.so 02.ms \" Equivalence
 .bp
 .CHAPTER "Ordinary annuities"
-.so 04.ms \" Ordinary annuities
+.so 03.ms \" Ordinary annuities
 .\" .bp
-.\" .so 05.ms \" Annuities due
+.\" .so 04.ms \" Annuities due
 .\" .bp
-.\" .so 06.ms \" Growing ordinary annuities
+.\" .so 05.ms \" Growing ordinary annuities
 .\" .bp
-.\" .so 07.ms \" Growing annuities due
+.\" .so 06.ms \" Growing annuities due
 .\" .bp
-.\" .so 08.ms \" Declining annuities
+.\" .so 07.ms \" Declining annuities
 .\" .bp
-.\" .so 09.ms \" Perpetuities
+.\" .so 08.ms \" Perpetuities
 .\" .bp
-.\" .so 10.ms \" Growing perpetuities
+.\" .so 09.ms \" Growing perpetuities
 .\" .bp
-.\" .so 11.ms \" Engineering economics
+.\" .so 10.ms \" Engineering economics
 .\" .bp
-.\" .so 12.ms \" Nominal & effective rates
+.\" .so 11.ms \" Nominal & effective rates
+.\" .bp
+.\" .so 12.ms \" Costing your capital
 .\" .bp
 .\" .so 13.ms \" Costing your capital
 .\" .bp
-.\" .so 14.ms \" Costing your capital
+.\" .so 14.ms \" Investment analysis
 .\" .bp
-.\" .so 15.ms \" Investment analysis
+.\" .so 15.ms \" Structure of UK tax
 .\" .bp
-.\" .so 16.ms \" Structure of UK tax
+.\" .so 16.ms \" Understanding the impact of tax
 .\" .bp
-.\" .so 17.ms \" Understanding the impact of tax
+.\" .so 17.ms \" Investment cost equations
 .\" .bp
-.\" .so 18.ms \" Investment cost equations
+.\" .so 18.ms \" Using the investment cost equations
 .\" .bp
-.\" .so 19.ms \" Using the investment cost equations
+.\" .so 19.ms \" Equivalent annual cost
 .\" .bp
-.\" .so 20.ms \" Equivalent annual cost
+.\" .so 20.ms \" Mutually exclusive projects
 .\" .bp
-.\" .so 21.ms \" Mutually exclusive projects
+.\" .so 21.ms \" Replacement analysis
 .\" .bp
-.\" .so 22.ms \" Replacement analysis
+.\" .so 22.ms \" Revenue cost and profit
 .\" .bp
-.\" .so 23.ms \" Revenue cost and profit
-.\" .bp
-.\" .so 24.ms \" Economic value and the measure of financial performance
+.\" .so 23.ms \" Economic value and the measure of financial performance
 .\" .bp 2
 .\" .
 .\" ./" Appendix
