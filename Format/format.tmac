@@ -23,13 +23,63 @@ Inputs:
 ..
 .de NHTOC
 .NH \\$1										\"  put the numbered header at its level
-\\$4\"                       heading name
-.ds \\$2 \\*[SN-NO-DOT]\"    set the header number 
-.ds \\$3 \\n%\"              set the page number of the header
+\\$2\"                       heading name
 .XS\"                        add TOC entry with the header page,
-\h'\\$1-1'\\*[SN-DOT] \\$4\" indented number and the name
+\h'\\$1-1'\\*[SN-DOT] \\$2\" indented number and the name
 .XE\"                        end of TOC entry
 ..
+.\" .NHTOC 2 sec:consu:num sec:consu:page "Instalment loan"
+
+.de NHTOC!
+.NH S \\$1 \\$2										\"  put the numbered header at its level
+\\$3\"                       heading name
+.XS\"                        add TOC entry with the header page,
+\h'1'\\*[SN-DOT] \\$3\" indented number and the name
+.\" \h'1+\\$2-1'\\*[SN-DOT] \\$3\" indented number and the name
+.XE\"                        end of TOC entry
+..
+.\" .NHTOC! \\n(cn 1 x x "Zero coupon bond"
+
+.ig
+Name: NHTOC
+Function: print a numbered header at the required level and add the properly
+indented entry to the table of contents.
+Inputs:
+$1 - Indicates if header is the first of the chapter
+$2 - Header number
+$3 - header name
+.if $1=0 then it can not be the first header.
+.el $1>0 then the heading is the first of the chapter. The chapter number is
+always greater than zero, so this is used as an indicator.
+..
+.de XXXX
+.ie \\$1=0 \{\
+.NH \\$2\"										header level
+\\$3\"												header name
+.XS\"													start toc
+\h'\\$2-1'\\*[SN-DOT] \\$3\"	set indent and header name
+.XE\"													end toc
+.\}
+.el \{\
+.NH S \\$1 \\$2\"							set header number based on chapter
+\\$3\"												set header name
+.XS\"													start toc
+\h'1'\\*[SN-DOT] \\$3\"				set indent and header name
+.XE\"													end toc
+.\}
+..
+
+
+.\" .de NHTOC
+.\" .NH \\$1										\"  put the numbered header at its level
+.\" \\$4\"                       heading name
+.\" .ds \\$2 \\*[SN-NO-DOT]\"    set the header number 
+.\" .ds \\$3 \\n%\"              set the page number of the header
+.\" .XS\"                        add TOC entry with the header page,
+.\" \h'\\$1-1'\\*[SN-DOT] \\$4\" indented number and the name
+.\" .XE\"                        end of TOC entry
+.\" ..
+
 
 .\" Chapter number
 .nr cn 0 1
@@ -38,11 +88,42 @@ Inputs:
 .sp |2i
 .ce
 \s+6\fBChapter \\n+(cn\fP\s0
+.XS
+\\n(cn .  \\$1
+.XE
 .sp
 .ce
 \s+4\fB\\$1\fP\s0
 .sp 2
 .LP
+..
+
+.nr ap 0 1
+.af ap A
+.de APPENDIX
+.XS
+APPENDIX \\n+(ap: \\$1
+.XE
+.rs
+.sp |20
+.ce
+\s+8\fBAPPENDIX \\n(ap\s0\fP
+.sp 5 
+.ce
+\s+2\fB\\$1\s0\fP
+.bp
+.\" .ce
+.\" \fB\\$1\fP
+.LP
+..
+
+.de APPENDIX_SUB
+.bp
+.rs
+.sp |5.0i
+.ce
+\s+2\fB\\$1\s0\fP
+.bp
 ..
 
 
@@ -56,7 +137,7 @@ Inputs:
 ..
 .
 .de Ca
-.  ds 0s \
+.ds 0s \
 \Z'\\*(0s'\
 \v'\\n(0du'\
 \D'l \\n(0wu -\\n(0hu-\\n(0du'\

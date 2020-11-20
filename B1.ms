@@ -1,14 +1,18 @@
 .
-.nr HM 0.7i
-.
-.
-.SH 1
-AIA or Yearly Allowance
-.XS
-.ti 0.25i
-AIA or Yearly Allowance
-.XE
-.LP
+.\" .so Format/format.tmac
+.\" .so Format/equation.tmac
+.\" .so Format/pic.tmac
+.\" .
+.\" .nr HM 0.7i
+.\" .APPENDIX_SUB "INVESTMENT COST EQUATIONS - TIME PERIOD 1"
+.\" .
+.\" .SH 1
+.\" AIA or Yearly Allowance
+.\" .XS
+.\" .ti 0.25i
+.\" AIA or Yearly Allowance
+.\" .XE
+.\" .LP
 The flow chart for the AIA when it is assumed there is a continuing pool is as
 follows:
 .PS C
@@ -1513,4 +1517,3 @@ lineup =~~
 6,144
 .EN
 .RE
-.bp

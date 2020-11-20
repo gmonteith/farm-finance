@@ -1,17 +1,17 @@
 .
-.XS
-APPENDIX N - Repair and maintenance
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX O\s0\fP
-.sp 20
-.B
-.LG
-REPAIR AND MAINTENANCE
-.R
-.ce 0
-.bp
+.\" .XS
+.\" APPENDIX N - Repair and maintenance
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX O\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" REPAIR AND MAINTENANCE
+.\" .R
+.\" .ce 0
+.\" .bp
 .
 .SH 1 
 Introduction

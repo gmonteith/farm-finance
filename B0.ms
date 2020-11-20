@@ -1,17 +1,22 @@
 .
-.XS
-APPENDIX B - CCTF Flow Charts
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX B\s0\fP
-.sp 20
-.B
-.LG
-INVESTMENT COST EQUATIONS 
-.R
-.ce 0
-.bp
+.\" .so Format/format.tmac
+.\" .so Format/equation.tmac
+.\" .so Format/pic.tmac
+.\" .bp
+.\" .
+.\" .XS
+.\" APPENDIX B - CCTF Flow Charts
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX B\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" INVESTMENT COST EQUATIONS 
+.\" .R
+.\" .ce 0
+.\" .bp
 .
 .SH
 Structure of the Appendix
@@ -198,13 +203,3 @@ capital allowanes. The flat spot in the graph when there is a salvage value is
 caused by there being no writing down before the salvage value is deducted from
 the pool.
 .
-.bp
-.rs
-.sp |5.0i
-.ce 100
-.B
-.LG
-INVESTMENT COST EQUATIONS - TIME PERIOD 1
-.R
-.ce 0
-.bp

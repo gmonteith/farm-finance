@@ -1264,4 +1264,4 @@ commoditised with low returns there is little that can be done about it. You
 can not make a industrial supplier of widgets generate the same return on
 capital as a brewery. However, you can take the dividends and deploy them in an
 area with a higher return.
-.bp
+

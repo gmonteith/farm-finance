@@ -1,17 +1,17 @@
 .
-.XS
-APPENDIX K - Inflation
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX K\s0\fP
-.sp 20
-.B
-.LG
-INFLATION
-.R
-.ce 0
-.bp
+.\" .XS
+.\" APPENDIX K - Inflation
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX K\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" INFLATION
+.\" .R
+.\" .ce 0
+.\" .bp
 .
 .SH 1
 Inflation
@@ -787,4 +787,3 @@ When using nominal returns it is important to have an idea of the inflation
 expectations. A nominal return of 12% sounds good unless the rate of inflation
 is 15%. Conversely a nominal return of 5% maybe acceptable if the rate of
 inflation is 1%.
-

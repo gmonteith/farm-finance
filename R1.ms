@@ -1,16 +1,16 @@
-.XS
-APPENDIX X - REFERENCES
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX X\s0\fP
-.sp 20
-.B
-.LG
-REFERENCES
-.R
-.ce 0
-.bp
+.\" .XS
+.\" APPENDIX X - REFERENCES
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX X\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" REFERENCES
+.\" .R
+.\" .ce 0
+.\" .bp
 .
 .SH 1
 References

@@ -356,4 +356,4 @@ n = 13.949
 Comparing the two examples shows, that the move from quarterly compounding to
 continuous compounding does not dramatically shorten the doubling time. This is
 the impact of the force of interest as discovered by Bernoulli.
-.bp
+

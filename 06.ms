@@ -410,4 +410,4 @@ arrow from (22.5, 5.4) to (R, FV(R))
 .LP
 You could of course use a computer to resolve the problem, be that with a
 spreadsheet or by writing a little bit of code.
-.bp
+

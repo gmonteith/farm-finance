@@ -1,6 +1,6 @@
 .
-.EH '%''\fBSection 13: Engineering Economics\fP'
-.OH '\fBSection 13: Engineering Economics\fP''%'
+.\" .EH '%''\fBSection 13: Engineering Economics\fP'
+.\" .OH '\fBSection 13: Engineering Economics\fP''%'
 .
 .sp 5
 .NHTOC 1 sec:equiv:num sec:equiv:page "Engineering Economics"
@@ -1977,4 +1977,4 @@ the next 5 years. What is the present worth of the each
 cash flow over the next 5 years, using the end of year
 convention and assuming an 8% interest rate is
 available?
-.bp
+

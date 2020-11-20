@@ -1102,4 +1102,4 @@ Key points:
 .IP \(bu
 It is important to understand the pattern of cash flows before attempting the
 calculation and the cash flow diagrams is useful visual aid.
-.bp
+

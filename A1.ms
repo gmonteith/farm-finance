@@ -1,24 +1,30 @@
 .
-.XS
-APPENDIX A - Impact of WDA on capital costs
-.XE
-.ce 100
-\s+8\fBAPPENDIX A\s0\fP
-.sp 20
-.B
-.LG
-Impact of WDA on capital costs
-.R
-.ce 0
-.bp
-.
-.ce
-.LG
-.B
-Impact of WDA on capital costs
-.R
-.NL
-.LP
+.\" .XS
+.\" APPENDIX A - Impact of WDA on capital costs
+.\" .XE
+.\" .ce 100
+.\" \s+8\fBAPPENDIX A\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" Impact of WDA on capital costs
+.\" .R
+.\" .ce 0
+.\" .bp
+.\" .
+.\" .ce
+.\" .LG
+.\" .B
+.\" Impact of WDA on capital costs
+.\" .R
+.\" .NL
+.\" .LP
+.\" .so Format/format.tmac
+.\" .so Format/equation.tmac
+.\" .so Format/pic.tmac
+.\" .
+.\" .APPENDIX "Impact of Writing Down Allowance (WDA) on capital costs"
+.\" .
 This appendix shows the mathematics behind the table below encoutered in
 Section XX. Understanding the mathematics is useful if you wish to know more
 about the Capital Cost Tax Factors (CCTF).
@@ -623,4 +629,4 @@ annuity equation.
 .EQ
 Idt over {  i + d  } 
 .EN
-.bp
+

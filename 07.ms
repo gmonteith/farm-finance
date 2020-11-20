@@ -310,4 +310,4 @@ lineup =~~
 To establish the value of \fIn\fP the final equation will require different
 value of \fIn\fP to be graphed. It is of course possible to find the solution
 by using the functions in a spreadsheet or writing a short piece of code.
-.bp
+

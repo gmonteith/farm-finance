@@ -1,6 +1,6 @@
 .
-.EH '%''\fBSection 12: Growing Perpituities\fP'
-.OH '\fBSection 12: Growing Perpituities\fP''%'
+.\" .EH '%''\fBSection 12: Growing Perpituities\fP'
+.\" .OH '\fBSection 12: Growing Perpituities\fP''%'
 .
 .sp 5
 .NHTOC 1 sec:perp:num sec:perp:page "Growing Perpituities"
@@ -149,4 +149,4 @@ exceeds the economy forever.
 .IP \(bu
 As we have only the equation #PMT over { i - g }#, if the growth exceeds the
 interest rate, the PV will become negative. 
-.bp
+

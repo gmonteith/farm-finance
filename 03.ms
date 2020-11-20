@@ -1,6 +1,7 @@
 .
-.sp 5
-.NHTOC 1 sec:equiv:fum sec:equiv:page "Equivalence"
+.\" .sp 5
+.\" .XXXX 1 sec:equiv:fum sec:equiv:page "Equivalence"
+.\" .XXXX! \\n(cn 1 sec:equiv:fum sec:equiv:page "Equivalence"
 .LP
 We have established that there is relationship between the present value and
 the future value through the TV'S equation:
@@ -22,7 +23,10 @@ number of different types of debt instrument maybe available. The cash flows
 for each of the debt instruments below are different but the present value of
 the 5,000 loan is equivalent at the interest rate of 8%.
 .
-.NHTOC 2 sec:zero:num sec:zero:page "Zero Coupon Bond"
+.\" .NHTOC 2 sec:zero:num sec:zero:page "Zero Coupon Bond"
+.\" .XXXX 0 2 "Revolving credit with a bank"
+.\" .NHTOC! \\n(cn 1 "Zero coupon bond"
+.XXXX \\n(cn 1 "Zero coupon bond"
 .LP
 .PS
 A: [  box invis wid 0.25 ht 0.20 "0"
@@ -69,7 +73,7 @@ lineup =~~
 .EN
 This is the simplest example and has one cash outflow and one cash inflow.
 .
-.NHTOC 2 sec:consu:num sec:consu:page "Instalment loan"
+.XXXX 0 2 "Instalment loan"
 .LP
 .PS
 A: [  box invis wid 0.25 ht 0.20 "0"
@@ -148,7 +152,7 @@ lineup =~~
 value of 7,344.
 .FE
 .
-.NHTOC 2 sec:coup:num sec:coup:page "Coupon Bond"
+.XXXX 0 2 "Coupon Bond"
 .LP
 .PS
 A: [  box invis wid 0.25 ht 0.20 "0"
@@ -245,7 +249,7 @@ lineup =~~
 7,347
 .EN
 .
-.NHTOC 2 sec:irreg:num sec:irreg:page "Constant Principal Repayment"
+.XXXX 0 2 "Constant Principal Repayment"
 .LP
 .PS
 A: [  box invis wid 0.25 ht 0.20 "0"
@@ -293,7 +297,6 @@ lineup =~~
 lineup =~~
 5000
 .EN
-.LP
 Again the future value can be established from the individual cash flows.
 .EQ I
 FV lineup =~~
@@ -314,7 +317,7 @@ lineup =~~
 7,347
 .EN
 .
-.NHTOC 2 sec:irreg:num sec:irreg:page "Balloon Payment"
+.XXXX 0 2 "Balloon Payment"
 .LP
 .PS
 A: [  box invis wid 0.25 ht 0.20 "0"
@@ -389,7 +392,8 @@ interest rate. The exception to this rule is the zero-coupon bond which has, by
 definition, no periodic interest payments and the lender will receive the 8%
 return unless there is a default. 
 .
-.NHTOC 2 sec:irreg:num sec:irreg:page "Revolving credit with a bank"
+.XXXX 0 2 "Revolving credit with a bank"
+.\" .NHTOC 2 sec:irreg:num sec:irreg:page "Revolving credit with a bank"
 .LP
 To emphasis that amounts can be moved around by discounting or compounding, we
 will look at another scenario. Suppose that you owe your bank 2,000 due in 2
@@ -544,4 +548,3 @@ FV = PV(1 + i) sup n
 The 2,000 has to be compounded for 3 years to reach year 5. The total value now
 exceed 4,500 as the bank has extracted extra interest from you by extending the
 loan for 3 years.
-.bp

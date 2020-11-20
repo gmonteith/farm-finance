@@ -2,8 +2,8 @@
 .nr HM 0.7i
 .
 .
-.SH 1
-AIA or Yearly Allowance (Time period 2)
+.\" .SH 1
+.\" AIA or Yearly Allowance (Time period 2)
 .LP
 The flow chart for the AIA, at time period 2, when it is assumed there is a
 continuing pool is as follows:
@@ -620,4 +620,3 @@ lineup =~~
 6,334
 .EN
 .RE
-.bp

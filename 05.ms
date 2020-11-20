@@ -554,4 +554,4 @@ n sub ad =
 { ln left [ FV(i) over { PMT  ( 1 + i ) } + 1 right ] } over { ln( 1 + i ) }
 .EN
 .KE
-.bp
+

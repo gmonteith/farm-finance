@@ -1,17 +1,17 @@
 .
-.XS
-APPENDIX C - Engineering Econonomics Equations
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX C\s0\fP
-.sp 20
-.B
-.LG
-ENGINEERING ECONOMICS EQUATIONS
-.R
-.ce 0
-.bp
+.\" .XS
+.\" APPENDIX C - Engineering Econonomics Equations
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX C\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" ENGINEERING ECONOMICS EQUATIONS
+.\" .R
+.\" .ce 0
+.\" .bp
 .
 .SH 1
 .ce
@@ -110,4 +110,3 @@ Arithmetic Gradient Future Worth - (F/G, i%, n)	Section 11.14
 .EQ
 agfw(lineup =~~)
 .EN
-.bp

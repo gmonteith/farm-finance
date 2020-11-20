@@ -1,17 +1,17 @@
 .
-.XS
-APPENDIX N - Dry matter
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX N\s0\fP
-.sp 20
-.B
-.LG
-CUMULATIVE DRY MATTER
-.R
-.ce 0
-.bp
+.\" .XS
+.\" APPENDIX N - Dry matter
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX N\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" CUMULATIVE DRY MATTER
+.\" .R
+.\" .ce 0
+.\" .bp
 .
 .SH 1
 Cumulative dry matter formulas

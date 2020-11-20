@@ -1,6 +1,6 @@
 .
-.sp 5
-.NHTOC 1 sec:time:num sec:time:page "Time Value of Money"
+.\" .sp 5
+.\" .NHTOC 1 sec:time:num sec:time:page "Time Value of Money"
 .LP
 The Time Value of Money takes into account the fact that money received today
 is worth more than money received in the future because the money today can be
@@ -321,4 +321,3 @@ FV = PV(1 + i ) sup n
 .EN
 As we shall see in the later sections the majority of finance is concerned with
 how to sum various patterns of individual discounted cash flows.
-.bp

@@ -174,4 +174,3 @@ surrounded by parenthesis in the tables. When working only with costs, and
 \fBno\fP positive cash flows, then the costs are not precceded by a negative
 sign or surrounded by parenthese in the tables as it is more natural to work
 with positive numbers. 
-.bp

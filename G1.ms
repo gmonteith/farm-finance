@@ -1,18 +1,18 @@
 .
 .
-.XS
-APPENDIX H - Loans
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX H\s0\fP
-.sp 20
-.B
-.LG
-LOANS
-.R
-.ce 0
-.bp
+.\" .XS
+.\" APPENDIX H - Loans
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX H\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" LOANS
+.\" .R
+.\" .ce 0
+.\"  .bp
 .
 .SH 1
 Loans

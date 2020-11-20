@@ -591,5 +591,5 @@ Tax can not make the NPV negative it simply reduces the size of tit.
 If you have loses you cost base rises.
 .LP
 Lower taxation means higher costs. - sub marginal producer.
-.bp
+
 

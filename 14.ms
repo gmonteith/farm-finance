@@ -1561,4 +1561,4 @@ you the chance of being about right in the end.
 As the small business owner you have the advantage of control to some small way
 your lack of diversification. This control allows you to change and adapt if
 things are not working out.
-.bp
+

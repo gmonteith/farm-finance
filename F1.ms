@@ -1,20 +1,20 @@
 .
-.XS
-APPENDIX X - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX X\s0\fP
-.sp 20
-.B
-.LG
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-.R
-.ce 0
-.bp
+.\" .XS
+.\" APPENDIX X - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX X\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+.\" .R
+.\" .ce 0
+.\" .bp
 .
 .SH 1
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Workings hitch
 .LP
 This Appendix provides the workings for the table in Section 18.2.1
 .LP

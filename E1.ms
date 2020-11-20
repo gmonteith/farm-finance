@@ -1,17 +1,17 @@
 .
-.XS
-APPENDIX E - Shareholder Value Added
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX E\s0\fP
-.sp 20
-.B
-.LG
-SHAREHOLDER VALUE ADDED
-.R
-.ce 0
-.bp
+.\" .XS
+.\" APPENDIX E - Shareholder Value Added
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX E\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" SHAREHOLDER VALUE ADDED
+.\" .R
+.\" .ce 0
+.\" .bp
 .
 .SH 1
 Shareholder Value Added
@@ -1697,4 +1697,3 @@ Increase the growth rate during the excess return phase.
 Lengthen the period of excess returns.
 .IP -
 Reduce the discount rate.
-.bp

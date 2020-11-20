@@ -1,17 +1,17 @@
 .
-.XS
-APPENDIX D - Self Assesment Tax in two payments.
-.XE
-.
-.ce 100
-\s+8\fBAPPENDIX D\s0\fP
-.sp 20
-.B
-.LG
-SELF ASSESMENT TAX IN TWO PAYMENTS.
-.R
-.ce 0
-.bp
+.\" .XS
+.\" APPENDIX D - Self Assesment Tax in two payments.
+.\" .XE
+.\" .
+.\" .ce 100
+.\" \s+8\fBAPPENDIX D\s0\fP
+.\" .sp 20
+.\" .B
+.\" .LG
+.\" SELF ASSESMENT TAX IN TWO PAYMENTS.
+.\" .R
+.\" .ce 0
+.\" .bp
 .
 .SH 1
 Self Assesment Tax in two payments.
@@ -164,5 +164,3 @@ comfortable comparing a theoretical 100,000 investment. The size of the
 investment is of course arbitary and the 1% difference is between 0.89811 and
 0.89091.
 .FE
-
-

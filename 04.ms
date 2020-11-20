@@ -1,6 +1,6 @@
 .
 .sp 5
-.NHTOC 1 x x "Ordinary Annuities"
+/.XXXX \\n(cn 1 "Zero coupon bond"
 .LP
 An annuities is constant amount paid or received for a given number of periods.
 The most common annuity is an ordinary annuity, where the cash flow is made at
@@ -26,7 +26,8 @@ Annuities can be both discounted and compounded depending on what is desired.
 In business we are mostly looking at the present value of investments, but if
 you are a saver your focus will be on compounding.
 .
-.NHTOC 2 sec:pvo:num sec:pvo:page "PV given an Ordinary Annuity"
+.\".NHTOC 2 sec:pvo:num sec:pvo:page "PV given an Ordinary Annuity"
+.XXXX \\n(cn 1 "PV given an Ordinary Annuity"
 .LP
 .B Example: 
 What is the present value (PV) of an annuity than pays 12,000 GBP at the end of
@@ -150,7 +151,8 @@ from the series which has been multiplied by the common ratio. However, I feel
 it is easier to conceptualise the cancelling of the terms if one series is
 negative and one series positive.
 .
-.NHTOC 3 sec:gm:num sec:gm:page "Geometric Series"
+.\".NHTOC 3 sec:gm:num sec:gm:page "Geometric Series"
+.XXXX 0 2 "Geometric series"
 .IP \(bu
 A geometric series is one in which the ratio of any term to that which
 immediately precedes it is constant for the whole series.
@@ -786,5 +788,5 @@ would round up the answer to 40. The user has to decide if they want to make a
 larger 39th payment or a smaller 40th payment. You can not really make a
 fractional payment, either the payment was made or it was not made, it can not
 be partially made.  
-.bp
+
 .
