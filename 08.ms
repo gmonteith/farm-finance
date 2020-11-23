@@ -1,8 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:perp:num sec:perp:page "Perpetuities"
-.sp
-.LP
 The relationship between an annuity and a  perpetuity is very simple. A
 perpetuity is simply an annuity without end or another way of thinking about it
 is that an annuity is a bit of a perpetuity. In may ways this is the better way
@@ -99,8 +95,7 @@ The equation can be rearranged as follows:
  ~~~~->~~~~
 PMT = PV times i 
 .EN
-.sp 1
-.NHTOC 2 sec:infin:num sec:infin:page "Sum to infinity"
+.XXXX \\n(cn 1 "Sum to infinity"
 .LP
 It was stated at the beginning that it maybe better to think of an annuity as a
 bit of a perpetuity. If examine the equation again, the left side represents
@@ -258,8 +253,8 @@ been issued by governments over the years as perpetuities. In the 1800s
 perpetuities were issued to finance the war against Napoleon. Ground rents can
 also be thought of as perpetuities as the lease that supports them can be in
 existence for 999 years.
-.sp 1
-.NHTOC 2 sec:infin:num sec:infin:page "Resolving annuity to a perpetuity."
+.
+.XXXX 0 2 "Resolving annuity to a perpetuity."
 .LP
 We have gone to great length to empahsise that an annuity is simply part of a
 perpetuity. This leads to the very logical question; given an anuiyt how long

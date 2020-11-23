@@ -1,11 +1,8 @@
 .
-.sp 5
-.NHTOC 1 sec:cctf:num sec:cctf:page "Using the investment cost equations "
-.LP
 Now that we have established the investment cost equations we can answer two
 important questions; what are thery for and how do I use them?
 .
-.NHTOC 1 sec:cctf:num sec:cctf:page "What is the purpose of the investment cost equations?"
+.XXXX \\n(cn 1 "What is the purpose of the investment cost equations?"
 .LP
 The purpose of the investment cost equation is to reduce the work requied to
 establish the after tax NPV. The investment cost equations are not designed to
@@ -24,7 +21,7 @@ As much as is possible the merits of each investment are look at in isolation.
 There will of course always be an impact from other business decisions that
 impact the after tax these are disregarded
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "How to use the equations"
+.XXXX 0 2 "How to use the equations"
 .LP
 The standard from is to:
 .IP 1.
@@ -40,7 +37,7 @@ investment after costs yeilds a surplus of 25,000 each year. The investment has
 a life of 5 years and no salvage value, the rate of taxation is 20% and the
 discount rate 15%. 
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "No salvage value"
+.XXXX 0 2 "No salvage value"
 .LP
 We will look first at using the equatins when there is no salvage value. The
 first step is to draw the cash flow diagram:
@@ -259,7 +256,7 @@ NPV#51,649
 _
 .TE
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Salvage value"
+.XXXX 0 2 "Salvage value"
 .LP
 The scenario stays the sames except that on dispoal in year 5 there is a
 salvage value of 7,000. We will redraw the cash flow diagram to reflect the
@@ -489,7 +486,7 @@ NPV#54,800
 _
 .TE
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Self Assesment Tax"
+.XXXX 0 2 "Self Assesment Tax"
 .LP
 Self Assessment Tax creates some problems because of the personal allowance and
 the different tax rates dependent on the earnings of the business. We will
@@ -497,7 +494,7 @@ start with the the problem of the personal allowance sheltering some of the
 income from taxation. Appendix F looks at how to calculate the rate of taxation
 in some detail.
 .
-.NHTOC 3 sec:cctf:num sec:cctf:page "Personal allowance incorporated into rate of taxation"
+.XXXX 0 3 "Personal allowance incorporated into rate of taxation"
 .LP
 You can create a flat rate of taxation using the method show in Appendix F if
 you accept that the investment is going to utilise the personal allowance, and
@@ -533,7 +530,7 @@ materialise. The aim is to be roughly right. Remember that the rate of taxation
 has a bearing on the cost of capital as interest is tax deductible and you may
 need to recalculate the weighted average cost of capital for this project. 
 .
-.NHTOC 3 sec:cctf:num sec:cctf:page "Personal allowance has already been applied."
+.XXXX 0 3 "Personal allowance has already been applied."
 .LP
 If you allready have a business making in excess of the personal allowance than
 your next investment will be taxed at the prevailing rate of taxation for the
@@ -544,7 +541,7 @@ rate of taxation has a bearing on the cost of capital as interest is tax
 deductible and you may need to recalculate the weighted average cost of capital
 for this project. 
 .
-.NHTOC 3 sec:cctf:num sec:cctf:page "Earnings across two tax bands."
+.XXXX 0 3 "Earnings across two tax bands."
 .LP
 This scenario is covered again in Appendix F. The basic logic is that you will
 need to calcualte a weighted avaerage of the tax rates. Again, as the earnings
@@ -554,7 +551,7 @@ next tax rate. Currently there is a change in the tax rate at 50,000 it would
 not add much to the accuracny of the NPV by calculating the weighted average of
 the rate of taxaton if the earnings were projected to be 51,000. 
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Limited taxation"
+.XXXX 0 2 "Limited taxation"
 .LP
 If the level of taxable profits is low then it may not be possible to claim the
 full writing down allowance. This applies to both Self Assesment Tax and
@@ -567,7 +564,7 @@ cost can be used with any value for the declining balance #d#. The obvious
 impact is that the investment cost will rise and the NPV will fall as the tax
 benefit is claimed over a longer period of time.
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Marginal profitability"
+.XXXX 0 2 "Marginal profitability"
 .LP
 If the business has inconsistent earnings and does not consistently pay tax I
 would advise against using the investment cost equations. In reality if the
@@ -581,7 +578,7 @@ In both scenarios above concerning businsess with marginal profitablity the
 chances are that there are loses which have been carried forward and are
 available to shield the profits from taxation.  
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Existing losses"
+.XXXX 0 2 "Existing losses"
 .LP
 We have previously stated that we regard existing losses as a sunk cost. This
 is true and we do not try and account for them in the investment cost equations
@@ -592,7 +589,7 @@ situations it would make sense to calculate the NPV as if there was no
 taxation. Remember if calculate the NPV without taxation you will have to use a
 pretax cost of capital. 
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Small pool and balancing charge"
+.XXXX 0 2 "Small pool and balancing charge"
 .LP
 There can be situations where the expcecations is that a balancing charge will
 have to be paid. For instance if your business is not very capital intensive,
@@ -611,7 +608,7 @@ the main pool where the equation does not allow for a balancing charge and
 compare it with the single asset pool equation that does allow for a balancing
 charge.
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Scenarios not covered by the cost equations"
+.XXXX 0 2 "Scenarios not covered by the cost equations"
 .LP
 I do not propose to go through every eventuality that buiness can throw up and
 how to use the investment cost equations. Mostly I expect the investment cost
@@ -626,7 +623,7 @@ and the maths behind the investment cost equaitons. With this information it
 should be possible to build your own tools to calculate the tax benefits
 accruing in any given situation.  
 .
-.NHTOC 2 sec:tim:num sec:tim:page "The false precision of numbers"
+.XXXX 0 2 "The false precision of numbers"
 .LP
 Numbers can be reather misleading in seeming to provide an accurate answer when
 in actual fact what you have calculated is exactly wrong which is a disapinting
@@ -671,7 +668,7 @@ investment cost equations covering the continuose pools will be most heavily
 used and particulary those equations that calculate the investment cost with
 either no salvage value or a salvage value without capital gains. 
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Is it worth calculating the after tax NPV?"
+.XXXX 0 2 "Is it worth calculating the after tax NPV?"
 .LP
 Due to the inherent problems in generating a reliable NPV it could be argued
 that the after tax cash flow estimate is likely to be less reliable than the

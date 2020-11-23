@@ -1,8 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:cva:num sec:cva:page "Revenue, cost and profit"
-.sp
-.LP
 This section is about building a simple mathematical model using the laws of a
 straight line and the relation ship between reveneue and costs. Mathematical
 models use an equation or a system of equations to try and represent a real
@@ -117,7 +113,7 @@ to monitor and control processes but the methods of control must be well
 understood be they a simple time sheet or an electronic bolus for use in
 livestock.
 .
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Relating costs to revenue and profits"
+.XXXX \\n(cn 1 "Relating costs to revenue and profits"
 .LP
 Before we start we will define the variables that are used in examinining the
 relationship between the revenue and the costs:
@@ -289,7 +285,7 @@ sales mix remains constant.
 Now that we have outlined the general concept of breakeven we can examine some
 examples or increasing complexity.
 .
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Breakeven - forage harvest"
+.XXXX 0 2 "Breakeven - forage harvest"
 .LP
 Wilbur is weighing up the possibility of investing in new forage harvester
 and has established the following costs:
@@ -415,12 +411,12 @@ rise any faster than anticipated.
 Wilbur would be advised to try and enter into some longterm agreements to
 secure the revenue and control the costs.
 .
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Breakeven - haulage"
+.XXXX 0 2 "Breakeven - haulage"
 .LP
 TO BE ADDED
 .
 .
-.NHTOC 2 sec:equiv:num sec:equiv:page "Breakeve - lamb finishing"
+.XXXX 0 2 "Breakeve - lamb finishing"
 .LP
 These formulas have been derived by examining the papers on the Agricultural
 and Horticultural Development Board (AHDB) website which reference lamb
@@ -699,7 +695,7 @@ Carcass disposal is \[Po]15 per deceased lamb
 The presumption is that the lamb purchase and the crop are financed with a
 revolving credit facility using simple interest at 10% and 365 days in a year.
 .
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "Dry matter requirements"
+.XXXX 0 3 "Dry matter requirements"
 .LP
 This section examines some formulas to calculate the dry matter required for an
 individual lamb. Growing lambs generally require 4%\(dd of their body weight as
@@ -744,7 +740,7 @@ The formulas above can be combined with the formula for an arithmetic series to
 calculate the dry matter requirements over given time periods. The formulas have
 been derived in Appendix N.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Dry matter per lamb"
+.XXXX 0 4 "Dry matter per lamb"
 .LP
 The dry matter requirement of the lamb rises as at it gains body weight. The
 dry matter requirement on any given day can be expressed as:
@@ -797,8 +793,7 @@ lineup =~~
 1.55 ~kg ^per ^lamb
 .EN
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Dry matter over number of days \
-given a start and finish weight"
+.XXXX 0 4 "Dry matter over number of days given a start and finish weight"
 .LP
 The equation below has been derived in Appendix N and allows us to calculate
 the amount of dry matter a lamb will consume over a given number of days to
@@ -885,8 +880,7 @@ r =~~ { k sub f - k sub s } over { ( d - 1 ) }
 So, a target number of days implies a given growth rate and a given growth rate
 implies that the lamb will reach finishing weight in a given number of days.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Dry matter given a growth rate \
-and a start and finish weight"
+.XXXX 0 4 "Dry matter given a growth rate and a start and finish weight"
 .LP
 The equation below has been derived in Appendix N and allows us to calculate
 the amount of dry matter a lamb will consume to reach a finishing weight if the
@@ -984,7 +978,7 @@ left [ { k sub f - k sub s } over r right ] + 1
 The percentage increase in days from 81 to 133 is 64% which closely matches the
 increase in the dry matter requirement.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Dry matter over a time period"
+.XXXX 0 4 "Dry matter over a time period"
 .LP
 The equation below has been derived in Appendix N and allows us to calculate
 the amount of dry matter, in kilograms, required over a time period in days.
@@ -1088,7 +1082,7 @@ The great advantage of this formula is that you need only know the weight of
 the store lamb when it was purchased and not its weight at the start of the
 time period to calculate the feed consumed.
 .
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "Feed requirements"
+.XXXX 0 3 "Feed requirements"
 .LP
 If the forage crop represents 70% percent of the diet the remaining 30% must
 come from the hay. It is presumed the hay is placed on the headland around the
@@ -1096,7 +1090,7 @@ fields when the forage crop is planted so there is no requirement to drive on
 the fields later in the year. In our scenario feeding the hay on the headland
 leads to a low utilisation rate of 70%. 
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Forage kg DM/ha"
+.XXXX 0 4 "Forage kg DM/ha"
 .LP
 We will use the figures from our example scenario. The stubble turnips have a
 fresh yield of 50,000 kg/ha, 13.5% DM and 80% utilisation.
@@ -1118,7 +1112,7 @@ lineup =~~
 5,400 ~"kg/ha"
 .EN
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Hay kg DM/tonne"
+.XXXX 0 4 "Hay kg DM/tonne"
 .LP
 The figures for the hay are 85% DM and 70% utilisation.
 .EQ I
@@ -1139,7 +1133,7 @@ lineup =~~
 595 ~"kg/tonne"
 .EN
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Forage hectares required"
+.XXXX 0 4 "Forage hectares required"
 .LP
 The number of hectares required is:
 .EQ I
@@ -1191,7 +1185,7 @@ lineup =~~
 0.015 ~ha ^per ^lamb
 .EN
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Tonnes of hay required"
+.XXXX 0 4 "Tonnes of hay required"
 .LP
 The calculation for the amount of hay is shown below:
 .EQ I
@@ -1260,7 +1254,7 @@ lineup =~~
 .EN
 .
 .KS
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Check feed requirements"
+.XXXX 0 4 "Check feed requirements"
 .LP
 We previously calculated the individual dry matter requirements as 116.64 kg
 and the total dry matter for 3,000 lambs would be approximately 349,920 kg. It
@@ -1294,7 +1288,7 @@ lineup =~~
 The numbers are not exact due to the rounding, but they are close enough to
 feel confident that the individual feed calculations are correct.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Forage area per day"
+.XXXX 0 4 "Forage area per day"
 .LP
 The area required per day in #m sup 2# is given by the equation below:
 .EQ I
@@ -1373,7 +1367,7 @@ lineup =~~
 The total area required for a mob can be calculated by multiplying by the
 quantity of lambs.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Hay kg per day"
+.XXXX 0 4 "Hay kg per day"
 .LP
 The hay required per day in kilograms is given by the equation below:
 .EQ I
@@ -1452,7 +1446,7 @@ lineup =~~
 The total kilograms required for a mob can be calculated by multiplying by the
 quantity of lambs.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Area, per lamb, over a time period"
+.XXXX 0 4 "Area, per lamb, over a time period"
 .LP
 The area required for a time period can be calculated by first calculating the
 dry matter over a time period using the same formula as before and then
@@ -1518,7 +1512,7 @@ lineup =~~
 13.04 ^m sup 2 ^ per ^ lamb
 .EN
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Hay in kg, per lamb, over a time period"
+.XXXX 0 4 "Hay in kg, per lamb, over a time period"
 .LP
 We will use the same technique as we used for the area. Firstly you must
 calculate the dry matter in kilograms required over a time period and then it
@@ -1553,12 +1547,12 @@ lineup =~~
 .EN
 .KE
 .
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "Costs"
+.XXXX 0 3 "Costs"
 .LP
 In this section we move from thinking in terms of dry matter and look at the
 costs of the inputs in a number of ways.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Fixed costs"
+.XXXX 0 4 "Fixed costs"
 .LP
 The fixed costs are understood to be labour, machinery, hire, fuel, finance and
 property.
@@ -1768,7 +1762,7 @@ lineup =~~
 \[Po]3.67 ~per ^lamb
 .EN
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Variable costs"
+.XXXX 0 4 "Variable costs"
 .LP
 The variable costs are made of two components the costs of the acquired store
 lamb and the daily cost of the weight added to the store lamb during the finishing
@@ -2868,7 +2862,7 @@ lineup =~~
 .EN
 .KE
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Total costs"
+.XXXX 0 4 "Total costs"
 .LP
 The total costs can be represented with the generalised equation below:
 .EQ I
@@ -3142,7 +3136,7 @@ Total#\[Po]70.88#\[Po]73.07
 delim ##
 .EN
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Cost per kg DM"
+.XXXX 0 4 "Cost per kg DM"
 .LP
 The feed costs are shown below:
 .EQ I
@@ -3237,12 +3231,12 @@ on the quality and quantity of feed and cheap grass with a low energy content
 will result in low growth rates and longer finishing periods which may not be
 as cost effective as more expensive feed with higher growth rates.
 .
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "Revenue, profit & breakeven"
+.XXXX 0 3 "Revenue, profit & breakeven"
 .LP
 In this section we will use the costs we have established to examine revenue,
 profit and the way the breakeven formula can be manipulated.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Revenue"
+.XXXX 0 4 "Revenue"
 .LP
 The revenue can be expressed as:
 .EQ I
@@ -3363,7 +3357,7 @@ is a loss of cash of \[Po]7,700.  It is not possible to have a mortality rate
 of zero but still it shows the impact of the mortality rate on the revenue
 stream.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Profit"
+.XXXX 0 4 "Profit"
 .LP
 Profit is the revenue minus the cost and can be expressed as follows:
 .EQ I
@@ -3405,7 +3399,7 @@ lineup =~~
 As a side note, this profit was generated from 46 hectares of stubble turnips
 giving a profit of \[Po]790 per hectare.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Contribution"
+.XXXX 0 4 "Contribution"
 .LP
 The contribution is the difference between the revenue and the variable costs.
 This contribution is the amount that each unit "contributes" towards the fixed
@@ -3486,7 +3480,7 @@ the costs due to their being less lambs over which to spread the costs. The
 third impact is as a lost sale which reduces the revenue as we have previously
 discussed.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Breakeven"
+.XXXX 0 4 "Breakeven"
 .LP
 Breakeven is when the total revenue is equal to the total costs, that is to say
 the profit is zero. The breakeven quantity can also be calculated using the
@@ -3532,7 +3526,7 @@ lineup =~~
 1,412 ~lambs
 .EN
 .
-.NHTOC 5 sec:cctfsa:num sec:cctfsa:page "Breakeven - sale price per kg"
+.XXXX 0 5 "Breakeven - sale price per kg"
 .LP
 The breakeven sale price can be established by resolving for #P sub 2# which is
 the sale price before the deduction of the sales commission. We will start by
@@ -3609,8 +3603,7 @@ price you can divide the price by the meat yield. If the meat yield is 45% the
 price required would be # 1.736 over 0.45 = 3.86 ~\[Po]/kg #
 .FE
 .
-.NHTOC 5 sec:cctfsa:num sec:cctfsa:page "Breakeven - \
-purchase price per kg"
+.XXXX 0 5 "Breakeven - purchase price per kg"
 .LP
 It is also possible to resolve the breakeven equation for the purchase price #P
 sub 1#. When resolved for #P sub 1 # we have established the maximum price that
@@ -3705,7 +3698,7 @@ lineup =~~
 Which equates to \[Po]57.11 for a 30 kg lamb. I will leave you to do the check
 this time. :)
 .
-.NHTOC 5 sec:cctfsa:num sec:cctfsa:page "Breakeven - mortality rate"
+.XXXX 0 5 "Breakeven - mortality rate"
 .LP
 The mortality rate has a large impact as it affects all the costs and the
 revenues. We will start again with the breakeven equation:
@@ -3944,14 +3937,13 @@ The mortality rate has raised the variable costs per lamb to #\[Po]72.88# from
 #\[Po]61.98#. We could have simplified the equation during the check but we
 would not have seen the rise in the costs due to the mortality.
 .
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Breakeven with a margin"
+.XXXX 0 4 "Breakeven with a margin"
 .LP
 As useful as they have been none of the previous breakeven examples have
 included a margin. In this section we will examine how to apply the margin and
 recalculate the breakeven.
 .
-.NHTOC 5 sec:cctfsa:num sec:cctfsa:page "Breakeven with a margin (percentage) \
-- sale price per kg"
+.XXXX 0 5 "Breakeven with a margin (percentage) - sale price per kg"
 .LP
 We can apply the margin as a percentage to the cost structure. We will again
 start with the standard breakeven equation:
@@ -4037,8 +4029,7 @@ lineup =~~
 .EN
 .KE
 .
-.NHTOC 5 sec:cctfsa:num sec:cctfsa:page "Breakeven with a margin (value) \
-- sale price per kg"
+.XXXX 0 5 "Breakeven with a margin (value) - sale price per kg"
 .LP
 We will now look at the equation for a margin as expressed by an absolute value
 such as \[Po]10. We will again start with the standard breakeven equation:
@@ -4097,8 +4088,7 @@ lineup =~~
 2.04 ~\[Po]/kg
 .EN
 .
-.NHTOC 5 sec:cctfsa:num sec:cctfsa:page "Breakeven with a margin (percentage) \
-- purchase price per kg"
+.XXXX 0 5 "Breakeven with a margin (percentage) - purchase price per kg"
 .LP
 It is often useful to resolve for the purchase price #P sub 1# including your
 margin. We will again start with the breakeven equation:
@@ -4260,8 +4250,7 @@ lineup =~~
 1.35 ~\[Po]/kg
 .EN
 .
-.NHTOC 5 sec:cctfsa:num sec:cctfsa:page "Breakeven with a margin (value) \
-- purchase price per kg"
+.XXXX 0 5 "Breakeven with a margin (value) - purchase price per kg"
 .LP
 It is also possible to resolve for the purchase price with the margin
 represented as an value. We will use \[Po]10 again.
@@ -4359,7 +4348,7 @@ lineup =~~
 1.58 ~\[Po]/kg
 .EN
 .
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "Growth rates"
+.XXXX 0 3 "Growth rates"
 .LP
 The table below is from the EBLEX publication "Growing and finishing lambs for
 better returns". The lamb weights are interpreted as normally distributed with
@@ -4438,7 +4427,7 @@ would imply 11.7 MJ ME/kg of DM. It is also worth noting that at 9 MJ ME/kg of
 DM the equation would imply a growth rate of zero, # 9(100) - 900 = 0# and
 below 9 MJ ME/kg of DM a loss of weight.
 .
-.NHTOC 2 sec:cva:num sec:cva:page "Degree of Operating Leverage"
+.XXXX 0 2 "Degree of Operating Leverage"
 .LP
 In finance leverage is a technique that companies use to increase their assets,
 cash flows and returns. There are two main types of leverage:
@@ -4460,7 +4449,7 @@ near its break-even point, then even a small percentage increase in sales can
 yield large percentage increases in profits. This explains why companies will
 often work very hard for only a small increase in sales volume. 
 .sp 
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Cost Structure"
+.XXXX 0 2 "Cost Structure"
 .LP
 Because fixed costs are incurred regardless of the level of sales, companies
 with higher fixed costs find it difficult to reduce these costs in the
@@ -4502,7 +4491,7 @@ pricing policy, since a company with a large amount of operating leverage must
 be careful not to set its prices so low that it can never generate enough
 contribution margin to fully offset its fixed costs
 .sp 
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Measuring Operating Leverage"
+.XXXX 0 2 "Measuring Operating Leverage"
 .LP
 Assume two companies have maintained the same amount of revenue and the same
 amount of operating profit for the past two years, and that both companies
@@ -4569,7 +4558,6 @@ Capital Charge#9,120
 _
 Added Value pre Tax#21,880
 .TE
-.LP
 The income statement uses the "Total Operating Costs" as calculated in the
 break-even analysis for the fixed cost component in Section 20.3. It is
 important to make sure you compare apples with apples and this is an income
@@ -4582,7 +4570,7 @@ to show the value that has been created for the shareholder.
 "contribution margin" over "EBIT" = 75,000 over 31,000 = 2.42
 .EN
 .sp 
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Interpreting the DOL"
+.XXXX 0 2 "Interpreting the DOL"
 .LP
 The DOL indicates the number of times that the contribution margin exceeds the
 company's operating income. A company with higher DOL has more extreme
@@ -4591,7 +4579,7 @@ in sales revenue occurs. A high DOL implies a more risky operating structure
 because of the volatility of the change in profit, conversely a lower DOL
 amount implies a less risky operating structure. 
 .sp 
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Using the DOL"
+.XXXX 0 2 "Using the DOL"
 .LP
 The DOL can be used to predict the effect that a specified increase in sales
 will have on the operating income. One approach to determine the effect is to
@@ -4603,14 +4591,12 @@ income statement a 10% increase in sales would have the following result.
 .EQ I
 "Percentage increase in operating income" = 2.42 times 10% = 24.20%
 .EN
-.LP
 The 24.2% change represents the "increase" in operating income due to a 10%
 increase in sales. To determine the GBP change in profit, multiple the
 percentage change in EBIT times the original profit of 31,000
 .EQ I
 "GBP change in operating income" = 24.2% times 31,000 = 7,502
 .EN
-.LP
 Operating income is expected to increase by 7,502 if sales increase by 10%. To
 determine the estimated new profit level as a result of the change, either add
 the original profit to the increase or multiply the original value by 1.242
@@ -4620,7 +4606,6 @@ the original profit to the increase or multiply the original value by 1.242
 .EQ I
 "Estimated new EBIT" = (1 + 24.2%) times 31,000 = 1.242 times 31,000 = 38,502
 .EN
-.LP
 Below is a table showing a range of possible EBIT values for a range of
 increases in sales.
 .TS
@@ -4634,7 +4619,6 @@ _
 30#162,500#53,500#22,500#72.6#75#325
 _
 .TE
-.LP
 Note that a similar effect occurs if revenue is expected to decline. Leverage
 works in both directions. The new EBIT value can be calculated as follows:
 .EQ I
@@ -4652,7 +4636,6 @@ _
 (30)#87,500#53,500#(22,500)#(72.6)#(75)#175
 _
 .TE
-.LP
 The DOL can be used to quickly estimate what impact various percentage changes
 in sales will have on profits, without the necessity of preparing detailed
 income statements. As shown by our example the effect of operating leverage can

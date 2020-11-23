@@ -1,7 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:cctf:num sec:cctf:page "Investment cost equations "
-.LP
 The purpose of this section is to use some mathematics to reduce the amount of
 work required to estimate the NPV of a given investment, where tax is a
 consideration. The mathematics behind the equations is covered in Appendix A
@@ -14,7 +11,7 @@ when comparisions are being made with other costs. Therefore, the equations
 have both a negative form to use when working with NPVs and a postive form for
 cost comparisions.
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Capital Cost Tax Factors (CCTF)"
+.XXXX \\n(cn 1 "Capital Cost Tax Factors (CCTF)"
 .LP
 We are going to introduce the concept of the Capital Cost Tax Factor (CCFT) and
 build on our knowledge of series and tax. The CCTF acts as a constant which can
@@ -30,7 +27,7 @@ which means that there could be tax benefits available to the business after
 the asset has been disposed of. The mathematics behind the CCTFs is covered in
 Appendix A and Appendix B.
 .
-.NHTOC 2 sec:tim:num sec:tim:page "Types of Pool"
+.XXXX 0 2 "Types of Pool"
 .LP
 For the purposes of the investment cost equations there are two types of pool:
 .IP "Continuous Pools" 5
@@ -91,7 +88,7 @@ The government also allows single asset pools which have a maximum life of 8
 years, it is upto you to abide by this rule.
 .RE
 .
-.NHTOC 2 sec:tim:num sec:tim:page "Timings of tax payments"
+.XXXX 0 2 "Timings of tax payments"
 .LP
 It is generally assumed that tax is payable in arrears. The cash flow diagram
 below is a generalisation of tax paid in arrears. It also shows the
@@ -320,14 +317,14 @@ The investment cost equations have been presented to use with the tax effect
 starting at both time period one and two.
 .
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Time period 1"
+.XXXX 0 2 "Time period 1"
 .LP
 We are now going to examine the investment cost equations where the tax impact
 is at time period one. These equations would typically used when estimating an
 NPV under Self Assesment Tax, but they can also be used for Corporation Tax in
 certain instances.
 .
-.NHTOC 3 sec:cctf:num sec:cctf:page "CCTF"
+.XXXX 0 3 "CCTF"
 .LP
 The CCTFs are the foundation of the investment cost equations which are
 developed for a range of scenarios. There are two CCTFs for calculations in
@@ -341,7 +338,7 @@ CCTF sub WDA lm
 left [ cctf right ] 
 .EN
 .
-.NHTOC 3 sec:cctf:num sec:cctf:page "Continuous Pools"
+.XXXX 0 3 "Continuous Pools"
 .LP
 .UL "Annual Investment Allowance & Yearly Allowance"
 .LP
@@ -384,7 +381,7 @@ the same structure but cover different capital assets.
 (P/F, i%, n)
 .EN
 .
-.NHTOC 3 sec:tim:num sec:tim:page "Single Asset Pool"
+.XXXX 0 3 "Single Asset Pool"
 .LP
 .IP "No salvage value" 5
 .EQ L
@@ -446,14 +443,14 @@ times
 ( P/F, %i, n )
 .EN
 .
-.NHTOC 2 sec:cctf:num sec:cctf:page "Time period 2"
+.XXXX 0 2 "Time period 2"
 .LP
 We are now going to examine the investment cost equations where the tax impact
 is at time period one. These equations would typically used when estimating an
 NPV under Self Assesment Tax, but they can also be used for Corporation Tax in
 certain instances.
 .
-.NHTOC 3 sec:cctf:num sec:cctf:page "CCTF"
+.XXXX 0 3 "CCTF"
 .LP
 The CCTFs are the foundation of the investment cost equations which are
 developed for a range of scenarios. There are two CCTFs for calculations in
@@ -467,7 +464,7 @@ CCTF sub WD2A lineup =~~
 left [ cctf2 right ] 
 .EN
 .
-.NHTOC 3 sec:cctf:num sec:cctf:page "Continuous Pools"
+.XXXX 0 3 "Continuous Pools"
 .LP
 .UL "Annual Investment Allowance & Yearly Allowance"
 .LP
@@ -521,7 +518,7 @@ times
 from an engineering economics factor table.
 .FE
 .
-.NHTOC 3 sec:tim:num sec:tim:page "Single Asset Pool"
+.XXXX 0 3 "Single Asset Pool"
 .LP
 .IP "No salvage value" 5
 .EQ L
@@ -581,7 +578,7 @@ times
 ( P/F, %i, n )
 .EN
 .
-.NHTOC 2 sec:tim:num sec:tim:page "Conclusion"
+.XXXX 0 2 "Conclusion"
 .LP
 It can be seen that the investment cost equations get progressively more
 complicated. The simplest equations are those used with the continuous pool. It

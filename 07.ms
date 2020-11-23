@@ -1,7 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:perp:num sec:perp:page "Declining Annuities"
-.LP
 Annuities which are declining via a geometric progression are not so common in
 finance as the general premise is to look at industries and businesses that
 grow. However they are often found when looking at costs and therefore worth so
@@ -41,6 +38,8 @@ over left ( { (1 - g) } over { (1 + i) sup 2 } right )}
 ~~tf~~
 { (1 - g) } over {  (1 + i) }
 .EN
+.XXXX \\n(cn 1 "PV of declining annuity"
+.LP
 The equation for the sum of a geometric series can now be used to establish
 the present value of the annuity.
 .EQ I
@@ -125,7 +124,7 @@ right ]
 73.78
 .EN
 .
-.NHTOC 2 sec:perp:num sec:perp:page "Initial PMT declining annuity"
+.XXXX 0 2 "Initial PMT declining annuity"
 .LP
 The formula can be rearragned to resolve for the initial payment:
 .EQ I
@@ -153,7 +152,7 @@ PMT sup n=5 = 25 times (0.75) sup { 5 - 1 }  = 7.91M
 .EN
 .
 .KS
-.NHTOC 2 sec:perp:num sec:perp:page "n given a declining annuity"
+.XXXX 0 2 "n given a declining annuity"
 .LP
 Lastly the formula can be rearranged to resolve for the number of compound
 periods:

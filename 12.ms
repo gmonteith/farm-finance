@@ -1,7 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:equiv:num sec:equiv:page "Costing your capital"
-.LP
 We have spent some time acquiring an understanding of the time value of money
 and becoming familiar with discounting and compounding throught the use of the
 most common annuities and perpetuities formuals. We have, up to this point,
@@ -262,7 +259,7 @@ expected and will have accepted too much risk for too little return.
 \(dd Net Present Value (NPV) is covered in the next chapter.
 .FE
 .
-.NHTOC 2 sec:equiv:num sec:equiv:page "Investing in your business"
+.XXXX \\n(cn 1 "Investing in your business"
 .LP
 As an entrepreneur looking to start a company or a business owner looking to
 increase the size of your operation you will need to complete your business
@@ -348,7 +345,7 @@ accepting the risk. Furthermore, if you do not use a suitable cost of equity in
 your discounted cash flow you may invest in projects that you should not and by
 doing so lose your capital.
 .
-.NHTOC 2 sec:equiv:num sec:equiv:page "Establishing the discount rate"
+.XXXX 0 2 "Establishing the discount rate"
 .LP
 In the previous chapters we have simply stated an interest rate or discount
 rate to use with the examples. In reality the discount rate must be calculated
@@ -356,7 +353,7 @@ by looking at how the asset will be financed and the costs of the constituent
 parts of the capital structure. The basic premise of the discount rate is that
 the riskier the cash flow the higher the discount rate.
 .
-.NHTOC 3 sec:equiv:num sec:equiv:page "The cost of debt"
+.XXXX 0 3 "The cost of debt"
 .LP
 The historic cost of debt is easy to establish by either looking at the current
 cost of debt or the price typically paid for debt in the past. The interest
@@ -370,7 +367,7 @@ cost at which debt is offered to you. Therefore the cost of debt, for new
 projects, needs to be forward looking and can be referrenced to the rates
 offered to you by lenders to finance the project over the required time frame.
 .
-.NHTOC 3 sec:equiv:num sec:equiv:page "The cost of equity"
+.XXXX 0 3 "The cost of equity"
 .LP
 The cost of equity is an essential part of most discounted cash flow projection
 as it is not often possible to finance the investment entirely with debt\(dg.
@@ -395,7 +392,7 @@ therefore demand different rates of return. The challenge is therefore to
 convert the implicit cost of the equity into an explicit cost and then to
 ensure that this explict cost of equity satisfys the full range of investors.
 .
-.NHTOC 4 sec:equiv:num sec:equiv:page "Modern portfolio theory"
+.XXXX 0 4 "Modern portfolio theory"
 .LP
 We are going to start our investigation into the appropriate price of equiyt by
 taking a quick, short and simple journey throught modern portfolio theory. I
@@ -586,7 +583,7 @@ should be expected to return more than 9% on an annual basis to be worth
 risking the capital. The result of the calculation is a hurdle rate, of sorts,
 that the investment should meet or exceed.
 .
-.NHTOC 5 sec:equiv:num sec:equiv:page "Determinants of betas"
+.XXXX 0 4 "Determinants of betas"
 .LP
 The beta maybe established using regression analysis but it is infact a
 function of three variables:
@@ -699,7 +696,7 @@ the same operating leverage. The beta can be further adapted by adjusting for
 the different levels of cash that companies hold, different marginal tax rates
 and the total risk of a private company where there is limited diversification.
 .
-.NHTOC 5 sec:equiv:num sec:equiv:page "Limitations of CAPM"
+.XXXX 0 4 "Limitations of CAPM"
 .LP
 The CAPM despite its wide spread usage has not been very succesful at
 explaining differences in the equity returns across different companies in the
@@ -731,7 +728,7 @@ forecasting expected returns shows that the forecasting makes fools of us all
 and there is no easy solition to the problem of estabishing the cost of the
 equity.
 .
-.NHTOC 4 sec:zero:num sec:zero:page "Debt to equity"
+.XXXX 0 3 "Debt to equity"
 .LP
 We will now think about the debt, before moving on to looking at the cost of
 equity in small businesses. The debt is important because it lies higher up the
@@ -901,7 +898,7 @@ price of debt can change with circumstances, if you come to renew your
 overdraft and have not allowed for rising interest rates a prudent level of
 debt can quickly turn into a burden.
 .
-.NHTOC 4 sec:zero:num sec:zero:page "Cash on hand"
+.XXXX 0 3 "Cash on hand"
 .LP
 It is worth giving some consideration to how much cash a business should have
 on hand at any one time. If we again think in terms of a prudent individual,
@@ -956,7 +953,7 @@ the cost of equity and therefore it is being subsidised by the productive
 assets. However, cash is often said to be like oxygen, you take it for granted
 until it is not there and then it is the only thing occupying your mind.
 .
-.NHTOC 4 sec:equiv:num sec:equiv:page "The cost of equity in small companies"
+.XXXX 0 3 "The cost of equity in small companies"
 .LP
 In this section we are going to use the fundamentals that underpin beta to aid
 the establishment of the cost of equity in small businesses where the profits
@@ -1432,7 +1429,7 @@ What ever you choose to do you are going to have to answe two important
 questions: one how do you measure risk and how do you ensure you are adequatily
 compensated for accepting the risk.
 .
-.NHTOC 3 sec:equiv:num sec:equiv:page "Simple checks for the cost of equity"
+.XXXX 0 3 "Simple checks for the cost of equity"
 .LP
 Regardless of what process you use to estblish the cost of your equity the
 resulting cost must reflect the fundamental nature of the risks:
@@ -1487,7 +1484,7 @@ We are going to leave the calculation of the cost of equiyt at what I am sure
 seems a very poor conclusion but as you should realise by the end of the
 document the lack of certainty may not be as much as a problem as you think.
 .
-.NHTOC 3 sec:zero:num sec:zero:page "The weighted average cost of capital (WACC)"
+.XXXX 0 3 "The weighted average cost of capital (WACC)"
 .LP
 A company's weighted average cost of capital (WACC) is the weighted average of
 the costs of the various components of the capital structure. The weighed
@@ -1693,7 +1690,7 @@ the life of the asset. That is the appropriate cost of the particular component
 of the capital over the appropriate future time period not the price from the
 past or even the present.
 .
-.NHTOC 2 sec:zero:num sec:zero:page "Using the discount rate"
+.XXXX 0 3 "Using the discount rate"
 .LP
 Now that we have some idea how to go about establishing the discount rate it is
 important to remember that there are two components to a discounted cash flow.
@@ -1725,7 +1722,7 @@ accounted for with a simple probability and a resonable cost. This sounds a
 little vague but it should encourage you to think about how much you want to
 risk and for how long and then assign a cost of the risk of failure.
 .
-.NHTOC 3 sec:zero:num sec:zero:page "Basic principles"
+.XXXX 0 4 "Basic principles"
 .LP
 There are some core principles that you must follow when using discounted cash
 flow:
@@ -1752,7 +1749,7 @@ that has also been adjsuted for tax.
 In general discount rates vary across time. The longer the time frame the
 greater the risks.
 .
-.NHTOC 2 sec:zero:num sec:zero:page "Does getting the cost of capital wrong matter?"
+.XXXX 0 4 "Does getting the cost of capital wrong matter?"
 .LP
 The very real question that must be on your mind, as it seems so very difficult
 to establish the cost of equity with any certainty, is, does is matter if the

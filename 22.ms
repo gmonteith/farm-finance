@@ -1,9 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:cva:num sec:cva:page "Economic Value and the Measurement \
-of Financial Performance"
-.sp 
-.LP
 We have established that the NPV is the best measure of the value of a business
 proposition. However, when the NPV is established we are gazing into the future
 and making projects about the range of outcomes from a sequence of actions. If
@@ -11,8 +6,8 @@ the project is accepted the measurement of the success of the project is done
 by looking at past figures be they monthly, quarterly or yearly figures.
 Traditionally this has been done by looking at profit figures. However, there
 are some problems with the profit figures.
-.sp 
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Distortions in the profit figures"
+.
+.XXXX \\n(cn 1 "Distortions in the profit figures"
 .LP
 The accountants profit figure results from the attempt to match costs against
 revenue. This process involves allocating costs of assets, for instance
@@ -79,8 +74,8 @@ Inventory will cause the earnings figure to be greater than the cash flow. \(dd
 \(dd The Cash Flow Statement is used to identify and adjust for the difference
 between profits and cash.
 .FE
-.sp 
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Inflation and profits"
+.
+.XXXX 0 2 "Inflation and profits"
 .LP
 Inflation is not much of a topic in the countries of Europe today where we
 suffer the insecurity of negative interest rates. However, it has not been
@@ -138,8 +133,8 @@ is paying its debt charges with cash flow that has less purchasing power than
 when the debt was incurred. This situation is default by slight of hand. The
 decrease in the value of debt due to inflation results in reported earnings
 being understated and consequently a decrease in taxes owed.
-.sp 
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Economic Profit"
+.
+.XXXX 0 2 "Economic Profit"
 .LP
 As Peter Drucker put the matter in a Harvard Business review article:
 .sp
@@ -163,8 +158,8 @@ In the 1990s there were the so called "Metric Wars" when a number of
 consultancies developed new performance measures based on economic profit of
 which EVA was one. The metrics aimed to measure the valued created for the
 shareholders in a given period.
-.sp 
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Residual Income"
+.
+.XXXX 0 2 "Residual Income"
 .LP
 As we will show Residual Income has a consistency with NPV. In the Residual
 Income calculation the profits are reduced by a finance charge. The finance
@@ -360,8 +355,8 @@ The NPV aprroach used in forecasting the viability of a project and the
 residual income method share some congruence. If the forecast is realistic and
 the project well executed the results should be visible in the year end
 accounts.
-.sp 
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "EVA"
+.
+.XXXX 0 2 "EVA"
 .LP
 In the 1980s Stern Stewart added a series of accounting adjustments based on
 GAAP figures and revised the computation of Residual Income and named the
@@ -375,8 +370,8 @@ EVA is usually stated as:
 .EQ
 NOPAT - ( "Invested Capital" times WACC )
 .EN
-.sp 
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "Accounting Adjustments"
+.
+.XXXX 0 3 "Accounting Adjustments"
 .LP
 The major difference between Residual Income and EVA is the adjustments made to
 the reported profits and capital. Earlier in this section we examined the
@@ -416,8 +411,8 @@ were made to the accounting profit in reaching NOPAT. Obviously for a small
 business this will not be necessary, but as a business gets more complex the
 challenge of understanding the true economic return generated in any given
 period becomes increasingly challenging.
-.sp 
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "NOPAT"
+.
+.XXXX 0 3 "NOPAT"
 .LP
 NOPAT is understood to mean "Net Operating Profit After Tax". NOPAT is the
 profit before any deductions for interest. It is the profit available to all
@@ -521,8 +516,8 @@ The rought calculation for NOPAT is:
 In this instance #32,750 times 0.8 = 26,200#. However, whether this is
 right or not will depend on the adjustments that have to be made to the
 financial statements.
-.sp 
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "Invested Capital"
+.
+.XXXX 0 3 "Invested Capital"
 .LP
 The Invested Capital can be calculated for the entire business or divisions of
 the business as need. You may want to know how much capital is used in each
@@ -717,7 +712,7 @@ a n .
 INVESTED CAPITAL#179,185
 .TE
 .sp 
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "Cost of Capital"
+.XXXX 0 3 "Cost of Capital"
 .LP
 We have look at establishing the Cost of Capital in Section 13 and specifically
 at the WACC in Section 13.3. For the purpose of calculating the WACC we shall
@@ -771,8 +766,8 @@ lineup =~~
 lineup =~~
 14.11
 .EN
-.sp 
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "EVA Calculation"
+.
+.XXXX 0 3 "EVA Calculation"
 .LP
 EVA is usually stated as:
 .EQ
@@ -796,8 +791,8 @@ lineup =~~
 It can be seen that even though the company is profitable it generates only a
 small amount of wealth. The capital has been charged to the business using
 the WACC and the profits are only just sufficient to cover this cost.
-.sp 
-.NHTOC 4 sec:cctfsa:num sec:cctfsa:page "Return On Invest Capital"
+.
+.XXXX 0 4 "Return On Invested Capital"
 .LP
 The Return On Invested Capital (ROIC) can be calculated by using the NOPAT
 figure as a numerator and the Invested Capital as the denominator. This would
@@ -821,7 +816,7 @@ difference between the ROIC and the WACC, the excess return.
 .EN
 .
 .sp 
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "EVA breakeven"
+.XXXX 0 3 "EVA breakeven"
 .LP
 It is important to understand that the EVA is only positive because of the
 debt. If the entire company was financed with equity at 18% it would exceed the
@@ -972,7 +967,7 @@ lineup =~~
 33.0%
 .EN
 .
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "Conclusions on EVA"
+.XXXX 0 3 "Conclusions on EVA"
 .LP
 If the cost of capital is an integral part of capital budgeting it would make
 sense that it is also a necessary part of measuring the financial performance,
@@ -1071,7 +1066,7 @@ inconsistency.
 EVA is an absolute measure so it can not be used to compare companies of
 different sizes unlike more well known ratios.
 .
-.NHTOC 2 sec:cctfsa:num sec:cctfsa:page "Poorly peforming businesses"
+.XXXX 0 2 "Poorly peforming businesses"
 .LP
 From a purely financial perspective the aims of a business is to:
 .IP 1. 5
@@ -1118,7 +1113,7 @@ zero. At this point the residual income would be negative but even though the
 business could be performing well on a cash basis. The reduction of the tax
 bill by the capital investment was also a significant benefit to the investor.
 .
-.NHTOC 3 sec:cctfsa:num sec:cctfsa:page "How to approach a poorly performing business "
+.XXXX 0 2 "How to approach a poorly performing business "
 .LP
 This is a very short section and is provided as a simple quide that might help
 you think about the decisions that will need to be made to address a long run

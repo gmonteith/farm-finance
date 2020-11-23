@@ -1,7 +1,4 @@
 .
-.sp 5
-/.XXXX \\n(cn 1 "Zero coupon bond"
-.LP
 An annuities is constant amount paid or received for a given number of periods.
 The most common annuity is an ordinary annuity, where the cash flow is made at
 the end of each payment period.
@@ -371,7 +368,7 @@ for the 12,000 and n for 5.
 PV = PMT over i left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
 .EN
 .
-.NHTOC 2 sec:pmto:num sec:pmto:page "PMT given the PV"
+.XXXX 0 2 "PMT given the PV"
 .LP
 The equation for the PV of an ordinary annuity can also be rearranged so that
 the payment can be resolved.
@@ -443,7 +440,7 @@ comparison with other costs and will be covered in section 17.
 There are tables of factors that can be used to convert a PV to the annual
 payment and these are often referred to as capital repayment factors.
 .
-.NHTOC 2 sec:pero:num sec:pero:page "n given the PV"
+.XXXX 0 2 "n given the PV"
 .LP
 Lastly the formula for the PV of an ordinary annuity can be rearranged to
 resolve for the number of compounding periods.
@@ -509,7 +506,7 @@ over { ln{ ( 1 + 0.08 ) } }
 5
 .EN
 .
-.NHTOC 2 sec:fvo:num sec:fvo:page "FV given an Ordinary Annuity"
+.XXXX 0 2 "FV given an Ordinary Annuity"
 .LP
 The next step is to look at the Future Value of an ordinary annuity. The
 mathematics are very similar to the Present Value except this time the common
@@ -657,7 +654,7 @@ The FV must be greater than the payment times the number of periods as they are
 being compounded over time. In this instance the FV should be greater than
 #(150 times 60 = 9,000)#, which it is.
 .
-.NHTOC 2 sec:pmtfvo:num sec:pmtfvo:page "PMT given the FV"
+.XXXX 0 2 "PMT given the FV"
 .LP
 Wally is planning to retire in 20 years. When he retires he wants a lump sum of
 300,000. His financial advisor suggests that 5% p.a is an achievable interest
@@ -704,7 +701,7 @@ over { { left [ 1 + { left ( 5 over 100 right ) } over 12 right ] sup 240 } - 1}
 729.87
 .EN
 .sp
-.NHTOC 2 sec:pmtfvo:num sec:pmtfvo:page "n given the FV"
+.XXXX 0 2 "n given the FV"
 .LP
 The equation can be rearranged to resolve for the number of compound periods..
 .EQ

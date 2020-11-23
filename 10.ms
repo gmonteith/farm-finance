@@ -2,9 +2,6 @@
 .\" .EH '%''\fBSection 13: Engineering Economics\fP'
 .\" .OH '\fBSection 13: Engineering Economics\fP''%'
 .
-.sp 5
-.NHTOC 1 sec:equiv:num sec:equiv:page "Engineering Economics"
-.LP
 The American Institute National Council of Examiners for Engineering and
 Surveying publishes a reference handbook that includes equations for
 engineering economics. These equations are based on the equations we have been
@@ -41,8 +38,7 @@ understand what the factor is doing.
 The distinct vernacular used in engineering economics also allows to easily
 state what a particular equation or factor is looking to achieve.
 .
-.NHTOC 2 sec:equiv:num sec:equiv:page "Single Payment Compound Amount \
-- (F/P, i%, n)"
+.XXXX \\n(cn 1 "Single Payment Compound Amount - (F/P, i%, n)"
 .EQ
 spca(lm)
 .EN
@@ -71,8 +67,7 @@ lineup =~~
 26,532
 .EN
 .
-.NHTOC 2 sec:equiv:num sec:equiv:page "Single Payment Present Worth \
-- (P/F, i%, n)"
+.XXXX 0 2 "Single Payment Present Worth  - (P/F, i%, n)"
 .EQ
 sppw(lineup =~~)
 .EN
@@ -108,8 +103,7 @@ lineup =~~
 8,845.71
 .EN
 .
-.NHTOC 2 sec:equiv:num sec:equiv:page "Uniform Series Sinking Fund \
-- (A/F, i%, n) "
+.XXXX 0 2 "Uniform Series Sinking Fund  - (A/F, i%, n) "
 .EQ
 A = F left [ i over { { ( 1 + i ) sup n }  - 1  } right ] 
 .EN
@@ -209,7 +203,7 @@ lineup =~~
 14,049
 .EN
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Uniform Series Compound Amount \
+.XXXX 0 2 "Uniform Series Compound Amount \
 - (F/A, i%, n)"
 .EQ
 usca(lineup =~~)
@@ -252,8 +246,7 @@ lineup =~~
 75,544.54
 .EN
 .
-.NHTOC 2 sec:equiv:num sec:equiv:page "Uniform Series Present Worth  \
-- (P/A, i%, n)"
+.XXXX 0 2 "Uniform Series Present Worth  - (P/A, i%, n)"
 .EQ
 uspw(lineup =~~)
 .EN
@@ -322,8 +315,7 @@ lineup =~~
 66,710.32
 .EN
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Capital Recovery \
-- (A/P, i%, n)"
+.XXXX 0 2 "Capital Recovery - (A/P, i%, n)"
 .LP
 .EQ
 A = P left [ { i( 1 + i ) sup n  } over {  (1 + i ) sup n -1  } right ]
@@ -378,8 +370,7 @@ over {  (1 + 0.07 ) sup 10 -1  } right ]
 10,678.31
 .EN
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Geometric Gradient Present Worth\
-- (P/A, g, i%, n)"
+.XXXX 0 2 "Geometric Gradient Present Worth\ - (P/A, g, i%, n)"
 .LP
 .EQ
 P =  A sub 1  left [ { 1 -  left ( ( 1 + g ) sup n ( 1 + i ) sup -n right )  }
@@ -436,8 +427,7 @@ is only possible to calculate the initial PMT as the series is growing from
 period to period. Therefore, make sure you are aware of what you have
 calculated, and that it is what you wanted.
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Geometric Gradient Initial Annuity\
-- (A/P, g, i%, n)"
+.XXXX 0 2 "Geometric Gradient Initial Annuity\ - (A/P, g, i%, n)"
 .LP
 .EQ
 A sub 1
@@ -510,8 +500,7 @@ right ]
 Wilbur does indeed breakeven and provided his costs stay stable the following
 years should be more profitable.
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Geometric Gradient Compound Amount\
-- (F/A, g, i%, n)"
+.XXXX 0 2 "Geometric Gradient Compound Amount\ - (F/A, g, i%, n)"
 .LP
 .EQ
 F =  
@@ -573,8 +562,7 @@ right ]
 48
 .EN
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Declining Geometric Gradients \
-- (P/A, -g%, i%, n)"
+.XXXX 0 2 "Declining Geometric Gradients \ - (P/A, -g%, i%, n)"
 .LP
 .EQ
 P =  A sub 1 left [ {  1 -  left ( ( 1 - g ) sup n ( 1 + i ) sup -n right ) }
@@ -619,8 +607,7 @@ over { 0.09 + 0.12 } right ]
 40,672.08
 .EN
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Capitalized Cost Formula  \
-- (P/A, i%)"
+.XXXX 0 2 "Capitalized Cost Formula  \ - (P/A, i%)"
 .LP
 .EQ
 P = A over i
@@ -646,8 +633,7 @@ functions like debt in that it is a fixed and unavoidable charge. By placing
 the capitalised cost of the debt on the balance sheet an analyst would get a
 better idea for the debt of the business and the earnings over fixed charges.
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Arithmetic Gradients Present Worth \
-- (P/G, i%, n)"
+.XXXX 0 2 "Arithmetic Gradients Present Worth \ - (P/G, i%, n)"
 .EQ
 agpw(=)
 .EN
@@ -1367,8 +1353,7 @@ We can now state more accuratly the total present value of a gradient.
 P sub total = P sub annuity +- P sub gradient
 .EN
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Arithmetic Gradients Uniform Series \
-- (A/G, i%, n)"
+.XXXX 0 2 "Arithmetic Gradients Uniform Series \ - (A/G, i%, n)"
 .EQ
 agus(lm)
 .EN
@@ -1518,8 +1503,7 @@ lineup =~~
 .LP
 We have now converted the loan in Section 3.4 to the loan in Section 3.2
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Arithmetic Gradients Future Worth \
-- (F/G, i%, n)"
+.XXXX 0 2 "Arithmetic Gradients Future Worth \ - (F/G, i%, n)"
 .EQ
 agfw(lm)
 .EN
@@ -1742,7 +1726,7 @@ lineup =~~
 The number that are returned by the two methods are slightly different.
 However, this is not a concern and both methods are equally valid.
 .sp
-.NHTOC 2 sec:equiv:num sec:equiv:page "Combining Factors"
+.XXXX 0 2 "Combining Factors"
 .LP
 To answer most questions you will probable have to combine a number of factors.
 We will look at two farming scenarios with Wilbur.

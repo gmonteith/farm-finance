@@ -1,8 +1,4 @@
 .
-.sp 5
-.NHTOC 1 rpa:intr:num rpa:intr:page "Mutually Exclusive Projects"
-.sp
-.LP
 Mutually exclusinve alternatives are those where only one can be selected from
 a range of choices. The reasons for mutually exclusivity are varied:
 .IP \(bu
@@ -41,8 +37,7 @@ process as we learnt in Section 14 is clear. Select the project with the
 largest NPV, we can now extend this to say  the lagest NPV or EAW or the
 smallest EAC.
 .
-.sp
-.NHTOC 2 eac:intr:num eac:intr:page "Comparing projects with diffretn lives"
+.XXXX \\n(cn 1 "Comparing projects with diffretn lives"
 .LP
 In many cases mutually exclusive alternatives do not have lives of the same
 length and often the difference between the two alternatives is the length of
@@ -67,7 +62,7 @@ Terminating one or more alternatives early and using the residual values to
 account for the remaining life.
 .
 .KS
-.NHTOC 3 eac:intr:num eac:intr:page "Replacement Chain"
+.XXXX 0 2 "Replacement Chain"
 .LP
 Below we have the choice of investing in two different projects which have
 different lives.
@@ -217,8 +212,7 @@ residual values\(dd.
 Appendix G.
 .FE
 .
-.sp
-.NHTOC 3 eac:intr:num eac:intr:page "Equivalent Annual Annuities"
+.XXXX 0 2 "Equivalent Annual Annuities"
 .LP
 We should be quite happy with the concept of an Equivalent Annual Annuity from
 Section 17. The Capital Recovery factor from Section 11.6 is used to convert
@@ -267,7 +261,7 @@ The Eqivalent Annual Annuity method is harder to explain and conceptualise for
 management.
 .
 .sp
-.NHTOC 3 eac:intr:num eac:intr:page "Resolve EAC to Replacement Chain"
+.XXXX 0 2 "Resolve EAC to Replacement Chain"
 .LP
 If return to the replacement chain we can see that project E had an NPV of 6,497
 and Project F 8,823 when extended out over the same 6 years.
@@ -314,8 +308,7 @@ differences are. Therefore the equivalent annuities are approximations of
 unknown values and the exact differences are less important than thire general
 magnitiude.
 .
-.sp
-.NHTOC 2 eac:intr:num eac:intr:page "Are Equivalent Annuities Reasonable?"
+.XXXX 0 2 "Are Equivalent Annuities Reasonable?"
 .LP
 The real question is the equivalent annuity a reasonable way of choosing
 mutually exclusive alternatives? It is highly unlikey that the cash flows will
@@ -333,7 +326,7 @@ If the above points are true surely the stability built into the analysis is
 invalid.
 .
 .sp
-.NHTOC 3 eac:intr:num eac:intr:page "Creditbility due to discounting"
+.XXXX 0 3 "Creditbility due to discounting"
 .LP
 If alternatives of 15 years and 20 years were compared it would imply a life of
 60 years. Obvioulsy the cash flows would be expected change to change quite
@@ -346,7 +339,7 @@ flows in the future the impact will not be as large as you might expect.
 We look at two examples to demonstrate this point. One example over a short
 period of time and one over a longer peiod of time.
 .
-.NHTOC 4 eac:intr:num eac:intr:page "Short study period"
+.XXXX 0 4 "Short study period"
 .LP
 Wilbur has a hay and straw business, and he runs trucks with a draw bar
 trailer. The couplings between the tractor unit and the trailer have a limited
@@ -404,7 +397,7 @@ costs by 4.86% #(597 -> 626)# for brand A and 1.67% #(657 -> 668)# for brand B.
 If the study period is 8 years the costs increase by 6.87% #(597 -> 638)# for
 brand A and 2.89% #(657 -> 676)# for brand B.
 .
-.NHTOC 4 eac:intr:num eac:intr:page "Long study period"
+.XXXX 0 4 "Long study period"
 .LP
 Wilbur has a flat root that needs repairing on one of the farm buildings. The
 expectaion is that the building will be in use for at least the next 100 years.
@@ -662,8 +655,7 @@ lineup =~~
 .RE
 .RE
 .
-.sp
-.NHTOC 3 eac:intr:num eac:intr:page "Creditbility due to the estimated life"
+.XXXX 0 3 "Creditbility due to the estimated life"
 .LP
 The exact life of project and investments is rarely known. The expected life of
 a product of 5 years might be between 4 and 8 years. With longer projects the
@@ -703,7 +695,7 @@ rule for a short term contract with a low probability of being reknewed. The
 comparission of very short lived alternatives with far longer alternatives, as
 often encountered when replacing equipment, requires that the study period be
 carefully defined.
-.sp
-.NHTOC 2 eac:intr:num eac:intr:page "Conclusion"
+.
+.XXXX 0 2 "Conclusion"
 .
 

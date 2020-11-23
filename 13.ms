@@ -1,7 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:ia:num sec:ia:page "Investment analysis"
-.LP
 We have covered a lot of ground having explored various common financial
 equations and thought hard about what is a reasonable cost of capital. The
 purpose of this chapter on investment analysis is to ensure a rigorous approach
@@ -53,12 +50,12 @@ account the time value of money.
 .IP 3. 3
 Hybrid methods. These combine traditional methods with the time value of money.
 .
-.NHTOC 2 sec:pvannud:num sec:pvannud:page "Traditional methods"
+.XXXX \\n(cn 1 "Traditional methods"
 .LP
 These methods are simple and have a long history of use. The most common
 methods are pay back and the bail out. 
 .
-.NHTOC 3 sec:pvannud:num sec:pvannud:page "Pay back "
+.XXXX 0 2 "Pay back "
 .LP
 The pay back period (PB) is the traditional method of capital budgeting. It is
 the simplest and perhaps, the most widely used method for appraising capital
@@ -197,7 +194,7 @@ Project C and D above have the same payback period, (3 years) and generate the
 same total cash flow, however, they clearly offer different returns but the
 payback method fails to distinguish between them.
 .
-.NHTOC 3 sec:dpb:num sec:dpb:page "Bailout"
+.XXXX 0 3 "Bailout"
 .LP
 The bailout is very similar to the payback, the only difference being that the
 salvage value is included in the calculation. The idea behind the bailout is
@@ -283,7 +280,7 @@ he expected cost
 on and the incorporates the salvage value in the example above to risk that you
 will have to exit an investment at 
 .
-.NHTOC 3 sec:dpb:num sec:dpb:page "Conclusion on the traditional methods"
+.XXXX 0 3 "Conclusion on the traditional methods"
 .LP
 The payback and the bailout are simple and easy to explain an understand.
 An excessive focus on the payback period or bailout can lead to a focus on
@@ -297,7 +294,7 @@ simply exceeding the initial investment. The other obvious is failing is that
 they do not account for the time value of money so you are not comparing apples
 with apples. 
 .
-.NHTOC 2 sec:npv:num sec:npv:page "Discounted cash flow"
+.XXXX 0 2 "Discounted cash flow"
 .LP
 Discounted cash flow methods taking into account the time value of money. To
 use the discounted cash flow you need to:
@@ -315,7 +312,7 @@ Estimate the discount rate. This was the topic of the previous chapter.
 We will not examine a number of methods that utilise the concept of discounted
 cash flow to decide on whether investment in a project. 
 .
-.NHTOC 3 sec:npv:num sec:npv:page "Net present value"
+.XXXX 0 3 "Net present value"
 .LP
 We should be quite conversant with the concept of present value. The net
 present value (NPV) of a project is the present value of the cash inflows less
@@ -425,7 +422,7 @@ value will give a dependable result. Projects of different lengths are
 typically found when dealing with replacement analysis which is covered in
 Chapter XX.
 .
-.NHTOC 4 sec:npv:num sec:npv:page "Discounted cash flow and depreciation"
+.XXXX 0 4 "Discounted cash flow and depreciation"
 .LP
 A fundamental aspect of discounted cash flow calculations is that they are
 completed using cash figures and not accounting figures and therefore do not
@@ -602,7 +599,7 @@ enterprise. As we have demonstrated above the discounted cash flow implicity
 takes account of the recovery of the capital and therefore should be computed
 with cash flow figures and not accounting figures which include depreciation.
 .
-.NHTOC 4 sec:pvp:num sec:pvp:page "NPV and partial years"
+.XXXX 0 4 "NPV and partial years"
 .LP
 Traditionally net present value is calculated with the initial investment as
 year zero and the subsequent whole years for the remaining cash flows. It is
@@ -628,7 +625,7 @@ in the mind but does not convey any value in reality. Furthermore, compound
 tables are compiled in complete years so the addition of partial years will not
 be practical if you are using these tables to establish the discount factor.
 .
-.NHTOC 3 sec:pi:num sec:pi:page "Profitability index (PI)"
+.XXXX 0 3 "Profitability index (PI)"
 .LP
 Profitability index (PI) measures the present value of returns per currency
 unit invested. The profitability index is a relative measure (a ratio) and can
@@ -707,7 +704,7 @@ The conflict is a result of the profitability index ranking projects by their
 return on the investment and the net present value ranking the projects by the
 absolute size of the return.
 .
-.NHTOC 3 sec:irr:num sec:irr:page "Internal rate of return (IRR)"
+.XXXX 0 3 "Internal rate of return (IRR)"
 .LP
 The internal rate of return is the interest rate required to discount all the
 cash flows so that the net present value is equal to zero. The value of the
@@ -830,8 +827,7 @@ Although the incremental internal rate of return does provide a reliable method
 for choosing between mutually exclusive projects it is just as simple to select
 the project with the largest positive net present value.
 .
-.NHTOC 3 sec:mirr:num sec:mirr:page \
-"Modified internal rate of return (MIRR)"
+.XXXX 0 3 "Modified internal rate of return (MIRR)"
 .LP
 We have highlighted some of the drawbacks to the traditional internal rate of
 return calculation which limit its usefulness in making investment decisions.
@@ -1280,7 +1276,7 @@ different durations with different cash flows it is possible that the project
 with the highest net present value does not have the highest modified internal
 rate of return.
 .
-.NHTOC 3 sec:dpb:num sec:dpb:page "Conclusions on discounted cash flow"
+.XXXX 0 3 "Conclusions on discounted cash flow"
 .LP
 As we have seen there are a range of discounted cash flow techniqies but we
 favour one. We brefiely summarise our findings:
@@ -1314,7 +1310,7 @@ Net present value is fundamental to capital budgeting as it provides as
 absolute measure of profitability and is the preferred measure of assessing an
 investment.
 .
-.NHTOC 2 sec:pvannud:num sec:pvannud:page "Hybrid methods"
+.XXXX 0 2 "Hybrid methods"
 .LP
 Hybrid methods mix the traditional with the discounted cash flow. There are a
 number of adaptations to the basic payback period, which add in a little
@@ -1322,7 +1318,7 @@ complexity and try to overcome some of its limitations. However, the basic
 concept remains the same, how long will it take an investment to give back the
 amount originally invested.
 .
-.NHTOC 3 sec:dpb:num sec:dpb:page "Discounted pay back"
+.XXXX 0 3 "Discounted pay back"
 .LP
 It is possible to combine our knowledge of the time value of money and payback
 to create a discounted payback, which gives an indication as to how long it
@@ -1365,7 +1361,7 @@ suffers from the same draw backs as the ordinary payback. It is a measure of
 how fast capital is returned and not a measure of the profitability of a
 project.
 .
-.NHTOC 3 sec:dpb:num sec:dpb:page "Discounted bailout"
+.XXXX 0 3 "Discounted bailout"
 .LP
 It is also possible to create a discounted bailout table:
 .TS
@@ -1394,7 +1390,7 @@ Again, even though you have accounted for the time value of money, it is still
 a metric which focuses on the return of the money and not the return on the
 money.
 .
-.NHTOC 3 sec:dpb:num sec:dpb:page "Conclusion on the hybrid methods"
+.XXXX 0 3 "Conclusion on the hybrid methods"
 .LP
 As much as the discounted payback and the discounted bailout take into account
 the time value of money they still suffer from some obvious limitations. The
@@ -1409,7 +1405,7 @@ None of the payback or bailout methods are consistent with the objective of
 earning a return on the owners funds as they measure the speed at which capital
 is returned not the return on the capital. Use net present value. 
 .
-.NHTOC 2 sec:pvannud:num sec:pvannud:page "Conclusion on investment analysis"
+.XXXX 0 2 "Conclusion on investment analysis"
 .LP
 We have examined a few discounted cash flow methods but net present value is
 the preferred measure of assessing an investment and is fundamental to capital

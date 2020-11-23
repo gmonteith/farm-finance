@@ -1,7 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:tax:num sec:tax:page "Structure of UK Tax"
-.LP
 Taxes always matter to the business, but sometimes taxes can be ignored when
 making a decision. the decision to purchase a one type of widget over another
 is unlikely to be influenced by the tax. To save time and focus on the
@@ -15,8 +12,8 @@ of how tax function. Furthermore there are many differnt types of taxation from
 VAT to inheritance tax. The plethora of different tax are important in
 themselves but not important to us in our desire to understand the taxation of
 capital investments.
-.sp
-.NHTOC 2 sec:satax:num sec:satax:page "Types of taxation"
+.
+.XXXX \\n(cn 1 "Types of taxation"
 .LP
 There are a number of different types of taxation in the UK this section is
 going to limit itself to the three below:
@@ -51,7 +48,7 @@ Corporation Tax on profits from selling their assets.
 You may have to pay Capital Gains Tax if you make a profit ("gain") when you
 sell (or "dispose of") all or part of a business asset.
 .
-.NHTOC 2 sec:satax:num sec:satax:page "Means of collection"
+.XXXX 0 2 "Means of collection"
 .LP
 In the UK there are 3 main ways that tax is collected:
 .IP  "Pay As You Earn (PAYE)" 5
@@ -72,7 +69,7 @@ profits for Corporation Tax include the money your company or association makes
 from: doing business ("trading profits"), investments and selling assets for
 more than they cost ("chargeable gains").
 .
-.NHTOC 2 sec:satax:num sec:satax:page "Accounting Methods"
+.XXXX 0 2 "Accounting Methods"
 .LP
 HMRC allows you to submit your tax returns using two methods:
 .IP "Cash basis" 5
@@ -110,7 +107,7 @@ permissible, on items that you keep to use in your business.
 .RE
 .
 .sp
-.NHTOC 2 sec:satax:num sec:satax:page "Capital Allowances"
+.XXXX 0 2 "Capital Allowances"
 .LP
 It is important to understand that in the UK, HMRC does not allow depreciation
 as an expense. There is depreciation in the company accounts\(dd but it is
@@ -143,8 +140,7 @@ computers, are called "plant and machinery" allowances. What qualifies as plant
 and machinery is not clearly defined and there are restrictions on what can be
 claimed for.
 .
-.NHTOC 3 sec:satax:num sec:satax:page "Types of plant and machinery \
-allowance pools"
+.XXXX 0 3 "Types of plant and machinery allowance pools"
 .LP
 There are 3 types of pools where you put the cost of your bought or gifted
 items
@@ -168,7 +164,7 @@ claim the capital allowances over a shorter period. The rate of the pool is
 same as would be applied if the item was in the main or special rate pool so
 18% or 6% depending on the item.
 .
-.NHTOC 3 sec:satax:num sec:satax:page "How you can claim"
+.XXXX 0 3 "How you can claim"
 .
 .LP
 You must claim in the accounting period you bought the item if you want to
@@ -250,7 +246,7 @@ can write off all the balance in your main pool or the special rate pool when
 your pool's value is \[Po]1,000 or less you claim this instead of claiming a
 WDA.
 .
-.NHTOC 3 sec:satax:num sec:satax:page "Asset disposals"
+.XXXX 0 3 "Asset disposals"
 .LP
 When you sell something that you claimed plant and machinery allowances on
 (including AIA or first year allowance) you deduct the amount you get for
@@ -283,7 +279,7 @@ balancing allowance in the main or special rate pool when you stop your
 business. You can get a balancing allowance in a single asset pool when you
 sell or dispose of the asset that is in it.
 .
-.NHTOC 3 sec:satax:num sec:satax:page "Losses"
+.XXXX 0 3 "Losses"
 .LP
 If you have loses you can get tax relief by offsetting the loss against your
 other gains or profits of in the same accounting period. You can also choose to
@@ -292,14 +288,13 @@ forward to another accounting period.
 .LP
 Be aware that there are rules and limits concerning the utilisation of losses.
 .
-.NHTOC 2 sec:satax:num sec:satax:page "Sole trader vs corporation tax "
+.XXXX 0 2 "Sole trader vs corporation tax "
 .LP
 Coporation Tax differes, in a general sense, from that of a sole trader in the
 following : the rate of taxation, the lack of personal allowance, the timing of
 the tax payments, there is no capital gains tax.
 .
-.NHTOC 2 sec:satax:num sec:satax:page "Question that you should ask \
-your accountant"
+.XXXX 0 2 "Question that you should ask your accountant"
 .LP
 This section covers, in the most general sense, the structure of some of the UK
 tax system. Below are a list of questions that it maybe useful to understna
@@ -336,4 +331,3 @@ that can be claimed in any year?
 .IP \(bu
 Would it be beneficial to use single asset pools for my mobile plant that on
 average has a 5 year service life?
-

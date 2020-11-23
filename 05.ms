@@ -1,7 +1,6 @@
-.
-.sp 5
-.NHTOC 1 sec:annug:num sec:annug:page "Growing Ordinary Annuities"
-.LP
+.\" .sp 5
+.\" .NHTOC 1 sec:annug:num sec:annug:page "Growing Ordinary Annuities"
+.\" .LP
 There are also some instances of growing annuities such as valuation models
 where dividends grow at a constant rate for a given period of time.  Another
 example would be commercial real estate leases where payment is at the period
@@ -12,7 +11,7 @@ service. In this instance we have stated that the payment is at the period end,
 so it is a type of ordinary annuity.
 .FE
 .sp
-.NHTOC 2 sec:pvg:num sec:pvg:page "PV given an Growing Ordinary Annuity"
+.XXXX \\n(cn 1 "PV given an Growing Ordinary Annuity"
 .LP
 The factored form for the series of an ordinary annuity is:
 .EQ
@@ -131,7 +130,7 @@ right ]
 24,550
 .EN
 .sp
-.NHTOC 3 sec:pvg:num sec:pvg:page "Growth rate exceeds the discount rate"
+.XXXX 0 3 "Growth rate exceeds the discount rate"
 .LP
 In the left side of the equation the denominator has the value #i - g# which
 leads to the question as to what would happen if the growth rate #g# exceeds
@@ -165,7 +164,7 @@ creates the limit, cash flows far enough in the future become increasing
 worthless. Once the growth rate exceeds the interest rate, a cash flow can be
 greater than the one that preceded it.
 .sp
-.NHTOC 2 sec:pmtg:num sec:pmtg:page "Initial PMT given a PV"
+.XXXX 0 2 "Initial PMT given a PV"
 .LP
 The formula can be rearranged to resolve for the initial payment:
 .EQ
@@ -191,7 +190,7 @@ Therefore the payment in period 8 would be:
 PMT sup n=8 = 3,000 times (1.05) sup 7 = 4,221.30
 .EN
 .sp
-.NHTOC 2 sec:perg:num sec:perg:page "n given a PV"
+.XXXX 0 2 "n given a PV"
 .LP
 Lastly the formula can be rearranged to resolve for the number of compound
 periods:
@@ -221,7 +220,7 @@ over
 { ln left [ left ( { 1 + g } over { 1 + i } right ) right ] }
 .EN
 .sp
-.NHTOC 2 sec:fvga:num sec:fvga:page "FV given a Growing Ordinary Annuity"
+.XXXX 0 2 "FV given a Growing Ordinary Annuity"
 .LP
 The future value of a growing annuity can be established by referring back to
 our earlier discourse on equivalence in section 3. Once we have established the
@@ -325,7 +324,7 @@ right ]
 95,093.95
 .EN
 .sp
-.NHTOC 2 sec:pmtfvg:num sec:pmtfvg:page "Initial PMT given a FV"
+.XXXX 0 2 "Initial PMT given a FV"
 .LP
 The formula can be rearranged to resolve for the initial payment:
 .EQ
@@ -347,7 +346,7 @@ over
 right ]   
 .EN
 .sp
-.NHTOC 2 sec:perfvg:num sec:perfvg:page "n given a FV"
+.XXXX 0 2 "n given a FV"
 .LP
 Lastly the formula can be rearranged to resolve for the number of compound
 periods:

@@ -1,7 +1,4 @@
 .
-.NHTOC 1 rpa:intr:num rpa:intr:page "Replacement Analysis"
-.sp
-.LP
 Total equipment costs are comprised of two separate components: ownership costs
 and operating costs. Except for initial capital cost of purchasing the machine,
 ownership costs are fixed costs that are incurred each year, regardless of
@@ -18,7 +15,7 @@ The solution is to find the best life and its equivalent annual cost for the
 challenger (new equipment) and then establish if the existing equipments life
 can be extended at a lower cost.
 .
-.NHTOC 2 eac:intr:num eac:intr:page "Reasons for changes in equipment"
+.XXXX \\n(cn 1 "Reasons for changes in equipment"
 .LP
 Primarily replacement analysis deals with situations where aged equipment is
 replaced with new, or newer, equiment. The aging equipment is usually sold,
@@ -65,7 +62,7 @@ the customer. The costs to life and the reputation of an airline mean that many
 items of an aircraft have a designated life and are never take to failure
 before being overhauled or replaced.
 .
-.NHTOC 3 eac:intr:num eac:intr:page "Type of lives"
+.XXXX 0 2 "Type of lives"
 .IP "Economic" 10
 Economic life is based on decreasing ownership costs with the increase in
 operating costs and the period that these costs are equivalent is called the
@@ -93,8 +90,7 @@ The life from purchase to disposal.
 .IP "Service" 10
 The time the equipment must be available for use.
 .
-.NHTOC 2 eac:intr:num eac:intr:page "Common means of establishing the \
-replacement point"
+.XXXX 0 2 "Common means of establishing the  replacement point"
 .LP
 The general life of piece of equipment is as follows; a machine is purchased
 and has a low repair and maintenance costs. With the passage of time the
@@ -160,7 +156,7 @@ economic life maybe calculated.
 Among the four methods, the economic life is preferred because it results in
 the lowest cost and takes into account the time value of money.
 .
-.NHTOC 2 eac:intr:num eac:intr:page "Life cycle cost analysis"
+.XXXX 0 2 "Life cycle cost analysis"
 .LP
 Life cycle analysis looks beyond the initial purchase cost to encompase the
 entire costs of a piece of equipment, over its life, from purchase or
@@ -213,7 +209,7 @@ likely it is that all the costs will be captured. We will now look in more
 detail at some of the considerations involved in calculating the life cycle
 cost of a piece of equipment.
 .
-.NHTOC 3 eac:intr:num eac:intr:page "Scope and goals"
+.XXXX 0 3 "Scope and goals"
 .LP
 It is paramount to define the scope of the analysis, so that everyone
 understands the boundaries of the analysis. Where the boundary is drawn can
@@ -278,7 +274,7 @@ how to account for it has been covered in more detail in Appendix K. In general
 we will always use nominal rates for the both the cash flows and the discount
 rate includes which means they include the inflation expectations.
 .
-.NHTOC 3 eac:intr:num eac:intr:page "Costs to include"
+.XXXX 0 3 "Costs to include"
 .LP
 Once the scope of the project and the goals have been established the costs can
 be calculated. Costs are usually broken down into two types for the purpose of

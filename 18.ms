@@ -1,8 +1,4 @@
 .
-.sp 5
-.NHTOC 1 eac:intr:num eac:intr:page "Equivalent Annual Cost"
-.sp
-.LP
 Equivalent Annual Cost (EAC) is the cost per year of owning and operating an
 asset over its entire lifespan. Equivalent Annual Worth (EAW) is the benefit of
 owning an asset over its lifetime. The EAC or EAW is calculated by multiplyng
@@ -78,7 +74,7 @@ the cost of capital.
 .B2
 .
 .sp
-.NHTOC 2 eac:intr:num eac:intr:page "Examples"
+.XXXX \\n(cn 1 "Examples"
 .LP
 For the purposes of the following examples the government allowable
 depreciation or Writing Down Allowance is 18% as represented by #d#, the
@@ -100,7 +96,7 @@ when you are working out the tax that "investment cost" has been placed on the
 balance sheet and is refereed to as a "capitalised cost". This "capitalised
 cost" refers to the cost of the asset on the balance sheet.
 .
-.NHTOC 3 eac:intr:num eac:intr:page "No Salvage Value"
+.XXXX 0 2 "No Salvage Value"
 .LP
 Wilbur has decided that the slurry pump uses in his diary needs replacing. The
 new slurry pump has an initial purchase cost of 70,000, it will cost 10,000 to
@@ -264,7 +260,7 @@ add a little complexity at time period 2.
 In reality the tax effect would have little bearing on the decision to invest
 in the slurry pump and was probably unnecessary.
 .
-.NHTOC 3 eac:intr:num eac:intr:page "Salvage Value"
+.XXXX 0 3 "Salvage Value"
 .LP
 Wilbur is thinking of investing in a GPS system for his arable operation. The
 system cost 15,000 to buy and Wilbur must also pay a neighbour 1,000 per year
@@ -363,7 +359,7 @@ invest in the equipment. If there were tax concessions for investing in the
 equipment that could lower the initinal investment cost then the tax would
 become a consideration.
 .
-.NHTOC 3 eac:intr:num eac:intr:page "Salvage Value"
+.XXXX 0 3 "Salvage Value"
 .LP
 Wilbur has decided to purchase a new ATV for use in his sheep contracting
 business. The ATV cost 10,000 and Wilbur has opted to purchase a service plan
@@ -533,7 +529,7 @@ When calculating the after tax EAC it is important to remember that the salvage
 value has been included in the investment cost equation and the cost of the
 service plan must be reduced by the tax rate.
 .
-.NHTOC 3 eac:intr:num eac:intr:page "Salvage Value"
+.XXXX 0 3 "Salvage Value"
 .LP
 Wilbur has decided to investigate if it is worth installing a diesel tank on
 the farm as it would allow him to bulk buy his fuel. Wibur uses 90,000 liters a
@@ -755,7 +751,7 @@ It is worth notiing that the salvage value is often so heavily discounted that
 it has little impact on the calculation. It can be seen in the benefits
 calculation that the salvage has a EAW of 42.
 .
-.NHTOC 2 eac:intr:num eac:intr:page "EAC - Overhaul Cost"
+.XXXX 0 2 "EAC - Overhaul Cost"
 .LP
 Wilbur has an option to extend the life of a piece of equipment by 3 years with
 an overhaul at year 5. If the cost of the overhaul is 4,500, and the cost of
@@ -830,7 +826,7 @@ calculation.
 .IP \(bu
 The value is very small and therefore the tax is unlikely to be a consideration.
 .
-.NHTOC 2 eac:intr:num eac:intr:page "Deferred Annuity"
+.XXXX 0 2 "Deferred Annuity"
 .LP
 Wilbur has decied to purchase a new 4WD for the farm. The 4WD comes with 3
 years free servicing after which time it will incurr servicing costs of 1,500
@@ -951,7 +947,7 @@ zero.
 In this scenario we are not proposing to capitalise the cost and the tax is not
 a consideration in the investment decision.
 .
-.NHTOC 2 eac:intr:num eac:intr:page "Repeated Renewals - start time period zero"
+.XXXX 0 2 "Repeated Renewals - start time period zero"
 .LP
 Wilbur has installed a new wash facility for his livestock haulage business
 with a design life of 25 years. The wash includes a steam cleaner that cost
@@ -1024,7 +1020,7 @@ The repeated costs are constant.
 The interval is constant.
 .RE
 .
-.NHTOC 2 eac:intr:num eac:intr:page "Repeated Renewals - no intial or final cash flow"
+.XXXX 0 2 "Repeated Renewals - no intial or final cash flow"
 .LP
 Wilbur has installed a number of new roads on his farm with a design life of 25
 years. The total length of the roads is 2.3 KM. The roads will require

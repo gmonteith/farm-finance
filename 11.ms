@@ -1,8 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:rates:num sec:rates:page "Nominal & Effective Rates"
-.sp
-.LP
 We have used various interest rates, compounding both monthly and annually,
 without much concern as to what this means. I think it prudent to spend some
 time analysing the impact of changes to the number of compound periods.
@@ -136,8 +132,8 @@ times
 ~=~ 
 6.1535%
 .EN
-.sp 1
-.NHTOC 2 sec:perp:num sec:perp:page "Continuos Compounding"
+.
+.XXXX \\n(cn 1 "Continuos Compounding"
 .LP
 We have seen that money can be compounded more often than once a year. This
 leads to an adaptation of the well known TVM equation.

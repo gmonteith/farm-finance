@@ -1,11 +1,6 @@
 .
 .\" .EH '%''\fBSection 12: Growing Perpituities\fP'
 .\" .OH '\fBSection 12: Growing Perpituities\fP''%'
-.
-.sp 5
-.NHTOC 1 sec:perp:num sec:perp:page "Growing Perpituities"
-.sp
-.LP
 There are also growing perpetuities, the most common one is the Gordon Growth
 Model or Dividend Discount Model as it is often known. The dividends are
 treated as a growing perpetuity and the PV is used to value the equity of the
@@ -114,7 +109,7 @@ growing perpetuity that we established earlier.
 PV sub gp = PMT over { i - g } 
 .EN
 .sp
-.NHTOC 2 sec:pvg:num sec:pvg:page "Growth rate exceeds the discount rate"
+.XXXX \\n(cn 1 "Growth rate exceeds the discount rate"
 .LP
 We have previously discussed in Section 6.1.1 that it was plausible to have a
 growth rate #g# that exceeded the interest rate #i# for a short space of time.

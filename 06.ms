@@ -1,13 +1,10 @@
 .
-.sp 5
-.NHTOC 1 sec:annugd:num sec:annugd:page "Growing Annuities Due"
-.LP
 There are of course growing annuities due. As we have already learnt a growing
 annuity differs from an ordinary annuity in the timing of the first compound
 period. As the cash flow is at the beginning of the period the first payment is
 subject to compounding. 
 .
-.NHTOC 2 sec:pvg:num sec:pvg:page "PV given an Growing Annuity Due"
+.XXXX \\n(cn 1 "PV given an Growing Annuity Due"
 .LP
 The the PV of an  ordinary annuity can be converted to an annuity due by
 multiplying by # (1 + i ) #.
@@ -46,7 +43,7 @@ left [  1 -  left ( { 1 + 0.03 } over { 1 + 0.045 } right ) sup 3  right ]
 59,142.87
 .EN
 .
-.NHTOC 2 sec:pmtg:num sec:pmtg:page "Initial PMT given a PV"
+.XXXX 0 2 "Initial PMT given a PV"
 .LP
 The formula can be rearranged to resolve for the initial payment:
 .EQ I
@@ -102,7 +99,7 @@ left [  1 -  left ( { 1 + 0.03 } over { 1 + 0.1 } right ) sup 15  right ]
 15,223.16
 .EN
 .
-.NHTOC 2 sec:perg:num sec:perg:page "n given a PV"
+.XXXX 0 2 "n given a PV"
 .LP
 Lastly the formula can be rearranged to resolve for the number of compound
 periods:
@@ -175,7 +172,7 @@ over
 ~=~ 7.24
 .EN
 .
-.NHTOC 2 sec:fvgad:num sec:fvgad:page "FV given a Growing Annuity Due"
+.XXXX 0 2 "FV given a Growing Annuity Due"
 .LP
 Applying the same logic again we can look at the FV of a growing annuity due.
 The difference between the FV of an ordinary annuity and that of an annuity
@@ -219,7 +216,7 @@ right ]
 331,940
 .EN
 .
-.NHTOC 2 sec:pmtfvd:num sec:pmtfvd:page "PMT given a FV"
+.XXXX 0 2 "PMT given a FV"
 .EQ I
 PMT sub gad =
 FV
@@ -262,7 +259,7 @@ right ]
 5,526
 .EN
 .
-.NHTOC 2 sec:perfvd:num sec:perfvd:page "n given a FV"
+.XXXX 0 2 "n given a FV"
 .LP
 The formula for the future value of an annuity due can be rearranged to
 resolved for the number of compounding periods:

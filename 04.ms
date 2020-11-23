@@ -1,8 +1,8 @@
 .
-.sp 5
-.NHTOC 1 sec:annud:num sec:annud:page "Annuities Due"
-.sp
-.LP
+.\".sp 5
+.\".NHTOC 1 sec:annud:num sec:annud:page "Annuities Due"
+.\".sp
+.\".LP
 Lease payments, rent, insurance premiums, and tuition are examples of prepaid
 expenses that occur at each period's beginning. Payment is made before the
 period of service begins. This beginning of period annuity is called an annuity
@@ -25,7 +25,7 @@ arrow dashed down 0.3 at last box.s
 line dashed right 0.3 from last box.e 
 .PE
 .
-.NHTOC 2 sec:pvannud:num sec:pvannud:page "PV given an Annuity Due"
+.XXXX \\n(cn 1 "PV given an Annuity Due"
 .LP
 We will look at an example and then compare an annuity due with an ordinary
 annuity. 
@@ -250,7 +250,7 @@ multiplying the PV of an ordinary annuity by #(1 + i)#
 The PV of an annuity due can be converted to the PV of an ordinary annuity by
 dividing the PV of the annuity due by #(1 + i)#
 .
-.NHTOC 2 sec:pmtd:num sec:pmtd:page "PMT given an PV"
+.XXXX 0 2 "PMT given an PV"
 .LP
 The formula for the annuity due can be rearranged to resovle for the PMT:
 .EQ
@@ -264,7 +264,7 @@ PV(i) = ( 1 + i ) PMT { left [ 1 - { 1 over { (1 + i) sup n } } right ] }
 PMT sub ad = {PV(i) ( 1 + i )} over 
 { left [ 1 - { 1 over { (1 + i) sup n } } right ] }
 .EN
-.NHTOC 2 sec:perd:num sec:perd:page "n given a PV"
+.XXXX 0 2 "n given a PV"
 .LP
 The formula for the annuity due can be rearranged to resovle for the number of
 compounding periods:
@@ -302,7 +302,7 @@ over
 { ln (1 + i) }
 .EN
 .KS
-.NHTOC 2 sec:annud:num sec:annud:page "FV given and Annuity Due"
+.XXXX 0 2 "FV given and Annuity Due"
 .LP
 Wally has deciced to pay 800 into an account at the beginning of each month for
 5 years at the an interest rate of 5% per annum. What is the future value?
@@ -514,7 +514,8 @@ multiplying the FV of an ordinary annuity by #(1 + i)#
 .IP \(bu
 The FV of an annuity due can be converted to the FV of an ordinary annuity by
 dividing the FV of the annuity due by #(1 + i)#
-.NHTOC 2 sec:pmtfvd:num sec:pmtfvd:page "PMT given a FV"
+.
+.XXXX 0 2 "PMT given a FV"
 .LP
 The formula for the future value of an annuity due can be rearranged to resovle
 for the PMT:
@@ -529,7 +530,8 @@ FV(i) =  PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } )
 PMT sub ad = FV(i) over { ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) }
 .EN
 .KS
-.NHTOC 2 sec:perfvd:num sec:perfvd:page "n given a FV"
+.
+.XXXX 0 2 "n given a FV"
 .LP
 The formula for the future value of an annuity due can be rearranged to resovle
 for the number of compounding periods:

@@ -1,7 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:capex:num sec:capex:page "Understanding the impact of tax"
-.LP
 Most people intuitively understand that tax has impact on the cash that is
 going to be recienved by the business owner. However tax also has an impact on
 the costs associated with any business and as we shall see the impact on the
@@ -97,7 +94,7 @@ the cost of capital.
 .sp
 .B2
 .
-.NHTOC 2 sec:capex:num sec:capex:page "Tax and capital investments"
+.XXXX \\n(cn 1 "Tax and capital investments"
 .LP
 The impact of Income Tax is not the same for all types of business costs. Some
 costs are called "expenses", and are deducted in full in the year in which they
@@ -139,8 +136,7 @@ Net Income#3.5#2.8# decrease by 0.7
 The same pound, when spent on a capital asset has a varying impact on taxes
 payable year to year, due to the tax treatment of capital expenditures.
 .
-.NHTOC 3 sec:capex:num sec:capex:page "Annual Investment Alowance \
-& First Year Allowance"
+.XXXX 0 2 "Annual Investment Alowance & First Year Allowance"
 .LP
 The Annual Investment Allowance and the First Year Allowance allow for entire
 value of a capital expenditure to be written down in the first year for tax
@@ -338,7 +334,7 @@ which is the differemce between 1,000 and 739.
 .IP \(bu
 The NPV has been reduced from 14,835 to 10,343 when the AIA is utilised.
 .
-.NHTOC 3 sec:capex:num sec:capex:page "Writting Down Allowance"
+.XXXX 0 2 "Writting Down Allowance"
 .LP
 The writing down allowance allows only for a proportion of the capital
 expenditure to be written down each year for tax purposes. Therefore, the
@@ -571,7 +567,7 @@ _
 .TE
 .tP "NPV using the WDA"
 .
-.NHTOC 3 sec:capex:num sec:capex:page "Losses"
+.XXXX 0 2 "Losses"
 .LP
 Losses offer a tax shield to the cash inflows. You can not logically have a tax
 benefit unless you are paying tax. If you have losses, though, you can shield

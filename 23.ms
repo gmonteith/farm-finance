@@ -1,8 +1,4 @@
 .
-.sp 5
-.NHTOC 1 sec:roe:num sec:roe:page "Return On Equity"
-.sp
-.LP
 Return on Equity (ROE is of paramount importance to the shareholder of a company and is usually
 stated as:
 .EQ
@@ -33,7 +29,7 @@ year before, our beginning capital was up 24%, making the gain in earnings per
 share considerably less impressive than it might appear at first glance.\fP
 .QP
 .
-.NHTOC 2 roe:da:num roe:da:page "Dupont Analysis"
+.XXXX \\n(cn 1 "Dupont Analysis"
 .LP
 We are going to show the various forms of the Dupont Analysis and use it to do
 further investigarion into the relationship between the ROE and the ROA. The
@@ -166,7 +162,7 @@ The assumptions to the left are taken from the save example we used to the
 previous section in the discussion about EVA. The difference is that the 7,000
 of other income has been removed and the figures adjusted accordingly.
 .sp 3
-.NHTOC 3 roe:daa:num ros:daa:page "5 Step Dupont Analysis"
+.XXXX 0 3 "5 Step Dupont Analysis"
 .LP
 .sp -2
 .mk 
@@ -275,7 +271,7 @@ the breakdown of ROA from the perspective of major firm decisions, operational,
 investment, financing and tax decisions.
 .
 .KS
-.NHTOC 3 roe:dab:num roe:dab:page "3 Step Dupont Analysis"
+.XXXX 0 3 "3 Step Dupont Analysis"
 .LP
 .sp -1
 .mk 
@@ -348,7 +344,7 @@ TROE: task(1.0, 0.3, "Return on Equity") with .s at LN17.n
 The 3 step Dupont analysis breaks the ROA into its constituent parts of the
 net profit margin and the asset turn and shows the impact of leverage.
 .
-.NHTOC 3 roe:dac:num roe:dac:page "2 Step Dupont Analysis"
+.XXXX 0 3 "2 Step Dupont Analysis"
 .LP
 The Dupont analysis can also be shown in the simplified manner below if you are
 purely interested in the leverage.
@@ -398,7 +394,7 @@ TROE: task(1.0, 0.3, "Return on Equity") with .s at LN17.n
 .sp 0.5v
 # lineup =~~ 19.8% #
 .sp
-.NHTOC 2 roe:da:num roe:da:page "ROE and leverage"
+.XXXX 0 2 "ROE and leverage"
 .LP
 We will start first by examining the situation if there is no debt. If the 5
 step Dupont analysis is used the following ratios would be required:
@@ -585,7 +581,7 @@ If the cost of debt is greater than OROA the leverage cauases the net income to
 fall faster than the equity. The effect of this is that \fBany\fP amount of
 leverage will cause the ROE to fall below the ROE without leverage.
 .
-.NHTOC 3 roe:da:num roe:da:page "Cost of debt < OROA"
+.XXXX 0 3 "Cost of debt < OROA"
 .LP
 We are now going to construct a table to measure the impact of leverage on the
 ROE and EVA when the cost of debt is less than the OROA.
@@ -825,7 +821,7 @@ The WACC of 13.00 is low enough to remain competitive in the industry.
 EVA of 2,905 is positve and indicative that the business is adding value.
 .
 .KS
-.NHTOC 3 roe:da:num roe:da:page "Cost of debt = OROA"
+.XXXX 0 3 "Cost of debt = OROA"
 .LP
 We are now going to construct a table to measure the impact of leverage on the
 ROE and EVA when the cost of debt is equal to the OROA.
@@ -903,7 +899,7 @@ The ROE is low and can not be improved with leverage.
 .IP \(bu
 The EVA is negative and the business is not producing an economic profit.
 .
-.NHTOC 3 roe:da:num roe:da:page "Cost of debt > OROA"
+.XXXX 0 3 "Cost of debt > OROA"
 .LP
 We are now going to construct a table to measure the impact of leverage on the
 ROE and EVA when the cost of debt is greater than the OROA.
@@ -993,7 +989,7 @@ debt. The EVA will be negative but the profits can be deployed in another
 enterprise and with out debt it could be argued that the equity is less at risk
 and therefore could be charged at a lesser rate.
 .
-.NHTOC 2 roe:da:num roe:da:page "Useful equations"
+.XXXX 0 2 "Useful equations"
 .LP
 When the relationship is understood amongst the ROIC, WACC, ROE and ROA it is
 possible to establish show equations to help in analysing the business.
@@ -1161,7 +1157,7 @@ lineup =~~
 The answer can be checked in the table in Section 21.2.1
 .
 .sp 
-.NHTOC 2 roe:iroe:num roe:iroe:page "Interpreting the change in Return on Equity"
+.XXXX 0 2 "Interpreting the change in Return on Equity"
 .LP
 ROE examination using the Dupont analysis be very helpful in understanding if
 the change in ROE is desirable or if the stability of the ROE is actually
@@ -1230,4 +1226,3 @@ If you want an example of a mass product look to small cars, the likes of VW UP
 and the Fiat 500, the industry is driven by volume measured in millions of cars
 produced.
 .FE
-
