@@ -1,6 +1,4 @@
 .
-.\" .EH '%''\fBSection 12: Growing Perpituities\fP'
-.\" .OH '\fBSection 12: Growing Perpituities\fP''%'
 There are also growing perpetuities, the most common one is the Gordon Growth
 Model or Dividend Discount Model as it is often known. The dividends are
 treated as a growing perpetuity and the PV is used to value the equity of the

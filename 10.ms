@@ -1,7 +1,4 @@
 .
-.\" .EH '%''\fBSection 13: Engineering Economics\fP'
-.\" .OH '\fBSection 13: Engineering Economics\fP''%'
-.
 The American Institute National Council of Examiners for Engineering and
 Surveying publishes a reference handbook that includes equations for
 engineering economics. These equations are based on the equations we have been

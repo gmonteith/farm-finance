@@ -3,6 +3,8 @@
 .ce
 \s+4\fBINTRODUCTION\fP\s0
 .sp 2
+\n(pn
+this is the page number %
 .LP
 More about how to do things than what to do. The what can be based on
 probability management judgement or a combination of the two.

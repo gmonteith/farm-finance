@@ -1,7 +1,4 @@
 .
-.\" .sp 5
-.\" .NHTOC 1 sec:time:num sec:time:page "Time Value of Money"
-.LP
 The Time Value of Money takes into account the fact that money received today
 is worth more than money received in the future because the money today can be
 invested and subsequently grow through the magic of compounding. Time Value of
@@ -9,7 +6,7 @@ Money (TVM) is typically expressed by the following equation:
 .EQ I
 FV = PV( 1 + i ) sup n
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 "Future Value" 
 = 

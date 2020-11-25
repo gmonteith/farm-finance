@@ -4,44 +4,10 @@
 .nr PO 0.75i
 .nr LL 6.5i
 .nr FM 0.5i
-.ds CF DRAFT
-.\".DA
-
-.\" Macro defitions to use with ms, i.e. EXTensions to MS
-.\"*****************************************************************************
-.ig
-Name: NHTOC
-Function: print a numbered header at the required level
-and save the header number and page as string
-variables, available to the user. Add the properly
-indented entry to the table of contents.
-Inputs:
-1 - level of the header, integer
-2 - header number, string variable
-3 - header page, string variable
-4 - header name, text string
-..
-.de NHTOC
-.NH \\$1										\"  put the numbered header at its level
-\\$2\"                       heading name
-.XS\"                        add TOC entry with the header page,
-\h'\\$1-1'\\*[SN-DOT] \\$2\" indented number and the name
-.XE\"                        end of TOC entry
-..
-.\" .NHTOC 2 sec:consu:num sec:consu:page "Instalment loan"
-
-.de NHTOC!
-.NH S \\$1 \\$2										\"  put the numbered header at its level
-\\$3\"                       heading name
-.XS\"                        add TOC entry with the header page,
-\h'1'\\*[SN-DOT] \\$3\" indented number and the name
-.\" \h'1+\\$2-1'\\*[SN-DOT] \\$3\" indented number and the name
-.XE\"                        end of TOC entry
-..
-.\" .NHTOC! \\n(cn 1 x x "Zero coupon bond"
+.\" .ds CF %
 
 .ig
-Name: NHTOC
+Name: XXXX
 Function: print a numbered header at the required level and add the properly
 indented entry to the table of contents.
 Inputs:
@@ -69,41 +35,120 @@ always greater than zero, so this is used as an indicator.
 .\}
 ..
 
-
-.\" .de NHTOC
-.\" .NH \\$1										\"  put the numbered header at its level
-.\" \\$4\"                       heading name
-.\" .ds \\$2 \\*[SN-NO-DOT]\"    set the header number 
-.\" .ds \\$3 \\n%\"              set the page number of the header
-.\" .XS\"                        add TOC entry with the header page,
-.\" \h'\\$1-1'\\*[SN-DOT] \\$4\" indented number and the name
-.\" .XE\"                        end of TOC entry
-.\" ..
-
-
 .\" Chapter number
 .nr cn 0 1
+
+.nr noheader 1
+.
+.de NOH!
+.nr noheader 0
+.nr appendix 0
+..
+.
+.
+.de PT
+.\" value of noheader \\n[noheader]
+.\" value of chapter \\n(cn
+.\" value of appendix \\n[appendix]
+.\" value of contents \\n[contents]
+.\" if statement checks that noheader and \\n(cn are > 0
+.if (\\n[noheader])&(\\n(cn) \{\
+.			ie o .tl '%''\fBChapter \\n(cn: \\*(c?\fP'
+.			el   .tl '\fBChapter \\n(cn: \\*(c?\fP''%'
+.\}
+.nr noheader 1
+.
+.\" if statement checks that noheader and appendix are > 0
+.if (\\n[noheader])&(\\n[appendix]) \{\
+.			ie o .tl '%''\fBAppendix \\n(#a: \\*(c?\fP'
+.			el   .tl '\fBAppendix \\n(#a: \\*(c?\fP''%'
+.nr appendix 1
+.\}
+.nr noheader 1
+.
+..
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+.ig
+This section of code turns the page numbers displayed in the footer on and off.
+1=on 			
+0=off     the default is off
+Having the default as on creates problems, as you want the page numbers in the
+footer off more than you want them on. However, if you default to off it is
+causes issues with the preface, table of contents and intro. :(
+.
+..
+.\" Footer page numbers off
+.nr nofooter 0
+.
+.\" Turn footer page numbers on
+.de togglefooter
+.nr nofooter 1
+..
+.
+.de BT
+.\" condition1: \\n[nofooter]
+.\" chapter: \\n(cn
+.\" appendix: \\n[appendix]
+.
+.\" turns on page numbers in the footer for pages with a chapter heading
+.if \\n[nofooter]=1 \{\
+.			tl ''%''
+.\}
+.\" turns on page numbers in the footer for pages that are not a chapter
+.\" if nofooter & chapterno > 1 then no footer page numbers
+.if \\n[nofooter]=0 \
+ . if \\n(cn=0 \
+ . if \\n[appendix]=0 \{\
+.			tl ''%''
+.\}
+.
+.\" ensures page numbers in the footer are kept off
+.nr nofooter 0
+.
+..
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .
 .de CHAPTER
-.sp |2i
+.NOH!
+.bp
+.togglefooter
+.sp |1.75i
 .ce
-\s+6\fBChapter \\n+(cn\fP\s0
+\s+8\fBChapter \\n+(cn\fP\s0
 .XS
 \\n(cn . \\$1
 .XE
 .sp
 .ce
-\s+4\fB\\$1\fP\s0
-.sp 2
+\s+6\fB\\$1\fP\s0
+.sp 3
+.ds c? \\$1
 .LP
+..
+
+
+.nr appendix 0
+.
+.de APP
+.nr appendix 1
+.nr cn 0
 ..
 
 .nr #a 0 1
 .af #a A
+.
 .de APPENDIX
+.NOH!
+.bp
+.APP
 .XS
 APPENDIX \\n+(#a: \\$1
 .XE
+.ds c? \\$1
+.ds b \\$1
 .rs
 .sp |20
 .ce
@@ -112,13 +157,19 @@ APPENDIX \\n+(#a: \\$1
 .ce
 \s+2\fB\\$1\s0\fP
 .bp
-.\" .ce
-.\" \fB\\$1\fP
 .LP
 ..
 
+
 .de APPENDIX_SUB
+.\".ds c?
+.NOH!
 .bp
+.APP
+.ds x \\*b
+.as x ": \\$1
+.ds c? \\*x
+.RESETNAME
 .rs
 .sp |5.0i
 .ce
@@ -126,6 +177,9 @@ APPENDIX \\n+(#a: \\$1
 .bp
 ..
 
+.de RESETNAME
+.ds x "
+..
 
 .
 .de hphntmsrc
@@ -162,3 +216,49 @@ APPENDIX \\n+(#a: \\$1
 .sp 0.5
 ..
 .
+.\" .de NHTOC
+.\" .NH \\$1										\"  put the numbered header at its level
+.\" \\$4\"                       heading name
+.\" .ds \\$2 \\*[SN-NO-DOT]\"    set the header number 
+.\" .ds \\$3 \\n%\"              set the page number of the header
+.\" .XS\"                        add TOC entry with the header page,
+.\" \h'\\$1-1'\\*[SN-DOT] \\$4\" indented number and the name
+.\" .XE\"                        end of TOC entry
+.\" ..
+
+
+.\" Macro defitions to use with ms, i.e. EXTensions to MS
+.\"*****************************************************************************
+.ig
+Name: NHTOC
+Function: print a numbered header at the required level
+and save the header number and page as string
+variables, available to the user. Add the properly
+indented entry to the table of contents.
+Inputs:
+1 - level of the header, integer
+2 - header number, string variable
+3 - header page, string variable
+4 - header name, text string
+..
+.\".de NHTOC
+.\".NH \\$1										\"  put the numbered header at its level
+.\"\\$2\"                       heading name
+.\".XS\"                        add TOC entry with the header page,
+.\"\h'\\$1-1'\\*[SN-DOT] \\$2\" indented number and the name
+.\".XE\"                        end of TOC entry
+.\"..
+.\" .NHTOC 2 sec:consu:num sec:consu:page "Instalment loan"
+
+.\" .de NHTOC!
+.\" .NH S \\$1 \\$2										\"  put the numbered header at its level
+.\" \\$3\"                       heading name
+.\" .XS\"                        add TOC entry with the header page,
+.\" \h'1'\\*[SN-DOT] \\$3\" indented number and the name
+.\" .\" \h'1+\\$2-1'\\*[SN-DOT] \\$3\" indented number and the name
+.\" .XE\"                        end of TOC entry
+.\" ..
+.\" .NHTOC! \\n(cn 1 x x "Zero coupon bond"
+
+.\" .EH '%''\fBChapter \\n(cn: \\*(c?\fP'
+.\" .OH '\fBChapter \\n(cn: \\*(c?\fP''%'

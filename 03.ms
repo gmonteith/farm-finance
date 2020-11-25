@@ -785,5 +785,3 @@ would round up the answer to 40. The user has to decide if they want to make a
 larger 39th payment or a smaller 40th payment. You can not really make a
 fractional payment, either the payment was made or it was not made, it can not
 be partially made.  
-
-.

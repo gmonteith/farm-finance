@@ -1,8 +1,4 @@
 .
-.\" .sp 5
-.\" .XXXX 1 sec:equiv:fum sec:equiv:page "Equivalence"
-.\" .XXXX! \\n(cn 1 sec:equiv:fum sec:equiv:page "Equivalence"
-.LP
 We have established that there is relationship between the present value and
 the future value through the TV'S equation:
 .EQ I
