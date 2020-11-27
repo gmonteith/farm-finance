@@ -1,18 +1,4 @@
 .
-.sp |4i
-.ce
-\s+4\fBINTRODUCTION\fP\s0
-.sp 2
-\n(pn
-this is the page number %
-.LP
-More about how to do things than what to do. The what can be based on
-probability management judgement or a combination of the two.
-.LP
-graphs - break even
-running headers
-general typsetting
-.LP
 I started this work to establish a better framework with which my brother could
 invest in his agricultural business. The intention was always to show the
 mathematics behind the formulas and not to simply present them for use. Is
@@ -35,7 +21,7 @@ Therefore, I complete the examples with the equations\(dg and check them with a
 financial calculator, an HP12C\(dd, if I get the same answer with both methods
 I can be confident that the answer is correct. When I use a spreasheet I also
 complete the check with a financial calculator, so unless the situation is very
-complex it is ussually quicker to use the equations and check with the
+complex it is usually quicker to use the equations and check with the
 calculator. Lastly, a spreadsheet invites complexity and the success of most
 projects hinges on a few factors by completing the work by hand I try always to
 focus on what are the big drivers of the desired outcome and add only as much
@@ -71,19 +57,22 @@ piece of equipment replaced. These are the fundamental questions in most
 businesses and this work aims to place at your disposal some principles that
 should make you more confident when making that decision.
 .LP
-The latter part of the document looks at how to measure the performance of your
+There is a large section on breakeven analysis or cost volume analysis as it is
+sometimes known. This differs from traditional breakeven analysis as it
+incorporates the time value of money into the fixed costs.
+.LP
+The last part of the document looks at how to measure the performance of your
 business once an investment has been made. The idea being to show that the
 measurement of financial performance can be in someway tied back to the process
 used to make the investment.
 .LP
-The last part of the document concerns break even analysis or cost volume
-analysis as it is sometimes known. It could be argued that this either belongs
-at the beginning of the document or not in the document at all. This is a fair
-point. I wanted to include the information but wanted to focus on the time
-value of money and not be distracted by break even analysis, which is not a
-means of allocating capital. Break even analysis has its place in monitoring
-ongoing performance and also looking at the possibility that an investment
-could add value to a business.
+The work looks at the most common methods used in capital allocation and tries
+to provide guidance on their advantages and disadvantages. The work is not
+meant to be a cover all on the subject of capital allocation but a guide with
+which to base, plan and provoke discussions on the suitability of an
+investment. Lastly it always worth remembering, especially in a document with
+as many equations as this, that the financials do not measure everything and
+not everything can be converted into a number to be measured.
 .
 .SH
 How to use this document
@@ -100,10 +89,10 @@ formulas that are used through the latter practical chapters.
 .SN
 Diagrams and conventions
 .LP
-I have tried to display the data using both tables and a cash flow diagram. Most
-people use a spreadsheet so they are more accustomed to seeing data presented
-in a table. However, the cash flow diagram is better for displaying the
-movement of the cash flows.
+I have tried to display the data using both tables and a cash flow diagram.
+Most people use a spreadsheet so they are more accustomed to seeing data
+presented in a table. However, the cash flow diagram is better for displaying
+the movement of the cash flows.
 .LP
 In the equations the () is a grouping symbol however when used in the tables it
 denotes a negative cash flow. I hope that is always clear from both the
@@ -169,10 +158,10 @@ As an example, if a problem stated that money was to be invested at the rate of
 Positive and negative sign conventions
 .LP
 It pays to be consistent when working with postive cash flows and negative cash
-flows to avoid both confusion and errors. If the problem has both costs and
-postive cash flows such as a net present value (NPV) then costs are assumed to
-be negative and are preceeded as such by a negative sign in the equations and
-surrounded by parenthesis in the tables. When working only with costs, and
-\fBno\fP positive cash flows, then the costs are not precceded by a negative
-sign or surrounded by parenthese in the tables as it is more natural to work
-with positive numbers. 
+flows to avoid both confusion and errors. If the problem has both negative cash
+flows (costs) and postive cash flows (revenues) such as a net present value
+(NPV) then costs are assumed to be negative and are preceeded as such by a
+negative sign in the equations and surrounded by parenthesis in the tables.
+When working only with costs, and \fBno\fP positive cash flows, then the costs
+are not precceded by a negative sign or surrounded by parenthese in the tables
+as it is more natural to work with positive numbers. 
