@@ -1,8 +1,8 @@
 .
-The Time Value of Money takes into account the fact that money received today
-is worth more than money received in the future because the money today can be
-invested and subsequently grow through the magic of compounding. Time Value of
-Money (TVM) is typically expressed by the following equation:
+The Time Value of Money (TVM) takes into account the fact that money received
+today is worth more than money received in the future because the money today
+can be invested and subsequently grow through the magic of compounding. The
+Time Value of Money is typically expressed by the following equation:
 .EQ I
 FV = PV( 1 + i ) sup n
 .EN
@@ -58,16 +58,14 @@ earns it ... he who doesn't ... pays it."
 .LP
 To highlight the power of compounding and stick with the theme of famous people
 we will look at the affairs of Benjamin Franklin. Benjamin Franklin, according
-to the American Bankers Association, left 5,000 USD to the residents of Boston
+to the American Bankers Association, left $5,000 USD to the residents of Boston
 in 1791, with the understanding that it should be allowed to accumulate for a
-hundred years. By 1891 the 5,000 has grown to 322,000. A school was built, and
-92,000 was set aside for a second hundred years of growth. In 1960, this second
-century fund had reached 1,400,000. 
+hundred years. By 1891 the $5,000 has grown to $322,000. A school was built,
+and $92,000 was set aside for a second hundred years of growth. In 1960, this
+second century fund had reached $1,400,000. 
 .LP
-.KS
-There is a graph below to show the exponential nature of the power of
-compounding over the first 100 years.
-.sp -3
+.KS There is a graph below to show the exponential nature of the power of
+compounding over the first 100 years.  .sp -3
 .G1
 frame invis ht 2 wid 3 left solid bot solid
 label bot "Years" 
