@@ -15,11 +15,11 @@ The examples are all worked through using the equations and at times a table.
 There is no mention of any spreadsheet applications which would be the usually
 way most people would tackle the problems. The reason is that if you can
 understand the equations and the maths you can understand which function to use
-in the spreadsheet. A furtherpoint is that in general terms what ever thinking
+in the spreadsheet. A further point is that in general terms what ever thinking
 got you into a given situation the same thinking will not get you out.
 Therefore, I complete the examples with the equations\(dg and check them with a
 financial calculator, an HP12C\(dd, if I get the same answer with both methods
-I can be confident that the answer is correct. When I use a spreasheet I also
+I can be confident that the answer is correct. When I use a spreadsheet I also
 complete the check with a financial calculator, so unless the situation is very
 complex it is usually quicker to use the equations and check with the
 calculator. Lastly, a spreadsheet invites complexity and the success of most
@@ -157,11 +157,11 @@ As an example, if a problem stated that money was to be invested at the rate of
 .SH
 Positive and negative sign conventions
 .LP
-It pays to be consistent when working with postive cash flows and negative cash
+It pays to be consistent when working with positive cash flows and negative cash
 flows to avoid both confusion and errors. If the problem has both negative cash
-flows (costs) and postive cash flows (revenues) such as a net present value
-(NPV) then costs are assumed to be negative and are preceeded as such by a
+flows (costs) and positive cash flows (revenues) such as a net present value
+(NPV) then costs are assumed to be negative and are preceded as such by a
 negative sign in the equations and surrounded by parenthesis in the tables.
 When working only with costs, and \fBno\fP positive cash flows, then the costs
-are not precceded by a negative sign or surrounded by parenthese in the tables
+are not preceded by a negative sign or surrounded by parentheses in the tables
 as it is more natural to work with positive numbers. 
