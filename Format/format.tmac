@@ -95,7 +95,12 @@ causes issues with the preface, table of contents and intro. :(
 .
 .\" turns on page numbers in the footer for pages with a chapter heading
 .if \\n[nofooter]=1 \{\
-.			tl ''%''
+.			tl ''%'DRAFT'
+.\}
+
+.\" This only exists to print DRAFT on the bottom RH side of the page
+.if !\\n[nofooter]=1 \{\
+.			tl '''DRAFT'
 .\}
 .\" turns on page numbers in the footer for pages that are not a chapter
 .\" if nofooter & chapterno > 1 then no footer page numbers
