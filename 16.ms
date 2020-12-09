@@ -5,11 +5,11 @@ consideration. The mathematics behind the equations is covered in Appendix A
 and B.
 .LP
 It is important to understand that the investment cost equations come in two
-forms, postive and negative. In the preface we discussed the sign conventions
+forms, positive and negative. In the preface we discussed the sign conventions
 and that costs are assumed to be negative when working with NPV and positive
-when comparisions are being made with other costs. Therefore, the equations
-have both a negative form to use when working with NPVs and a postive form for
-cost comparisions.
+when comparisons are being made with other costs. Therefore, the equations
+have both a negative form to use when working with NPVs and a positive form for
+cost comparisons.
 .
 .XXXX \\n(cn 1 "Capital Cost Tax Factors (CCTF)"
 .LP
@@ -33,7 +33,7 @@ For the purposes of the investment cost equations there are two types of pool:
 .IP "Continuous Pools" 5
 The investment cost equations within a continuing pool assume the following:
 .RS
-.IP \(bu
+.IP \(bu 3
 The investment are in the main pool or the special rate pool.
 .IP \(bu
 The government allows the pooling of assets to reduce as much as is possible
@@ -44,18 +44,18 @@ capital gain.
 .IP \(bu
 It is possible to generate a balancing charge in any pool at any time. The
 investment cost equations in continuous pools do not allow for this
-eventuallity.
+eventuality.
 .IP \(bu
 Capital gains tax is charged at the same rate of tax used in the rest of the
 calculation
 .RS
 .LP
-The government has very specifc rules on capital gains tax, however, for the
-purpose of calculating the investment cost I am going to disreagrd them and
+The government has very specific rules on capital gains tax, however, for the
+purpose of calculating the investment cost I am going to disregard them and
 charge the capital gains tax at the same rate of taxation as the rest of the
-equation. The reasons for this are enumeratied below:
+equation. The reasons for this are enumerated below:
 .RS
-.IP \(bu
+.IP \(bu 3
 The salvage value tends to occur far in the future and has a limited impact on
 the present value.
 .IP \(bu
@@ -67,14 +67,14 @@ not be right at the time the asset is disposed off.
 .IP \(bu
 Corporate profits do not incur capital gains tax and I wanted these equations
 to be useful for measuring the impact of capital allowances on a capital
-investment under both Self Assesment and Corporate Tax regimes.
+investment under both Self Assessment and Corporate Tax regimes.
 .RE
 .RE
 .RE
 .IP "Single Asset Pool" 5
 The investment cost equations within a single asset pool assume the following:
 .RS
-.IP \(bu
+.IP \(bu 3
 The disposal of the asset can generate a balancing allowance or a balancing
 charge.
 .IP \(bu
@@ -85,7 +85,7 @@ The same capital gains logic that was used with continuous pools applies to
 single asset pools.
 .IP \(bu
 The government also allows single asset pools which have a maximum life of 8
-years, it is upto you to abide by this rule.
+years, it is up to you to abide by this rule.
 .RE
 .
 .XXXX 0 2 "Timings of tax payments"
@@ -129,7 +129,7 @@ TX1: box invis wid 1.0 ht 0.2 "tax payment" at (2.3, -0.4)
 line dashed down 0.1 at last box.s
 arrow dashed right
 .PE
-.UL "Self Assesment Tax"
+.UL "Self Assessment Tax"
 .LP
 With Self Assessment tax in the UK this is not so clear cut into which period
 the tax payment falls. The UK the tax year runs from 6th April to the 5th of
@@ -151,7 +151,7 @@ account last year of \[Po]900 each (\[Po]1,800 in total).
 .LP
 The total tax to pay by midnight on 31 January 2019 is #\[Po]2,700#. This
 includes:
-.IP \(bu
+.IP \(bu 3
 your balancing payment of \[Po]1,200 for the 2017 to 2018 tax year
 (\[Po]3,000 minus \[Po]1,800)
 .IP \(bu
@@ -222,8 +222,8 @@ advantage of any tax free allowances. It is also possible that the previous
 years tax is high enough that the earnings from the new investment are forced
 into a higher rate tax bracket.
 .LP
-For simplicities sake when computing the after tax cashflows under Self
-Assesment for a NPV the tax is deemed to be payable in tax period one.
+For simplicity's sake when computing the after tax cash flows under Self
+Assessment for a NPV the tax is deemed to be payable in tax period one.
 .br
 .sp
 .UL "Corporation Tax"
@@ -275,7 +275,7 @@ arrow dashed left 0.2 at last box.w
 .PE
 The above situation is worth contemplation as it is not uncommon that
 investments are made at the end of the accounting period to make use of capital
-allowances. The flow charts in Appendinx B allow for this occurence.
+allowances. The flow charts in Appendix B allow for this occurrence.
 .LP
 If the first cash flow is on the 1st day of the accounting period then first
 tax impact is at time period 2. This is the same as the general assumptions
@@ -321,7 +321,7 @@ starting at both time period one and two.
 .LP
 We are now going to examine the investment cost equations where the tax impact
 is at time period one. These equations would typically used when estimating an
-NPV under Self Assesment Tax, but they can also be used for Corporation Tax in
+NPV under Self Assessment Tax, but they can also be used for Corporation Tax in
 certain instances.
 .
 .XXXX 0 3 "CCTF"
@@ -342,7 +342,7 @@ left [ cctf right ]
 .LP
 .UL "Annual Investment Allowance & Yearly Allowance"
 .LP
-The yearly allowacne and the AIA can both utilise the same CCTF as they share
+The yearly allowance and the AIA can both utilise the same CCTF as they share
 the same structure but cover different capital assets.
 .IP "No salvage value" 5
 .EQ L
@@ -362,7 +362,7 @@ the same structure but cover different capital assets.
 (P/F, i%, n)
 .EN
 .LP
-.UL "Writting Down Allowance"
+.UL "Writing Down Allowance"
 .IP "No salvage value" 5
 .EQ L
 "Investment cost" lineup =~~
@@ -447,7 +447,7 @@ times
 .LP
 We are now going to examine the investment cost equations where the tax impact
 is at time period one. These equations would typically used when estimating an
-NPV under Self Assesment Tax, but they can also be used for Corporation Tax in
+NPV under Self Assessment Tax, but they can also be used for Corporation Tax in
 certain instances.
 .
 .XXXX 0 3 "CCTF"
@@ -468,7 +468,7 @@ left [ cctf2 right ]
 .LP
 .UL "Annual Investment Allowance & Yearly Allowance"
 .LP
-The yearly allowacne and the AIA can both utilise the same CCTF as they share
+The yearly allowance and the AIA can both utilise the same CCTF as they share
 the same structure but cover different capital assets.
 .IP "No salvage value" 5
 .EQ L
@@ -494,7 +494,7 @@ right )
 times (P/F, i%, n)
 .EN
 .LP
-.UL "Writting Down Allowance"
+.UL "Writing Down Allowance"
 .IP "No salvage value" 5
 .EQ L
 "Investment cost" lineup =~~
@@ -584,7 +584,7 @@ It can be seen that the investment cost equations get progressively more
 complicated. The simplest equations are those used with the continuous pool. It
 is envisaged that the equations relating to the continuous pools will be the
 most heavily used. However, an effort has been made to have a consistence
-presentation accross the equations so that moving from one equation to another
+presentation across the equations so that moving from one equation to another
 is relatively easy.
 .LP
 The equations may look quite complicated but with the calculation of a few
