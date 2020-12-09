@@ -5,9 +5,9 @@ where, that nine out of ten small businesses fail through bad financial
 management. If that statement is true then there is a lot to be done to improve
 the financial understanding within the small business community. Furthermore,
 it is not just in business that financial skills are important, The Institute
-and Faculty of Actuaries obseerves that pensions are just one area where risks
+and Faculty of Actuaries observes that pensions are just one area where risks
 previously managed by government, employers and financial institutions are
-increasinly being handed to individuals. So, as I was involved in business and
+increasingly being handed to individuals. So, as I was involved in business and
 have an interest in finance I thought I would look at some everyday problems
 and write them down as I worked to improve my brother's business. The result is
 a larger document than I ever envisaged, infact if I had known that it would
@@ -25,38 +25,38 @@ reflection could be done better. An appraisal can be found below:
 .
 .LP
 Good
-.IP \(en 
+.IP \(en 3
 The book starts with the time value of money in Chapter 1 and follows this
 thread through the work.
-.IP \(en 
+.IP \(en 3
 All the equations that are used in the work are derived from a common point.
-.IP \(en 
+.IP \(en 3
 The work is hopefully useful to both individuals wanting to know a little more
 about the mathematics of finance and those trying to allocate capital more
 efficiently.
 .
 .LP
 Bad
-.IP \(en 
+.IP \(en 3
 As I never set out to write a book and I am not convinced I am well qualified
 for it the work is in need of both and editor and a copy writer!
-.IP \(en 
+.IP \(en 3
 I have explained things as I understand them and with no background in teaching
 I do not know if that is how you will understand them.
-.IP \(en 
+.IP \(en 3
 I have learnt my typesetting as I have meandered though this work and I am sure
 there is much that could be done to improve it.
-.IP \(en 
-More graphs would improve some of the examples, expecially in the section on
+.IP \(en 3
+More graphs would improve some of the examples, especially in the section on
 breakeven.
-.IP \(en 
+.IP \(en 3
 There are no reference for the tables, graphs or cash flow diagrams. The
 addition of these references would make it possible to refer both backwards and
 forward to aid explanations.
 .
 .LP
 Ugly
-.IP \(en 
+.IP \(en 3
 As I did not set out to book, let alone a textbook or a reference book, there
 are not extensive references though there is a bibliography at the back.
 Therefore I would like to acknowledge the better work of others from which I
@@ -66,21 +66,21 @@ the cost of capital. The idea for the Capital Cost Tax Factors and the starting
 equations came from "A Practical Approach to the Appraisal of Capital
 Expenditures" by C.  Geoffrey Edge and V. Bruce Irvine. My thoughts in general
 about how to account for the large capital expenditures in business have been
-heavily infuenced by "Engineering Economy, Third Edition, Applying Theory to
+heavily influenced by "Engineering Economy, Third Edition, Applying Theory to
 Practice" by A Ted G.  Eschenback. Lastly Appendix E quickly runs though the
 mathematics of Shareholder Value Added (SVA) as promoted by Alfred Rappaport in
 his book "Creating Shareholder Value, A Guide for Manager and Investors".
-.IP \(en 
-My mathematics is more recreational than rigoruous and the work has followed
+.IP \(en 3
+My mathematics is more recreational than rigorous and the work has followed
 this pattern. Therefore, I have not defined many terms in their true
 mathematical sense. For instance, I have used the terms "equation" and
-"formula" interchageably without making any distinction between the two.
+"formula" interchangeably without making any distinction between the two.
 Annuities and perpetuities brush up against the larger topics of limits and
 functions and these have not been defined or explored. Lastly it is customary
 in mathematics that letters at the end of the alphabet refer to variables # (
 x, y, z ...) # and the remaing letters # ( a, b, c ... ) # refer to constants.
 This has not been followed with any integrity.
-.IP \(en 
+.IP \(en 3
 In Appendix A we examine the impact of the writing down allowance on the
 capital costs and derive two equations. One is an annuity and the other a
 perpetuity. The investment cost equations do not make use of this annuity
@@ -91,16 +91,16 @@ rather ugly equations. The only consolation is that I don't expect them to be
 used often, but they need rewriting.
 .LP
 The list above is by no means exhaustive and you may of course feel very
-differently about the merits of this work. If you find something particulary
+differently about the merits of this work. If you find something particularly
 egregious you may contact me via the following email address:
 errata@posteo.co.uk or alternatively you can search for the work on GitHub
 where you can contact me or fork the work itself and make your own
 improvements.
 .LP
-Lastly I would like to thank my partner Amy for her assistence, patience and
+Lastly I would like to thank my partner Amy for her assistance, patience and
 time in checking this draft and providing many helpful suggestions and more
-importantly in her sympathetics support with my frustations at my own failings
-in typsetting, mathematics and business.
+importantly in her sympathetic support with my frustrations at my own failings
+in typesetting, mathematics and business.
 .sp 5
 .
 .B1
@@ -113,5 +113,7 @@ Note
 This document is a DRAFT. I am continuing to work on it as some chapters are
 unfinished and others need improving. If you wish to contribute or please email
 me at the address provided or alternatively head over to GitHub.
+.sp
+Define what this means
 .sp
 .B2
