@@ -11,7 +11,7 @@ PMT times left [  1  over { (1 + i) sup 1 }
 ...~~... 
 + 1  over { (1 + i) sup n } right ]
 .EN
-The declining annuity differers only in that there is a constant rate of
+The declining annuity differs only in that there is a constant rate of
 decline, represented by # 1 - g # which starts at the second cash flow.
 .EQ I
 PMT times left [  
@@ -25,18 +25,18 @@ right ]
 .EN
 The values for the first term "a" can be established from the series:
 .EQ I
-a = 1  over { (1 + i) sup 1 } 
+a =~~ 1  over { (1 + i) sup 1 } 
 .EN
-The value for thethe common ratio "r" can be established from the series:
+The value for the the common ratio "r" can be established from the series:
 .EQ I
-r lm  left [ b over a = c over b right ] 
-~~tf~~
-{ left ( { (1 - g) } over { (1 + i) sup 2 } right ) 
+r lm  left [ b over a =~~ c over b right ] 
+tf
+{ left ( { 1 - g } over { (1 + i) sup 2 } right ) 
 over left ( 1  over { (1 + i) sup 1 } right )} 
-= { left ( { (1 - g) sup 2} over { (1 + i) sup 3 } right ) 
-over left ( { (1 - g) } over { (1 + i) sup 2 } right )} 
-~~tf~~
-{ (1 - g) } over {  (1 + i) }
+=~~ { left ( { (1 - g) sup 2} over { (1 + i) sup 3 } right ) 
+over left ( { 1 - g } over { (1 + i) sup 2 } right )} 
+tf
+{ 1 - g } over {  1 + i }
 .EN
 .XXXX \\n(cn 1 "PV of declining annuity"
 .LP
@@ -45,31 +45,29 @@ the present value of the annuity.
 .EQ I
 PV sub da lm PMT times { a(1 - r sup n ) } over { ( 1 - r ) } 
 .EN
-.sp -0.4v
+.sp -0.6v
 .EQ I
 lineup =~~
-PMT times left { { 1 over { ( 1 + i ) }  left [ 1 - left ( { (1 - g) } 
-over {  (1 + i) } right ) sup n right ] } 
-over { 1 - { (1 - g) } over {  (1 + i) } } right } 
+PMT times left { { 1 over {  1 + i  }  left [ 1 - left ( { 1 - g } 
+over {  1 + i } right ) sup n right ] } 
+over { 1 - { 1 - g } over {  1 + i } } right } 
 .EN
-.sp -0.4v
+.sp -0.6v
 .EQ I
 lineup =~~
-PMT times left { { 1 over { ( 1 + i ) }  left [ 1 - left ( { (1 - g) } 
-over {  (1 + i) } right ) sup n right ] } 
-over {  { (1 + i ) - (1 - g) } 
-over {  (1 + i) } 
-= { { ( i + g ) }  over { ( 1 + i ) } } } right } 
+PMT times left { { 1 over {  1 + i  }  left [ 1 - left ( { 1 - g } 
+over {  1 + i } right ) sup n right ] } 
+over {  { i + g  }  over {  1 + i  } } right } 
 .EN
-.sp -0.4v
+.sp -0.6v
 .EQ I
 lineup =~~
-PMT times { { ( 1 + i ) } over { ( i + g ) } }
+PMT times { { ( 1 + i ) } over {  i + g } }
 times
 1 over { ( 1 + i ) } 
 left [ 1 - left ( { (1 - g) } over {  (1 + i) } right ) sup n right ]
 .EN
-.sp -0.4v
+.sp -0.6v
 .EQ I
 lineup =~~
 PMT over { i + g } 
@@ -78,7 +76,7 @@ left [  1 -  left ( { 1 - g } over { 1 + i } right ) sup n  right ]
 .KS
 The yearly output of a silver mine is declining by 25% per year. Using a
 discount rate of 8%, what is expected to be the present worth of the output of
-the mine over the next 10 years, if the initial output of the mine is 25M?
+the mine over the next 10 years, if the initial output of the mine is \[Po]25M?
 .PS
 A: [ box invis wid 0.25 ht 0.20 "0"
 			line up 0.3 from last box.n
@@ -87,11 +85,11 @@ A: [ box invis wid 0.25 ht 0.20 "0"
 			line right 0.7 from last box.e
 			box invis wid 0.25 ht 0.20 "1"
 			arrow down 0.5 at last box.s
-			"25M" below at end of last arrow
+			"\[Po]25M" below at end of last arrow
 			line right 0.7 from last box.e
 			box invis wid 0.25 ht 0.20 "2"
 			arrow down 0.4 at last box.s
-			"25M#(1 - 0.08)#" below at end of last arrow
+			"\[Po]25M#(1 - 0.08)#" below at end of last arrow
 			line right 0.7 from last box.e
 			line down 0.20 dashed right 0.15
 			line up 0.40 dashed right 0.15
@@ -99,11 +97,11 @@ A: [ box invis wid 0.25 ht 0.20 "0"
 			line right 0.7 
 			box invis wid 0.25 ht 0.20 "9"
 			arrow down 0.3 at last box.s
-			"25M#(1 - 0.08) sup 8#" below at end of last arrow
+			"\[Po]25M#(1 - 0.08) sup 8#" below at end of last arrow
 			line right 0.7 from last box.e
 			box invis wid 0.25 ht 0.20 "10"
 			arrow down 0.2 at last box.s
-			"25M#(1 - 0.08) sup 9#" below at end of last arrow
+			"\[Po]25M#(1 - 0.08) sup 9#" below at end of last arrow
 		]
 box invis "i = 8.0/100" wid 0.6 ht 0.25 with .s at A.n + (0.35,-0.3)
 box invis "n = 10" wid 0.6 ht 0.25 with .n at A.s + (0.40,0.25)
@@ -121,22 +119,24 @@ right ]
 =~~ 
 75.76 left [ 0.97392  right ]   
 =~~
-73.78
+\[Po]73.78
 .EN
 .
 .XXXX 0 2 "Initial PMT declining annuity"
 .LP
-The formula can be rearragned to resolve for the initial payment:
+The formula for the present value of the annuity can be rearranged to resolve
+for the initial payment:
 .EQ I
 PV lm  PMT over { i + g } 
 left [  1 -  left ( { 1 - g } over { 1 + i } right ) sup n  right ]   
 .EN
-.RS
+.sp -0.6v
 .EQ I
-PV( i + g ) =  PMT 
+lineup tf
+PV( i + g ) =~~  PMT 
 left [  1 -  left ( { 1 - g } over { 1 + i } right ) sup n  right ]   
 .EN
-.RE
+.sp -0.6v
 .EQ I
 PMT lineup =~~
 { PV( i + g ) } over  
@@ -148,55 +148,64 @@ equation: # PMT times ( 1 - g ) sup n-1 #
 .LP
 Therefore the payment in period 5 would be:
 .EQ I
-PMT sup n=5 = 25 times (0.75) sup { 5 - 1 }  = 7.91M
+PMT sup n =~~ 5 =~~ 25 times (0.75) sup { 5 - 1 }  =~~ \[Po]7.91M
 .EN
 .
 .KS
 .XXXX 0 2 "n given a declining annuity"
 .LP
-Lastly the formula can be rearranged to resolve for the number of compound
-periods:
+Lastly the formula for the present value of the annuity can be rearranged to
+resolve for the number of compound periods:
 .EQ I
 PV lm  PMT over { i + g } 
 left [  1 -  left ( { 1 - g } over { 1 + i } right ) sup n  right ]   
 .EN
-.RS
+.sp -0.6v
 .EQ I
+lineup tf
 PV( i + g ) =~~  PMT 
 left [  1 -  left ( { 1 - g } over { 1 + i } right ) sup n  right ]   
 .EN
-.sp -0.4v
+.sp -0.6v
 .EQ I
+lineup tf
 { PV( i + g ) }  over  PMT =~~
 1 -  left ( { 1 - g } over { 1 + i } right ) sup n
 .EN
-.sp -0.4v
+.sp -0.6v
 .EQ I
-1 - left ( { PV( i + g ) }  over  PMT right ) =~~
+lineup tf
+1 -  { PV( i + g ) }  over  PMT  =~~
 left ( { 1 - g } over { 1 + i } right ) sup n 
 .EN
-.sp -0.4v
+.sp -0.6v
 .EQ I
-ln left [ 1 - left ( { PV( i + g ) }  over  PMT right ) right ] =~~
+lineup tf
+ln left [ 1 - { PV( i + g ) }  over  PMT right ] =~~
 n ln left ( { 1 - g } over { 1 + i } right ) 
 .EN
-.RE
+.sp -0.6v
 .EQ I
-n lineup =~~ { ln left [ 1 - left ( { PV( i + g ) }  over  PMT right ) right ] } 
+n lineup =~~ { ln left [ 1 - { PV( i + g ) }  over PMT right ] } 
 over
 { ln left ( { 1 - g } over { 1 + i } right ) }
 .EN
 .KE
 This equation would allow you to answer the following question. How long it
-would take to extract a PV of 56M from the mine using the same declining growth
-rate, discount rate and initial output.
+would take to extract a PV of \[Po]56M from the mine using the same declining
+growth rate, discount rate and initial output.
 .EQ I
-n =~~  { ln left [ 1 - left ( { 56( 0.08 + 0.25 ) }  over  25 right ) right ] } 
+n =~~
+{ ln left [ 1 - { PV( i + g ) }  over PMT right ] } 
+over
+{ ln left ( { 1 - g } over { 1 + i } right ) }
+=~~
+{ ln left [ 1 - left ( { 56( 0.08 + 0.25 ) }  over  25 right ) right ] } 
 over
 { ln left ( { 1 - 0.25 } over { 1 + 0.08 } right ) }
 =~~
 -1.34400 over -0.36464 
 =~~
-3.69 " years"
+3.69 ~ years
 .EN
 
