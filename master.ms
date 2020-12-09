@@ -60,79 +60,79 @@
 .\" .
 .CHAPTER "Using The Investment Cost Equations"
 .so 17.ms \" Using the investment cost equations
-.\" .
-.\" .CHAPTER "Equivalent Annual Cost"
-.\" .so 18.ms \" Equivalent annual cost
-.\" .
-.\" .CHAPTER "Mutually Exclusive Projects"
-.\" .so 19.ms \" Mutually exclusive projects
-.\" .
-.\" .CHAPTER "Replacement Analysis"
-.\" .so 20.ms \" Replacement analysis
-.\" .
-.\" .CHAPTER "Revenue Cost & Profit"
-.\" .so 21.ms \" Revenue cost & profit
-.\" .
-.\" .CHAPTER "Economic Value & The Measurement of Financial Performance"
-.\" .so 22.ms \" Economic value and the measurement of financial performance
-.\" .
-.\" .CHAPTER "Return On Equity"
-.\" .so 23.ms \" Return on equity
-.\" .
+.
+.CHAPTER "Equivalent Annual Cost"
+.so 18.ms \" Equivalent annual cost
+.
+.CHAPTER "Mutually Exclusive Projects"
+.so 19.ms \" Mutually exclusive projects
+.
+.CHAPTER "Replacement Analysis"
+.so 20.ms \" Replacement analysis
+.
+.CHAPTER "Revenue Cost & Profit"
+.so 21.ms \" Revenue cost & profit
+.
+.CHAPTER "Economic Value & The Measurement of Financial Performance"
+.so 22.ms \" Economic value and the measurement of financial performance
+.
+.CHAPTER "Return On Equity"
+.so 23.ms \" Return on equity
+.
 .nr cn 0
-.\" .
+.
 .\" Appendix
 .APPENDIX "Impact of Writing Down Allowance (WDA) on Capital Costs"
 .so A1.ms \" Table - impact of WDA on costs
-.\" .
-.\" .APPENDIX "CCTF Flow Charts"
-.\" .so B0.ms \" Capital Cost Tax Factors (CCTF)
-.\" .
-.\" .APPENDIX_SUB "Investment Cost Equations - Time Period 1"
-.\" .so B1.ms \" Writing Down Allowance (WDA)
-.\" .bp
-.\" .so B2.ms \" Annual Investment Allowance (AIA)
-.\" .bp
-.\" .so B3.ms \" Single Asset Pool
-.\" .NOH!
-.\" .bp
-.\" .so B4.ms \" Sheet - Positive Investment Cost Equations
-.\" .
-.\" .APPENDIX_SUB "Investment Cost Equations - Time Period 2"
-.\" .so B6.ms \" Annual investment allowance (AIA)
-.\" .bp
-.\" .so B7.ms \" Writing Down allowance (AIA)
-.\" .bp
-.\" .so B8.ms \" Single Asset Pool
-.\" .
-.\" .APPENDIX "Engineering Economics Equations"
-.\" .so C1.ms \" Engineering economics equations
-.\" .
-.\" .APPENDIX "Self assessment Tax in Two Payments"
-.\" .so D1.ms \" Self assessment tax in two payments
-.\" .
-.\" .APPENDIX "Shareholder Value Added (SVA)"
-.\" .so E1.ms \" Shareholder value added (SVA)
-.\" .
-.\" .APPENDIX "Workings Hitch"
-.\" .so F1.ms \" Workings hitch
-.\" .
-.\" .APPENDIX "Loans"
-.\" .so G1.ms \" Loans
-.\" .
-.\" .APPENDIX "Inflation"
-.\" .so H1.ms \" Inflation
-.\" .
-.\" .APPENDIX "Cumulative Dry Matter"
-.\" .so I1.ms \" Cumulative dry matter
-.\" .
-.\" .APPENDIX "Repair & Maintenance"
-.\" .so J1.ms \" Repair and maintenance
-.\" .
-.\" .APPENDIX "References"
-.\" .so R1.ms \" References
-.\" .nr appendix 0
-.\" .\" .af .pn i
+.
+.APPENDIX "CCTF Flow Charts"
+.so B0.ms \" Capital Cost Tax Factors (CCTF)
+.
+.APPENDIX_SUB "Investment Cost Equations - Time Period 1"
+.so B1.ms \" Writing Down Allowance (WDA)
+.bp
+.so B2.ms \" Annual Investment Allowance (AIA)
+.bp
+.so B3.ms \" Single Asset Pool
+.NOH!
+.bp
+.so B4.ms \" Sheet - Positive Investment Cost Equations
+.
+.APPENDIX_SUB "Investment Cost Equations - Time Period 2"
+.so B6.ms \" Annual investment allowance (AIA)
+.bp
+.so B7.ms \" Writing Down allowance (AIA)
+.bp
+.so B8.ms \" Single Asset Pool
+.
+.APPENDIX "Engineering Economics Equations"
+.so C1.ms \" Engineering economics equations
+.
+.APPENDIX "Self assessment Tax in Two Payments"
+.so D1.ms \" Self assessment tax in two payments
+.
+.APPENDIX "Shareholder Value Added (SVA)"
+.so E1.ms \" Shareholder value added (SVA)
+.
+.APPENDIX "Workings Hitch"
+.so F1.ms \" Workings hitch
+.
+.APPENDIX "Loans"
+.so G1.ms \" Loans
+.
+.APPENDIX "Inflation"
+.so H1.ms \" Inflation
+.
+.APPENDIX "Cumulative Dry Matter"
+.so I1.ms \" Cumulative dry matter
+.
+.APPENDIX "Repair & Maintenance"
+.so J1.ms \" Repair and maintenance
+.
+.APPENDIX "References"
+.so R1.ms \" References
+.nr appendix 0
+.\" .af .pn i
 .
 .TC
 .\" .so Z1.ms \" Table of contents
