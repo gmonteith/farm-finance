@@ -38,7 +38,7 @@ SV: box "#space 0 salvage #" with .n at Y1.end
 PVS: box "#space 0 pvs2 #" width 1.8 height 0.8 with .n at SV1.end
 		arrow right 0.6 at PVS.e
 
-Q2: rhombus(0.5, 0.9) "Does the salvage value" "exceed the invesment?"
+Q2: rhombus(0.5, 0.9) "Does the salvage value" "exceed the investment?"
 		line up 0.1 at Q2.n
 		no
 		line up 1.35
@@ -220,7 +220,7 @@ lineup =~~
 .SH 2
 Salvage value
 .LP
-We will now look at a scenario where there is a salavag value. We are not going
+We will now look at a scenario where there is a salvage value. We are not going
 to move away from calculating the NPV and focus on the tax benefits associated
 with an investment by constructing a table, a graph and by examining the maths.
 .LP
@@ -232,7 +232,7 @@ The amount in the pool 2 years prior to the new investment was 30,000.
 .LP
 The only way to complete the table is to use the equations from the flow chart
 to establish the tax savings to infinity and then remove the tax savings lost
-due to the salavge value.
+due to the salvage value.
 .LP
 The table already has the tax savings for the first four years. However, we
 require the tax savings to infinity, and to calculate the remaining tax savings
@@ -358,7 +358,7 @@ Sdt over {  ( i + d ) ( 1 + i ) sup { n + 1 } }
 right ]
 .EN
 .KS
-We can now replace the denominator encompacsing the discounting with the
+We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub WDA2 right ] + ~~^} } 
@@ -464,7 +464,7 @@ The amount in the pool 2 years prior to the new investment was 30,000.
 .LP
 The only way to complete the table is to use the equations from the flow chart
 to establish the tax savings to infinity and then remove the tax savings lost
-due to the salavge value.
+due to the salvage value.
 .LP
 The table already has the tax savings for the first four years. However, we
 require the tax savings to infinity, and to calculate the remaining tax savings
@@ -605,7 +605,7 @@ Sdt over {  ( i + d ) ( 1 + i ) sup { n + 1 } }
 cgt2
 right ]
 .EN
-We can now replace the denominator encompacsing the discounting with the
+We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub WDA2 right ] + ~~^} } 
@@ -620,7 +620,7 @@ right ]
 times 
 (P/F, i%, n)
 .EN
-Replace the fraction in the last term with the eqivalent factor using negative
+Replace the fraction in the last term with the equivalent factor using negative
 exponents:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub WDA2 right ] + ~~^} } 

@@ -115,22 +115,22 @@ is equal to #50,000( 1 - d ) sup 0 #, therefore, the value in the pool is equal
 to # I ( 1 - d) sup { n -1 } #.
 .IP \(bu
 The single asset pool is designed with a finite life, as previously stated the
-#CCTF sub WDA# calculares tax savings to infitity, which means to establish the
+#CCTF sub WDA# calculates tax savings to infinity, which means to establish the
 tax savings at any moment in time, typically at the point the asset is disposed
 of, we have to add back the tax savings lost equal to the pool value at that
 time using the equation #pvucc#. 
 .IP \(bu
 The equation #pvucc# has been discounted at time period #n - 1# as we are
-removing the tax savings lost upto the year prior to the disposal of the asset.
+removing the tax savings lost up to the year prior to the disposal of the asset.
 .IP \(bu
 As the single asset pool is terminated on the disposal of the only asset in the
 pool it better matches the tax benefits associated with the capital investment
-with the lenght of ownership of the asset by the use of balancing allowance and
+with the length of ownership of the asset by the use of balancing allowance and
 balancing charges.
 .IP \(bu
 Balancing allowances are generated when the rate of decline in the pool is not
 as great as the actual decline in the asset. In essence the asset has lost
-value faster than manadated by the government and you have not claimed
+value faster than mandated by the government and you have not claimed
 sufficient tax benefits.
 .IP \(bu
 Balancing charges are generated when the rate of decline in the pool is greater
@@ -140,7 +140,7 @@ expected by the government and you have claimed to many tax benefits.
 The capital gains tax is calculated using the rate of tax used in the rest of
 the equations. The reasons for this have been discussed at the beginning of
 this appendix, the basic premise is that the capital gain will typically happen
-far enought in the future, when the rate of taxation is not know, to have a
+far enough in the future, when the rate of taxation is not know, to have a
 limited impact on the investment cost.
 .
 .SH
@@ -158,7 +158,7 @@ The rate of taxation is 20%.
 .IP \(bu
 The capital investment is 50,000
 .LP
-For ease of completing of mathemtacis we are going to calculated the UCC and
+For ease of completing of mathematics we are going to calculated the UCC and
 the # CCTF sub WDA # now and use the answers where required.
 .EQ I
 CCTF sub WDA lm cctf
@@ -205,12 +205,12 @@ Total#31,463#6,292
 .SH 2 
 No salvage value
 .LP
-In the fith year the asset is disposed of with no salvage value. As the asset
+In the fifth year the asset is disposed of with no salvage value. As the asset
 has been disposed off with no salvage value the asset has lost value faster
 than expected and entire value remaining in the pool is the balancing
 allowance. The tax benefits are shown below:
 .EQ I
-"Balancing allowance" lm "Clossing balance" times ( "tax rate" )
+"Balancing allowance" lm "Closing balance" times ( "tax rate" )
 .EN
 .sp -0.7v
 .EQ I
@@ -377,7 +377,7 @@ X
 ###############################################################################
 # Previous years
 ###############################################################################
-if W == 0 then {						# If W = 0 do nothing. Avoids initialization error.
+if W == 0 then {						# If W = 0 do nothing. Avoids initialisation error.
 } else {
 	for i from -W to 0 by +1 do
 	{
@@ -657,7 +657,7 @@ over { ( 1 + i ) sup n }
 +
 { t( UCC ) } over { ( 1 + i ) sup  n }
 .EN
-We can elimenate the negative sign at the beginning of the expression be
+We can eliminate the negative sign at the beginning of the expression be
 reordering the terms:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
@@ -682,7 +682,7 @@ t over { ( 1 + i ) sup  n }
 over { ( 1 + i ) sup n }
 right ]
 .EN
-We can also replace the denominator encompacsing the discounting with the
+We can also replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .
 .EQ I
@@ -913,7 +913,7 @@ X
 ###############################################################################
 # Previous years
 ###############################################################################
-if W == 0 then {						# If W = 0 do nothing. Avoids initialization error.
+if W == 0 then {						# If W = 0 do nothing. Avoids initialisation error.
 } else {
 	for i from -W to 0 by +1 do
 	{
@@ -1188,7 +1188,7 @@ over { ( 1 + i ) sup n }
 +
 salvage
 .EN
-We can again elimenate the negative sign at the beginning of the expression be
+We can again eliminate the negative sign at the beginning of the expression be
 reordering the terms:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
@@ -1449,7 +1449,7 @@ X
 ###############################################################################
 # Previous years
 ###############################################################################
-if W == 0 then {						# If W = 0 do nothing. Avoids initialization error.
+if W == 0 then {						# If W = 0 do nothing. Avoids initialisation error.
 } else {
 	for i from -W to 0 by +1 do
 	{
@@ -1778,7 +1778,7 @@ right )
 times
 ( P/F, %i, n )
 .EN
-Add a grouping symbol arround the terms including UCC:
+Add a grouping symbol around the terms including UCC:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 left ( 
@@ -2057,7 +2057,7 @@ X
 ###############################################################################
 # Previous years
 ###############################################################################
-if W == 0 then {						# If W = 0 do nothing. Avoids initialization error.
+if W == 0 then {						# If W = 0 do nothing. Avoids initialisation error.
 } else {
 	for i from -W to 0 by +1 do
 	{
@@ -2543,7 +2543,7 @@ triggering a capital gains charge. As previously stated we are going to use the
 rate of taxation through the rest of the equation to calculate the capital
 gains tax.
 .LP
-In this scenario the salvage value is 60,000 and the asset disposl occurs in
+In this scenario the salvage value is 60,000 and the asset disposal occurs in
 year 5.
 .EQ I
 "Balancing charge" lm ("Salvage - UCC") times ( "tax rate" )

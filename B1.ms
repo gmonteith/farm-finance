@@ -77,7 +77,7 @@ any remaining value associated with a given asset after disposal in the
 appropriate pool.
 .IP \(bu
 The continuous pool is designed with a infinite life, as previously stated the
-#CCTF sub AIA# calculares tax savings to infitity, which means to establish the
+#CCTF sub AIA# calculates tax savings to infinity, which means to establish the
 tax savings at any moment in time, typically at the point the asset is disposed
 of, we have to add back the tax savings lost equal to the salvage value at that
 time using the equation #pvs#. 
@@ -86,14 +86,14 @@ The flow chart assumes that the pool continues without ever becoming zero, and
 there is always sufficient funds in the pool to cover the salvage value of any
 asset without generating a balancing charge.
 .IP \(bu
-As it is presumed that there is always sufficent value in the pool to deduct
+As it is presumed that there is always sufficient value in the pool to deduct
 any salvage value a capital gains charge is always incurred without a balancing
 charge.
 .IP \(bu
 The capital gains tax is calculated using the rate of tax used in the rest of
 the equations. The reasons for this have been discussed at the beginning of
 this appendix, the basic premise is that the capital gain will typically happen
-far enought in the future, when the rate of taxation is not know, to have a
+far enough in the future, when the rate of taxation is not know, to have a
 limited impact on the investment cost.
 .
 .SH
@@ -193,7 +193,7 @@ from the use of a capital allowance and would therefore not be available
 without a capital investment.
 .KS
 .LP
-The graph below is a diagramatic representation of the pool when the AIA it
+The graph below is a diagrammatic representation of the pool when the AIA it
 utilised.
 .
 .G1
@@ -569,7 +569,7 @@ However when calculating the discounting starts at either time period one or
 time period two so the tax benefit does not occur at time period zero but at a
 later time.
 .
-The tax benefits accuring to an investment under AIA or the yearly allowance
+The tax benefits accruing to an investment under AIA or the yearly allowance
 are equal to:
 .EQ
 It\(dg
@@ -694,7 +694,7 @@ left [ cctfaia right ]
 .SH 2
 AIA - Salvage value
 .LP
-We will now look at a scenario where there is a salavag value. We are not going
+We will now look at a scenario where there is a salvage value. We are not going
 to move away from calculating the NPV and focus on the tax benefits associated
 with an investment by constructing a table, a graph and by examining the maths.
 .LP
@@ -1111,8 +1111,8 @@ if F == 1 && S != 0 then {
 has been utilised."
 The graph shows a number of important concepts:
 .IP \(bu
-The pool is constantly being written down by the governments perscribed
-writting down allowance currently set at 18%.
+The pool is constantly being written down by the governments prescribed
+writing down allowance currently set at 18%.
 .IP \(bu
 The new investment which utilises the AIA is shown in the pool, in blue, but
 does not affect the curve as 100% is written down as soon as the investment is
@@ -1159,14 +1159,14 @@ S over { ( 1 + i ) sup n }
 Sdt over {  ( i + d ) ( 1 + i )  } 
 .EN
 We are going to add an additional grouping symbol, so that we can consolidate
-the two terms. Before doing so we will state the rules surrounding parentheis
+the two terms. Before doing so we will state the rules surrounding parenthesis
 for clarity.
 .RS
 .IP "Rule 1:" 10
-When removeing parenthesis preceeded by a plus sign, do not change the sign of
+When removing parenthesis preceded by a plus sign, do not change the sign of
 the enclosed terms.
 .IP "Rule 2:" 10
-When removing parenthesis preceeded by a minus sign, drop the minus sign and
+When removing parenthesis preceded by a minus sign, drop the minus sign and
 parenthesis and change the sign of each enclosed term\(dg.
 .RE
 .FS
@@ -1175,16 +1175,16 @@ sign of operation representing addition and subtraction and the sign of quality
 informing us whether the number is positive or negative. It is customary when
 writing additions horizontally to to drop the sign of operation and use only
 the signs of quality, furthermore if the first number is + the sign maybe
-ommited. The removal of a grouping symbol is the removal of the sign of
+omitted. The removal of a grouping symbol is the removal of the sign of
 operation. In the expression # a - ( -b + c ) = a + b -c # the sign associated
-with #b# is explicit and in the expressiosn # a - ( b + c ) = a - b
-- c # the plus sign associated with #b# is implicit. The basic premis of Rule 1
+with #b# is explicit and in the expression # a - ( b + c ) = a - b
+- c # the plus sign associated with #b# is implicit. The basic premise of Rule 1
 and 2 with regards to the sign of operation and the first sign, implied or
 otherwise, is if the sign of operation and quality are the same then they can
 be consolidated into a + sign and if they are different a - sign.
 .FE
 As we do not wish to make changes to the terms inside the brackets we will
-preceed the expression with a + sign:
+precede the expression with a + sign:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 + left [ 
@@ -1193,7 +1193,7 @@ S over { ( 1 + i ) sup n }
 Sdt over {  ( i + d ) ( 1 + i )  } 
 right ]
 .EN
-We can now replace the denominator encompacsing the discounting with the
+We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
@@ -1296,8 +1296,8 @@ lineup =~~
 .SH 2 
 AIA - Salvage value with capital gains
 .LP
-There is no graph for this eventuallity as it is simply the same as the last
-graph. The logic is that the pool would be large enough to allow the subtaction
+There is no graph for this eventuality as it is simply the same as the last
+graph. The logic is that the pool would be large enough to allow the subtraction
 of the full salvage value and the capital gains is paid on the difference
 between the salvage value and the investment cost. I am not how often this
 eventuality would occur, however, my lack of imagination is no reason to not
@@ -1422,7 +1422,7 @@ Sdt over {  ( i + d ) ( 1 + i )  }
 cgt
 right ]
 .EN
-We can now replace the denominator encompacsing the discounting with the
+We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 

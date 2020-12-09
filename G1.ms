@@ -17,7 +17,7 @@
 .SH 1
 Loans
 .LP
-The Appendix looks at the amortization of different types of loans from Section
+The Appendix looks at the amortisation of different types of loans from Section
 3. The term amortisation refers to loans where each payment is made up of both
 principal and interest components.  
 .SH

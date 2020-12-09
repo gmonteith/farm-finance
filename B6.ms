@@ -38,7 +38,7 @@ SV: box "#space 0 salvage #" with .n at Y1.end
 PVS: box "#space 0 pvs2 #" width 1.8 height 0.8 with .n at SV1.end
 		arrow right 0.6 at PVS.e
 
-Q2: rhombus(0.5, 0.9) "Does the salvage value" "exceed the invesment?"
+Q2: rhombus(0.5, 0.9) "Does the salvage value" "exceed the investment?"
 		line up 0.1 at Q2.n
 		no
 		line up 1.35
@@ -174,7 +174,7 @@ lineup =~~
 .SH 2
 AIA - Salvage value
 .LP
-We will now look at a scenario where there is a salavag value. Please assume
+We will now look at a scenario where there is a salvage value. Please assume
 the following for this example: the capital investment is 25,000 and The
 salvage value is 10,000.
 .LP
@@ -272,7 +272,7 @@ S over { ( 1 + i ) sup n }
 Sdt over {  ( i + d ) ( 1 + i ) sup { n + 1 } } 
 right ]
 .EN
-We can now replace the denominator encompacsing the discounting with the
+We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
@@ -379,7 +379,7 @@ lineup =~~
 .SH 2 
 AIA - Salvage value with capital gains
 .LP
-The logic is that the pool would be large enough to allow the subtaction of the
+The logic is that the pool would be large enough to allow the subtraction of the
 full salvage value and the capital gains is paid on the difference between the
 salvage value and the investment cost. I am not how often this eventuality
 would occur, however, my lack of imagination is no reason to not provide the
@@ -504,7 +504,7 @@ Sdt over {  ( i + d ) ( 1 + i )  sup { n + 1 } }
 cgt2	
 right ]
 .EN
-We can now replace the denominator encompacsing the discounting with the
+We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 

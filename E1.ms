@@ -29,7 +29,7 @@ by discounting its forecasted cash flows by the cost of capital.
 .SH 2
 Shareholder Value Added (SVA)
 .LP
-The total economic value of an entitiy such as a company or business unit is
+The total economic value of an entity such as a company or business unit is
 the sum of the values of its debt and equity. This value of the business is
 called "corporate value" and the value of the equity portion is called
 "shareholder value (SV)". The increase or decreases in shareholder value over
@@ -41,24 +41,24 @@ Rearranging the equation:
 .EQ I
 "Shareholder value" = "Corporate value" - Debt
 .EN
-In order to determine the shareholder value the corportate value must first be
-established. The corporate value consits of three components:
+In order to determine the shareholder value the corporate value must first be
+established. The corporate value consists of three components:
 .IP 1.
-The present value of cash flows from oprerations during the forecast period.
+The present value of cash flows from operations during the forecast period.
 .IP 2.
 "Residual value" which represents the present value of the business
 attributable to the period beyond the forecast period.
 .IP 3.
-The current value of marketable securityes and other investments that can be
+The current value of marketable securities and other investments that can be
 converted to cash and are not essential to the operating of the business.
 .LP
 The debt portion of corporate value includes the market value of debt, unfunded
-pension liablilites, and the market value of other claims such as preferred
+pension liabilities, and the market value of other claims such as preferred
 stock.
 .LP
 Corporate value can now be stated as:
 .EQ I
-"Coporate value" lm
+"Corporate value" lm
 "Present value of cash flow from operations during forecast period"
 .EN
 .sp -0.7v
@@ -69,7 +69,7 @@ lineup { hphantom{=~}} +~
 .sp -0.7v
 .EQ I
 lineup { hphantom{=~}} +~
-"Marketable securiteis"
+"Marketable securities"
 .EN
 .
 .SH 2
@@ -77,7 +77,7 @@ Cash flow from operations.
 .LP
 Cash flow from operations represents the difference between operating cash
 inflows and outflows. These cash flows represent the cash available to
-compensate debtholders and shareholders.	
+compensate debt holders and shareholders.	
 .EQ I
 "Cash flow" lm "Cash inflow" - "cash outflow"
 .EN
@@ -146,7 +146,7 @@ the calculation.
 .sp 0.5v
 .IP "Operating profit margin" 5
 This is the pre-interest, pretax operating profit to sales. This is usually
-going to be the EBIT margin. When the word "profit" is encoutered is worth
+going to be the EBIT margin. When the word "profit" is encountered is worth
 bearing in mind that it will typically mean that the figure has been adjusted
 by the whims of accountants and will include non-cash charges such as
 depreciation. Thus to arrive at the operating profit not only are the cost of
@@ -156,10 +156,10 @@ depreciation expense.
 This is defined as capital expenditure in excess of the depreciation expense.
 .EQ I
 "Incremental fixed capital investment" =~~
-"capital expenditures - depreciation expenese"
+"capital expenditures - depreciation expense"
 .EN
 If the depreciation was added back to operating profit ( to convert it into a
-cash flow figure ) and the same deprecaion expense was added back to the
+cash flow figure ) and the same deprecation expense was added back to the
 incremental fixed capital investment figure ( to convert it to total capital
 expenditures), the cash flow from operations figure would be identical.
 .TS
@@ -198,7 +198,7 @@ lineup =~~
 70
 .EN
 If you are looking at your own organisation you will probably have estimates of
-capital expenditure estimates which can be used in estmating the investment.
+capital expenditure estimates which can be used in estimating the investment.
 .sp 0.5v
 If you are looking at a competitor then you will likely only have historical
 information. In such situations it is generally advantageous to forecast
@@ -214,22 +214,22 @@ lineup =~~
 times 100
 .EN
 To estimate the average of recent values, take the sum of all capital
-expenditures less depreciation over the preceeding five or ten years and divide
+expenditures less depreciation over the preceding five or ten years and divide
 this amount by the sales increase in the same period.
 .sp 0.5v
 If a business continues to replace existing facilities, in kind, and if the
-prices of these facilites remain constant, then the numerator approximates the
-cost of real growth in productive capcity.
+prices of these facilities remain constant, then the numerator approximates the
+cost of real growth in productive capacity.
 .sp 0.5v
 However, capital expenditures usually rise each year owing to inflationary
 forces and regulatory requirements such as environmental controls. These cost
 increases may be partially offset by advances in technology. Thus the numerator
 reflects not only the cost of real growth but price changes in facilities as
-well as the impact of product mix changes, regulation and technoligical
+well as the impact of product mix changes, regulation and technological
 improvements. Whether the historical value of this variable is a reasonable
-basid ofr the forecast period depends significantrly on how quickly and to what
+basis for the forecast period depends significantly on how quickly and to what
 extent the company will be able to offset increased fixed capital costs with
-higher selling prices or more efficeint use of the facitliteies.
+higher selling prices or more efficient use of the facilities.
 .
 .IP "Incremental working capital investment" 5
 This represents the net investment in accounts receivable, accounts payable,
@@ -242,7 +242,7 @@ times 100
 .EN
 .IP "Cash income tax rate" 5
 This represents the taxes on operating profit for a fiscal year, that are
-either paid via installments during the year or are a liability (income taxes
+either paid via instalments during the year or are a liability (income taxes
 payable ) at the end of the year. The cash income taxes are ordinarily less
 than the reported book income taxes that often include a deferred tax
 component.
@@ -262,7 +262,7 @@ Section 9.
 .sp 0.5v
 The residual value often constitutes the largest portion of the value of the
 firm. For the majority of businesses only a small proportion of value can be
-reassonalby attributed to the cashflow in the next 5 or ten years.
+reasonably attributed to the cash flow in the next 5 or ten years.
 .sp 0.5v
 If the expectation is to reduce investment in fixed capital and working capital
 as a product or business comes to the end of its life the best estimate of the
@@ -270,18 +270,18 @@ residual value will be the liquidation value.
 .sp 0.5v
 Value creating strategies are those that produce excess returns over the cost
 of capital. It is of course easier to talk about earning excess returns than it
-is to achive such a result. Most companies operate in a highly competitive,
+is to achieve such a result. Most companies operate in a highly competitive,
 commodity-type industry and newer industries that initially enjoy excess
-returns often attract capital which leasds to excess capacity, price
+returns often attract capital which leads to excess capacity, price
 competition and finally lower returns for all participants in the industry.
 .sp 0.5v
-The perpetuity method of estimatiing the residual value is based on this
+The perpetuity method of estimating the residual value is based on this
 assumption that a company that is able to generate returns above the cost of
-capital will eventually attract competitiors who will drive down returns to the
-minimum acceptable rate or the cost of capital. Specifiically the perpetuity
+capital will eventually attract competitors who will drive down returns to the
+minimum acceptable rate or the cost of capital. Specifically the perpetuity
 method assumes that after the value growth duration of the forecast period the
 business will earn, on average, the cost of capital on new investments. Another
-way of expresssing this idea is to say that, after the forecast period, the new
+way of expressing this idea is to say that, after the forecast period, the new
 investments made by the business will, on average, have a net present value of
 zero. This means that once the return has been driven down to the cost of
 capital future cash flows do not alter the value of the business.
@@ -301,7 +301,7 @@ over
 "cost of capital"
 .EN
 The present value of the residual, at the end of the forecast, period is the
-NOPAT occuring in the year the forecast ends.
+NOPAT occurring in the year the forecast ends.
 .EQ I
 "PV of residual at forecast end " =~~
 NOPAT sub { year n }
@@ -309,13 +309,13 @@ over
 "cost of capital"
 .EN
 The residual value is the cash inflow before any investment. Since investment
-beyong the forecast period will not increase the firm value when calculating
+beyond the forecast period will not increase the firm value when calculating
 the residual value you need only allow for the investment required to
-maintenane the existing assets. The NOPAT figure used to calculate the residual
-contains the depreciation and therefore the perpetuity methode assumes that the
+maintenance the existing assets. The NOPAT figure used to calculate the residual
+contains the depreciation and therefore the perpetuity method assumes that the
 cost of maintaining the existing capacity is equal to this expense. If the
-operating profit before depreciation is unusally low or high it may lead to
-misleasding results. This is particularyly true of cyclical industries that
+operating profit before depreciation is unusually low or high it may lead to
+misleading results. This is particularly true of cyclical industries that
 move from boom to bust. To compensate for the volatility of any industry it is
 prudent to "normalise" the earnings over a number of years.
 
@@ -434,7 +434,7 @@ The shareholder value can now be calculated by removing any debt.
 .EN
 .KS
 .IP "Year 1" 5
-We will now calculate year 1 using idividual equations:
+We will now calculate year 1 using individual equations:
 .EQ I
 "Cash inflow" sub { year 1 } =~~
 s left ( 1 + g right ) sup n  M left ( 1 - t right )
@@ -571,7 +571,7 @@ r r s s s n c .
 #Marketable securities and investments#3.00#
 #####_##
 #Corporate value#61.89#
-#Market vlaue of debt#(10.00)#
+#Market value of debt#(10.00)#
 .T&
 c c c c c c c
 r r s s s n c .
@@ -585,7 +585,7 @@ _
 .TE
 The SVA is found by establishing the "cumulative PV of cash flows plus the PV
 of the residual value" in each year. To establish the SVA in year 1 the
-cummulative PV from year 0 would be subtracted, the differevnce between the two
+cumulative PV from year 0 would be subtracted, the difference between the two
 values is the SVA in year 1. In this instance to calculate the SVA in year 1:
 #53.37 - 52.00 = 1.37#
 The total SVA can be computed in a number of ways:
@@ -601,10 +601,10 @@ shareholder value at the end of the forecast period, which is year 5, and is
 therefore #51.89 - 45.00 = 6.89#
 .IP \(bu
 It is the difference between the residual value at year zero and the sum of the
-cumulative PV of the cashflows and the residual value at the end of the
+cumulative PV of the cash flows and the residual value at the end of the
 forecast period, and it therefore #58.69 - 52.00 = 6.89#
 .LP
-The toal SVA can also be calculated by making use of geometric gradient present
+The total SVA can also be calculated by making use of geometric gradient present
 worth equation from Section 11.7. The present value of total cash inflows over
 the forecast period can be represented by the series below:
 .EQ I
@@ -656,7 +656,7 @@ right ]
 If you refer back to section 6.1 for growing ordinary annuities you will see
 that the series above differs in that the growth starts at time period 1. To
 allow for this we can add an extra growth period #( 1 + g )# outside the
-bracket. Using the engineneering economics equation from Section 11.7 we can
+bracket. Using the engineering economics equation from Section 11.7 we can
 now write the series as:
 .EQ I
 "PV of total cash inflows during forecast period"
@@ -732,7 +732,7 @@ over
 right ]
 .EN
 If you refer back to section 6.1 for growing ordinary annuities you will see
-that the series above is the same. Using the engineneering economics equation
+that the series above is the same. Using the engineering economics equation
 from Section 11.7 we can now write the series as:
 .EQ I
 "PV of total cash out flows in forecast period"
@@ -784,7 +784,7 @@ lineup =~~
 The value 5.697 can be found in the table as the "cumulative present value of
 cash flows" in year 5.
 .LP
-If you did not wish to see the cash inflows and cash outflows seperately you
+If you did not wish to see the cash inflows and cash outflows separately you
 can consolidate the two equations.
 .EQ I
 "Cumulative PV of cash flows"
@@ -842,7 +842,7 @@ over
 .RE
 .
 .EQ I
-"Coporate value" sub { year 5 }
+"Corporate value" sub { year 5 }
 .EN
 .RS
 .sp -0.7v
@@ -853,7 +853,7 @@ lm
 .sp -0.7v
 .EQ I
 lineup { hphantom{=~}} +~
-"residual value" +  "marketable securiteis"
+"residual value" +  "marketable securities"
 .EN
 .EQ I
 lineup =~~
@@ -1014,7 +1014,7 @@ over
 .RE
 .
 .EQ I
-"Coporate value" sub { year 5 }
+"Corporate value" sub { year 5 }
 .EN
 .RS
 .sp -0.7v
@@ -1027,7 +1027,7 @@ lm
 lineup { hphantom{=~}} +~
 "Residual value"
 +
-"Marketable securiteis"
+"Marketable securities"
 .EN
 .sp -0.7v
 .EQ I
@@ -1100,7 +1100,7 @@ r r s s s n c .
 #Marketable securities and investments#3.00#
 #####_##
 #Corporate value#42.00#
-#Market vlaue of debt#(10.00)#
+#Market value of debt#(10.00)#
 .T&
 c c c c c c c
 r r s s s n c .
@@ -1115,8 +1115,8 @@ _
 The 6% operating profit margin is the "threshold margin" of the business. The
 threshold margin represents the minimum operating profit margin a business
 needs to attain, in any period, in order to maintain shareholder value in the
-same period. Threshold margin is a "value orientated break-even", it represnets
-the opertating profit margin at which the business will earn exactly its cost
+same period. Threshold margin is a "value orientated break-even", it represents
+the operating profit margin at which the business will earn exactly its cost
 of capital. The threshold margin concept can be expressed in two ways:
 .IP 1.
 The margin required on incremental sales - incremental threshold margin, which
@@ -1154,7 +1154,7 @@ We will now explain the terms of the equation:
 .rt
 .in 0.9i
 .ll 6i
-The first term on the left-hand side of the equation represnets the present
+The first term on the left-hand side of the equation represents the present
 value of the firms incremental cash inflows, which are assumed to begin at the
 end of the first period and continue into perpetuity.
 .nf
@@ -1169,8 +1169,8 @@ end of the first period and continue into perpetuity.
 .fi
 .in 0.9i
 .ll 6i
-The second term on the right-hand side of the equation represnets the present
-value of the investment necessay to generate the incremental cash flows. The
+The second term on the right-hand side of the equation represents the present
+value of the investment necessary to generate the incremental cash flows. The
 investment is also assumed to take place at the end of the period. 
 .LP
 The incremental threshold margin "#m sub it#" is the operating profit margin
@@ -1179,7 +1179,7 @@ present value of cash outflows.
 .LP
 The incremental threshold margin can be found by setting the cash inflows as
 represented by # { sgM(1 - t) } over i # equal to the cash outflows as
-represneted by # { sg( f + w ) } over { ( 1 + i ) } # and resolving for "#M#"
+represented by # { sg( f + w ) } over { ( 1 + i ) } # and resolving for "#M#"
 which is the breakeven or "#m sub it#".
 .EQ I
 { sgM(1 - t) }
@@ -1189,7 +1189,7 @@ over i
 over 
 { ( 1 + i ) }
 .EN
-When the question has been rearragned for "#m sub it#" it can be written as:
+When the question has been rearranged for "#m sub it#" it can be written as:
 .EQ I
 m sub it ~=~~
 { { sg( f + w ) }
@@ -1262,7 +1262,7 @@ calculated as follows:
 "(Incremental threshold margin)"
 "(Incremental sales)" }
 over
-{ "Prior period sales" + "incremenatl sales" } 
+{ "Prior period sales" + "incremental sales" } 
 .EN
 Using the same example:
 .EQ I
@@ -1281,9 +1281,9 @@ before they can expect to create value.
 It is important to comprehend that \fBwhen a business is operating at the the
 threshold margin sales growth does not create value\fP. If we return to the
 last table the increased sales growth will result an increased negative cash
-flow offset by a rising ridual value, the net result will always be zero SVA.
+flow offset by a rising residual value, the net result will always be zero SVA.
 .LP
-The SVA is determinded by the product of three fractors:
+The SVA is determined by the product of three factors:
 .IP 1.
 Sales growth
 .IP 2.
@@ -1307,7 +1307,7 @@ over
 { ( 1 + i ) }
 .EN
 The above equation represents the change from year 0 to year 1. The change in
-year 2 can be repsented by the equation below:
+year 2 can be represented by the equation below:
 .EQ I
 \[*D]^ SV sub { year 2 } lineup =~~
 { sg(1 + g)M(1 - t) }
@@ -1349,7 +1349,7 @@ left [  sgi(1 + g ) sup { n - 1 }( f + w ) right ]
 over 
 { i( 1 + i ) sup n }
 .EN
-Finaly the equation can be factored:
+Finally the equation can be factored:
 .EQ I
 SVA sub { year n } lineup =~~
 {
@@ -1375,7 +1375,7 @@ over { i ( 1 + i ) sup { n - 1 } }
 over 
 { ( 1 + i ) sup n }
 .EN
-We have previosuly established that the left side of the equation is the
+We have previously established that the left side of the equation is the
 present value of the incremental cash inflows and the right side of the
 equation the investment required to generate the cash inflows.
 .LP
@@ -1383,12 +1383,12 @@ We have also established that if we set the two terms equal to each other we
 can establish the incremental threshold margin, which is the breakeven point
 given the cost of capital and fixed and working capital investment rates.
 .LP
-This means at rates upto the incremental threshold margin no value is created
+This means at rates up to the incremental threshold margin no value is created
 because the right side of the equation is larger than the left. At the
 incremental threshold margin the left side and the right side of the equation
 are equal. At rates above the incremental threshold margin the cost of capital
-has been covered and exess cash flow starts to contribute towards the SVA.
-Section 14.6 might help to clarrify this point if the logic is not clear.
+has been covered and excess cash flow starts to contribute towards the SVA.
+Section 14.6 might help to clarify this point if the logic is not clear.
 .LP
 If we subtract the incremental threshold margin "#m sub it#" from the operating
 margin "#M#" we will be operating at a rate above the cost of the capital and
@@ -1399,7 +1399,7 @@ SVA sub { year n } ~=~~
 over { i ( 1 + i ) sup { n - 1 } }
 .EN
 .KS
-If you prefer the eqaution can be stated in words:
+If you prefer the equation can be stated in words:
 .EQ I
 SVA =~~
 { ("incremental sales in period n")
@@ -1519,13 +1519,13 @@ _
 Sales#100.00#110.50#122.10#134.92#149.09#164.74
 Incremental Sales##10.50#11.60#12.82#14.17#15.65
 Income Tax Rate%##0.35#0.35#0.35#0.35#0.35
-Icremental Threshold Spread%##0.02#0.02#0.02#0.02#0.02
+Incremental Threshold Spread%##0.02#0.02#0.02#0.02#0.02
 _
 SVA##1.37#1.37#1.38#1.38#1.39#6.89
 _
 .TE
 It is of course possible to calculate the total SVA over the forecast period
-using our knowldege of series. The SVA over the forecast period can be
+using our knowledge of series. The SVA over the forecast period can be
 represented by the following series:
 .EQ I
 { sg(M - m sub it )(1 - t) }
@@ -1681,8 +1681,8 @@ box invis "CORPORATE OBJECTIVE" ljust  wid 0.1
 .PE
 It must be empahsised that the SVA approach or for that matter any other
 discounted cash flow approach is far from a panacea. It is more a disciplined
-approach for evaluating organizational activity than a financial numbers
-exercies. The shareholder value approach is only as good as the strategic
+approach for evaluating organisational activity than a financial numbers
+exercise. The shareholder value approach is only as good as the strategic
 thinking behind it. Finally, choosing the strategy with the greatest value
 creation potential is no guarantee that the strategy will be effectively and
 efficiently implemented.

@@ -38,7 +38,7 @@ SV: box "#space 0 salvage #" with .n at Y1.end
 PVS: box "#space 0 pvs #" width 1.8 height 0.8 with .n at SV1.end
 		arrow right 0.6 at PVS.e
 
-Q2: rhombus(0.5, 0.9) "Does the salvage value" "exceed the invesment?"
+Q2: rhombus(0.5, 0.9) "Does the salvage value" "exceed the investment?"
 		line up 0.1 at Q2.n
 		no
 		line up 1.35
@@ -70,7 +70,7 @@ any remaining value associated with a given asset after disposal in the
 appropriate pool.
 .IP \(bu
 The continuous pool is designed with a infinite life, as previously stated the
-#CCTF sub AIA# calculares tax savings to infitity, which means to establish the
+#CCTF sub AIA# calculates tax savings to infinity, which means to establish the
 tax savings at any moment in time, typically at the point the asset is disposed
 of, we have to add back the tax savings lost equal to the salvage value at that
 time using the equation #pvs#. 
@@ -79,14 +79,14 @@ The flow chart assumes that the pool continues without ever becoming zero, and
 there is always sufficient funds in the pool to cover the salvage value of any
 asset without generating a balancing charge.
 .IP \(bu
-As it is presumed that there is always sufficent value in the pool to deduct
+As it is presumed that there is always sufficient value in the pool to deduct
 any salvage value a capital gains charge is always incurred without a balancing
 charge.
 .IP \(bu
 The capital gains tax is calculated using the rate of tax used in the rest of
 the equations. The reasons for this have been discussed at the beginning of
 this appendix, the basic premise is that the capital gain will typically happen
-far enought in the future, when the rate of taxation is not know, to have a
+far enough in the future, when the rate of taxation is not know, to have a
 limited impact on the investment cost.
 .
 .SH
@@ -150,8 +150,8 @@ premise of the CCTF is that the tax savings are calculated to infinity and
 subtracted from the investment to leave the investment cost.
 .LP
 As there is no salvage value in the year of disposal which is year 5 in this
-instance, the tax benefits are those that would normally accurue on the
-writting down allowance of 18%.
+instance, the tax benefits are those that would normally accrue on the
+writing down allowance of 18%.
 .EQ
 "Tax savings" lm "Pool before allowance" times dt
 .EN
@@ -323,7 +323,7 @@ X
 ###############################################################################
 # Previous years
 ###############################################################################
-if W == 0 then {						# If W = 0 do nothing. Avoids initialization error.
+if W == 0 then {						# If W = 0 do nothing. Avoids initialisation error.
 } else {
 	for i from -W to 0 by +1 do
 	{
@@ -722,7 +722,7 @@ savings but also attaches them to the asset from which they originated.
 .SH 2
 Salvage value
 .LP
-We will now look at a scenario where there is a salavag value. We are not going
+We will now look at a scenario where there is a salvage value. We are not going
 to move away from calculating the NPV and focus on the tax benefits associated
 with an investment by constructing a table, a graph and by examining the maths.
 .LP
@@ -734,7 +734,7 @@ The amount in the pool 2 years prior to the new investment was 30,000.
 .LP
 The only way to complete the table is to use the equations from the flow chart
 to establish the tax savings to infinity and then remove the tax savings lost
-due to the salavge value.
+due to the salvage value.
 .LP
 The table already has the tax savings for the first four years. However, we
 require the tax savings to infinity, and to calculate the remaining tax savings
@@ -937,7 +937,7 @@ X
 ###############################################################################
 # Previous years
 ###############################################################################
-if W == 0 then {						# If W = 0 do nothing. Avoids initialization error.
+if W == 0 then {						# If W = 0 do nothing. Avoids initialisation error.
 } else {
 	for i from -W to 0 by +1 do
 	{
@@ -1170,8 +1170,8 @@ if F == 1 && S != 0 then {
 has been utilised."
 The graph shows a number of important concepts:
 .IP \(bu
-The pool is constantly being written down by the governments perscribed
-writting down allowance currently set at 18%.
+The pool is constantly being written down by the governments prescribed
+writing down allowance currently set at 18%.
 .IP \(bu
 The disposal of the asset in this instance for 13,000 must be deducted from the
 pool. This deduction causes tax savings to be lost which are equal to the
@@ -1225,7 +1225,7 @@ Sdt over {  ( i + d ) ( 1 + i )  }
 right ]
 .EN
 .KS
-We can now replace the denominator encompacsing the discounting with the
+We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub WDA right ] + ~~^} } 
@@ -1331,7 +1331,7 @@ The amount in the pool 2 years prior to the new investment was 30,000.
 .LP
 The only way to complete the table is to use the equations from the flow chart
 to establish the tax savings to infinity and then remove the tax savings lost
-due to the salavge value.
+due to the salvage value.
 .LP
 The table already has the tax savings for the first four years. However, we
 require the tax savings to infinity, and to calculate the remaining tax savings
@@ -1476,7 +1476,7 @@ Sdt over {  ( i + d ) ( 1 + i )  }
 cgt
 right ]
 .EN
-We can now replace the denominator encompacsing the discounting with the
+We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .EQ L
 lineup {hphantom { -I left [ CCTF sub WDA right ] + ~~^} } 

@@ -9,130 +9,130 @@
 .
 .HEADER "Introduction"
 .so 00.ms \" Introduction
-.
-.CHAPTER "Time value of money"
+
+.CHAPTER "Time Value of Money"
 .so 01.ms \" Time value of money
 .
 .CHAPTER "Equivalence"
 .so 02.ms \" Equivalence
 .
-.CHAPTER "Ordinary annuities"
-.so 03.ms \" Ordinary annuities
+.CHAPTER "Ordinary Annuities"
+.so 03.ms \" Ordinary Annuities
 .
-.CHAPTER "Annuities due"
-.so 04.ms \" Annuities due
+.CHAPTER "Annuities Due"
+.so 04.ms \" Annuities Due
 .
-.CHAPTER "Growing ordinary annuities"
-.so 05.ms \" Growing ordinary annuities
+.CHAPTER "Growing Ordinary Annuities"
+.so 05.ms \" Growing Ordinary Annuities
 .
-.CHAPTER "Growing annuities due"
-.so 06.ms \" Growing annuities due
+.CHAPTER "Growing Annuities Due"
+.so 06.ms \" Growing Annuities Due
 .
-.CHAPTER "Declining annuities"
-.so 07.ms \" Declining annuities
+.CHAPTER "Declining Annuities"
+.so 07.ms \" Declining Annuities
 .
 .CHAPTER "Perpetuities"
 .so 08.ms \" Perpetuities
 .
-.CHAPTER "Growing perpetuities"
-.so 09.ms \" Growing perpetuities
+.CHAPTER "Growing Perpetuities"
+.so 09.ms \" Growing Perpetuities
 .
-.CHAPTER "Engineering economics"
+.CHAPTER "Engineering Economics"
 .so 10.ms \" Engineering economics
 .
-.CHAPTER "Nominal & effective rates"
+.CHAPTER "Nominal & Effective Rates"
 .so 11.ms \" Nominal & effective rates
-.
-.CHAPTER "Costing your capital"
+
+.CHAPTER "Costing Your Capital"
 .so 12.ms \" Costing your capital
 .
-.CHAPTER "Investment analysis"
+.CHAPTER "Investment Analysis"
 .so 13.ms \" Investment analysis
 .
-.CHAPTER "Strucutre of UK tax"
-.so 14.ms \" Strucure of UK tax
+.CHAPTER "Structure of UK Tax"
+.so 14.ms \" Structure of UK tax
 .
-.CHAPTER "Understanding the impact of tax"
+.CHAPTER "Understanding the Impact of Tax"
 .so 15.ms \" Understanding the impact of tax
 .
-.CHAPTER "Investment cost equations"
+.CHAPTER "Investment Cost Equations"
 .so 16.ms \" Investment cost equations
-.
-.CHAPTER "Using the investment cost equations"
+.\" .
+.CHAPTER "Using The Investment Cost Equations"
 .so 17.ms \" Using the investment cost equations
-.
-.CHAPTER "Equivalent annual cost"
-.so 18.ms \" Equivalent annual cost
-.
-.CHAPTER "Mutually exclusive projects"
-.so 19.ms \" Mutually exclusive projects
-.
-.CHAPTER "Replacement analysis"
-.so 20.ms \" Replacement analysis
-.
-.CHAPTER "Revenue cost & profit"
-.so 21.ms \" Revenue cost & profit
-.
-.CHAPTER "Economic value and the measurement of financial performance"
-.so 22.ms \" Economic value and the measurement of financial performance
-.
-.CHAPTER "Return on equity"
-.so 23.ms \" Return on equity
-.
+.\" .
+.\" .CHAPTER "Equivalent Annual Cost"
+.\" .so 18.ms \" Equivalent annual cost
+.\" .
+.\" .CHAPTER "Mutually Exclusive Projects"
+.\" .so 19.ms \" Mutually exclusive projects
+.\" .
+.\" .CHAPTER "Replacement Analysis"
+.\" .so 20.ms \" Replacement analysis
+.\" .
+.\" .CHAPTER "Revenue Cost & Profit"
+.\" .so 21.ms \" Revenue cost & profit
+.\" .
+.\" .CHAPTER "Economic Value & The Measurement of Financial Performance"
+.\" .so 22.ms \" Economic value and the measurement of financial performance
+.\" .
+.\" .CHAPTER "Return On Equity"
+.\" .so 23.ms \" Return on equity
+.\" .
 .nr cn 0
-.
+.\" .
 .\" Appendix
-.APPENDIX "Impact of writing down allowance (wda) on capital costs"
+.APPENDIX "Impact of Writing Down Allowance (WDA) on Capital Costs"
 .so A1.ms \" Table - impact of WDA on costs
-.
-.APPENDIX "CCTF flow charts"
-.so B0.ms \" Capital Cost Tax Factors (CCTF)
-.
-.APPENDIX_SUB "Investment cost equations - time period 1"
-.so B1.ms \" Annual investment allowance (AIA)
-.bp
-.so B2.ms \" Writing Down allowance (AIA)
-.bp
-.so B3.ms \" Single Asset Pool
-.NOH!
-.bp
-.so B4.ms \" Sheet - Positive investment cost equations
-.
-.APPENDIX_SUB "Investment cost equations - time period 2"
-.so B6.ms \" Annual investment allowance (AIA)
-.bp
-.so B7.ms \" Writing Down allowance (AIA)
-.bp
-.so B8.ms \" Single Asset Pool
-.
-.APPENDIX "Engineering economics equations"
-.so C1.ms \" Engineering economics equations
-.
-.APPENDIX "Self assessment tax in two payments"
-.so D1.ms \" Self assessment tax in two payments
-.
-.APPENDIX "SHAREHOLDER VALUE ADDED (SVA)"
-.so E1.ms \" Shareholder value added (SVA)
-.
-.APPENDIX "WORKINGS HITCH"
-.so F1.ms \" Workings hitch
-.
-.APPENDIX "LOANS"
-.so G1.ms \" Loans
-.
-.APPENDIX "INFLATION"
-.so H1.ms \" Inflation
-.
-.APPENDIX "CUMULATIVE DRY MATTER"
-.so I1.ms \" Cumulative dry matter
-.
-.APPENDIX "REPAIR & MAINTENANCE"
-.so J1.ms \" Repair and maintenance
-.
-.APPENDIX "REFERENCES"
-.so R1.ms \" References
-.nr appendix 0
-.\" .af .pn i
+.\" .
+.\" .APPENDIX "CCTF Flow Charts"
+.\" .so B0.ms \" Capital Cost Tax Factors (CCTF)
+.\" .
+.\" .APPENDIX_SUB "Investment Cost Equations - Time Period 1"
+.\" .so B1.ms \" Writing Down Allowance (WDA)
+.\" .bp
+.\" .so B2.ms \" Annual Investment Allowance (AIA)
+.\" .bp
+.\" .so B3.ms \" Single Asset Pool
+.\" .NOH!
+.\" .bp
+.\" .so B4.ms \" Sheet - Positive Investment Cost Equations
+.\" .
+.\" .APPENDIX_SUB "Investment Cost Equations - Time Period 2"
+.\" .so B6.ms \" Annual investment allowance (AIA)
+.\" .bp
+.\" .so B7.ms \" Writing Down allowance (AIA)
+.\" .bp
+.\" .so B8.ms \" Single Asset Pool
+.\" .
+.\" .APPENDIX "Engineering Economics Equations"
+.\" .so C1.ms \" Engineering economics equations
+.\" .
+.\" .APPENDIX "Self assessment Tax in Two Payments"
+.\" .so D1.ms \" Self assessment tax in two payments
+.\" .
+.\" .APPENDIX "Shareholder Value Added (SVA)"
+.\" .so E1.ms \" Shareholder value added (SVA)
+.\" .
+.\" .APPENDIX "Workings Hitch"
+.\" .so F1.ms \" Workings hitch
+.\" .
+.\" .APPENDIX "Loans"
+.\" .so G1.ms \" Loans
+.\" .
+.\" .APPENDIX "Inflation"
+.\" .so H1.ms \" Inflation
+.\" .
+.\" .APPENDIX "Cumulative Dry Matter"
+.\" .so I1.ms \" Cumulative dry matter
+.\" .
+.\" .APPENDIX "Repair & Maintenance"
+.\" .so J1.ms \" Repair and maintenance
+.\" .
+.\" .APPENDIX "References"
+.\" .so R1.ms \" References
+.\" .nr appendix 0
+.\" .\" .af .pn i
 .
 .TC
 .\" .so Z1.ms \" Table of contents

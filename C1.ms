@@ -1,6 +1,6 @@
 .
 .\" .XS
-.\" APPENDIX C - Engineering Econonomics Equations
+.\" APPENDIX C - Engineering Economics Equations
 .\" .XE
 .\" .
 .\" .ce 100
@@ -88,7 +88,7 @@ dggpw(lineup =~~)
 .EN
 .LP
 .ta 6.0iR
-Capitalized Cost Formula - (P/A, i%)	Section 11.11
+Capitalised Cost Formula - (P/A, i%)	Section 11.11
 .EQ
 ccf(lineup =~~)
 .EN

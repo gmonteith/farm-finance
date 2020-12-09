@@ -59,7 +59,7 @@ within the [] brackets.
 The net present value is then converted, into an annuity, the equivalent annual
 cost using the Capital Recovery factor. 
 .LP
-Remember in this calculation that the costs are shown as a postivce value,
+Remember in this calculation that the costs are shown as a positive value,
 therefore the salvage value is negative.
 .RE
 .sp
@@ -206,7 +206,7 @@ lineup =~~
 597\(dg
 .EN
 .FS
-\(dg This calculation is unessecary as it yields the same value as year 5 for
+\(dg This calculation is unnecessary as it yields the same value as year 5 for
 brand A. Any multiple of 5 years will yield the same result, therefore, years
 5, 10 and 15 share the same EAC. The logic for this was established in Section
 17.4.  I have shown the calculation to demonstrate that the logic holds true.
@@ -399,7 +399,7 @@ lineup =~~
 .EN
 .RE
 .FS
-\(dd This calculation is unessecary as it yields the same value as year 3 for
+\(dd This calculation is unnecessary as it yields the same value as year 3 for
 brand B. Any multiple of 3 years will yield the same result, therefore, years
 3, 6, 9, 12 and 15 share the same EAC. The logic for this was established in
 Section 17.4. I have shown the calculation to demonstrate that the logic holds
@@ -428,4 +428,4 @@ _
 The table above shows that brand A is the lowest cost option except in year 3.
 In year 3 the full life of the brand B has been utilised but the more expensive
 brand A still has 2 years remaining, this results in matching brand B at its
-most efficient with brand A when the residual value is neglible.
+most efficient with brand A when the residual value is negligible.

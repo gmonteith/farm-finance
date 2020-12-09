@@ -1,10 +1,10 @@
 .
 Now that we have established the investment cost equations we can answer two
-important questions; what are thery for and how do I use them?
+important questions; what are they for and how do I use them?
 .
 .XXXX \\n(cn 1 "What is the purpose of the investment cost equations?"
 .LP
-The purpose of the investment cost equation is to reduce the work requied to
+The purpose of the investment cost equation is to reduce the work required to
 establish the after tax NPV. The investment cost equations are not designed to
 be used to forecasting after tax earnings or net income.
 .LP
@@ -27,21 +27,20 @@ The standard from is to:
 .IP 1.
 Multiply the investment cost by the appropriate equation.
 .IP 1.
-Multiply the positive cash flows by the apropriate rate of taxation.
+Multiply the positive cash flows by the appropriate rate of taxation.
 .LP
-As an illustraction we will use the same cash flows from an example from
+As an illustration we will use the same cash flows from an example from
 Appendix B on the AIA in time period one. Walter makes an investment of 15,000
-in a peice of capital equipment and an accompanying investment in working
+in a piece of capital equipment and an accompanying investment in working
 capital of 8,000 which will be returned at the end of the investment life. The
-investment after costs yeilds a surplus of 25,000 each year. The investment has
+investment after costs yields a surplus of 25,000 each year. The investment has
 a life of 5 years and no salvage value, the rate of taxation is 20% and the
 discount rate 15%. 
 .
 .XXXX 0 2 "No salvage value"
 .LP
-We will look first at using the equatins when there is no salvage value. The
+We will look first at using the equations when there is no salvage value. The
 first step is to draw the cash flow diagram:
-.sp -1
 .PS
 A: [ box invis wid 0.20 ht 0.20 "0"
 			arrow down 0.5 at last box.s
@@ -104,7 +103,7 @@ lineup =~~
 -12,392
 .EN
 The NPV then can be calculated using the factors from Chapter XX on
-enginneering economics:
+engineering economics:
 .EQ L
 NPV lm -12,392 -8,000 + 25,000(1 - t)(P/A, 15%, 5) + 8,000(P/F, 15%, 5)
 .EN
@@ -212,16 +211,16 @@ lineup =~~
 lineup =~~
 51,631
 .EN
-Notice that this time we have had to calculate the tax effect seperately from
+Notice that this time we have had to calculate the tax effect separately from
 the positive cash flows. Previously we were able to multiply the positive cash
 flow by #(1 - t)#, however, as the tax has been shifted by one period this will
 not work here. The tax has been calculated with by multiplying the positive
-cash flow by the tax rate, #25,000(t)#. Then this annuiyt has been converted
+cash flow by the tax rate, #25,000(t)#. Then this annuity has been converted
 into a present value by multiplying by, #(P/F, 15%, 5)#. Lastly this would
 present value has to time period zero by multiplying by #(P/F, 15%, 1)#,
 remember the annuity factor presumes that the cash flow is at time period one
-and calculates the PV at time peirod zero. In this instance the cash flow is at
-time period 2 and the annuity calcualtes the PV at time period 1 so we use the
+and calculates the PV at time period zero. In this instance the cash flow is at
+time period 2 and the annuity calculates the PV at time period 1 so we use the
 Single Payment Present Worth factor to discount the PV by an extra period.
 .LP
 Again a table can be used in conjunction with the investment cost equation:
@@ -258,7 +257,7 @@ _
 .
 .XXXX 0 2 "Salvage value"
 .LP
-The scenario stays the sames except that on dispoal in year 5 there is a
+The scenario stays the sames except that on disposal in year 5 there is a
 salvage value of 7,000. We will redraw the cash flow diagram to reflect the
 change:
 .sp -1
@@ -400,7 +399,7 @@ _
 .TE
 It is important to note that the table does not contain the salvage value. The
 investment cost equation incorporates the effect of the salvage. The idea of
-the investment cost equation is to seperate the capital cost and its associated
+the investment cost equation is to separate the capital cost and its associated
 cash flows from the other cash flows arising from the investment.
 .
 .SH
@@ -486,7 +485,7 @@ NPV#54,800
 _
 .TE
 .
-.XXXX 0 2 "Self Assesment Tax"
+.XXXX 0 2 "Self Assessment Tax"
 .LP
 Self Assessment Tax creates some problems because of the personal allowance and
 the different tax rates dependent on the earnings of the business. We will
@@ -532,10 +531,10 @@ need to recalculate the weighted average cost of capital for this project.
 .
 .XXXX 0 3 "Personal allowance has already been applied."
 .LP
-If you allready have a business making in excess of the personal allowance than
+If you already have a business making in excess of the personal allowance than
 your next investment will be taxed at the prevailing rate of taxation for the
 earnings. For instance, if the business is earning 20,000 and an investment is
-made that will generate additonal taxable profits of 20,000 then this, as of
+made that will generate additional taxable profits of 20,000 then this, as of
 2019, will be taxed at 20% for the income and 9% for the NIC. Remember that the
 rate of taxation has a bearing on the cost of capital as interest is tax
 deductible and you may need to recalculate the weighted average cost of capital
@@ -544,17 +543,17 @@ for this project.
 .XXXX 0 3 "Earnings across two tax bands."
 .LP
 This scenario is covered again in Appendix F. The basic logic is that you will
-need to calcualte a weighted avaerage of the tax rates. Again, as the earnings
+need to calculate a weighted average of the tax rates. Again, as the earnings
 with which the tax rate is dependent are a projection into the future it pays
 to be confident that the earnings will materialise and push you well into the
 next tax rate. Currently there is a change in the tax rate at 50,000 it would
-not add much to the accuracny of the NPV by calculating the weighted average of
-the rate of taxaton if the earnings were projected to be 51,000. 
+not add much to the accuracy of the NPV by calculating the weighted average of
+the rate of taxation if the earnings were projected to be 51,000. 
 .
 .XXXX 0 2 "Limited taxation"
 .LP
 If the level of taxable profits is low then it may not be possible to claim the
-full writing down allowance. This applies to both Self Assesment Tax and
+full writing down allowance. This applies to both Self Assessment Tax and
 Corporation Tax in this instance you will need to check that the taxable
 profits exceed the first years writing down allowance. If you make a capital
 investment of 50,000 and the writing down allowance is 18% then the taxable
@@ -574,7 +573,7 @@ profitable, then the NPV itself maybe more aspirational than factual.
 In cyclical businesses the ration of good years to bad years needs to be in
 favour of the good years to have any confidence that taxation is a concern.
 .LP
-In both scenarios above concerning businsess with marginal profitablity the
+In both scenarios above concerning businesses with marginal profitability the
 chances are that there are loses which have been carried forward and are
 available to shield the profits from taxation.  
 .
@@ -591,7 +590,7 @@ pretax cost of capital.
 .
 .XXXX 0 2 "Small pool and balancing charge"
 .LP
-There can be situations where the expcecations is that a balancing charge will
+There can be situations where the expectations is that a balancing charge will
 have to be paid. For instance if your business is not very capital intensive,
 you may have a small farm, you have bought a tractor kept it for a long period
 of time and then it is disposed of when there the main pool has a value of zero
@@ -600,17 +599,17 @@ piece of equipment, in this instance a second hand combine, and on disposal the
 inflation in the capital asset prices by the OEM's has been so great as to
 generate a balancing charge. First you must suitably confident that there will
 be a balancing charge, second remember the impact of the balancing charge
-deminishes because of the compounding. If you still wish to account for the
+diminishes because of the compounding. If you still wish to account for the
 impact of the balancing charge you can use the investment cost equations for
 the single asset pool without respect for the 8 years currently allowed for by
-the goverment. You can of course compare the investment cost equations using
+the government. You can of course compare the investment cost equations using
 the main pool where the equation does not allow for a balancing charge and
 compare it with the single asset pool equation that does allow for a balancing
 charge.
 .
 .XXXX 0 2 "Scenarios not covered by the cost equations"
 .LP
-I do not propose to go through every eventuality that buiness can throw up and
+I do not propose to go through every eventuality that business can throw up and
 how to use the investment cost equations. Mostly I expect the investment cost
 equations to be used within the continuing pool and either the AIA or the WDA
 to be utilised. There is nothing to stop you splitting an investment between
@@ -619,17 +618,17 @@ there is nothing to stop you starting the WDA at point other than period 1,
 provided there is no salvage value, and moving the tax benefit to period zero.
 .LP
 Appendix B aims to be comprehensive and contains flow charts, graphs, tables
-and the maths behind the investment cost equaitons. With this information it
+and the maths behind the investment cost equations. With this information it
 should be possible to build your own tools to calculate the tax benefits
 accruing in any given situation.  
 .
 .XXXX 0 2 "The false precision of numbers"
 .LP
-Numbers can be reather misleading in seeming to provide an accurate answer when
-in actual fact what you have calculated is exactly wrong which is a disapinting
+Numbers can be rather misleading in seeming to provide an accurate answer when
+in actual fact what you have calculated is exactly wrong which is a disappointing
 distance from roughly right. The NPV is a number which is masquerading as
 reliable when it is highly dependent on both the veracity of the assumptions
-and the viscitudes of the future.
+and the vicissitudes of the future.
 .LP
 Listed below are some of the many issues that can lead to a wildly misleading
 NPV.
@@ -641,31 +640,31 @@ rate will lead to inaccurate NPV.
 .IP "Operating cash flows" 15
 Forecasting operating cash flows is not easy when the time frame is short. The
 longer the time frame the less reliable the number, once the cash flows extend
-a longway into the future they enter the realm of fantasy.
+a long way into the future they enter the realm of fantasy.
 .IP "Tax rates" 15
 When it comes to forecasting after tax cash flows you are compelled to forecast
-the tax rate as well. The investment cost equations persume that the tax rate
+the tax rate as well. The investment cost equations presume that the tax rate
 existing at the point when the investment is made continue for the life of the
 investment. Tax rates, in recent years, have fallen so this assumption has
 tended to be favourable to the NPV.
 .IP "Salvage values" 15
 Estimating a salvage value many years into the future is an exercise in
-futility. The affects of compoinding also mean that the impact of the salvage
+futility. The affects of compounding also mean that the impact of the salvage
 value is very limited.
 .IP "Length of ownership" 15
 When the decision is made to invest in a piece of capital equipment it is
 assumed that the time frame used in the NPV calculation is objective reflection
 of the needs of business and the economic life of the asset. There are many
 reasons that the ownership of the asset may not match that used in the NPV. For
-instance; the needs of the business may change or the equipment may not peform
+instance; the needs of the business may change or the equipment may not perform
 as expected or the equipment may not have been specified correctly.
 .LP
 The short list above highlights some of the difficulties in producing a
-reliable NPV. The investment cost equations get progressivly more complicated
+reliable NPV. The investment cost equations get progressively more complicated
 when they are required to account for more and more variables and subsequently
 the range of possible outcomes also increases. It is presumed that those
-investment cost equations covering the continuose pools will be most heavily
-used and particulary those equations that calculate the investment cost with
+investment cost equations covering the continuous pools will be most heavily
+used and particularly those equations that calculate the investment cost with
 either no salvage value or a salvage value without capital gains. 
 .
 .XXXX 0 2 "Is it worth calculating the after tax NPV?"
@@ -677,7 +676,7 @@ more difficult it is to tie tax benefits to individual investments. In many
 companies there is no effort made to calculate the after tax NPV, the
 investment decision is based upon exceeding a given hurdle rate. More often
 than not the management of the company measures EBIT or operating profit and if
-there is a requirment to allow for it then the EBIT is multiplied by (1 - tax
+there is a requirement to allow for it then the EBIT is multiplied by (1 - tax
 rate). Appendix E looks into SVA which uses EBIT to establish if an investment
 should be pursued.
 .LP
@@ -685,7 +684,7 @@ In smaller companies where there are not multiple disparate divisions working
 in different tax jurisdictions the investment cost equations offer a quick and
 simple means of establishing an after tax NPV with which to aid in investment
 decisions. In general if the tax is not going to affect the decision then it is
-not neceassary to calculate the after tax NPV, however, as we shall see with
+not necessary to calculate the after tax NPV, however, as we shall see with
 leases the tax effects can be integral to establishing the lowest cost
 alternative. As a last thought neither life or business can be simplified into
 one equations so one should always beware of; "Geeks bearing formulas".

@@ -1,6 +1,6 @@
 .
 .\" .XS
-.\" APPENDIX D - Self Assesment Tax in two payments.
+.\" APPENDIX D - Self Assessment Tax in two payments.
 .\" .XE
 .\" .
 .\" .ce 100
@@ -8,15 +8,15 @@
 .\" .sp 20
 .\" .B
 .\" .LG
-.\" SELF ASSESMENT TAX IN TWO PAYMENTS.
+.\" SELF ASSESSMENT TAX IN TWO PAYMENTS.
 .\" .R
 .\" .ce 0
 .\" .bp
 .
 .SH 1
-Self Assesment Tax in two payments.
+Self Assessment Tax in two payments.
 .LP
-It is possible to create a CCTF for the Self Assesment Tax which accounts for
+It is possible to create a CCTF for the Self Assessment Tax which accounts for
 their being two tax payments. The logic logic on which the calculation is based
 is outlined below:
 .IP \(bu
@@ -31,7 +31,7 @@ in arrears.
 .SH
 Mathematics 
 .LP
-We established in Appendix A that the sum of the tax savings to infiinity was:
+We established in Appendix A that the sum of the tax savings to infinity was:
 .EQ
 Idt
 over { i + d }
@@ -159,8 +159,8 @@ the tax payments into two parts exceeds the benefits, furthermore, adding
 complexity is seldom a good practise.
 .FS
 \(dg We could of course compared the two CCTFs without an investment and
-reached the same conlusions. However, I thought many would feed more
+reached the same conclusions. However, I thought many would feed more
 comfortable comparing a theoretical 100,000 investment. The size of the
-investment is of course arbitary and the 1% difference is between 0.89811 and
+investment is of course arbitrary and the 1% difference is between 0.89811 and
 0.89091.
 .FE

@@ -172,7 +172,7 @@ The easiest way to illustrate the congruence with NPV is with an example. This
 table was taken from; "Creating Shareholder Value" by Alfred Rappaport. He used
 it to illustrate the deficiency in breakeven as a means of allocating capital.
 Breakeven ignores the cost of capital and investment requirements beyond the
-intitial investment and is therefore not a framework to engage in investment
+initial investment and is therefore not a framework to engage in investment
 that create shareholder or economic value.
 .LP
 The scenario is that a company has the opportunity to invest in a new product
@@ -270,7 +270,7 @@ Next we are going to examine the residual income approach. As residual income
 requires a capital charge to be subtracted from the net profits based on the
 net asset value we are going to start by calculating the net asset value in
 each year. Once the net asset value is established the finance charge can be
-calulated.
+calculated.
 .sp 0.5
 .TS
 tab (#) center;
@@ -340,7 +340,7 @@ Discount factor @ 12%##0.893#0.797#0.712#0.636#0.567
 PV residual income##(6.25)#(3.03)#(0.03)#3.57#5.60
 .sp 3p
 _
-Disounted residual income#(0.14)
+Discounted residual income#(0.14)
 _
 .TE
 .
@@ -348,10 +348,10 @@ _
 .
 The tables show:
 .IP \(bu
-In this instance the use of SVA, NPV or the residual income method yeilds the
+In this instance the use of SVA, NPV or the residual income method yields the
 same result and highlights the poor return offered by the project.
 .IP \(bu
-The NPV aprroach used in forecasting the viability of a project and the
+The NPV approach used in forecasting the viability of a project and the
 residual income method share some congruence. If the forecast is realistic and
 the project well executed the results should be visible in the year end
 accounts.
@@ -509,7 +509,7 @@ _
 NOPAT#26,200
 .TE
 .LP
-The rought calculation for NOPAT is:
+The rough calculation for NOPAT is:
 .EQ
 "Operating profit" times ( 1 - "tax rate")
 .EN
@@ -829,7 +829,7 @@ WACC and resolve for percentage of debt.
 .LP
 In this instance we have two types of debt so we will consolidate these first.
 .EQ
-"Total debt" lm "Longterm debt" + "Overdraft"
+"Total debt" lm "Long term debt" + "Overdraft"
 .EN
 .sp -0.7v
 .EQ
@@ -841,7 +841,7 @@ lineup =~~
 lineup =~~
 69,444
 .EN
-We can now establish the weighted avaerage cost of this debt:
+We can now establish the weighted average cost of this debt:
 .EQ
 "Weighted average cost of debt" lineup =~~
 40,000 over 69,444 times 0.08
@@ -972,7 +972,7 @@ lineup =~~
 If the cost of capital is an integral part of capital budgeting it would make
 sense that it is also a necessary part of measuring the financial performance,
 however, it is not common to find companies that explicitly use a metric that
-takes into account the value of all capital in the bussiness. I worked for John
+takes into account the value of all capital in the business. I worked for John
 Deere who used a metric called SVA.\(dg On page 21 of the 2018 Annual Report
 John Deere states:
 .FS 
@@ -1066,7 +1066,7 @@ inconsistency.
 EVA is an absolute measure so it can not be used to compare companies of
 different sizes unlike more well known ratios.
 .
-.XXXX 0 2 "Poorly peforming businesses"
+.XXXX 0 2 "Poorly performing businesses"
 .LP
 From a purely financial perspective the aims of a business is to:
 .IP 1. 5
@@ -1080,11 +1080,11 @@ adjusts for the movement in working capital. A growth in the receivable and the
 inventory is a cash outflow from the business and a growth in the payable is a
 source of cash. It goes without saying that the cash flow can be manipulated by
 extending the payment terms to suppliers, reducing the receivable and
-liquidating the inventory. None of these actions may necessrily represent a
-longterm change in the nature of the underlying business but will improve the
+liquidating the inventory. None of these actions may necessarily represent a
+long term change in the nature of the underlying business but will improve the
 cash flow from operations. The other key area for manipulation is to categorise
 cash inflow that belong in the investing or financing section in the cash flow
-from oprations. So, in short, as this is aimed at a small business owner it is
+from operations. So, in short, as this is aimed at a small business owner it is
 assumed that you know your own business and are not intent on deceiving
 yourself about the underlying performance of the company by engineering changes
 in the cash flow from operations that do not reflect underlying changes in the
@@ -1092,9 +1092,9 @@ enterprise.
 .IP 2. 5
 Produce an accounting profit. This again is open to manipulation based on the
 revenue recognition policy of the company in question. A very aggressive
-revenue recognition policy will lead to a large receivable and the reveneue
+revenue recognition policy will lead to a large receivable and the revenue
 running a long way ahead of the cash. At the extremes revenue can be
-manipulated by inadequatly declared sales and repurchase agreements. Again,
+manipulated by inadequately declared sales and repurchase agreements. Again,
 allowing for the revenue policy being fair and consistent with the business and
 if the depreciation is a reasonable proxy for the capital requirements of the
 business then the profits should the reflect the underlying performance of
@@ -1102,7 +1102,7 @@ the business.
 .IP 3. 5
 Deliver an economic profit. We have covered the concept of economic profit in
 this chapter. In companies with high growth rates and the requirement for
-substantial capital expenditures the net profit may not refect the wealth being
+substantial capital expenditures the net profit may not reflect the wealth being
 created. We previously mentioned that in calculating EVA there maybe a need to
 adjust the figures to reflect the underlying business. John Malone of TCI
 devised the well know metric EBITDA ( Earnings Before Interest, Tax,
@@ -1115,7 +1115,7 @@ bill by the capital investment was also a significant benefit to the investor.
 .
 .XXXX 0 2 "How to approach a poorly performing business "
 .LP
-This is a very short section and is provided as a simple quide that might help
+This is a very short section and is provided as a simple guide that might help
 you think about the decisions that will need to be made to address a long run
 of poor performance in a business.
 .IP "Structural Change" 5
@@ -1125,24 +1125,24 @@ once an industry with high returns generated from subscriptions and
 advertising. Such was the demand for newspapers that they were often printed
 twice a day to inform readers of important changes in world or local affairs.
 However, we all know that most news has now moved online and that the print
-industy at large has struggled to adapt or establish a profitable new business
+industry at large has struggled to adapt or establish a profitable new business
 model \(dg. It would have been madness for an executive in the newspaper
-industry to sitback and expect things to simply get better. The newspaper
-industry is of course one of a longlist of industry to have been disrupted by
+industry to sit back and expect things to simply get better. The newspaper
+industry is of course one of a long list of industry to have been disrupted by
 technology or new participants. For example the  music industry has been
 disrupted by streaming and the UK supermarkets by the arrival of the
 discounters such as Lidl and Aldi after the financial crisis.
 .FS
-\(dg There are allways a few exceptions, the Financial Times has a succesful
+\(dg There are always a few exceptions, the Financial Times has a successful
 business behind a paywall and the Economist continues to prosper. I am sure
 there are others that are prospering that I do not know.
 .FE
-.IP "Cylical nature of the industry" 5
+.IP "Cyclical nature of the industry" 5
 If the problem is cyclical then maybe lethargy as a strategy may work. However
-complaceny is typically a dangerous position to start from. In low points of
+complacency is typically a dangerous position to start from. In low points of
 the business cycle competitors will be working hard to reduce their cost base
-and sitting on your laurels can be expected to reduced your profitablity over
-the longrun. What is more in any cyclical business the ratio of good years to
+and sitting on your laurels can be expected to reduced your profitability over
+the long run. What is more in any cyclical business the ratio of good years to
 bad years will have an overbearing impact on the average profitability. If the
 ratio is moving the wrong way then you must asses your cost base and your
 commitment to the industry.
@@ -1151,36 +1151,36 @@ Operation problems are often far easier to deal with. Management, tooling and
 processes can be or improved to return the company to profitability. If the
 market is growing fast then the impact of poor operational performance can be
 ameliorated by the fact that once the operational efficiency is restored there
-should be enough industry growth to satisy all particpants. If the industry is
+should be enough industry growth to satisfy all participants. If the industry is
 mature operational mistakes can lead to significant brand damage and market
 share loses. Some operation problems linger and there are cases of companies
-who seem tortured by their operational inefficencies. As an example, Hornby the
-toymaker has been plagued for a number of years with reuccuring supply chain
+who seem tortured by their operational inefficiencies. As an example, Hornby the
+toy maker has been plagued for a number of years with recurring supply chain
 problems which has resulted in not having the stock to sell at key times or
 quality complaints. Complacency in the face of a perpetual inability to resolve
 operation problems and subsequently generate a profit can be lethal if the
-continued existence of the company is dependent on the foreberance of the
+continued existence of the company is dependent on the forbearance of the
 lender. If we suppose a company has insufficient cash flow to make its interest
 payments which leads to a constant increase in the indebtedness of the
 enterprise. In favourable times, that is to say when the amount of credit in
-the economiy is expanding, it will be possible for the company to continue to
-reffinance this debt. However, if the credit conditions should deteriorate the
+the economy is expanding, it will be possible for the company to continue to
+refinance this debt. However, if the credit conditions should deteriorate the
 company may find to its discomfort that the lender is not a charitable
-instituion and the pernicious nature of the creeping debt is revealbed. A
-second scenario wherby the existence of an enterprise maybe dependt on the
+institution and the pernicious nature of the creeping debt is revealed. A
+second scenario whereby the existence of an enterprise maybe depend on the
 largess of the lender is established when a liability is backed by a constantly
 rising asset. If a change in economic conditions should cause asset prices in
-genreal to fall the confidence of the lender may change leading to demands for
+general to fall the confidence of the lender may change leading to demands for
 cash or other forms of collateral.
 .LP
 A rough and ready look at solutions to the problems of an existing business.
 There is of course always the option to develop new products and enter new
 markets which will be discussed later.
 .IP "Increase the price" 5
-This sounds like a good idea. However, it presuposes that your business has
-some pricing power. Without a brand it is highly unlikley that you have any
+This sounds like a good idea. However, it presupposes that your business has
+some pricing power. Without a brand it is highly unlikely that you have any
 pricing power. Pricing power is distinct from the movement of the price of
-goods or services in a cylical industry. Be it farming or oil refineries both
+goods or services in a cyclical industry. Be it farming or oil refineries both
 are cyclical and at times the supply of their products moves out of kilter with
 the demand leading to a depression in the prices. The supply subsequent
 contracts and for a brief moment there is better pricing for the product but
@@ -1193,35 +1193,35 @@ currently achieving low returns. In agriculture this often seen whereby a
 farmer uses his existing assets to offer contract services to other local
 farms. The real question here is did the farmer purchase more capacity than he
 required on his own farm and is now trying to improve the asset utilisation. It
-could be argued that a repalement of the asset with one of lower capacity would
-result in both lower costs and better asset utlisation without the management
+could be argued that a replacement of the asset with one of lower capacity would
+result in both lower costs and better asset utilisation without the management
 of having to provide a serive to others.
 .IP "Reduce the cost" 5
 The costs are the items for which management typically has the most control.
-Therefore, it is prudent to focus energy on constantly and rigoursly ensuring
+Therefore, it is prudent to focus energy on constantly and rigorously ensuring
 that your costs are inline with your industry. It is of course imperative to
 understand exactly what the customer will pay for. There is no value in
 offering a better service or product than the customer will pay for. In the
 world of agricultural parts supply, or the supply of parts for any piece of
-capital equipment, the service level offered to the customer is heavly
+capital equipment, the service level offered to the customer is heavily
 influenced by the investment in the parts stocked in the warehouse. However,
 there is no point in delivering a first fill rate of 90% if the customer would
 be equally satisfied with 80%. In offering the increased service level you have
-increased your cost by the incrased size of the waerhouse and money invested in
+increased your cost by the increased size of the warehouse and money invested in
 parts.
 .IP "Exit the industry" 5
-This is an interesting option. Idustries with over capacity and subsequently
-low returns will often go throught a phase of consilidation. The expectation is
+This is an interesting option. Industries with over capacity and subsequently
+low returns will often go through a phase of consolidation. The expectation is
 that the consolidation will firstly result in economies of scale and
 subsequently a reduction in cost and an improvement in profitability and
-secondly fewer particpants and theefore some pricing power. Therefore there is
-an option to exit the industry and redploy the funds else where. It is not
+secondly fewer participants and therefore some pricing power. Therefore there is
+an option to exit the industry and redeploy the funds else where. It is not
 uncommon for companies to divest division/brands to other enterprises. The
-reasons for the sale can be numerous and depend on the industy, 
+reasons for the sale can be numerous and depend on the industry, 
 .RS
 .IP "Non Core" 5
 The brand which is being sold may represent a small division in a large company
-and would do better in an organistion with a stronger focus on that product
+and would do better in an organisation with a stronger focus on that product
 line. 
 .IP "Lack of scale" 5
 The division is not big enough and can not compete on a cost basis. Therefore
@@ -1231,13 +1231,13 @@ As an example we will look at a mine. If we state in very general that an
 opencast  mine is a hole in the ground with ore extending from the surface
 down. In reality this may not be the case and excavation may be required to
 reach any amount of ore. Returning to our naive example, the costs rise with
-time as the mine gets deeper which results in reduced profitablity. In good
+time as the mine gets deeper which results in reduced profitability. In good
 times the ore price ensures a profit but in bad times the mine has to be laid
 up. Therefore, there is an incentive to have a portfolio of good mines and not
 to hold onto assets with a marginal profitability. In an industrial company a
 product line maybe produced that is profitable but does not achieve the hurdle
 rate set by the management of the company. The space in the factor could be
-better utlised by producing a product which does make the hurdle rate the
+better utilised by producing a product which does make the hurdle rate the
 result is that the product is discontinued. Lastly, If sufficient capital flows
 into any industry it drive returns down towards the cost of capital or even
 below it. I shall finish by quoting David Einhorn, who was discussing fracking
@@ -1254,7 +1254,7 @@ remains intact."
 .LP 
 In short if your industry is in structural decline, an improvement in the
 profitability is unlikely and it would be a better use of time and resources to
-deploy the cash in a differnt industry. If the industry you are in is
+deploy the cash in a different industry. If the industry you are in is
 commoditised with low returns there is little that can be done about it. You
 can not make a industrial supplier of widgets generate the same return on
 capital as a brewery. However, you can take the dividends and deploy them in an

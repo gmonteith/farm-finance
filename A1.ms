@@ -25,7 +25,7 @@
 .\" .
 .\" .APPENDIX "Impact of Writing Down Allowance (WDA) on capital costs"
 .\" .
-This appendix shows the mathematics behind the table below encoutered in
+This appendix shows the mathematics behind the table below encountered in
 Section XX. Understanding the mathematics is useful if you wish to know more
 about the Capital Cost Tax Factors (CCTF).
 .TS
@@ -60,10 +60,10 @@ Total#1,000#300##164
 .TE
 .tP "Impact of WDA on capital costs"
 .
-Table 1, can in part, be constructed by mechanically and labouriously working
+Table 1, can in part, be constructed by mechanically and laboriously working
 through the columns. However, this may create some problems when "Future Years"
 is encountered towards the bottom of the table. Also it misses an opportunity
-to use some of the maths which has been so assidiously developed in prior
+to use some of the maths which has been so assiduously developed in prior
 chapters.
 .LP
 We will start by looking at how the rows 1-10 are calculated for each column.
@@ -71,7 +71,7 @@ We will start by looking at how the rows 1-10 are calculated for each column.
 The value in the pool at the end of year 1 is equivalent to the investment
 \fII\fP. The value at the end of year two can be calculated by taking the
 investment \fII\fP remaining in the pool at the end of the first year and
-subtracting the investment \fII\fP multiplyed by the capital allowance \fId\fP
+subtracting the investment \fII\fP multiplied by the capital allowance \fId\fP
 rate of 18%. Therefore year 2 = #1000 - ( 1000 times 0.18 )  = 820#.
 .EQ
 "Year 1 "lm I
@@ -179,7 +179,7 @@ over
 d 
 .EN
 The \fIId\fP having previously been factored out of the series an can now be
-inclued as a factor outside the bracket. The \fId\fP in the numerator and
+included as a factor outside the bracket. The \fId\fP in the numerator and
 denominator cancel each other out. The 1 in the numerator has also been removed
 as any number multiplied by equals itself.
 .EQ
@@ -208,7 +208,7 @@ lineup =~~
 .KS
 .IP "259" 18
 This total of the series in the \fIIncome Tax\fP column is the sames as the
-\fIAllowance\fP column except for the additon of the tax as a factor.
+\fIAllowance\fP column except for the addition of the tax as a factor.
 .EQ
 It ~  left [ 1 - ( 1 - d ) sup n right ]
 .EN
@@ -232,7 +232,7 @@ lineup =~~
 .IP "158" 18
 The total of the series in the \fIPV Tax Savings\fP column is also the sum of a
 geometric series, however, we now have to account for the discount rate, so we
-will need to restablisht the series.
+will need to reestablish the series.
 .EQ
  Idt over { ( 1 + i ) } + 
  Idt(1-d) over { ( 1 + i ) sup 2} +
@@ -308,7 +308,7 @@ lineup =~~
 left [ 1 - left ( {  1 - d  }  over { 1 + i  } right ) sup n 
 right ] 
 .EN
-The \fIIdt\fP that has been been factored out an can now be inclued as a
+The \fIIdt\fP that has been been factored out an can now be included as a
 factor. 
 .EQ
 Idt ~ left { 
@@ -345,15 +345,15 @@ lineup =~~
 .KE
 .LP
 The calculation for the \fIFuture Years\fP involves some reflection on past
-knowledge. During our previous discussion on perpituities we made the
+knowledge. During our previous discussion on perpetuities we made the
 observation that it maybe better to think of an annuity as a bit of a
-perpituity. The left side of the annuity equation represents the perpetuity and
+perpetuity. The left side of the annuity equation represents the perpetuity and
 the right side is always less than one. If you multiply any number by a number
 less than one then it will get smaller. So, in effect, to calculate the annuity
-the equation is calculating the value of the perpituity and then multiplying by
+the equation is calculating the value of the perpetuity and then multiplying by
 less than one to remove the part that is not relevant.
 .LP
-If you look back through the work we have just completed for the row labeled "1
+If you look back through the work we have just completed for the row labelled "1
 to 10". The solutions all conform to this pattern:
 .EQ
 I ~  left [ 1 - ( 1 - d ) sup n right ]
@@ -415,7 +415,7 @@ Logically is you have a whole and remove a part there must be something
 remaining. In this instance the \fIFuture Years\fP is the remainder that lies
 between the end of the annuity and the sum to infinity.
 .LP
-To establish the annuity component the perpituity was multiplied by a value
+To establish the annuity component the perpetuity was multiplied by a value
 less than one. The pattern of the formula is,  # S sub \[if] ( 1 - remainder
 )#. The remained is represented by #( 1 - d ) sup n# and #left ( {  1 - d  }
 over { 1 + i  } right ) sup n#. 
@@ -470,15 +470,15 @@ lineup =~~
 .EN
 .KE
 .LP
-The \fITotal\fP row represents the sum to infinity. As we have allready shown
+The \fITotal\fP row represents the sum to infinity. As we have already shown
 the totals are the first factors #I#, #It# and #Idt over {  i + d  }# in the
 equations used to calculate the row "1 to 10".
 .LP
 However, I am going to make the effort to use the equation for the sum to
 infinity.
 .IP "1000" 18
-Logical would tell you that this must be equal to the intial investment #I#.
-However we use the equation for the sum to infitity and show how the terms
+Logical would tell you that this must be equal to the initial investment #I#.
+However we use the equation for the sum to infinity and show how the terms
 cancel out to leave only the #I#.
 .EQ
 S sub \[if] = a over { 1 -r }
@@ -609,7 +609,7 @@ lineup =~~
 .SH
 Conclusion
 .LP
-We have worked throught the mathematics associated with the table and from this
+We have worked through the mathematics associated with the table and from this
 we have two equations which we can use to aid the establishment of the
 investment cost equations.
 .IP "Annuity - tax savings" 10

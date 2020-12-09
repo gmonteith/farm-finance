@@ -32,7 +32,7 @@ share considerably less impressive than it might appear at first glance.\fP
 .XXXX \\n(cn 1 "Dupont Analysis"
 .LP
 We are going to show the various forms of the Dupont Analysis and use it to do
-further investigarion into the relationship between the ROE and the ROA. The
+further investigation into the relationship between the ROE and the ROA. The
 flow chart below shows how Donaldon Brown broke down ROE into its constituent
 parts.
 .sp -2
@@ -470,8 +470,8 @@ burden" is eliminated as the equation becomes equal to one.
 .fi
 .in 0.9i
 .ll 6i
-As there is no debt the numerator and the denomiator in this ratio will both be
-equal to the total assets. Therefore, the "leverage" raio is also equal to one.
+As there is no debt the numerator and the denominator in this ratio will both be
+equal to the total assets. Therefore, the "leverage" ratio is also equal to one.
 .sp
 .LP
 The ROE when there is no leverage is therefore simply:
@@ -577,7 +577,7 @@ If the cost of debt is equal to the OROA the net income and the equity reduce
 at the same rate. This causes the ROE to remain constant regardless of the
 amount of leverage.
 .IP "Cost of debt > OROA" 15
-If the cost of debt is greater than OROA the leverage cauases the net income to
+If the cost of debt is greater than OROA the leverage causes the net income to
 fall faster than the equity. The effect of this is that \fBany\fP amount of
 leverage will cause the ROE to fall below the ROE without leverage.
 .
@@ -642,7 +642,7 @@ section and is 32,750. The EBIT is often known as the operating profit and
 represents the profit produced by the business without taking into account the
 capital structure.
 .IP "Interest" 15
-The cost of debt and is calculated using the floowong formula #T sub a (%D) i
+The cost of debt and is calculated using the following formula #T sub a (%D) i
 sub d# which means when there is 10% debt the interest will be: #T sub a (%D) i
 sub d = 195,623(0.1)(0.1) = 1,956#
 .IP "Interest Cover" 15
@@ -650,9 +650,9 @@ Interest cover is calculated using the following formula: #Interest over EBIT#,
 therefore when there is 10% debt the result would be;#1,956 over 32,750 =
 16.74# The interest cover is a standard metric of a companies ability to make
 the interest payments. The size of the cover is dependent on the stability of
-the underlying business. Utilitiy companies can have large levels of leverage
+the underlying business. Utility companies can have large levels of leverage
 and low interest cover because of the stability of demand of water and
-electricity regardless of the busienss cycle. Farming is a very cyclical
+electricity regardless of the business cycle. Farming is a very cyclical
 business and having low levels of interest cover in good times and lead to
 disaster in bad times due to the cyclical nature of the industry.
 .IP "Income Tax" 15
@@ -681,8 +681,8 @@ The ROA and the ROE are equal when there is no leverage. Because the ROA is the
 burden increases and reduces the net income. 
 .IP "WACC" 15
 In our base case the debt has two different lates one for the overdraft and one
-for the longterm loans. For the purposes of this table the debt has only the
-one rate, 10%. We have kept the cost of equiyt the same as the base case at
+for the long term loans. For the purposes of this table the debt has only the
+one rate, 10%. We have kept the cost of equity the same as the base case at
 18%. The equation is as follows #(1 - %D) (i sub e ) + %D (i sub d ) ( 1 - t ) =
 0.9 (0.18) + 0.1 (0.1) ( 1 - 0.2 ) = 17% #
 .IP "EVA" 15
@@ -693,18 +693,18 @@ calculation is as follows for 10% debt: # 32,750( 1 - 0.2) - left [  179,185
 times 0.17 right ] = -4,261 #
 .LP
 .SH
-Points to take aways from the table:
+Points to take always from the table:
 .IP \(bu
-The addition of additional leverge when the cost of debt is below the OROA
-causes the ROE to increae. The reduction in net income caused by the addition
+The addition of additional leverage when the cost of debt is below the OROA
+causes the ROE to increase. The reduction in net income caused by the addition
 of leverage is always less than the reduction in the equity. This causes the
 denominator in the ROE equation # "Net Income" over equity# to reduce faster
 than the numerator and the ROE to increase.
 .IP \(bu
-There is no such thing as free lunch so the interest cover decreaeses with the
+There is no such thing as free lunch so the interest cover decreases with the
 additional leverage.
 .IP \(bu
-The income tax falls with increaesed leverage. The interest rises with the
+The income tax falls with increased leverage. The interest rises with the
 increases leverage but as it is a tax deductible expense it causes the income
 charge to be reduced.
 .IP \(bu
@@ -721,7 +721,7 @@ the NOPAT is equal to #EBIT(1 - "tax rate")# so the calculation for the #ROIC =
 { 26,200} over 179.185 = 14.62%#. The WACC falls below the ROIC when the debt
 reaches approximately 40%.
 .IP \(bu
-As the EVA is only positive above approximately 40% debt, it is importatnt to
+As the EVA is only positive above approximately 40% debt, it is important to
 understand that the business can not be funded entirely with equity and provide
 a suitable return. The debt is of paramount importance in achieving an
 acceptable return.
@@ -733,8 +733,8 @@ using the formula below:
 .EQ
 "Dividend payout ratio" lm Dividends over "Net Income"
 .EN
-The remaineder that is left after the dividends have been paid out can be used,
-for instance, to fund growth or to reduce the debt or a comnination of the two.
+The remainder that is left after the dividends have been paid out can be used,
+for instance, to fund growth or to reduce the debt or a combination of the two.
 The funds retained for reinvestment are expressed as:
 .EQ
 "Retention ratio" lineup =~~ ( 1 - "dividend payout ratio" )
@@ -746,7 +746,7 @@ grow the company it is assumed that the retained earnings are invested in
 assets, therefore the growth in the company results in an increase in the total
 assets.
 .sp 0.5
-This is logically going to be the percentage of netincome that is not paid out
+This is logically going to be the percentage of net income that is not paid out
 in dividends multiplied by the total existing assets of the company.
 .EQ
 "Internal growth rate" lm { "Net income" times ( 1 - "dividend payout ratio" ) }
@@ -809,16 +809,16 @@ Conclusion
 With 50% of the total assets funded with debt, which would equate to debt to
 equity ratio of one, this business would perform well. 
 .IP \(bu
-The interst cover at 3.35 times is tolerable.
+The interest cover at 3.35 times is tolerable.
 .IP \(bu
-Net income of 18,375 is sufficent with which to pay dividends or grow the
+Net income of 18,375 is sufficient with which to pay dividends or grow the
 business by retaining the earnings.
 .IP \(bu
 The ROE of 18.17% is acceptable.
 .IP \(bu
 The WACC of 13.00 is low enough to remain competitive in the industry.
 .IP \(bu
-EVA of 2,905 is positve and indicative that the business is adding value.
+EVA of 2,905 is positive and indicative that the business is adding value.
 .
 .KS
 .XXXX 0 3 "Cost of debt = OROA"
@@ -852,14 +852,14 @@ _
 .TE
 .KE
 .SH
-Points to take aways from the table:
+Points to take always from the table:
 .IP \(bu
 The interest now increases until it is virtually equal to the EBIT.
 .IP \(bu
 If all of the assets of the business were financed in this scenario with debt,
-the tax and the net income would be eliminatied.
+the tax and the net income would be eliminated.
 .IP \(bu
-The addition of additional leverge when the cost of debt is equal to the OROA,
+The addition of additional leverage when the cost of debt is equal to the OROA,
 without leverage, has no significant impact on the ROE. The reduction in net
 income caused by the addition of leverage is always equal to the reduction in
 the equity. This causes the denominator and the numerator in the ROE equation #
@@ -870,7 +870,7 @@ The ROA reduces towards zero as the net income is reduced towards zero.
 The WACC reduces with the increased leverage until it reaches its limit: # i
 sub d ( 1 - t ) = 16.74% times ( 1 - 0.2 ) = 13.39% #
 .IP \(bu
-There is no such thing as free lunch so the interest cover decreaeses with the
+There is no such thing as free lunch so the interest cover decreases with the
 additional leverage.
 .IP \(bu
 The WACC logically starts at the cost of equity when there is no debt in the
@@ -887,7 +887,7 @@ Conclusion
 .LP
 The situation here is rather complex. If 30% of total assets are funded with
 debt, a debt to equity ratio of approximately 42%, the situation is ambiguous
-and the management has to reflect on the allocation of capital to the enterpise
+and the management has to reflect on the allocation of capital to the enterprise
 and the future participation in the industry. Either the ROA must rise or a
 cheaper source of funding established to reduce the cost of debt.
 .IP \(bu
@@ -904,8 +904,8 @@ The EVA is negative and the business is not producing an economic profit.
 We are now going to construct a table to measure the impact of leverage on the
 ROE and EVA when the cost of debt is greater than the OROA.
 .LP
-The cost of debt of 17% is only marginly higher than the ROA at 16.74% but I do
-not want the cost of debt to exceed the cost of equiyt at 18%. I am trying to
+The cost of debt of 17% is only marginally higher than the ROA at 16.74% but I do
+not want the cost of debt to exceed the cost of equity at 18%. I am trying to
 stay with the realm of logic!
 .TS
 tab (#), center;
@@ -933,7 +933,7 @@ n n n n n n n n n n n .
 _
 .TE
 .SH
-Points to take aways from the table:
+Points to take away from the table:
 .IP \(bu
 The interest now increases until it is \fBexceeds\fP the EBIT.
 .IP \(bu
@@ -941,7 +941,7 @@ If all of the assets of the business were financed in this scenario with debt,
 the tax would be eliminated and the business would operate at loss. This is a
 logical conclusion as the cost of the debt exceeds the return on the assets.
 .IP \(bu
-The addition of additional leverge when the cost of debt is above the
+The addition of additional leverage when the cost of debt is above the
 unleverage OROA causes the ROE to fall. The reduction in net income caused by
 the addition of leverage is always greater than the reduction in equity. This
 causes the numerator in the ROE equation # "Net Income" over equity# to reduce
@@ -952,7 +952,7 @@ The ROA reduces towards zero as the net income is reduced towards zero.
 The WACC reduces with the increased leverage until it reaches its limit: # i
 sub d ( 1 - t ) = 17.00% times ( 1 - 0.2 ) = 13.60% #
 .IP \(bu
-There is no such thing as free lunch so the interest cover decreaeses with the
+There is no such thing as free lunch so the interest cover decreases with the
 additional leverage.
 .IP \(bu
 The WACC logically starts at the cost of equity when there is no debt in the
@@ -1035,7 +1035,7 @@ ROE times ( 1 - "tax rate"% ) =~~ ROA
 .SH
 Establish the ROE for a given amount of debt.
 .LP
-The 5 point dupoint analysis established ROE as:
+The 5 point DuPont analysis established ROE as:
 .EQ
 ROE lm "Tax Burden" times "Interest Burden"
 times "EBIT Margin" times "Asset Turnover" times Leverage
@@ -1053,8 +1053,8 @@ Revenues over "Total Assets"
 times
 "Total Assets" over Equity
 .EN
-We subequently established that the ROE without leverage can be established
-using only three raios:
+We subsequently established that the ROE without leverage can be established
+using only three ratios:
 .EQ
 ROE sub u lm 
 "Tax Burden" times "EBIT Margin" times "Asset Turnover"
@@ -1069,7 +1069,7 @@ times
 Revenues over "Total Assets"
 .EN
 It is not a large leap to suggest that the addition of leverage will only
-changes the two ratios not used in establishin the unleverage ROE. The two
+changes the two ratios not used in establishing the unleverage ROE. The two
 ratios are the "interest burden" and the "leverage".
 .LP
 The "interest burden" can be stated as:
@@ -1190,7 +1190,7 @@ _
 n n n n a .
 0.11#1.5#1.5#24.7#base level
 0.13#1.5#1.5#29#Favourable - increase in margin
-0.11#1.8#1.5#29#Favourable - increase in asset utilization
+0.11#1.8#1.5#29#Favourable - increase in asset utilisation
 0.11#1.5#1.8#29#Unfavourable - increase in leverage
 _
 .TE

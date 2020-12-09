@@ -159,12 +159,12 @@ Total#31,463#6,292
 .SH 2 
 No salvage value
 .LP
-In the fith year the asset is disposed of with no salvage value. As the asset
+In the fifth year the asset is disposed of with no salvage value. As the asset
 has been disposed off with no salvage value the asset has lost value faster
 than expected and entire value remaining in the pool is the balancing
 allowance. The tax benefits are shown below:
 .EQ
-"Balancing allowance" lm "Clossing balance" times ( "tax rate" )
+"Balancing allowance" lm "Closing balance" times ( "tax rate" )
 .EN
 .sp -0.7v
 .EQ
@@ -281,7 +281,7 @@ t over { ( 1 + i ) sup  { n + 1 }  }
 over { ( 1 + i ) sup n }
 right ]
 .EN
-We can also replace the denominator encompacsing the discounting with the
+We can also replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .
 .EQ L
@@ -291,7 +291,7 @@ times
 ( P/F, %i, n )
 .EN
 We will replace the fraction below the #t# with a factor using negative
-exponenets:
+exponents:
 .EQ L
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 + UCC left [  t(1 + i ) sup -1 - ( 1 - CCTF sub WDA2 ) ( 1 + i ) right ] 
@@ -674,7 +674,7 @@ right )
 times
 ( P/F, %i, n )
 .EN
-Add a grouping symbol arround the terms including UCC:
+Add a grouping symbol around the terms including UCC:
 .EQ
 lineup 
 left ( 
@@ -904,7 +904,7 @@ triggering a capital gains charge. As previously stated we are going to use the
 rate of taxation through the rest of the equation to calculate the capital
 gains tax.
 .LP
-In this scenario the salvage value is 60,000 and the asset disposl occurs in
+In this scenario the salvage value is 60,000 and the asset disposal occurs in
 year 5.
 .EQ
 "Balancing charge" lm ("Salvage - UCC") times ( "tax rate" )

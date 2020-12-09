@@ -23,7 +23,7 @@ Structure of the Appendix
 .LP
 The Appendix is made of two parts.
 .IP "Equations time period 1" 5
-These are more often used by those who pay their tax under Self Assesment where
+These are more often used by those who pay their tax under Self Assessment where
 it is assumed the investment is at time period zero and the first tax effect at
 time period one.
 .IP "Equations time period 2" 5
@@ -51,7 +51,7 @@ developed with these flow charts is that there \fBshould\fP always be enough
 value remaining in the pool that disposals do not generate a balancing charge.
 .IP "Single asset pools" 5
 Single asset pools have a limited life and if the asset is not disposed of
-within the time frame it is transfered to the main pool. The investment cost
+within the time frame it is transferred to the main pool. The investment cost
 equations developed for single asset pools include both balancing charges and
 balancing allowances.
 .
@@ -69,9 +69,9 @@ for the flow charts regardless of whether you decide to commence the
 calculation with the investment cost as negative or positive:
 .RS
 .IP "Decrease" 10
-The calculation should have the opposite sign to the inititial investment.
+The calculation should have the opposite sign to the initial investment.
 .IP "Increase" 10
-The calculation should have the same sign as the inititial investment.
+The calculation should have the same sign as the initial investment.
 .RE
 .LP
 We will now work through a very basic example to show the logic:
@@ -159,7 +159,7 @@ and an appropriate leger as been assembled below:
 .LP
 .sp
 .SH
-Costants used in the examples:
+Constants used in the examples:
 .IP \(bu
 The rate of taxation, represented by #t#, is 20%.
 .IP \(bu
@@ -174,10 +174,10 @@ is the same logic as an ordinary annuity.
 .SH
 Capital gains tax
 .LP
-The government has very specifc rules on capital gains tax, however, for the
-purpose of calculating the investment cost I am going to disreagrd them and
+The government has very specific rules on capital gains tax, however, for the
+purpose of calculating the investment cost I am going to disregard them and
 charge the capital gains tax at the same rate of taxation as the rest of the
-equation. The reasons for this are enumeratied below:
+equation. The reasons for this are enumerated below:
 .RS
 .IP \(bu
 The salvage value tends to occur far in the future and has a limited impact on
@@ -191,7 +191,7 @@ not be right at the time the asset is disposed off.
 .IP \(bu
 Corporate profits do not incur capital gains tax and I wanted these equations
 to be useful for measuring the impact of capital allowances on a capital
-investment under both Self Assesment and Corporate Tax regimes.
+investment under both Self Assessment and Corporate Tax regimes.
 .RE
 .
 .SH
@@ -199,7 +199,31 @@ Graphs
 .LP
 The markers on the graph show the value in the pool \fBafter\fP any capital
 allowance deductions. The tables show both the pool value before and after
-capital allowanes. The flat spot in the graph when there is a salvage value is
+capital allowances. The flat spot in the graph when there is a salvage value is
 caused by there being no writing down before the salvage value is deducted from
 the pool.
 .
+.SH Claiming
+.LP
+To claim AIA
+.IP \(bu 3
+add the cost of the item to the appropriate pool
+.IP \(bu
+work out the amount of AIA you can claim 
+.IP \(bu
+take away the AIA from the amount you added to the pool
+.
+.
+.LP
+Claiming the writing down allowance:
+.IP \(bu 3
+Start with any balance left in the pool from the year before.
+.IP \(bu
+add the costs of any items you bought where you have not claimed AIA
+.IP \(bu
+take away the amount you got for any items you sold
+.IP \(bu
+take away the market value of any items your business stopped using and which
+you kept for yourself
+.LP
+This will give you your new pool balance. You can now claim the WDA. 

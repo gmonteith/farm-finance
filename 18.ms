@@ -1,7 +1,7 @@
 .
 Equivalent Annual Cost (EAC) is the cost per year of owning and operating an
 asset over its entire lifespan. Equivalent Annual Worth (EAW) is the benefit of
-owning an asset over its lifetime. The EAC or EAW is calculated by multiplyng
+owning an asset over its lifetime. The EAC or EAW is calculated by multiplying
 the NPV, or Present Worth (PW) as it is sometimes known, of a project by the
 Capital Recovery Factor established in Section 11.6 and shown below.
 .EQ
@@ -10,7 +10,7 @@ caprec(=)
 .LP
 If we turn back a few pages to Section 16.2.3 we can see that in the example we
 established a NPV of 45,589. If we wished to convert this to an Equivalent
-Annual Worth we would multiply the NPV by the captial recovery factor. In the
+Annual Worth we would multiply the NPV by the capital recovery factor. In the
 example in Section 16.2.3 the interest rate #i# is 15%, and the number of years
 #n# is 6.
 .EQ
@@ -39,16 +39,16 @@ With our knowledge of Equivalence from Section 3 we know that the annuity value
 and the NPV are equivalent.
 .LP
 Accountants tend to favour NPV and engineers the EAC or EAW, the difference in
-preference is purely down to familiarity and proffessional education as opposed
+preference is purely down to familiarity and professional education as opposed
 to the actual merits of either method.  
 .LP
-The equivalent annual methods or annuity methods are best for compariing cost
+The equivalent annual methods or annuity methods are best for comparing cost
 or savings that are measured in years. Also stating that this investment will
 cost or save 5,000 pounds per year makes intuitive sense to many people who are
-familliar with annual budgets.
+familiar with annual budgets.
 .LP
-We will also demonsttate in Section 18 that equivalent annual measures are
-particulairy useful when comparing projects of different lenghts. For instance
+We will also demonstrate in Section 18 that equivalent annual measures are
+particularity useful when comparing projects of different lengths. For instance
 a stainless steel pump may last longer than a brass design. The question is:
 "Does the longer life of the stainless steel pump make up for its higher
 initial cost?" Equivalent annual costs make the analysis of this scenario clear
@@ -78,7 +78,7 @@ the cost of capital.
 .LP
 For the purposes of the following examples the government allowable
 depreciation or Writing Down Allowance is 18% as represented by #d#, the
-discount rate #i# is 15%, the tax #t# is 29% for Self Assesment Tax and 19% for
+discount rate #i# is 15%, the tax #t# is 29% for Self Assessment Tax and 19% for
 Corporation Tax.
 .LP
 Use the Capital Cost Tax Factor flow charts in Appendix B to aid with the after
@@ -87,7 +87,7 @@ Corporation Tax commences at time period two.
 .LP
 This section and the ones following rely heavily on the equations from Section
 11 on Engineering Economics. I will usually state the section in which the
-eqation was derived, but it may help to have the equations from Appendic C to
+equation was derived, but it may help to have the equations from Appendix C to
 hand to avoid too much page turning.
 .LP
 The last point is the use of the terms "investment cost" and "capital cost".
@@ -157,8 +157,8 @@ equivalent annual cost.
 .IP "Step 2:" 10
 Add the equivalent annual cost of the investment to the annual operating costs.
 It is important to realise that the 12,000 is already an annual payment and
-therefore an annuity. If you were to creat a present worth from an annuiyt and
-then convert the present worth back to an annuiyt you would end up where you
+therefore an annuity. If you were to create a present worth from an annuity and
+then convert the present worth back to an annuity you would end up where you
 started. If you revert back to Sections 11.5 and 11.6 you will that the
 equations for the Uniform Series Preset Worth and Capital Recovery are
 reciprocals of each other\(dg. The implication of the 12,000 already being an
@@ -203,7 +203,7 @@ not in a single asset pool and the AIA will be utilised.
 .sp 0.5v
 As there is no salvage value simply multiply the investment cost by the #CCTF
 sub AIA2#. The tax benefit arising from the annual operating costs being an
-expense of buiness must be be kept consistent with the tax benefits accruing
+expense of business must be be kept consistent with the tax benefits accruing
 from the capital investment.
 .sp 0.5v
 The tax benefit will need to be separated from the cost as the first tax effect
@@ -233,11 +233,11 @@ lineup =~~
 23,446
 .EN
 It would seem more logical to multiply the initial investment by the CCTF then
-the annuity factor. However, remeber that the result is the same regardless of
+the annuity factor. However, remember that the result is the same regardless of
 the order in which numbers are multiplied together. #2 times 3# and #3 times 2#
 give the same result.
 .sp 0.5v
-The tax benefits assoicated with the 12,000 cost appears to have gone through a
+The tax benefits associated with the 12,000 cost appears to have gone through a
 strange transformation. If you refer back to Chapter 4 on ordinary annuities
 you will see that the series starts at time period 1 and creates a PV at time
 period zero. We have a tax benefit of 12,000(t) which is equivalent to an
@@ -310,7 +310,7 @@ Convert the salvage value to a present value using the Single Payment Present
 Worth factor.
 .IP "Step 3:" 10
 Convert the present values to an EAC using the Capital Recovery factor and add
-to the 1,000 which is allready an annual cost.
+to the 1,000 which is already an annual cost.
 .RE
 .LP
 .sp
@@ -356,7 +356,7 @@ for the RTK.
 .IP \(bu
 The tax has not been calculated as it is not a consideration in the decision to
 invest in the equipment. If there were tax concessions for investing in the
-equipment that could lower the initinal investment cost then the tax would
+equipment that could lower the internal investment cost then the tax would
 become a consideration.
 .
 .XXXX 0 3 "Salvage Value"
@@ -410,7 +410,7 @@ service. The result is that the equivalent costs is unchanged. However for
 the purpose of this exercise we will follow the cash flow diagram. 
 .sp 0.5v
 The 300 cost implies an annuity over the 5 years, but the servicing is only
-over 4 years. Convert the 300 into present value using the Uniform Seirres
+over 4 years. Convert the 300 into present value using the Uniform Series
 Present Worth factor.
 .IP "Step 3:" 10
 Convert the salvage value to a present value using the Single Payment Present
@@ -532,8 +532,8 @@ service plan must be reduced by the tax rate.
 .XXXX 0 3 "Salvage Value"
 .LP
 Wilbur has decided to investigate if it is worth installing a diesel tank on
-the farm as it would allow him to bulk buy his fuel. Wibur uses 90,000 liters a
-year and estimates he can save 5p per liter. The diesel storage system would
+the farm as it would allow him to bulk buy his fuel. Wibur uses 90,000 litres a
+year and estimates he can save 5p per litre. The diesel storage system would
 cost 25,000 pounds and the maintenance would be 150 pounds per year and the
 expectation is that they would rise at 3% per year. After 15 years the
 estimated salvage value is 2,000 pounds. If the cost of capital is 15% is this
@@ -594,21 +594,21 @@ There are two ways of approaching the problem:
 .UL "Method 1"
 .sp 0.5
 .RS
-You could calculate the EAW by working the postive and negative cash flows
+You could calculate the EAW by working the positive and negative cash flows
 calculating the annuities as required. The logic is to establish all the cash
 flows as present values and then convert them to the EAC.
 .IP "Step 1:" 10
 The 2,000 from the salvage must be converted to a present value using the
-Single Payment Presnet Worth factor. 
+Single Payment Present Worth factor. 
 .IP "Step 2:" 10
 The maintenance charge of 150 can be convered to a annuity by using the
-Geometric Gradient Presnet Worth factor.
+Geometric Gradient Present Worth factor.
 .IP "Step 3:" 10
-Once all the present values have been created the annuiyt can be established
+Once all the present values have been created the annuity can be established
 using the Capital Recovery factor,
 .IP "Step 4:" 10
 this can then be added to the annual savings of of 90,000 times 0.05 which
-totals 4,500 and is allready an annuity.
+totals 4,500 and is already an annuity.
 .RE
 .sp
 .UL Calculation
@@ -648,7 +648,7 @@ lineup =~~
 .UL "Method 2"
 .sp 0.5
 .RS
-You could calculate the costs and the benefits seperatly. If benefits are
+You could calculate the costs and the benefits separately. If benefits are
 greater than the costs then the investment is acceptable. Remember that the
 costs should have a negative sign and the benefits a positive sign to avoid
 confusion.
@@ -661,8 +661,8 @@ using the single payment present worth in Section 11.2,
 and then the capital recovery factor must be used to convert the present worth
 into an equivalent benefit.
 .IP "Step 3:" 10
-The equivalent benefit can be combined with the 5p savings on each liter to
-give the total benefits. Again the benefits per liter are allready stated in
+The equivalent benefit can be combined with the 5p savings on each litre to
+give the total benefits. Again the benefits per litre are already stated in
 annual terms so no additional calculations are required.
 .RE
 .IP "Costs" 10
@@ -671,11 +671,11 @@ annual terms so no additional calculations are required.
 The maintenance costs need to be converted to a present value using the
 geometric gradient present worth factor.
 .IP "Step 2:" 10
-This present value can be added to the intitial cost and this can be converted
+This present value can be added to the initial cost and this can be converted
 to an equivalent cost using the capital recovery factor.
 .RE
 .LP
-Once the costs and benefits have been established the difference betweem the
+Once the costs and benefits have been established the difference between the
 two can be established and the viability of investment can be assessed.
 .RE
 .sp
@@ -747,7 +747,7 @@ calculating the tax would only further reduce the NPV. If an investment is
 unattractive before tax it is seldom worth the effort of calculating the tax
 impact.
 .IP \(bu
-It is worth notiing that the salvage value is often so heavily discounted that
+It is worth noting that the salvage value is often so heavily discounted that
 it has little impact on the calculation. It can be seen in the benefits
 calculation that the salvage has a EAW of 42.
 .
@@ -798,7 +798,7 @@ Convert the overhaul cost to a present value using the Single Payment Present
 Worth factor.
 .IP "Step 2:" 10
 Convert the present value to an annuity over 8 years using the Capital
-Revcovery factor.
+Recovery factor.
 .RE
 .sp
 .UL Calculation
@@ -828,8 +828,8 @@ The value is very small and therefore the tax is unlikely to be a consideration.
 .
 .XXXX 0 2 "Deferred Annuity"
 .LP
-Wilbur has decied to purchase a new 4WD for the farm. The 4WD comes with 3
-years free servicing after which time it will incurr servicing costs of 1,500
+Wilbur has decided to purchase a new 4WD for the farm. The 4WD comes with 3
+years free servicing after which time it will incur servicing costs of 1,500
 pounds per year. If the interest rate is 12% what is a EAC of the repair costs
 over the 10 year life of the 4WD? 
 .sp -1
@@ -865,7 +865,7 @@ A: [ box invis wid 0.25 ht 0.15 "0"
 box invis "i = 12/100" wid 0.6 ht 0.25 with .s at A.n + (0.6,0.2)
 box invis "n = 10" wid 0.6 ht 0.25 with .n at A.s + (0.6,0.1)
 .PE
-This particular type of cash flow is called a deffred annuity. There are two
+This particular type of cash flow is called a deferred annuity. There are two
 approaches to the problem:
 .sp 0.5
 .br
@@ -908,10 +908,10 @@ lineup =~~
 .RS
 Convert everything to a future value and then calculate the EAC.
 .IP "Step 1:" 10
-Establsih the FV of the 7 year annuity for the serving costs using the Uniform
+Establish the FV of the 7 year annuity for the serving costs using the Uniform
 Series Compound Amount.
 .IP "Step 2:" 10
-The FV can now be converted to an annuiyt over the 10 year life using the
+The FV can now be converted to an annuity over the 10 year life using the
 Uniform Series Sinking Fund factor.
 .RE
 .sp
@@ -939,7 +939,7 @@ Method 2 has less steps and is mathematically simpler.
 .IP \(bu
 The reason that method 2 has one less step is that the 1,500 is stated in terms
 of its value at year 3, the start of the servicing cost. Therefore, it can be
-compouned forward to reach a future value, is this is unclear refer back to
+compound forward to reach a future value, is this is unclear refer back to
 Chapter 3 section 6 on equivalence, but when establishing a present value the
 1,500 must be discounted to establish its equivalent value in terms of year
 zero.
@@ -952,7 +952,7 @@ a consideration in the investment decision.
 Wilbur has installed a new wash facility for his livestock haulage business
 with a design life of 25 years. The wash includes a steam cleaner that cost
 5,000 pounds which will last 5 years. The steam cleaner has no salvage value
-and the energy costs are not seperated from other costs. If the cost of capial
+and the energy costs are not separated from other costs. If the cost of capital
 is 13% find the Equivalent Annual Cost for a series of 5 steam cleaners?
 .PS
 A: [ box invis wid 0.25 ht 0.15 "0"
@@ -1008,10 +1008,10 @@ lineup =~~
 .RE
 Key points:
 .IP \(bu
-This principle can be generalized for the costs of a project that are incurred
+This principle can be generalised for the costs of a project that are incurred
 periodically but not every year.
 .IP \(bu
-EAW and EAC provide a simple solution to problems where repeated reknewals
+EAW and EAC provide a simple solution to problems where repeated renewals
 occur. If the results are to be reliable then two constants must be accepted:
 .RS
 .IP 1.
@@ -1020,7 +1020,7 @@ The repeated costs are constant.
 The interval is constant.
 .RE
 .
-.XXXX 0 2 "Repeated Renewals - no intial or final cash flow"
+.XXXX 0 2 "Repeated Renewals - no initial or final cash flow"
 .LP
 Wilbur has installed a number of new roads on his farm with a design life of 25
 years. The total length of the roads is 2.3 KM. The roads will require
@@ -1059,15 +1059,15 @@ box invis "n = 10" wid 0.6 ht 0.25 with .n at A.s + (0.5,0.1)
 .sp 0.5
 .RS
 As the cash flow diagram shows there are only 4 resurfacing operations. The
-road does not require resurfacing when it is intitially constructed, and in the
+road does not require resurfacing when it is initially constructed, and in the
 25th year you are not going to resurface the road and then replace it.
 .IP "Step 1:" 10
 In five years time Wilbur will have had to have saved #2,300 times 30# pounds
 to resurface the roads. Therefore, the resurfacing cost must be multiplied by
-the Uniform Seried Sinking Fund annuity factor.
+the Uniform Series Sinking Fund annuity factor.
 .IP "Step 2:" 10
 This annuity will then be constant until year 20, after which there is no
-requirment to occur funds to resurface the road as it will be replaced. The
+requirement to occur funds to resurface the road as it will be replaced. The
 annuity must be converted to a present value using the Uniform Series Present
 Worth factor.
 .IP "Step 3:" 10
