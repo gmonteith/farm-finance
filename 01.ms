@@ -64,6 +64,7 @@ hundred years. By 1891 the $5,000 has grown to $322,000. A school was built,
 and $92,000 was set aside for a second hundred years of growth. In 1960, this
 second century fund had reached $1,400,000. 
 .LP
+.KS
 There is a graph below to show the exponential nature of the power of
 compounding over the first 100 years.
 .sp -3
@@ -85,38 +86,50 @@ for i from S to E by +1 do
 	next A at i, FV(i)
 }
 .G2
-If you wish to establish the interest rate (return)  for the first one hundred
+.KE
+If you wish to establish the interest rate (return) for the first one hundred
 years the TVM equation can be rearranged for #i#:
 .EQ I
-FV =~~ PV ( 1 + i ) sup n
-~~\[tf]~~ 
+FV lm PV ( 1 + i ) sup n
+.EN
+.sp -0.6v
+.EQ I
+lineup tf
 FV over PV =~~ { ( 1 + i ) sup n } 
-tf
-{ left [ FV over PV right ] } sup {1 over n} =~~  1 + i 
-tf
-{ left [ FV over PV right ] } sup {1 over n} - 1 =~~  i 
-.EN
-.EQ I
-"Return (i)" lm { left [ 322,000 over 5,000 right ] } sup {1 over 100} - 1 
 .EN
 .sp -0.6v
 .EQ I
-lineup =~~
+lineup tf
+{ ( 1 + i ) sup n } 
+=~~
+FV over PV
+.EN
+.sp -0.6v
+.EQ I
+lineup tf
+1 + i 
+=~~
+{ left [ FV over PV right ] } sup {1 over n}
+.EN
+.sp -0.6v
+.EQ I
+i lineup =~~
+{ left [ FV over PV right ] } sup {1 over n} - 1
+.EN
+.
+Now the equation has been established the return can be calculated:
+.EQ I
+"Return (i)" =~~
+{ left [ FV over PV right ] } sup {1 over n} - 1
+=~~
+{ left [ 322,000 over 5,000 right ] } sup {1 over 100} - 1 
+=~~
 64.40 sup {0.01} -1
-.EN
-.sp -0.6v
-.EQ I
-lineup =~~
+=~~
 1.0425 -1
-.EN
-.sp -0.6v
-.EQ I
-lineup =~~
+=~~
 0.425 times 100
-.EN
-.sp -0.6v
-.EQ I
-lineup =~~
+=~~
 4.25% 
 .EN
 .B Caveat:
@@ -133,6 +146,7 @@ understand that the increases in value was not due to an increase in the growth
 rate but because the growth rate remains \fBconstant\fP, in this instance at
 4.25%, regardless of the amount of capital.
 .LP
+.KS
 The graph below has been plotted with a logarithmic y-axis. The result is a
 straight line growing in constant proportion over the 100 year period.
 .sp -2
@@ -150,6 +164,7 @@ define FV X PV * ( (1 + r )^ ($1-(S-1) ) )  X
 draw A solid
 for i from S to E by +1 do { next A at i, FV(i)}
 .G2
+.KE
 A quick note on logarithms. Logarithms are artificial numbers originally
 invented by John Napier and later improved by Henry Briggs in order to
 facilitate long calculations. The logarithm is the inverse of exponentiation
@@ -205,10 +220,11 @@ multiplied by a number greater than one will get bigger as you would expect
 with compounding.
 .LP
 You can also calculate the discount factor yourself by setting the present
-value to 1 and resolving the time value of money equation. The example below
-uses an discount rate of 10% as the interest #(i)# and shows the factor
-required to discount one #(FV)# pound back to today's value #(PV)# for years
-(n) zero, one, two and three:
+value to 1 and resolving the time value of money equation.
+.KS
+The example below uses an discount rate of 10% as the interest #(i)# and shows
+the factor required to discount one #(FV)# pound back to today's value #(PV)#
+for years (n) zero, one, two and three:
 .EQ I
 PV =~~ 1 over { ( 1 + 10/100 ) sup 0 } =~~ 1  over (1.1) sup 0 =~~ 1 over 1 =~~ 1
 .EN
@@ -222,6 +238,7 @@ PV =~~ 1 over { ( 1 + 10/100 ) sup 2 } =~~ 1  over (1.1) sup 2 =~~ 1 over 1.21 =
 PV =~~ 1 over { ( 1 + 10/100 ) sup 3 } =~~ 1  over (1.1) sup 3 =~~ 1 over 1.331 
 =~~ 0.751
 .EN
+.KE
 As a side note any number raised to the power of zero is always equal to one.
 Year zero is typically taken to be the year than the investment commences.
 Using the information above we can calculate the value of 100 GBP received in 3
@@ -230,32 +247,35 @@ years discounted to today at 10%.
 PV =~~ 100 times 0.751 =~~ \[Po]75.10
 .EN
 The TVM equation can also be rearranged to resolve for the number of years.
-.EQ I
-FV =~~ PV(1 + i) sup n
-tf
-FV over PV =~~ ( 1 + i ) sup n
-tf
-ln { left ( FV over PV right ) } =~~ n ln { ( 1 + i ) }
-tf
-n =~~ {ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
-.EN
 .
 .EQ I
+FV lm PV(1 + i) sup n
+.EN
+.sp -0.6v
+.EQ I
+lineup tf
+FV over PV =~~ ( 1 + i ) sup n
+.EN
+.sp -0.6v
+.EQ I
+lineup tf
+ln { left ( FV over PV right ) } =~~ n ln { ( 1 + i ) }
+.EN
+.sp -0.6v
+.EQ I
+n lineup =~~
+{ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
+.EN
+.
+The equation can now be populated with the correct numbers and the solution
+found:
+.EQ I
 n lm {ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
-.EN
-.sp -0.6v
-.EQ I
-lineup =~~
+=~~
 {ln { left ( 322,000 over 5,000 right ) }} over {ln { ( 1 + 0.0425 ) }}
-.EN
-.sp -0.6v
-.EQ I
-lineup =~~
+=~~
 4.1651 over 0.0416
-.EN
-.sp -0.6v
-.EQ I
-lineup =~~
+=~~
 "100 years"
 .EN
 .
@@ -311,20 +331,11 @@ log sub { ( 1 + i ) }  y =~~ n
 To finish we will complete the calculation and resolve for #n# using base 7:
 .EQ I
 n lm {log sub 7 ^ { left ( FV over PV right ) }} over {log sub 7 ^ { ( 1 + i ) }}
-.EN
-.sp -0.6v
-.EQ I
-lineup =~~
+=~~
 {log sub 7 ^ { left ( 322,000 over 5,000 right ) }} over {log sub 7 ^ { ( 1 + 0.0425 ) }}
-.EN
-.sp -0.6v
-.EQ I
-lineup =~~
+=~~
 2.1404 over 0.0214
-.EN
-.sp -0.6v
-.EQ I
-lineup =~~
+=~~
 "100 years"
 .EN
 We have now calculated the time required using two different bases and you
@@ -355,7 +366,7 @@ A: [ box invis wid 0.25 ht 0.20 "0"
 box invis "i = 4.25/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.2)
 box invis "n = 100" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
 .PE
-Which ever value (FV, PV, N, i) is unknown can then be resolved by using the
+Which ever value (FV, PV, n, i) is unknown can then be resolved by using the
 appropriate arrangement of the TVM formula:
 .EQ I
 FV =~~ PV(1 + i ) sup n 
