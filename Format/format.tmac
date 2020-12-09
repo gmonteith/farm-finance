@@ -54,15 +54,15 @@ always greater than zero, so this is used as an indicator.
 .\" value of contents \\n[contents]
 .\" if statement checks that noheader and \\n(cn are > 0
 .if (\\n[noheader])&(\\n(cn) \{\
-.			ie o .tl '\fBChapter \\n(cn: \\*(c?\fP''%'
-.			el   .tl '%''\fBChapter \\n(cn: \\*(c?\fP'
+.			ie o .tl '\fBDRAFT - Chapter \\n(cn: \\*(c?\fP''%'
+.			el   .tl '%''\fBDRAFT - Chapter \\n(cn: \\*(c?\fP'
 .\}
 .nr noheader 1
 .
 .\" if statement checks that noheader and appendix are > 0
 .if (\\n[noheader])&(\\n[appendix]) \{\
-.			ie o .tl '\fBAppendix \\n(#a: \\*(c?\fP''%'
-.			el   .tl '%''\fBAppendix \\n(#a: \\*(c?\fP'
+.			ie o .tl '\fBDRAFT - Appendix \\n(#a: \\*(c?\fP''%'
+.			el   .tl '%''\fBDRAFT - Appendix \\n(#a: \\*(c?\fP'
 .nr appendix 1
 .\}
 .nr noheader 1
@@ -95,13 +95,9 @@ causes issues with the preface, table of contents and intro. :(
 .
 .\" turns on page numbers in the footer for pages with a chapter heading
 .if \\n[nofooter]=1 \{\
-.			tl ''%'DRAFT'
+.			tl ''%''
 .\}
 
-.\" This only exists to print DRAFT on the bottom RH side of the page
-.if !\\n[nofooter]=1 \{\
-.			tl '''DRAFT'
-.\}
 .\" turns on page numbers in the footer for pages that are not a chapter
 .\" if nofooter & chapterno > 1 then no footer page numbers
 .if \\n[nofooter]=0 \
