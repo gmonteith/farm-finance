@@ -6,14 +6,16 @@
 .\" Graham Monteith
 .\" .bp
 .rs
-.sp |30
+.sp |25
 .ce 1
 .nf
+\s+(20\fBDRAFT\s0\fP
+.sp 5 
+.ce 1
 \s+5\fBFarm Finance\s0\fP
 .\" \s+5\fBMATHEMATICS & FINANCE\s0\fP
 .\" \s+5\fBFOR HOME AND BUSINESS\s0\fP
-.fi
-.sp 5 
+.sp 2 
 .ce
 \s+2\fIGraham Monteith\s0\fP
 .
