@@ -1,5 +1,0 @@
-.nr PS 10
-.nr GROWPS 3
-.nr PSINCR 1.5p
-.nr LL 6.0i
-.nr FM 0.5i
