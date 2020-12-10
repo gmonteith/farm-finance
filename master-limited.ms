@@ -13,53 +13,53 @@
 .CHAPTER "Time Value of Money"
 .so 01.ms \" Time value of money
 .
-.CHAPTER "Equivalence"
-.so 02.ms \" Equivalence
-.
-.CHAPTER "Ordinary Annuities"
-.so 03.ms \" Ordinary Annuities
-.
-.CHAPTER "Annuities Due"
-.so 04.ms \" Annuities Due
-.
-.CHAPTER "Growing Ordinary Annuities"
-.so 05.ms \" Growing Ordinary Annuities
-.
-.CHAPTER "Growing Annuities Due"
-.so 06.ms \" Growing Annuities Due
-.
-.CHAPTER "Declining Annuities"
-.so 07.ms \" Declining Annuities
-.
-.CHAPTER "Perpetuities"
-.so 08.ms \" Perpetuities
-.
-.CHAPTER "Growing Perpetuities"
-.so 09.ms \" Growing Perpetuities
-.
-.CHAPTER "Engineering Economics"
-.so 10.ms \" Engineering economics
-.
-.CHAPTER "Nominal & Effective Rates"
-.so 11.ms \" Nominal & effective rates
-
-.CHAPTER "Costing Your Capital"
-.so 12.ms \" Costing your capital
-.
-.CHAPTER "Investment Analysis"
-.so 13.ms \" Investment analysis
-.
-.CHAPTER "Structure of UK Tax"
-.so 14.ms \" Structure of UK tax
-.
-.CHAPTER "Understanding the Impact of Tax"
-.so 15.ms \" Understanding the impact of tax
-.
-.CHAPTER "Investment Cost Equations"
-.so 16.ms \" Investment cost equations
+.\" .CHAPTER "Equivalence"
+.\" .so 02.ms \" Equivalence
 .\" .
-.CHAPTER "Using The Investment Cost Equations"
-.so 17.ms \" Using the investment cost equations
+.\" .CHAPTER "Ordinary Annuities"
+.\" .so 03.ms \" Ordinary Annuities
+.\" .
+.\" .CHAPTER "Annuities Due"
+.\" .so 04.ms \" Annuities Due
+.\" .
+.\" .CHAPTER "Growing Ordinary Annuities"
+.\" .so 05.ms \" Growing Ordinary Annuities
+.\" .
+.\" .CHAPTER "Growing Annuities Due"
+.\" .so 06.ms \" Growing Annuities Due
+.\" .
+.\" .CHAPTER "Declining Annuities"
+.\" .so 07.ms \" Declining Annuities
+.\" .
+.\" .CHAPTER "Perpetuities"
+.\" .so 08.ms \" Perpetuities
+.\" .
+.\" .CHAPTER "Growing Perpetuities"
+.\" .so 09.ms \" Growing Perpetuities
+.\" .
+.\" .CHAPTER "Engineering Economics"
+.\" .so 10.ms \" Engineering economics
+.\" .
+.\" .CHAPTER "Nominal & Effective Rates"
+.\" .so 11.ms \" Nominal & effective rates
+.\" 
+.\" .CHAPTER "Costing Your Capital"
+.\" .so 12.ms \" Costing your capital
+.\" .
+.\" .CHAPTER "Investment Analysis"
+.\" .so 13.ms \" Investment analysis
+.\" .
+.\" .CHAPTER "Structure of UK Tax"
+.\" .so 14.ms \" Structure of UK tax
+.\" .
+.\" .CHAPTER "Understanding the Impact of Tax"
+.\" .so 15.ms \" Understanding the impact of tax
+.\" .
+.\" .CHAPTER "Investment Cost Equations"
+.\" .so 16.ms \" Investment cost equations
+.\" .\" .
+.\" .CHAPTER "Using The Investment Cost Equations"
+.\" .so 17.ms \" Using the investment cost equations
 .\" .
 .\" .CHAPTER "Equivalent Annual Cost"
 .\" .so 18.ms \" Equivalent annual cost
@@ -79,11 +79,11 @@
 .\" .CHAPTER "Return On Equity"
 .\" .so 23.ms \" Return on equity
 .\" .
-.nr cn 0
+.\" .nr cn 0
 .\" .
 .\" Appendix
-.APPENDIX "Impact of Writing Down Allowance (WDA) on Capital Costs"
-.so A1.ms \" Table - impact of WDA on costs
+.\" .APPENDIX "Impact of Writing Down Allowance (WDA) on Capital Costs"
+.\" .so A1.ms \" Table - impact of WDA on costs
 .\" .
 .\" .APPENDIX "CCTF Flow Charts"
 .\" .so B0.ms \" Capital Cost Tax Factors (CCTF)
@@ -133,7 +133,7 @@
 .\" .so R1.ms \" References
 .\" .nr appendix 0
 .\" .\" .af .pn i
-.
-.TC
+.\" .
+.\" .TC
 .\" .so Z1.ms \" Table of contents
 
