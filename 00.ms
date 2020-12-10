@@ -15,25 +15,29 @@ The examples are all worked through using the equations and at times a table.
 There is no mention of any spreadsheet applications which would be the usually
 way most people would tackle the problems. The reason is that if you can
 understand the equations and the maths you can understand which function to use
-in the spreadsheet. A further point is that in general terms what ever thinking
-got you into a given situation the same thinking will not get you out.
-Therefore, I complete the examples with the equations\(dg and check them with a
-financial calculator, an HP12C\(dd, if I get the same answer with both methods
-I can be confident that the answer is correct. When I use a spreadsheet I also
-complete the check with a financial calculator, so unless the situation is very
-complex it is usually quicker to use the equations and check with the
-calculator. Lastly, a spreadsheet invites complexity and the success of most
-projects hinges on a few factors by completing the work by hand I try always to
-focus on what are the big drivers of the desired outcome and add only as much
-complexity as is necessary.
+in the spreadsheet. A further point, is that, in general terms what ever
+thinking got you into a given situation it is highly unlikely that the same
+thinking will not get you out*. Therefore, I complete the examples with the
+equations\(dg and check them with a financial calculator, an HP12C\(dd, if I
+get the same answer with both methods I can be confident that the answer is
+correct. When I use a spreadsheet I also complete the check with a financial
+calculator, so unless the situation is very complex it is usually quicker to
+use the equations and check with the calculator. Lastly, a spreadsheet invites
+complexity and the success of most projects hinges on a few factors. When I
+complete the work by hand I try always to focus on what are the big drivers of
+the desired outcome and add only as much complexity as is necessary.
+.FS
+* This is why finding bugs in your own computer code is so challenging. It is
+also said that debugging is twice as hard as writing code, so if you write
+overly complex code you have set yourself up for failure.
+.FE
 .FS
 \(dg This may be by programming the equation into my calculator or by
 referencing a factor table.
 .FE
 .FS
 \(dd Strictly speaking the calculator is an HP12C clone. I use a SwissMicros
-DM12L as I have suffered a number of quality problems with the original HP12C
-over the years.
+DM12L.
 .FE
 .LP
 Moving past the maths the work looks to cover the concept of the Time Value of
@@ -43,14 +47,16 @@ blocks for much of finance and important for both business and personal
 investment decisions.
 .LP
 Once we have grasped the mathematics behind the finance we cover the problems
-of establishing the discount rate to use and subsequently how to decide how to
-choose whether an investment is going to increase your wealth. It is always
-worth remembering that there is a limitless supply of negative return
-opportunities.
+of establishing the discount rate to use and subsequently how to decide whether
+an investment is going to increase your wealth. It is always worth remembering
+that there is a limitless supply of negative return opportunities and we are
+looking for find a reliable method of selecting opportunities to achieve a
+positive return.
 .LP
 Tax is always a bind but can not often be ignored as it is not often avoided.
 The tax section is quite large but by the end you should feel more confident
-with both the impact of the tax and how to account for it.
+with both the impact of the tax and how to account for it when making capital
+allocation decisions.
 .LP
 Lastly there is always a choice of whether a investment should be made or a
 piece of equipment replaced. These are the fundamental questions in most
@@ -59,7 +65,7 @@ should make you more confident when making that decision.
 .LP
 There is a large section on breakeven analysis or cost volume analysis as it is
 sometimes known. This differs from traditional breakeven analysis as it
-incorporates the time value of money into the fixed costs.
+incorporates the Time Value of Money into the fixed costs.
 .LP
 The last part of the document looks at how to measure the performance of your
 business once an investment has been made. The idea being to show that the
@@ -82,8 +88,8 @@ interest in the maths. The sections are all number so it should also work well
 as a reference manual. 
 .LP
 If you simply want to make use of the formulas to discount the cash flows then
-you can skip sections 5 through to 10. Section 1 through to 4 contain the nuts
-and bolts of finance and section 11 on Engineering Economics provides the
+you can skip chapters 5 through to 9. Chapter 1 through to 4 contain the nuts
+and bolts of finance and section 10 on Engineering Economics provides the
 formulas that are used through the latter practical chapters.
 .
 .SN
@@ -99,8 +105,9 @@ denotes a negative cash flow. I hope that is always clear from both the
 context, the table and the diagrams which is the correct direction of the cash
 flows.
 .LP
-I have not explicitly used any currency units. If I have wanted to talk about
-units of a particular currency then I have said so in the example.
+I have used GBP pounds and the symbol \[Po] as the unit of currency. Sometimes
+this is not stated as explicitly as it should be, I will endeavour to tidy this
+up in the future.
 .LP
 The cash flow diagrams follow a common convention, whereby cash flows above the
 line are positive or cash flowing into the business and cash flows below the
@@ -108,10 +115,10 @@ line are negative or cash flowing out of the business.
 .LP
 .KS
 The cash flow diagram if required will also state:
-.IP "i" 10
+.IP "#i#" 10
 #i# represents the interest rate or discount rate and will be typically
 expressed as percentage. This will be show above the line.
-.IP "n" 10
+.IP "#n#" 10
 #n# represents the number of compound periods, this maybe in months, days,
 years or any other time period. This will be shown below the line if required.
 Where possible the number of compound periods is numbered, however, if there is a
@@ -136,16 +143,37 @@ A: [  box invis wid 0.25 ht 0.20 "0"
 box invis "i = interest rate" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
 box invis "n = compound periods" wid 0.6 ht 0.25 with .n at A.s + (0.10,0.25)
 .PE
+.LP
 There are also other differences in the cash flow diagrams between different
 types of annuity. These differences will be highlighted at the start of the
 appropriate section.
+.LP
+The other letters most often associated with the cash flow diagram are found
+below.
+.IP "#PV#" 10
+#PV# represents the present value, of which you will learn about in greater
+detail in chapter 1, can also be represented by #P# when using the notation of
+Engineering Economics.
+.IP "#FV#" 10
+#FV# represents the future value and can also be represented by #F# when using
+the notation of Engineering Economics.
+.IP "#PMT#" 10
+#PMT# represents the equals cash flows associated with an annuity. In
+Engineering Economics the cash flows of an annuity are sometimes represented by
+the capital letter #A#.
+.LP
+The notation of #PV#, #FV# and #PMT# has been adopted because it what you
+usually find in spreadsheets and on financial calculators. However, it is not
+the only notation to be found when talking about finance, we have briefly
+discussed the notation of Engineering Economics, and actuaries have their own
+notation to convey the same ideas and principles.
 .KE
 .
 .SH
 Compound periods and the periodic interest rate
 .LP
 In compound interest calculations interest rates are often quoted at the annual
-rate ( also called the nominal rate, this is covered in detail in Section XX)
+rate ( also called the nominal rate, this is covered in detail in chapter 11)
 or as it is often thought of the interest rate per year. However, in compound
 interest problems, the interest rate #i# must be expressed in terms of the
 compounding periods be that, months, quarters, years etc.
@@ -157,10 +185,10 @@ As an example, if a problem stated that money was to be invested at the rate of
 .SH
 Positive and negative sign conventions
 .LP
-It pays to be consistent when working with positive cash flows and negative cash
-flows to avoid both confusion and errors. If the problem has both negative cash
-flows (costs) and positive cash flows (revenues) such as a net present value
-(NPV) then costs are assumed to be negative and are preceded as such by a
+It pays to be consistent when working with positive cash flows and negative
+cash flows to avoid both confusion and errors. If the problem has both negative
+cash flows (costs) and positive cash flows (revenues) such as a net present
+value (NPV) then costs are assumed to be negative and are preceded by a
 negative sign in the equations and surrounded by parenthesis in the tables.
 When working only with costs, and \fBno\fP positive cash flows, then the costs
 are not preceded by a negative sign or surrounded by parentheses in the tables
