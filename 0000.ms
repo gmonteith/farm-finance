@@ -1,14 +1,6 @@
-.\" .RP
-.\" .ND
-.\" .TL
-.\" FARM FINANCE
-.\" .AU
-.\" Graham Monteith
-.\" .bp
 .rs
 .sp |25
 .ce 1
-.nf
 \s+(20\fBDRAFT\s0\fP
 .sp 5 
 .ce 1
