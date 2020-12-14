@@ -16,7 +16,7 @@ is show below:
 
 File name | Description
 --------- | -----------
-'0000.ms' | Title page
+`0000.ms` | Title page
 '000.ms' | Preface
 '00.ms' | Introduction
 '01.ms' | Chapter 01, Time value of money
@@ -67,12 +67,17 @@ File name | Description
 'master-limited.ms' | Edited file to output an individual chapter
 'README.md' | This file
 
+---
+
 ## Installation:
 I use a Debian system so I will presume that if your system is different you
 can follow along from the Debian instructions.
 
 You will require groff and grap:
-'sudo apt-get	install groff grap'
+
+`sudo apt-get	install groff grap`
+
+---
 
 ### Optional Packages:
 You will also require a pdf viewer, I use both evince and zathura:
