@@ -92,8 +92,7 @@ limited impact on the investment cost.
 .SH
 Constants
 .LP
-To aid the calculations we are going to state the value of the the two CCTFs
-below:
+To aid the calculations we are going to state the value of the two CCTFs below:
 .EQ
 CCTF sub WDA lineup =~~ cctf
 ~~=~~
