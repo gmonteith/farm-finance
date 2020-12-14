@@ -81,16 +81,19 @@ You will require groff and grap:
 
 ### Optional Packages:
 You will also require a pdf viewer, I use both evince and zathura:
+
 `sudo apt-get install evince zathura`
 
 Groff outputs the table of contents at the end of the document and I move them
 to the beginning with pdftk:
+
 `sudo apt-get install pdftk`
 
 ---
 
 ## Usage
 To view the entire document you can simply type:
+
 `groffer -ms master.ms`
 
 To move the contents from the end of the document to the beginning I have a
@@ -113,10 +116,12 @@ The complete document is rather large and if you want to examine an individual
 section you can edit the `master-limited.ms` file.
 
 I use vim as a text editor and have the following command in the "q" register:
+
 `:!groffer -ms master-limited.ms -Tpdf --groff > ~/tmp/worktest.pdf`
 
 The command above get be yanked into register "q" with the following command in
 vim:
+
 `"qy$`
 
 Each time a change is made to the file it is saved and then the command in
@@ -124,4 +129,5 @@ register "q" is run to update the pdf.
 
 A separate window can be used to open the pdf which will automatically refresh
 on each update to the underlying pdf document:
+
 `zathura --fork ~/tmp/worktest.pdf; exit`
