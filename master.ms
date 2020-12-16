@@ -101,7 +101,7 @@
 .APPENDIX_SUB "Investment Cost Equations - Time Period 2"
 .so B6.ms \" Annual investment allowance (AIA)
 .bp
-.so B7.ms \" Writing Down allowance (AIA)
+.so B7.ms \" Writing Down allowance (WDA)
 .bp
 .so B8.ms \" Single Asset Pool
 .
@@ -128,6 +128,9 @@
 .
 .APPENDIX "Repair & Maintenance"
 .so J1.ms \" Repair and maintenance
+.
+.APPENDIX "Self Assessment Tax"
+.so K1.ms \" Self assessment Tax
 .
 .APPENDIX "References"
 .so R1.ms \" References
