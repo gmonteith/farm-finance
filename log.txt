@@ -1,7 +1,3 @@
-This file is simply a log of the commit that could be recovered from the
-previously corrupted repository.
-
-
 commit 0a9eb28c434bf6a9b09b600a9d072a595c66784d
 Author: Graham Monteith <gmonteith@posteo.co.uk>
 Date:   Mon Nov 16 11:56:25 2020 +0000
@@ -22,7 +18,7 @@ Date:   Thu Oct 15 08:47:04 2020 +0100
 
     Add sections on types of maintenance plans.
     
-    The types of plans are reactive, preventative, predictive, reliability
+    The types of plans are reactive, preventative, predictive, realiabity
 
 commit 1fbe0d866b83f0b735ba2cd204c037e1bf73618e
 Author: Graham Monteith <gmonteith@posteo.co.uk>
@@ -37,7 +33,7 @@ commit cfd7df8581dd0e5ac15c746aea0c6fdcf1537160
 Author: Graham Monteith <gmonteith@posteo.co.uk>
 Date:   Mon Oct 12 09:26:54 2020 +0100
 
-    Create initial file for repair section.
+    Create intial file for repair section.
     
     This is to cover the concept of repair and maintenance and how to manage
     the risks.
@@ -64,3 +60,1394 @@ Date:   Mon Oct 5 10:15:50 2020 +0100
     Include a graph and a better explanation of the failings of IRR in the section
     on the MIRR.
     
+    Add a section on the conclusion on the analysis of different investment
+    selection criteria.
+
+commit e555cb97b32b01af12f7e09e6d2e10d4781f908c
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Oct 5 10:07:45 2020 +0100
+
+    Substantial expansion of the methods and logic behind the cost of
+    capital.
+    
+    This is an extensive rewrite to expand and clarify how to think about and go
+    about establishing the cost of capital.
+    
+    Define or improve the existing definition:
+    Capital structure
+    Debt
+    Dividend
+    Equity
+    Preferred shares
+    Index
+    Cost of capital
+    Discount rate
+    Cost structure
+    
+    Improve the definition of risk and how it relates to expected returns.
+    
+    Include better information on the CAPM
+    
+    Provide formula to improve the thought processes around cost of equity in small
+    businesses.
+    
+    Discussion of the alternative methods of calculating the cost of equity.
+    
+    Add section on the amount of cash on hand.
+    
+    Add a section on getting the cost of capital wrong.
+
+commit 4d003ce74e5e9d0d44d2e08e660b3c0089b19427
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Oct 5 09:46:02 2020 +0100
+
+    Change equation to have an indent
+    
+    EQ >> EQ I
+
+commit e43fe5e35a89f2273d2e0daa777469420f0b4f43
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Oct 5 09:42:36 2020 +0100
+
+    Change equations to have an indent
+
+commit 8edb60afbe2e5c25bcadfe8926cabe2df6273a8c
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 25 14:42:52 2020 +0100
+
+    Various
+
+commit e689a13719dd6f6aef61ea319b91f003a9376697
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 25 14:35:27 2020 +0100
+
+    Changes based on Ames reading of the first draft.
+    
+    - Ensure that the symbols are all in italics
+    - Add formuls to support some of the symbol definitions.
+    - Ensure all calculations have a unit to add clarity.
+    - Rewording as suggested by Ames reading of the document.
+    - Remove section on tack grazing. It did not sit well with the example
+      used throught out the scenario.
+    - Move the breakeven based on mortality to the end of the appropriate section.
+    - Standardise the deriving of the breakeven equations when used with
+      both a M% and M value.
+    - Remove explanations to the manipulation of the equations.
+    - Add a footnote explaining the margin multiplier.
+    - Add a unit to the headings for the breakeven. E.g. per kg
+
+commit a647d1e0f2589188e2d1126561d3153abeb1e8df
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Aug 24 10:43:45 2020 +0100
+
+    Add a graph to show the relationship between MJ ME/kg DM and the growth
+    rate.
+
+commit 91aa763d597831cb57db4d96bc746ced9ee75a32
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Aug 17 14:29:22 2020 +0100
+
+    Add additional keeps
+
+commit 61f376a99e5f5b68e2023caea4a8b902d89aa5b0
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Aug 17 14:14:23 2020 +0100
+
+    Add keeps
+
+commit 770b41b6768caedb03e64cab78e02088eaa53ff7
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Aug 17 14:07:01 2020 +0100
+
+    Harmonise symbols with the appropriate section on breakeven.
+
+commit 9a4ea56b0a6a861d886b05aecad5adc600ac6310
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Aug 17 13:56:24 2020 +0100
+
+    Add the keeps
+    
+    The keeps ensure equations etc are not split over multiple pages.
+
+commit 2666b7bfd3bac7ff9a8d695b3e6c4c5b7dec362e
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Aug 17 12:09:04 2020 +0100
+
+    Spell check
+
+commit 52d93f46c8e5d28bb87ccb461a2adc8aefafb968
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Aug 17 11:51:20 2020 +0100
+
+    Various changes
+    
+    harmonise the symbols used through out the document.
+    
+    Area per lamb over a time period has been expanded to better explain the logic.
+    
+    Changes to the wording in the document to hopefully improve the readability.
+    
+    Change the table so the mortality is a seperate component to better match the equations.
+    
+    Add section to show the total variable costs calculated on the basis of lambs
+    sold can be resolved to a calculation on the basis of lambs bought.
+    
+    Add section on the calculating the purchase price with the margin as an
+    absolute value.
+    
+    Add section on the calculating the sale price with the margin as an absolute
+    value.
+
+commit 5fd118fd527c055572c627b760cecc1f4166ecef
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Aug 14 17:35:24 2020 +0100
+
+    Additions and changes to the symbols
+    
+    The list has become more comprehensive.
+
+commit 75a467ae1a76fc45363aba97d20c4f022cddf2d7
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Aug 14 16:05:23 2020 +0100
+
+    Change DM to dry matter in the text.
+    
+    This is purely a stylistic change.
+
+commit 035b46904a35c6372a3728fe8ea2f0dfe1a48786
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Aug 14 10:35:49 2020 +0100
+
+    Changes to the tonnes of hay required.
+    
+    The amount of hay required is now more consistent with the forage
+    calculation.
+
+commit fe442ef0b1a8c25ded9232d2857e65e320c84cb7
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Aug 14 10:21:07 2020 +0100
+
+    Rewrite to total forage hectares.
+    
+    Symbol was created to add clarity and the relationship between 1 lamb
+    and the total requirement of a group of lambs was better established.
+
+commit d0abd3c875424fd8ca9f73018a6bd3184401b638
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Aug 14 09:19:26 2020 +0100
+
+    Incorporation of the cummulative DM equations and other changes
+    
+    - Add equation for the DM over a number of days given a start and finish date.
+    - Add equation for the DM given a growth rate and start and finish date.
+    - Add equation for the DM between two dates.
+    
+    -Change to the symbols to reflect the new cumulative DM equations.
+    -Change to the numbers in the examples to reflect the impact of the updated
+    equations.
+    -Add equation for the breakeven with a margin to establisht the sale price.
+    -Add equation for the breakeven with a margin to establisht the purchase price.
+    
+    -Move the fuel cost from the fixed costs to the variable costs and update the
+    numbers.
+    
+    -Show that feed cost can be calculated using the cumulative DM equations. The
+    feed costs are based on the costs for the total hectares divided by the target
+    number of lambs. The two methods yield the same approximate values.
+    
+    -Expand the secton on growth rates to include the information on the
+    relationship between energy and growth.
+
+commit 76408b795dbdb16c6e2d833f31796ed0afadb9b9
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Aug 12 13:08:33 2020 +0100
+
+    Change the section on kg of hay required over a time period to reflect
+    the changes to the cumulative DM forumla
+
+commit bfab6b62b183f939d5a3496245f9222727706d26
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Aug 12 13:06:55 2020 +0100
+
+    Change the section on area over a time period to reflect the change in
+    the DM formula
+
+commit 202cdb79c1b61de4585e837a5a87e78b18a5a4eb
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Aug 12 11:35:33 2020 +0100
+
+    Changes to the section on DM over a time period.
+    
+    A new formula has been devised and derived in the appendix.
+
+commit 1d710611a2203f020a2c9fe4a6f746c2f8421253
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Aug 12 11:06:53 2020 +0100
+
+    Add section on cumulative DM with a growth rate.
+    
+    If the finished weight, store weight and the growth rate are known the
+    total kg of DM required to finish the lamb can be calculated.
+
+commit 41adba008d8b5fdff0e6cc75de5c6becaacd798e
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Aug 12 10:14:33 2020 +0100
+
+    Change the secion on DM for a time period.
+    
+    The formula is derived in the appendix and its use is shown in this
+    seciton. The formula now only requires a start weight a finish weight
+    and a number of days.
+
+commit 84405ad53db471f4464f98d86304f591270f21fb
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Aug 12 09:49:09 2020 +0100
+
+    Add the formula for the finished weight.
+    
+    The formula for the finished weight is used to calculate the dry matter
+    requirements and can be rearranged to resolve for the other components
+    like r.
+
+commit 533cf6c0b7de3353aae2b3b40c9a59ba151e79cf
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Aug 12 09:45:04 2020 +0100
+
+    Change the notation for the start and finish kilograms.
+    
+    The cumulative dry matter calculations are undergoing a change. An
+    appendix is being created to move the calculations out of the main body
+    of the text.
+
+commit be257be4402bb60652570b1e5dd3985486b11d66
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 11 14:07:33 2020 +0100
+
+    Formula to calculate the DM requirement between two dates.
+    
+    For grazing purposes you need to know how much feed the lamb requires in
+    a given period.
+
+commit 84288237a1e5f7ad683ca71993b94a8ce9c7cf45
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 11 12:14:27 2020 +0100
+
+    Cumulative DM to take a lamb from one weight to another with a given
+    growth rate.
+    
+    The growth rate determines the amount of food that will be eaten and
+    therefore the cost. Different breeds have different growth rates and are
+    therefore different preferences.
+
+commit 61096578f2ecafc3e5a120258c6410fc79d7bd0a
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 11 12:13:14 2020 +0100
+
+    Add equation for the cumulative DM given days and store weight and
+    finishing weight.
+    
+    Often lambs are bought in one month to be sold x many days/weeks later
+    at a target weight.
+
+commit f0fdcaa366f4a8984faa681ad56638dec3e603d1
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 11 12:12:11 2020 +0100
+
+    Add table and symbols.
+    
+    The table shows the results of the equations to aid understanding. The
+    symbols are just for ease of reference.
+
+commit 90e5d1b0b0a992c61a53fdcd9eae5bfdfa18336c
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 11 11:02:49 2020 +0100
+
+    Initial commit for the Appendix on the cumulative dry matter formulas.
+    
+    The deriving of some of the more complex equations has been moved to an
+    appendix to make the main section clearer.
+
+commit a0f9a3e8cd022a82b9b44c14e4ffab514f152f5c
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Aug 7 09:26:07 2020 +0100
+
+    Change the equation for DM over a time period.
+    
+    The old equation was correct but equation has been reworked to be
+    simpler and therefore easier to use.
+
+commit b73c18904abcb59ee9b3757fae11d5a8e5e88cc0
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Aug 6 14:15:17 2020 +0100
+
+    Add breakeven for the purchase price
+
+commit 266b14e0154e5c63bf73fac3bc0421516f3cf6ca
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Aug 6 12:47:52 2020 +0100
+
+    Addition of section the mortality rate breakeven
+
+commit bcfd4806d9813a64c6169f148386081e36c7b028
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Aug 6 09:23:12 2020 +0100
+
+    Change the equations to "indented" + addition of tack grazing to the
+    breakeven
+
+commit 0c374d6e4e58da604d2bc3aef98882088f86c6fd
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Aug 5 09:36:07 2020 +0100
+
+    The VC for the originated weight OW has been changed to reflect that it
+    is calculated on a daily basis.
+
+commit c75b51bb10f04da78c261d70c2db99efc2f48b0b
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 4 10:02:48 2020 +0100
+
+    Additions to breakeven quantity.
+    
+    The section now emphasis that this is the quantity sold and shows how to
+    calculate the quantity to be purchased to breakeven.
+
+commit 031913dcbfddef9f9a9dd1d596a91382a5f00b2d
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 4 09:55:17 2020 +0100
+
+    Additional information on the breakdown of the contribution.
+
+commit f74045948e969996212ff6261358ebb8304e2bbc
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 4 09:26:54 2020 +0100
+
+    Changes to the profit section due to the updates in the cost
+    calculations.
+
+commit d4219a99e0a255e2b1b7f7b58cfe412927d081ba
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Aug 4 09:10:17 2020 +0100
+
+    Changes to fixed costs and revenue to show the impact of the mortality
+    rate.
+
+commit a28dc392edca36a0b339e7c0478bc6206e284858
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Aug 3 16:06:30 2020 +0100
+
+    Additional of comprehensive information on the logice behind the impact
+    of the mortality rare.
+    
+    The mortality rate has an impact on all of the costs. This change has
+    had a large impact on the layout and working of all the FC and VC.
+
+commit 308556ac4e0be84c77f30e882c9b86199a7c30db
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 29 13:02:08 2020 +0100
+
+    Add information on the factors affecting the revenue.
+    
+    The farmer has control over many of the factors affecting the revenue
+    even if he does not directly control the price.
+
+commit 83ff35f521f59c35d5dafd9182bd3eaf877875a4
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 29 12:56:32 2020 +0100
+
+    Change the contribution to include price and weight.
+    
+    The contribution now shows explicitly that it is a function of price
+    achieved after deductions and the weight of the finished lamb.
+
+commit f394e2e02e3e27c2724da42b1e602f58e7383c18
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 29 12:43:40 2020 +0100
+
+    Add table to the total cost section.
+    
+    Tables were added for clarity to the total cost section.
+
+commit 04cc3c718e554a4670e78035f8a313473402dd46
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 29 12:01:47 2020 +0100
+
+    Add note on the importance of paying the right price for the store lamb.
+    
+    The purchase weight is always far greater than the weight originated on
+    farm so it is critcical to buy these kilograms for the right price.
+
+commit 529a807207d519149360ac3ae5b66e1bd88d1396
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 29 11:49:03 2020 +0100
+
+    Add tables to the fixed cost section
+
+commit a6285754f0177e375ec2260bce464a4117ca6cf2
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 29 11:21:55 2020 +0100
+
+    Add a breakdown of the symbols to each equation in the variable costs.
+    
+    The purpose is to constantly show both the breakdown of the costs and
+    how they stack up to represent the total.
+
+commit b505e2ac2fe136deaa0f2f2f01c916f956c9928d
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 29 10:18:39 2020 +0100
+
+    Include the symbol for pi to represent profit
+
+commit 8483f312123268e6b6de7de6a22d5f3924b625ed
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 29 10:13:12 2020 +0100
+
+    Change per lamb to per unit.
+    
+    The change was made to make the work more applicable to a wider range of
+    livestock.
+
+commit 10f059f673921a3356a79f0614dd691620f0d76c
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 29 10:04:40 2020 +0100
+
+    Changes to revenue
+    
+    The price P3 was created to show the price after the deductions for
+    mortality and sales commission.
+
+commit d123b18c29f4c5298d1f3a12d94f647c25045cc0
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 28 15:11:18 2020 +0100
+
+    Add simple breakeven example
+    
+    This uses only the top level values and does not break the items into
+    their constituent parts.
+
+commit 992bf434c34ade74f59478d39e594b7d839dcf61
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 28 13:45:16 2020 +0100
+
+    Simplification of the profit section
+    
+    The profit is the revenue minus the costs. The revenue and costs have
+    been covered in detail in other sections so the profit section is now
+    very simple.
+
+commit 29b8c9971847d93f5d7a097485c6edd779ef28fe
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 28 13:31:55 2020 +0100
+
+    Changes to the revenue section.
+    
+    Include information on the relationship between the finished kgs and the
+    store kgs.
+
+commit b45ccab74221fbae34dc127cf89b08c69a35eb5f
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 28 12:55:05 2020 +0100
+
+    Change layout for the cost per DM/KG
+
+commit ebc9b911e70cba10384822458875331d7dca17e9
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 28 12:53:16 2020 +0100
+
+    Changes to total costs.
+    
+    TC now reflects the PW and OW.
+
+commit 9c98c092aefb318b834179a04cf1f21a310ce6ab
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 28 11:39:32 2020 +0100
+
+    Adjust variable costs to reflect the cost between the fixed and variable
+    components.
+    
+    The variable cost has two components:
+    - Purchased weight
+    - Originated weight
+
+commit 1fd74b1046ab5a28745a78803dd80b7d4883365c
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 28 09:22:25 2020 +0100
+
+    Add SL and WG to the symbols.
+    
+    The classifications of SL and WG have added to the symbols.
+    
+    SL - This is the cost of the store lamb and the vet, transport and
+    mortality.
+    
+    WG - This is the cost per day of adding weight to the store lamb and is
+    made of finance, repair, maintenance, forage and hay.
+    
+    It is useful to split the cost of acquiring the store from the cost of
+    adding weight.
+
+commit bfe9c7c6863f36c4c4884e0dc48728fdfa34b47a
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 21:38:51 2020 +0100
+
+    Changes to the variable costs.
+    
+    Addition of the R&M costs.
+    
+    Addition of the store lamb.
+    
+    Bigger table showing subtotal for all costs less store lamb.
+    
+    Short discussion on the purcahsed kg (store lamb) vs originated kg
+    (weight gain).
+
+commit bd33fa258610353e1769e165fc0344075da22c39
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 15:45:57 2020 +0100
+
+    Changes to the fixed costs.
+    
+    The finance charge was increased to 210 days. This 90 days of growing
+    the roots and 120 days of usage.
+    
+    The Fuel was increased to 953
+    
+    The property was included at 6,000
+
+commit 58a1b94478d2b317c8e5f5f8c8af6dbf43ea07d8
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 15:23:39 2020 +0100
+
+    Addition of calculation of hay requirements in kg over a time period.
+
+commit f5b9b99a5d52398472b110bbc70cdd256cf936c1
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 15:11:03 2020 +0100
+
+    Add section to calculate hay requirements in kg per day
+
+commit bba177621478aa855c411984d13781d53bda4c00
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 12:53:51 2020 +0100
+
+    Add an additional calculation to show the amount of hectares required
+    per lamb
+
+commit c1d9cb203bed1f50c542034d661ad39b6db281e6
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 12:50:14 2020 +0100
+
+    Add section for Hay kg DM / tonne
+
+commit d48b3f1d0176d17453dec73ed446d34ff7d5a97d
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 12:44:12 2020 +0100
+
+    Various changes to wordings
+
+commit 4c4d7f5d1d629813ab83954e67b902524c2fb768
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 11:46:03 2020 +0100
+
+    Change the symbol for the DM over a time period.
+    
+    The DM symbol now includes the start and finish periods.
+
+commit 4659596c4e4c3fad21fa3049eab7392b239794af
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 11:12:02 2020 +0100
+
+    Changes to the symbols and the example scenario.
+    
+    Changes to make the example more explicit and hopefully clearer.
+    
+    Symbols were changed also to add clarity and remove ambiquity.
+
+commit 77935b99e441a6b70e244a4a42b0e0b3255ddad7
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 10:53:19 2020 +0100
+
+    Change makeup of the fixed costs.
+
+commit b10e5b036dd2b10e1118f4b6ec8f64ca382970a5
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 09:43:09 2020 +0100
+
+    Change number of hectares from 44 to 45.
+    
+    The number of hectares rounds to 45 and not 44.
+
+commit 296323f403293e99b455ec803241abd50e29e8f9
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 09:35:15 2020 +0100
+
+    Remove the TVC symbol and definition
+
+commit 881002017b2a360ec7dfb1d7e995e9268753da8f
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 09:20:07 2020 +0100
+
+    Change symbol for the store lamb LC to SL
+
+commit c4f88fa0ab5681707e0c12cd49f829a384295d4d
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 27 09:12:49 2020 +0100
+
+    Changes to the profit section, symbol change Q and DM
+    
+    I am changing the format of the document at this stage.
+    
+    The profit section was improved to show more information.
+    
+    The quantity of lambs Q has the subscript l removed.
+    
+    The DM over a time period symbole tp has been replaced with a sub script
+    s -> t. The s represents start and the t finish.
+
+commit 3b0a9f83cf7062f61ebbf52d27eae4281ad3c99b
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Jul 24 10:56:19 2020 +0100
+
+    Changes to revenue section
+    
+    More detail was added to the revenue section.
+
+commit 01555ea6d3be439f9e655066595d3771462c9815
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Jul 24 10:30:36 2020 +0100
+
+    Fuel cost equation, days on farm
+    
+    Change the fuel cost equation so that it includes the descriptions of
+    the inputs.
+    
+    Add the target number of days on farm.
+
+commit 1831a8631348918245d0872cc6d234de49567c25
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Jul 24 09:33:21 2020 +0100
+
+    Add sections on area
+    
+    Sections have been added to calculate the area per day and over a time
+    period, for instance a week.
+
+commit 175140ea419fbe74987befe86b30a6cf4f5de447
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Jul 23 11:42:38 2020 +0100
+
+    Add costs per kg dm
+    
+    Formulas for the cost of forage and hay per kg DM have been added.
+
+commit 927134516cf3e0556b9e7f367c4fe42dd9c02afd
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Jul 23 11:01:58 2020 +0100
+
+    Move the total costs section to be with the FC and VC
+    
+    Add table to show the split for TC, FC and VC
+
+commit 546e9fc9f8ade8cf32827b6c5f968ea5391b790b
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Jul 23 09:44:28 2020 +0100
+
+    Changes to the FC and VC section.
+    
+    Sections were added to show the total costs for a mob of lambs as well
+    as individual lambs. Tables were added showing the breakdown of the
+    variable costs.
+
+commit b0864ce3a4eb98afcb6903ced201046b5010dff6
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 22 17:20:34 2020 +0100
+
+    Change formulas for revenue
+
+commit 4f72b724151e7dba07e8e069b092112c8e489a86
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 22 14:45:32 2020 +0100
+
+    Add fixed costs per lamb
+
+commit 43dd0a237d60253680dc1bdafefab444c4bca387
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 22 14:39:44 2020 +0100
+
+    Add a check for the feed calculation.
+    
+    A check is added to ensure the feed calcualtion is not too wide of the
+    mark. The check works from the required hectares and tonnes back to the
+    DM in kg.
+
+commit fd147f6515ec7fbecb712ab6b8d44a2712f37d30
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 22 14:16:37 2020 +0100
+
+    Changes to the symbols and additional information on amount of hay.
+    
+    An additional formula was added to calculate the amount of hay required.
+
+commit 1a6babc9b969f56682be212ade0abd17f26c81ac
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 22 12:10:39 2020 +0100
+
+    Variable costs
+
+commit 678025043d073dfd73188cc0fa75f09d8c82fe12
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Jul 22 08:57:32 2020 +0100
+
+    Fixed costs
+    
+    Add section on fixed costs. Include the finance cost for the forage.
+
+commit a4fb80012ddb75cf37fc866525e23d6080b199bb
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 21 15:32:36 2020 +0100
+
+    Section on forage requirements.
+    
+    This is the formula for the amount of forage and hay required for a
+    given number of lambs or an individual lamb.
+
+commit a45820acbcc3827666c860c863ae1d8ba57edc63
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 21 12:02:46 2020 +0100
+
+    Add an example to show the impact of the growth rate on DM
+    
+    If the growth rate is lower the amount of DM consumed by the lamb to get
+    it to finishing weight increases and so does the days on farm.
+
+commit 82a896cc58fe76bb6fec05b32a854138811a39dc
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 21 10:36:53 2020 +0100
+
+    Add available DM per hectare
+
+commit d744cd82677d69bbd1b0e9a44974433a1bee157d
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jul 21 09:20:32 2020 +0100
+
+    Add constants for the example scenario.
+    
+    Add the information to complete the base examples.
+
+commit f57ce74bfae35d3443b7dc1caea2bdc13855f377
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 13 15:09:40 2020 +0100
+
+    Changes to the breakeven analysis.
+    
+    Breakeven has been incorporated into the section including functions in
+    general.
+
+commit a0d02aabc2ad948818f50a8e94fa823e7d15c3f9
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 13 14:46:34 2020 +0100
+
+    Addition of the average cost function.
+    
+    This is an addition and was not previously covered.
+
+commit 0111639ee3f3e1a517a05fd96cbd9f9ecea925a1
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 13 14:33:22 2020 +0100
+
+    Changes to the Total cost function TC.
+    
+    Previously there was no separate total cost function it was simply a
+    line in the breakeven. This has been changed to better show the
+    breakdown of the total revenue.
+
+commit d6c28030d4bb7cd00a01a0f6abe86719836ff0d1
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 13 14:21:30 2020 +0100
+
+    Addition on information on revenue functions.
+    
+    Define TR as equal to P(Q).
+    
+    Define the supply and demand function as related to price.
+
+commit 1ffbd193c22a2240c01f382b653cd2d8ca519dc8
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jul 13 10:56:39 2020 +0100
+
+    Rewrite of introduction with a large focus on the control of the
+    variables.
+
+commit aedd4962c7ba3d92df5e3b233657248e0056ea1d
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Jul 10 10:52:40 2020 +0100
+
+    Change the discription of the symbols to two columns.
+    
+    The section is going to change to better reflect the manipulation of the
+    formula TR = TC. Currently only breakeven is shown.
+
+commit 949797342edd7a8cd1bfaade142cd38105469eb1
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Jul 3 09:37:40 2020 +0100
+
+    Add section for target parameters.
+    
+    Add formuala for the  4 simple target parameters of sale weight,
+    purchase weight, days on farm and rate of growth per head per day.
+
+commit 594a2ee04405f8c2ed8ee44ccf3bac2b7cf0c5cc
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Jul 2 15:48:34 2020 +0100
+
+    Add additional symbols and table for growth rates.
+    
+    The fixed costs now have the lamb cost split out.
+    Additionl symbols have been added for the different costs.
+    Table to show the growth rates for the different lamb weights.
+
+commit 81c9bce71190eb3c5bf8a2d52a1c6b0635d848a5
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Jul 2 11:42:53 2020 +0100
+
+    Add sub script 1 to value k
+    
+    The formuals now have K1, kilos puchaes, and K2 kilos sold.
+
+commit b6d2e6bdd53a95614ecc0417780085281429ee2c
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Jul 2 11:35:17 2020 +0100
+
+    Appendix for sheep fattening formulas.
+    
+    First commit. Base information of Revenue, Costs, Profit and Brakeven
+    functions.
+
+commit 52f7568234fce66d69b2c171b034461c133d35cb
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 30 10:29:09 2020 +0100
+
+    Add information on the reinvestment risk.
+    
+    The reinvestment risk was explicitly talked about in this section. The
+    reinvestment risk becomes important when discussing the risk free rate
+    so it makes sense to include informaton on it towards the beginning of
+    the document.
+
+commit c0180da90bbe756507fc501537fb3f63f0f60a19
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jun 29 16:23:10 2020 +0100
+
+    Analysis of Bank in capital structure & CAPM
+    
+    This section is very much under evolution.
+    
+    Add 6 numbered points about the position of the bank as an investor in
+    your business.
+    
+    Additional information on financial risk, CAPM and the risk free rate.
+
+commit 793d12af820ea49cd067b992b16279f76128cd2b
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Jun 18 12:10:36 2020 +0100
+
+    Add definition of an index
+    
+    Stock market indexes are used as a reference for opportunity cost
+    without being defined.
+
+commit 763b4a0eb96e79917832c9d4884e6fe7a0501768
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Jun 18 10:55:45 2020 +0100
+
+    Greater explanation of the cost of capital.
+    
+    The discount rate is one of the largest determining factors in the NPV.
+    
+    Change title to focus on, "investing your capital"
+    
+    Increase the number of terms that are defined, including the capital
+    structure and its constituent parts.
+    
+    Addition on a new section on "investing in your business" which aim to
+    demonstrate that equity is both subordinate to debt and accepts more
+    risk.
+    
+    Section on pricing equity in public companies. Explains in brief terms
+    the risk free rate, bet and market returns. Emphasis on the risk free
+    rate being the start and then risk premiums are stacked on top to reach
+    the expected return of an asset.
+
+commit f925b87a474c30489d12d11da4b2bdbbbb1a6fa7
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Jun 15 13:35:52 2020 +0100
+
+    Add additional information concerning the use of logarithms.
+    
+    Better explanation of the rule of 72. Addition of information on the use
+    of an arbitary base to resolve for n in the TVM equation.
+
+commit 182f5c5bfcbf0b80dad04c1bd52ec485ea3d7678
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 9 14:55:38 2020 +0100
+
+    Add a definition for inflaton from wiki
+
+commit 9f68cf763fd5390044c7a2be30ce7c1caf87e2e2
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 9 13:56:42 2020 +0100
+
+    Add section on the acceptable rate of return
+
+commit 70c358404e1f24e5da7b34ae94fec085a5f39ab0
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Jun 5 11:57:17 2020 +0100
+
+    Add section on estimating future cash flows.
+
+commit 5fd509c9e34beb32d096ba0387879a17b2db0d25
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Jun 4 11:34:56 2020 +0100
+
+    Add information for calculating the nominal discount rate.
+    
+    This includes information on the logic behind the nominal rate, its
+    calculation and how to resolve the nominal rate back to the real rate
+    expected by the investor.
+
+commit b7f6bb00f6a1c9fb936068157e9dc73f3fe8a5c9
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:35:51 2020 +0100
+
+    This is the start of the Appendix for inflation
+
+commit 03825310bfbfe6cc67055da101f325dad7319399
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:35:26 2020 +0100
+
+    This is the start of the Appendix for maintenance.
+
+commit 7d06de1e552efe70d1fba4076c54adcf04b4faef
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:32:49 2020 +0100
+
+    Changes to the layout of the equations.
+    
+    I am not sure these changes added anything. The idea was to try and save
+    space. In reality it the result is not great.
+
+commit dcc46b1662dc40e53b6eb57f5990bce7a64c0659
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:30:42 2020 +0100
+
+    Change the size of the indent
+    
+    The indent used with .IP was changed from 15 to 10.
+
+commit 3c034f3b15cb58e0949d4bf35876571d2a116f80
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:29:39 2020 +0100
+
+    Two small changes to flow chart
+
+commit f0c8b03859b59b3b34af14ead19b3992864dda3b
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:28:44 2020 +0100
+
+    Add mark up to include the appendix in the TOC
+
+commit f8c14062449450ca86cbaca0069359823458fdff
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:27:40 2020 +0100
+
+    Add to TOC
+    
+    XS mark up to include the appendix in the TOC
+
+commit 196a66bec4c3f19880e6602a3f09f6848ff1e9a2
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:25:44 2020 +0100
+
+    Add discounted breakeven for a forage harvest.
+    
+    This section is a longway from finished and requires substantial
+    changes. The addition of the example with the forage harvester is an
+    improvement.
+
+commit 4e59d12fbb8f3f4d560c388822df1d5490ca46ee
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:23:44 2020 +0100
+
+    Enhanced explanations and formatting
+    
+    Changes to improve the readability of the chapter and standardize the
+    formatting of the tables.
+
+commit e0c7bd641fd67ea4b837799b682c853ebba35dc6
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:14:50 2020 +0100
+
+    Add two more examples with salvage, GPS and ATV
+    
+    Add more weight to the examples including salvage value looking at the
+    costs of both a GPS system and an ATV.
+
+commit 004510f35258029163a5c9fede122df7a31cdc38
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:05:07 2020 +0100
+
+    Small changes to some of the equations, add an example text only.
+    
+    The example requires that the cash flow diagram should be added.
+
+commit f8022995a69fecf67b07014f4420327718654101
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 11:02:53 2020 +0100
+
+    Add heading for revolving credit with a bank.
+    
+    Heading to highlight the section showing the impact of repaying or
+    extending a loan to the bank
+
+commit 42d0e8bbb3839345c58d2d8fba6a2736eacfe326
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Jun 2 10:59:09 2020 +0100
+
+    Change arrow to "therefore" symbol.
+    
+    This is part of a larger drive to improve the formating of the document.
+
+commit 527c2689450d6cfe9703773c259beabb64650fad
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon May 11 14:20:50 2020 +0100
+
+    Add classification on different types of cost.
+    
+    Definitions for fixed vs variable costs.
+
+commit 75147f92ba1d5566dc337a8f59b15aeb902196b7
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon May 11 09:53:57 2020 +0100
+
+    Add means of establishing replacement point.
+
+commit c006c0a1b67fb1dab10e4ce850f4047e5ea23a41
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 29 09:39:13 2020 +0100
+
+    Add information concerning the use of spreadsheets.
+    
+    Spreadsheets do not feature in any detail in the work. The reason for
+    this is explained in the intro.
+
+commit 7052bba501fdc0d0f330d11351e562eebe9ee732
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 22 13:58:38 2020 +0100
+
+    Changes to CCTF to reflect the new tax equations.
+
+commit b133f3bf6a2ff380febbd29ace0394c6efea521b
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 22 13:56:51 2020 +0100
+
+    Addition of sections;
+    
+    Structure of the appendix
+    What do the flow charts show
+
+commit 5f5eaff527a0a93de5bdf18691866516b2c241d0
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 22 13:53:06 2020 +0100
+
+    Addition to conclusion concerning the relevance and requirement to
+    calculate the tax effect.
+
+commit fea0bfcfee4b6298873170582e1768c4bddaa528
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 22 13:52:11 2020 +0100
+
+    Minor changes to the wording, addition to the conculuion, addition of a
+    footnote.
+
+commit 593021cdb1b25c19ca22fc00047e8c7053d107f3
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 22 13:48:41 2020 +0100
+
+    Add not concerning the use of one discount rate in the examples.
+    
+    The discount rate is impacted by the tax, but it is tedious to keep
+    changing it. One rate has been used and note added to say this is not
+    correct.
+
+commit d0f04587f8e6b10cf908cb5e5a3e340eb5776f2d
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 22 13:45:55 2020 +0100
+
+    Rewrite section
+    
+    Changes to tax, typsetting, layout and method of explanation.
+
+commit 9c97323609ffb8e287caaeb4893755122925f45b
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Apr 20 15:13:24 2020 +0100
+
+    Add reminders concerning the cost of capital.
+    
+    The cost of capital is influenced by the tax rate. Therefore if you
+    change the tax rate you will have to update the cost of capital.
+
+commit 8592b8e154fe39c8e6be8a89a533f0dedb60450e
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Apr 20 14:30:13 2020 +0100
+
+    Add justification for after tax NPV.
+
+commit 89998ad4bb44dc7d47395ee38a0f3b2e2da2b4a5
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Apr 20 11:08:10 2020 +0100
+
+    Add information on self assesment tax
+    
+    The tax calculations for self assesment have been moved to the Appendix.
+    The logic behind self assesment tax is described in the main body of
+    work.
+
+commit d3f97da3caab9fa95504bf6b7d340d45add8ce49
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Apr 17 12:07:59 2020 +0100
+
+    Complete the equations and table for the examples on how to use the
+    investment cost equations. Cash flow diagrams were also added.
+
+commit acd241442514b406af615922cdf972b07457cd34
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Fri Apr 17 09:40:17 2020 +0100
+
+    Add tables and equations for examples in continuous pools using AIA and
+    WDA at time period one and two.
+
+commit 2faa7b92893059c747a32cf35bf7c6a62b718fb7
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 15 15:41:01 2020 +0100
+
+    Reorder the sections. Add equations for time period 2.
+
+commit 0d7348c16b0013e7c6d5e304b60f98a3c5111268
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 15 15:38:45 2020 +0100
+
+    Add investment cost equations for disposals with salvage value and
+    salvage and capital gains.
+    
+    The appendix had not been completed and the quations were incorrect.
+
+commit d381db853776f51e138e56e031690041a280bc0e
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 15 10:59:30 2020 +0100
+
+    Add equations for sale with cgt
+
+commit d14a5fbdf58b44fb9e8fa17e03efc5c7e45f63d3
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 15 09:04:13 2020 +0100
+
+    Eqations for single asset pools time period 2.
+    
+    Initial commit. This does not yet include the equations with capital
+    gains tax.
+
+commit 4768f3abaa394249b85aea79b2eb7e4a841ddeae
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 15 09:02:07 2020 +0100
+
+    Equations WDA time period 2
+    
+    If the business is subject to corporation tax then tax will be paid at
+    time period 2. This requires the construction of separate flow charts
+    and equations.
+
+commit 690d3be58a7d1777c48590f1522984d439196e8f
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Apr 9 14:35:13 2020 +0100
+
+    Investment cost equations AIA time period 2
+
+commit 16895469f22e6f681822ebbfe77c4257aba22986
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Apr 9 14:32:38 2020 +0100
+
+    Changes to reflect the section is not an appendix
+
+commit 818ec018ce12a34fc67ab2aa099c1140a7449d93
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Thu Apr 9 14:30:44 2020 +0100
+
+    Add extra questions for the accountant
+    
+    Whether to claim all the allowance. If it would be advantageous to use a
+    single asset pool for mobile plant.
+
+commit 56878f210ce4b7752ae5562d72ad83dd6e3d17a4
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 12:42:40 2020 +0100
+
+    Add paragraph on cash being a lazy asset.
+    
+    Having lots of cash offers security but it must be paid for.
+
+commit 431462cf3b7d3c52a9b25cbdc0d0ca3dfca87e4b
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 12:31:06 2020 +0100
+
+    Add cash on hand
+    
+    Add a section concerning cash management.
+
+commit 3da6dceefacefb62fa8b2df46ebc9dfde6d6acf5
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 11:29:38 2020 +0100
+
+    Add section on the sign convention.
+    
+    It is easy to get in a pickle with costs and the appropriate signs so
+    the way to work has been statd explicitly.
+
+commit 364f29c86cd67ae546e4df4eb6f558c84125991d
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 11:03:56 2020 +0100
+
+    Add section on interest rate and compound periods.
+
+commit 463516b3597c38f375a03d01e695b26e9bf97aa2
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 10:01:52 2020 +0100
+
+    Change headers for appendix files
+
+commit 1e8cbb8d971765acb0e5f7e3bf817c31db06bc8e
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 09:54:22 2020 +0100
+
+    Change path sourced files & Appendix heading
+
+commit 37896ee573a72b75a52616ba8152ce6933bc31e1
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 09:53:49 2020 +0100
+
+    Change path of sourced files
+
+commit 540f3483d7843a9020eeeaa38ccca580abfcf95f
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 09:53:40 2020 +0100
+
+    Change path of sourced files
+
+commit e9696e3381c6a0064835b0e27e310c039a1629a3
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 09:53:10 2020 +0100
+
+    Change path of sourced files
+
+commit 710469bd68e788f8992ae2e0a8a3c17905562c01
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Wed Apr 8 09:49:19 2020 +0100
+
+    Change path for sourced files
+
+commit d09bdf085bcaebeb82417f543733f77129ddb0ba
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 16:14:08 2020 +0100
+
+    Rename and reorganise files
+    
+    The tax calculations have been dramatically changed and moved to an
+    appendix.
+
+commit c7fdd81aea1cf0b5e52fc2efa58e1725299a68d1
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 13:49:38 2020 +0100
+
+    Not required
+
+commit 0ce8e7f7712590e7de473257a5e4e61dd532fc1b
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 13:49:09 2020 +0100
+
+    No longer required
+
+commit a6aac495266d1f19b0c4a2cf40476d5f97728d23
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 13:47:58 2020 +0100
+
+    Create equation sheet for neg equations time period 1
+    
+    This is a reference sheet for negative equations in time period 1.
+
+commit c8e6923682bd5af85cd0ca310d6e2f4614e58eac
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 13:46:53 2020 +0100
+
+    Change heading to SH and add positive equations.
+    
+    No need to numbered headings in the appendix. The poitive equations
+    were missing.
+
+commit de81d32e316031ce06b0db9cee83578cbce96a48
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 13:45:38 2020 +0100
+
+    Change heading title to .SH
+    
+    I am not sure how this will work with the TOC. Howeve, I do not want
+    numbered headings in the appendix.
+
+commit ffa1fb5de01067c0161d016e4c73684be480fbd9
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 13:44:58 2020 +0100
+
+    Move general information to start of the appendix
+
+commit 96abbb26c7b016d7ce8cbc7d6dc88bdd989c9d59
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 13:43:18 2020 +0100
+
+    Addition of information used across all flow charts.
+    
+    This section is being used to specify common information.
+
+commit 8d6cb292f041811cbd6e7597eda4a93b735193f3
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 13:42:09 2020 +0100
+
+    Rewrite
+    
+    The timing of the tax payments have been included and the time periods 1
+    and 2.
+
+commit 892cfa1682428f9bc081e06830533cc9434f0491
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Tue Apr 7 13:41:00 2020 +0100
+
+    Add tables and more explanations for the investment cost.
+
+commit 8e26a92f5c54f622db7d7aa56c2abcc8e615eca9
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Apr 6 14:03:16 2020 +0100
+
+    Remove section on timiing of tax payments.
+
+commit 579152c5f67e519be1a7d985a5a9cafd78814baa
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Apr 6 13:57:34 2020 +0100
+
+    Rewrite equations and add tables.
+    
+    Standardisation of equations to match the format used in the AIA.
+
+commit 63551f0ebd6e1bc7870b8f3febd02c55fab2cd9f
+Author: Graham Monteith <gmonteith@posteo.co.uk>
+Date:   Mon Apr 6 13:56:02 2020 +0100
+
+    Add explanation for grouping symbols.
+    
+    An effort to make the transformation of the equations clearer and add
+    information about the steps taken.
