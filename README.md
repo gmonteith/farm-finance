@@ -64,7 +64,7 @@ File name | Description
 `Format/equation.tmac` | Equation definitions
 `Format/equation.tmac` | Pic definitions
 `master.ms` | File to produce complete document
-`master-limited.ms` | Edited file to output an individual chapter
+`master-limited.ms` | File that can edited file to output specifice chapters/files
 `README.md` | This file
 
 ---
@@ -96,8 +96,12 @@ To view the entire document you can simply type:
 
 `groffer -ms master.ms`
 
-To move the contents from the end of the document to the beginning I have a
-function in my bashrc:
+This will produce the entire document but the table of contents will be at the
+end of the document.
+
+To view the entire document with the table of contents in its more natural
+place I have a function in my bashrc:
+
 ```
 complete-toc()
 {
@@ -108,24 +112,41 @@ pdftk ~/tmp/complete.pdf cat 1 2 r5-r1 3-r6 output ~/tmp/farm_finance.pdf
 evince ~/tmp/farm_finance.pdf
 }
 ```
+
 There is very little to like about the process above and if the pdf changes in
-length the pdftk command has to be rewritten.
+length the pdftk command has to be rewritten. I have been meaning to work on a
+better solution but I have not dedicated the time to it...
+
+---
 
 ### Workflow when editing:
-The complete document is rather large and if you want to examine an individual
-section you can edit the `master-limited.ms` file.
+The `master-limited.ms` exists because the entire document is rather large,
+cumbersome and slow to produce for editing individual chapters.
 
-I use vim as a text editor and have the following command in the "q" register:
+Vim is my preferred text editor and I typically have a vertically split window
+with the chapter/appendix/file I am working on in one window and the
+`master-limited.ms` open in the other. The `master-limited.ms` is uncommented
+to print the file I am editing and I have the following command in the "q"
+register:
 
 `:!groffer -ms master-limited.ms -Tpdf --groff > ~/tmp/worktest.pdf`
 
-The command above get be yanked into register "q" with the following command in
-vim:
+The command above can be yanked into register "q" with the following command in
+vim: `"qy$`
 
-`"qy$`
+Each time a change is made to the chapter/appendix/file it is saved and then
+the command in register "q" is run with '@q' to update the pdf.
 
-Each time a change is made to the file it is saved and then the command in
-register "q" is run to update the pdf.
+The reason that the 'master-limited.ms' file is required is that the macro and
+layout files, shown below, are only sourced in the master and not in the
+individual chapters/appendices.
+
+`Format/format.tmac`
+`Format/equation.tmac`
+`Format/pic.tmac`
+
+You could of course source these files in each individual chapter but that
+would require more maintenace.
 
 A separate window can be used to open the pdf which will automatically refresh
 on each update to the underlying pdf document:
