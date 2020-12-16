@@ -2,14 +2,14 @@
 In the previous chapter we covered in limited detail the basic structure of UK
 tax and the types of capital allowances. In this chapter we are going to
 examine the impact of tax. It is fair to say that most people intuitively
-understand that tax has impact on the cash that is going to be received by the
-business owner. However, tax also has an impact on the costs associated with
-any business and as we shall see the impact on the capital costs is dependent
-on the capital allowance.
+understand that tax has an impact on the cash that is going to be received by
+the business owner. However, tax also has an impact on the costs associated
+with any business and as we shall see the impact on the capital costs is
+dependent on the capital allowance.
 .LP
-We are going to start by use the base case below to measure the impact of the
-tax on a capital investment under differing scenarios. The example below is
-very simple, there is no working capital or salvage value.
+We are going to start with the base case below to measure the impact of the tax
+on a capital investment under differing scenarios. The example below is very
+simple, there is no working capital or salvage value.
 .TS
 tab (#) center;
 lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
@@ -39,10 +39,10 @@ NPV#\[Po]14,835
 _
 .TE
 .
-The cash flows can also be calculated making use of the equations from Section
-XX on Engineering Economics.
+The cash flows can also be calculated making use of the equations from Chapter
+10 on Engineering Economics.
 .EQ I
-NPV lm Investment + PV sub Anuuity + PV sub Gradient
+NPV lm Investment + PV sub Annuity + PV sub Gradient
 .EN
 .sp -0.6v
 .EQ I
@@ -76,34 +76,35 @@ lineup =~~
 .EQ I
 lineup =~~ \[Po]14,831
 .EN
-This is our base case and we will look at the impact on the NPV of tax paid
-under utilising the AIA and the WDA. It can be seen from the equation that the
-investment cost is \[Po]1,000 and the positive cash flows generated from the
-investment are \[Po]15,831 if there is no tax.
+This is our base case and we will look at the impact of utilising the AIA and
+the WDA on the NPV. It can be seen from the equation that the investment cost
+is \[Po]1,000 and the positive cash flows generated from the investment are
+\[Po]15,831 if there is no tax.
 .LP
-We will reuse the annuity factor of 3.352 and the gradient factor of 5.775 to
-reduce in other examples to reduce the repetition of recalculating the factor.
-We will also stick with a discount rate of 15% we appreciate that this is not
-good practise as we have previously stated that if your cash flows are subject
-to tax then the discount rate has to be subject to tax. Therefore, the discount
+We will reuse the annuity factor of 3.352 and the gradient factor of 5.775 in
+other examples to reduce the repetition of recalculating the factors. We will
+also stick with a discount rate of 15%. I appreciate that this is not good
+practise as we have previously stated that if your cash flows are subject to
+tax then the discount rate has to be subject to tax. Therefore, the discount
 rate should be adjusted to reflect the tax rate used in the examples, where we
-are claiming the capital allowances, however we have elected for simplicity and
+are claiming the capital allowances, however I have elected for simplicity and
 to focus on the concept of the capital allowances.
 .
-.XXXX \\n(cn 1 "Tax and capital investments"
+.XXXX \\n(cn 1 "Tax and Capital Investments"
 .LP
 The impact of Income Tax is not the same for all types of business costs. Some
 costs are called "expenses", and are deducted in full in the year in which they
-are incurred throught the profit % loss account. Other costs called "capital
-expenditures", are recorded on the balance sheet in the year that they are
-incurred and subsequently written off over a number of future periods\(dg.
+are incurred through the profit & loss (P&L) account. Other costs called
+"capital expenditures", are recorded on the balance sheet, in the year that
+they are incurred, and subsequently written off over a number of future
+periods\(dg.
 .FS
-\(dg This is done through depreciation in the company accounts and appears on
-the P&L. However, as we explained in the previous chapter HMRC does not allow
+\(dg This is done through depreciation in the company accounts which appears on
+the P&L. However, as we explained in the previous chapter, HMRC does not allow
 depreciation for tax purposes and this is where the capital allowances come
 into play. There is also a difference between the tax as stated on the P&L,
 with depreciation, and the actual cash tax paid as calculated from utilisation
-of capital allowances. This can typically be resolved through the cash flow
+of the capital allowances. This can typically be resolved through the cash flow
 statement and notes on tax calculations.
 .FE
 The amount written off each year for the purpose of determining the taxable
@@ -146,7 +147,7 @@ year to year.
 .XXXX 0 2 "Annual Investment Allowance & First Year Allowance"
 .LP
 The annual investment allowance (AIA) and the first year allowance (FYA) allow
-for entire value of a capital expenditure to be written down in the first year
+the entire value of a capital expenditure to be written down in the first year
 for tax purposes. Therefore, in this scenario, the #\[Po] 1# which is used to
 purchase an asset is written down immediately meaning the cost of the
 investment is theoretically equal to:
@@ -239,7 +240,13 @@ before discounting were found to be:
 .EQ I
 "Tax savings" =~~ Idt
 .EN
-As the AIA can allows for 100% write down in the first year the equation can be
+In words this can be written as: 
+.EQ I
+"Tax savings" =~~ Investment
+times ~ Capital ^ allowance ^ rate %
+times Tax ^ rate %
+.EN
+As the AIA allows for a 100% write down in the first year the equation can be
 reframed for this example as:
 .EQ I
 "Tax savings" lm 1,000(1)(0.3)
@@ -288,15 +295,19 @@ NPV#\[Po]10,345
 _
 .TE
 The NPV can again be calculated using equations. The investment has to be
-multiplied by the Captial Cost Tax Factor (CCTF) CCTF for the AIA and the
-annuity and gradient components by the tax rate. Do not worry that you have not
-encountered the CCTF before they are equations that are derived in Appendix A &
-B to aid in establish the true cost of a capital purchase. You will become more
-familiar with them over the next of the document.
+multiplied by the Capital Cost Tax Factor (CCTF) for the AIA and the annuity
+and gradient components by the tax rate. Do not worry that you have not
+encountered the CCTFs before they are equations that are derived in Appendix A
+& B to aid in establish the true cost of a capital purchase. You will become
+more familiar with them over the rest of the document.
 .EQ I
-NPV lm Investment ( CCTF sub AIA ) + left [ PV sub Anuuity + PV sub Gradient right ]
+NPV lm Investment ( CCTF sub AIA )\(dg + left [ PV sub Annuity + PV sub Gradient right ]
 ( 1 - "tax rate" )
 .EN
+.FS
+\(dg The # CCTF sub AIA # can be written in words as: 
+# 1 - { Tax ^ rate % } over { 1 + Discount ^ rate % } #
+.FE
 .sp -0.6v
 .EQ I
 lineup =~~
@@ -335,12 +346,12 @@ investment so the cash inflows simply have to be multiplied by # 1 - "tax rate"
 .IP \(bu
 The tax reduces the size of the cash inflows but it also reduces the cost of an
 investment. The cash inflows have been reduced by exactly the rate of tax (30%)
-from \[Po]15,831 to \[Po]11,082, this is not surprising they were multiplied by
-# ( 1 - "tax rate" ) #, but the investment cost has been reduced by only 26.1%
-from \[Po]1,000 to \[Po]739. The tax benefit for a cost would normally be # ( 1
-- "tax rate" ) # as previously discussed, which in this case would be \[Po]300,
-however, as  the tax benefit has been discounted by one period at 15% it has
-been reduced to \[Po]261, which is the difference between \[Po]1,000 and
+from \[Po]15,831 to \[Po]11,082, this is not surprising as they were multiplied
+by # ( 1 - "tax rate" ) #. But the investment cost has been reduced by only
+26.1% from \[Po]1,000 to \[Po]739. The tax benefit for a cost would normally be
+# ( 1 - "tax rate" ) # as previously discussed, which in this case would be
+\[Po]300, however, as  the tax benefit has been discounted by one period at 15%
+it has been reduced to \[Po]261, which is the difference between \[Po]1,000 and
 \[Po]739.
 .IP \(bu
 The NPV has been reduced from \[Po]14,835 to \[Po]10,343 when the AIA is
@@ -395,15 +406,15 @@ The table above shows that the tax saving on \[Po]1,000 does total \[Po]300,
 however, it is spread over a number of years. The present value of the tax
 savings only amount to \[Po]164 when the discount rate is 15%. Therefore,
 taking into consideration the time value of money, \[Po]1,000 recorded as an
-expense today has an after tax cost of \[Po]700, where as \[Po]1,000 recorded
-as a capital asset has at after tax cost of \[Po]836, or \[Po]1,000 - \[Po]164,
-which is the capital cost less the tax saving.
+expense today has an after tax cost of \[Po]700. Whereas \[Po]1,000 recorded as
+a capital asset on the balance sheet from which a claim is made against tax
+utilising the writing down allowance at 18% has at after tax cost of \[Po]836,
+or \[Po]1,000 - \[Po]164, which is the capital cost less the tax saving.
 .LP
 Appendix A includes information concerning the mathematics behind the table
 which are used in the construction of the Capital Cost Tax Factors (CCTF)
-required to simplify the tax calculations.
-.LP
-The tax saving for the \[Po]1,000 investment are shown in the table below:
+required to simplify the tax calculations. The tax saving for the \[Po]1,000
+investment are shown in the table below:
 .TS
 tab (#) center;
 l c c c c
@@ -429,13 +440,24 @@ Total#\[Po]548#\[Po]164
 #_#_#
 .TE
 However, the table above terminates at year 5 and we need to calculate the tax
-savings available in the future. Do not worry about the equation used to
-calculate the tax savings onto infinity, the logic behind it is found in
-Appendix A but it is not important to be familiar with it.
+savings available in the future. Do not worry that you have not seen the
+equation used to calculate the tax savings onto infinity before, the logic
+behind it is found in Appendix A but it is not important to be familiar with
+it.
 .KS
 .EQ I
 "Tax savings to infinity" lm
 371 ( 1 - CCTF sub WDA )
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+371
+left [ 1 - { Capital ^ allowance ^ rate % 
+times ~~ tax ^ rate % } 
+over
+{ Discount ^ rate % ~ + ~ Capital ^ allowance ^ rate %  } 
+right ] 
 .EN
 .sp -0.6v
 .EQ I
@@ -498,11 +520,12 @@ NPV#\[Po]10,249
 _
 .TE
 .
-The table has adjusted to show the tax benefits of the WDA and again the NPV
-can be established with the use of the appropriate equations:
+The table above has been adjusted to show the tax benefits of the WDA and the
+NPV has been recalculated. The NPV can also be established with the use of the
+appropriate equations:
 .EQ I
 NPV lm Investment left [ CCTF sub WDA right ] 
-+ left [ PV sub Anuuity + PV sub Gradient right ] ( 1 - "tax rate" )
++ left [ PV sub Annuity + PV sub Gradient right ] ( 1 - "tax rate" )
 .EN
 .sp -0.6v
 .EQ I
@@ -589,12 +612,14 @@ this example the NPV would be the same as if there was no taxation.
 .SH
 Conclusion
 .LP
-There are a number of things that we have take aways from this section on the
+There are a number of things that we can take away from this section on the
 impact of tax:
 .IP \(bu 3
 The cost of a capital item is lower when the AIA is used vs the WDA therefore
-business like to accelerate depreciation for tax purposes. It also incentivies
-business to pass capital investments through the P&L where possible.
+business like to accelerate depreciation for tax purposes. It also provides an
+incentive for business to pass capital investments through the P&L where
+possible. The other side of this coin is that costs can be capitalised to
+improve the current state of the P&L.
 .IP \(bu
 Tax reduces the net income but the capital allowances reduce the cost of an
 investment.
@@ -608,5 +633,5 @@ offset.
 In general a lower level of profitability will lead to a lower level of
 taxation but the reduced profitability means that the capital allowances can
 not be fully utilised leading to higher capital costs. If you are the marginal
-producer not only will your operating costs be higher than average but also it
-may also be very challenging to compete on the fixed costs.
+producer not only will your operating costs be higher than average but it may
+also be very challenging to compete on the fixed costs.
