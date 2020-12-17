@@ -36,6 +36,7 @@ further investigation into the relationship between the ROE and the ROA. The
 flow chart below shows how Donaldon Brown broke down ROE into its constituent
 parts.
 .sp -2
+.KS
 .mk 
 .in 1i
 .PS
@@ -132,6 +133,7 @@ For this reason the ROE was deconstructed and even though the ROE number was
 unpredictable the constituent parts were found to be more predictable.
 .br
 .sp 12
+.KE
 .LP
 .
 There are a number of ways that the ROE can be analysed. In the flowchart above
@@ -162,6 +164,7 @@ The assumptions to the left are taken from the save example we used to the
 previous section in the discussion about EVA. The difference is that the 7,000
 of other income has been removed and the figures adjusted accordingly.
 .sp 3
+.KS
 .XXXX 0 3 "5 Step Dupont Analysis"
 .LP
 .sp -2
@@ -264,6 +267,7 @@ TROE: task(1.0, 0.3, "Return on Equity") with .s at LN17.n
 .sp 0.5v
 # lineup =~~ 19.8% #
 .sp 7
+.KE
 .LP
 Note that the product of the first four terms is Return on Assets (ROA) and the
 final term includes the leverage. The 5 Step DuPont analysis aims to examine
