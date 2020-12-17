@@ -1,4 +1,4 @@
-.
+.I
 .\" .so Format/format.tmac
 .\" .so Format/equation.tmac
 .\" .so Format/pic.tmac
@@ -65,9 +65,9 @@ CGT: box "#space 0 cgt #" width 1.1 height 0.6 with .s at Y2.end
 .SH
 Flow chart
 .LP
-The flow chart shows the available options when using the AIA.  The key points
+The flow chart shows the available options when using the AIA. The key points
 to understand in the logic of the flow chart are:
-.IP \(bu
+.IP \(bu 3
 The flow chart starts by calculating the tax benefits arising from an
 investment to infinity using the #CCTF sub AIA#. This is because HMRC is clear
 that a balancing allowance in your main rate or special rate pool can only be
@@ -76,11 +76,11 @@ dislocates the tax benefits arising from the asset with its ownership and traps
 any remaining value associated with a given asset after disposal in the
 appropriate pool.
 .IP \(bu
-The continuous pool is designed with a infinite life, as previously stated the
+The continuous pool is designed with an infinite life, as previously stated the
 #CCTF sub AIA# calculates tax savings to infinity, which means to establish the
 tax savings at any moment in time, typically at the point the asset is disposed
 of, we have to add back the tax savings lost equal to the salvage value at that
-time using the equation #pvs#. 
+time using the equation, #pvs#. 
 .IP \(bu
 The flow chart assumes that the pool continues without ever becoming zero, and
 there is always sufficient funds in the pool to cover the salvage value of any
@@ -92,27 +92,27 @@ charge.
 .IP \(bu
 The capital gains tax is calculated using the rate of tax used in the rest of
 the equations. The reasons for this have been discussed at the beginning of
-this appendix, the basic premise is that the capital gain will typically happen
-far enough in the future, when the rate of taxation is not know, to have a
-limited impact on the investment cost.
+this appendix. The basic premise for this decision is that the capital gain
+will typically happen far enough in the future, when the rate of taxation is
+not know, limiting the impact on the investment cost.
 .
 .SH
 Constants
 .LP
 To aid the calculations we are going to state the value of the the two CCTFs
 below:
-.EQ
+.EQ I
 CCTF sub AIA lm cctfaia
-~~=~~
-1 - 0.2 over { ( 1 + 0.15 ) }
-~~=~~
+=~~
+1 - 0.2 over {  1 + 0.15  }
+=~~
 0.8261
 .EN
-.EQ
+.EQ I
 CCTF sub WDA lineup =~~ cctf
-~~=~~
-1 - 0.18(0.2) over {  ( 0.15 + 0.18 ) }
-~~=~~
+=~~
+1 - 0.18(0.2) over {   0.15 + 0.18 }
+=~~
 0.8909
 .EN
 The calculation for the CCTF will be covered in detail so do not fret that you
@@ -122,38 +122,43 @@ have not been given an explanation at this stage.
 AIA - No salvage value
 .LP
 We are going to work through an example using both a table and then some
-mathematics. Most people for comfortable with the table and it can help in
-making the equations slightly less abstract.
+mathematics. Many people feel more comfortable with the table and it can help
+in making the equations seem slightly less abstract.
 .LP
 The CCTF is an equation that can be used to calculate the investment cost. The
 premise of the CCTF is that the tax savings are calculated to infinity and
 subtracted from the investment to leave the investment cost.
 .LP
 For the purpose of the following examples please assume the following:
-.IP \(bu
+.IP \(bu 3
 The operating cash flows associated with the capital investment, if shown, are
-25,000 for each year.
+\[Po]25,000 for each year.
+.IP \(bu 3
+The working capital investment, if shown, is \[Po]8,000.
 .IP \(bu
-The working capital investment, if shown, is 8,000.
-The problem with the table is that it is rather complex and does not allow you
+The amount in the pool 2 years prior to the new investment was \[Po]20,000.
 .LP
-In Appendix A we examined the impact of the WDA on the tax. The tax savings
-before discounting were found to be:
-.EQ
+In Appendix A we examined the impact of the WDA on the tax. The tax savings to
+infinity before discounting were found to be:
+.EQ I
 "Tax savings" lm Idt
 .EN
-.KS
 As the AIA can allows for 100% write down in the first year the equation can be
 reframed for this example as:
-.EQ
-"Tax savings" lm 15,000(1)(0.2)
+.EQ I
+"Tax savings" lm Idt
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-3,000
+15,000(1)(0.2)
 .EN
-We can now construct the table below:
+.sp -0.6v
+.EQ I
+lineup =~~
+\[Po]3,000
+.EN
+We can now construct the table below using our example scenario:
 .TS
 tab (#) center;
 lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
@@ -183,22 +188,24 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
 #_#_#_#_#_#_
 Present value#(23,000)#20,010#15,120#13,160#11,440#13,916
 _
-NPV#50,646
+NPV#\[Po]50,646
 _
 .TE
-.tP "Table showing tax savings from AIA"
-.KE
 The CCTF transfers the PV of the tax benefit to the investment as it arises
 from the use of a capital allowance and would therefore not be available
 without a capital investment.
-.KS
 .LP
-The graph below is a diagrammatic representation of the pool when the AIA it
-utilised.
+.KS
+The graph below is a diagrammatic representation of the pool when the AIA is
+utilised. The graph starts 2 years prior to our \[Po]15,000 investment at which
+time the pool value was \[Po]20,000. The pool has subseqently been written down
+at 18% per annum and the value in the pool at zero on the #x# axis is
+theoretically \[Po]13,448
 .
+.sp -2
 .G1
 frame invis ht 1.5 wid 4.5 left solid bot solid
-label left "Pool" unaligned "Value" left .4
+label left "Pool" unaligned "Value" "\[Po]" left .4
 label bot "Years" 
 
 ###############################################################################
@@ -266,7 +273,7 @@ X
 # Draws a circle at the point on the graph after write down or salvage
 define marker X
 for i from $1 to $2 by +1 do {
-	circle at i,pa($3,i+$4) radius 0.03
+	circle at i,pa($3,i+$4) radius 0.015
 }
 X
 
@@ -359,7 +366,7 @@ nx=pa(t,Y-1)-S
 if T == 1 && F == 0 && S == 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		# Solid line from year 0 to end
 		capcurve(solid, 0, E, t, 0) # line year 0 to Y
@@ -371,7 +378,7 @@ if T == 1 && F == 0 && S == 0 then {
 if T == 1 && F == 0 && S != 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		capcurve(solid, 0, Y-1, t, 0) # line year 0 to Y-1
 		flat(solid, Y-1, Y, qx)
@@ -387,7 +394,7 @@ if T == 1 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,qx, Y,nx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, nx, -Y)
@@ -399,11 +406,11 @@ if T == 1 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),qx, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, qx, -Y+1)
@@ -418,7 +425,7 @@ if T == 1 && F == 0 && S != 0 then {
 if T == 0 && F == 0 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, E, v, 0)
@@ -433,7 +440,7 @@ if T == 0 && F == 0 && S == 0 then {
 if T == 0 && F == 0 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -450,7 +457,7 @@ if T == 0 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, zx, -Y)
@@ -462,11 +469,11 @@ if T == 0 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+0.25,ux, Y+0.25,S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, ux, -Y+1)
@@ -481,7 +488,7 @@ if T == 0 && F == 0 && S != 0 then {
 if F == 1 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -490,7 +497,7 @@ if F == 1 && S == 0 then {
 	marker(1, Y-1, I, 0)
 
 	coline(solid, orange, 2.5, Y,zx, Y,0)
-	legend(orange, 0.7, Balancing allowance)
+	legend(orange, 0.7,Balancing allowance)
 
 } else {
 }
@@ -498,7 +505,7 @@ if F == 1 && S == 0 then {
 if F == 1 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -513,10 +520,10 @@ if F == 1 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value) 
+			legend(green, 0.7,Salvage value) 
 
 			coline(solid, orange, 2.5, Y,zx, Y,0)
-			legend(orange, 0.6, Balancing allowance)
+			legend(orange, 0.6,Balancing allowance)
 
 			} else {
 			}
@@ -524,25 +531,24 @@ if F == 1 && S != 0 then {
 		if S > ux && S != 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),ux, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 			} else {
 			}
 
 		if S == 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,ux, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 			} else {
 			}
 
 } else {
 }
 .G2
-.fP "Graph showing an AIA investment in the pool."
 .KE
 .
 The graph shows that the AIA is registered in the pool but does not change the
@@ -550,7 +556,7 @@ on going writing down allowance as the purpose of the AIA is to allow a
 business to take the entire tax benefits of an investment upfront. 
 .
 .SH
-Mathematics - no salvage value
+Mathematics - AIA no salvage value
 .LP
 If the flow chart is followed for the scenario where there is no salvage value
 we have the following equation:
@@ -562,95 +568,96 @@ instance.
 .
 The basic premise for the AIA and the yearly allowance is that the investment
 cost is equal to:
-.EQ
-investment( 1 - "tax rate" )
+.EQ I
+Investment( 1 - "tax rate" )
 .EN
-However when calculating the discounting starts at either time period one or
-time period two so the tax benefit does not occur at time period zero but at a
-later time.
-.
 The tax benefits accruing to an investment under AIA or the yearly allowance
-are equal to:
-.EQ
+can be written as:
+.EQ I
 It\(dg
 .EN
 .FS
 \(dg We previously expressed the tax savings as #Idt#, however, as we have
 shown that #d# is equal to 1 it can be removed from the equation to leave #It#.
 .FE
-If the tax benefits are to accrue in time period one the equation will become:
-.EQ
+However, the discounting starts at either time period one or time period two.
+So we need to add a denominator that includes the discounting for the
+appropriate time period. If the tax benefits are to accrue in time period one
+the equation will become:
+.EQ I
 It over { 1 + i }
 .EN
 The investment cost is equal to the investment less the tax benefits:
-.EQ
+.EQ I
 I - left [ It over { 1 + i } right ]
 .EN
 This can be factored to give the CCTF:
-.EQ L
-~~~~~~~~~~~~~~~~~~~~~~
-CCFT sub AIA lm left [ cctfaia right ]
+.EQ I
+CCFT sub AIA =~~ left [ cctfaia right ]
 .EN
 The investment cost can now be calculated as:
-.EQ L
-"Investment cost" lineup =~~ -I left [ CCTF sub AIA right ]
+.EQ I
+"Investment cost" lm -I left [ CCTF sub AIA right ]
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -15,000^ left [ ncctfaia(0.2, 0.15) right ]
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -15,000 left [ 0.8261 right ]
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--12,391
+-\[Po]12,391
 .EN
 .
+.KS
 .IP "Operating Cash Flow" 15
 This is an annuity and we are going to use the equation from the section on
 Engineering Economics using the notation for a Uniform Series Present Worth
 (P/A, i%, n).
 .
-.EQ L
-PV sub "operating cash flow" lm 25,000(P/A, 15%, 5)
+.EQ I
+"Operating cash flow" sub P lm 25,000(P/A, 15%, 5)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-25,000 ~ left [ {  (1 + 0.15 ) sup 5 -1  } over { 0.15( 1 + 0.15 ) sup 5  } right ]
+25,000
+~ left [ {  (1 + 0.15 ) sup 5 -1  } over { 0.15( 1 + 0.15 ) sup 5  } right ]
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-83,804
+\[Po]83,804
 .EN
+.KE
 .IP "Tax" 15
 As the AIA has has been included in the investment cost via the CCTF the tax
 can be calculated as an annuity using the Uniform Series Present Worth (P/A,
 i%, n).
-.EQ L
-Tax lineup =~~
-"Op cash flow" times ( "tax rate" ) times (P/A, 15%, 5) 
+.EQ I
+Tax sub P lineup =~~
+"Op cash flow" times ~^ ( "tax rate" ) times ~^ (P/A, 15%, 5) 
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -25,000(0.2) nuspw(0.15, 5,) 
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -25,000(0.2)(3.352)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--16,761
+-\[Po]16,761
 .EN
 .
 .IP "Working Capital" 15
@@ -658,36 +665,35 @@ The working capital is made up of the initial investment of 8,000, and the
 release of the same amount in year 5, which will need to be discounted using
 the factor for the Single Payment Present Worth (P/F, i%, n).
 .
-.EQ L
-PV sub "working capital" lm
+.EQ I
+"Working capital" sub P lineup =~~
 -8,000 + 8,000(P/F, 15%, 5)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -8,000 + 8,000 ( 1 + 0.15 ) sup -5
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -4,023
 .EN
 .IP "NPV" 15
 The Net Present Value is the sum of all of the cash inflow and outflows:
-.EQ L
+.EQ I
 NPV lineup =~~
 -12,391 + 83.804 - 16,761 - 4,023
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-50,629
+\[Po]50,629
 .EN
-.LP
 With the use of a few equations we have show that we can eliminate the need for
 all of the tables and the CCTF was established as:
-.EQ 
-CCTF sub AIA lineup =~~
+.EQ I
+CCTF sub AIA lm
 left [ cctfaia right ] 
 .EN
 .
@@ -695,40 +701,41 @@ left [ cctfaia right ]
 AIA - Salvage value
 .LP
 We will now look at a scenario where there is a salvage value. We are not going
-to move away from calculating the NPV and focus on the tax benefits associated
-with an investment by constructing a table, a graph and by examining the maths.
+to move away from calculating the NPV and focus only on the tax benefits
+associated with an investment by constructing a table, a graph and by examining
+the maths.
 .LP
 Please assume the following for this example:
+.IP \(bu 3
+The capital investment is \[Po]25,000.
 .IP \(bu
-The capital investment is 25,000.
+The salvage value is \[Po]10,000.
 .IP \(bu
-The salvage value is 10,000.
-.IP \(bu
-The amount in the pool 2 years prior to the new investment was 60,000.
+The amount in the pool 2 years prior to the new investment was \[Po]60,000.
 .LP
 The only way to calculate the tax savings lost in the year 5 is to use the
 equation from the flow chart without the discounting as the table includes a
 discount factor.
-.EQ
-"Tax savings lost" lineup =~~ -S times dt over { i + d  }
+.EQ I
+"Tax savings lost" lm -S times ~^ dt over { i + d  }
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--10,000 times 0.18(0.2) over { 0.15 + 0.18 }
+-10,000 times ~^ 0.18(0.2) over { 0.15 + 0.18 }
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--10,000 times 0.10909
+-10,000 times ~^ 0.10909
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--1,091
+-\[Po]1,091
 .EN
 .
-We can now construct the table below:
+We can now construct the table below for our scenario:
 .TS
 tab (#) center;
 lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
@@ -755,7 +762,7 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
 #_#_#_#_#_#_
 Present value#(25,000)#4,350####4,428
 _
-Investment cost#(16,222)
+Investment cost#(\[Po]16,222)
 _
 .TE
 From the information above we can construct the graph below to show the impact
@@ -763,7 +770,7 @@ on the pool.
 .sp -2
 .G1
 frame invis ht 1.5 wid 4.5 left solid bot solid
-label left "Pool" unaligned "Value" left .4
+label left "Pool" unaligned "Value" "\[Po]" left .4
 label bot "Years" 
 
 ###############################################################################
@@ -831,7 +838,7 @@ X
 # Draws a circle at the point on the graph after write down or salvage
 define marker X
 for i from $1 to $2 by +1 do {
-	circle at i,pa($3,i+$4) radius 0.03
+	circle at i,pa($3,i+$4) radius 0.015
 }
 X
 
@@ -924,7 +931,7 @@ nx=pa(t,Y-1)-S
 if T == 1 && F == 0 && S == 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		# Solid line from year 0 to end
 		capcurve(solid, 0, E, t, 0) # line year 0 to Y
@@ -936,7 +943,7 @@ if T == 1 && F == 0 && S == 0 then {
 if T == 1 && F == 0 && S != 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		capcurve(solid, 0, Y-1, t, 0) # line year 0 to Y-1
 		flat(solid, Y-1, Y, qx)
@@ -952,7 +959,7 @@ if T == 1 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,qx, Y,nx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, nx, -Y)
@@ -964,7 +971,7 @@ if T == 1 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),qx, Y+(2/12),S)
@@ -983,7 +990,7 @@ if T == 1 && F == 0 && S != 0 then {
 if T == 0 && F == 0 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, E, v, 0)
@@ -998,7 +1005,7 @@ if T == 0 && F == 0 && S == 0 then {
 if T == 0 && F == 0 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -1015,7 +1022,7 @@ if T == 0 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, zx, -Y)
@@ -1027,7 +1034,7 @@ if T == 0 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+0.25,ux, Y+0.25,S)
@@ -1046,7 +1053,7 @@ if T == 0 && F == 0 && S != 0 then {
 if F == 1 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -1063,7 +1070,7 @@ if F == 1 && S == 0 then {
 if F == 1 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -1078,7 +1085,7 @@ if F == 1 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value) 
+			legend(green, 0.7,Salvage value) 
 
 			coline(solid, orange, 2.5, Y,zx, Y,0)
 			legend(orange, 0.6, Balancing allowance)
@@ -1089,7 +1096,7 @@ if F == 1 && S != 0 then {
 		if S > ux && S != 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),ux, Y+(2/12),S)
@@ -1100,17 +1107,16 @@ if F == 1 && S != 0 then {
 		if S == 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,ux, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 			} else {
 			}
 
 } else {
 }
 .G2
-.fP "Graph showing the impact of disposal on a continuing pool when AIA \
-has been utilised."
+.
 The graph shows a number of important concepts:
-.IP \(bu
+.IP \(bu 3
 The pool is constantly being written down by the governments prescribed
 writing down allowance currently set at 18%.
 .IP \(bu
@@ -1118,8 +1124,9 @@ The new investment which utilises the AIA is shown in the pool, in blue, but
 does not affect the curve as 100% is written down as soon as the investment is
 recorded.
 .IP \(bu
-The disposal of the asset in this instance for 10,000 must be deducted from the
-pool. This deduction causes tax savings to be lost which are equal to the
+The disposal of the asset in this instance for \[Po]10,000 must be deducted
+from the pool. This deduction is shown on the graph with the green vertical
+line. This deduction causes tax savings to be lost which are equal to the
 salvage value.
 .IP \(bu
 The tax savings lost are represented by the difference between the dotted line
@@ -1127,14 +1134,14 @@ showing the pool if there was no salvage value and the solid line after the
 salvage deduction.
 .
 .SH
-Mathematics - salvage value
+Mathematics - AIA salvage value
 .LP
 .UL "Investment cost - negative"
 .RS
 .LP
 We will now work on the maths to establish the CCTF using the information in
 the flow chart which yields the equation below:
-.EQ L
+.EQ I
 "Investment cost" lm 
 -I left [ CCTF sub AIA right ]
 +
@@ -1143,7 +1150,7 @@ S over { ( 1 + i ) sup n }
 pvs
 .EN
 We are going to focus on the second and third terms of the equation: 
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 +
 S over { ( 1 + i ) sup n }
@@ -1151,7 +1158,7 @@ S over { ( 1 + i ) sup n }
 pvs
 .EN
 The expression can better written as:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 +
 S over { ( 1 + i ) sup n }
@@ -1160,32 +1167,32 @@ Sdt over {  ( i + d ) ( 1 + i )  }
 .EN
 We are going to add an additional grouping symbol, so that we can consolidate
 the two terms. Before doing so we will state the rules surrounding parenthesis
-for clarity.
+for clarity:
 .RS
-.IP "Rule 1:" 10
+.IP "Rule 1:" 9
 When removing parenthesis preceded by a plus sign, do not change the sign of
 the enclosed terms.
-.IP "Rule 2:" 10
-When removing parenthesis preceded by a minus sign, drop the minus sign and
-parenthesis and change the sign of each enclosed term\(dg.
+.IP "Rule 2:" 9
+When removing parenthesis preceded by a minus sign drop the minus sign and
+parenthesis, and change the sign of each enclosed term\(dg.
 .RE
 .FS
 \(dg It is important to remember that there are two signs in mathematics. The
-sign of operation representing addition and subtraction and the sign of quality
-informing us whether the number is positive or negative. It is customary when
-writing additions horizontally to to drop the sign of operation and use only
-the signs of quality, furthermore if the first number is + the sign maybe
-omitted. The removal of a grouping symbol is the removal of the sign of
+sign of operation, representing addition and subtraction, and the sign of
+quality, informing us whether the number is positive or negative. It is
+customary when writing additions horizontally to drop the sign of operation and
+use only the signs of quality, furthermore if the first number is + the sign
+maybe omitted. The removal of a grouping symbol is the removal of the sign of
 operation. In the expression # a - ( -b + c ) = a + b -c # the sign associated
 with #b# is explicit and in the expression # a - ( b + c ) = a - b
-- c # the plus sign associated with #b# is implicit. The basic premise of Rule 1
-and 2 with regards to the sign of operation and the first sign, implied or
+- c # the plus sign associated with #b# is implicit. The basic premise of Rules
+1 and 2 with regards to the sign of operation and the first sign, implied or
 otherwise, is if the sign of operation and quality are the same then they can
-be consolidated into a + sign and if they are different a - sign.
+be consolidated into a + sign, and if they are different a - sign.
 .FE
 As we do not wish to make changes to the terms inside the brackets we will
 precede the expression with a + sign:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 + left [ 
 S over { ( 1 + i ) sup n }
@@ -1195,79 +1202,79 @@ right ]
 .EN
 We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 + left [ 
 S
 -
 Sdt over {  ( i + d ) } 
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 We can now factor the #S#:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 + S^ left [ 
 1 - dt over {  ( i + d ) } 
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 The investment cost can now be restated as:
-.EQ L
+.EQ I
 "Investment cost" lm 
 -I left [ CCTF sub AIA right ]
 + S^ left [ 
 1 - dt over {  ( i + d ) } 
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 In the future we will establish that # left [ 1 - dt over {  i + d  } right ] #
 is the #CCTF sub WDA# which enables us to write the equation as:
-.EQ L
+.EQ I
 lineup =~~
 -I left [ CCTF sub AIA right ]
 +
 S left [ CCTF sub WDA right ]
-times
+times ~^
 (P/F, i%, n)
 .EN
 We can now state the equation in full and check the calculation:
-.EQ L
+.EQ I
 "Investment cost" lm
 -I^ left [ CCTF sub AIA right ] 
 + S left [ CCTF sub WDA right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -25,000^ left [ 0.8261 right ] 
 + 10,000 left [ 0.8909 right ]
-times
+times ~^
 ( P/F, 15%, 5 )
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -20,653
 + 8,909
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -20,653
 + 4,430
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--16,223
+-\[Po]16,223
 .EN
 .RE
 .
@@ -1276,20 +1283,20 @@ lineup =~~
 .LP
 The investment cost can be converted into a positive value by either
 multiplying by -1 or changing the signs of the two terms:
-.EQ L
+.EQ I
 "Investment cost" lineup =~~
 I left [ CCTF sub AIA right ]  - S left [ CCTF sub WDA right ] (P/F, i%, n)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 20,653
 - 4,430
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-16,223
+\[Po]16,223
 .EN
 .RE
 .
@@ -1297,49 +1304,63 @@ lineup =~~
 AIA - Salvage value with capital gains
 .LP
 There is no graph for this eventuality as it is simply the same as the last
-graph. The logic is that the pool would be large enough to allow the subtraction
-of the full salvage value and the capital gains is paid on the difference
-between the salvage value and the investment cost. I am not how often this
-eventuality would occur, however, my lack of imagination is no reason to not
-provide the investment cost equation.
-.EQ
-"Tax savings lost" lineup =~~ -S times dt over { i + d  }
+graph. The logic is that the pool would be large enough to allow the
+subtraction of the full salvage value and the capital gains is paid on the
+difference between the salvage value and the investment cost. I am not sure how
+often this eventuality would occur, however, my lack of imagination is no
+reason to not provide the investment cost equation.
+.LP
+As much as we are using the same scenario as the last example we must of course
+increase the salvage value so that it exceeds the initial investment otherwise
+there will not be a capital gain. Therefore, we can assume the following for
+this example:
+.IP \(bu 3
+The capital investment is \[Po]25,000.
+.IP \(bu
+The salvage value is \[Po]35,000.
+.IP \(bu
+The amount in the pool 2 years prior to the new investment was \[Po]60,000.
+This piece of information is not terribly useful without the graph and does not
+impact the mathematics.
+.LP
+.EQ I
+"Tax savings lost" lm -S times ~^ dt over { i + d  }
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--35,000 times 0.18(0.2) over { 0.15 + 0.18 }
+-35,000 times ~^ 0.18(0.2) over { 0.15 + 0.18 }
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--35,000 times 0.10909
+-35,000 times ~^ 0.10909
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--3,818
+-\[Po]3,818
 .EN
-.EQ
+.
+.EQ I
 "Capital gains" lineup =~~ - t(S - I)
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
 - 0.2(35,000 - 25,000)
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
 - 0.2(10,000 )
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--2,000
+-\[Po]2,000
 .EN
 .
-.KS
 We can now construct the table below:
 .TS
 tab (#) center;
@@ -1368,20 +1389,19 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
 #_#_#_#_#_#_
 Present value#(25,000)#4,350####14,503
 _
-Investment cost#(6,147)
+Investment cost#(\[Po]6,147)
 _
 .TE
-.KE
 .
 .SH
-Mathematics - salvage value with capital gains
+Mathematics - AIA salvage value with capital gains
 .LP
 .UL "Investment cost - negative"
 .RS
 .LP
 We will now work on the maths to establish the CCTF using the information in
 the flow chart which yields the equation below:
-.EQ L
+.EQ I
 "Investment cost" lm
 -I left [ CCTF sub AIA right ] +
 S over { ( 1 + i ) sup n }
@@ -1391,7 +1411,7 @@ pvs
 cgt
 .EN
 We are going to focus on the second, third and forth terms of the equation: 
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 +
 S over { ( 1 + i ) sup n }
@@ -1400,8 +1420,9 @@ pvs
 -
 cgt
 .EN
+.KS
 The expression can be better written as:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 + 
 S over { ( 1 + i ) sup n }
@@ -1410,8 +1431,9 @@ Sdt over {  ( i + d ) ( 1 + i )  }
 -
 cgt
 .EN
+.KE
 Add the grouping symbols:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 + 
 left [ 
@@ -1424,7 +1446,7 @@ right ]
 .EN
 We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 + 
 left [ 
@@ -1434,11 +1456,11 @@ Sdt over {  ( i + d ) }
 -
 t( S - I ) 
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 The #S# can now be factored:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 + 
 S left [ 
@@ -1446,51 +1468,51 @@ S left [
 -
 t( S - I ) 
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 Making use of the fact that # left [ 1 - dt over {  i + d  } right ] # is the
 #CCTF sub WDA# the equation can be written as:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA right ] + ~~^} } 
 + left ( S left [ CCTF sub WDA right ] - t(S - I ) right ) 
-times
+times ~^
 (P/F, i%, n)
 .EN
 We can now state the equation in full and check the calculation:
-.EQ L
+.EQ I
 "Investment cost" lm 
 -I left [ CCTF sub AIA right ]
 + left ( S left [ CCTF sub WDA right ] - t(S - I ) right ) 
-times
+times ~^
 (P/F, i%, n)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -25,000 left [ 0.8261 right ]
 + left ( 35,000 left [ 0.8909 right ] - 0.2(35,000 - 25,000 ) right ) 
-times
+times ~^
 (P/F, 15%, 5)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -20,653
 + left ( 31,182 - 2,000 ) right ) 
-times
+times ~^
 (0.4972)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -20,653
 + 14,509
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--6,144
+-\[Po]6,144
 .EN
 .RE
 .
@@ -1499,21 +1521,23 @@ lineup =~~
 .LP
 The investment cost can be converted into a positive value by either
 multiplying by -1 or changing the signs of the two terms:
-.EQ L
+.EQ I
 "Investment cost" lineup =~~
 I left [ CCTF sub AIA right ]
 - left ( S left [ CCTF sub WDA right ] - t(S - I ) right ) 
-times (P/F, i%, n)
+times ~^ (P/F, i%, n)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 20,653
 - 14,509
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-6,144
+\[Po]6,144
 .EN
 .RE
+
+
