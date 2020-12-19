@@ -60,14 +60,14 @@ Constants
 .LP
 To aid the calculations we are going to state the value of the the two CCTFs
 below:
-.EQ
+.EQ I
 CCTF sub AIA2 lm cctfaia2
 ~~=~~
 ncctfaia2(0.2, 0.15)
 ~~=~~
 0.8488
 .EN
-.EQ
+.EQ I
 CCTF sub WDA2 lineup =~~ cctf2
 ~~=~~
 ncctf2(0.18, 0.2, 0.15)
@@ -81,34 +81,39 @@ have not been given an explanation at this stage.
 AIA - No salvage value
 .LP
 We are going to work through an example using both a table and then some
-mathematics. Most people for comfortable with the table and it can help in
-making the equations slightly less abstract.
+mathematics. Many people feel more comfortable with the table and it can help
+in making the equations seem slightly less abstract.
 .LP
 The CCTF is an equation that can be used to calculate the investment cost. The
 premise of the CCTF is that the tax savings are calculated to infinity and
 subtracted from the investment to leave the investment cost.
 .LP
 For the purpose of the following examples please assume the initial investment
-is 15,000 and there is no salvage value.
-.LP
-In Appendix A we examined the impact of the WDA on the tax. The tax savings
+is \[Po]15,000 and there is no salvage value.
+.KS
+In Appendix A we examined the impact of the WDA on the tax and the tax savings
 before discounting were found to be:
-.EQ
+.EQ I
 "Tax savings" lm Idt
 .EN
-.KS
-As the AIA can allows for 100% write down in the first year the equation can be
+As the AIA allows for 100% write down in the first year the equation can be
 reframed for this example as:
-.EQ
-"Tax savings" lm 15,000(1)(0.2)
+.EQ I
+"Tax savings - AIA" lm Idt
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-3,000
+15,000(1)(0.2)
 .EN
-We can now construct the table below to tax into account the tax effect at time
-period 2:
+.sp -0.6v
+.EQ I
+lineup =~~
+\[Po]3,000
+.EN
+.KE
+We can now construct the table below to take into account the tax effect at
+time period 2:
 .TS
 tab (#) center;
 lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2.
@@ -133,11 +138,9 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
 #_#_#_#_#_#_#_
 Present value#(15,000)##2,268###
 _
-Investment cost#(12,732)
+Investment cost#(\[Po]12,732)
 _
 .TE
-.tP "Table showing tax savings from AIA"
-.KE
 The CCTF transfers the PV of the tax benefit to the investment as it arises
 from the use of a capital allowance and would therefore not be available
 without a capital investment.
@@ -150,24 +153,24 @@ Mathematics - no salvage value
 .LP
 If the flow chart is followed for the scenario where there is no salvage value
 we have the following equation:
-.EQ 
+.EQ I 
 CCTF sub AIA2 lineup =~~
 left [ cctfaia2 right ] 
 .EN
 The investment cost can now be restated as:
-.EQ 
+.EQ I 
 "Investment cost" lm 
 -I left [ CCTF sub AIA2 right ]
 .EN
-.sp -0.7v
-.EQ 
+.sp -0.6v
+.EQ I 
 lineup =~~
 -15,000 left [ 0.8488 right ] 
 .EN
-.sp -0.7v
-.EQ 
+.sp -0.6v
+.EQ I 
 lineup =~~
--12,732
+-\[Po]12,732
 .EN
 .RE
 .
@@ -175,31 +178,44 @@ lineup =~~
 AIA - Salvage value
 .LP
 We will now look at a scenario where there is a salvage value. Please assume
-the following for this example: the capital investment is 25,000 and The
-salvage value is 10,000.
-.LP
+the following for this example: the capital investment is \[Po]25,000 and the
+salvage value is \[Po]10,000. The tax savings from the AIA are:
+.EQ I
+"Tax savings - AIA" lm Idt
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+25,000(1)(0.2)
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+\[Po]5,000
+.EN
 The only way to calculate the tax savings lost in the year 5 is to use the
 equation from the flow chart without the discounting as the table includes a
 discount factor.
-.EQ
-"Tax savings lost" lineup =~~ -S times dt over { i + d  }
+.EQ I
+"Tax savings lost" lineup =~~ -S times ~^ dt over { i + d  }
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--10,000 times 0.18(0.2) over { 0.15 + 0.18 }
+-10,000 times ~^ 0.18(0.2) over { 0.15 + 0.18 }
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--10,000 times 0.10909
+-10,000 times ~^ 0.10909
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--1,091
+-\[Po]1,091
 .EN
 .
+.KS
 We can now construct the table below:
 .TS
 tab (#) center;
@@ -227,19 +243,20 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
 #_#_#_#_#_#_#_
 Present value#(25,000)##3,780###4,970#(471)
 _
-Investment cost#(16,721)
+Investment cost#(\[Po]16,721)
 _
 .TE
+.KE
 .
 .SH
-Mathematics - salvage value
+Mathematics - AIA salvage value
 .LP
 .UL "Investment cost - negative"
 .RS
 .LP
 We will now work on the maths to establish the investment cost equation using
 the information in the flow chart, which yields the equation below:
-.EQ L
+.EQ I
 "Investment cost" lm 
 -I left [ CCTF sub AIA2 right ]
 +
@@ -248,7 +265,7 @@ S over { ( 1 + i ) sup n }
 pvs2
 .EN
 We are going to focus on the second and third terms of the equation: 
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 +
 S over { ( 1 + i ) sup n }
@@ -256,7 +273,7 @@ S over { ( 1 + i ) sup n }
 pvs2
 .EN
 The expression can better written as:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 +
 S over { ( 1 + i ) sup n }
@@ -264,7 +281,7 @@ S over { ( 1 + i ) sup n }
 Sdt over {  ( i + d ) ( 1 + i ) sup { n + 1 }  } 
 .EN
 Add parenthesis:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 + left [ 
 S over { ( 1 + i ) sup n }
@@ -274,154 +291,170 @@ right ]
 .EN
 We can now replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 + left [ 
 S
 -
 Sdt over {  ( i + d )(1 + i ) } 
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 We can now factor the #S#:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 + S^ left [ 
 1 - dt over {  ( i + d )(1 + i ) } 
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 The investment cost can now be restated as:
-.EQ L
+.EQ I
 "Investment cost" lm 
 -I left [ CCTF sub AIA2 right ]
 + S^ left [ 
 1 - dt over {  ( i + d )(1 + i ) } 
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 In the future we will establish that #left [ cctf2 right ]# is the #CCTF
 sub WDA2# which enables us to write the equation as:
-.EQ L
+.EQ I
 lineup =~~
 -I left [ CCTF sub AIA2 right ]
 +
 S left [ CCTF sub WDA2 right ]
-times
+times ~^
 (P/F, i%, n)
 .EN
+.KS
 We can now state the equation in full and check the calculation:
-.EQ L
+.EQ I
 "Investment cost" lm
 -I^ left [ CCTF sub AIA2 right ] 
 + S left [ CCTF sub WDA2 right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -25,000^ left [ 0.8488 right ] 
 + 10,000 left [ 0.9051 right ]
-times
+times ~^
 ( P/F, 15%, 5 )
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -21,220
 + 9,051
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -21,220
 + 4,500
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--16,720
+-\[Po]16,720
 .EN
 .RE
+.KE
 .
 .UL "Investment cost - positive"
 .RS
 .LP
 The investment cost can be converted into a positive value by either
 multiplying by -1 or changing the signs of the two terms:
-.EQ L
+.EQ I
 "Investment cost" lineup =~~
 I left [ CCTF sub AIA2 right ]
 -
 S left [ CCTF sub WDA2 right ]
-times
+times ~^
 (P/F, i%, n)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 21,220
 + 4,500
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-16,720
+\[Po]16,720
 .EN
 .RE
 .
 .SH 2 
 AIA - Salvage value with capital gains
 .LP
-The logic is that the pool would be large enough to allow the subtraction of the
-full salvage value and the capital gains is paid on the difference between the
-salvage value and the investment cost. I am not how often this eventuality
+The logic is that the pool would be large enough to allow the subtraction of
+the full salvage value and the capital gains is paid on the difference between
+the salvage value and the investment cost. I am not how often this eventuality
 would occur, however, my lack of imagination is no reason to not provide the
 investment cost equation.
-.EQ
-"Tax savings lost" lineup =~~ -S times dt over { i + d  }
+.EQ I
+"Tax savings - AIA" lm Idt
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--35,000 times 0.18(0.2) over { 0.15 + 0.18 }
+25,000(1)(0.2)
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--35,000 times 0.10909
+\[Po]5,000
 .EN
-.sp -0.7v
-.EQ
+.
+.EQ I
+"Tax savings - lost" lineup =~~ -S times ~^ dt over { i + d  }
+.EN
+.sp -0.6v
+.EQ I
 lineup =~~
--3,818
+-35,000 times ~^ 0.18(0.2) over { 0.15 + 0.18 }
 .EN
-.EQ
+.sp -0.6v
+.EQ I
+lineup =~~
+-35,000 times ~^ 0.10909
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+-\[Po]3,818
+.EN
+.
+.EQ I
 "Capital gains" lineup =~~ - t(S - I)
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
 - 0.2(35,000 - 25,000)
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
 - 0.2(10,000 )
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
--2,000
+-\[Po]2,000
 .EN
 .
-.KS
 We can now construct the table below:
 .TS
 tab (#) center;
@@ -450,10 +483,9 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
 #_#_#_#_#_#_#_
 Present value#(25,000)##3,780###17,395#(2,513)
 _
-Investment cost#(6,338)
+Investment cost#(\[Po]6,338)
 _
 .TE
-.KE
 .
 .SH
 Mathematics - salvage value with capital gains
@@ -463,8 +495,8 @@ Mathematics - salvage value with capital gains
 .LP
 We will now work on the maths to establish the investment cost equation using
 the information in the flow chart which yields the equation below:
-.EQ L
-"Investment cost" lm
+.EQ I
+IC\(dg lm
 -I left [ CCTF sub AIA2 right ] +
 S over { ( 1 + i ) sup n }
 -
@@ -472,8 +504,12 @@ pvs2
 -
 cgt2
 .EN
+.FS
+\(dg #IC# has replaced "Investment cost" to avoid problems with the line
+length
+.FE
 We are going to focus on the second, third and forth terms of the equation: 
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 +
 S over { ( 1 + i ) sup n }
@@ -483,7 +519,7 @@ pvs2
 cgt2
 .EN
 The expression can be better written as:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 + 
 S over { ( 1 + i ) sup n }
@@ -493,7 +529,7 @@ Sdt over {  ( i + d ) ( 1 + i ) sup { n + 1 }  }
 cgt2	
 .EN
 Add the parenthesis:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 + 
 left [ 
@@ -501,12 +537,11 @@ S over { ( 1 + i ) sup n }
 -
 Sdt over {  ( i + d ) ( 1 + i )  sup { n + 1 } } 
 -
-cgt2	
-right ]
+cgt2 right ]
 .EN
-We can now replace the denominator encompassing the discounting with the
-Single Payment Present Worth factor:
-.EQ L
+We can now replace the denominator encompassing the discounting with the Single
+Payment Present Worth factor:
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 + 
 left [ 
@@ -516,12 +551,12 @@ Sdt over {  ( i + d )( 1 + i ) }
 -
 { t( S - I ) } over { 1 + i  }
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 We can going to replace the #1 over { ( 1 + i ) }# in the last term with the
 equivalent factor using negative exponents:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 + 
 left [ 
@@ -530,93 +565,95 @@ S
 Sdt over {  ( i + d )( 1 + i ) } 
 - t( S - I ) ( 1 + i  ) sup -1
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 The #S# can now be factored:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 + 
 S left [ 
 1 - dt over {  ( i + d )( 1 + i ) } 
 - t( S - I ) ( 1 + i  ) sup -1
 right ]
-times 
+times ~^ 
 (P/F, i%, n)
 .EN
 Making use of the fact that # left [ cctf2 right ] # is the
 #CCTF sub WDA2# the equation can be written as:
-.EQ L
+.EQ I
 lineup {hphantom { -I left [ CCTF sub AIA2 right ] + ~~^} } 
 + left ( S left [ CCTF sub WDA2 right ]
 - t( S - I ) ( 1 + i  ) sup -1
 right ) 
-times
+times ~^
 (P/F, i%, n)
 .EN
 We can now state the equation in full and check the calculation:
-.EQ L
-"Investment cost" lm 
+.EQ I
+IC lm 
 -I left [ CCTF sub AIA2 right ]
 + left ( S left [ CCTF sub WDA2 right ]
 - t( S - I )( 1 + i ) sup -1 
 right ) 
-times
+times ~^
 (P/F, i%, n)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -25,000 left [ 0.8488 right ]
 + left ( 35,000 left [ 0.9051 right ]
 - 0.2(35,000 - 25,000 ) (1 + 0.15 ) sup -1
 right ) 
-times
+times ~^
 (P/F, 15%, 5)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -21,220
 + left ( 31,679 - 1,739 ) right ) 
-times
+times ~^
 (0.4972)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -21,220
 + 14,886
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--6,334
+-\[Po]6,334
 .EN
 .RE
 .
+.KS
 .UL "Investment cost - positive"
 .RS
 .LP
 The investment cost can be converted into a positive value by either
 multiplying by -1 or changing the signs of the two terms:
-.EQ L
+.EQ I
 "Investment cost" lineup =~~
 I left [ CCTF sub AIA2 right ]
 - left ( S left [ CCTF sub WDA2 right ]
 - t( S - I )( 1 + i ) sup -1 
 right ) 
-times (P/F, i%, n)
+times ~^ (P/F, i%, n)
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 21,220
 - 14,886
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-6,334
+\[Po]6,334
 .EN
 .RE
+.KE
