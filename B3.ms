@@ -101,42 +101,43 @@ Flow chart
 .LP
 The flow chart shows the available options when using the single asset pool.
 The key points to understand in the logic of the flow chart are:
-.IP \(bu
+.IP \(bu 3
 In calculating the single asset pool we start with the # CCTF sub WDA # which
 calculates the tax savings available to infinity.
-.IP \(bu
-The UCC is Undepreciated Capital Cost existing in the pool at any given period
-of time. The equation for the UCC is very simple, #ucc#. The UCC is to the
-power of #n -1# because we want the pool value before any deductions in the
-final year therefore the #n - 1# calculates the pool value at the end of the
-year prior to the asset disposal. Another way at looking at the logic is to
-notice in our base the initial investment is 50,000 at the end of year 1, which
-is equal to #50,000( 1 - d ) sup 0 #, therefore, the value in the pool is equal
-to # I ( 1 - d) sup { n -1 } #.
-.IP \(bu
+.IP \(bu 3 
+There is a requirement to know the Undepreciated Capital Cost (UCC) existing in
+the pool at any given period of time. The equation for the UCC is very simple,
+#ucc#. The equation for the UCC is raised to the power of #n -1# because we
+want the pool value before any deductions in the final year, therefore, the #n
+- 1# calculates the pool value at the end of the year prior to the asset
+disposal. Another way at looking at the logic is to notice in our example that the
+initial investment is \[Po]50,000 at the end of year 1, which is equal to
+#\[Po]50,000( 1 - d ) sup 0 #, therefore, the value in the pool is equal to # I
+( 1 - d) sup { n -1 } #.
+.IP \(bu 3
 The single asset pool is designed with a finite life, as previously stated the
 #CCTF sub WDA# calculates tax savings to infinity, which means to establish the
 tax savings at any moment in time, typically at the point the asset is disposed
 of, we have to add back the tax savings lost equal to the pool value at that
 time using the equation #pvucc#. 
-.IP \(bu
+.IP \(bu 3
 The equation #pvucc# has been discounted at time period #n - 1# as we are
 removing the tax savings lost up to the year prior to the disposal of the asset.
-.IP \(bu
+.IP \(bu 3
 As the single asset pool is terminated on the disposal of the only asset in the
-pool it better matches the tax benefits associated with the capital investment
-with the length of ownership of the asset by the use of balancing allowance and
-balancing charges.
-.IP \(bu
+pool, it better matches the tax benefits associated with the capital investment
+with the length of ownership of the asset by the use of balancing allowances
+and balancing charges.
+.IP \(bu 3
 Balancing allowances are generated when the rate of decline in the pool is not
 as great as the actual decline in the asset. In essence the asset has lost
 value faster than mandated by the government and you have not claimed
 sufficient tax benefits.
-.IP \(bu
+.IP \(bu 3
 Balancing charges are generated when the rate of decline in the pool is greater
-the actual decline in the asset. In essence the asset has not value as fast as
-expected by the government and you have claimed to many tax benefits.
-.IP \(bu
+the actual decline in the asset. In essence the asset has not lost value as
+fast as expected by the government and you have claimed to many tax benefits.
+.IP \(bu 3
 The capital gains tax is calculated using the rate of tax used in the rest of
 the equations. The reasons for this have been discussed at the beginning of
 this appendix, the basic premise is that the capital gain will typically happen
@@ -147,16 +148,16 @@ limited impact on the investment cost.
 Base scenario
 .LP
 For the purpose of the following examples please assume the following:
-.IP \(bu
+.IP \(bu 3
 It is assumed that the initial investment is made at time period zero and
 subsequent costs and revenues occur at the ending of the accounting period.
 This is the same logic as an ordinary annuity.
-.IP \(bu
+.IP \(bu 3
 The after tax cost of capital is 15%.
-.IP \(bu
+.IP \(bu 3
 The rate of taxation is 20%.
-.IP \(bu
-The capital investment is 50,000
+.IP \(bu 3
+The capital investment is \[Po]50,000
 .LP
 For ease of completing of mathematics we are going to calculated the UCC and
 the # CCTF sub WDA # now and use the answers where required.
@@ -175,7 +176,8 @@ I(1 - 0.18 ) sup { 5 -1 }
 =~~
 22,606
 .EN
-The tax savings for the 50,000 investment are shown below:
+.KS
+The tax savings for the \[Po]50,000 investment are shown below:
 .TS
 tab (#) center;
 l c c c c
@@ -200,29 +202,28 @@ l s n n .
 Total#31,463#6,292
 #_#_#
 .TE
-.fP "Table showing tax savings when using a single asset pool"
+.KE
 .
 .SH 2 
 No salvage value
 .LP
 In the fifth year the asset is disposed of with no salvage value. As the asset
-has been disposed off with no salvage value the asset has lost value faster
-than expected and entire value remaining in the pool is the balancing
-allowance. The tax benefits are shown below:
+has been disposed of with no salvage value the asset has lost value faster than
+expected and the entire value remaining in the pool is the balancing allowance.
+The tax benefits are shown below:
 .EQ I
-"Balancing allowance" lm "Closing balance" times ( "tax rate" )
+"Balancing allowance" lm "Closing balance" times ~^ ( "tax rate" )
 .EN
-.sp -0.7v
-.EQ I
-lineup =~~
-22,606 times 0.2
-.EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-4,512
+22,606 times ~^ 0.2
 .EN
-.LP
+.sp -0.6v
+.EQ I
+lineup =~~
+\[Po]4,512
+.EN
 Using the base information we can now construct a table to calculate the
 investment cost:
 .TS
@@ -251,18 +252,15 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
 #_#_#_#_#_#_
 Present value#(50,000)#1,566#1,116#796#567#2,247
 _
-Investment cost#43,708
+Investment cost#\[Po]43,708
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
 .
-.KS
 The graph below shows the state of the pool in each year:
 .sp -2
 .G1
 frame invis ht 1.5 wid 4.5 left solid bot solid
-label left "Pool" unaligned "Value" left .4
+label left "Pool" unaligned "Value" "\[Po]" left .4
 label bot "Years" 
 
 ###############################################################################
@@ -330,7 +328,7 @@ X
 # Draws a circle at the point on the graph after write down or salvage
 define marker X
 for i from $1 to $2 by +1 do {
-	circle at i,pa($3,i+$4) radius 0.03
+	circle at i,pa($3,i+$4) radius 0.015
 }
 X
 
@@ -423,7 +421,7 @@ nx=pa(t,Y-1)-S
 if T == 1 && F == 0 && S == 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		# Solid line from year 0 to end
 		capcurve(solid, 0, E, t, 0) # line year 0 to Y
@@ -435,7 +433,7 @@ if T == 1 && F == 0 && S == 0 then {
 if T == 1 && F == 0 && S != 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		capcurve(solid, 0, Y-1, t, 0) # line year 0 to Y-1
 		flat(solid, Y-1, Y, qx)
@@ -451,7 +449,7 @@ if T == 1 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,qx, Y,nx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, nx, -Y)
@@ -463,11 +461,11 @@ if T == 1 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),qx, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, qx, -Y+1)
@@ -482,7 +480,7 @@ if T == 1 && F == 0 && S != 0 then {
 if T == 0 && F == 0 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, E, v, 0)
@@ -494,7 +492,7 @@ if T == 0 && F == 0 && S == 0 then {
 if T == 0 && F == 0 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -511,7 +509,7 @@ if T == 0 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, zx, -Y)
@@ -523,11 +521,11 @@ if T == 0 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+0.25,ux, Y+0.25,S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, ux, -Y+1)
@@ -543,7 +541,7 @@ if T == 0 && F == 0 && S != 0 then {
 if F == 1 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -552,7 +550,7 @@ if F == 1 && S == 0 then {
 	marker(1, Y-1, I, 0)
 
 	coline(solid, orange, 2.5, Y,zx, Y,0)
-	legend(orange, 0.7, Balancing allowance)
+	legend(orange, 0.7,Balancing allowance)
 
 } else {
 }
@@ -560,7 +558,7 @@ if F == 1 && S == 0 then {
 if F == 1 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -572,21 +570,21 @@ if F == 1 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value) 
+			legend(green, 0.7,Salvage value) 
 
 			coline(solid, orange, 2.5, Y,zx, Y,0)
-			legend(orange, 0.6, Balancing allowance)
+			legend(orange, 0.6,Balancing allowance)
 
 
 			} else {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),ux, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 			}
 
@@ -595,22 +593,18 @@ if F == 1 && S != 0 then {
 }
 
 .G2
-.fP "Graph showing the impact of disposal with no salvage value \
-in a single asset pool."
-.KE
 .
-.LP
 The graph shows a number of key points:
-.IP \(bu
+.IP \(bu 3
 There are no prior years as it is a single asset pool.
-.IP \(bu
+.IP \(bu 3
 Currently the maximum time a single asset pool can be in existence is 8 years.
-.IP \(bu
+.IP \(bu 3
 As the single asset pool is terminated on the disposal of the asset it matches
 the tax benefits with the time period of asset ownership.
-.IP \(bu
+.IP \(bu 3
 As there is no salvage value the entire value remaining in the pool is paid out
-as a balancing allowance.
+as a balancing allowance in year 5.
 .
 .SH
 Mathematics - no salvage value
@@ -630,17 +624,18 @@ we have the following equation:
 This seems rather a mess, however, it can be simplified by using the #CCTF sub
 WDA# where possible. The term # dt over { i + d} # represents the tax savings.
 The #CCTF sub WDA# represents the investment less the tax savings, therefore,
-we can get back to the cost savings by using #1 - CCTF sub WDA#.
+we can get back to the cost savings by using #1 - CCTF sub WDA#. We can now
+rewrite the equation using the CCTF:
 .EQ I
 lineup =~~ -I left [ CCTF sub WDA right ]
 - UCC [ 1 - CCTF sub WDA ] 
-times 1 over { ( 1 + i ) sup { n -1 } }
+times ~^ 1 over { ( 1 + i ) sup { n -1 } }
 +
 bala
 .EN
 We are now going to focus on the second and third terms of the equation. We are
-going to start be getting rid of the #n -1# we are going to multiply the
-numerator by #( 1 + i )#:
+going to start be getting rid of the power of #n -1# in the denominator of the
+second term by multiplying the numerator by #( 1 + i )#:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) }
@@ -649,7 +644,7 @@ over { ( 1 + i ) sup n }
 bala
 .EN
 In this particular example we know that the salvage value is zero so we adjust
-the last term to reflect this:
+the last term to reflect this by eliminating the # - S#:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) }
@@ -688,7 +683,7 @@ Single Payment Present Worth factor:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 + UCC left [  t - ( 1 - CCTF sub WDA ) ( 1 + i ) right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 We can now state the equation in full and check the calculation:
@@ -696,39 +691,40 @@ We can now state the equation in full and check the calculation:
 "Investment cost" lm
 -I^ left [ CCTF sub WDA right ] 
 + UCC left [ t - ( 1 - CCTF sub WDA ) ( 1 + i ) right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 + 22,606 left [ 0.2  - ( 1 - 0.8909 ) ( 1 + 0.15 ) right ] 
-times
+times ~^
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 + 22,606 left [  0.0745 right ] 
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -44,545
 +
 838
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-- 43,707
+- \[Po]43,707
 .EN
 .RE
 .
+.KS
 .UL "Investment cost - positive"
 .RS
 .LP
@@ -738,19 +734,20 @@ multiplying by -1 or changing the signs of the two terms:
 "Investment cost" lm
 I^ left [ CCTF sub WDA right ] 
 - UCC left [ t - ( 1 - CCTF sub WDA ) ( 1 + i ) right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 .EQ I
 lineup =~~
 44,545 - 838
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-43,707
+\[Po]43,707
 .EN
 .RE
+.KE
 .
 .SH 2 
 Salvage value equal to the UCC
@@ -759,7 +756,7 @@ As the salvage value exactly equals the UCC there is no tax adjustment
 required. The depreciation in the pool has exactly matched the depreciation in
 the asset.
 .lP
-Using the base information we can now construct a table to calculate the
+Using the base scenario we can now construct a table to calculate the
 investment cost:
 .TS
 tab (#) center;
@@ -787,17 +784,15 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
 #_#_#_#_#_#_
 Present value#(50,000)#1,566#1,116#796#567#11,235
 _
-Investment cost#(34,720)
+Investment cost#(\[Po]34,720)
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
 .
 The graph below shows the state of the pool in each year:
 .sp -2
 .G1
 frame invis ht 1.5 wid 4.5 left solid bot solid
-label left "Pool" unaligned "Value" left .4
+label left "Pool" unaligned "Value" "\[Po]" left .4
 label bot "Years" 
 
 ###############################################################################
@@ -866,7 +861,7 @@ X
 # Draws a circle at the point on the graph after write down or salvage
 define marker X
 for i from $1 to $2 by +1 do {
-	circle at i,pa($3,i+$4) radius 0.03
+	circle at i,pa($3,i+$4) radius 0.015
 }
 X
 
@@ -959,7 +954,7 @@ nx=pa(t,Y-1)-S
 if T == 1 && F == 0 && S == 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		# Solid line from year 0 to end
 		capcurve(solid, 0, E, t, 0) # line year 0 to Y
@@ -971,7 +966,7 @@ if T == 1 && F == 0 && S == 0 then {
 if T == 1 && F == 0 && S != 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		capcurve(solid, 0, Y-1, t, 0) # line year 0 to Y-1
 		flat(solid, Y-1, Y, qx)
@@ -987,7 +982,7 @@ if T == 1 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,qx, Y,nx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, nx, -Y)
@@ -999,11 +994,11 @@ if T == 1 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),qx, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, qx, -Y+1)
@@ -1018,7 +1013,7 @@ if T == 1 && F == 0 && S != 0 then {
 if T == 0 && F == 0 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, E, v, 0)
@@ -1030,7 +1025,7 @@ if T == 0 && F == 0 && S == 0 then {
 if T == 0 && F == 0 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -1047,7 +1042,7 @@ if T == 0 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, zx, -Y)
@@ -1059,11 +1054,11 @@ if T == 0 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+0.25,ux, Y+0.25,S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, ux, -Y+1)
@@ -1078,7 +1073,7 @@ if T == 0 && F == 0 && S != 0 then {
 if F == 1 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -1087,7 +1082,7 @@ if F == 1 && S == 0 then {
 	marker(1, Y-1, I, 0)
 
 	coline(solid, orange, 2.5, Y,zx, Y,0)
-	legend(orange, 0.7, Balancing allowance)
+	legend(orange, 0.7,Balancing allowance)
 
 } else {
 }
@@ -1095,7 +1090,7 @@ if F == 1 && S == 0 then {
 if F == 1 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -1110,10 +1105,10 @@ if F == 1 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value) 
+			legend(green, 0.7,Salvage value) 
 
 			coline(solid, orange, 2.5, Y,zx, Y,0)
-			legend(orange, 0.6, Balancing allowance)
+			legend(orange, 0.6,Balancing allowance)
 
 			} else {
 			}
@@ -1121,18 +1116,18 @@ if F == 1 && S != 0 then {
 		if S > ux && S != 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),ux, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 			} else {
 			}
 
 		if S == 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,ux, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 			} else {
 			}
 
@@ -1140,23 +1135,18 @@ if F == 1 && S != 0 then {
 }
 
 .G2
-.fP "Graph showing the impact of disposal with no salvage value \
-in a single asset pool."
-.LP
+.
 The graph shows a number of key points:
-.IP \(bu
+.IP \(bu 3
 There are no prior years as it is a single asset pool.
-.IP \(bu
+.IP \(bu 3
 Currently the maximum time a single asset pool can be in existence is 8 years.
-.IP \(bu
+.IP \(bu 3
 As the single asset pool is terminated on the disposal of the asset it matches
 the tax benefits with the time period of asset ownership.
-.IP \(bu
+.IP \(bu 3
 As the salvage value exactly matches the UCC there is neither a balancing
-allowance or a balancing charge.
-.LP
-With the use of a few equations we have show that we can eliminate the need for
-all of the tables and the CCTF was established as:
+allowance or a balancing charge in year 5.
 .
 .SH
 Mathematics - equal to UCC
@@ -1164,23 +1154,25 @@ Mathematics - equal to UCC
 .UL "Investment cost - negative"
 .RS
 .LP
-If the flow chart is followed for the scenario where there is no salvage value
-we have the following equation:
+If the flow chart is followed for the scenario where the salvage value is equal
+to the UCC we have the following equation:
 .EQ I
 "Investment cost" lm 
 -I^ left [ cctf right ] 
 - pvucc
 + salvage
 .EN
-We have previously shown, in Section XX, that this can be rewritten as: 
+We have previously shown in the section on the mathematics when there is no
+salvage value that this can be rewritten as: 
 .EQ I
 lineup =~~ -I left [ CCTF sub WDA right ]
 - UCC [ 1 - CCTF sub WDA ] 
-times 1 over { ( 1 + i ) sup { n -1 } }
+times ~^ 1 over { ( 1 + i ) sup { n -1 } }
 +
 salvage
 .EN
-We can again multiply the second term by #1 + i # to remove the # n -1 #.
+We can again multiply the second term by #1 + i # to remove the power # n -1 #
+in the denominator:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) }
@@ -1204,12 +1196,12 @@ lineup {hphantom {-I left [ CCTF sub WDA right ] +}}
 over { ( 1 + i ) sup n }
 right ]
 .EN
-Lastly we can replace the denominator with the Single Payment Present Worth
-factor:
+Lastly we can replace the common denominator with the Single Payment Present
+Worth factor:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 + left [ S - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) } right ]
-times 
+times ~^ 
 ( P/F, %i, n )
 .EN
 We can now state the equation in full and check the calculation.
@@ -1217,36 +1209,36 @@ We can now state the equation in full and check the calculation.
 "Investment cost" lm
 -I^ left [ CCTF sub WDA right ] 
 + left [ S - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) } right ]
-times 
+times ~^ 
 ( P/F, %i, n )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 + left [ 22,606 -22,606 ( 1 - 0.8909 ) ( 1 + 0.15 ) right ] 
-times
+times ~^
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 + left [ 22,606 - 2,836 right ] 
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -44,545
 +
 9,830
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-- 34,715
+- \[Po]34,715
 .EN
 .RE
 .
@@ -1259,18 +1251,18 @@ multiplying by -1 or changing the signs of the two terms:
 "Investment cost" lm
 I^ left [ CCTF sub WDA right ] 
 - left [ S - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) } right ]
-times 
+times ~^ 
 ( P/F, %i, n )
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
 44,545 - 9,830
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-34,715
+\[Po]34,715
 .EN
 .RE
 .
@@ -1279,23 +1271,23 @@ Salvage value less than the UCC
 .LP
 As the salvage value is less than the UCC there will be a balancing allowance
 equal to the difference between the salvage value and the UCC. In this example
-we are going to state that the salvage value is 13,000 and occurs in year 5.
+we are going to state that the salvage value is \[Po]13,000 and occurs in year
+5.
 .EQ I
-"Balancing allowance" lm "UCC - Salvage" times ( "tax rate" )
+"Balancing allowance" lm "UCC - Salvage" times ~^ ( "tax rate" )
 .EN
-.sp -0.7v
-.EQ I
-lineup =~~
-(22,606 - 13,000) times 0.2
-.EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-1,921
+(22,606 - 13,000) times ~^ 0.2
 .EN
-.LP
-Using the base information we can now construct a table to calculate the
-
+.sp -0.6v
+.EQ I
+lineup =~~
+\[Po]1,921
+.EN
+.KS
+Using the base scenario we can now construct a table to calculate the
 investment cost:
 .TS
 tab (#) center;
@@ -1323,17 +1315,16 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
 #_#_#_#_#_#_
 Present value#(50,000)#1,566#1,116#796#567#7,416
 _
-Investment cost#(38,539)
+Investment cost#(\[Po]38,539)
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
+.KE
 .
 The graph below shows the state of the pool in each year:
 .sp -2
 .G1
 frame invis ht 1.5 wid 4.5 left solid bot solid
-label left "Pool" unaligned "Value" left .4
+label left "Pool" unaligned "Value" "\[Po]" left .4
 label bot "Years" 
 
 ###############################################################################
@@ -1402,7 +1393,7 @@ X
 # Draws a circle at the point on the graph after write down or salvage
 define marker X
 for i from $1 to $2 by +1 do {
-	circle at i,pa($3,i+$4) radius 0.03
+	circle at i,pa($3,i+$4) radius 0.015
 }
 X
 
@@ -1495,7 +1486,7 @@ nx=pa(t,Y-1)-S
 if T == 1 && F == 0 && S == 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		# Solid line from year 0 to end
 		capcurve(solid, 0, E, t, 0) # line year 0 to Y
@@ -1507,7 +1498,7 @@ if T == 1 && F == 0 && S == 0 then {
 if T == 1 && F == 0 && S != 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		capcurve(solid, 0, Y-1, t, 0) # line year 0 to Y-1
 		flat(solid, Y-1, Y, qx)
@@ -1523,7 +1514,7 @@ if T == 1 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,qx, Y,nx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, nx, -Y)
@@ -1535,11 +1526,11 @@ if T == 1 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),qx, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, qx, -Y+1)
@@ -1554,7 +1545,7 @@ if T == 1 && F == 0 && S != 0 then {
 if T == 0 && F == 0 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, E, v, 0)
@@ -1566,7 +1557,7 @@ if T == 0 && F == 0 && S == 0 then {
 if T == 0 && F == 0 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -1583,7 +1574,7 @@ if T == 0 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, zx, -Y)
@@ -1595,11 +1586,11 @@ if T == 0 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+0.25,ux, Y+0.25,S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, ux, -Y+1)
@@ -1614,7 +1605,7 @@ if T == 0 && F == 0 && S != 0 then {
 if F == 1 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -1623,7 +1614,7 @@ if F == 1 && S == 0 then {
 	marker(1, Y-1, I, 0)
 
 	coline(solid, orange, 2.5, Y,zx, Y,0)
-	legend(orange, 0.7, Balancing allowance)
+	legend(orange, 0.7,Balancing allowance)
 
 } else {
 }
@@ -1631,7 +1622,7 @@ if F == 1 && S == 0 then {
 if F == 1 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -1646,10 +1637,10 @@ if F == 1 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value) 
+			legend(green, 0.7,Salvage value) 
 
 			coline(solid, orange, 2.5, Y,zx, Y,0)
-			legend(orange, 0.6, Balancing allowance)
+			legend(orange, 0.6,Balancing allowance)
 
 			} else {
 			}
@@ -1657,18 +1648,18 @@ if F == 1 && S != 0 then {
 		if S > ux && S != 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),ux, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 			} else {
 			}
 
 		if S == 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,ux, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 			} else {
 			}
 
@@ -1676,26 +1667,21 @@ if F == 1 && S != 0 then {
 }
 
 .G2
-.fP "Graph showing the impact of disposal with no salvage value \
-in a single asset pool."
-.LP
+.
 The graph shows a number of key points:
-.IP \(bu
+.IP \(bu 3
 There are no prior years as it is a single asset pool.
-.IP \(bu
+.IP \(bu 3
 Currently the maximum time a single asset pool can be in existence is 8 years.
-.IP \(bu
+.IP \(bu 3
 As the single asset pool is terminated on the disposal of the asset it matches
 the tax benefits with the time period of asset ownership.
-.IP \(bu
-As the salvage value exactly matches the UCC there is neither a balancing
-allowance or a balancing charge.
-.LP
-With the use of a few equations we have show that we can eliminate the need for
-all of the tables and the CCTF was established as:
+.IP \(bu 3
+As the salvage value is less than the UCC there is a balancing allowance in
+year 5.
 .
 .SH
-Mathematics - equal to UCC
+Mathematics - salvage value less than UCC
 .LP
 .UL "Investment cost - negative"
 .RS
@@ -1709,8 +1695,8 @@ we have the following equation:
 + salvage
 + bala
 .EN
-We have previously shown how we can use the #CCTF sub WDA# and remove the #n -
-1# to simplify the expression:
+We have previously shown how we can use the #CCTF sub WDA# and remove the power
+#n - 1# in the denominator to simplify the expression:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) }
@@ -1740,7 +1726,7 @@ lineup {hphantom {-I left [ CCTF sub WDA right ] +}}
 + S
 + t(UCC - S) 
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
 Distribute the #t# through the numerator of the last term:
@@ -1752,7 +1738,7 @@ lineup {hphantom {-I left [ CCTF sub WDA right ] +}}
 + t(UCC) 
 -S(t)
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
 We will now reorder the terms:
@@ -1764,10 +1750,10 @@ S
 + t(UCC) 
 -  UCC [ 1 - CCTF sub WDA ] ( 1 + i ) 
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
-We can now factor the S:
+We can now factor the #S#:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 left ( 
@@ -1775,10 +1761,10 @@ S left ( 1 - t right )
 + t(UCC) 
 -  UCC [ 1 - CCTF sub WDA ] ( 1 + i ) 
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
-Add a grouping symbol around the terms including UCC:
+Add a grouping symbol around the terms containing #UCC#:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 left ( 
@@ -1789,10 +1775,10 @@ t(UCC)
 - UCC [ 1 - CCTF sub WDA ] ( 1 + i ) 
 right ]
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
-Factor out the UCC:
+Factor out the #UCC#:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 left ( 
@@ -1800,7 +1786,7 @@ S left ( 1 - t right )
 +
 UCC left [ t - ( 1 - CCTF sub WDA ) ( 1 + i ) right ]
 right ) 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 We can now state the equation in full and check the calculation.
@@ -1813,15 +1799,15 @@ S left ( 1 - t right )
 +
 UCC left ( t - ( 1 - CCTF sub WDA ) ( 1 + i ) right )
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup {hphantom {=~~~~~~~~~}} +
 left ( 
@@ -1829,28 +1815,28 @@ left (
 +
 22,606 left [ 0.2 - ( 1 - 0.8909 ) ( 1 + 0.15 ) right ]
 right ) 
-times
+times ~^
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 + left [ 10,400 + 1,685 right ] 
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -44,545
 +
 6,008
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
--38,537
+-\[Po]38,537
 .EN
 .RE
 .
@@ -1868,18 +1854,18 @@ S left ( 1 - t right )
 +
 UCC left ( t - ( 1 - CCTF sub WDA ) ( 1 + i ) right )
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 44,545 - 6,008
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-38,537
+\[Po]38,537
 .EN
 .RE
 .
@@ -1888,22 +1874,22 @@ Salvage greater than the UCC
 .LP
 In this instance the salvage value is greater than the UCC causing there to be
 a balancing charge. The balancing charge is equal to the difference between the
-salvage value and the UCC. In this scenario the salvage value is 25,000 in year
-5.
+salvage value and the UCC. In this scenario the salvage value is \[Po]25,000 in
+year 5.
 .EQ I
-"Balancing charge" lm "Salvage - UCC" times ( "tax rate" )
+"Balancing charge" lm "Salvage - UCC" times ~^ ( "tax rate" )
 .EN
-.sp -0.7v
-.EQ I
-lineup =~~
-(25,000 - 22,606) times 0.2
-.EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-479
+(25,000 - 22,606) times ~^ 0.2
 .EN
-Using the base information we can now construct a table to calculate the
+.sp -0.6v
+.EQ I
+lineup =~~
+\[Po]479
+.EN
+Using the base scenario we can now construct a table to calculate the
 investment cost:
 .TS
 tab (#) center;
@@ -1931,17 +1917,16 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
 #_#_#_#_#_#_
 Present value#(50,000)#1,566#1,116#796#567#12,187
 _
-Investment cost#(33,768)
+Investment cost#(\[Po]33,768)
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
 .
+.KS
 The graph below shows the state of the pool in each year:
 .sp -2
 .G1
 frame invis ht 1.5 wid 4.5 left solid bot solid
-label left "Pool" unaligned "Value" left .4
+label left "Pool" unaligned "Value" "\[Po]" left .4
 label bot "Years" 
 
 ###############################################################################
@@ -2010,7 +1995,7 @@ X
 # Draws a circle at the point on the graph after write down or salvage
 define marker X
 for i from $1 to $2 by +1 do {
-	circle at i,pa($3,i+$4) radius 0.03
+	circle at i,pa($3,i+$4) radius 0.015
 }
 X
 
@@ -2103,7 +2088,7 @@ nx=pa(t,Y-1)-S
 if T == 1 && F == 0 && S == 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		# Solid line from year 0 to end
 		capcurve(solid, 0, E, t, 0) # line year 0 to Y
@@ -2115,7 +2100,7 @@ if T == 1 && F == 0 && S == 0 then {
 if T == 1 && F == 0 && S != 0 then {
 		# Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
-		legend(blue, 0.8, New investment)
+		legend(blue, 0.8,New investment)
 
 		capcurve(solid, 0, Y-1, t, 0) # line year 0 to Y-1
 		flat(solid, Y-1, Y, qx)
@@ -2131,7 +2116,7 @@ if T == 1 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,qx, Y,nx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, nx, -Y)
@@ -2143,11 +2128,11 @@ if T == 1 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),qx, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, qx, -Y+1)
@@ -2162,7 +2147,7 @@ if T == 1 && F == 0 && S != 0 then {
 if T == 0 && F == 0 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, E, v, 0)
@@ -2174,7 +2159,7 @@ if T == 0 && F == 0 && S == 0 then {
 if T == 0 && F == 0 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -2191,7 +2176,7 @@ if T == 0 && F == 0 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value)
+			legend(green, 0.7,Salvage value)
 
 			# Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, zx, -Y)
@@ -2203,11 +2188,11 @@ if T == 0 && F == 0 && S != 0 then {
 
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+0.25,ux, Y+0.25,S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 
 				# Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, ux, -Y+1)
@@ -2222,7 +2207,7 @@ if T == 0 && F == 0 && S != 0 then {
 if F == 1 && S == 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -2231,7 +2216,7 @@ if F == 1 && S == 0 then {
 	marker(1, Y-1, I, 0)
 
 	coline(solid, orange, 2.5, Y,zx, Y,0)
-	legend(orange, 0.7, Balancing allowance)
+	legend(orange, 0.7,Balancing allowance)
 
 } else {
 }
@@ -2239,7 +2224,7 @@ if F == 1 && S == 0 then {
 if F == 1 && S != 0 then {
 	# Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
-	legend(blue, 0.8, New investment)
+	legend(blue, 0.8,New investment)
 
 	# Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
@@ -2254,10 +2239,10 @@ if F == 1 && S != 0 then {
 			# circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
-			legend(green, 0.7, Salvage value) 
+			legend(green, 0.7,Salvage value) 
 
 			coline(solid, orange, 2.5, Y,zx, Y,0)
-			legend(orange, 0.6, Balancing allowance)
+			legend(orange, 0.6,Balancing allowance)
 
 			} else {
 			}
@@ -2265,18 +2250,18 @@ if F == 1 && S != 0 then {
 		if S > ux && S != 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 
 				# Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),ux, Y+(2/12),S)
-				legend(red, 0.6, Balancing charge)
+				legend(red, 0.6,Balancing charge)
 			} else {
 			}
 
 		if S == 99999 then {
 				# Vertical line salvage
 				coline(solid, green, 2.5, Y,ux, Y,0)
-				legend(green, 0.7, Salvage value)
+				legend(green, 0.7,Salvage value)
 			} else {
 			}
 
@@ -2284,23 +2269,20 @@ if F == 1 && S != 0 then {
 }
 
 .G2
-.fP "Graph showing the impact of disposal with no salvage value \
-in a single asset pool."
-.LP
+.KE
+.
 The graph shows a number of key points:
-.IP \(bu
+.IP \(bu 3
 There are no prior years as it is a single asset pool.
-.IP \(bu
+.IP \(bu 3
 Currently the maximum time a single asset pool can be in existence is 8 years.
-.IP \(bu
+.IP \(bu 3
 As the single asset pool is terminated on the disposal of the asset it matches
 the tax benefits with the time period of asset ownership.
-.IP \(bu
-As the salvage value exactly matches the UCC there is neither a balancing
-allowance or a balancing charge.
-.LP
-With the use of a few equations we have show that we can eliminate the need for
-all of the tables and the CCTF was established as:
+.IP \(bu 3
+As the salvage exceeds the UCC there is a balancing charge in year 5. The
+balancing charge is shown as the short red vertical line perpendicular to the
+line of the pool value.
 .
 .SH
 Mathematics - salvage value greater than UCC
@@ -2308,8 +2290,8 @@ Mathematics - salvage value greater than UCC
 .UL "Investment cost - negative"
 .RS
 .LP
-If the flow chart is followed for the scenario where there is the salvage value
-exceeds the UCC we have the following equation:
+If the flow chart is followed for the scenario where the salvage value exceeds
+the UCC we have the following equation:
 .EQ I
 "Investment cost" lm 
 -I^ left [ cctf right ] 
@@ -2317,8 +2299,8 @@ exceeds the UCC we have the following equation:
 + salvage
 - balc
 .EN
-We have previously shown how we can use the #CCTF sub WDA# and remove the #n -
-1# to simplify the expression:
+We have previously shown how we can use the #CCTF sub WDA# and remove the power
+#n - 1# in the denominator to simplify the expression:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) }
@@ -2341,21 +2323,21 @@ S(t) over { ( 1 + i ) sup n }
 -UCC(t) over { ( 1 + i ) sup n } \(dg
 .EN
 .FS
-\(dg If you do not eliminate the fraction by factoring the # ( 1 + i ) sup n #
-this transformation becomes very error prone. Fractions have 3 signs. The sign
-of the numerator, the sign of the denominator and the sign of the fraction.
-These fractions are all equivalent: # + +6 over +3 = +(+3) = 3#    #  + -6 over
--2 = +(+3) = 3 #   #- -6 over +2 = -(-3) = 3# #- +6 over -2 = -(-3) = 3#. It
-can be seen that any of the fractions can be transformed into another by
-changing 2 of the 3 signs. In this particular transformation, as a fraction, #
-- { t(S -UCC)} over { ( 1 + i ) sup n }# the #t# is positive and the fraction
-negative, giving the fraction #S(t) over { ( 1 + i ) sup n } - -UCC(t) over {
-( 1 + i ) sup n }#. If the fraction had been eliminated first the factoring
-would have been far easier # -t(S -UCC) = -S(t) + UCC(t) #. We do in the
-end get to the same place but have to change the sign of the fraction in
-the next step.
+\(dg If you do not eliminate the fraction in the last term by factoring the # (
+1 + i ) sup n # this transformation becomes very error prone. Fractions have 3
+signs. The sign of the numerator, the sign of the denominator and the sign of
+the fraction.  These fractions are all equivalent: # + +6 over +3 = +(+3) = 3#
+#  + -6 over -2 = +(+3) = 3 #   #- -6 over +2 = -(-3) = 3# #- +6 over -2 =
+-(-3) = 3#. It can be seen that any of the fractions can be transformed into
+another by changing 2 of the 3 signs. In this particular transformation, as a
+fraction, # - { t(S -UCC)} over { ( 1 + i ) sup n }# the #t# is positive and
+the fraction negative, giving the fraction #S(t) over { ( 1 + i ) sup n } -
+-UCC(t) over { ( 1 + i ) sup n }#. If the fraction had been eliminated first
+the factoring would have been far easier # -t(S -UCC) = -S(t) + UCC(t) #. We
+do, in the end, get to the same place but have to change the sign of the
+fraction in the next step.
 .FE
-We are going to change the signs in the final term:
+We are going to change the signs of the fraction in the final term:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) }
@@ -2379,6 +2361,7 @@ UCC(t) over { ( 1 + i ) sup n }
 - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) }
 over { ( 1 + i ) sup n }
 .EN
+.KS
 We can now factor the numerators where possible:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
@@ -2389,6 +2372,7 @@ over { ( 1 + i ) sup n }
 { UCC left ( t - [ 1 - CCTF sub WDA ] ( 1 + i ) right ) }
 over { ( 1 + i ) sup n }
 .EN
+.KE
 Add a grouping symbol:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
@@ -2410,10 +2394,10 @@ S left ( 1 - t right )
 +
 UCC left ( t - [ 1 - CCTF sub WDA ] ( 1 + i ) right )
 right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-We can now state the equation in full and check the calculation.
+We can now state the equation in full and check the calculation:
 .EQ I
 "Investment cost" lm
 -I^ left [ CCTF sub WDA right ] 
@@ -2423,15 +2407,15 @@ S left ( 1 - t right )
 +
 UCC left ( t - ( 1 - CCTF sub WDA ) ( 1 + i ) right )
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup {hphantom {=~~~~~~~~~}} +
 left ( 
@@ -2439,28 +2423,28 @@ left (
 +
 22,606 left [ 0.2 - ( 1 - 0.8909 ) ( 1 + 0.15 ) right ]
 right ) 
-times
+times ~^
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 + left [ 20,000 + 1,685 right ] 
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -44,545
 +
 10,782
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
--33,763
+-\[Po]33,763
 .EN
 .RE
 .
@@ -2478,18 +2462,18 @@ S left ( 1 - t right )
 +
 UCC left ( t - ( 1 - CCTF sub WDA ) ( 1 + i ) right )
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 44,545 - 10,782
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-33,763
+\[Po]33,763
 .EN
 .RE
 .
@@ -2497,7 +2481,8 @@ lineup =~~
 Why are the equations with balancing adjustments the same?
 .LP
 You may have noticed that the result of the transformations where there is a
-salvage value and a balancing adjustment result in the same equation:
+salvage value and a balancing adjustment result in the same equation, shown
+below:
 .EQ I
 "Investment cost" lm
 -I^ left [ CCTF sub WDA right ] 
@@ -2507,11 +2492,27 @@ S left ( 1 - t right )
 +
 UCC left ( t - ( 1 - CCTF sub WDA ) ( 1 + i ) right )
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-The reason is that the only difference in the transformation of the equations
-is in the final term:
+The only difference in the two investment cost equations before we transformed
+them was in the final terms. The two equations are shown below:
+.EQ I
+"Cost, balancing allowance" lm 
+-I^ left [ cctf right ] 
+- pvucc
++ salvage
++ bala
+.EN
+
+.EQ I
+"Cost, balancing charge" lineup =~~
+-I^ left [ cctf right ] 
+- pvucc
++ salvage
+- balc
+.EN
+The only difference in the two equations is in the final term:
 .EQ I
 + bala
 .EN
@@ -2519,20 +2520,26 @@ vs:
 .EQ I
 - balc
 .EN
-We will now remove the denominators for simplicity and factor to see the
-result.
+.KS
+We will now remove the denominators for simplicity and distribute the #t#:
 .EQ I
 + t(UCC - S) 
-=~~
+lm
 +UCC(t) -S(t)
 .EN
 .EQ I
 - t(S - UCC)
-=~~
+lineup =~~
 -S(t) + UCC(t)
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
++ UCC(t) -S(t) 
 .EN
 As we can see above both the balancing adjustments can be transformed into the
 same expression.
+.KE
 .
 .SH 2
 Salvage greater than the UCC with a capital gain
@@ -2540,38 +2547,38 @@ Salvage greater than the UCC with a capital gain
 In this instance the salvage value is greater than the UCC causing there to be
 a balancing charge and the salvage value also exceeds the initial investment
 triggering a capital gains charge. As previously stated we are going to use the
-rate of taxation through the rest of the equation to calculate the capital
-gains tax.
+same rate of taxation through out the equation to calculate the capital gains
+tax.
 .LP
-In this scenario the salvage value is 60,000 and the asset disposal occurs in
-year 5.
+In this scenario the salvage value is \[Po]60,000 and the asset disposal occurs
+in year 5.
 .EQ I
-"Balancing charge" lm ("Salvage - UCC") times ( "tax rate" )
+"Balancing charge" lm ("Salvage - UCC") times ~^ ( "tax rate" )
 .EN
-.sp -0.7v
-.EQ I
-lineup =~~
-(60,000 - 22,606) times 0.2
-.EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-7,479
+(60,000 - 22,606) times ~^ 0.2
 .EN
-.EQ I
-"Capital gains" lm ("Salvage - I") times ( "tax rate" )
-.EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-(60,000 - 50,000) times 0.2
+\[Po]7,479
 .EN
-.sp -0.7v
+.
+.EQ I
+"Capital gains" lm ("Salvage - I") times ~^ ( "tax rate" )
+.EN
+.sp -0.6v
 .EQ I
 lineup =~~
-2,000
+(60,000 - 50,000) times ~^ 0.2
 .EN
-.LP
+.sp -0.6v
+.EQ I
+lineup =~~
+\[Po]2,000
+.EN
 Using the base information we can now construct a table to calculate the
 investment cost:
 .TS
@@ -2601,11 +2608,9 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497
 #_#_#_#_#_#_
 Present value#(50,000)#1,566#1,116#796#567#25,109
 _
-Investment cost#(20,846)
+Investment cost#(\[Po]20,846)
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
 There is no graph for this part and we are simply going to crack on with the
 equations:
 .
@@ -2617,15 +2622,19 @@ Mathematics - salvage value greater than UCC and a capital gain
 .LP
 If we follow the flow chart we have the following equation:
 .EQ I
-"Investment cost" lm 
+IC\(dg lm 
 -I^ left [ cctf right ] 
 - pvucc
 + salvage
 + balc
 - cgt
 .EN
-We have previously shown how we can use the #CCTF sub WDA# and remove the #n -
-1# to simplify the expression:
+.FS
+\(dg I have had to replace the words "Investment cost" with #IC# to avoid
+problems with the line length.
+.FE
+We have previously shown how we can use the #CCTF sub WDA# and remove the power
+#n - 1# in the denominator to simplify the expression:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) }
@@ -2655,10 +2664,10 @@ lineup {hphantom {-I left [ CCTF sub WDA right ] +}}
 - t(S - UCC)
 - t(S - I )
 right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-Factor #t# in last two terms:
+Distribute #t# through the last two terms:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 + left [ 
@@ -2667,7 +2676,7 @@ lineup {hphantom {-I left [ CCTF sub WDA right ] +}}
 -S(t) + UCC(t)
 -S(t) + I(t)
 right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
 Reorder the terms:
@@ -2681,11 +2690,11 @@ lineup {hphantom {-I left [ CCTF sub WDA right ] +}}
 -S(t)
 -S(t)
 right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-There is write answer to the order of the terms. I have organised them to suit
-the form of the equation that I want. I am now going to add some grouping
+There is no write answer to the order of the terms. I have organised them to
+suit the form of the equation that I want. I am now going to add some grouping
 symbols:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
@@ -2695,10 +2704,10 @@ S
 UCC(t) - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) }
 right )
 + left ( I(t) -S(t) -S(t) right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-factor the #UCC#:
+Factor the #UCC#:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 + left [ 
@@ -2707,7 +2716,7 @@ S
 t - [ 1 - CCTF sub WDA ] ( 1 + i )
 right )
 + left ( I(t) -S(t) -S(t) right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
 Before we factor out the #t# it is worth noticing that the result will be
@@ -2723,11 +2732,11 @@ S
 t - [ 1 - CCTF sub WDA ] ( 1 + i )
 right )
 - left ( -I(t) +S(t) +S(t) right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-We can now reorder and collect the terms to remove the negative and reduce the
-number of terms:
+We can now reorder and collect the terms to remove the negative sign and reduce
+the number of terms:
 .EQ I
 lineup {hphantom {-I left [ CCTF sub WDA right ] +}} 
 + left [ 
@@ -2736,7 +2745,7 @@ S
 t - [ 1 - CCTF sub WDA ] ( 1 + i )
 right )
 - left ( 2S(t) - I(t) right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
 We can now factor out the #t#:
@@ -2748,12 +2757,12 @@ S
 t - [ 1 - CCTF sub WDA ] ( 1 + i )
 right )
 - t left ( 2S - I right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-We can now state the equation in full and check the calculation.
+We can now state the equation in full and check the calculation:
 .EQ I
-"Investment cost" lm
+IC lm
 -I^ left [ CCTF sub WDA right ] 
 + left [ 
 S
@@ -2761,15 +2770,15 @@ S
 t - [ 1 - CCTF sub WDA ] ( 1 + i )
 right )
 - t left ( 2S - I right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup {hphantom { =~~ }} 
 + left [ 
@@ -2778,26 +2787,26 @@ lineup {hphantom { =~~ }}
 0.2 - [ 1 - 0.8909 ] ( 1 + 0.15 )
 right )
 - 0.2 left ( 2(60,000) - 50,000 right ) right ]
-times
+times ~^
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -50,000^ left [ 0.8909 right ] 
 + left [ 60,000 + 1,685 - 14,000 right ] 
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 -44,545 + 23,709
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
--20,836
+-\[Po]20,836
 .EN
 .RE
 .
@@ -2807,7 +2816,7 @@ lineup =~~
 The investment cost can be converted into a positive value by either
 multiplying by -1 or changing the signs of the two terms:
 .EQ I
-"Investment cost" lm
+IC lm
 I^ left [ CCTF sub WDA right ] 
 - left [ 
 S
@@ -2815,17 +2824,17 @@ S
 t - [ 1 - CCTF sub WDA ] ( 1 + i )
 right )
 - t left ( 2S - I right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 44,545 - 23,709
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-20,836
+\[Po]20,836
 .EN
 .RE
