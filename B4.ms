@@ -4,7 +4,7 @@
 .SH 1
 .ce 
 .SM
-Positive investment cost equations - time period 1
+Negative Investment Cost Equations - Time Period 1
 .LP
 .SM
 .
@@ -44,7 +44,7 @@ The following equations calculate the after tax, after salvage present value of
 an investment. The tax #t#, allowable depreciation #d#, and interest rate #i#
 which are typically expressed as a percentage, and must be used in the
 equations as percentages. Therefore a #d# of 18% is used in the equation as
-0.18.  In the engineering economics equations the % sign is explicit e.g. (P/F,
+0.18. In the Engineering Economics equations the % sign is explicit e.g. (P/F,
 i%, n).
 .sp
 .B2
@@ -58,7 +58,7 @@ AIA & Yearly Allowance
 .LP
 .SM
 .sp 1.0
-CCTF
+# CCTF sub AIA #
 .sp -2
 .EQ
 mark
@@ -102,7 +102,7 @@ WDA
 .LP
 .sp 1.0
 .SM
-CCTF
+# CCTF sub WDA #
 .sp -2
 .EQ
 mark
