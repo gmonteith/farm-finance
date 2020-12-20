@@ -2,9 +2,10 @@
 .nr HM 0.7i
 .
 .
-.SH 1
-Single Asset Pool
-.LP
+.\" .SH 1
+.\" Single Asset Pool
+.\" .LP
+.KS
 The flow chart for the writing down allowance when using a single asset pool is
 as follows:
 .
@@ -96,40 +97,41 @@ CGT: box "#space 0 cgt2 #" width 1.1 height 0.6 with .s at Y4.end
 		arrow left 0.1
 
 .PE
+.KE
 .
 .SH
 Base scenario
 .LP
 For the purpose of the following examples please assume the following:
-.IP \(bu
+.IP \(bu 3
 It is assumed that the initial investment is made at time period zero and
 subsequent costs and revenues occur at the ending of the accounting period.
 This is the same logic as an ordinary annuity.
-.IP \(bu
+.IP \(bu 3
 The after tax cost of capital is 15%.
-.IP \(bu
+.IP \(bu 3
 The rate of taxation is 20%.
-.IP \(bu
-The capital investment is 50,000
+.IP \(bu 3
+The capital investment is \[Po]50,000
 .LP
 For ease of completing of mathemtacis we are going to calculated the UCC and
 the # CCTF sub WDA2 # now and use the answers where required.
-.EQ
+.EQ I
 CCTF sub WDA2 lm cctf2	
 =~~
 ncctf2(0.18, 0.2, 0.15)
 =~~
 0.9051
 .EN
-.EQ
+.EQ I
 UCC lineup =~~
 I(1 -d ) sup { n -1 }
 =~~
 50,000(1 - 0.18 ) sup { 5 -1 }
 =~~
-22,606
+\[Po]22,606
 .EN
-The tax savings for the 50,000 investment are shown below:
+The tax savings for the \[Po]50,000 investment are shown below:
 .TS
 tab (#) center;
 l c c c c
@@ -151,10 +153,9 @@ _
 l s n n
 l s n n . 
 #_#_#
-Total#31,463#6,292
+Total#\[Po]31,463#\[Po]6,292
 #_#_#
 .TE
-.fP "Table showing tax savings when using a single asset pool"
 .
 .SH 2 
 No salvage value
@@ -163,20 +164,19 @@ In the fifth year the asset is disposed of with no salvage value. As the asset
 has been disposed off with no salvage value the asset has lost value faster
 than expected and entire value remaining in the pool is the balancing
 allowance. The tax benefits are shown below:
-.EQ
-"Balancing allowance" lm "Closing balance" times ( "tax rate" )
+.EQ I
+"Balancing allowance" lm "Closing balance" times ~^ ( "tax rate" )
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-22,606 times 0.2
+22,606 times ~^ 0.2
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-4,512
+\[Po]4,512
 .EN
-.LP
 Using the base information we can now construct a table to calculate the
 investment cost:
 .TS
@@ -205,12 +205,11 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
 #_#_#_#_#_#_#_
 Present value#(50,000)##1,361#971#692#493#1,949
 _
-Investment cost#(44,534)
+Investment cost#(\[Po]44,534)
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
 .
+.KS
 .SH
 Mathematics - no salvage value
 .LP
@@ -219,37 +218,38 @@ Mathematics - no salvage value
 .LP
 If the flow chart is followed for the scenario where there is no salvage value
 we have the following equation:
-.EQ L
+.EQ I
 "Investment cost" lm 
 -I^ left [ cctf2 right ] 
 - pvucc2
 + bala2
 .EN
+.KE
 .
 This seems rather a mess, however, it can be simplified by using the #CCTF sub
 WDA# where possible. The term # dt over { ( i + d ) ( 1 + i ) } # represents the tax savings.
 The #CCTF sub WDA2# represents the investment less the tax savings, therefore,
 we can get back to the cost savings by using #1 - CCTF sub WDA2#.
-.EQ L
+.EQ I
 lineup =~~ -I left [ CCTF sub WDA2 right ]
 - UCC [ 1 - CCTF sub WDA2 ] 
-times 1 over { ( 1 + i ) sup { n -1 } }
+times ~^ 1 over { ( 1 + i ) sup { n -1 } }
 +
 bala2
 .EN
 We are now going to focus on the second and third terms of the equation. We are
-going to start be getting rid of the #n -1# we are going to multiply the
-numerator by #( 1 + i )#:
-.EQ L
+going to start be getting rid of the power #n -1# in the denominator of the
+second term. To do this we are going to multiply the numerator by #( 1 + i )#:
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
 over { ( 1 + i ) sup n }
 +
 bala2
 .EN
-In this particular example we know that the salvage value is zero so we adjust
-the last term to reflect this:
-.EQ L
+In this particular example we know that the salvage value is zero so we can
+eliminate the #-S# in the last term. Anything minus zero will be itself.
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
 over { ( 1 + i ) sup n }
@@ -258,14 +258,14 @@ over { ( 1 + i ) sup n }
 .EN
 We can elimenate the negative sign at the beginning of the expression be
 reordering the terms:
-.EQ L
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 { t( UCC ) } over { ( 1 + i ) sup  { n + 1 }  }
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
 over { ( 1 + i ) sup n }
 .EN
 Add the parenthesis:
-.EQ L
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 + left [ { t( UCC ) } over { ( 1 + i ) sup  { n + 1 }  }
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
@@ -273,7 +273,7 @@ over { ( 1 + i ) sup n }
 right ]
 .EN
 We can now factor the UCC:
-.EQ L
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 + UCC left [
 t over { ( 1 + i ) sup  { n + 1 }  }
@@ -284,78 +284,80 @@ right ]
 We can also replace the denominator encompassing the discounting with the
 Single Payment Present Worth factor:
 .
-.EQ L
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 + UCC left [  t over { 1 + i } - ( 1 - CCTF sub WDA2 ) ( 1 + i ) right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 We will replace the fraction below the #t# with a factor using negative
 exponents:
-.EQ L
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 + UCC left [  t(1 + i ) sup -1 - ( 1 - CCTF sub WDA2 ) ( 1 + i ) right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 We can now state the equation in full and check the calculation:
-.EQ L
+.EQ I
 "Investment cost" lm
 -I^ left [ CCTF sub WDA2 right ] 
 + UCC left [  t(1 + i ) sup -1 - ( 1 - CCTF sub WDA2 ) ( 1 + i ) right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 + 22,606 left [ 0.2(0.8696)  - ( 1 - 0.9051 ) ( 1 + 0.15 ) right ] 
-times
+times ~^
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 + 22,606 left [ 0.0648 right ] 
-times
+times ~^
 0.4972
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -45,255 + 728
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-- 44,527
+- \[Po]44,527
 .EN
 .RE
 .
+.KS
 .UL "Investment cost - positive"
 .RS
 .LP
 The investment cost can be converted into a positive value by either
-multiplying by -1 or changing the signs of the two terms:
-.EQ L
+multiplying by -1 or changing the signs of the terms:
+.EQ I
 "Investment cost" lm
 I^ left [ CCTF sub WDA2 right ] 
 - UCC left [  t(1 + i ) sup -1 - ( 1 - CCTF sub WDA2 ) ( 1 + i ) right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.EQ L
+.EQ I
 lineup =~~
 45,255 - 728
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-44,527
+\[Po]44,527
 .EN
 .RE
+.KE
 .
 .SH 2 
 Salvage value equal to the UCC
@@ -364,7 +366,7 @@ As the salvage value exactly equals the UCC there is no tax adjustment
 required. The depreciation in the pool has exactly matched the depreciation in
 the asset.
 .lP
-Using the base information we can now construct a table to calculate the
+Using the base scenario we can now construct a table to calculate the
 investment cost:
 .TS
 tab (#) center;
@@ -392,36 +394,35 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
 #_#_#_#_#_#_#_
 Present value#(50,000)#0#1,361#971#692#11,728#
 _
-Investment cost#(35,248)
+Investment cost#(\[Po]35,248)
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
 .
 .SH
-Mathematics - equal to UCC
+Mathematics - salvage value equal to UCC
 .LP
 .UL "Investment cost - negative"
 .RS
 .LP
 If the flow chart is followed for the scenario where there is no salvage value
 we have the following equation:
-.EQ L
+.EQ I
 "Investment cost" lm 
 -I^ left [ cctf2 right ] 
 - pvucc2
 + salvage
 .EN
-We have previously shown, in Section XX, that this can be rewritten as: 
-.EQ L
+We have previously shown that this can be rewritten as: 
+.EQ I
 lineup =~~ -I left [ CCTF sub WDA2 right ]
 - UCC [ 1 - CCTF sub WDA2 ] 
-times 1 over { ( 1 + i ) sup { n -1 } }
+times ~^ 1 over { ( 1 + i ) sup { n -1 } }
 +
 salvage
 .EN
-We can again multiply the second term by #1 + i # to remove the # n -1 #.
-.EQ L
+We can again multiply the second term by #1 + i # to remove the # n -1 # in the
+denominator:
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
 over { ( 1 + i ) sup n }
@@ -430,14 +431,14 @@ salvage
 .EN
 We can again elimenate the negative sign at the beginning of the expression be
 reordering the terms:
-.EQ L
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 + salvage
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
 over { ( 1 + i ) sup n }
 .EN
 Group the terms:
-.EQ L
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 + left [ salvage
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
@@ -446,72 +447,74 @@ right ]
 .EN
 Lastly we can replace the denominator with the Single Payment Present Worth
 factor:
-.EQ L
+.EQ I
 lineup {hphantom {-I left [ CCTF sub WDA2 right ] +}} 
 + left [ S - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) } right ]
-times 
+times ~^ 
 ( P/F, %i, n )
 .EN
+.KS
 We can now state the equation in full and check the calculation.
-.EQ L
+.EQ I
 "Investment cost" lm
 -I^ left [ CCTF sub WDA2 right ] 
 + left [ S - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) } right ]
-times 
+times ~^ 
 ( P/F, %i, n )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 + left [ 22,606 -22,606 ( 1 - 0.9051 ) ( 1 + 0.15 ) right ] 
-times
+times ~^
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 + left [ 22,606 - 2,467 right ] 
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -45,255
 +
 10,013
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--35,242
+-\[Po]35,242
 .EN
 .RE
+.KE
 .
 .UL "Investment cost - positive"
 .RS
 .LP
 The investment cost can be converted into a positive value by either
-multiplying by -1 or changing the signs of the two terms:
-.EQ L
+multiplying by -1 or changing the signs of the terms:
+.EQ I
 "Investment cost" lm
 I^ left [ CCTF sub WDA2 right ] 
 - left [ S - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) } right ]
-times 
+times ~^ 
 ( P/F, %i, n )
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 45,255 - 10,013
 4,545 - 9,830
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-35,242
+\[Po]35,242
 .EN
 .RE
 .
@@ -520,22 +523,23 @@ Salvage value less than the UCC
 .LP
 As the salvage value is less than the UCC there will be a balancing allowance
 equal to the difference between the salvage value and the UCC. In this example
-we are going to state that the salvage value is 13,000 and occurs in year 5.
-.EQ
-"Balancing allowance" lm "UCC - Salvage" times ( "tax rate" )
+we are going to state that the salvage value is \[Po]13,000 and occurs in year
+5.
+.EQ I
+"Tax savings - BA" lm "UCC - Salvage" times ~^ ( "tax rate" )
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-(22,606 - 13,000) times 0.2
+(22,606 - 13,000) times ~^ 0.2
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-1,921
+\[Po]1,921
 .EN
 .LP
-Using the base information we can now construct a table to calculate the
+Using the base scenario we can now construct a table to calculate the
 investment cost:
 .TS
 tab (#) center;
@@ -563,11 +567,9 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
 #_#_#_#_#_#_#_
 Present value#(50,000)#0#1,361#971#692#6,954#830
 _
-Investment cost#(39,192)
+Investment cost#(\[Po]39,192)
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
 .
 .SH
 Mathematics - equal to UCC
@@ -577,16 +579,16 @@ Mathematics - equal to UCC
 .LP
 If the flow chart is followed for the scenario where there is no salvage value
 we have the following equation:
-.EQ L
-"Investment cost" lm 
+.EQ I
+IC lm 
 -I^ left [ cctf2 right ] 
 - pvucc2
 + salvage
 + bala2
 .EN
 We have previously shown how we can use the #CCTF sub WDA2# and remove the #n -
-1# to simplify the expression:
-.EQ
+1# in the deonominator to simplify the expression:
+.EQ I
 mark
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
 over { ( 1 + i ) sup n }
@@ -596,7 +598,7 @@ salvage
 bala2
 .EN
 Add the parenthesis:
-.EQ 
+.EQ I
 lineup 
 + left ( - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
 over { ( 1 + i ) sup n }
@@ -608,51 +610,51 @@ right )
 .EN
 We can factor the denominator and replace it with the Single Payment Present
 Worth factor:
-.EQ 
+.EQ I
 lineup 
 + left (
 -  UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 + S
 + { t(UCC - S) } over { 1 + i } 
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
 Replace the fraction with a factor using negative exponents:
-.EQ
+.EQ I
 lineup 
 + left (
 -  UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 + S
 + t(UCC - S) ( 1 + i ) sup -1
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
 Distribute the #(1 + i ) sup -1# through the numerator of the last term:
-.EQ
+.EQ I
 lineup 
 + left (
 -  UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 + S
 + t(UCC(1 + i ) sup -1 - S(1 + i ) sup -1)
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
 Distribute the #t# through the numerator of the last term:
-.EQ
+.EQ I
 lineup 
 + left (
 -  UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 + S
 + (t)UCC(1 + i ) sup -1 - S(t)(1 + i ) sup -1 
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
 We will now reorder the terms:
-.EQ
+.EQ I
 lineup 
 left (
 S
@@ -660,22 +662,22 @@ S
 + t(UCC)(1 + i ) sup -1 
 -  UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
-We can now factor the S:
-.EQ
+We can now factor the #S#:
+.EQ I
 lineup 
 left ( 
 S left ( 1 - t(1 + i ) sup -1 right )
 + t(UCC)( 1 + i ) sup -1
 -  UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 right )
-times
+times ~^
 ( P/F, %i, n )
 .EN
 Add a grouping symbol around the terms including UCC:
-.EQ
+.EQ I
 lineup 
 left ( 
 S left ( 1 - t(1 + i ) sup -1 right )
@@ -683,11 +685,11 @@ S left ( 1 - t(1 + i ) sup -1 right )
 -  UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 right ) 
 right ) 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 Factor out the UCC:
-.EQ
+.EQ I
 lineup 
 left ( 
 S left ( 1 - t(1 + i ) sup -1 right )
@@ -695,12 +697,12 @@ S left ( 1 - t(1 + i ) sup -1 right )
 - [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 right ) 
 right ) 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 We can now state the equation in full and check the calculation.
-.EQ L
-"Investment cost" lm
+.EQ I
+IC lm
 -I^ left [ CCTF sub WDA2 right ] 
 +
 left [ 
@@ -709,44 +711,44 @@ S left ( 1 - t(1 + i ) sup -1 right )
 - [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 right ) 
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 .EN
-.sp -0.7v
-.EQ
-lineup {hphantom {~~=~~ -}} +
+.sp -0.6v
+.EQ I
+lineup {hphantom {=~~ -}} +
 left [ 
 13,000 left ( 1 - 0.2(0.8696) right )
 +
 22,606 left [ 0.2(0.8696) - ( 1 - 0.9051 ) ( 1 + 0.15 ) right ]
 right ] 
-times
+times ~^
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 + left [ 10,739 + 1,465 right ] 
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -45,255
 +
 6,068
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--39,187
+-\[Po]39,187
 .EN
 .RE
 .
@@ -754,9 +756,9 @@ lineup =~~
 .RS
 .LP
 The investment cost can be converted into a positive value by either
-multiplying by -1 or changing the signs of the two terms:
-.EQ L
-"Investment cost" lm
+multiplying by -1 or changing the signs of the terms:
+.EQ I
+IC lm
 I^ left [ CCTF sub WDA2 right ] 
 -
 left [ 
@@ -765,42 +767,44 @@ S left ( 1 - t(1 + i ) sup -1 right )
 - [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 right ) 
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 45,255 - 6,068
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-39,187
+\[Po]39,187
 .EN
 .RE
 .
+.KS
 .SH 2
 Salvage greater than the UCC
 .LP
 In this instance the salvage value is greater than the UCC causing there to be
 a balancing charge. The balancing charge is equal to the difference between the
-salvage value and the UCC. In this scenario the salvage value is 25,000 in year
-5.
-.EQ
-"Balancing charge" lm "Salvage - UCC" times ( "tax rate" )
+salvage value and the UCC. In this scenario the salvage value is \[Po]25,000 in
+year 5.
+.EQ I
+"Tax charge - BC" lm "Salvage - UCC" times ~^ ( "tax rate" )
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-(25,000 - 22,606) times 0.2
+(25,000 - 22,606) times ~^ 0.2
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-479
+\[Po]479
 .EN
-Using the base information we can now construct a table to calculate the
+.KE
+Using the base scenario we can now construct a table to calculate the
 investment cost:
 .TS
 tab (#) center;
@@ -828,11 +832,9 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
 #_#_#_#_#_#_#_
 Present value#(50,000)#0#1,361#971#692#12,918#(207)
 _
-Investment cost#(34,265)
+Investment cost#(\[Po]34,265)
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
 .
 .SH
 Mathematics - salvage value greater than UCC
@@ -843,8 +845,8 @@ Mathematics - salvage value greater than UCC
 We have previously discussed that the investment cost equations are the same if
 there is either a balancing allowance or a balancing charge. Therefore, we can
 use the equation we have previously derived:
-.EQ L
-"Investment cost" lm
+.EQ I
+IC lm
 -I^ left [ CCTF sub WDA2 right ] 
 +
 left [ 
@@ -853,46 +855,45 @@ S left ( 1 - t(1 + i ) sup -1 right )
 - [ 1 - CCTF sub WDA2 ] ( 1 + i ) 
 right ) 
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup {hphantom {~~=~~ -}} +
 left [ 
 25,000 left ( 1 - 0.2(0.8696) right )
 +
 22,606 left [ 0.2(0.8696) - ( 1 - 0.9051 ) ( 1 + 0.15 ) right ]
 right ] 
-times
+times ~^
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 + left [ 20,652 + 1,465 right ] 
-times
+times ~^
 ( 0.4972 )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -45,255
 +
 10,997
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--34,258
+-\[Po]34,258
 .EN
-
 .RE
 .
 .SH 2
@@ -906,34 +907,35 @@ gains tax.
 .LP
 In this scenario the salvage value is 60,000 and the asset disposal occurs in
 year 5.
-.EQ
-"Balancing charge" lm ("Salvage - UCC") times ( "tax rate" )
+.EQ I
+"Tax charge - BC" lm ("Salvage - UCC") times ~^ ( "tax rate" )
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-(60,000 - 22,606) times 0.2
+(60,000 - 22,606) times ~^ 0.2
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-7,479
+\[Po]7,479
 .EN
-.EQ
-"Capital gains" lm ("Salvage - I") times ( "tax rate" )
+.EQ I
+"Capital gains" lm ("Salvage - I") times ~^ ( "tax rate" )
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-(60,000 - 50,000) times 0.2
+(60,000 - 50,000) times ~^ 0.2
 .EN
-.sp -0.7v
-.EQ
+.sp -0.6v
+.EQ I
 lineup =~~
-2,000
+\[Po]2,000
 .EN
 .LP
-Using the base information we can now construct a table to calculate the
+.KS
+Using the base scenario we can now construct a table to calculate the
 investment cost:
 .TS
 tab (#) center;
@@ -962,11 +964,10 @@ Discount factor @15%#1#0.870#0.756#0.658#0.572#0.497#0.432
 #_#_#_#_#_#_#_
 Present value#(50,000)##1,361#971#692#30,313#(4,095)
 _
-Investment cost#(20,758)
+Investment cost#(\[Po]20,758)
 _
 .TE
-.tP "Table showing investment cost when there is no salvage value - single \
-asset pool"
+.KE
 There is no graph for this part and we are simply going to crack on with the
 equations:
 .
@@ -977,8 +978,8 @@ Mathematics - salvage value greater than UCC and a capital gain
 .RS
 .LP
 If we follow the flow chart we have the following equation:
-.EQ L
-"Investment cost" lm 
+.EQ I
+IC lm 
 -I^ left [ cctf right ] 
 - pvucc2
 + salvage
@@ -986,8 +987,8 @@ If we follow the flow chart we have the following equation:
 - cgt2
 .EN
 We have previously shown how we can use the #CCTF sub WDA2# and remove the #n -
-1# to simplify the expression:
-.EQ L
+1# from the denominator to simplify the expression:
+.EQ I
 mark
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
 over { ( 1 + i ) sup n }
@@ -996,7 +997,7 @@ over { ( 1 + i ) sup n }
 - cgt2
 .EN
 Add a grouping symbol:
-.EQ L 
+.EQ I
 lineup 
 + left [ 
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
@@ -1008,7 +1009,7 @@ right ]
 .EN
 We can factor the denominator and replace it with the Single Payment Present
 Worth factor:
-.EQ L
+.EQ I
 lineup 
 + left [ 
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
@@ -1016,11 +1017,22 @@ lineup
 - { t(S - UCC) } over { 1 + i }
 - { t(S - I ) } over { 1 + i }
 right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
+We are going to drop the # ( P/F, %i, n ) # from the equation as we do not have
+enough line lenght. We will add it back in again at the end.
+.EQ I
+lineup 
++ left [ 
+- { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
++ S
+- { t(S - UCC) } over { 1 + i }
+- { t(S - I ) } over { 1 + i }
+right ]
+.EN
 Replace the remaining fraction with the equivalent negative exponents:
-.EQ L
+.EQ I
 lineup 
 + left [ 
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
@@ -1028,11 +1040,9 @@ lineup
 - (1 + i ) sup -1 t(S - UCC) 
 - (1 + i ) sup -1 t(S - I ) 
 right ]
-times
-( P/F, %i, n )
 .EN
 Distribute #t# and #(1 + i) sup -1# in last two terms:
-.EQ L
+.EQ I
 lineup 
 + left [ 
 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
@@ -1040,11 +1050,9 @@ lineup
 -S(t)(1 + i ) sup -1 + UCC(t)(1 + i ) sup -1
 -S(t)(1 + i ) sup -1 + I(t)(1 + i ) sup -1 
 right ]
-times
-( P/F, %i, n )
 .EN
 Reorder the terms:
-.EQ L
+.EQ I
 lineup 
 + left [ 
 + S
@@ -1054,13 +1062,11 @@ lineup
 -S(t)(1 + i ) sup -1
 -S(t)(1 + i ) sup -1
 right ]
-times
-( P/F, %i, n )
 .EN
 There is no write answer to the order of the terms. I have organised them to
 suit the form of the equation that I want. I am now going to add some grouping
 symbols:
-.EQ L
+.EQ I
 lineup 
 + left [ 
 S
@@ -1069,11 +1075,9 @@ UCC(t)(1 + i ) sup -1 - { UCC [ 1 - CCTF sub WDA2 ] ( 1 + i ) }
 right )
 + left (
 I(t)(1 + i ) sup -1 -S(t)(1 + i ) sup -1 -S(t)(1 + i ) sup -1 right ) right ]
-times
-( P/F, %i, n )
 .EN
 factor the #UCC#:
-.EQ L
+.EQ I
 lineup 
 + left [ 
 S
@@ -1082,15 +1086,13 @@ t(1 + i ) sup -1 - [ 1 - CCTF sub WDA2 ] ( 1 + i )
 right )
 + left (
 I(t)(1 + i ) sup -1 -S(t)(1 + i ) sup -1 -S(t)(1 + i ) sup -1 right ) right ]
-times
-( P/F, %i, n )
 .EN
 Before we factor out the #t# it is worth noticing that the result will be
 negative. The salvage value is greater than the investment. To remove the
 requirement to add a negative number we are going to change the sign outside
 the bracket which will result in the terms inside the bracketing changing their
 signs.
-.EQ L
+.EQ I
 lineup 
 + left [ 
 S
@@ -1099,12 +1101,10 @@ t(1 + i ) sup -1 - [ 1 - CCTF sub WDA2 ] ( 1 + i )
 right )
 - left (
 -I(t)(1 + i ) sup -1 +S(t)(1 + i ) sup -1 +S(t)(1 + i ) sup -1 right ) right ]
-times
-( P/F, %i, n )
 .EN
 We can now reorder and collect the terms to remove the negative and reduce the
 number of terms:
-.EQ L
+.EQ I
 lineup 
 + left [ 
 S
@@ -1112,11 +1112,9 @@ S
 t(1 + i ) sup -1 - [ 1 - CCTF sub WDA2 ] ( 1 + i )
 right )
 - left ( 2S(t)(1 + i ) sup -1 - I(t)(1 + i ) sup -1 right ) right ]
-times
-( P/F, %i, n )
 .EN
 We can now factor out the #t# and the #(1 + i) sup -1#:
-.EQ L
+.EQ I
 lineup 
 + left [ 
 S
@@ -1124,12 +1122,10 @@ S
 t(1 + i) sup -1 - [ 1 - CCTF sub WDA2 ] ( 1 + i )
 right )
 - t(1 + i) sup -1 left ( 2S - I right ) right ]
-times
-( P/F, %i, n )
 .EN
 We can now state the equation in full and check the calculation.
-.EQ L
-"Investment cost" lm
+.EQ I
+IC lm
 -I^ left [ CCTF sub WDA2 right ] 
 + left [ 
 S
@@ -1137,46 +1133,46 @@ S
 t(1 + i ) sup -1 - [ 1 - CCTF sub WDA2 ] ( 1 + i )
 right )
 - t(1 + i ) sup -1 left ( 2S - I right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup {hphantom {~~=~~}} 
 + left [ 
 60,000
 + 22,606 left (
 0.2(0.8696) - [ 1 - 0.9051 ] ( 1 + 0.15 )
 right )
-- 0.2(0.8696) left ( 2(60,000) - 50,000 right ) right ] times
+- 0.2(0.8696) left ( 2(60,000) - 50,000 right ) right ] times ~^
 .EN
-.sp -0.5v
-.EQ L
-lineup {hphantom {~~=~~ times }} 
+.sp -0.6v
+.EQ I
+lineup {hphantom {~~=~~ times ~^ }} 
 ( P/F, 0.15, 5 )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -50,000^ left [ 0.9051 right ] 
 + left [ 60,000 + 1,464 - 12,174 right ] 
-times
+times ~^
 0.4972 
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 -45,255 + 24,507
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
--20,748
+-\[Po]20,748
 .EN
 .RE
 .
@@ -1185,8 +1181,8 @@ lineup =~~
 .LP
 The investment cost can be converted into a positive value by either
 multiplying by -1 or changing the signs of the two terms:
-.EQ L
-"Investment cost" lm
+.EQ I
+IC lm
 I^ left [ CCTF sub WDA2 right ] 
 - left [ 
 S
@@ -1194,17 +1190,17 @@ S
 t(1 + i ) sup -1 - [ 1 - CCTF sub WDA2 ] ( 1 + i )
 right )
 - t(1 + i ) sup -1 left ( 2S - I right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
-.sp -0.5v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
 45,255 - 24,507
 .EN
-.sp -0.7v
-.EQ L
+.sp -0.6v
+.EQ I
 lineup =~~
-20,748
+\[Po]20,748
 .EN
 .RE
