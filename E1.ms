@@ -17,36 +17,38 @@
 Shareholder Value Added
 .LP
 All of the following information is taken from Alfred Rappaport's book
-"Creating Shareholder Value" and I have simply abbreviated it to suit this
-short appendix.
+"Creating Shareholder Value" and I have simply abbreviated it and changed the
+currency to British Pounds to suit this short appendix. It may infact be easier
+to read this Alfred Rappaport's book to hand, but I hope it stands alone as
+well.
 .LP
 Alfred Rappaport is very sceptical as to the merit of any accounting figures
-due to both the ease with which they can be manipulated and the changing rules.
-.LP
-The "shareholder value approach" estimates the economic value of an investment
-by discounting its forecasted cash flows by the cost of capital.
+due to both the ease with which they can be manipulated and the fact that rules
+change over time. For these reasons he focuses on cash slows and the
+"shareholder value approach" estimates the economic value of an investment by
+discounting its forecasted cash flows by the cost of capital.
 .
 .SH 2
 Shareholder Value Added (SVA)
 .LP
-The total economic value of an entity such as a company or business unit is
-the sum of the values of its debt and equity. This value of the business is
-called "corporate value" and the value of the equity portion is called
-"shareholder value (SV)". The increase or decreases in shareholder value over
-the forecast period is called the "Shareholder Value Added (SVA".
+The total economic value of an entity such as a company or business unit is the
+sum of the values of its debt and equity. This value of the business is called
+"Corporate Value" and the value of the equity portion is called "Shareholder
+Value (SV)". The increase or decreases in shareholder value over the forecast
+period is called the "Shareholder Value Added (SVA)".
 .EQ I
-"Corporate value" = Debt + "Shareholder value"
+"Corporate Value" =~~ Debt + "Shareholder Value"
 .EN
 Rearranging the equation:
 .EQ I
-"Shareholder value" = "Corporate value" - Debt
+"Shareholder Value" =~~ "Corporate Value" - Debt
 .EN
-In order to determine the shareholder value the corporate value must first be
-established. The corporate value consists of three components:
+In order to determine the Shareholder Value the Corporate Value must first be
+established. The Corporate Value consists of three components:
 .IP 1.
 The present value of cash flows from operations during the forecast period.
 .IP 2.
-"Residual value" which represents the present value of the business
+"Residual Value" which represents the present value of the business
 attributable to the period beyond the forecast period.
 .IP 3.
 The current value of marketable securities and other investments that can be
@@ -56,19 +58,19 @@ The debt portion of corporate value includes the market value of debt, unfunded
 pension liabilities, and the market value of other claims such as preferred
 stock.
 .LP
-Corporate value can now be stated as:
+Corporate Value can now be stated as:
 .EQ I
-"Corporate value" lm
+"Corporate Value" lm
 "Present value of cash flow from operations during forecast period"
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
-lineup { hphantom{=~}} +~
-"Residual value"
+lineup { hphantom{=~~}} +~
+"Residual Value"
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
-lineup { hphantom{=~}} +~
+lineup { hphantom{=~~}} +~
 "Marketable securities"
 .EN
 .
@@ -81,7 +83,7 @@ compensate debt holders and shareholders.
 .EQ I
 "Cash flow" lm "Cash inflow" - "cash outflow"
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
 NOPAT - "incremental investment"
@@ -93,7 +95,7 @@ NOPAT - "incremental investment"
 ("operating profit margin" )
 (1 - "cash income tax rate" )
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 "Cash outflow" lineup =~~
 "change in sales" ("incremental fixed capital investment rate"
@@ -119,16 +121,17 @@ Incremental working capital investment rate#10%
 (0.10 )
 (1 - 0.35 )
 =~~
-260\(dg
+\[Po]260\(dg
 .EN
 .FS
 \(dg This is the operating profit after taxes or NOPAT
 .FE
+.KE
 .EQ I
 "Cash outflow" lm
-(3,360 times 0.19) (0.15 + 0.10 )
+(3,360 times ~^ 0.19) (0.15 + 0.10 )
 =~~
-160\(dd
+\[Po]160\(dd
 .EN
 .FS
 \(dd This is the total investment
@@ -138,9 +141,8 @@ Incremental working capital investment rate#10%
 lm
 260 - 160
 =~~
-100
+\[Po]100
 .EN
-.KE
 It is important that we understand what is included in the fundamental parts of
 the calculation.
 .sp 0.5v
@@ -150,8 +152,8 @@ going to be the EBIT margin. When the word "profit" is encountered is worth
 bearing in mind that it will typically mean that the figure has been adjusted
 by the whims of accountants and will include non-cash charges such as
 depreciation. Thus to arrive at the operating profit not only are the cost of
-goods sold, selling and administrative expenses deducted, but so is the
-depreciation expense. 
+goods sold, selling and administrative expenses deducted from revenues, but so
+is the depreciation expense. 
 .IP "Incremental fixed capital investment" 5
 This is defined as capital expenditure in excess of the depreciation expense.
 .EQ I
@@ -165,53 +167,52 @@ expenditures), the cash flow from operations figure would be identical.
 .TS
 tab (#) center;
 l r .
-Operating profit#80
-Depreciation#20
-Total capex#30
+Operating profit#\[Po]80
+Depreciation#\[Po]20
+Total capex#\[Po]30
 .TE
 .EQ I
-"Cash flow from ops" sub cash lm 
+"Cash flow from ops" lm 
 left [ "Operating profit" + depreciation right ] - "total capex"
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
 left [ 80 + 20 right ] - 30
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-70
+\[Po]70
 .EN
 .EQ I
-"Cash flow from ops" sub profit lm 
+"Cash flow from ops" lm 
 "Operating profit" - left [ "total capex" - depreciation right ]
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
 80 - left [ 30 - 20 right ] 
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-70
+\[Po]70
 .EN
-If you are looking at your own organisation you will probably have estimates of
-capital expenditure estimates which can be used in estimating the investment.
-.sp 0.5v
-If you are looking at a competitor then you will likely only have historical
-information. In such situations it is generally advantageous to forecast
-investment as a percentage of incremental sales.
+If you are looking at your own business you will probably have estimates of
+capital expenditure which can be used. If you are looking at a competitor then
+you will likely only have historical information. In such situations it is
+generally advantageous to forecast investment as a percentage of incremental
+sales.
 .EQ I
 "Incremental fixed capital investment %" lm 
 { "capital expenditures" - depreciation } over "incremental sales"
-times 100
+times ~^ 100
 .EN
 .EQ I
 lineup =~~
 "incremental fixed capital investment" over "incremental sales"
-times 100
+times ~^ 100
 .EN
 To estimate the average of recent values, take the sum of all capital
 expenditures less depreciation over the preceding five or ten years and divide
@@ -238,7 +239,7 @@ can be expressed as a percentage of incremental sales.
 .EQ I
 "Incremental working capital rate %" =~~
 "incremental working capital investment" over "incremental sales"
-times 100
+times ~^ 100
 .EN
 .IP "Cash income tax rate" 5
 This represents the taxes on operating profit for a fiscal year, that are
@@ -252,13 +253,13 @@ revenue and expense items for book purposes and tax purposes. For example,
 straight line depreciation may be used for book purposes and an accelerated
 depreciation method (AIA\(dg) for calculating taxable operating profit.
 .FS
-\(dg Annual Investment Allowance, see Section 15
+\(dg Annual Investment Allowance, see Chapter 14
 .FE
 .IP "Cost of capital" 5
-This was covered in detail in Section 13.
+This was covered in detail in Section 12.
 .IP "Residual value" 5
 The residual value is a perpetuity, the mathematics of which we covered in
-Section 9.
+Chaper 8.
 .sp 0.5v
 The residual value often constitutes the largest portion of the value of the
 firm. For the majority of businesses only a small proportion of value can be
@@ -272,8 +273,8 @@ Value creating strategies are those that produce excess returns over the cost
 of capital. It is of course easier to talk about earning excess returns than it
 is to achieve such a result. Most companies operate in a highly competitive,
 commodity-type industry and newer industries that initially enjoy excess
-returns often attract capital which leads to excess capacity, price
-competition and finally lower returns for all participants in the industry.
+returns often attract capital which leads to excess capacity, price competition
+and finally lower returns for all participants in the industry.
 .sp 0.5v
 The perpetuity method of estimating the residual value is based on this
 assumption that a company that is able to generate returns above the cost of
@@ -304,7 +305,7 @@ The present value of the residual, at the end of the forecast, period is the
 NOPAT occurring in the year the forecast ends.
 .EQ I
 "PV of residual at forecast end " =~~
-NOPAT sub { year n }
+NOPAT sub { year ^ n }
 over
 "cost of capital"
 .EN
@@ -326,7 +327,7 @@ Consider a business with the following 5 year forecast:
 .TS
 tab (#) center;
 l r .
-Sales (last historical period)# \[Po] 100
+Sales (last historical period)# \[Po]100 mm\(dg
 Sales growth rate#10.5%
 Operating profit margin#8.0%
 Incremental fixed capital investment#24.0%
@@ -334,9 +335,13 @@ Incremental working capital investment#18.9%
 Cash income tax rate#35.0%
 Residual value income tax rate#35.0%
 Cost of capital#10%
-Marketable securities and investments#\[Po] 3 million
-Marketable value of debt and other obligations#\[Po] 10 million
+Marketable securities and investments#\[Po]3 mm
+Marketable value of debt and other obligations#\[Po]10 mm
 .TE
+.FS
+\(dg millions are often abreviated to mm. Which in reality means # m times ~^
+m# or # 1,000 times ~^ 1,000 # which equals #1,000,000#
+.FE
 The values in the table are held constant over the 5 year time frame. To make
 the equations easier to write I have included a legend below:
 .sp 0.5
@@ -369,7 +374,7 @@ include the forecast period.
 "Cash inflow or NOPAT" =~~
 s left ( 1 + g right ) sup n  M left ( 1 - t right )
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 "Cash outflow or Investment" =~~
 sg left ( 1 + g right ) sup { n - 1 } 
@@ -397,10 +402,10 @@ power zero is equal to 1.
 lineup =~~
 100(1)(0.08)(1 - 0.35)
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-"5.20"
+\[Po]5.20 ^ mm
 .EN
 The residual value is calculated at the end of each year using the perpetuity
 method.
@@ -412,7 +417,7 @@ method.
 =~~
 5.20 over 0.1
 =~~
-52.0 
+\[Po]52 ^ mm
 .EN
 The corporate value can now be calculated. As we are calculating the corporate
 value at year zero there is no forecast period. The corporate value is simply
@@ -423,16 +428,15 @@ the residual value and any marketable securities.
 =~~
 52 + 3
 =~~
-55
+\[Po]55 ^ mm
 .EN
 The shareholder value can now be calculated by removing any debt.
 .EQ I
 "Shareholder value" sub { year 0 } lm
 55 - 10
 =~~
-45
+\[Po]45 ^ mm
 .EN
-.KS
 .IP "Year 1" 5
 We will now calculate year 1 using individual equations:
 .EQ I
@@ -441,7 +445,7 @@ s left ( 1 + g right ) sup n  M left ( 1 - t right )
 =~~
 100 left ( 1 + 0.105 right ) sup 1  ( 0.08 ) left ( 1 - 0.35 right )
 =~~
-5.746
+\[Po]5.746 ^ mm
 .EN
 .
 .EQ I
@@ -452,9 +456,8 @@ left ( f + w right )
 100(0.105) left ( 1 + 0.105 right ) sup { 1 - 1 } 
 left ( 0.24 + 0.189 right )
 =~~
-4.5
+\[Po]4.5 ^ mm
 .EN
-.KE
 .
 .EQ I
 "Cash from operations" sub { year 1 } =~~
@@ -464,7 +467,7 @@ left ( 0.24 + 0.189 right )
 =~~
 5.746 - 4.50
 =~~
-1.246
+\[Po]1.246 ^ mm
 .EN
 .
 .EQ I
@@ -473,7 +476,7 @@ left ( 0.24 + 0.189 right )
 =~~
 1.246 over 1.10
 =~~
-1.13
+\[Po]1.13 ^ mm
 .EN
 .
 .EQ I
@@ -482,7 +485,7 @@ left ( 0.24 + 0.189 right )
 =~~
 5.746 over 0.1
 =~~
-57.46 
+\[Po]57.46  ^ mm
 .EN
 .
 .EQ I
@@ -491,7 +494,7 @@ left ( 0.24 + 0.189 right )
 =~~
 57.46 over 1.10
 =~~
-52.24
+\[Po]52.24 ^ mm
 .EN
 .IP "Year 2" 5
 We will now consolidate the equations to limit the amount of calculations:
@@ -499,7 +502,7 @@ We will now consolidate the equations to limit the amount of calculations:
 "PV Cash from operations" sub { year 2 }
 .EN
 .RS
-.sp -0.5v
+.sp -0.6v
 .EQ I
 =~~
 { left [ s left ( 1 + g right ) sup n  M left ( 1 - t right ) right ]
@@ -518,7 +521,7 @@ over
 over 
 1.21
 =~~
-1.134
+\[Po]1.134 ^ mm
 .EN
 .RE
 .
@@ -526,7 +529,7 @@ over
 "PV Residual value" sub { year 2 }
 .EN
 .RS
-.sp -0.5v
+.sp -0.6v
 .EQ I
 =~~
 { s left ( 1 + g right ) sup n  M left ( 1 - t right ) }
@@ -539,7 +542,7 @@ over
 =~~
 6.349 over { 0.1(1.21) }
 =~~
-52.47
+\[Po]52.47 ^ mm
 .EN
 .RE
 .LP
@@ -580,33 +583,35 @@ r r s s s n c .
 _
 .T&
 l s c c c l n .
-Total SVA#####6.89
+Total SVA (\[Po] mm)#####6.89
 _
 .TE
-The SVA is found by establishing the "cumulative PV of cash flows plus the PV
-of the residual value" in each year. To establish the SVA in year 1 the
-cumulative PV from year 0 would be subtracted, the difference between the two
-values is the SVA in year 1. In this instance to calculate the SVA in year 1:
-#53.37 - 52.00 = 1.37#
-The total SVA can be computed in a number of ways:
-.IP \(bu
+The SVA is found by establishing the increase in the "Cumulative PV of cash
+flows plus the PV of the residual value" in each year. To establish the SVA in
+year 1 the "Cumulative PV of cash flow plus PV residual values" from year 0
+would be subtracted from the value for year 1 in the same column, the
+difference between the two values is the SVA in year 1. In this instance to
+calculate the SVA in year 1: #53.37 - 52.00 =~~ 1.37#. The total SVA can be
+computed in a number of ways:
+.IP \(bu 3
 It is the sum of the column on the far right of the table.
-.IP \(bu
-It is the difference between the corporate value in year zero and the corporate
-value at the end of the forecast period, which is year 5, and is therefore
-#61.89 - 55.00 = 6.89#
-.IP \(bu
-It is the difference between the shareholder value in year zero and the
-shareholder value at the end of the forecast period, which is year 5, and is
-therefore #51.89 - 45.00 = 6.89#
-.IP \(bu
-It is the difference between the residual value at year zero and the sum of the
-cumulative PV of the cash flows and the residual value at the end of the
-forecast period, and it therefore #58.69 - 52.00 = 6.89#
+.IP \(bu 3
+It is the difference between the Corporate Value in year zero and the Corporate
+Value at the end of the forecast period, which is year 5, and is therefore
+#61.89 - 55.00 =~~ 6.89#
+.IP \(bu 3
+It is the difference between the Shareholder Value in year zero and the
+Shareholder Value at the end of the forecast period, which is year 5, and is
+therefore #51.89 - 45.00 =~~ 6.89#
+.IP \(bu 3
+It is the difference between the Residual Value at year zero and the sum of the
+cumulative PV of the cash flows and the Residual Value at the end of the
+forecast period, and it therefore #58.69 - 52.00 =~~ 6.89#
 .LP
-The total SVA can also be calculated by making use of geometric gradient present
-worth equation from Section 11.7. The present value of total cash inflows over
-the forecast period can be represented by the series below:
+.KS
+The total SVA can also be calculated by making use of the Geometric Gradient
+Present Worth equation from Chapter 10.7. The present value of total cash
+inflows over the forecast period can be represented by the series below:
 .EQ I
 { sM(1-t)(1+g) sup 1 }
 over
@@ -628,6 +633,7 @@ over
 over
 { (1 + i) sup 5 }
 .EN
+.KE
 This can be factored:
 .EQ I
 sM(1-t)
@@ -653,34 +659,34 @@ over
 { (1 + i) sup 5 }
 right ]
 .EN
-If you refer back to section 6.1 for growing ordinary annuities you will see
+If you refer back to Chapter 5.1 for growing ordinary annuities you will see
 that the series above differs in that the growth starts at time period 1. To
 allow for this we can add an extra growth period #( 1 + g )# outside the
-bracket. Using the engineering economics equation from Section 11.7 we can
-now write the series as:
+bracket. Using the Engineering Economics equation from Chapter 10.7 we can now
+write the series as:
 .EQ I
 "PV of total cash inflows during forecast period"
 .EN
 .RS
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lm
 sM(1-t)(1 + g)^(P/A, g%, i%, n)
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 100(0.08)(1 - 0.35)(1 + 0.105) nggpw(0.105, 0.1, 5)
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
-5.746 times 4.587
+5.746 times ~^ 4.587
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-26.357
+\[Po]26.357 ^ mm
 .EN
 .RE
 The present value of total cash outflows during the forecast period can be
@@ -731,32 +737,32 @@ over
 { (1 + i) sup 5 }
 right ]
 .EN
-If you refer back to section 6.1 for growing ordinary annuities you will see
-that the series above is the same. Using the engineering economics equation
-from Section 11.7 we can now write the series as:
+If you again refer back to Chapter 5.1 for growing ordinary annuities you will
+see that the series above is the same. Using the Engineering Economics equation
+from Chapter 10.7 we can now write the series as:
 .EQ I
 "PV of total cash out flows in forecast period"
 .EN
 .RS
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lm
 sg( f + w ) ^(P/A, g%, i%, n)
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 100(0.105)(0.24 + 0.189) nggpw(0.105, 0.1, 5)
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
-4.505 times 4.587
+4.505 times ~^ 4.587
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-20.662
+\[Po]20.662 ^ mm
 .EN
 .RE
 The present value of the cash flow from operations during the forecast period
@@ -765,66 +771,68 @@ is the appropriate cash inflows - cash outflows.
 "PV of total cash from operations" 
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lm
 "PV of total cash inflows" - "PV of total cash outflows"
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
 26.357 - 20.662
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-5.697
+\[Po]5.697 ^ mm
 .EN
 .RE
-The value 5.697 can be found in the table as the "cumulative present value of
+The value 5.697 can be found in the table as the "Cumulative present value of
 cash flows" in year 5.
 .LP
+.KS
 If you did not wish to see the cash inflows and cash outflows separately you
 can consolidate the two equations.
 .EQ I
 "Cumulative PV of cash flows"
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lm
 sM(1-t)(1 + g)^(P/A, g%, i%, n)
 -
 sg( f + w ) ^(P/A, g%, i%, n)
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
 s left [ M(1-t)(1 + g) - g( f + w ) right ] ^(P/A, 10.5%, 10%, 5)
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 100 left [ (0.08)(1 - 0.35)(1 + 0.105) - (0.105)(0.24 + 0.189) right ]
 nggpw(0.105, 0.1, 5)
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-100 left [ 0.05746 - 0.04505 right ] times 4.587
+100 left [ 0.05746 - 0.04505 right ] times ~^ 4.587
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-5.69
+\[Po]5.69 ^ mm
 .EN
 .RE
+.KE
 .
 .EQ I
 "PV Residual value" sub { year 5 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~
 { s left ( 1 + g right ) sup n  M left ( 1 - t right ) }
@@ -837,7 +845,7 @@ over
 =~~
 8.567 over { 0.1(1.61) }
 =~~
-53.19
+\[Po]53.19 ^ mm
 .EN
 .RE
 .
@@ -845,21 +853,21 @@ over
 "Corporate value" sub { year 5 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lm
 "present value of cash flow from operations during forecast period"
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
-lineup { hphantom{=~}} +~
+lineup { hphantom{=~~}} +~
 "residual value" +  "marketable securities"
 .EN
 .EQ I
 lineup =~~
 5.69 + 53.19 + 3
 =~~
-61.88
+\[Po]61.88 ^ mm
 .EN
 .RE
 .
@@ -867,14 +875,14 @@ lineup =~~
 "Shareholder value" sub { year 5 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~
 "corporate value" - debt
 =~~
 61.88 - 10
 =~~
-51.88
+\[Po]51.88 ^ mm
 .EN
 .RE
 .
@@ -882,14 +890,14 @@ lineup =~~
 "Total SVA"
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~
 "SV at end of the forecast period" - "starting SV"
 =~~
 51.88 - 45
 =~~
-6.88
+\[Po]6.88 ^ mm
 .EN
 .RE
 .
@@ -899,20 +907,20 @@ Threshold Margin
 If we redo the example but use an operating margin "#M#" of 6% we can examine
 the impact on the SVA.
 .LP
-.sp 2
+.sp 1
 SV at year 0
 .EQ I
 NOPAT sub { year 0 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~ 
 s left ( 1 + g right ) sup n  M left ( 1 - t right )
 =~~
 100(1)(0.06)(1 - 0.35)
 =~~
-"3.90"
+\[Po]3.90 ^ mm
 .EN
 .RE
 .
@@ -920,14 +928,14 @@ s left ( 1 + g right ) sup n  M left ( 1 - t right )
 "Residual value" sub { year 0 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~
 "cash flow before new investment" over "cost of capital"
 =~~
 3.90 over 0.1
 =~~
-39.0 
+\[Po]39.0  ^ mm
 .EN
 .RE
 .
@@ -935,14 +943,14 @@ s left ( 1 + g right ) sup n  M left ( 1 - t right )
 "Corporate value" sub { year 0 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~
 "residual value" + "marketable securities" 
 =~~
 39 + 3
 =~~
-42
+\[Po]42.0 ^ mm
 .EN
 .RE
 .
@@ -950,44 +958,43 @@ s left ( 1 + g right ) sup n  M left ( 1 - t right )
 "Shareholder value" sub { year 0 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~
 "corporate value" - debt
 =~~
 42 - 10
 =~~
-32
+\[Po]32.0 ^ mm
 .EN
 .RE
 .
-.sp 2
 .KS
 Total SVA at forecast end, year 5
 .EQ I
 "Cumulative PV of cash flows" sub { year 5 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~
 s left [ M(1-t)(1 + g) - g( f + w ) right ] ^(P/A, g%, i%, n)
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 =~~
 100 left [ (0.06)(1 - 0.35)(1 + 0.105) - (0.105)(0.24 + 0.189) right ]
 nggpw(0.105, 0.1, 5)
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-100 left [ 0.04310 - 0.04505 right ] times 4.587
+100 left [ 0.04310 - 0.04505 right ] times ~^ 4.587
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
--0.89
+-\[Po]0.89 ^ mm
 .EN
 .RE
 .KE
@@ -996,7 +1003,7 @@ lineup =~~
 "PV Residual value" sub { year 5 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~
 { s left ( 1 + g right ) sup n  M left ( 1 - t right ) }
@@ -1009,7 +1016,7 @@ over
 =~~
 6.425 over { 0.1(1.61051) }
 =~~
-39.89
+\[Po]39.89 ^ mm
 .EN
 .RE
 .
@@ -1017,27 +1024,27 @@ over
 "Corporate value" sub { year 5 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lm
 "Present value of cash flow from operations during forecast period"
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
-lineup { hphantom{=~}} +~
+lineup { hphantom{=~~}} +~
 "Residual value"
 +
 "Marketable securities"
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
 -0.89 + 39.89 + 3
 .EN
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
-42.00
+\[Po]42.00
 .EN
 .RE
 .
@@ -1045,14 +1052,14 @@ lineup =~~
 "Shareholder value" sub { year 5 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 lineup =~~
 "Corporate value" - debt
 =~~
 42.00 - 10
 =~~
-32.00
+\[Po]32.00 ^ mm
 .EN
 .RE
 .
@@ -1060,14 +1067,14 @@ lineup =~~
 "Total SVA" sub { year 5 }
 .EN
 .RS
-.sp -0.7v
+.sp -0.6v
 .EQ I
 =~~
 "SV at end of the forecast period" - "starting SV"
 =~~
 32.00 - 32
 =~~
-0.00
+\[Po]0.00 ^ mm
 .EN
 .RE
 .
@@ -1109,7 +1116,7 @@ r r s s s n c .
 _
 .T&
 l s c c c l n .
-Total SVA#####0.00
+Total SVA (\[Po] mm)#####0.00 
 _
 .TE
 The 6% operating profit margin is the "threshold margin" of the business. The
@@ -1125,16 +1132,15 @@ we will represent with: "#m sub it#".
 The margin required on total sales - threshold margin, which we will represent
 with: "#m sub t#"
 .LP
-.KS
 The change in shareholder value can be expressed as:
-.EQ I
-\[*D]^ SV lm
+.EQ L
+Change ^ in ^ SV lm
 "PV of incremental cash flow before new investment"
 -
 "PV of investment in fixed and working capital"
 .EN
-.sp -0.5v
-.EQ I
+.sp -0.6v
+.EQ L
 lineup =~~
 { sgM(1 - t) }
 over i
@@ -1143,8 +1149,8 @@ over i
 over 
 { ( 1 + i ) }
 .EN
-.KE
-We will now explain the terms of the equation:
+We will now explain the terms of the expression on the right hand side of the
+equals sign:
 .sp
 .mk
 .ll 0.8i
@@ -1154,7 +1160,7 @@ We will now explain the terms of the equation:
 .rt
 .in 0.9i
 .ll 6i
-The first term on the left-hand side of the equation represents the present
+The first term on the left-hand side of the expression represents the present
 value of the firms incremental cash inflows, which are assumed to begin at the
 end of the first period and continue into perpetuity.
 .nf
@@ -1169,18 +1175,18 @@ end of the first period and continue into perpetuity.
 .fi
 .in 0.9i
 .ll 6i
-The second term on the right-hand side of the equation represents the present
+The second term on the right-hand side of the expression represents the present
 value of the investment necessary to generate the incremental cash flows. The
 investment is also assumed to take place at the end of the period. 
 .LP
 The incremental threshold margin "#m sub it#" is the operating profit margin
-"#M#" that equates to the present value of cash inflows being equal to the
-present value of cash outflows.
+"#M#" that equates the present value of cash inflows being equal to the present
+value of cash outflows.
 .LP
 The incremental threshold margin can be found by setting the cash inflows as
 represented by # { sgM(1 - t) } over i # equal to the cash outflows as
 represented by # { sg( f + w ) } over { ( 1 + i ) } # and resolving for "#M#"
-which is the breakeven or "#m sub it#".
+which is the breakeven or incremental threshold margin "#m sub it#".
 .EQ I
 { sgM(1 - t) }
 over i
@@ -1189,33 +1195,34 @@ over i
 over 
 { ( 1 + i ) }
 .EN
-When the question has been rearranged for "#m sub it#" it can be written as:
+When the question has been rearranged for "#M#", which we will refer to as the
+incremental threshold margine or "#m sub it#", it can be written as:
 .EQ I
-m sub it ~=~~
+m sub it =~~
 { { sg( f + w ) }
 over 
 { ( 1 + i ) } }
 over
 { { sg(1 - t) }
 over i }
-~=~~
+=~~
 { sg( f + w ) }
 over 
 { ( 1 + i ) }
-times
+times ~^
 i over
 { sg(1 - t) }
-~=~~
+=~~
 { i( f + w ) }
 over 
 { ( 1 + i ) (1 - t) }
 .EN
 In words the equation would state: 
 .EQ I
-m sub it ~=~~
-{"(cost of capital)" times "(Incremental fixed + working capital investment rate)"}
+m sub it =~~
+{"(cost of capital)" times ~^ "(Incremental fixed + working capital investment rate)"}
 over
-{ "(1 + cost of capital)" times "(1 - income tax rate)" }
+{ "(1 + cost of capital)" times ~^ "(1 - income tax rate)" }
 .EN
 If we return to our original scenario which is based on the following
 parameters:
@@ -1240,15 +1247,15 @@ parameters:
 .LP
 We can now calculate the incremental threshold margin:
 .EQ I
-m sub it ~=~~
+m sub it =~~
 { i( f + w ) }
 over 
 { ( 1 + i ) (1 - t) }
-~=~~
+=~~
 { 0.1( 0.24 + 0.189 ) }
 over 
 { ( 1 + 0.1 ) (1 - 0.35) }
-~=~~
+=~~
 6%
 .EN
 While the incremental threshold margin is the "breakeven" profit margin on
@@ -1266,22 +1273,24 @@ over
 .EN
 Using the same example:
 .EQ I
-m sub t ~=~~
+m sub t =~~
 { 6 + (6%)(10.5%) }
 over
 { 100 + 10.5 }
-~=~~
+=~~
 6%
 .EN
 The threshold margin increases as the cost of capital and incremental
 investment requirements increase. This is to be expected as more risky and
 capital intensive business will need to achieve higher operating profit margins
-before they can expect to create value.
+before they can be expected to create value.
 .LP
 It is important to comprehend that \fBwhen a business is operating at the the
-threshold margin sales growth does not create value\fP. If we return to the
-last table the increased sales growth will result an increased negative cash
-flow offset by a rising residual value, the net result will always be zero SVA.
+threshold margin sales growth does not create value\fP.
+.KS
+If we return to the last table, increased sales growth will result in increased
+negative cash flow offset by a rising residual value, the net result will
+always be zero SVA.
 .LP
 The SVA is determined by the product of three factors:
 .IP 1.
@@ -1292,13 +1301,14 @@ incremental sales less the incremental threshold margin. #M - m sub it #
 .IP 3.
 The duration over which the threshold spread is expected to be positive, this
 is often called the value growth duration.
+.KE
 .
 .SH 3
 SVA
 .LP
 If we return to the equation for the change in SV:
 .EQ I
-\[*D]^ SV lm
+Change ^ in ^ SV lm
 { sgm(1 - t) }
 over i
 - 
@@ -1309,7 +1319,7 @@ over
 The above equation represents the change from year 0 to year 1. The change in
 year 2 can be represented by the equation below:
 .EQ I
-\[*D]^ SV sub { year 2 } lineup =~~
+Change ^ in ^ SV sub { "year 2" } lineup =~~
 { sg(1 + g)M(1 - t) }
 over { i ( 1 + i ) }
 - 
@@ -1319,7 +1329,7 @@ over
 .EN
 This leads us to constructing the following equation for the SVA in any year:
 .EQ I
-SVA sub { year n } lineup =~~
+SVA sub { "year n" } lineup =~~
 { sg(1 + g) sup { n - 1 }M(1 - t) }
 over { i ( 1 + i ) sup { n - 1 } }
 - 
@@ -1327,8 +1337,8 @@ over { i ( 1 + i ) sup { n - 1 } }
 over 
 { ( 1 + i ) sup n }
 .EN
-The above equation can be simplified by first  multiplying the left side by # ( 1 + i
-)# to remove the # n - 1# in the denominator to give:
+The above equation can be simplified by first  multiplying the left side by # (
+1 + i)# to remove the # n - 1# in the denominator to give:
 .EQ I
 lineup =~~
 { sg(1 + g) sup { n - 1 }M(1 - t)( 1 + i ) }
@@ -1375,30 +1385,31 @@ over { i ( 1 + i ) sup { n - 1 } }
 over 
 { ( 1 + i ) sup n }
 .EN
-We have previously established that the left side of the equation is the
-present value of the incremental cash inflows and the right side of the
-equation the investment required to generate the cash inflows.
+We have previously examined the expression on the right hand side of the equals
+sign. We established that the left side of the expression is the present value
+of the incremental cash inflows, and the right side of the expression is the
+investment required to generate the cash inflows.
 .LP
-We have also established that if we set the two terms equal to each other we
-can establish the incremental threshold margin, which is the breakeven point
-given the cost of capital and fixed and working capital investment rates.
+We have also established that if we set the two terms equal in the expression
+equal to each other we can establish the incremental threshold margin, which is
+the breakeven point given the cost of capital and fixed and working capital
+investment rates.
 .LP
 This means at rates up to the incremental threshold margin no value is created
-because the right side of the equation is larger than the left. At the
-incremental threshold margin the left side and the right side of the equation
+because the right side of the expression is larger than the left. At the
+incremental threshold margin the left side and the right side of the expression
 are equal. At rates above the incremental threshold margin the cost of capital
 has been covered and excess cash flow starts to contribute towards the SVA.
-Section 14.6 might help to clarify this point if the logic is not clear.
+Chapter 13.3.1.1 might help to clarify this point if the logic is not clear.
 .LP
 If we subtract the incremental threshold margin "#m sub it#" from the operating
 margin "#M#" we will be operating at a rate above the cost of the capital and
-can therefore disregard the right term of the equation. 
+can therefore disregard the right term of the expression. 
 .EQ I
-SVA sub { year n } ~=~~
+SVA sub { year n } =~~
 { sg(1 + g) sup { n - 1 }(M - m sub it )(1 - t) }
 over { i ( 1 + i ) sup { n - 1 } }
 .EN
-.KS
 If you prefer the equation can be stated in words:
 .EQ I
 SVA =~~
@@ -1408,7 +1419,6 @@ SVA =~~
 over
 { ("cost of capital") (1 + "cost of capital") sup "n -1"}
 .EN
-.KE
 \fI#sg(1 + g) sup { n - 1 }#\fP	represents the incremental sales in period #n#
 .br
 \fI#M - m sub it#\fP	represents the incremental threshold spread in period #n#
@@ -1421,7 +1431,7 @@ result:
 .nf
 .ta 0.2i
 .ta 0.2i
-\fIs\fP	represents the sales - 100M
+\fIs\fP	represents the sales - \[Po]100 mm
 \fIg\fP	represents the sales growth rate - 10.5%
 \fIM\fP	represents the operating margin - 8%.
 \fI#m sub it#\fP	represents the incremental threshold margin - 6%.
@@ -1443,7 +1453,7 @@ result:
 .LP
 SVA calculated using the operating margin "#M#":
 .EQ I
-SVA sub { year 5 } lm 
+SVA sub { "year 5" } lm 
 {
 sg(1 + g) sup { n - 1 }
 left [
@@ -1455,7 +1465,7 @@ right ]
 over 
 { i( 1 + i ) sup n }
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 {
@@ -1469,41 +1479,41 @@ right ]
 over 
 { 0.1( 1 + 0.1 ) sup 5 }
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 {15.654(0.0572 - 0.0429)}
 over
 0.1611
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
-1.39
+\[Po]1.39 ^ mm
 .EN
 SVA calculated using the incremental threshold margin "#m sub it#":
 .EQ I
-SVA sub { year 5 } lineup =~~
+SVA sub { "year 5" } lineup =~~
 { sg(1 + g) sup { n - 1 }(M - m sub it )(1 - t) }
 over { i ( 1 + i ) sup { n - 1 } }
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 { 100(0.105)(1 + 0.105) sup { 5 - 1 }(0.08 - 0.06 )(1 - 0.35) }
 over { 0.1 ( 1 + 0.1 ) sup { 5 - 1 } }
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 0.2035
 over
 0.1464
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
-1.39
+\[Po]1.39 ^ mm
 .EN
 A table can also be constructed to calculate the SVA:
 .TS
@@ -1521,7 +1531,7 @@ Incremental Sales##10.50#11.60#12.82#14.17#15.65
 Income Tax Rate%##0.35#0.35#0.35#0.35#0.35
 Incremental Threshold Spread%##0.02#0.02#0.02#0.02#0.02
 _
-SVA##1.37#1.37#1.38#1.38#1.39#6.89
+SVA (\[Po] mm) ##1.37#1.37#1.38#1.38#1.39#6.89
 _
 .TE
 It is of course possible to calculate the total SVA over the forecast period
@@ -1557,18 +1567,19 @@ over
 ...
 right ]
 .EN
-.KS
-If you refer to section 6.1 you will see that the series above differs from the
+If you refer to Chapter 5.1 you will see that the series above differs from the
 PV of growing ordinary annuity in that this series starts the compounding in
-period 2 not period 1. To compensate for this the factor outside the bracket is
-increased by #(1 + i)# to give:
+period 2 not period 1.
+.KS
+To compensate for this the factor outside the bracket is increased by #(1 + i)#
+to give:
 .EQ I
 { sg(M - m sub it )(1 - t)(1 + i)}
 over i
 .EN
 .KE
-This can now be combined with the formula for the geometric gradient present
-worth to give:
+This can now be combined with the formula for the Geometric Gradient Present
+Worth to give:
 .EQ I
 { sg(M - m sub it )(1 - t)(1 + i)}
 over i
@@ -1581,31 +1592,31 @@ We will now check the equation gives the right result:
 over i
 (P/A, 10.5%, 10%, 5)
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ  I
 lineup =~~
 { 100(0.105)(0.08 - 0.06 )(1 - 0.35)(1 + 0.1)}
 over 0.1
 nggpw(0.105, 0.1, 5)
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 1.505 left [ 4.587 right ]
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
-6.89
+\[Po]6.89 ^ mm
 .EN
 .SH 2
 The Shareholder Value Network
 .LP
-The flowchart below that makes up the shareholder value network depicts the
-essential link between the corporate objective of creating shareholder value
-and the basic value drivers of sales growth rate, operating profit margin,
-income tax rate, working and fixed capital investment, cost of capital and
-value growth duration.
+The flowchart below that makes up the shareholder value network which depicts
+the essential link between the corporate objective of creating shareholder
+value and the basic value drivers of sales growth rate, operating profit
+margin, income tax rate, working and fixed capital investment, cost of capital
+and value growth duration.
 .PS
 .ps 8
 E1: ellipse "Operating"
@@ -1687,6 +1698,7 @@ thinking behind it. Finally, choosing the strategy with the greatest value
 creation potential is no guarantee that the strategy will be effectively and
 efficiently implemented.
 .LP
+.KS
 It can be argued that for the actions of management to affect the value they
 must achieve one of the following:
 .IP -
@@ -1697,3 +1709,4 @@ Increase the growth rate during the excess return phase.
 Lengthen the period of excess returns.
 .IP -
 Reduce the discount rate.
+.KE
