@@ -1,5 +1,3 @@
-.
-.
 .\" .XS
 .\" APPENDIX H - Loans
 .\" .XE
@@ -14,14 +12,14 @@
 .\" .ce 0
 .\"  .bp
 .
-.SH 1
-Loans
-.LP
-The Appendix looks at the amortisation of different types of loans from Section
-3. The term amortisation refers to loans where each payment is made up of both
-principal and interest components.  
+.\" .SH 1
+.\" Loans
+.\" .LP
+The Appendix looks at the amortisation of different types of loans from Chapter
+2. The term amortisation refers to loans where each payment is made up of both
+a principal and interest component.
 .SH
-Fixed Repayment - Section 3.2
+Instalment Loan - Chapter 2.2
 .LP
 This is the most common common type of loan. At the beginning of the loan the
 interest component is at its largest and over time reduces as the principal is
@@ -30,27 +28,27 @@ outstanding principal balance to increase.
 .PS
 A: [  box invis wid 0.20 ht 0.20 "0"
 		arrow up 0.3 at last box.n
-		"5,000" above at end of last arrow
+		"\[Po]5,000" above at end of last arrow
 		line right 0.3 from last box.e
 		box invis wid 0.20 ht 0.20 "1"
 		arrow down 0.2 at last box.s
-		"1,252" below at end of last arrow
+		"\[Po]1,252" below at end of last arrow
 		line right 0.3 from last box.e
 		box invis wid 0.20 ht 0.20 "2"
 		arrow down 0.2 at last box.s
-		"1,252" below at end of last arrow
+		"\[Po]1,252" below at end of last arrow
 		line right 0.3 from last box.e 
 		box invis wid 0.20 ht 0.20 "3"
 		arrow down 0.2 at last box.s
-		"1,252" below at end of last arrow
+		"\[Po]1,252" below at end of last arrow
 		line right 0.3 from last box.e 
 		box invis wid 0.20 ht 0.20 "4"
 		arrow down 0.2 at last box.s
-		"1,252" below at end of last arrow
+		"\[Po]1,252" below at end of last arrow
 		line right 0.3 from last box.e 
 		box invis wid 0.20 ht 0.20 "5"
 		arrow down 0.2 at last box.s
-		"1,252" below at end of last arrow
+		"\[Po]1,252" below at end of last arrow
 		]
 box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
 .PE
@@ -60,7 +58,7 @@ box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
 "Periodic payment" lm "Opening balance "^(A/P, 8%, 5)\(dd
 .EN
 .FS
-\(dd This is the capital recovery factor from Section 11.6
+\(dd This is the Capital Recovery factor from Chapter 10.6
 .FE
 .sp -0.6v
 .EQ I
@@ -75,22 +73,22 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-1,252
+\[Po]1,252
 .EN
 .
 .EQ I
 Interest lineup =~~
-"Opening balance" times rate%
+"Opening balance" times ~^ rate%
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-5,000 times 8 over 100
+5,000 times ~^ 8 over 100
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-400
+\[Po]400
 .EN
 .
 .EQ I
@@ -105,7 +103,7 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-852
+\[Po]852 
 .EN
 .
 .EQ I
@@ -120,7 +118,7 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-4,148
+\[Po]4,148
 .EN
 .
 .UL "Remaining Years"
@@ -144,12 +142,12 @@ _
 .TE
 .FS
 \(dg The use of only integer values has left a small outstanding balance. The
-actual repayment value is 1,252.28
+actual repayment value is \[Po]1,252.28
 .FE
 .sp -1v
 .UL "Total Interest"
 .LP
-The interest paid over the life of this loan is: 1,262. The interest can
+The interest paid over the life of this loan is: \[Po]1,262. The interest can
 obviously be calculated by adding the interest column, but it may not always be
 to hand. In more general terms the interest is calculated by:
 .EQ I
@@ -159,54 +157,57 @@ to hand. In more general terms the interest is calculated by:
 .sp -0.6v
 .EQ I
 lineup =~~
-( 5 times 1,252 ) - 5,000
+( 5 times ~^ 1,252 ) - 5,000
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-1,260\(dg
+\[Po]1,260\(dg
 .EN
 .
 .KS
 .SH
-Fixed Principal Repayment - Section 3.4
+Fixed Principal Repayment - Chapter 3.4
 .LP
 Fixed principal repayment loans are not so common. However, they do have some
 advantages, as the cash flow diagram shows the payments reduce with time as the
-interest burden decreases. The advantage lies in the fact that it is harder to
-forecast cash flows in the future so the uncertain cash flows are matched to a
-reducing periodic payment.
+interest burden decreases. The advantage of the constant principal repayment
+loan is that it matches the most uncertain cash flows with the smallest
+periodic payment. In other words, the further a cash flow appears in the future
+the less certain you are about it, and the smaller you would like the
+accompanying liability to be, which is what you get with a constant principal
+repayment.
 .PS
 A: [  box invis wid 0.20 ht 0.20 "0"
 		arrow up 0.3 at last box.n
-		"5,000" above at end of last arrow
+		"\[Po]5,000" above at end of last arrow
 		line right 0.3 from last box.e
 		box invis wid 0.20 ht 0.20 "1"
 		arrow down 0.28 at last box.s
-		"1,400" below at end of last arrow
+		"\[Po]1,400" below at end of last arrow
 		line right 0.3 from last box.e
 		box invis wid 0.20 ht 0.20 "2"
 		arrow down 0.26 at last box.s
-		"1,320" below at end of last arrow
+		"\[Po]1,320" below at end of last arrow
 		line right 0.3 from last box.e 
 		box invis wid 0.20 ht 0.20 "3"
 		arrow down 0.24 at last box.s
-		"1,240" below at end of last arrow
+		"\[Po]1,240" below at end of last arrow
 		line right 0.3 from last box.e 
 		box invis wid 0.20 ht 0.20 "4"
 		arrow down 0.22 at last box.s
-		"1,160" below at end of last arrow
+		"\[Po]1,160" below at end of last arrow
 		line right 0.3 from last box.e 
 		box invis wid 0.20 ht 0.20 "5"
 		arrow down 0.2 at last box.s
-		"1,080" below at end of last arrow
+		"\[Po]1,080" below at end of last arrow
 		]
 box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
 .PE
 .KE
 The interest is calculated as previously demonstrated. The principal repayment,
-if it is to be fixed, is the principal amount divided by the number of periods
-in the loan.
+if it is fixed, is the principal amount divided by the number of periods in the
+	loan.
 .LP
 .UL "Year 1"
 .EQ I
@@ -221,17 +222,17 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-1,400 
+\[Po]1,400 
 .EN
 .
 .EQ I
 Interest lineup =~~
-"Opening balance" times rate%
+"Opening balance" times ~^ rate%
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-5,000 times 8 over 100
+5,000 times ~^ 8 over 100
 .EN
 .sp -0.6v
 .EQ I
@@ -243,7 +244,7 @@ lineup =~~
 "Principal repayment" lineup =~~
 "Opening balance" over "number of periods"
 .EN
-.sp -0.5v
+.sp -0.6v
 .EQ I
 lineup =~~
 5,000 over 5
@@ -251,7 +252,7 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-1,000
+\[Po]1,000
 .EN
 .
 .EQ I
@@ -266,7 +267,7 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-4,000
+\[Po]4,000
 .EN
 .UL "Remaining Years"
 .LP
@@ -300,23 +301,27 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-1,200
+\[Po]1,200
 .EN
-The interest paid over the life of this loan is: 1,200. This is lower than
+The interest paid over the life of this loan is: \[Po]1,200. This is lower than
 fixed repayment loan because of the increased size of the periodic principal
 repayment which accelerates the reduction in the outstanding balance.
 .KS
 .SH
-Balloon Payment - Section 3.5
+Balloon Payment - Chapter 3.5
 .LP
 Loans with a balloon payment have become more popular in recent years as it
 allows the lender to reduce the periodic payment due by the borrower. A loan
 incorporating a balloon payment is particularly popular when used to finance
-vehicles. The borrowers repayment is used to finance the depreciation in asset
-value due to use and the passage of time. At the end of the loan the borrower
-can take the option to make the payment ant acquire the asset.  If the borrower
-does not make the balloon payment the lender disposes of the asset and the
-salvage value on disposal \fBshould\fP equal the remaining balance.
+vehicles.
+.LP
+A simple example for a debt with a balloon payment might be as follows. A small
+deposit is made and the borrower's repayment is used to finance the
+depreciation in asset value due to use and the passage of time. At the end of
+the loan the borrower can has an option to make a balloon payment and acquire
+the asset. If the borrower does not make the balloon payment the lender
+disposes of the asset and the salvage value on disposal \fBshould\fP equal the
+remaining balance.
 .LP
 The interest is the same as previously stated. The periodic payment amount
 would be calculated by the lender to match the \fBexpected\fP depreciation. The
@@ -324,31 +329,31 @@ principal repayment is the amount left after the interest has been deducted
 from the periodic payment.
 .LP
 The balloon payment is the interest on the outstanding balance and the
-remaining balance.
+remaining balance at the end of the specified term.
 .PS
 A: [  box invis wid 0.20 ht 0.20 "0"
 		arrow up 0.3 at last box.n
-		"5,000" above at end of last arrow
+		"\[Po]5,000" above at end of last arrow
 		line right 0.3 from last box.e
 		box invis wid 0.20 ht 0.20 "1"
 		arrow down 0.2 at last box.s
-		"1,000" below at end of last arrow
+		"\[Po]1,000" below at end of last arrow
 		line right 0.3 from last box.e
 		box invis wid 0.20 ht 0.20 "2"
 		arrow down 0.2 at last box.s
-		"1,000" below at end of last arrow
+		"\[Po]1,000" below at end of last arrow
 		line right 0.3 from last box.e 
 		box invis wid 0.20 ht 0.20 "3"
 		arrow down 0.2 at last box.s
-		"1,000" below at end of last arrow
+		"\[Po]1,000" below at end of last arrow
 		line right 0.3 from last box.e 
 		box invis wid 0.20 ht 0.20 "4"
 		arrow down 0.2 at last box.s
-		"1,000" below at end of last arrow
+		"\[Po]1,000" below at end of last arrow
 		line right 0.3 from last box.e 
 		box invis wid 0.20 ht 0.20 "5"
 		arrow down 0.4 at last box.s
-		"2,480" below at end of last arrow
+		"\[Po]2,480" below at end of last arrow
 		]
 box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
 .PE
@@ -361,17 +366,17 @@ box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
 .
 .EQ I
 Interest lineup =~~
-"Opening balance" times rate%
+"Opening balance" times ~^ rate%
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-5,000 times 8 over 100
+5,000 times ~^ 8 over 100
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-400
+\[Po]400
 .EN
 .
 .EQ I
@@ -386,7 +391,7 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-600
+\[Po]600
 .EN
 .
 .EQ I
@@ -401,7 +406,7 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-4,400
+\[Po]4,400
 .EN
 .UL "Years 2 to 4"
 .LP
@@ -412,27 +417,28 @@ year until year 4.
 .LP
 Year 5, balloon payment:
 .EQ I
-"interest on balance outstanding" lineup =~~
-"balance outstanding" times rate%
+"Interest on balance outstanding" lm
+"balance outstanding" times ~^ rate%
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-2,296 times 8 over 100
+2,296 times ~^ 8 over 100
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-184
+\[Po]184
 .EN
+.KS
 .EQ I
 "balloon payment\(dd" lineup =~~
 "outstanding balance + interest"
 .EN
 .FS
-The balloon payment can also be expressed as: # "outstanding balance " times (
-1 + rate% ) # is you are not interested in the interest amount. # 2,296 times
-1.08 = 2,480 #
+\(dd The balloon payment can also be expressed as: # "outstanding balance "
+times ~^ ( 1 + rate% ) # if you are not interested in the interest amount. #
+2,296 times ~^ 1.08 =~~ \[Po]2,480 #
 .FE
 .sp -0.6v
 .EQ I
@@ -442,10 +448,11 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-2,480
+\[Po]2,480
 .EN
-.
+.KE
 .KS
+.
 .TS
 tab (#) center;
 lp-2 lp-2 lp-2 lp-2 lp-2
@@ -470,15 +477,15 @@ _
 .sp -0.6v
 .EQ I
 lineup =~~
-left [ (1,000 times 4) + 2,480 right ]  - 5,000
+left [ (1,000 times ~^ 4) + 2,480 right ]  - 5,000
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-1,480
+\[Po]1,480
 .EN
-The interest paid over the life of this loan is: 1,480. This is higher than
-both the fixed repayment loan and the fixed principal repayment loan because of
-the reduced size of the principal repayment. The borrower has a reduced
+The interest paid over the life of this loan is: \[Po]1,480. This is higher
+than both the Instalment Loan and the Fixed Principal Repayment Loan because
+of the reduced size of the principal repayment. The borrower has a reduced
 periodic repayment, but it comes at the cost of a higher interest charge over
 the life of the loan.
