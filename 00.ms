@@ -12,33 +12,33 @@ time to time which expand on some concept of mathematics which you may have
 forgotten or is a common point of confusion.
 .LP
 The examples are all worked through using the equations and at times a table.
-There is no mention of any spreadsheet applications which would be the usually
+There is no mention of any spreadsheet applications which would be the usual
 way most people would tackle the problems. The reason is that if you can
 understand the equations and the maths you can understand which function to use
 in the spreadsheet. A further point, is that, in general terms what ever
 thinking got you into a given situation it is highly unlikely that the same
-thinking will not get you out*. Therefore, I complete the examples with the
-equations\(dg and check them with a financial calculator, an HP12C\(dd, if I
-get the same answer with both methods I can be confident that the answer is
-correct. When I use a spreadsheet I also complete the check with a financial
-calculator, so unless the situation is very complex it is usually quicker to
-use the equations and check with the calculator. Lastly, a spreadsheet invites
-complexity and the success of most projects hinges on a few factors. When I
-complete the work by hand I try always to focus on what are the big drivers of
-the desired outcome and add only as much complexity as is necessary.
+thinking will not get you out*.
 .FS
 * This is why finding bugs in your own computer code is so challenging. It is
 also said that debugging is twice as hard as writing code, so if you write
 overly complex code you have set yourself up for failure.
 .FE
+Therefore, I complete the examples with the equations\(dg and check them with
+the financial functions in my calculator\(dd.
 .FS
 \(dg This may be by programming the equation into my calculator or by
 referencing a factor table.
 .FE
 .FS
-\(dd Strictly speaking the calculator is an HP12C clone. I use a SwissMicros
-DM12L.
+\(dd I use the SwissMicros DM12L which is a clone of the HP12C
 .FE
+If I get the same answer with both methods I can be confident that the answer
+is correct. When I use a spreadsheet I also complete the check with a financial
+calculator, so unless the situation is very complex it is usually quicker to
+use the equations and check with the calculator. Lastly, a spreadsheet invites
+complexity and the success of most projects hinges on a few factors. When I
+complete the work by hand I try always to focus on what are the big drivers of
+the desired outcome and add only as much complexity as is necessary.
 .LP
 Moving past the maths the work looks to cover the concept of the Time Value of
 Money and move through the most common types of annuity. The understanding of
@@ -48,10 +48,10 @@ investment decisions.
 .LP
 Once we have grasped the mathematics behind the finance we cover the problems
 of establishing the discount rate to use and subsequently how to decide whether
-an investment is going to increase your wealth. It is always worth remembering
-that there is a limitless supply of negative return opportunities and we are
-looking for find a reliable method of selecting opportunities to achieve a
-positive return.
+an investment is going to be worthwhile. It always pays to remember that there
+is a limitless supply of negative return opportunities and we are looking to
+find a reliable method of selecting opportunities which have the potential to
+deliver a positive return.
 .LP
 Tax is always a bind but can not often be ignored as it is not often avoided.
 The tax section is quite large but by the end you should feel more confident
@@ -63,7 +63,7 @@ piece of equipment replaced. These are the fundamental questions in most
 businesses and this work aims to place at your disposal some principles that
 should make you more confident when making that decision.
 .LP
-There is a large section on breakeven analysis or cost volume analysis as it is
+There is a large chapter on breakeven analysis or cost volume analysis as it is
 sometimes known. This differs from traditional breakeven analysis as it
 incorporates the Time Value of Money into the fixed costs.
 .LP
@@ -84,12 +84,12 @@ not everything can be converted into a number to be measured.
 How to use this document
 .LP
 You can of course read it from cover to cover if you have both time and a keen
-interest in the maths. The sections are all number so it should also work well
-as a reference manual. 
+interest in the maths. The chapters and sections are all number so it should
+also work well as a reference manual.
 .LP
 If you simply want to make use of the formulas to discount the cash flows then
-you can skip chapters 5 through to 9. Chapter 1 through to 4 contain the nuts
-and bolts of finance and section 10 on Engineering Economics provides the
+you can skip Chapters 5 through to 9. Chapter 1 through to 4 contain the nuts
+and bolts of finance and Chapter 10 on Engineering Economics provides the
 formulas that are used through the latter practical chapters.
 .
 .SN
@@ -101,7 +101,7 @@ presented in a table. However, the cash flow diagram is better for displaying
 the movement of the cash flows.
 .LP
 In the equations the () is a grouping symbol however when used in the tables it
-denotes a negative cash flow. I hope that is always clear from both the
+denotes a negative cash flow. I hope that it is always clear from both the
 context, the table and the diagrams which is the correct direction of the cash
 flows.
 .LP
@@ -113,16 +113,16 @@ The cash flow diagrams follow a common convention, whereby cash flows above the
 line are positive or cash flowing into the business and cash flows below the
 line are negative or cash flowing out of the business.
 .LP
-.KS
-The cash flow diagram if required will also state:
+The cash flow diagram will also state when required some or all of the
+information below:
 .IP "#i#" 10
 #i# represents the interest rate or discount rate and will be typically
 expressed as percentage. This will be show above the line.
 .IP "#n#" 10
 #n# represents the number of compound periods, this maybe in months, days,
 years or any other time period. This will be shown below the line if required.
-Where possible the number of compound periods is numbered, however, if there is a
-large number of compound periods the value for #n# will be stated for clarity
+Where possible the number of compound periods is numbered, however, if there is
+a large number of compound periods the value for #n# will be stated for clarity
 .PS
 A: [  box invis wid 0.25 ht 0.20 "0"
 		arrow up 0.3 at last box.n
@@ -143,16 +143,9 @@ A: [  box invis wid 0.25 ht 0.20 "0"
 box invis "i = interest rate" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
 box invis "n = compound periods" wid 0.6 ht 0.25 with .n at A.s + (0.10,0.25)
 .PE
-.LP
-There are also other differences in the cash flow diagrams between different
-types of annuity. These differences will be highlighted at the start of the
-appropriate section.
-.LP
-The other letters most often associated with the cash flow diagram are found
-below.
 .IP "#PV#" 10
 #PV# represents the present value, of which you will learn about in greater
-detail in chapter 1, can also be represented by #P# when using the notation of
+detail in Chapter 1, can also be represented by #P# when using the notation of
 Engineering Economics.
 .IP "#FV#" 10
 #FV# represents the future value and can also be represented by #F# when using
@@ -167,13 +160,16 @@ usually find in spreadsheets and on financial calculators. However, it is not
 the only notation to be found when talking about finance, we have briefly
 discussed the notation of Engineering Economics, and actuaries have their own
 notation to convey the same ideas and principles.
-.KE
+.LP
+There are also other differences in the cash flow diagrams between different
+types of annuity. These differences will be highlighted at the start of the
+appropriate section.
 .
 .SH
 Compound periods and the periodic interest rate
 .LP
 In compound interest calculations interest rates are often quoted at the annual
-rate ( also called the nominal rate, this is covered in detail in chapter 11)
+rate ( also called the nominal rate, this is covered in detail in Chapter 11)
 or as it is often thought of the interest rate per year. However, in compound
 interest problems, the interest rate #i# must be expressed in terms of the
 compounding periods be that, months, quarters, years etc.
