@@ -9,35 +9,35 @@ one aspect of a system and is valid only in certain instances.
 .LP
 There are some basic steps that must be completed in constructing the model and
 the items below form the major components of operational research:
-.IP \(en 
+.IP \(bu 
 Observation - This is about gaining an understanding of the real world
 situation so that the pertinent questions can be asked. This observation maybe
 done directly or it can be through academic and scientific publications. In
 agriculture there are many scientists working on genetics to improve yields and
 growth rates in crops and livestock. This information is then fed through to
 the producer and may cause you to reassess your own operations.
-.IP \(en
+.IP \(bu
 Problem definition - The problems we are trying to answer below are based
 around, costs, profits, revenues and quantities of production. A typical
 question might be: how much should I pay for a store lamb for a finishing
 operation? Another question might be, given that I want to sell all my lambs
 before the traditional slump in prices in July, what is the minimum acceptable
 growth rate?
-.IP \(en
+.IP \(bu
 Model construction - Ascertain that the problem can be model with mathematics
 and then:
 .RS
-.IP \(en
+.IP \(bu
 Understand which variables are important and which have little or no impact on
 the outcome. If you are interested in the metric "days on farm" the the
 variable that most interests you will be the growth rate, which is driven by
 the milk yield of the ewe, which depends on the dry matter content of the feed
 which the ewes has access to.
-.IP \(en
+.IP \(bu
 Describe the problem in terms of mathematical equations. Equations will be
 shown later in the section.
 .RE
-.IP \(en
+.IP \(bu
 Solutions - The validity of the model has to be checked. This is often done
 against past results however this can be somewhat dangerous. By using past
 results you are implying that the future and the past look the same or that
@@ -47,7 +47,7 @@ incorporate some expectations as to the future as well as examining the past
 history. It is worth considering that the model will only be valid if the
 variables, such as costs, can be controlled and other variables, such as price,
 move as expected.
-.IP \(en
+.IP \(bu
 Implementation - If the model is thought to be valid then a plan can be
 developed to take advantage of the findings subject to the constraints under
 which the model was built remaining constant or performing as expected.
@@ -262,23 +262,23 @@ compensate the investors for placing their capital in the business and should
 theoretically return a NPV equal to zero.
 .LP
 There are also other limitation of breakeven:
-.IP \(en
+.IP \(bu
 Break-even analysis only focuses on the costs and it tells you nothing about
 what sales are actually likely to be for the product or service. 
-.IP \(en
+.IP \(bu
 Break-even analysis assumes that fixed costs are constant. Although this is
 generally true an increase in the scale of production is likely to cause fixed
 costs to rise.
-.IP \(en
+.IP \(bu
 Break-even analysis assumes that the variable costs are constant per unit of
 output in the range of the likely quantities to be sold. In essence the
 variable costs increase in a linear fashion.
-.IP \(en
+.IP \(bu
 Break-even analysis assumes that the quantity of goods produced is equal to the
 quantity of goods sold. This assumption means there should be no change in the
 quantity of goods held in inventory at the beginning of the period and the
 quantity of goods held in inventory at the end of the period.
-.IP \(en
+.IP \(bu
 Break-even analysis assumes in companies with more than one product that the
 sales mix remains constant. 
 .LP
@@ -396,18 +396,18 @@ The absolute value is the answer: 2,343 hectares are required to break even.
 .
 .LP
 Key points:
-.IP \(en
+.IP \(bu
 The breakeven calculation includes the cost of capital and should result in the
 business operating very close to its cost of capital and therefore the
 investment would have a net present value of zero.
-.IP \(en
+.IP \(bu
 The example does not include the working capital requirements of the forage
 harvester such as spare parts inventories, and the increase in the receivable.
-.IP \(en
+.IP \(bu
 The example has a long time frame over which the relationship between the
 revenues and variable costs must remain the same and the costs must also not
 rise any faster than anticipated.
-.IP \(en
+.IP \(bu
 Wilbur would be advised to try and enter into some long term agreements to
 secure the revenue and control the costs.
 .

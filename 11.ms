@@ -68,12 +68,12 @@ left [ 1 + { 0.09 over 365 } right ] sup 365 -1
 9.4162%
 .EN
 Note:
-.IP \(en 3
+.IP \(bu 3
 The effective rises with the increase in compounding periods. 
-.IP \(en 3
+.IP \(bu 3
 With one compounding period per year the nominal rate is equal to the effective
 rate.
-.IP \(en 3
+.IP \(bu 3
 The nominal rate is equal to the effective rate if the compounding frequency is
 1, and less than the effective rate if the frequency is greater than one.
 .LP

@@ -4,31 +4,31 @@ equations and thought hard about what is a reasonable cost of capital. The
 purpose of this chapter on investment analysis is to ensure a rigorous approach
 is taken to investment decisions typically in new capital equipment. We believe
 the process should should have the following attributes:
-.IP \(en 3
+.IP \(bu 3
 It should us cash flows and not accounting earnings.
-.IP \(en 3
+.IP \(bu 3
 It should only consider cash flows attributable to the project in question. Do
 not mix cash flows from one part of the business with another. In essence do
 not cross subsidies the distinct parts of the business with out accounting for
 that capital.
-.IP \(en 3
+.IP \(bu 3
 It should consider investments in working capital as these are also capital
 expenditure.
-.IP \(en 3
+.IP \(bu 3
 It should consider all cash flows to determine the true profitability of the
 project.
-.IP \(en 3
+.IP \(bu 3
 It should provide for an objective and unambiguous way of separating good
 projects from bad projects.
-.IP \(en 3
+.IP \(bu 3
 It should help ranking of projects according to their true profitability.
-.IP \(en 3
+.IP \(bu 3
 It should recognise the fact that bigger cash flows are preferable to smaller
 ones and early cash flows are preferable to later ones.
-.IP \(en 3
+.IP \(bu 3
 It should help to choose among mutually exclusive projects (projects where the
 acceptance of one project would result in exclusion of the other project).
-.IP \(en 3
+.IP \(bu 3
 It should be a criterion which is applicable to any conceivable investment
 project.
 .LP
@@ -87,43 +87,43 @@ Forecasting exact numbers is a little dangerous and it would be prudent to
 state that payback is approximately 3 years.
 .LP
 The PB can be used as a decision criterion to select an investment proposal.
-.IP \(en 3
+.IP \(bu 3
 If the PB is less than the maximum acceptable payback period, accept the
 project.
-.IP \(en 3
+.IP \(bu 3
 If the PB is greater than the maximum acceptable payback period, reject the
 project.
 .sp
 .IP "Advantages of payback:" 5
-.IP \(en 3
+.IP \(bu 3
 The method is simple to use and understand.
-.IP \(en 3
+.IP \(bu 3
 Focusing on an early payback assists an organisations liquidity.
-.IP \(en 3
+.IP \(bu 3
 It is a method for dealing with risk. It favours projects which generate
 substantial cash inflows in earlier years and discriminates against projects
 which brings substantial inflows in later years. It is often a request of the
 lender to know the payback period as they favour early cash flows for the
 reasons below: 
 .RS
-.IP \(en 3
+.IP \(bu 3
 Forecasts into the future are likely to be less certain. Reliance on cash flows
 later in the project's life can therefore increase the risk associated with the
 investment.
-.IP \(en 3
+.IP \(bu 3
 It can be used to rank mutually exclusive projects. The projects can be ranked
 according to their payback period and the one with the shortest payback is
 selected.
-.IP \(en 3
+.IP \(bu 3
 Cash generated earlier from the project can be reinvested in other profitable
 opportunities or simply invested to earn interest in the bank or used to repay
 the loan.
-.IP \(en 3
+.IP \(bu 3
 Foretasted cash flows might lose their purchasing power due to inflation.
 .RE
 .sp
 .IP "Disadvantages of payback:" 5
-.IP \(en 3
+.IP \(bu 3
 Cash flows after the payback period are ignored. If projects are rejected
 because of the length of the payback period large profits can be foregone.
 .TS
@@ -157,13 +157,13 @@ the management would select project B. However, project A is projected to
 deliver more than twice the cash inflows of project B over its life. By
 focusing exclusively on the payback period you would have foregone substantial
 profit.
-.IP \(en 3
+.IP \(bu 3
 Payback period is a measure of projects capital recovery, not profitability, so
 it can not be used as the only method of accepting or rejecting a project. You
 will need to use some other method of allocating capital which also takes into
 account the profitability of the project.
 .KS
-.IP \(en 3
+.IP \(bu 3
 The timing of cash flows during the payback period is ignored. Payback fails to
 take into account the time value of money. That is say that if you compare cash
 flows from different time periods with out making any adjustments you are not
@@ -316,7 +316,7 @@ perpetuities and irregular cash flows. However when people speak of discounted
 cash flow they are generally referring to a method used to establish the
 present value of the irregular cash flows arising from a business asset or the
 business itself. To use the discounted cash flow you need to:
-.IP \(en 3
+.IP \(bu 3
 Estimate the life of the asset. It does not matter if it is a bond, tractor or
 an other investment if you can not establish the life of the asset you can not
 establish the present value or the net present value\(dd. This is of particular
@@ -343,9 +343,9 @@ over { ( 1 + 0.1 ) sup 3 } =~~ \[Po]1,240
 The above distinction is not worth getting exercised over and the priority is
 in understanding the value of the NPV in capital allocation.
 .FE
-.IP \(en 3
+.IP \(bu 3
 Estimate the cash flows during the \fBlife\fP of the asset.
-.IP \(en 3
+.IP \(bu 3
 Estimate the discount rate. This was the topic of the previous chapter.
 .LP
 We will now examine a number of methods that utilise the concept of discounted
@@ -418,13 +418,13 @@ _
 .TE
 .LP
 The net present value can be used as an accept or reject criteria:
-.IP \(en 3
+.IP \(bu 3
 If the net present value is positive the project is financial attractive and
 the cash flow is greater than the cost of capital.
-.IP \(en 3
+.IP \(bu 3
 If the net present value is zero the project is financially uninteresting and
 only earns the cost of capital
-.IP \(en 3
+.IP \(bu 3
 If the net present value is negative the project is financial unappealing and
 fails to earn its cost of capital thereby destroying value.
 .LP
@@ -433,29 +433,29 @@ Using net present value the project with the highest positive net present value
 would be ranked first and selected above other projects.
 .LP
 Advantages of net present value:
-.IP \(en 3
+.IP \(bu 3
 It explicitly recognise the time value of money and the cost of capital.
-.IP \(en 3
+.IP \(bu 3
 It takes into account all the years cash flows arising out of the project over
 its useful life.
-.IP \(en 3
+.IP \(bu 3
 It is an absolute measure of profitability. It provides a number as opposed to
 a ratio or percentage return for the value of a project
-.IP \(en 3
+.IP \(bu 3
 Net present value satisfies the idea of earning a return on capital and
 maximising the owners funds. 
 .LP
 .KS
 Disadvantages of net present value:
-.IP \(en 3
+.IP \(bu 3
 It requires the estimation of cash flows over the life of the asset, which is
 always challenging due to the inherent uncertainties that existing in the
 world.
-.IP \(en 3
+.IP \(bu 3
 It requires the calculation of the required rate of return to discount the cash
 flows. As we highlighted in the previous chapter this is also a contentious
 matter.
-.IP \(en 3
+.IP \(bu 3
 When projects under consideration are mutually exclusive an absolute value may
 not give dependable results if the projects are of different lengths. However,
 if the projects are standalone and not repeatable the selection of net present
@@ -704,11 +704,11 @@ index:
 .EN
 The profitability index has the similar accept reject criteria to net present
 value.
-.IP \(en 3
+.IP \(bu 3
 Accept the project if the profitability index is greater than 1.
-.IP \(en 3
+.IP \(bu 3
 Be indifferent to the project if the profitability index is 1.
-.IP \(en 3
+.IP \(bu 3
 Don't accept the project if the profitability index is below 1.
 .LP
 When limited capital is available and projects have similar cash flow
@@ -723,20 +723,20 @@ outflows).
 .LP
 .KS
 Advantages of the profitability index:
-.IP \(en 3
+.IP \(bu 3
 The profitability index considers the time value of money.
-.IP \(en 3
+.IP \(bu 3
 The profitability index considers all the cash flows generated by the project.
-.IP \(en 3
+.IP \(bu 3
 The profitability index is useful if you wish to rank similar projects by there
 capital efficiency as opposed to the absolute value of the profits. 
-.IP \(en 3
+.IP \(bu 3
 The profitability index is consistent with the aim of earning a return on
 capital and increasing the equity holders wealth.
 .KE
 .LP
 Disadvantages of the profitability index:
-.IP \(en 3
+.IP \(bu 3
 The profitability has the initial investment as the denominator which means
 that the ranking is going to be affected by the size of this initial investment
 which can lead to answers that conflict with NPV when comparing mutually
@@ -770,16 +770,16 @@ net present value became zero. The relationship between the internal rate of
 return and the discount rate can be used to make investment decisions, we will
 refer to the example we used to show the relationship between NPV and
 depreciation:
-.IP \(en 3
+.IP \(bu 3
 If the internal rate of return is greater than the desired rate of return, in
 this instance 18%, the project is financially attractive. The internal rate of
 return is ~35% so it is financially attractive as a hypothetical return of 17%
 is accrued to the investor, the difference between 18% and 35%.
-.IP \(en 3
+.IP \(bu 3
 If the internal rate of return is equal to the desired rate of return, in this
 instance 18%, the project is indifferent from a financial perspective as it
 only earns its cost of capital.
-.IP \(en 3
+.IP \(bu 3
 If the internal rate of return is less than the desired rate of return, in this
 instance 18%, the project is financially unattractive as the return is less
 than the cost of capital.
@@ -794,17 +794,17 @@ is used the net present value should reduce to zero or below, allowing the
 internal rate of return to be calculated by hand.
 .LP
 Advantages of the internal rate of return:
-.IP \(en 3
+.IP \(bu 3
 The internal rate of return is a much liked capital budgeting method in real
 life as it measures the profitability of projects as a percentage which can be
 easily compared with the cost of capital.
-.IP \(en 3
+.IP \(bu 3
 It is easy to understand the difference between the cost of capital and the
 internal rate of return as the maximum amount of estimation error that can
 exist in the cost of capital without altering the original decision.
 .LP
 Disadvantages of the internal rate of return:
-.IP \(en 3
+.IP \(bu 3
 The internal rate of return makes a dangerous assumption that interim cash
 flows will be reinvested at the same rate of return as the internal rate of
 return.
@@ -826,15 +826,15 @@ rate of return equation assumes that the company has additional projects, with
 equally attractive returns, in which to invest the interim cash flows. In which
 case, the calculation implicitly reinvests in these projects and subsequently
 maintains the implied return.
-.IP \(en 3
+.IP \(bu 3
 The internal rate of return is a true indication of a project's annual return
 on investment \fBonly\fP when the project generates no interim cash flows or
 when those interim cash flows really can be invested at the actual internal
 rate of return.
-.IP \(en 3
+.IP \(bu 3
 When there are multiple investments in a project over multiple time periods
 there can be multiple internal rates of return. 
-.IP \(en 3
+.IP \(bu 3
 The internal rate of return does not rank mutually exclusive projects correctly
 if the projects have different initial investments. When there are different
 initial investments the internal rate of return will favour the one with the
@@ -1359,7 +1359,7 @@ return and the advantageous of the modified internal rate of return and the
 advantageous of the net present value.
 .LP
 Advantages of modified internal rate of return:
-.IP \(en 3
+.IP \(bu 3
 The modified internal rate of return assumes that project cash flows are
 reinvested at a more realistic rate whereas the regular internal rate of return
 assumes that project cash flows are reinvested at the project's own internal
@@ -1368,7 +1368,7 @@ rate) is more realistic than reinvestment at internal rate of return, modified
 internal rate of return reflects better the true profitability of a project.
 .LP
 Disadvantages of modified internal rate of return:
-.IP \(en 3
+.IP \(bu 3
 The modified internal rate of return can conflict with net present value under
 certain conditions. If two mutually exclusive projects are compared of
 different durations with different cash flows it is possible that the project
@@ -1379,12 +1379,12 @@ rate of return.
 .LP
 As we have seen there are a range of discounted cash flow techniques but we
 favour one. We briefly summarise our findings:
-.IP \(en 3
+.IP \(bu 3
 The profitability index can be useful in comparing projects where funds are
 limited however it is not consistent with maximising the absolute value of the
 cash created nor is great for selecting mutually exclusive projects. Use net
 present value.
-.IP \(en 3
+.IP \(bu 3
 When projects have internal rates of return that are close to the company's
 cost of capital, the internal rate of return is less distorted by the
 reinvestment rate assumption. But when projects are evaluate that claim
@@ -1394,7 +1394,7 @@ capital there may be significant distortion.
 The internal rate of return is a useful to know as it may show the expected
 return as a percentage. However it can conflict with net present value and
 provide misleading information. Use net present value.
-.IP \(en 3
+.IP \(bu 3
 The most straightforward way to avoid problems with internal rate of return is
 to avoid it altogether, yet given its widespread use that is not realistic. If
 you are compelled to work with internal rate of return use a modified internal
@@ -1515,7 +1515,7 @@ discounted cash flow as net present value is our preferred method of assessing
 an investment proposition.
 .LP
 The discount rate:
-.IP \(en 3
+.IP \(bu 3
 If the project is financed entirely with debt then the appropriate discount
 rate would be cost of debt used to finance the project. If the project is
 financed entirely with equity then the appropriate discount rate would be cost
@@ -1523,25 +1523,25 @@ of equity. It is important to understand the long term financing of the asset.
 As we have previously discussed, in Chapter 12, if an asset is financed with
 debt over a short period but will then be owned and operated with equity it is
 best to discount it at the cost of equity.
-.IP \(en 3
+.IP \(bu 3
 The discount rate should be forward looking and not based on historic norms.
 If you expect your cost of capital to rise over time due to changes in interest
 rates, problems in your industry or inflation expectations, it should be
 reflected in the discount rate. You are trying to establish the correct cost of
 capital for the life of the investment.
-.IP \(en 3
+.IP \(bu 3
 If your cash flows are subject to tax then the discount rate has to be subject
 to tax. I accept this can be quite challenging as a sole trader as the assets
 are not in a corporate structure and the earnings pass through to the
 individual who pays tax.
-.IP \(en 3
+.IP \(bu 3
 If you are discounting the cash flow of an entire firm, typically the operating
 profit adjusted for taxation, then the weighted average cost of capital should
 be used as the discount rate. It is very rare to use the weighted average cost
 of capital to discount the cash flows for a project unless that project truly
 has the same cost of capital as the company, that means the project will be
 financed with the same capital structure as the company.
-.IP \(en 3
+.IP \(bu 3
 Discount rates over different time horizons are in general different.
 Predicting cash flows further into the future is inherently riskier than
 predicting those in the near term. Also, in general long dated funds costs more
@@ -1551,52 +1551,52 @@ different time horizons differing discount rates should be used.
 .
 .LP
 The cash flows:
-.IP \(en 3
+.IP \(bu 3
 For an asset to have value, the expected cash flows have to be positive at some
 point in the life of the asset. Discounted cash flow is a going concern tool.
-.IP \(en 3
+.IP \(bu 3
 Assets that generate cash flows early in their life will be worth more than
 assets that generate cash flows later.
-.IP \(en 3
+.IP \(bu 3
 Assets that generate cash flows later in their life may have greater growth and
 higher cash flows to compensate for the impact of discounting on their present
 value.
 .
 .LP
 The decision:
-.IP \(en 3
+.IP \(bu 3
 Invest in projects that yield a return greater than the minimum acceptable rate
 of return.
-.IP \(en 3
+.IP \(bu 3
 If there are not enough opportunities that earn the hurdle rate then take the
 money out of your business or return it to the shareholders if you are a
 limited company.
 .
 .LP
 Advantages of discounted cash flow:
-.IP \(en
+.IP \(bu
 Discounted cash flow is based on the fundamentals of the asset if it it done
 correctly. However it is very easy to introduce bias into the projection.
-.IP \(en
+.IP \(bu
 Discounted cash flow forces you to think about the underlying characteristics
 of the investment and understand its qualities as a going concern. It forces
 you to confront the assumptions you are making as to the level of investment
 you are prepared to make.
-.IP \(en
+.IP \(bu
 Discounted cash flow forces you to have a longterm horizon as you are looking
 at all the cash flow that derive from an asset over its lifetime.
 .
 .LP
 Disadvantages of discounted cash flow:
-.IP \(en
+.IP \(bu
 The inputs required such as the cash flows and the discount rate are difficult
 to estimate and therefore open to manipulation. In short, with a suitable time
 line and an advantageous discount rate you can generate any value you want.
-.IP \(en
+.IP \(bu
 Because the inputs are open to manipulation the bias of the modeller can have a
 significant bearing on the outcome. This alone should be enough to make you
 wary of outsourcing the modelling to another party.
-.IP \(en
+.IP \(bu
 There is no guarantee that the projection converges with the reality of the
 future. This is true of life in general and most forecasts are extrapolation of
 the past into the future. If the future starts to diverge from the past either
@@ -1605,7 +1605,7 @@ found wanting.
 .
 .LP
 Mitigations
-.IP \(en
+.IP \(bu
 It was Issac Newton to whom the quote, "I could calculate the motions of the
 heavenly bodies, but not the madness of the people" is often attributed. It is
 supposed that he uttered this quote when suffering losses from speculating in
@@ -1613,47 +1613,47 @@ the South Sea Bubble. As much as the history of financial bubbles and the
 irrational nature of crowds is fascinating Newton's experience leads us to
 emphasis two points:
 .RS
-.IP \(en
+.IP \(bu
 No forecast will ever be right. The world is constantly changing and this has
 to accepted with magnanimity.
-.IP \(en
+.IP \(bu
 Keep the discounted cash flow models simple:
 .RS
-.IP \(en
+.IP \(bu
 Most models work best under stable conditions and more inputs create more
 complexity. The addition of significant complexity can make it difficult to
 identify how the inputs alter the output and create scenarios where small
 changes can have large implications. Therefore, Keep the models of the
 discounted cash flow as simple as possible.
-.IP \(en
+.IP \(bu
 The cash flow that you are modelling is most likely heavily affected by a few
 key drivers, if you focus on these you will have a better chance of having a
 model where the inputs directly affect the outputs. Therefore, keep the models
 of the discounted cash flow as simple as possible.
 .RE
-.IP \(en
+.IP \(bu
 The numbers in your discounted cash flow require a narrative. That is to say
 there must be an explanation as to why the business case exists. If you do not
 have a compelling narrative you have an exercise in mathematics.
-.IP \(en
+.IP \(bu
 If you have to much narrative and not well enough established numbers you have
 a pipe dream. If you can convince enough people to lend you money you have
 something entirely different but at some stage there is going to have to be
 some positive cash flow.
 .RE
-.IP \(en
+.IP \(bu
 If you collaborate with a wide range of people involved in your business the
 chance of both managing expectations, avoiding unwanted bias and establishing a
 realistic scenario is increased. There always remains the spectre of group
 think, simple rules of thumb and a failure to imagine but if you can identify
 these failing you can overcome them.
-.IP \(en
+.IP \(bu
 The discounted cash flow should both encourage and force you to take a long
 time view. If we accept that the projection is wrong, but hopefully roughly
 right, the expectation should be that if the cash flow does not occur in one
 period it should appear soon after, this is not the worst outcome and it gives
 you the chance of being about right in the end.
-.IP \(en
+.IP \(bu
 As the small business owner you have the advantage of control to compensate in
 some small way your lack of diversification. This control allows you to change
 and adapt if things are not working out.

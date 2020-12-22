@@ -80,11 +80,11 @@ The debt is the most secure position in the capital structure. Debt comes in
 many forms from finance on a car, mortgages, over drafts, bank loans and bonds
 to name a few. Debt has the following general characteristics:
 .RS
-.IP \(en 3
+.IP \(bu 3
 There is a commitment to make a fixed payment in the future.
-.IP \(en 3
+.IP \(bu 3
 The fixed payments are tax deductible.
-.IP \(en 3
+.IP \(bu 3
 Failure to make the payment can lead to default or loss of control to the party
 to whom the payments are due.
 .RE
@@ -700,12 +700,12 @@ mind.
 .LP
 Aswath Damodaran proposes using what he calls "bottom up" betas to establish
 the cost of equity. The basic process is as follows:
-.IP \(en 3
+.IP \(bu 3
 Start with the beta of the industry the company is in.
-.IP \(en 3
+.IP \(bu 3
 Adjust the beta for the operating leverage of the company to establish the
 unlevered beta.
-.IP \(en 3
+.IP \(bu 3
 Use the financial leverage of the firm to estimate the equity beta for the
 company.
 .LP
@@ -1062,19 +1062,19 @@ investment proposition.
 Before we come to some examples we try and address some of the many criticisms
 that can be levelled at this crude model and expound a few of its virtues: 
 .IP "Criticisms" 5
-.IP \(en 3
+.IP \(bu 3
 Is this not simply the CAPM model with a few subtly changes and subjective
 inputs? Yes, it is. It uses the ideas and relationships we have gleaned from
 examining the CAPM to encourage you to think about the opportunity cost of
 investing in your business.
-.IP \(en 3
+.IP \(bu 3
 The model is very crude in that it requires you to make subjective inputs and
 does not use any statistical analysis to provide the inputs for you. The
 business we are dealing with are small and may have turnover measured in the
 tens of thousands and a few employees. In these respects alone they do not
 compare to many listed companies and it seems to make little sense to make that
 method suit this purpose.
-.IP \(en 3
+.IP \(bu 3
 Does the crudeness of the model allows the you to use dangerous inputs and
 receive nonsensical outputs? That is a real possibility, but all models suffer
 from the adage that, "garbage in equals garbage out". This problem is not the
@@ -1082,14 +1082,14 @@ preserve of naive models. I hope that the simplicity of the model and the
 examples that follow will, combined with the discussions on the required
 inputs, enable you to select suitable values and more importantly asses the
 veracity of the output.
-.IP \(en 3
+.IP \(bu 3
 The factor #N sub d# has an immense impact on the final figure. #N sub d#
 crudely accounts for the fact that the firm risk can not be diversified away
 and that small companies and inherently more risky than large companies. You
 can obviously use any figure you want we will set the value at 1.5 and examine
 the impact with some examples to aid you in how to set the value.
 .IP "Virtues" 5
-.IP \(en 3
+.IP \(bu 3
 I did not want to provide a blackbox like system whereby you take information
 from given sources and combine it with a given formula and hey presto you get a
 cost of equity. The cost of equity capital is never know with certainty and
@@ -1104,29 +1104,29 @@ uncomfortable position. But certainty is an absurd one". I am not saying that
 you should not develop more sophisticated models but that you should be
 receptive to the limitations of all models and the introduction of additional
 complexity.
-.IP \(en 3
+.IP \(bu 3
 The model focuses on the fundamental of the cost of equity.
 .RS
-.IP \(en 3
+.IP \(bu 3
 The discretionary nature of the product or service that is being offered. This
 is represented by the input #V# and is expected to remain at 1 unless the
 reason for selecting a value less than 1 can be suitably justified.
-.IP \(en 3
+.IP \(bu 3
 The operating leverage as represented by # 1 + FC over VC #
-.IP \(en 3
+.IP \(bu 3
 The financial leverage as represented by 1 + ( 1 # - t ) D over E #
 .RE
-.IP \(en 3
+.IP \(bu 3
 The model shows the consequence of changing the leverage and therefore the
 relative risk of investments.
-.IP \(en 3
+.IP \(bu 3
 The model forces you to examine and establish a value for both your operating
 leverage and your financial leverage. This should help you to better understand
 your own business and the capital structure of others within your industry.
-.IP \(en 3
+.IP \(bu 3
 The model can be easily understood an explained to others allowing for a more
 robust conversation around both the inputs and the outputs.
-.IP \(en 3
+.IP \(bu 3
 The simplicity of the model means its flaws are both obvious and easily
 explained.
 .LP
@@ -1413,13 +1413,13 @@ Alternative methods of calculating the cost of equity in small business:
 .LP
 You don't have to use the simple model I have demonstrated here. A couple of
 different approaches could be:
-.IP \(en 3
+.IP \(bu 3
 Use a more statistical approach that makes better use of the information from
 public companies such as the bottom-up approach as described by Aswath
 Damodaran. The method is covered on his website and in his books. He also
 helpfully provides a lot of information in spreadsheets that can be directly
 used to calculate the costs of equity capital.
-.IP \(en 3
+.IP \(bu 3
 You could survey other small business owners in your industry and try and
 establish the prevailing cost of equity. You will still need to adjust your own
 cost to reflect your own financial leverage if it is different to the industry
@@ -1430,7 +1430,7 @@ they make unrealistic assumptions or because the parameters cannot be estimated
 with precision and wish to develop a method of your own. What ever you think
 you will have to come up with some way of establishing the cost of equity for
 the reasons below:
-.IP \(en 3
+.IP \(bu 3
 Capital should never be lent to a business for no charge even if it is to
 yourself.\(dg
 .FS
@@ -1439,24 +1439,24 @@ inscribed on the walls of public places. One read, "Don't lead money to your
 children, it gives them amnesia". This affliction can also strike business
 owners.
 .FE
-.IP \(en 3
+.IP \(bu 3
 The cost of equity matters as it is unlikely that the investment can be made
 with 100% debt. 
-.IP \(en 3
+.IP \(bu 3
 If equity is to be invested then risks have to be accepted and these risks have
 to be priced. Even if you don't agree with portfolio theory and the concept of
 beta, which is the basis of my simple model, you cannot ignore the risks.
-.IP \(en 3
+.IP \(bu 3
 Some investments are riskier than others. The capital asset pricing model has
 beta as a measure of relative risk. The simple model used in the examples uses
 a different multiplier driven by the same fundamentals, of operation and
 financial leverage, to establish different costs of equity. Whatever you do you
 will have to establish a method of showing that one investment is riskier than
 another.
-.IP \(en 3
+.IP \(bu 3
 If you do not assign a cost to your equity you run the risk of investing in
 projects that you should not.
-.IP \(en 3
+.IP \(bu 3
 If you do not price the equity you may remove debt from your business to reduce
 the costs of the interest payments and the risk of default on the debt and not
 reward yourself for the additional risk being assumed by your own capital. In
@@ -1478,21 +1478,21 @@ resulting cost must reflect the fundamental nature of the risks:
 The type of business. The less essential a product or service the higher the
 cost of equity
 .KE
-.IP \(en 3
+.IP \(bu 3
 Cyclical companies should have a higher cost of equity than a non cyclical
 companies. Housing and cars are typical examples of cyclical industry that move
 through periods of boom and bust depending on the availability of credit.
 Agriculture also moves through periods of high prices and low prices due to
 changing environmental conditions and farmers collective crop choices.
-.IP \(en 3
+.IP \(bu 3
 Discretionary products or services such as luxury goods should have a higher
 cost of equity than essential items such as groceries.
-.IP \(en 3
+.IP \(bu 3
 Higher prices goods and services should have a higher cost of equity than
 similar lower priced goods and services. In an economic downturn if you are the
 seller of a high priced good or service the customer may decide to change to
 the lower priced alternative.
-.IP \(en 3
+.IP \(bu 3
 Growth firms have higher costs of equity compared to more more mature
 companies.
 .RE
@@ -1503,16 +1503,16 @@ Operating leverage. The higher the percentage of costs that are fixed the
 higher the cost of capital. If the company has a more flexible cost structure
 is better able to adapt the cost structure to meet changes in demand and
 consequently has a lower the cost of equity.
-.IP \(en 3
+.IP \(bu 3
 Companies with higher infrastructure requirements will have higher equity cost.
 The rail industry is an example of an industry with very high infrastructure
 costs in the form of the railway line itself and the rolling stock. The truck
 industry is another industry with high levels of operating leverage as a
 consequence of the high cost of the trucks, trailers and drivers.
-.IP \(en 3
+.IP \(bu 3
 Small firms will tend to have higher levels of operating leverage than large
 firms in the same industry who benefit from the economies of scale.
-.IP \(en 3
+.IP \(bu 3
 Young firms how are working to establish their position in the industry will
 have higher fixed costs and more operating leverage.
 .RE
@@ -1688,13 +1688,13 @@ lineup =~~
 17.50%
 .EN
 There are a few points to understand from the table:
-.IP \(en 3
+.IP \(bu 3
 There is a tax advantage to using debt. The tax advantage is gained because
 interest is tax deductible. Interest is treated as an expense of business but
 the owner of the company only gets the dividend payment after the government
 has deducted the income tax.
 .KS
-.IP \(en 3
+.IP \(bu 3
 The tax advantage of debt means that increased levels of debt lower the
 weighted average cost of capital. Within prudent levels, for the industry,
 increased levels of debt reduce the weighted average cost of capital enhancing
@@ -1825,41 +1825,41 @@ greater the risks.
 The very real question that must be on your mind, as it seems so very difficult
 to establish the cost of equity with any certainty, is, does is matter if the
 cost of capital is wrong? Not as much as you might think for the reasons below:
-.IP \(en 3
+.IP \(bu 3
 It is not possible to state exactly the cost of debt let alone the cost of
 equity and therefore the cost of capital. The economy and the nature of the
 business are constantly changing therefore the cost of capital and the inventor
 perception of risk are also constantly changing. Nobody has the right answer,
 there is only really arguably right.
-.IP \(en 3
+.IP \(bu 3
 As we know from our work in the previous chapters that changes in the discount
 rate will affect the present value or the net present value which we will
 examine in the next chapter. A lot of time can be spent on establishing the
 cost of capital and it will not necessarily result in more accuracy. If we
 agree with the first point, then we are striving to be roughly or arguably
 right with regards to the cost of capital.
-.IP \(en 3
+.IP \(bu 3
 When faced with uncertainty it is reassuring to spend time on things we believe
 we can establish with certainty. The discount rate is not one of those things.
 If we can only be roughly right it follows that precision is an illusion and
 more time can not result in more precision.
-.IP \(en 3
+.IP \(bu 3
 We have previously said that discounted cash flow is a going concern tool. If
 you do not have positive cash flows the discount rate is an irrelevance. You
 are better off spending time on the revenue, operating cost, processes and
 growth rates that determine the cash flows than fretting about the accuracy of
 the cost of capital.
-.IP \(en 3
+.IP \(bu 3
 The cost of capital tends to cluster for industries, so as long as you are
 roughly in line with the prevailing industry you will not be too far away from
 right.
-.IP \(en 3
+.IP \(bu 3
 We stated that the money should not be lent for free and especially not the
 equity. If you ensure that the cost of equity exceeds the most expensive form
 of debt, and as a small business owner it also exceeds the return on a
 portfolio of diversified assets like the FTSE 350, then even though it can be
 argued that it is not right it is also not being lent for free.
-.IP \(en 3
+.IP \(bu 3
 If you focus on building resilience into the foundations that we identified (
 discretionary nature of the product, operating leverage, financial leverage,
 matching of assets to liabilities) then it will help to protect the equity over

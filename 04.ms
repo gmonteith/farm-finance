@@ -256,19 +256,19 @@ box invis "n = 52" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
 PV = PMT over i left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
 .EN
 Note:
-.IP \(en 3
+.IP \(bu 3
 The annuity due has the same number of individual cash flows as the ordinary
 annuity but the first one is a time period zero and the last one an time period
 #CF sup n-1#. 
-.IP \(en 3
+.IP \(bu 3
 As the first cash flow in the annuity due is at time zero, it leads to a small
 change in the formula for the present value. The formula for an annuity due has
 the additional multiplication by #(1 + i)#
-.IP \(en 3
+.IP \(bu 3
 The present value of an ordinary annuity can be converted to the present value
 of an annuity due by multiplying the present value of an ordinary annuity by
 #(1 + i)#
-.IP \(en 3
+.IP \(bu 3
 The present value of an annuity due can be converted to the present value of an
 ordinary annuity by dividing the present value of the annuity due by #(1 + i)#
 .
@@ -547,18 +547,18 @@ FV = { PMT ({ { ( 1 + i ) sup n }  - 1 } ) }
 over i
 .EN
 Note:
-.IP \(en 3
+.IP \(bu 3
 The annuity due has the same number of individual cash flows but the first one
 is at time period zero and the last one an time period #CF sup n-1#. 
-.IP \(en 3
+.IP \(bu 3
 As the first cash flow in the annuity due is at time zero, it leads to a small
 change in the formula for the future value. The formula for an annuity due has
 the additional multiplication by #(1 + i)#
-.IP \(en 3
+.IP \(bu 3
 The future value of an ordinary annuity can be converted to the future value of
 an annuity due by multiplying the future value of an ordinary annuity by #(1 +
 i)#
-.IP \(en 3
+.IP \(bu 3
 The future value of an annuity due can be converted to the future value of an
 ordinary annuity by dividing the future value of the annuity due by #(1 + i)#
 .

@@ -107,12 +107,12 @@ We have previously discussed in Chapter 5 that it was plausible to have a
 growth rate #g# that exceeded the interest rate #i# for a short space of time.
 But, it presents some challenging theoretical problems which have been restated
 below:
-.IP \(en 3
+.IP \(bu 3
 The idea behind the PV is that the series of cash flows reaches a limit. If #g#
 exceeds #r# this logic breaks down. If your cash flow is growing faster than
 you can discount it then every future year's present value will be greater than
 the previous and you will not obtain a finite value.
-.IP \(en 3
+.IP \(bu 3
 The basis of the TVM equation is that money today is worth more than money in
 the future. As explained above when the growth rate exceeds the discount rate
 future cash flows will have a greater value than preceding cash flows. This is
@@ -120,20 +120,20 @@ a questionable proposition.
 .LP
 When it comes to a growing perpetuity the concept of the growth rate exceeding
 the discount rate completely loses its moorings in reality.
-.IP \(en 3
+.IP \(bu 3
 A perpetuity is an annuity without end. We have previously stated that the idea
 of the growth rate exceeding the discount rate was admissible for short periods
 of time. As the perpetuity is an annuity without end the growth rate exceeding
 the discount rate fails this basic proposition.
-.IP \(en 3
+.IP \(bu 3
 Hypothetically, any business where the growth rate could reliably exceed the
 cost of capital would attract limitless amounts of capital and subsequently
 grow to represent the entire economy.
-.IP \(en 3
+.IP \(bu 3
 As a perpetuity has no end it also makes sense that the growth rate can not
 exceed the growth rate of the economy, as no asset can have a growth rate that
 exceeds the economy forever.
-.IP \(en 3
+.IP \(bu 3
 As we have only the equation #PMT over { i - g }#, if the growth exceeds the
 interest rate, the equation will result in a negative PV.
 

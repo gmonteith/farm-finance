@@ -194,7 +194,7 @@ the predominant maintenance philosophy and it still exists today.
 .IP "Advantages" 15
 .RS
 .sp -1.3v
-.IP \(en 3
+.IP \(bu 3
 Low maintenance cost.
 .RE
 .
@@ -202,15 +202,15 @@ Low maintenance cost.
 .IP "Disadvantages" 15
 .RS
 .sp -1.3v
-.IP \(en 3
+.IP \(bu 3
 Increased costs due to the unplanned failure of the equipment and the
 subsequent loss of productivity.
-.IP \(en
+.IP \(bu
 Increased labour cost if overtime is needed.
-.IP \(en
+.IP \(bu
 It is possible that the failure has caused damage to another component or
 system further increasing the cost.
-.IP \(en
+.IP \(bu
 Problems in staff planing as the size and frequency of failures is difficult to
 forecast.
 .RE
@@ -241,17 +241,17 @@ through controlling degradation to an acceptable level."
 .IP "Advantages" 15
 .RS
 .sp -1.3v
-.IP \(en 3
+.IP \(bu 3
 Increased component life over reactive maintenance.
-.IP \(en 3
+.IP \(bu 3
 Increase the life of the equipment over reactive maintenance. The is
 particularly important in systems with large amounts of high cost capital
 equipment.
-.IP \(en 3
+.IP \(bu 3
 It is flexible if the equipment is not being used then the maintenance schedule
 can be adjusted. For instance oil maybe changed once a year as opposed to every
 #x# hours.
-.IP \(en 3
+.IP \(bu 3
 Reduced equipment breakdowns.
 .RE
 .
@@ -259,13 +259,13 @@ Reduced equipment breakdowns.
 .IP "Disadvantages" 15
 .RS
 .sp -1.3v
-.IP \(en 3
+.IP \(bu 3
 Labour intensive.
-.IP \(en
+.IP \(bu
 Does not eliminate catastrophic failure.
-.IP \(en
+.IP \(bu
 Includes unnecessary maintenance.
-.IP \(en
+.IP \(bu
 There is the potential for unnecessary maintenance to result in damage to
 another component.
 .RE
@@ -290,15 +290,15 @@ component physical state."
 .IP "Advantages" 15
 .RS
 .sp -1.3v
-.IP \(en 3
+.IP \(bu 3
 Increase component life vs preventative and reactive maintenance plans.
-.IP \(en 3
+.IP \(bu 3
 Allows preemptive corrective actions.
-.IP \(en 3
+.IP \(bu 3
 Increase in the availability of equipment.
-.IP \(en 3
+.IP \(bu 3
 Decrease in parts and labour costs for repairs and maintenance.
-.IP \(en 3
+.IP \(bu 3
 Energy savings.
 .RE
 .
@@ -306,12 +306,12 @@ Energy savings.
 .IP "Disadvantages" 15
 .RS
 .sp -1.3v
-.IP \(en 3
+.IP \(bu 3
 Increased investment in diagnostic equipment and services.
-.IP \(en
+.IP \(bu
 Increased investment in staff training to use the equipment and understand the
 results.
-.IP \(en
+.IP \(bu
 Increased savings are not visible. If a piece of equipment fails and incurs a
 substantial repair the cost is immediately visible. If the equipment runs
 without ever failing the only visible cost is the maintenance which may lead
@@ -370,19 +370,19 @@ and has many of the same charactereis.
 .IP "Advantages" 15
 .RS
 .sp -1.3v
-.IP \(en 3
+.IP \(bu 3
 Can be the most efficient maintenance program.
-.IP \(en 3
+.IP \(bu 3
 Lower cost be eliminating unnecessary maintenance or overhauls.
-.IP \(en 3
+.IP \(bu 3
 Minimise frequency of overhauls.
-.IP \(en 3
+.IP \(bu 3
 Reduce probability of sudden equipment failures.
-.IP \(en 3
+.IP \(bu 3
 Able to focus maintenance activities on critical components.
-.IP \(en 3
+.IP \(bu 3
 Increased component reliability
-.IP \(en 3
+.IP \(bu 3
 Incorporates root cause analysis.
 .RE
 .
@@ -390,9 +390,9 @@ Incorporates root cause analysis.
 .IP "Disadvantages" 15
 .RS
 .sp -1.3v
-.IP \(en 3
+.IP \(bu 3
 Can have significant start up costs in training, equipment, etc.
-.IP \(en
+.IP \(bu
 Increased savings are not visible. If a piece of equipment fails and incurs a
 substantial repair the cost is immediately visible. If the equipment runs
 without ever failing the only visible cost is the maintenance which may lead
@@ -401,12 +401,12 @@ management to question if too much is spent on maintenance.
 .LP
 The disciple of reliability centred maintenance which had its beginnings in
 the aviation industry revealed a number of key insights:
-.IP \(en 3
+.IP \(bu 3
 A large number of failures are not necessarily linked to the age of the asset.
 In short it was found that the failures were random as opposed to time based
 and routine maintenance often induced other failures and came with the risk of
 startup failure after such activities as an overhaul.
-.IP \(en 3
+.IP \(bu 3
 Reliability centred maintenance is a move from trying to understand the life
 expectancy of a component to trying to understand and manage the process of the
 component failure. Once the process of failure is understood maintenance can be
@@ -416,15 +416,15 @@ assessed in terms of the frequency and severity of their impact on the system
 as a whole. If the frequency of a failure and the subsequent impact is limited
 the outcome is tolerated. If the consequence of a failure is insufferable then
 changes are required to reduce the repercussions on the system.
-.IP \(en 3
+.IP \(bu 3
 The reliability requirements of the user of an asset and the designer of an
 asset may differ. The designed may have it in mind to maintain the asset at its
 optimum efficiency the user may be prepared based on the critical nature of the
 asset to run it to failure and implement only a reactive maintenance plan.
-.IP \(en 3
+.IP \(bu 3
 The importance of monitoring the condition of assets and using this information
 to develop predictive maintenance plans.
-.IP \(en 3
+.IP \(bu 3
 The purpose of the assets is to deliver the goals of the business. However the
 assets differ in how important they are in achieving this success. Therefore
 the performance of some assets is more critical than others and the risks of
@@ -465,13 +465,13 @@ Prioritise the list based on how critical the equipment is to  your business.
 Determine the type, number and time frame for maintenance activities with
 reference to:
 .RS
-.IP \(en
+.IP \(bu
 Manufactures manuals
-.IP \(en
+.IP \(bu
 Machine history
-.IP \(en
+.IP \(bu
 Root cause analysis - why did it fail
-.IP \(en
+.IP \(bu
 Good judgement
 .RE
 .IP 5 3

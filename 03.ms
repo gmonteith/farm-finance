@@ -180,17 +180,17 @@ it is easier to conceptualise the cancelling of the terms if one series is
 negative and one series positive.
 .LP
 We can now define a geometric series in a more formal manner:
-.IP \(en 3
+.IP \(bu 3
 A geometric series is one in which the ratio of any term to that which
 immediately precedes it is constant for the whole series.
-.IP \(en 3
+.IP \(bu 3
 The ratio is called the "common ratio" of the series. It may be positive or
 negative. Thus each term of the series can be obtained by multiplying the term
 that precedes it by the common ration.  2,4,8,16............ common ratio= 2
-.IP \(en 3
+.IP \(bu 3
 If three number a, b, c are in geometric progression then: 
 #b over a =~~ c over b tf 4 over 2 =~~ 8 over 4#
-.IP \(en 3
+.IP \(bu 3
 The general form of a geometric series: 
 a = first term, r = common ratio and then the series follows as, 
 #a ~~ ar sup 1 ~~ ar sup 2 ~~ ar sup 3# 
@@ -321,12 +321,12 @@ this makes it difficult to manipulate.
 .LP
 To proceed some factoring of the annuity series will be required. A quick note
 on factoring.
-.IP \(en 3
+.IP \(bu 3
 The distributive law of mathematics states: "the product of an expression of
 two terms by a single factor is equal to the sum of the products of each term
 of the expression multiplied by the single factor", therefore,  a(b + c) = ab +
 ac
-.IP \(en 3
+.IP \(bu 3
 Factoring is simply the distributive law in reverse.
 .EQ 
 10 + 15 + 20 lm 45
@@ -416,12 +416,12 @@ lineup =~~
 \[Po]47,912
 .EN
 Note:
-.IP \(en 3
+.IP \(bu 3
 The common ratio is less than 1 in fact it is 0.926 { 1 \[di] (1 + 0.8) = 0.926
 } therefore the money is devaluing the longer the series runs. This is a useful
 check.
 .KS
-.IP \(en 3
+.IP \(bu 3
 The PV can not exceed the payment multiplied by the number of compound periods
 when you are calculating the PV. In this instance the answer can not be greater
 than 5 times 12,000 = 60,000, which it was not. The payment multiplied by the
@@ -495,19 +495,19 @@ PMT =~~ PV(i) over left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
 \[Po]12,000
 .EN
 Note:
-.IP \(en 3
+.IP \(bu 3
 It is important to realise that the PMT times the number of compound periods
 should be greater than the PV. In this instance # 12,000 times 5 = \[Po]60,000
 #, you have borrowed money and must pay it back with the interest.
-.IP \(en 3
+.IP \(bu 3
 The interest is obviously the total of the payments less the present value. 
 # Interest =~~ 60,000 - 47,912 =~~ \[Po]12,088 #
-.IP \(en 3
+.IP \(bu 3
 The equation to solve the PMT is also used to calculate the uniform annual cost
 or equivalent annual cost as it is more common known as in the UK. This is
 particularly useful as a PV can be converted to equivalent annual payments for
 comparison with other costs and will be covered in Chapter 18.
-.IP \(en 3
+.IP \(bu 3
 There are tables of factors that can be used to convert a PV to the annual
 payment and these are often referred to as capital repayment factors.
 .
@@ -661,10 +661,10 @@ box invis "i = (7/100)/12" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.1)
 box invis "n = 5x12" wid 0.6 ht 0.25 with .n at A.s + (0.25,-0.05)
 .PE
 Note:
-.IP \(en 3
+.IP \(bu 3
 The interest rate #i# has been divided by 12 as the example uses monthly
 compounding.
-.IP \(en 3
+.IP \(bu 3
 The number of compound periods #n# must follow the same logic as the interest
 rate #i#. As the compounding is monthly the number of years has been multiplied
 by 12 to get the number of monthly compounding periods.
@@ -760,7 +760,7 @@ over 0.00583
 \[Po]10,738
 .EN
 Note:
-.IP \(en 3
+.IP \(bu 3
 The last payment of 150 has not been subject to any compounding. To clarify the
 point again, as payments are made at the end of the month, as the cash flow
 diagram shows, no interest is received on the last months payment. If the
@@ -768,14 +768,14 @@ series lasted 2 compound periods the first month would be subject to one months
 compounding # 150 times 1.00583 =~~ 150.87 # the second month would not be
 subject to any compounding 150.00 and the total for the FV would be 300.87. You
 can check this with a financial calculator for your own interest.
-.IP \(en 3
+.IP \(bu 3
 As the compounding is monthly the annual interest rate has been divided by 12.
-.IP \(en 3
+.IP \(bu 3
 The number of compounding periods and the interest rates must be consistent
 with each other. As the compounding is monthly the number of compound periods
 must match, therefore the number of years has been multiplied by 12 to convert
 to months.
-.IP \(en 3
+.IP \(bu 3
 The future value must be greater than the payment times the number of periods
 as they are being compounded over time. In this instance the future value
 should be greater than #(150 times 60 =~~ 9,000)#, which it is.
@@ -911,15 +911,15 @@ right ] }
 39.82 " months"
 .EN
 Note:
-.IP \(en 3
+.IP \(bu 3
 As the payments are made on a monthly basis the interest rate has been divided
 by 12.
-.IP \(en 3
+.IP \(bu 3
 The number of compounding periods and the interest rates must be consistent
 with each other. As the compounding is monthly the number of compound periods
 must match, therefore the number of years has been multiplied by 12 to convert
 to months.
-.IP \(en 3
+.IP \(bu 3
 The answer is 39.82. If an HP12C was used for the calculation, the calculator
 would round up the answer to 40. The user has to decide if they want to make a
 larger 39th payment or a smaller 40th payment. You can not really make a

@@ -40,38 +40,38 @@ reflection could be done better. An appraisal can be found below:
 .
 .LP
 Good
-.IP \(en 3
+.IP \(bu 3
 The book starts with the time value of money in Chapter 1 and follows this
 thread through out the work.
-.IP \(en 3
+.IP \(bu 3
 All the equations that are used in the work are derived from a common point.
-.IP \(en 3
+.IP \(bu 3
 The work is hopefully useful to both individuals wanting to know a little more
 about the mathematics of finance and those trying to allocate capital more
 efficiently.
 .
 .LP
 Bad
-.IP \(en 3
+.IP \(bu 3
 As I never set out to write a book and I am not convinced I am well qualified
 for it and the document is in need of both and editor and a copy writer!
-.IP \(en 3
+.IP \(bu 3
 I have explained things as I understand them and with no background in teaching
 I do not know if that is how you will understand them.
-.IP \(en 3
+.IP \(bu 3
 I have learnt my typesetting as I have meandered though this work and I am sure
 there is much that could be done to improve it.
-.IP \(en 3
+.IP \(bu 3
 More graphs would improve some of the examples, especially in the chapter on
 breakeven.
-.IP \(en 3
+.IP \(bu 3
 There are no numerical reference for the tables, graphs or cash flow diagrams.
 The addition of these references would make it possible to refer both backwards
 and forward to aid explanations.
 .
 .LP
 Ugly
-.IP \(en 3
+.IP \(bu 3
 As I did not set out to book, let alone a textbook or a reference book, there
 are not extensive references, though there is a bibliography at the back.
 Therefore, I would like to acknowledge the better work of others from which I
@@ -86,7 +86,7 @@ heavily influenced by "Engineering Economy, Third Edition, Applying Theory to
 Practice" by A Ted G. Eschenback. Lastly Appendix E quickly runs though the
 mathematics of Shareholder Value Added (SVA) as promoted by Alfred Rappaport in
 his book "Creating Shareholder Value, A Guide for Manager and Investors".
-.IP \(en 3
+.IP \(bu 3
 My mathematics is more recreational than rigorous and the work has followed
 this pattern. Therefore, I have not defined many terms in their true
 mathematical sense. For instance, I have used the terms "equation" and
@@ -96,7 +96,7 @@ functions and these have not been defined or explored. Lastly it is customary
 in mathematics that letters at the end of the alphabet refer to variables # (
 x, y, z ...) # and the remaining letters # ( a, b, c ...) # refer to constants.
 This has not been followed with any integrity.
-.IP \(en 3
+.IP \(bu 3
 In Appendix A we examine the impact of the writing down allowance on the
 capital costs and derive two equations. One is an annuity and the other a
 perpetuity. The investment cost equations do not make use of this annuity
@@ -105,12 +105,12 @@ be reassuring to have the perpetuity equation used through out as each equation
 would share a common thread. Admirable as this sounds it has resulted in some
 rather ugly equations. The only consolation is that I don't expect them to be
 used often, but they need rewriting.
-.IP \(en 3
+.IP \(bu 3
 It is customary in typesetting to use the symbols for footnotes in the
 following order: *, \(dg, \(dd. I have not been at all discerning in my choice
 of symbol to accompany the footnote provided there was no abiguity with another
 footnote.
-.IP \(en 3
+.IP \(bu 3
 The navigation and utility of the pdf document could be much improve by the use
 of bookmarks.
 .LP
