@@ -7,11 +7,11 @@
 .\" Note
 .\" .LP
 .B
-This document is a DRAFT. I am continuing to work on it and some chapters are
-unfinished and others need improving.
+This document is still very much a DRAFT. I am continuing to work on it and
+some chapters are unfinished and others need improving.
 .R
 .sp
-As a draft there maybe spelling, grammatical and/or mathematical errors. Where
+As a draft there are spelling, grammatical and/or mathematical errors. Where
 there are errors I hope that the words are bent and the numbers are straight
 but there are no guarantees.
 .sp
@@ -42,7 +42,7 @@ reflection could be done better. An appraisal can be found below:
 Good
 .IP \(en 3
 The book starts with the time value of money in Chapter 1 and follows this
-thread through the work.
+thread through out the work.
 .IP \(en 3
 All the equations that are used in the work are derived from a common point.
 .IP \(en 3
@@ -62,12 +62,12 @@ I do not know if that is how you will understand them.
 I have learnt my typesetting as I have meandered though this work and I am sure
 there is much that could be done to improve it.
 .IP \(en 3
-More graphs would improve some of the examples, especially in the section on
+More graphs would improve some of the examples, especially in the chapter on
 breakeven.
 .IP \(en 3
-There are no reference for the tables, graphs or cash flow diagrams. The
-addition of these references would make it possible to refer both backwards and
-forward to aid explanations.
+There are no numerical reference for the tables, graphs or cash flow diagrams.
+The addition of these references would make it possible to refer both backwards
+and forward to aid explanations.
 .
 .LP
 Ugly
@@ -76,14 +76,14 @@ As I did not set out to book, let alone a textbook or a reference book, there
 are not extensive references, though there is a bibliography at the back.
 Therefore, I would like to acknowledge the better work of others from which I
 have drawn inspiration and knowledge. I have lent most heavily on the books and
-blogs of Aswath Damodaran for chapter 12 where we think about how to establish
+blogs of Aswath Damodaran for Chapter 12 where we think about how to establish
 the cost of capital and other chapters when discuss discounting. The concept of
 the Capital Cost Tax Factors (CCTF) came from "A Practical Approach to the
-Appraisal of Capital Expenditures" by C.  Geoffrey Edge and V. Bruce Irvine,
+Appraisal of Capital Expenditures" by C. Geoffrey Edge and V. Bruce Irvine,
 and I have expanded the equations to suit my purposes. My thoughts in general
 about how to account for the large capital expenditures in business have been
 heavily influenced by "Engineering Economy, Third Edition, Applying Theory to
-Practice" by A Ted G.  Eschenback. Lastly Appendix E quickly runs though the
+Practice" by A Ted G. Eschenback. Lastly Appendix E quickly runs though the
 mathematics of Shareholder Value Added (SVA) as promoted by Alfred Rappaport in
 his book "Creating Shareholder Value, A Guide for Manager and Investors".
 .IP \(en 3
@@ -94,7 +94,7 @@ mathematical sense. For instance, I have used the terms "equation" and
 Annuities and perpetuities brush up against the larger topics of limits and
 functions and these have not been defined or explored. Lastly it is customary
 in mathematics that letters at the end of the alphabet refer to variables # (
-x, y, z ...) # and the remaining letters # ( a, b, c ... ) # refer to constants.
+x, y, z ...) # and the remaining letters # ( a, b, c ...) # refer to constants.
 This has not been followed with any integrity.
 .IP \(en 3
 In Appendix A we examine the impact of the writing down allowance on the
@@ -105,6 +105,14 @@ be reassuring to have the perpetuity equation used through out as each equation
 would share a common thread. Admirable as this sounds it has resulted in some
 rather ugly equations. The only consolation is that I don't expect them to be
 used often, but they need rewriting.
+.IP \(en 3
+It is customary in typesetting to use the symbols for footnotes in the
+following order: *, \(dg, \(dd. I have not been at all discerning in my choice
+of symbol to accompany the footnote provided there was no abiguity with another
+footnote.
+.IP \(en 3
+The navigation and utility of the pdf document could be much improve by the use
+of bookmarks.
 .LP
 The list above is by no means exhaustive and you may of course feel very
 differently about the merits of this work. If you find something particularly
