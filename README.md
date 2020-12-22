@@ -1,7 +1,9 @@
 ## Description:
-This is a **DRAFT** of a pdf called 
-collection of groff files that examining capital allocation in small
-businesses.
+This is a **DRAFT** of a pdf called farm-finance.pdf
+
+The document is still very much a draft but it is regularly worked on. The
+document covers the basic mathematics of finance and how to use this
+information to make better capital allocation decisions.
 
 The document has been written using the groff document formatting system with
 the ms macro package and the preprocessors eqn, tbl, pic and grap.
@@ -9,12 +11,11 @@ the ms macro package and the preprocessors eqn, tbl, pic and grap.
 If you wish to view the pdf derived from the groff files please use the
 following link:
 
-
 ---
 
 ## Files:
-The document has evolved to follow the layout of a book. The table of contents
-is show below:
+The document has evolved to follow the layout of a book and the file structure
+reflect this:
 
 File name | Description
 --------- | -----------
@@ -106,13 +107,13 @@ To view the entire document with the table of contents in its more natural
 place I have a function in my bashrc:
 
 ```
-complete-toc()
+complete-ff()
 {
 groffer -ms master.ms -Tpdf --groff > ~/tmp/complete.pdf
 
-pdftk ~/tmp/complete.pdf cat 1 2 r5-r1 3-r6 output ~/tmp/farm_finance.pdf
+pdftk ~/tmp/complete.pdf cat 1 2 r5-r1 3-r6 output ~/tmp/farm-finance.pdf
 
-evince ~/tmp/farm_finance.pdf
+evince ~/tmp/farm-finance.pdf
 }
 ```
 
@@ -131,16 +132,16 @@ with the table of contents at the end, using the following groff command:
 ---
 
 ### Workflow when editing:
-The `master-limited.ms` exists because the entire document is rather large,
+The `master-wip.ms` exists because the entire document is rather large,
 cumbersome and slow to produce for editing individual chapters.
 
 Vim is my preferred text editor and I typically have a vertically split window
 with the chapter/appendix/file I am working on in one window and the
-`master-limited.ms` open in the other. The `master-limited.ms` is uncommented
+`master-wip.ms` open in the other. The `master-limited.ms` is uncommented
 to print the file I am editing, and any other files I maybe interested in. I
 have the following command in the "q" register:
 
-`:!groffer -ms master-limited.ms -Tpdf --groff > ~/tmp/worktest.pdf`
+`:!groffer -ms master-wip.ms -Tpdf --groff > ~/tmp/worktest.pdf`
 
 The command above can be yanked into register "q" with the following command in
 vim: `"qy$`
@@ -148,19 +149,19 @@ vim: `"qy$`
 Each time a change is made to the chapter/appendix/file it is saved and then
 the command in register "q" is run with '@q' to update the pdf.
 
-The reason that the 'master-limited.ms' file is required is that the macro and
+The reason that the 'master-wip.ms' file is required is that the macro and
 layout files, shown below, are only sourced in the master and not in the
 individual chapters/appendices.
 
-`Format/format.tmac`
-`Format/equation.tmac`
-`Format/pic.tmac`
+`macro/format.tmac`
+`macro/equation.tmac`
+`macro/pic.tmac`
 
 You could of course source these files in each individual chapter but that
 would require more maintenace.
 
 Again, `groffer` will not be supported with the next release of groff so I may
-write a script and do away with the 'master-limited.ms' file. 
+write a script and do away with the 'master-wip.ms' file. 
 
 A separate window can be used to open the pdf which will automatically refresh
 on each update to the underlying pdf document:
