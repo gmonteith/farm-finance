@@ -21,17 +21,17 @@
 .SH
 Structure of the Appendix
 .LP
-The Appendix is made of two parts.
+This appendix is made of two parts.
 .IP "Equations time period 1" 5
-These are more often used by those who pay their tax under Self Assessment where
-it is assumed the investment is at time period zero and the first tax effect at
-time period one.
+These are more often used by those who pay their tax under Self Assessment
+where it is assumed the investment is at time period zero and the first tax
+effect is at time period one as discussed in Chapter 16.3.1
 .IP "Equations time period 2" 5
 These are more often used by those who have a limited company and therefore are
-interest in the effects of Corporation Tax.  It is generally assumed with
+interest in the effects of Corporation Tax. It is generally assumed with
 Corporation Tax that the investment is at time period zero but the first tax
 effect is not until time period two. This is the general case and not an
-absolute rule, the timing  of tax payments is covered in Chapter XX.
+absolute rule, the timing of tax payments is covered in Chapter 16.
 .LP
 The section covering the investment cost equations for time period one is more
 comprehensive and includes graphs. The section for the equations at time period
@@ -74,44 +74,48 @@ The calculation should have the opposite sign to the initial investment.
 The calculation should have the same sign as the initial investment.
 .RE
 .LP
-We will now work through a very basic example to show the logic:
+We will now work through a very basic example to show the logic. For the
+purposes of our simple example the investment in \[Po]100, the PV of the
+salvage value is \[Po]30 and the PV of the tax savings lost is \[Po]10. We will
+now run through the logic starting with both a positive and a negative value
+for the initial investment:
 .IP "Investment is negative" 5
-Investment cost is negative 100 to start with:
+Investment cost is negative \[Po]100 to start with:
 .RS
-.IP \(bu
+.IP \(bu 3
 Decrease the capital cost "CC\(dg" by the PV of the salvage value.
 .FS
 The capital cost is also referred to as the investment cost. Capital cost is
 used in this instance because the Capital Cost Tax Factor is often part of the
 same discussion.
 .FE
-.IP \(bu
-Increase the CC by the PV of the tax savings lost equal to the salvage value.
+.IP \(bu 3
+Increase the CC by the PV of the tax savings lost.
 .LP
 The results would be something like this:
-.EQ
--100 + 30 - 10
+.EQ I
+-\[Po]100 + \[Po]30 - \[Po]10
 .EN
 .sp -0.7v
-.EQ
--80
+.EQ I
+-\[Po]80
 .EN
 .RE
 .IP "Investment is positive" 5
-Investment cost is positive 100 to start with:
+Investment cost is positive \[Po]100 to start with:
 .RS
-.IP \(bu
+.IP \(bu 3
 Decrease the capital cost "CC" by the PV of the salvage value.
-.IP \(bu
-Increase the CC by the PV of the tax savings lost equal to the salvage value.
+.IP \(bu 3
+Increase the CC by the PV of the tax savings lost.
 .LP
 The results would be something like this:
-.EQ
-100 - 30 + 10
+.EQ I
+\[Po]100 - \[Po]30 + \[Po]10
 .EN
 .sp -0.7v
-.EQ
-80
+.EQ I
+\[Po]80
 .EN
 .RE
 .
@@ -140,9 +144,9 @@ and an appropriate leger as been assembled below:
 .ll 2.9i
 .nf
 .ta 0.4i
-\fII\fP	investment or capital cost
-\fIS\fP	salvage value
-\fIn\fP	year of the asset sales
+\fII\fP	Investment or capital cost
+\fIS\fP	Salvage value
+\fIn\fP	Year of the asset sales
 \fIUCC\fP	Unclaimed Capital Cost
 .fi
 .br
@@ -151,16 +155,16 @@ and an appropriate leger as been assembled below:
 .ll 6.0i
 .nf
 .ta 0.4i
-\fIt\fP		tax rate %
-\fIi\fP		interest rate or discount rate %
-\fId\fP		writing down allowance %
+\fIt\fP		Tax rate %
+\fIi\fP		Interest rate or discount rate %
+\fId\fP		Writing down allowance %
 .fi
 .br
 .LP
 .sp
 .SH
 Constants used in the examples:
-.IP \(bu
+.IP \(bu 3
 The rate of taxation, represented by #t#, is 20%.
 .IP \(bu
 The writing down allowance, represented by #d#, is 18%.
@@ -168,8 +172,8 @@ The writing down allowance, represented by #d#, is 18%.
 The sale of the asset, represented by #n#, occurs in the fifth year.
 .IP \(bu
 It is assumed that the initial investment is made at time period zero and
-subsequent costs and revenues occur at the ending of the accounting period. This
-is the same logic as an ordinary annuity.
+subsequent costs and revenues occur at the ending of the accounting period,
+this is the same logic as an ordinary annuity.
 .
 .SH
 Capital gains tax
@@ -178,8 +182,7 @@ The government has very specific rules on capital gains tax, however, for the
 purpose of calculating the investment cost I am going to disregard them and
 charge the capital gains tax at the same rate of taxation as the rest of the
 equation. The reasons for this are enumerated below:
-.RS
-.IP \(bu
+.IP \(bu 3
 The salvage value tends to occur far in the future and has a limited impact on
 the present value.
 .IP \(bu
@@ -192,7 +195,6 @@ not be right at the time the asset is disposed off.
 Corporate profits do not incur capital gains tax and I wanted these equations
 to be useful for measuring the impact of capital allowances on a capital
 investment under both Self Assessment and Corporate Tax regimes.
-.RE
 .
 .SH
 Graphs
