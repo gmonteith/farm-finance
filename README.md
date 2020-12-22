@@ -115,7 +115,15 @@ evince ~/tmp/farm_finance.pdf
 
 There is very little to like about the process above and if the pdf changes in
 length the pdftk command has to be rewritten. I have been meaning to work on a
-better solution but I have not dedicated the time to it...
+better solution using pdfmark which would also improve the usability of the pdf
+document, however, I am currently short of time.
+
+'groffer' will not be supported in the next release of groff, version 1.23.0,
+so this particular method of outputting the pdf will stop working in the
+future. 'groffer' is a wrapper around groff and the entire pdf can be created,
+with the table of contents at the end, using the following groff command:
+
+'groff -Tpdf -s -t -e -p -G -R -ms master.ms > farm-finance.pdf'
 
 ---
 
@@ -126,8 +134,8 @@ cumbersome and slow to produce for editing individual chapters.
 Vim is my preferred text editor and I typically have a vertically split window
 with the chapter/appendix/file I am working on in one window and the
 `master-limited.ms` open in the other. The `master-limited.ms` is uncommented
-to print the file I am editing and I have the following command in the "q"
-register:
+to print the file I am editing, and any other files I maybe interested in. I
+have the following command in the "q" register:
 
 `:!groffer -ms master-limited.ms -Tpdf --groff > ~/tmp/worktest.pdf`
 
@@ -147,6 +155,9 @@ individual chapters/appendices.
 
 You could of course source these files in each individual chapter but that
 would require more maintenace.
+
+Again, 'groffer' will not be supported with the next release of groff so I may
+write a script and do away with the 'master-limited.ms' file. 
 
 A separate window can be used to open the pdf which will automatically refresh
 on each update to the underlying pdf document:
