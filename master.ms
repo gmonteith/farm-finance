@@ -1,142 +1,141 @@
-.so Format/format.tmac
-.so Format/equation.tmac
-.so Format/pic.tmac
+.so macro/format.tmac
+.so macro/equation.tmac
+.so macro/pic.tmac
 .
-.so 0000.ms \" Title
+.so data/0000.ms \" Title
 .
 .HEADER "Preface"
-.so 000.ms \" Preface
+.so data/000.ms \" Preface
 .
 .HEADER "Introduction"
-.so 00.ms \" Introduction
+.so data/00.ms \" Introduction
 
 .CHAPTER "Time Value of Money"
-.so 01.ms \" Time value of money
+.so data/01.ms \" Time value of money
 .
 .CHAPTER "Equivalence"
-.so 02.ms \" Equivalence
+.so data/02.ms \" Equivalence
 .
 .CHAPTER "Ordinary Annuities"
-.so 03.ms \" Ordinary Annuities
+.so data/03.ms \" Ordinary Annuities
 .
 .CHAPTER "Annuities Due"
-.so 04.ms \" Annuities Due
+.so data/04.ms \" Annuities Due
 .
 .CHAPTER "Growing Ordinary Annuities"
-.so 05.ms \" Growing Ordinary Annuities
+.so data/05.ms \" Growing Ordinary Annuities
 .
 .CHAPTER "Growing Annuities Due"
-.so 06.ms \" Growing Annuities Due
+.so data/06.ms \" Growing Annuities Due
 .
 .CHAPTER "Declining Annuities"
-.so 07.ms \" Declining Annuities
+.so data/07.ms \" Declining Annuities
 .
 .CHAPTER "Perpetuities"
-.so 08.ms \" Perpetuities
+.so data/08.ms \" Perpetuities
 .
 .CHAPTER "Growing Perpetuities"
-.so 09.ms \" Growing Perpetuities
+.so data/09.ms \" Growing Perpetuities
 .
 .CHAPTER "Engineering Economics"
-.so 10.ms \" Engineering economics
+.so data/10.ms \" Engineering economics
 .
 .CHAPTER "Nominal & Effective Rates"
-.so 11.ms \" Nominal & effective rates
+.so data/11.ms \" Nominal & effective rates
 
 .CHAPTER "Costing Your Capital"
-.so 12.ms \" Costing your capital
+.so data/12.ms \" Costing your capital
 .
 .CHAPTER "Investment Analysis"
-.so 13.ms \" Investment analysis
+.so data/13.ms \" Investment analysis
 .
 .CHAPTER "Structure of UK Tax"
-.so 14.ms \" Structure of UK tax
+.so data/14.ms \" Structure of UK tax
 .
 .CHAPTER "Understanding the Impact of Tax"
-.so 15.ms \" Understanding the impact of tax
+.so data/15.ms \" Understanding the impact of tax
 .
 .CHAPTER "Investment Cost Equations"
-.so 16.ms \" Investment cost equations
+.so data/16.ms \" Investment cost equations
 .\" .
 .CHAPTER "Using The Investment Cost Equations"
-.so 17.ms \" Using the investment cost equations
+.so data/17.ms \" Using the investment cost equations
 .
 .CHAPTER "Equivalent Annual Cost"
-.so 18.ms \" Equivalent annual cost
+.so data/18.ms \" Equivalent annual cost
 .
 .CHAPTER "Mutually Exclusive Projects"
-.so 19.ms \" Mutually exclusive projects
+.so data/19.ms \" Mutually exclusive projects
 .
 .CHAPTER "Replacement Analysis"
-.so 20.ms \" Replacement analysis
+.so data/20.ms \" Replacement analysis
 .
 .CHAPTER "Revenue Cost & Profit"
-.so 21.ms \" Revenue cost & profit
+.so data/21.ms \" Revenue cost & profit
 .
 .CHAPTER "Economic Value & The Measurement of Financial Performance"
-.so 22.ms \" Economic value and the measurement of financial performance
+.so data/22.ms \" Economic value and the measurement of financial performance
 .
 .CHAPTER "Return On Equity"
-.so 23.ms \" Return on equity
+.so data/23.ms \" Return on equity
 .
 .nr cn 0
 .
 .\" Appendix
 .APPENDIX "Impact of Writing Down Allowance (WDA) on Capital Costs"
-.so A1.ms \" Table - impact of WDA on costs
+.so data/A1.ms \" Table - impact of WDA on costs
 .
 .APPENDIX "CCTF Flow Charts"
-.so B0.ms \" Capital Cost Tax Factors (CCTF)
+.so data/B0.ms \" Capital Cost Tax Factors (CCTF)
 .
 .APPENDIX_SUB "Investment Cost Equations - Time Period 1"
-.so B1.ms \" Writing Down Allowance (WDA)
+.so data/B1.ms \" Annual Investment Allowance (AIA)
 .bp
-.so B2.ms \" Annual Investment Allowance (AIA)
+.so data/B2.ms \" Writing Down Allowance (WDA)
 .bp
-.so B3.ms \" Single Asset Pool
+.so data/B3.ms \" Single Asset Pool
 .NOH!
 .bp
-.so B4.ms \" Sheet - Positive Investment Cost Equations
+.so data/B4.ms \" Sheet - Positive Investment Cost Equations
 .
 .APPENDIX_SUB "Investment Cost Equations - Time Period 2"
-.so B6.ms \" Annual investment allowance (AIA)
+.so data/B6.ms \" Annual investment allowance (AIA)
 .bp
-.so B7.ms \" Writing Down allowance (WDA)
+.so data/B7.ms \" Writing Down allowance (WDA)
 .bp
-.so B8.ms \" Single Asset Pool
+.so data/B8.ms \" Single Asset Pool
 .
 .APPENDIX "Engineering Economics Equations"
-.so C1.ms \" Engineering economics equations
+.so data/C1.ms \" Engineering economics equations
 .
 .APPENDIX "Self assessment Tax in Two Payments"
-.so D1.ms \" Self assessment tax in two payments
+.so data/D1.ms \" Self assessment tax in two payments
 .
 .APPENDIX "Shareholder Value Added (SVA)"
-.so E1.ms \" Shareholder value added (SVA)
+.so data/E1.ms \" Shareholder value added (SVA)
 .
 .APPENDIX "Workings Hitch"
-.so F1.ms \" Workings hitch
+.so data/F1.ms \" Workings hitch
 .
 .APPENDIX "Loans"
-.so G1.ms \" Loans
+.so data/G1.ms \" Loans
 .
 .APPENDIX "Inflation"
-.so H1.ms \" Inflation
+.so data/H1.ms \" Inflation
 .
 .APPENDIX "Cumulative Dry Matter"
-.so I1.ms \" Cumulative dry matter
+.so data/I1.ms \" Cumulative dry matter
 .
 .APPENDIX "Repair & Maintenance"
-.so J1.ms \" Repair and maintenance
+.so data/J1.ms \" Repair and maintenance
 .
 .APPENDIX "Self Assessment Tax"
-.so K1.ms \" Self assessment Tax
+.so data/K1.ms \" Self assessment Tax
 .
 .APPENDIX "References"
-.so R1.ms \" References
+.so data/R1.ms \" References
 .nr appendix 0
 .\" .af .pn i
 .
 .TC
-.\" .so Z1.ms \" Table of contents
 
