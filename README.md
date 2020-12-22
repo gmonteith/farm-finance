@@ -66,7 +66,8 @@ File name | Description
 `macro/equation.tmac` | Equation definitions
 `macro/equation.tmac` | Pic definitions
 `master.ms` | File to produce complete document
-`master-limited.ms` | File that can edited file to output specifice chapters/files
+`master-wip.ms` | File that can be edited to output specific chapters/files
+`log.txt` | Recovered log file from corrupted repository
 `README.md` | This file
 
 ---
