@@ -118,12 +118,12 @@ length the pdftk command has to be rewritten. I have been meaning to work on a
 better solution using pdfmark which would also improve the usability of the pdf
 document, however, I am currently short of time.
 
-'groffer' will not be supported in the next release of groff, version 1.23.0,
+`groffer` will not be supported in the next release of groff, version 1.23.0,
 so this particular method of outputting the pdf will stop working in the
-future. 'groffer' is a wrapper around groff and the entire pdf can be created,
+future. `groffer` is a wrapper around groff and the entire pdf can be created,
 with the table of contents at the end, using the following groff command:
 
-'groff -Tpdf -s -t -e -p -G -R -ms master.ms > farm-finance.pdf'
+`groff -Tpdf -s -t -e -p -G -R -ms master.ms > farm-finance.pdf`
 
 ---
 
@@ -156,7 +156,7 @@ individual chapters/appendices.
 You could of course source these files in each individual chapter but that
 would require more maintenace.
 
-Again, 'groffer' will not be supported with the next release of groff so I may
+Again, `groffer` will not be supported with the next release of groff so I may
 write a script and do away with the 'master-limited.ms' file. 
 
 A separate window can be used to open the pdf which will automatically refresh
