@@ -1,4 +1,6 @@
-
+.\" .EQ
+.\" set medium_space 50
+.\" .EN
 .\" This is used in Section 4 for instance to line up the series equations. It
 .\" is also used in other places to line up equations that are very long.
 .EQ
@@ -45,17 +47,17 @@ define ncctfaia2 #
 
 define pvucc #
 UCC left ( dt over {  i + d  } right )
-times 1 over { ( 1 + i ) sup { n -1 } }
+times ~~ 1 over { ( 1 + i ) sup { n -1 } }
 #
 
 define pvs #
 S ~ left ( dt over {  i + d  } right )
-times 1 over { ( 1 + i ) sup n }
+times ~~ 1 over { ( 1 + i ) sup n }
 #
 
 define pvs2 #
 S ~ left ( dt over {  i + d  } right )
-times 1 over { ( 1 + i ) sup { n + 1 } }
+times ~~ 1 over { ( 1 + i ) sup { n + 1 } }
 #
 
 define balc # 
@@ -113,7 +115,7 @@ over {  ( i + d ) ( 1 + i )  }
 
 define pvucc2 #
 UCC ~ left ( dt over {  ( i + d ) ( 1 + i )  } right )
-times 1 over { ( 1 + i ) sup { n -1 } }
+times ~~ 1 over { ( 1 + i ) sup { n -1 } }
 #
 
 define balc2 # 
@@ -204,17 +206,17 @@ define cctf #
 #
 
 define ncctf #{
-1 - { { $1 times $2 }  over {  $3 + $1  } }
+1 - { { $1 times ~~ $2 }  over {  $3 + $1  } }
 }#
 
 define ncctf2 #{
-1 - { $1 times $2 }
+1 - { $1 times ~~ $2 }
 over {  ( $3 + $1 ) ( 1 + $3 )  } 
 }#
 
 define npvs #{
-$1 ~ left ( { $2 times $3 } over {  $4 + $2  } right )
-times 1 over { ( 1 + $4 ) sup $5 }
+$1 ~ left ( { $2 times ~~ $3 } over {  $4 + $2  } right )
+times ~~ 1 over { ( 1 + $4 ) sup $5 }
 }#
 
 define nbalc2 #{ 
@@ -226,8 +228,8 @@ define nucc #{
 }#
 
 define npvucc #{
-~ left ( { $1 times $2 } over {  $3 + $1  } right )
-times 1 over { ( 1 + $3 ) sup { $4 - 1 } }
+~ left ( { $1 times ~~ $2 } over {  $3 + $1  } right )
+times ~~ 1 over { ( 1 + $3 ) sup { $4 - 1 } }
 }#
 
 define nbalc #{ 
@@ -239,8 +241,8 @@ $1 over { ( 1 + $2 ) sup $3 }
 }#
 
 define npvucc2 #
-left ( { $1 times $2 }  over {  ( $3 + $1 ) ( 1 + $3 )  } right )
-times 1 over { ( 1 + $3 ) sup { $4 -1 } }
+left ( { $1 times ~~ $2 }  over {  ( $3 + $1 ) ( 1 + $3 )  } right )
+times ~~ 1 over { ( 1 + $3 ) sup { $4 -1 } }
 #
 .EN
 
