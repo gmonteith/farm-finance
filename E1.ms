@@ -1701,12 +1701,12 @@ efficiently implemented.
 .KS
 It can be argued that for the actions of management to affect the value they
 must achieve one of the following:
-.IP -
+.IP \(bu 3
 Increase the cash flow from existing assets.
-.IP -
+.IP \(bu 3
 Increase the growth rate during the excess return phase.
-.IP -
+.IP \(bu 3
 Lengthen the period of excess returns.
-.IP -
-Reduce the discount rate.
+.IP \(bu 3
+Reduce the discount rate. \[*D]
 .KE
