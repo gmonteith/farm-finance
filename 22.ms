@@ -1,9 +1,9 @@
 .
 We have established that the NPV is the best measure of the value of a business
 proposition. However, when the NPV is established we are gazing into the future
-and making projects about the range of outcomes from a sequence of actions. If
-the project is accepted the measurement of the success of the project is done
-by looking at past figures be they monthly, quarterly or yearly figures.
+and making projections about the range of outcomes from a sequence of actions.
+If the project is accepted the measurement of the success of the project is
+done by looking at past figures be they monthly, quarterly or yearly figures.
 Traditionally this has been done by looking at profit figures. However, there
 are some problems with the profit figures.
 .
@@ -13,7 +13,8 @@ The accountants profit figure results from the attempt to match costs against
 revenue. This process involves allocating costs of assets, for instance
 depreciation, over their estimated useful life. It is important to emphasis
 that conventional income determination by the matching process does not, nor do
-accountant purport it to, measure changes in the value of a company.
+accountants purport it to, measure changes in the value of a company and hence
+the wealth created.
 .IP \(bu
 Profit figures ignore the cost of equity capital. Companies only generate
 wealth when they generate a return greater than the cost of all capital
@@ -28,7 +29,7 @@ Loss and the Statement of Financial Position as the Balance Sheet.
 Earnings may be calculated using alternative but equally acceptable accounting
 methods: LIFO vs FIFO accounting for inventory, various methods of accounting
 for depreciation, capitalising of expenses such as R&D and accounting for
-acquisitions to name a few.
+	acquisitions to name a few.
 .IP \(bu
 Accounting allocations often differ among companies and for a particular
 company over time. In any event these allocations (LIFO vs FIFO, straight line
