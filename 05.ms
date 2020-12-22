@@ -14,7 +14,7 @@ so it is a type of ordinary annuity.
 We will start from a point that we know, the factored form of an ordinary
 annuity which is shown below is:
 .EQ I
-PMT times left [  1  over { (1 + i) sup 1 } 
+PMT times ~^ left [  1  over { (1 + i) sup 1 } 
 + 1  over { (1 + i) sup 2 } 
 + 1  over { (1 + i) sup 3 } 
 + 1  over { (1 + i) sup 4 } 
@@ -24,7 +24,7 @@ PMT times left [  1  over { (1 + i) sup 1 }
 The growing annuity differs only in that there is a constant rate of growth,
 represented by # 1 + g # which starts at the second cash flow.
 .EQ I
-PMT times left [  
+PMT times ~^ left [  
 1  over { (1 + i) sup 1 } 
 + { 1( 1 + g) } over { (1 + i) sup 2 } 
 + { 1( 1 + g) sup 2 }  over { (1 + i) sup 3 } 
@@ -52,29 +52,29 @@ the present value of the annuity.
 .
 .EQ I
 PV sub ga lm
-PMT times { a(1 - r sup n ) } over { ( 1 - r ) } 
+PMT times ~^ { a(1 - r sup n ) } over { ( 1 - r ) } 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-PMT times left { { 1 over {  1 + i  }  left [ 1 - left ( { 1 + g } 
+PMT times ~^ left { { 1 over {  1 + i  }  left [ 1 - left ( { 1 + g } 
 over {  1 + i } right ) sup n right ] } 
 over { 1 - { 1 + g } over {  1 + i } } right } 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-PMT times left { { 1 over {  1 + i  }  left [ 1 - left ( { 1 + g } 
+PMT times ~^ left { { 1 over {  1 + i  }  left [ 1 - left ( { 1 + g } 
 over {  1 + i } right ) sup n right ] } 
 over {   {  i - g  }  over {  1 + i  }  } right } 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-PMT times  { {  1 + i  } over {  i - g  } }
-times 
+PMT times ~^  { {  1 + i  } over {  i - g  } }
+times ~^ 
 {  1 over { 1 + i  } 
-times
+times ~^
 left [ 1 - left ( { 1 + g } 
 over { 1 + i } right ) sup n right ] } 
 .EN
@@ -192,11 +192,11 @@ left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]
 .EN
 As the payment grows with each compounding period the PMT in any given period
 can be calculated as the cash flow diagram shows by using the following
-equation: # PMT times ( 1 + g ) sup n-1 #
+equation: # PMT times ~^ ( 1 + g ) sup n-1 #
 .LP
 Therefore the payment in period 8 would be:
 .EQ I
-PMT sup 8 =~~ 3,000 times (1.05) sup 7 =~~ \[Po]4,221.30
+PMT sup 8 =~~ 3,000 times ~^ (1.05) sup 7 =~~ \[Po]4,221.30
 .EN
 .
 .XXXX 0 2 "n given a PV"
@@ -255,7 +255,7 @@ We can now establish the equation for the future value of a growing annuity.
 .EQ I
 FV sub ga lm  PMT over { i - g } 
 left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
-times
+times ~^
 (1 + i) sup n
 .EN
 .sp -0.6v
@@ -265,7 +265,7 @@ PMT over { i - g }
 left [  
 { (1 + i ) sup n  - ( 1 + g ) sup n }  over { ( 1 + i )  sup n }
 right ]   
-times
+times ~^
 (1 + i) sup n
 .EN
 .sp -0.6v
@@ -385,7 +385,7 @@ over
 { i - g } 
 right ]   
 tf
-left ( PMT over FV right ) times left (  i - g right )
+left ( PMT over FV right ) times ~^ left (  i - g right )
 =~~
 (1 + i ) sup n  - ( 1 + g ) sup n
 .EN

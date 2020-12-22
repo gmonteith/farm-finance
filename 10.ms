@@ -22,13 +22,13 @@ computational effort. We have mentioned in a previous footnote in Chapter 3 the
 reciprocal and defined it as one divided by the number. If we take the simple
 division of # 10 over 2 # we know that it is #5#, however, we can change this
 into a simple multiplication by creating a reciprocal in which case the
-calculation would become # 10 times 1 over 2 =~~ 5 #. In reality this is
+calculation would become # 10 times ~^ 1 over 2 =~~ 5 #. In reality this is
 fractions at work, to divide one fraction by another you multiply by the
 reciprocal of the divisor. Therefore the example of # 10 over 2 # will result
 in a reciprocal even if it is not explicit # { 10 over 1 } over { 2 over 1 }
-=~~ 10 over 1 times 1 over 2 =~~ 5 #. The real problem is that if you use only
+=~~ 10 over 1 times ~^ 1 over 2 =~~ 5 #. The real problem is that if you use only
 decimals it is far harder to see the relationship between #10 \[di] 2 # and #
-10 times 0.5 #.
+10 times ~^ 0.5 #.
 .FE
 .LP
 The other difference is that there is a particular nomenclature used with
@@ -383,7 +383,7 @@ A =~~ P(i) over left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
 .EN
 Firstly we are going to remove the #P# from the numerator:
 .EQ I
-A =~~ P times i over left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
+A =~~ P times ~^ i over left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
 .EN
 Next we are going to transform the denominator or the equation:
 .EQ I
@@ -400,7 +400,7 @@ multiplication by the reciprocal of the divisior:
 i over left [ { { ( 1 + i ) sup n - 1 } over { ( 1 + i ) sup n  } } right ]
 =~~
 i over 1 
-times
+times ~^
 { ( 1 + i ) sup n  }
 over
 { ( 1 + i ) sup n - 1 }
@@ -514,10 +514,10 @@ focus on only the numerator of the fraction then:
 =~~
 1 -   { ( 1 + g ) sup n  } over { ( 1 + i ) sup n } 
 =~~
-1 -  left (  { ( 1 + g ) sup n  } over 1 times 1
+1 -  left (  { ( 1 + g ) sup n  } over 1 times ~^ 1
 over  { ( 1 + i ) sup n } right )
 =~~
-1 -  left (  { ( 1 + g ) sup n  } over 1 times ( 1 + i ) sup -n  right )
+1 -  left (  { ( 1 + g ) sup n  } over 1 times ~^ ( 1 + i ) sup -n  right )
 =~~
 1 -  left (  ( 1 + g ) sup n ( 1 + i ) sup -n  right )
 .EN
@@ -726,11 +726,11 @@ fully understood. We have three cash flows:
 .EQ I
 CF sub 1
 =~~
-13 times (1 + g ) sup 0
+13 times ~^ (1 + g ) sup 0
 =~~
-13 times (1 + 0.1 ) sup 0
+13 times ~^ (1 + 0.1 ) sup 0
 =~~
-13 times 1 
+13 times ~^ 1 
 =~~
 13.00
 .EN
@@ -738,11 +738,11 @@ CF sub 1
 .EQ I
 CF sub 2
 =~~
-13 times (1 + g ) sup 1
+13 times ~^ (1 + g ) sup 1
 =~~ 
 3(1 + 0.1) sup 1
 =~~ 
-13 times 1.1
+13 times ~^ 1.1
 =~~
 14.30
 .EN
@@ -750,11 +750,11 @@ CF sub 2
 .EQ I
 CF sub 3
 =~~
-13 times (1 + g ) sup 2
+13 times ~^ (1 + g ) sup 2
 =~~ 
 13(1 + 0.1) sup 2
 =~~ 
-13 times 1.21
+13 times ~^ 1.21
 =~~
 15.73
 .EN
@@ -1044,7 +1044,7 @@ An annuity of 50, which we already know how to calculate.
 The gradient "G" of 25 which increase a the rate of #n -1# each year, where #n#
 represents the years in this instance or the compounding periods in more general
 terms. Year 3 has a cash flow of 100, this is made up of an annuity component
-of 50 and #n -1 times 25# representing the gradient in this instance # 2 times
+of 50 and #n -1 times ~^ 25# representing the gradient in this instance # 2 times ~^
 25 =~~ 50#.
 .LP
 We will now redraw the cash flow diagram:
@@ -1135,9 +1135,9 @@ Which can then be expressed as:
 P lineup =~~
 left [
 25 over { (1 + i ) sup 2 }
-+ { 2 times 25 }  over { (1 + i ) sup 3 }
-+ { 3 times 25 }  over { (1 + i ) sup 4 }
-+ { 4 times 25 }  over { (1 + i ) sup 5 }
++ { 2 times ~^ 25 }  over { (1 + i ) sup 3 }
++ { 3 times ~^ 25 }  over { (1 + i ) sup 4 }
++ { 4 times ~^ 25 }  over { (1 + i ) sup 5 }
 right ]
 .EN
 We can now factor the 25 out of the bracket:
@@ -1670,7 +1670,7 @@ of equivalence learnt in Chapter 2, and the formula we have previously derived
 in the last section (12) for the present value of an arithmetic series, with
 the capital recovery factor from section 6 in this chapter. 
 .EQ I
-A lm (P/G, i%, n) times (A/P, i%, n)
+A lm (P/G, i%, n) times ~^ (A/P, i%, n)
 .EN
 .sp -0.6v
 .EQ I
@@ -1681,7 +1681,7 @@ left [
 -
 n over { i (1 + i ) sup n }
 right ]
-times
+times ~^
 left [ { i( 1 + i ) sup n  } over {  (1 + i ) sup n -1  } right ]
 .EN
 The next step is to distribute the capital recovery factor (A/P, i%, n) through
@@ -1807,7 +1807,7 @@ of equivalence, to combine the formula we have previously derived for the
 present value of an arithmetic series from section 12, with the single payment
 compound amount from section 1. 
 .EQ I
-F lm (P/G, i%, n) times (F/P, i%, n)
+F lm (P/G, i%, n) times ~^ (F/P, i%, n)
 .EN
 .sp -0.6v
 .EQ I
@@ -1818,7 +1818,7 @@ left [
 -
 n over { i (1 + i ) sup n }
 right ]
-times
+times ~^
 (1 + i ) sup n ~
 .EN
 The next step is to distribute the #( 1 + i ) sup n# through the equation:

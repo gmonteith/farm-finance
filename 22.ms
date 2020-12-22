@@ -369,7 +369,7 @@ accounting distortions.
 .LP
 EVA is usually stated as:
 .EQ
-NOPAT - ( "Invested Capital" times WACC )
+NOPAT - ( "Invested Capital" times ~^ WACC )
 .EN
 .
 .XXXX 0 3 "Accounting Adjustments"
@@ -453,10 +453,10 @@ NOPAT = Profit after tax - after-tax non-operating gains + after-tax
 non-operating losses + after-tax interest expense 
 .LP
 .EQ
-"After tax non-operating gains" = 7,000 times ( 1 - 0.2 ) = 5,600
+"After tax non-operating gains" = 7,000 times ~^ ( 1 - 0.2 ) = 5,600
 .EN
 .EQ
-"After tax interest expense" = 5,632 times ( 1 - 0.2 ) = 4,506
+"After tax interest expense" = 5,632 times ~^ ( 1 - 0.2 ) = 4,506
 .EN
 .
 .TS
@@ -492,10 +492,10 @@ NOPAT can be calculated by adding back the tax on the 7,000 of "other income",
 as it is not operating income, and removing the tax benefit on the interest of
 5,632.
 .EQ
-"Tax on other income" = 7,000 times 0.2 = 1,400
+"Tax on other income" = 7,000 times ~^ 0.2 = 1,400
 .EN
 .EQ
-"Tax benefit of interest" = 5,632 times 0.2 = 1,126
+"Tax benefit of interest" = 5,632 times ~^ 0.2 = 1,126
 .EN
 .
 .TS
@@ -512,9 +512,9 @@ NOPAT#26,200
 .LP
 The rough calculation for NOPAT is:
 .EQ
-"Operating profit" times ( 1 - "tax rate")
+"Operating profit" times ~^ ( 1 - "tax rate")
 .EN
-In this instance #32,750 times 0.8 = 26,200#. However, whether this is
+In this instance #32,750 times ~^ 0.8 = 26,200#. However, whether this is
 right or not will depend on the adjustments that have to be made to the
 financial statements.
 .
@@ -728,34 +728,34 @@ us the following costs for the liabilities:
 The calculation for the WACC is as follows:
 .EQ
 WACC lm left [ {left ( Equity over "Invested Capital" right )}
-times
+times ~^
 "Return on Equity" right ] 
 ~+~
 left [ {left ( Debt over "Invested Capital" right ) }
-times
-"Return on Debt" times (1 - "Tax Rate") right ]
+times ~^
+"Return on Debt" times ~^ (1 - "Tax Rate") right ]
 .EN
 .
 .EQ
 lineup =~~
 left [ {left ( 109,741 over 179,185 right )}
-times
+times ~^
 18 right ] 
 ~+~
 left [ {left ( 40,000 over 179,185 right ) }
-times
-8 times (1 - 0.2) right ]
+times ~^
+8 times ~^ (1 - 0.2) right ]
 ~+~
 left [ {left ( 29,444 over 179,185 right ) }
-times
-12 times (1 - 0.2) right ]
+times ~^
+12 times ~^ (1 - 0.2) right ]
 .EN
 .
 .EQ
 lineup =~~
-[ 0.62 times 18 ]
-~+~ [ 0.22 times 8 times ( 1 - 0.2 ) ]
-~+~ [ 0.16 times 12 times ( 1 - 0.2 ) ]
+[ 0.62 times ~^ 18 ]
+~+~ [ 0.22 times ~^ 8 times ~^ ( 1 - 0.2 ) ]
+~+~ [ 0.16 times ~^ 12 times ~^ ( 1 - 0.2 ) ]
 .EN
 .sp -0.7v
 .EQ
@@ -772,12 +772,12 @@ lineup =~~
 .LP
 EVA is usually stated as:
 .EQ
-EVA lm NOPAT - ( "Invested Capital" times WACC )
+EVA lm NOPAT - ( "Invested Capital" times ~^ WACC )
 .EN
 .sp -0.7v
 .EQ
 lineup =~~
-26,200 - ( 179,185 times 14.11% )
+26,200 - ( 179,185 times ~^ 14.11% )
 .EN
 .sp -0.7v
 .EQ
@@ -813,7 +813,7 @@ The positive or negative return on invested capital can be converted back to an
 absolute value, which is the EVA, by multiplying the invested capital by the
 difference between the ROIC and the WACC, the excess return.
 .EQ
-"Excess return" times "Invested Capital" = 179,185 times 0.51% = 914
+"Excess return" times ~^ "Invested Capital" = 179,185 times ~^ 0.51% = 914
 .EN
 .
 .sp 
@@ -845,17 +845,17 @@ lineup =~~
 We can now establish the weighted average cost of this debt:
 .EQ
 "Weighted average cost of debt" lineup =~~
-40,000 over 69,444 times 0.08
+40,000 over 69,444 times ~^ 0.08
 +
 29,444
-over 69,444 times 0.12
+over 69,444 times ~^ 0.12
 .EN
 .sp -0.7v
 .EQ
 lineup =~~
-0.576 times 0.08 
+0.576 times ~^ 0.08 
 +
-0.4239 times 0.12
+0.4239 times ~^ 0.12
 .EN
 .sp -0.7v
 .EQ
@@ -871,9 +871,9 @@ ROIC lineup =~~  WACC
 Break down WACC into the individual components:
 .EQ
 RONIC% lineup =~~
-left [ (% debt) times ("cost of debt") times ( 1 - "tax rate"%) right ]
+left [ (% debt) times ~^ ("cost of debt") times ~^ ( 1 - "tax rate"%) right ]
 +
-left [ ( 1 - % debt) times ( "cost of equity" ) right ]
+left [ ( 1 - % debt) times ~^ ( "cost of equity" ) right ]
 .EN
 Use symbols to replace the words using the ledger below:
 .sp 0.5

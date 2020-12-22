@@ -11,7 +11,7 @@ due by multiplying by # (1 + i ) #. This same logic can be used to convert a
 growing ordinary annuity into a growing annuity due.
 .EQ I
 PV sub gad lm
-PV sub ga times ( 1 + i ) 
+PV sub ga times ~^ ( 1 + i ) 
 .EN
 .sp -0.6v
 .EQ I
@@ -188,7 +188,7 @@ The difference between the FV of an growing ordinary annuity and that of a
 growing annuity due is again the addition of the factor # ( 1 + i ) #. 
 .EQ I
 FV sub gad lm
-FV sub ga times ( 1 + i ) 
+FV sub ga times ~^ ( 1 + i ) 
 .EN
 .sp -0.6v
 .EQ I

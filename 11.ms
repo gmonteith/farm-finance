@@ -124,7 +124,7 @@ left [
 left ( ER + 1 right ) sup {1 over f} 
 right ] -1 
 right ) 
-times
+times ~^
 f
 .EN
 .KE
@@ -138,7 +138,7 @@ left [
 left ( "Effective Rate" + 1 right ) sup {1 over frequency} 
 right ] -1 
 right ) 
-times
+times ~^
 Frequency
 .EN
 .sp -0.6v
@@ -149,7 +149,7 @@ left [
 left ( ER + 1 right ) sup {1 over f} 
 right ] -1 
 right ) 
-times
+times ~^
 f
 .EN
 .sp -0.6v
@@ -160,7 +160,7 @@ left [
 left ( { 6.33 over 100}  + 1 right ) sup {1 over 12} 
 right ] -1 
 right ) 
-times
+times ~^
 12
 .EN
 .sp -0.6v
@@ -182,7 +182,7 @@ becomes:
 FV
 =~~
 PV
-times
+times ~^
 left [ left ( 1 + { "Nominal Rate" over "Frequency" } right ) sup frequency right ] sup " number of years"
 .EN
 Or using the symbols:
@@ -190,7 +190,7 @@ Or using the symbols:
 FV
 =~~
 PV
-times
+times ~^
 left [ left ( 1 + { NR over f } right ) sup f right ] sup n
 .EN
 We are going to examine the part of the equation that involves the compounding

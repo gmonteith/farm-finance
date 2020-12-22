@@ -490,7 +490,7 @@ _
 @outstanding at@@@@on beginning@outstanding
 @beginning of@Total@Capital@Cost of@of year@at end
 Year@year@cash flow@recovery@capital@investment@of year
-@@@#C - E#@#B times F#@@#B - D#
+@@@#C - E#@#B times ~^ F#@@#B - D#
 _
 .T&
 n n n n n n n .
@@ -540,7 +540,7 @@ _
 @oustanding at@@@@on beginning@outstanding
 @beginning of@Total@Capital@Cost of@of year@at end
 Year@year@cash flow@recovery@capital@investment@of year
-@@@#C - E#@#B times F#@@#B - D#
+@@@#C - E#@#B times ~^ F#@@#B - D#
 _
 .T&
 n n n n n n n .
@@ -603,7 +603,7 @@ _
 @beginning of@Total@Capital@Cost of@of year@at end@cost of
 Year@year@cash flow@recovery@capital@investment@of year@capital
 _
-@@@#C - E#@#B times F#@@#B - D#@#C - (D + E)#
+@@@#C - E#@#B times ~^ F#@@#B - D#@#C - (D + E)#
 _
 .T&
 n n n n n n n n.
@@ -1053,7 +1053,7 @@ PV(1 + "reinvestment rate") sup 7
 .sp -0.6v
 .EQ I
 lineup =~~
-672 times (1 + 8/100) sup 7
+672 times ~^ (1 + 8/100) sup 7
 .EN
 .sp -0.6v
 .EQ I
@@ -1334,7 +1334,7 @@ PV(1 + "reinvestment rate") sup 7
 .sp -0.6v
 .EQ I
 lineup =~~
-473 times (1 + 29/100) sup 7
+473 times ~^ (1 + 29/100) sup 7
 .EN
 .sp -0.6v
 .EQ I

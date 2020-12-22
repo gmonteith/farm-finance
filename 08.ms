@@ -19,11 +19,11 @@ to today at 10%.
 .EQ I
 PV =~~ FV over { ( 1 + i ) sup n }
 tf
-PV =~~ FV times 1 over { ( 1 + i ) sup n }
+PV =~~ FV times ~^ 1 over { ( 1 + i ) sup n }
 tf
-100 times 1 over { ( 1.10 ) sup 100 }
+100 times ~^ 1 over { ( 1.10 ) sup 100 }
 tf
-100 times 0.000073
+100 times ~^ 0.000073
 =~~
 \[Po]0.01
 .EN
@@ -100,7 +100,7 @@ PV =~~ PMT over i
 ~~~~~~~~~~ 
 i =~~ PMT over PV 
 ~~~~~~~~~~ 
-PMT =~~ PV times i 
+PMT =~~ PV times ~^ i 
 .EN
 .XXXX \\n(cn 1 "Sum to infinity"
 .LP
@@ -135,12 +135,12 @@ a over { ( 1 - r ) }  - { ar sup n } over { ( 1 - r ) }
 .sp -0.6v
 .EQ I
 lineup =~~
-a over { ( 1 - r ) }  - left [ a times  { r sup n } over { ( 1 - r ) } right ]
+a over { ( 1 - r ) }  - left [ a times ~^  { r sup n } over { ( 1 - r ) } right ]
 .EN
 We now have the equation showing a left hand side and a right hand side
 separated by a negative sign:
 .EQ I
-a over { ( 1 - r ) }  - left [ a times  { r sup n } over { ( 1 - r ) } right ]
+a over { ( 1 - r ) }  - left [ a times ~^  { r sup n } over { ( 1 - r ) } right ]
 .EN
 If #r# is between #+1# and #-1# then #r sup n# diminishes as #n# increases.
 .EQ I
@@ -152,7 +152,7 @@ r sup n
 ~~->~~
 0
 ~~ "and" ~~
-left [ a times  { r sup n } over { ( 1 - r ) } right ]
+left [ a times ~^  { r sup n } over { ( 1 - r ) } right ]
 ~~->~~
 0
 .EN
@@ -200,8 +200,8 @@ comes to rest?
 .LP
 10 meters is the initial starting point. However, it only comes this distance
 once, so it is not part of the series. #a# is the start of the series and is
-represented by # 10 times 0.9 #, however the ball strikes the ground and
-bounces up and falls back before it bounces again, so # a =~~ 2(10 times 0.9)
+represented by # 10 times ~^ 0.9 #, however the ball strikes the ground and
+bounces up and falls back before it bounces again, so # a =~~ 2(10 times ~^ 0.9)
 #.  #r# is represented by #0.9#.
 .PS
 circle radius 0.1
@@ -218,7 +218,7 @@ arrow  dashed up 0.9 right 0.1 from last arrow.e
 circle radius 0.1 with .s at end of last arrow
 move down 0.1
 line dotted right 1
-box invis ht 0.3 wid 0.6 "#10m times 0.9#" 
+box invis ht 0.3 wid 0.6 "#10m times ~^ 0.9#" 
 arrow dashed down 0.9 right 0.1 from last circle.s
 circle radius 0.1 with .n at last arrow.s
 arrow dashed up 0.81 right 0.1 from last arrow.e
@@ -230,7 +230,7 @@ arrow dashed down 0.72 right 0.1 from end of last arrow
 .EQ I
 S sub \[if] =~~ a over { 1 -r }
 =~~
-10 + { { 2(10 times 0.9) }  over { 1 - 0.9 } } 
+10 + { { 2(10 times ~^ 0.9) }  over { 1 - 0.9 } } 
 =~~
 190 ^ m
 .EN
@@ -239,13 +239,13 @@ in Chapter 7. The yearly output of the silver mine is found to be decreasing by
 25% of its previous years output. What is the expected total output out the
 mine if the current output is \[Po]25M?
 .LP
-The value of #a =~~ 25M times 0.75#. It is important to remember that to make
+The value of #a =~~ 25M times ~^ 0.75#. It is important to remember that to make
 something smaller you do not have to always subtract another value, you can
 simply multiply by a factor less than 1. #r# is equal to #0.75#
 .EQ I
 S sub \[if] =~~ a over { 1 -r }
 =~~
-{ 25M times 0.75 }  over { 1 - 0.75 }
+{ 25M times ~^ 0.75 }  over { 1 - 0.75 }
 =~~
 \[Po]75 ^ M
 .EN

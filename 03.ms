@@ -148,12 +148,12 @@ The original series:
 .EN
 The original series multiplied by -1 to make the numbers negative.  
 .EQ I
--1 times (2 + 4 + 8 + 16) ~=~~ -2 -4 -8 -16 
+-1 times ~^ (2 + 4 + 8 + 16) ~=~~ -2 -4 -8 -16 
 .EN
 The original series multiplied by the common ratio, which is easily identified
 as 2 in this instance:
 .EQ C
-2 times (2 + 4 + 8 + 16) ~=~~ 4 + 8 + 16 + 32
+2 times ~^ (2 + 4 + 8 + 16) ~=~~ 4 + 8 + 16 + 32
 .EN
 If we place the series of numbers above each other, it is easy to see that the
 positive and negative numbers cancel each other out leaving only the first term
@@ -195,7 +195,7 @@ The general form of a geometric series:
 a = first term, r = common ratio and then the series follows as, 
 #a ~~ ar sup 1 ~~ ar sup 2 ~~ ar sup 3# 
 in this instance, 
-#2 ~~ 2 times 2  sup 1  ~~2 times 2  sup 2  ~~2 times 2  sup 3#
+#2 ~~ 2 times ~^ 2  sup 1  ~~2 times ~^ 2  sup 2  ~~2 times ~^ 2  sup 3#
 and as numbers, #2, 4, 8, 16 #.
 .LP
 From the information above we can start to work on a general form for an
@@ -210,7 +210,7 @@ is one less than the number of the term.
 .LP
 If n = any term then #n sup th# term = # ar sup { n - 1}#
 The forth term in our series, which is also the final term is 
-# ar sup { n - 1} =~~ 2 times 2 sup { 4 -1 =~~ 3 } =~~ 16 #
+# ar sup { n - 1} =~~ 2 times ~^ 2 sup { 4 -1 =~~ 3 } =~~ 16 #
 .LP
 The next step is to multiply both sides by the common ratio r:
 .EQ I (eq.2)
@@ -333,16 +333,16 @@ Factoring is simply the distributive law in reverse.
 .EN
 .sp -0.6v
 .EQ 
-(2 times 5) + ( 3 times 5) + (2 sup 2 times 5) lineup =~~ 45  
+(2 times ~^ 5) + ( 3 times ~^ 5) + (2 sup 2 times ~^ 5) lineup =~~ 45  
 .EN
 .sp -0.6v
 .EQ 
-5(2 + 3 + 2 sup 2 ) =~~ 5 times 9 lineup =~~ 45
+5(2 + 3 + 2 sup 2 ) =~~ 5 times ~^ 9 lineup =~~ 45
 .EN
 .LP
 The factored form of the series in our example is as follows:
 .EQ I
-12,000 times left [ 
+12,000 times ~^ left [ 
 { 1  over (1.08) sup 1 } 
 + { 1  over (1.08) sup 2 }
 +  { 1  over (1.08) sup 3 }
@@ -366,12 +366,12 @@ r =~~ 1  over (1.08)
 The equation for the sum of a geometric series can now be used to establish
 the present value of the annuity.
 .EQ I
-PV lm 12,000 times {  a(1 - r sup 5 ) } over { ( 1 - r ) }
+PV lm 12,000 times ~^ {  a(1 - r sup 5 ) } over { ( 1 - r ) }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-12,000 times 
+12,000 times ~^ 
 left { 
 { 1 over 1.08 left [ 1 - { left ( 1 over 1.08 right ) sup 5 } right ] } 
 over 
@@ -381,7 +381,7 @@ right }
 .sp -0.6v
 .EQ I
 lineup =~~
-12,000 times 
+12,000 times ~^ 
 left { { 1 over 1.08 left [ 1 - { left ( 1 over 1.08 right ) sup 5 } right ] } 
 over { 0.08 over 1.08 \(dd } right } 
 .EN
@@ -395,14 +395,14 @@ made up entirely of the required common denominator. Therefore,  # { 1 - 1 over
 .FE
 .EQ I
 lineup =~~
-12,000 times 
-{ 1.08 over 0.08 times 1 over 1.08 
+12,000 times ~^ 
+{ 1.08 over 0.08 times ~^ 1 over 1.08 
 left [ 1 - { left ( 1 over 1.08 right ) sup 5 } right ] } 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-12,000 times 
+12,000 times ~^ 
 { 1 over 0.08 left [ 1 - { left ( 1 over 1.08 right ) sup 5 } right ] } 
 .EN
 .sp -0.6v
@@ -497,7 +497,7 @@ PMT =~~ PV(i) over left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
 Note:
 .IP \(bu 3
 It is important to realise that the PMT times the number of compound periods
-should be greater than the PV. In this instance # 12,000 times 5 = \[Po]60,000
+should be greater than the PV. In this instance # 12,000 times ~^ 5 = \[Po]60,000
 #, you have borrowed money and must pay it back with the interest.
 .IP \(bu 3
 The interest is obviously the total of the payments less the present value. 
@@ -562,7 +562,7 @@ becomes, using exponents, # 1 over { ( 1 + i ) sup -n } =~~ { ( 1 + i ) sup 0
 sup n #. To clarify an example can be completed without exponents and with
 simple numbers. We will remove the reciprocal from 1/2 using the same technique
 of putting the 1/2 under 1 giving #1 over 2 =~~ { 1 over 1 } over { 2 } =~~ { 1
-over 1 } over { 1 over 2 } =~~ 1 over 1 times 2 over 1 =~~ 2#. The point is
+over 1 } over { 1 over 2 } =~~ 1 over 1 times ~^ 2 over 1 =~~ 2#. The point is
 that whatever was under 1 will end up unchanged but the 1 will be eliminated.
 .FE
 .sp -0.6v
@@ -693,14 +693,14 @@ diagram shows this last payment is not subject to any compounding. There is no
 compounding because the payment is made at the end of the month at the same
 time as the future values is ascertained so there is no time for the
 compounding to occur. This cash flow is represented by #150 (1 + i ) sup 0#
-remember that #(1 + i) sup 0 =~~ 1# therefore #150 times 1 =~~ 150#.
+remember that #(1 + i) sup 0 =~~ 1# therefore #150 times ~^ 1 =~~ 150#.
 .LP
 The series has been reorganised from smallest to largest value for factoring as
 the common ratio is required to be greater than one as the series is
 compounding. Remember that # 150 (1 + i) sup 0 =~~ 1 #. The factored form of the
 series in our example is as follows:
 .EQ I
-150 times left [ 1 + ( 1 + i ) sup 1 + ( 1 + i ) sup 2 + ( 1 + i ) sup 3 
+150 times ~^ left [ 1 + ( 1 + i ) sup 1 + ( 1 + i ) sup 2 + ( 1 + i ) sup 3 
 ...~~... 
 + ( 1 + i ) sup 58 
 + ( 1 + i ) sup 59 right ]
@@ -726,7 +726,7 @@ S sub n =~~ {  a({ r sup n } -1  ) } over { ( r - 1 ) }
 .KS
 Therefore:
 .EQ I
-FV lm PMT times {  a({ r sup n } -1  ) } over { ( r - 1 ) } 
+FV lm PMT times ~^ {  a({ r sup n } -1  ) } over { ( r - 1 ) } 
 .EN
 .sp -0.6v
 .EQ I
@@ -765,7 +765,7 @@ The last payment of 150 has not been subject to any compounding. To clarify the
 point again, as payments are made at the end of the month, as the cash flow
 diagram shows, no interest is received on the last months payment. If the
 series lasted 2 compound periods the first month would be subject to one months
-compounding # 150 times 1.00583 =~~ 150.87 # the second month would not be
+compounding # 150 times ~^ 1.00583 =~~ 150.87 # the second month would not be
 subject to any compounding 150.00 and the total for the FV would be 300.87. You
 can check this with a financial calculator for your own interest.
 .IP \(bu 3
@@ -778,7 +778,7 @@ to months.
 .IP \(bu 3
 The future value must be greater than the payment times the number of periods
 as they are being compounded over time. In this instance the future value
-should be greater than #(150 times 60 =~~ 9,000)#, which it is.
+should be greater than #(150 times ~^ 60 =~~ 9,000)#, which it is.
 .
 .XXXX 0 2 "PMT given the FV"
 .LP

@@ -733,7 +733,7 @@ left [ { k sub f - k sub s } over r right ] + 1
 .
 .EQ I
 "Target store weight" ~~ k sub s =~~
-"Sale weight" - ( days - 1 ) times "rate of gain per day"
+"Sale weight" - ( days - 1 ) times ~^ "rate of gain per day"
 =~~ k sub f - ( d - 1 ) r
 .EN
 The formulas above can be combined with the formula for an arithmetic series to
@@ -745,27 +745,27 @@ been derived in Appendix N.
 The dry matter requirement of the lamb rises as at it gains body weight. The
 dry matter requirement on any given day can be expressed as:
 .EQ I
-DM sub d  lm ( "Store weight" + ( day times "growth rate") )
-times " % body weight"
+DM sub d  lm ( "Store weight" + ( day times ~^ "growth rate") )
+times ~^ " % body weight"
 .EN
 .sp -0.6v
 .EQ I
-lineup =~~ ( k sub s + (d -1) r ) times %bw
+lineup =~~ ( k sub s + (d -1) r ) times ~^ %bw
 .EN
 A lamb purchased with a 30 kg body weight and an expected growth rate of 0.15
 kg per day has the dry matter requirement below on day 1:
 .EQ I
-DM sub 1 lm ( k sub s + (d -1)r ) times %bw
+DM sub 1 lm ( k sub s + (d -1)r ) times ~^ %bw
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-(30 + (1 - 1)(0.15)) times 0.04
+(30 + (1 - 1)(0.15)) times ~^ 0.04
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-30 times 0.04
+30 times ~^ 0.04
 .EN
 .sp -0.6v
 .EQ I
@@ -776,16 +776,16 @@ lineup =~~
 The dry matter requirement of a lamb, at day 60, when purchased at a weight of
 30 kg with a growth rate of 0.15 kg per day will be:
 .EQ I
-DM sub 60 lm ( k sub s + (d - 1)r ) times %bw
+DM sub 60 lm ( k sub s + (d - 1)r ) times ~^ %bw
 .EN
 .sp -0.6v
 .EQ I
-lineup =~~ ( 30 + (60 -1)(0.15) ) times 0.04
+lineup =~~ ( 30 + (60 -1)(0.15) ) times ~^ 0.04
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-(30 + 8.85) times 0.04
+(30 + 8.85) times ~^ 0.04
 .EN
 .sp -0.6v
 .EQ I
@@ -1095,16 +1095,16 @@ leads to a low utilisation rate of 70%.
 We will use the figures from our example scenario. The stubble turnips have a
 fresh yield of 50,000 kg/ha, 13.5% DM and 80% utilisation.
 .EQ I
-DM sub ha lm "Fresh yield" times "DM% of fresh yield" times "Utilisation"
+DM sub ha lm "Fresh yield" times ~^ "DM% of fresh yield" times ~^ "Utilisation"
 .EN
 .sp -0.6v
 .EQ I
-lineup =~~ y sub f times y sub dm times u sub t
+lineup =~~ y sub f times ~^ y sub dm times ~^ u sub t
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-50,000 times 0.135 times 0.8
+50,000 times ~^ 0.135 times ~^ 0.8
 .EN
 .sp -0.6v
 .EQ I
@@ -1116,16 +1116,16 @@ lineup =~~
 .LP
 The figures for the hay are 85% DM and 70% utilisation.
 .EQ I
-DM sub t lm 1,000 times "DM%" times "Utilisation"
+DM sub t lm 1,000 times ~^ "DM%" times ~^ "Utilisation"
 .EN
 .sp -0.6v
 .EQ I
-lineup =~~ 1,000 times y sub dm times u sub t
+lineup =~~ 1,000 times ~^ y sub dm times ~^ u sub t
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-1,000 times 0.85 times 0.7
+1,000 times ~^ 0.85 times ~^ 0.7
 .EN
 .sp -0.6v
 .EQ I
@@ -1224,7 +1224,7 @@ lineup =~~
 177 ~"tonnes"
 .EN
 The utilisation for the hay is very low at 70% which implies that 30% is going
-to waste. In this instance that amounts to # 0.3 times 177# which equates to 53
+to waste. In this instance that amounts to # 0.3 times ~^ 177# which equates to 53
 tonnes. A troubling thought.
 .LP
 The individual requirement for hay can be calculated by setting the target
@@ -1266,8 +1266,8 @@ approximate number:
 .sp -0.6v
 .EQ I
 lineup =~~
-ha sub 3,000 times DM sub ha
-+ t sub 3,000 times 1,000 times y sub dm times u sub h
+ha sub 3,000 times ~^ DM sub ha
++ t sub 3,000 times ~^ 1,000 times ~^ y sub dm times ~^ u sub h
 .EN
 .sp -0.6v
 .EQ I
@@ -1293,38 +1293,38 @@ feel confident that the individual feed calculations are correct.
 The area required per day in #m sup 2# is given by the equation below:
 .EQ I
 m sub d sup 2  lm
-{ ("Store weight" +  (day - 1)  times "growth rate") times 10,000 times %Diet }
+{ ("Store weight" +  (day - 1)  times ~^ "growth rate") times ~^ 10,000 times ~^ %Diet }
 over 
-{ "Fresh yield kg/ha" times "DM% of fresh yield" times "Utilisation" }
+{ "Fresh yield kg/ha" times ~^ "DM% of fresh yield" times ~^ "Utilisation" }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ DM sub d times 10,000 times %Diet } 
+{ DM sub d times ~^ 10,000 times ~^ %Diet } 
 over
 { DM sub ha }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ ( k sub s + (d -1)r ) times %bw times 10,000 times %Diet} 
+{ ( k sub s + (d -1)r ) times ~^ %bw times ~^ 10,000 times ~^ %Diet} 
 over
-{ y sub f times y sub dm times u sub t }
+{ y sub f times ~^ y sub dm times ~^ u sub t }
 .EN
 What is the area requirement for a lamb on day 1 if it is purchased weighing
 30 kg using the criteria from the example scenario?
 .EQ I
 m sub 1 sup 2 lm
-{ ( k sub s + (d -1)r ) times %bw times 10,000 times %Diet} 
+{ ( k sub s + (d -1)r ) times ~^ %bw times ~^ 10,000 times ~^ %Diet} 
 over
-{ y sub f times y sub dm times u sub t }
+{ y sub f times ~^ y sub dm times ~^ u sub t }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ ( 30 + (1 -1)0.15 ) times 0.04 times 10,000 times 0.7} 
+{ ( 30 + (1 -1)0.15 ) times ~^ 0.04 times ~^ 10,000 times ~^ 0.7} 
 over
-{ 50,000 times 0.135 times 0.8 }
+{ 50,000 times ~^ 0.135 times ~^ 0.8 }
 .EN
 .sp -0.6v
 .EQ I
@@ -1341,16 +1341,16 @@ lineup =~~
 What is the area requirement at day 70?
 .EQ I
 m sub 70 sup 2 lm
-{ ( k sub s + (d -1)r ) times %bw times 10,000 times %Diet} 
+{ ( k sub s + (d -1)r ) times ~^ %bw times ~^ 10,000 times ~^ %Diet} 
 over
-{ y sub f times y sub dm times u sub t }
+{ y sub f times ~^ y sub dm times ~^ u sub t }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ ( 30 + (70 -1)0.15 ) times 0.04 times 10,000 times 0.7} 
+{ ( 30 + (70 -1)0.15 ) times ~^ 0.04 times ~^ 10,000 times ~^ 0.7} 
 over
-{ 50,000 times 0.135 times 0.8 }
+{ 50,000 times ~^ 0.135 times ~^ 0.8 }
 .EN
 .sp -0.6v
 .EQ I
@@ -1372,38 +1372,38 @@ quantity of lambs.
 The hay required per day in kilograms is given by the equation below:
 .EQ I
 kg sub d lm
-{ ("Store weight" + ( day - 1 ) times "growth rate") times %Diet }
+{ ("Store weight" + ( day - 1 ) times ~^ "growth rate") times ~^ %Diet }
 over 
-{ "DM% Hay" times "Utilisation hay" }
+{ "DM% Hay" times ~^ "Utilisation hay" }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ DM sub 1 times %Diet } 
+{ DM sub 1 times ~^ %Diet } 
 over
-{ y sub dm times u sub h }
+{ y sub dm times ~^ u sub h }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ ( k sub s + (d -1)r ) times %bw times %Diet} 
+{ ( k sub s + (d -1)r ) times ~^ %bw times ~^ %Diet} 
 over
-{ y sub dm times u sub h }
+{ y sub dm times ~^ u sub h }
 .EN
 How may kilograms of hay are required for a lamb on day 1 if it is purchased
 weighing 30 kg using the criteria from the example scenario?
 .EQ I
 kg sub 1 lm
-{ ( k sub s + (d -1)r ) times %bw times %Diet} 
+{ ( k sub s + (d -1)r ) times ~^ %bw times ~^ %Diet} 
 over
-{ y sub dm times u sub h }
+{ y sub dm times ~^ u sub h }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ ( 30 + (1 -1)0.15 ) times 0.04 times 0.3} 
+{ ( 30 + (1 -1)0.15 ) times ~^ 0.04 times ~^ 0.3} 
 over
-{ 0.85 times 0.7 }
+{ 0.85 times ~^ 0.7 }
 .EN
 .sp -0.6v
 .EQ I
@@ -1420,16 +1420,16 @@ lineup =~~
 How many kilograms of hay are required on day 70?
 .EQ I
 kg sub 70 lm
-{ ( k sub s + (d -1)r ) times %bw times %Diet} 
+{ ( k sub s + (d -1)r ) times ~^ %bw times ~^ %Diet} 
 over
-{ y sub dm times u sub h }
+{ y sub dm times ~^ u sub h }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ ( 30 + (70 -1)0.15 ) times 0.04 times 0.3} 
+{ ( 30 + (70 -1)0.15 ) times ~^ 0.04 times ~^ 0.3} 
 over
-{ 0.85 times 0.7 }
+{ 0.85 times ~^ 0.7 }
 .EN
 .sp -0.6v
 .EQ I
@@ -1453,7 +1453,7 @@ dry matter over a time period using the same formula as before and then
 converting this value into #m sup 2#.
 .EQ I
 m sub { s\[->]f } sup 2  lm
-{ DM sub "s\[->]f" times 10,000 times %Diet } 
+{ DM sub "s\[->]f" times ~^ 10,000 times ~^ %Diet } 
 over
 { DM sub ha }
 .EN
@@ -1495,14 +1495,14 @@ lineup =~~
 We can now convert the dry matter into an area:
 .EQ I
 m sub { 7\[->]14 } sup 2  lm
-{ DM sub "7\[->]14" times 10,000 times %Diet } 
+{ DM sub "7\[->]14" times ~^ 10,000 times ~^ %Diet } 
 over
 { DM sub ha }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ 10.06 times 10,000 times 0.7 }
+{ 10.06 times ~^ 10,000 times ~^ 0.7 }
 over
 5,400
 .EN
@@ -1521,22 +1521,22 @@ calculation so we will use the same time period as we used for the area, days 7
 to 14.
 .EQ I
 kg sub { s\[->]f }  lm
-{ DM sub { s\[->]f } times %Diet } 
+{ DM sub { s\[->]f } times ~^ %Diet } 
 over
-{ y sub dm times u sub h }
+{ y sub dm times ~^ u sub h }
 .EN
 .KS
 The kilograms of hay required is:
 .EQ I
 kg sub { 7\[->]14 }  lm
-{ DM sub { 7\[->]14 } times %Diet } 
+{ DM sub { 7\[->]14 } times ~^ %Diet } 
 over
-{ y sub dm times u sub h }
+{ y sub dm times ~^ u sub h }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ 10.06 times 0.3 }
+{ 10.06 times ~^ 0.3 }
 over
 0.6
 .EN
@@ -1568,16 +1568,16 @@ period. The time period, for the purpose of the finance calculation is 210 days
 which is the 90 days after establishment, until the crop can be grazed, and the
 following 120 days over which the grazing occurs.
 .EQ I
-Finance lm { left [ ( "ha forage" times "\[Po]/ha" )
+Finance lm { left [ ( "ha forage" times ~^ "\[Po]/ha" )
 +
-( "Tonnes hay" times "\[Po]/tonne" ) right ] times "Interest rate%" times Days }
+( "Tonnes hay" times ~^ "\[Po]/tonne" ) right ] times ~^ "Interest rate%" times ~^ Days }
 over
 365
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ left [ ( 45 times 300 ) + ( 172 times 50 ) right ] times 0.1 times 120 }
+{ left [ ( 45 times ~^ 300 ) + ( 172 times ~^ 50 ) right ] times ~^ 0.1 times ~^ 120 }
 over
 365
 .EN
@@ -1724,7 +1724,7 @@ It is important to understand that:
 .EQ I
 FC sub S =~~ FC sub B over { ( 1 - m% ) }
 tf
-FC sub B =~~ FC sub S times ( 1 - m% ) 
+FC sub B =~~ FC sub S times ~^ ( 1 - m% ) 
 .EN
 .KS
 It is then easy to move back and forwards between the adjusted values and
@@ -1749,12 +1749,12 @@ The technique works equally well with individual costs. Therefore, the
 calculation to convert the mortality adjusted machinery costs back to its
 unadjusted figure would be:
 .EQ I
-Machinery sub B lm Machinery sub S times ( 1 - m% ) 
+Machinery sub B lm Machinery sub S times ~^ ( 1 - m% ) 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-3.78 times ( 1 - 0.03 )
+3.78 times ~^ ( 1 - 0.03 )
 .EN
 .sp -0.6v
 .EQ I
@@ -1778,17 +1778,17 @@ The calculation for the purchased weight is shown below based on the number of
 lambs bought:
 .EQ I
 PW sub B lm
-left ( "Store weight" times \[Po]/kg right ) + Vet + Transport 
+left ( "Store weight" times ~^ \[Po]/kg right ) + Vet + Transport 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-left ( k sub s times P sub 1 right ) + v + t
+left ( k sub s times ~^ P sub 1 right ) + v + t
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-left ( 30 times 1.5 right ) + 3 + 2
+left ( 30 times ~^ 1.5 right ) + 3 + 2
 .EN
 .sp -0.6v
 .EQ I
@@ -1836,7 +1836,7 @@ dead or alive off the property.
 The calculation for the weight gain is shown below:
 .EQ I
 d(OW) lm "Days on farm"
-times ( Financing + Fuel + Repair + Maintenance + Forage + Hay )
+times ~^ ( Financing + Fuel + Repair + Maintenance + Forage + Hay )
 .EN
 .sp -0.6v
 .EQ I
@@ -1850,11 +1850,11 @@ number of lambs that are actually sold.
 The calculations based on the number of lambs bought:
 .EQ I
 fsl sub b =~~
-{ ("Purchase price") ("Store kg") times Interest% } over 365 
+{ ("Purchase price") ("Store kg") times ~^ Interest% } over 365 
 =~~
-{ P sub 1 ( k sub s ) times i% } over 365
+{ P sub 1 ( k sub s ) times ~^ i% } over 365
 =~~
-{ 1.5(30) times 0.1 } over 365
+{ 1.5(30) times ~^ 0.1 } over 365
 =~~
 0.01233 ^\[Po]/hd
 .EN
@@ -1862,11 +1862,11 @@ fsl sub b =~~
 .EQ I
 fl sub b =~~
 {Fuel } 
-over { "Number of lambs bought" times "Days on farm" }
+over { "Number of lambs bought" times ~^ "Days on farm" }
 =~~
-fl over { Q sub B times d }
+fl over { Q sub B times ~^ d }
 =~~
-{ 953 } over { 3,000 times 81 }
+{ 953 } over { 3,000 times ~^ 81 }
 =~~
 0.00392 ^\[Po]/hd \(dd
 .EN
@@ -1884,11 +1884,11 @@ required for this exercise.
 .EQ I
 rp sub b =~~
 {"EAC Repair" } 
-over { "Number of lambs bought" times "Days on farm" }
+over { "Number of lambs bought" times ~^ "Days on farm" }
 =~~
-rp over { Q sub B times d }
+rp over { Q sub B times ~^ d }
 =~~
-{ 1,700 } over { 3,000 times 81 }
+{ 1,700 } over { 3,000 times ~^ 81 }
 =~~
 0.00700 ^\[Po]/hd
 .EN
@@ -1896,33 +1896,33 @@ rp over { Q sub B times d }
 .EQ I
 mn sub b =~~
 {"EAC Maintenance" } 
-over { "Number of lambs bought" times "Days on farm" }
+over { "Number of lambs bought" times ~^ "Days on farm" }
 =~~
-mn over { Q sub B times d }
+mn over { Q sub B times ~^ d }
 =~~
-{ 1,000 } over { 3,000 times 81 }
+{ 1,000 } over { 3,000 times ~^ 81 }
 =~~
 0.00412 ^\[Po]/hd
 .EN
 .
 .EQ I
-fo sub b =~~ { "ha forage" times "\[Po]/ha" }
-over { "Number of lambs bought" times "Days on farm" }
+fo sub b =~~ { "ha forage" times ~^ "\[Po]/ha" }
+over { "Number of lambs bought" times ~^ "Days on farm" }
 =~~
-fo over { Q sub B times d }
+fo over { Q sub B times ~^ d }
 =~~
-{ 45 times 300 } over { 3,000 times 81 }
+{ 45 times ~^ 300 } over { 3,000 times ~^ 81 }
 =~~
 0.05556 ^\[Po]/hd
 .EN
 .
 .EQ I
-hy sub b =~~ { "Tonnes hay" times "\[Po]/tonne" }
-over { "Number of lambs bought" times "Days on farm" }
+hy sub b =~~ { "Tonnes hay" times ~^ "\[Po]/tonne" }
+over { "Number of lambs bought" times ~^ "Days on farm" }
 =~~
-hy over { Q sub B times d }
+hy over { Q sub B times ~^ d }
 =~~
-{ 177 times 50 } over { 3,000 times 81 }
+{ 177 times ~^ 50 } over { 3,000 times ~^ 81 }
 =~~
 0.03642 ^\[Po]/hd
 .EN
@@ -1936,26 +1936,26 @@ Q sub S =~~ Q sub b ( 1 - m%) =~~ 3,000( 1 - 0.03) = 2,910
 The calculations are then as follows:
 .EQ I
 fsl sub s =~~
-{ ("Purchase price") ("Store kg") times Interest% }
+{ ("Purchase price") ("Store kg") times ~^ Interest% }
 over { 365 (1 - Mortality%)\(dg } 
 =~~
-{ P sub 1 ( k sub s ) times i% } over { 365 ( 1 - m%) }
+{ P sub 1 ( k sub s ) times ~^ i% } over { 365 ( 1 - m%) }
 =~~
-{ 1.5(30) times 0.1 } over 354
+{ 1.5(30) times ~^ 0.1 } over 354
 =~~
 0.01271 ^\[Po]/hd
 .EN
 .FS
 \(dg This equations has been simplified. In symbols the equation is:
 .EQ I
-{ { P sub 1 ( k sub s ) times i% times Q sub B} over 365 }
+{ { P sub 1 ( k sub s ) times ~^ i% times ~^ Q sub B} over 365 }
 over { Q sub B ( 1 - m% ) }
 =~~
-{ P sub 1 ( k sub s ) times i% times Q sub B }
+{ P sub 1 ( k sub s ) times ~^ i% times ~^ Q sub B }
 over
 { 365 ( Q sub B ) ( 1 - m% ) }
 =~~
-{ P sub 1 ( k sub s ) times i% }
+{ P sub 1 ( k sub s ) times ~^ i% }
 over
 { 365 ( 1 - m% ) }
 .EN
@@ -1964,11 +1964,11 @@ over
 .EQ I
 fl sub s =~~
 {Fuel } 
-over { "Number of lambs sold" times "Days on farm" }
+over { "Number of lambs sold" times ~^ "Days on farm" }
 =~~
-fl over { Q sub S times d }
+fl over { Q sub S times ~^ d }
 =~~
-{ 953 } over { 2,910 times 81 }
+{ 953 } over { 2,910 times ~^ 81 }
 =~~
 0.00404 ^\[Po]/hd
 .EN
@@ -1976,11 +1976,11 @@ fl over { Q sub S times d }
 .EQ I
 rp sub s =~~
 {"EAC Repair" } 
-over { "Number of lambs sold" times "Days on farm" }
+over { "Number of lambs sold" times ~^ "Days on farm" }
 =~~
-rp over { Q sub S times d }
+rp over { Q sub S times ~^ d }
 =~~
-{ 1,700 } over { 2,910 times 81 }
+{ 1,700 } over { 2,910 times ~^ 81 }
 =~~
 0.00721 ^\[Po]/hd
 .EN
@@ -1988,35 +1988,35 @@ rp over { Q sub S times d }
 .EQ I
 mn sub s =~~
 {"EAC Maintenance" } 
-over { "Number of lambs sold" times "Days on farm" }
+over { "Number of lambs sold" times ~^ "Days on farm" }
 =~~
-rp over { Q sub S times d }
+rp over { Q sub S times ~^ d }
 =~~
-{ 1,000 } over { 2,910 times 81 }
+{ 1,000 } over { 2,910 times ~^ 81 }
 =~~
 0.00424 ^\[Po]/hd
 .EN
 .
 .EQ I
 fo sub s =~~
-{ "ha forage" times "\[Po]/ha" }
-over { "Number of lambs sold" times "Days on farm" }
+{ "ha forage" times ~^ "\[Po]/ha" }
+over { "Number of lambs sold" times ~^ "Days on farm" }
 =~~
-fo over { Q sub S times d }
+fo over { Q sub S times ~^ d }
 =~~
-{ 45 times 300 } over { 2,910 times 81 }
+{ 45 times ~^ 300 } over { 2,910 times ~^ 81 }
 =~~
 0.05727 ^\[Po]/hd
 .EN
 .
 .EQ I
 hy sub s =~~
-{ "Tonnes hay" times "\[Po]/tonne" }
-over { "Number of lambs sold" times "Days on farm" }
+{ "Tonnes hay" times ~^ "\[Po]/tonne" }
+over { "Number of lambs sold" times ~^ "Days on farm" }
 =~~
-hy over { Q sub S times d }
+hy over { Q sub S times ~^ d }
 =~~
-{ 177 times 50 } over { 2,910 times 81 }
+{ 177 times ~^ 50 } over { 2,910 times ~^ 81 }
 =~~
 0.03755 ^\[Po]/hd
 .EN
@@ -2088,7 +2088,7 @@ Again it is important to understand that:
 d ( OW sub S ) =~~ { d ( OW sub B ) } over { ( 1 - m% ) } 
 ~~~tf~~~
 d ( OW sub B ) =~~
-d ( OW sub S )  times ( 1 - m% ) 
+d ( OW sub S )  times ~^ ( 1 - m% ) 
 .EN
 Therefore the total daily costs per head before accounting for the mortality
 rate can be found by multiplying the #0.1230# by #(1 - m%)# which equates to
@@ -2155,7 +2155,7 @@ PW sub B + d ( OW sub B )
 .sp -0.6v
 .EQ I
 lineup =~~
-left [ left ( k sub s times P sub 1 right ) + v + t right ] 
+left [ left ( k sub s times ~^ P sub 1 right ) + v + t right ] 
 +
 d ( fsl sub b + fl sub b + rp sub b + mn sub b + fo sub b + hy sub b )
 .EN
@@ -2195,8 +2195,8 @@ left [ PW sub B + MC right ]  + d ( OW sub S )
 .sp -0.6v
 .EQ I
 lineup =~~
-left [ left ( k sub s times P sub 1 right ) + v + t  
-+ left ( m% times cd right ) right ]
+left [ left ( k sub s times ~^ P sub 1 right ) + v + t  
++ left ( m% times ~^ cd right ) right ]
 +
 d ( fsl sub s + fl sub s + rp sub s + mn sub s + fo sub s + hy sub s )
 .EN
@@ -2361,7 +2361,7 @@ TVC sub B lm Q sub B left [ (PW sub B ) + d ( OW sub B ) right ]
 .EQ I
 lineup =~~
 Q sub B left {  
-left [ left ( k sub s times P sub 1 right ) + v + t right ] 
+left [ left ( k sub s times ~^ P sub 1 right ) + v + t right ] 
 +
 left [ 
 d ( fsl sub b + fl sub b + rp sub b + mn sub b + fo sub b + hy sub b )
@@ -2415,8 +2415,8 @@ lineup =~~ Q sub B ( PW sub B )
 .EQ I
 lineup =~~
 Q sub B
-left [ left ( k sub s times P sub 1 right ) + v + t right ]
-+ Q sub B ( m% times cd ) 
+left [ left ( k sub s times ~^ P sub 1 right ) + v + t right ]
++ Q sub B ( m% times ~^ cd ) 
 +
 Q sub S left [ 
 d ( fsl sub s + fl sub s + rp sub s + mn sub s + fo sub s + hy sub s )
@@ -2738,13 +2738,13 @@ The mortality costs can also be stated as:
 .EQ I
 m%(cd) over { 1 - m% } 
 ~~~tf~~~
-m% over { 1 - m% } times cd
+m% over { 1 - m% } times ~^ cd
 .EN
 Which equates to:
 .EQ I
-0.03 over { 1 - 0.03 } times 15
+0.03 over { 1 - 0.03 } times ~^ 15
 =~~
-0.03093 times 15
+0.03093 times ~^ 15
 =~~
 \[Po]0.464
 .EN
@@ -2814,39 +2814,39 @@ quantity bought # Q sub S # we also logically arrive at the total cost # TVC
 sub S#:
 .EQ I
 TVC sub S lm 
-VC sub TS times Q sub S
+VC sub TS times ~^ Q sub S
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 { left [ PW sub B  + MC + d ( OW sub B ) right ] }
 over 
-{ ( 1 - m% ) } times Q sub S
+{ ( 1 - m% ) } times ~^ Q sub S
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 { left [ PW sub B  + MC + d ( OW sub B ) right ] }
 over 
-{ ( 1 - m% ) } times Q sub B ( 1 - m%)
+{ ( 1 - m% ) } times ~^ Q sub B ( 1 - m%)
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 left [ PW sub B  + MC + d ( OW sub B ) right ]
-times Q sub B
+times ~^ Q sub B
 .EN
 .EQ I
 lineup =~~
 left [ MC + VC sub B right ]
-times Q sub B
+times ~^ Q sub B
 .EN
 .KE
 .KS
 The transformation informs us that the total variable costs based on the
 lambs sold can also be expressed in terms of the lambs bought.
 .EQ I
-VC sub TS times Q sub S lm ( MC + VC sub B ) times Q sub B
+VC sub TS times ~^ Q sub S lm ( MC + VC sub B ) times ~^ Q sub B
 .EN
 .sp -0.6v
 .EQ I
@@ -2867,7 +2867,7 @@ lineup =~~
 The total costs can be represented with the generalised equation below:
 .EQ I
 "Total costs" lm
-"Fixed costs" + "Variable costs" times Quantity
+"Fixed costs" + "Variable costs" times ~^ Quantity
 .EN
 .sp -0.6v
 .EQ I
@@ -2886,31 +2886,31 @@ lineup =~~
  FC + { left [ PW sub B + MC + d(OW sub B ) right ] }
 over 
 { ( 1 - m% ) }
-times Q sub B ( 1 - m% )
+times ~^ Q sub B ( 1 - m% )
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
  FC + left [ PW sub B + MC + d(OW sub B ) right ]
-times
+times ~^
 Q sub B
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
  FC + left [ PW sub B + MC + d(OW sub B ) right ]
-times
+times ~^
 Q sub B
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-32,272 + left [ 50.00 + 0.45 + 81(0.11935)  right ] times 3,000
+32,272 + left [ 50.00 + 0.45 + 81(0.11935)  right ] times ~^ 3,000
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-32,272 + left [ 50.00 + 0.45 + 9.6674  right ] times 3,000
+32,272 + left [ 50.00 + 0.45 + 9.6674  right ] times ~^ 3,000
 .EN
 .sp -0.6v
 .EQ I
@@ -2984,14 +2984,14 @@ lineup =~~
 { FC + { left [ PW sub B + MC + d(OW sub B ) right ] }
 over 
 { ( 1 - m% ) }
-times Q sub B ( 1 - m% )
+times ~^ Q sub B ( 1 - m% )
 }
 over Q sub B
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ FC + { left [ PW sub B + MC + d(OW sub B ) right ] } times Q sub B }
+{ FC + { left [ PW sub B + MC + d(OW sub B ) right ] } times ~^ Q sub B }
 over Q sub B
 .EN
 .sp -0.6v
@@ -2999,7 +2999,7 @@ over Q sub B
 lineup =~~
 FC over Q sub B
 +
-{ left [ PW sub B + MC + d(OW sub B ) right ] times Q sub B }
+{ left [ PW sub B + MC + d(OW sub B ) right ] times ~^ Q sub B }
 over Q sub B
 .EN
 .sp -0.6v
@@ -3037,20 +3037,20 @@ lineup =~~
 { FC + { left [ PW sub B + MC + d(OW sub B ) right ] }
 over 
 { ( 1 - m% ) }
-times Q sub B ( 1 - m% )
+times ~^ Q sub B ( 1 - m% )
 }
 over Q sub S
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ FC + { left [ PW sub B + MC + d(OW sub B ) right ] } times Q sub B }
+{ FC + { left [ PW sub B + MC + d(OW sub B ) right ] } times ~^ Q sub B }
 over Q sub S
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-{ FC + { left [ PW sub B + MC + d(OW sub B ) right ] } times Q sub B }
+{ FC + { left [ PW sub B + MC + d(OW sub B ) right ] } times ~^ Q sub B }
 over { Q sub B ( 1 - m% ) }
 .EN
 .sp -0.6v
@@ -3059,7 +3059,7 @@ lineup =~~
 FC 
 over { Q sub B ( 1 - m% ) }
 +
-{ left [ PW sub B + MC + d(OW sub B ) right ] times Q sub B }
+{ left [ PW sub B + MC + d(OW sub B ) right ] times ~^ Q sub B }
 over { Q sub B ( 1 - m% ) }
 .EN
 .sp -0.6v
@@ -3145,7 +3145,7 @@ Forage =~~
 =~~
 \[Po]300
 over 
-{ 50,000 times 0.135 times 0.8 }
+{ 50,000 times ~^ 0.135 times ~^ 0.8 }
 =~~
 \[Po]300 over 5,400
 =~~
@@ -3157,11 +3157,11 @@ Hay
 =~~
 "\[Po]/tonne"
 over
-{ 1,000 times DM% times Utilisation }
+{ 1,000 times ~^ DM% times ~^ Utilisation }
 =~~
 \[Po]50
 over 
-{ 1,000 times 0.85 times 0.7 }
+{ 1,000 times ~^ 0.85 times ~^ 0.7 }
 =~~
 \[Po]50 over 595
 =~~
@@ -3174,24 +3174,24 @@ with the cumulative calculation for the dry matter to establish the cost of
 feeding the lamb.
 .EQ I
 "Feed cost" lm
-DM sub d times %Diet times \[Po]/kg
+DM sub d times ~^ %Diet times ~^ \[Po]/kg
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-d over 2 left [ k sub s + k sub f  right ] %bw times %Diet times \[Po]/kg
+d over 2 left [ k sub s + k sub f  right ] %bw times ~^ %Diet times ~^ \[Po]/kg
 .EN
 The feed costs for a lamb purchased at 30 kg and finished at 42 kilograms over
 81 days, if we assume that 70% of the diet is turnips and the remaining 30%
 hay, would be as follows.
 .EQ I
 Forage lineup =~~
-d over 2 left [ k sub s + k sub f  right ] %bw times %Diet times \[Po]/kg
+d over 2 left [ k sub s + k sub f  right ] %bw times ~^ %Diet times ~^ \[Po]/kg
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-81 over 2 left [ 42 + 30  right ] 0.04 times 0.7 times 0.056
+81 over 2 left [ 42 + 30  right ] 0.04 times ~^ 0.7 times ~^ 0.056
 .EN
 .sp -0.6v
 .EQ I
@@ -3200,12 +3200,12 @@ lineup =~~
 .EN
 .EQ I
 Hay lineup =~~
-d over 2 left [ k sub s + k sub f  right ] %bw times %Diet times \[Po]/kg
+d over 2 left [ k sub s + k sub f  right ] %bw times ~^ %Diet times ~^ \[Po]/kg
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-81 over 2 left [ 42 + 30  right ] 0.04 times 0.3 times 0.084
+81 over 2 left [ 42 + 30  right ] 0.04 times ~^ 0.3 times ~^ 0.084
 .EN
 .sp -0.6v
 .EQ I
@@ -3240,12 +3240,12 @@ profit and the way the breakeven formula can be manipulated.
 .LP
 The revenue can be expressed as:
 .EQ I
-Revenue sub unit lm "Sale price after deductions" times "Finished kilograms"
+Revenue sub unit lm "Sale price after deductions" times ~^ "Finished kilograms"
 .EN
 The finished kilograms can be expressed with the formula below:
 .EQ I
 "Finished kilograms" lm
-"Store weight" + ( "Days on farm" - 1 )  times ("growth rate")
+"Store weight" + ( "Days on farm" - 1 )  times ~^ ("growth rate")
 .EN
 .sp -0.6v
 .EQ I
@@ -3258,7 +3258,7 @@ below:
 .EQ I
 "Sale price after marketing" lm
 "Sale price before deductions"
-times ( 1 - "marketing expense%")
+times ~^ ( 1 - "marketing expense%")
 .EN
 .sp -0.6v
 .EQ I
@@ -3269,7 +3269,7 @@ P sub 2 ( 1 - c%)
 The complete formula can now be expressed with symbols as:
 .EQ I
 R sub U =~~
-P sub 2 ( 1 - c%) times left [ k sub s + ( d - 1 )r right ]
+P sub 2 ( 1 - c%) times ~^ left [ k sub s + ( d - 1 )r right ]
 .EN
 We can now establish the theoretical revenue from store lamb purchased at a
 weight of 30 kg and fattened for 81 days with a weight gain of 0.15 kg per day,
@@ -3277,22 +3277,22 @@ after which it was sold at \[Po]2.10 per kg. The marketing costs are 3% of the
 sale price.
 .EQ I
 R sub U lm
-P sub 2 ( 1 - c%) times  left [ k sub s + ( d - 1 )r right ] 
+P sub 2 ( 1 - c%) times ~^  left [ k sub s + ( d - 1 )r right ] 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-2.10 ( 1 - 0.03 ) times left [ 30 + (81 - 1 )0.15 right ] 
+2.10 ( 1 - 0.03 ) times ~^ left [ 30 + (81 - 1 )0.15 right ] 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-2.037 times left [ 30 + 12 right ] 
+2.037 times ~^ left [ 30 + 12 right ] 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-2.037 times left [ 42 right ] 
+2.037 times ~^ left [ 42 right ] 
 .EN
 .sp -0.6v
 .EQ I
@@ -3323,26 +3323,26 @@ To calculate the total revenue, the kilograms must be multiplied by the number
 of lambs to be sold:
 .EQ I
 "Total revenue " lm
-Price times left [ "Finished kilograms" times Quantity right ]
+Price times ~^ left [ "Finished kilograms" times ~^ Quantity right ]
 .EN
 .
 .EQ I
-TR lineup =~~ P sub 3 times ( k sub f ) Q sub S
+TR lineup =~~ P sub 3 times ~^ ( k sub f ) Q sub S
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-P sub 3 times  left [ ( k sub s + ( d - 1 )r ) Q sub B ( 1 - m% ) right ]
+P sub 3 times ~^  left [ ( k sub s + ( d - 1 )r ) Q sub B ( 1 - m% ) right ]
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-2.037 times left [ 42 times 2,910 right ] 
+2.037 times ~^ left [ 42 times ~^ 2,910 right ] 
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-2.037 times 122,220
+2.037 times ~^ 122,220
 .EN
 .sp -0.6v
 .EQ I
@@ -3452,9 +3452,9 @@ P sub 3 ( k sub f )
 .sp -0.6v
 .EQ I
 lineup =~~
-P sub 2 ( 1 - c%) times left [ k sub s + (d - 1 )r right ]
+P sub 2 ( 1 - c%) times ~^ left [ k sub s + (d - 1 )r right ]
 - 
-{ left [ ( k sub s times P sub 1 ) + v + t + ( m% times cd ) right ] 
+{ left [ ( k sub s times ~^ P sub 1 ) + v + t + ( m% times ~^ cd ) right ] 
 +
 left [ d ( fsl sub b + rp sub b + mn sub b + fo sub b + hy sub b ) right ] }
 over 
@@ -3462,9 +3462,9 @@ over
 .EN
 .
 It can be seen above that the contribution is impacted by a large number of
-inputs. However, we have previously stated that the store lamb #( k sub s times
+inputs. However, we have previously stated that the store lamb #( k sub s times ~^
 P sub 1 )# represents 75% of the total variable cost. The store lamb #( k sub s
-times P sub 1 )#, forage #fo# and hay #hy# represent 88% of the total variable
+times ~^ P sub 1 )#, forage #fo# and hay #hy# represent 88% of the total variable
 cost. Therefore the price paid for the store lamb, the price paid per tonne for
 the hay and the fresh yield achieved on the forage crop will have a large
 impact on the variable costs and the contribution.
@@ -3585,7 +3585,7 @@ lineup =~~
 This is the price before the deduction of the sales commission. The price
 required after commission would be:
 .EQ I
-P sub 3 lm P sub 2 times ( 1 - c% )
+P sub 3 lm P sub 2 times ~^ ( 1 - c% )
 .EN
 .sp -0.6v
 .EQ I
@@ -3985,7 +3985,7 @@ setting the cost equal to 1:
 you have a product that cost \[Po]5.32 and you wanted to add a 25% margin you
 can either divide by # ( 1 - margin% )# giving #5.32 over { 1 - 0.25 } =
 \[Po]7.09 # or you can do the division independently to create a factor which
-can be used as a multiplier #5.32 times 1 over { 1 - 0.25 } = 5.32 times 1.33 =
+can be used as a multiplier #5.32 times ~^ 1 over { 1 - 0.25 } = 5.32 times ~^ 1.33 =
 \[Po]7.09 #. The advantage of the factor is that you do not have to complete
 the margin calculation every time you want to know the sale price of a product,
 provided you have a fixed margin, and more importantly, in this case, we do not
@@ -4595,7 +4595,7 @@ The 24.2% change represents the "increase" in operating income due to a 10%
 increase in sales. To determine the GBP change in profit, multiple the
 percentage change in EBIT times the original profit of 31,000
 .EQ I
-"GBP change in operating income" = 24.2% times 31,000 = 7,502
+"GBP change in operating income" = 24.2% times ~^ 31,000 = 7,502
 .EN
 Operating income is expected to increase by 7,502 if sales increase by 10%. To
 determine the estimated new profit level as a result of the change, either add
@@ -4604,7 +4604,7 @@ the original profit to the increase or multiply the original value by 1.242
 "Estimated new EBIT"= 7,502 + 31,000 = 38,502
 .EN
 .EQ I
-"Estimated new EBIT" = (1 + 24.2%) times 31,000 = 1.242 times 31,000 = 38,502
+"Estimated new EBIT" = (1 + 24.2%) times ~^ 31,000 = 1.242 times ~^ 31,000 = 38,502
 .EN
 Below is a table showing a range of possible EBIT values for a range of
 increases in sales.
@@ -4622,7 +4622,7 @@ _
 Note that a similar effect occurs if revenue is expected to decline. Leverage
 works in both directions. The new EBIT value can be calculated as follows:
 .EQ I
-"Estimated new EBIT" = ( 1 - 24.2%)  times 31,000 = 0.758 times 31,000 = 23,500
+"Estimated new EBIT" = ( 1 - 24.2%)  times ~^ 31,000 = 0.758 times ~^ 31,000 = 23,500
 .EN
 .
 .TS

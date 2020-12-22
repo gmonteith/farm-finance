@@ -10,7 +10,7 @@ FV =~~ PV( 1 + i ) sup n
 .EQ I
 "Future Value" 
 =~~ 
-"Present Value" times ( 1 + "interest rate" ) sup "number of compound periods"
+"Present Value" times ~^ ( 1 + "interest rate" ) sup "number of compound periods"
 .EN
 Most people may not know this equation as the basis of finance but we still
 place our money with banks and like to see it grow over time. It is this
@@ -128,7 +128,7 @@ Now the equation has been established the return can be calculated:
 =~~
 1.0425 -1
 =~~
-0.425 times 100
+0.425 times ~^ 100
 =~~
 4.25% 
 .EN
@@ -169,8 +169,8 @@ A quick note on logarithms. Logarithms are artificial numbers originally
 invented by John Napier and later improved by Henry Briggs in order to
 facilitate long calculations. The logarithm is the inverse of exponentiation
 which means the log of a number is the exponent to which a base number must be
-raise to produce #x#. For instance the log of 8 to base 2 is 3 as #2 times 2
-times 2 =~~ 8 # and the log of 8 to base 10 is 0.9031. The graph above has a
+raise to produce #x#. For instance the log of 8 to base 2 is 3 as #2 times ~^ 2
+times ~^ 2 =~~ 8 # and the log of 8 to base 10 is 0.9031. The graph above has a
 logarithmic scale using base 10, which means that an increase in the log number
 by one is an increase in the actual number by 10 times. The log of 10 to base
 10 is 1, when working with logs if the base is not explicitly given, as in #log
@@ -244,7 +244,7 @@ Year zero is typically taken to be the year than the investment commences.
 Using the information above we can calculate the value of 100 GBP received in 3
 years discounted to today at 10%.
 .EQ I
-PV =~~ 100 times 0.751 =~~ \[Po]75.10
+PV =~~ 100 times ~^ 0.751 =~~ \[Po]75.10
 .EN
 The TVM equation can also be rearranged to resolve for the number of years.
 .

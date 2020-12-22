@@ -80,7 +80,7 @@ Salvage value
 lineup
 -I^ left [ CCTF sub AIA right ] 
 + S^ left [ CCTF sub WDA right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
 .sp 1.0
@@ -91,7 +91,7 @@ Salvage value and capital gains
 lineup
 -I^ left [ CCTF sub AIA right ]
 + left ( S^ left [ CCTF sub WDA right ] - t(S - I ) right ) 
-times
+times ~^
 (P/F, i%, n)
 .EN
 .
@@ -124,7 +124,7 @@ Salvage value
 lineup
 -I^ left [ CCTF sub WDA right ]
 + S^ left [ CCTF sub WDA right ]
-times
+times ~^
 (P/F, i%, n)
 .EN
 .sp 1.0
@@ -135,7 +135,7 @@ Salvage value and capital gains
 lineup
 -I^ left [ CCTF sub WDA right ]
 + left ( S^ left [ CCTF sub WDA right ] - t(S - I ) right ) 
-times
+times ~^
 (P/F, i%, n)
 .EN
 .
@@ -152,7 +152,7 @@ No salvage value
 lineup
 -I^ left [ CCTF sub WDA right ] 
 + UCC left [ t - ( 1 - CCTF sub WDA ) ( 1 + i ) right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 .sp 1.0
@@ -163,7 +163,7 @@ Salvage value equal to the UCC
 lineup
 -I^ left [ CCTF sub WDA right ] 
 + left [ S - { UCC [ 1 - CCTF sub WDA ] ( 1 + i ) } right ]
-times 
+times ~^ 
 ( P/F, %i, n )
 .EN
 .sp 1.0
@@ -179,7 +179,7 @@ S^ left ( 1 - t right )
 +
 UCC left ( t - ( 1 - CCTF sub WDA ) ( 1 + i ) right )
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 .sp 1.0
@@ -195,7 +195,7 @@ S^ left ( 1 - t right )
 +
 UCC left ( t - ( 1 - CCTF sub WDA ) ( 1 + i ) right )
 right ] 
-times
+times ~^
 ( P/F, %i, n )
 .EN
 .sp 1.0
@@ -211,7 +211,7 @@ S
 t - [ 1 - CCTF sub WDA ] ( 1 + i )
 right )
 - t left ( 2S - I right ) right ]
-times
+times ~^
 ( P/F, %i, n )
 .EN
 

@@ -77,7 +77,7 @@ The value in the pool at the end of year 1 is equivalent to the investment
 investment \fII\fP remaining in the pool at the end of the first year and
 subtracting the investment \fII\fP multiplied by the capital allowance \fId\fP,
 which in this example is 18%. Therefore the calculation for year 2 is
-#\[Po]1,000 -~~ ( \[Po]1,000 times ~^ 0.18)  =~~ \[Po]820 #.
+#\[Po]1,000 -~~ ( \[Po]1,000 times ~^ ~^ 0.18)  =~~ \[Po]820 #.
 .EQ I
 "Year 1 "lm I
 .EN
@@ -107,7 +107,7 @@ I(1-d) sup { n -1 }\(dg
 .
 .FS 
 \(dg Remember any value raised to the power of #0# equals 1. Therefore for the
-first year: # I ( 1 - d) sup { 1 - 1 =~~ 0 } =~~ I times ~^ 1 # 
+first year: # I ( 1 - d) sup { 1 - 1 =~~ 0 } =~~ I times ~^ ~^ 1 # 
 .FE
 .
 .IP "Allowance" 18
@@ -211,7 +211,7 @@ lineup =~~
 .sp -0.6v
 .EQ I
 lineup =~~
-1,000 times ~^ 0.863
+1,000 times ~^ ~^ 0.863
 .EN
 .sp -0.6v
 .EQ I
@@ -231,12 +231,12 @@ Check:
 .sp -0.6v
 .EQ I
 lineup =~~
-1,000 times ~^ 0.3 ~  left [ 1 - ( 1 - 0.18 ) sup 10 right ]
+1,000 times ~^ ~^ 0.3 ~  left [ 1 - ( 1 - 0.18 ) sup 10 right ]
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-300 times ~^ 0.863
+300 times ~^ ~^ 0.863
 .EN
 .sp -0.6v
 .EQ I
@@ -323,7 +323,7 @@ right ]
 The \fIIdt\fP that has been been factored out an can now be included as a
 factor. 
 .EQ I
-Idt times ~^
+Idt times ~^ ~^
 1 over {  i + d  } 
 left [ 1 - left ( {  1 - d  }  over { 1 + i  } right ) sup n 
 right ]

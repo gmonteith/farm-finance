@@ -17,7 +17,7 @@ For the purposes of this test we are going to use the following values: #i =~~
 PV sub ga =~~  500 over { 0.1 - 0.05 } 
 left [  1 -  left ( { 1.05 } over { 1.10 } right ) sup 1,000  right ]   
 =~~
-10,000 times 1
+10,000 times ~^ 1
 =~~
 \[Po]10,000
 .EN
@@ -30,7 +30,7 @@ To come up with a more formal derivation of the equation for the PV of a
 growing perpetuity we will look back to the previous work we have completed on
 a growing annuity for which the series is shown below:
 .EQ I
-PMT times left [  
+PMT times ~^ left [  
 1  over { (1 + i) sup 1 } 
 + { 1( 1 + g) } over { (1 + i) sup 2 } 
 + { 1( 1 + g) sup 2 }  over { (1 + i) sup 3 } 
@@ -60,34 +60,34 @@ S sub \[if] =~~ a over { 1 -r }
 .EN
 The PV we are trying to establish can be written as follows:
 .EQ I
-PV =~~ PMT times  a over { 1 -r }
+PV =~~ PMT times ~^  a over { 1 -r }
 .EN
 .KS
 Now we can plug the values of #a# and #r# into the formula for the sum to
 infinity.
 .EQ I
 PV sub gp lm
-PMT times left [ { 1  over { 1 + i }}
+PMT times ~^ left [ { 1  over { 1 + i }}
 over { 1 - { { 1 + g } over {  1 + i } } } right ]
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-PMT times left [ { 1  over { 1 + i } } 
+PMT times ~^ left [ { 1  over { 1 + i } } 
 over 
 { { i - g } over {  1 + i  }  } right ]
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-PMT times { 1  over { 1 + i } } 
-times 
+PMT times ~^ { 1  over { 1 + i } } 
+times ~^ 
 { {  1 + i   } over {  i - g  } }
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-PMT times 1 over {  i - g  } 
+PMT times ~^ 1 over {  i - g  } 
 .EN
 .sp -0.6v
 .EQ I

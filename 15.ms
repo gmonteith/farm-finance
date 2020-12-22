@@ -118,7 +118,7 @@ If the rate of Income Tax is #30%#, an outlay of #\[Po] 1.00# allowable as an
 expense will reduce Income Taxes by #30p# of the amount that would otherwise be
 payable in the year. This can be seen in the table below, the tax payable is
 reduced from #1.5 ~->~ 1.2# a reduction of #30p#. Thus a #\[Po] 1.00# outlay as
-an expense has a net cost to the business of #expense times (1 - "tax rate")#
+an expense has a net cost to the business of #expense times ~^ (1 - "tax rate")#
 which in this instance is # 1( 1 - 0.3) =~~ \[Po] 0.7# or #70p#. The table
 below shows that the \fIexpenses\fP have increased from # 5 ~->~ 6# an increase
 of #\[Po] 1# but the \fInet\fP \fIIncome\fP has only reduced from #3.5 ~->~
@@ -244,7 +244,7 @@ In words this can be written as:
 .EQ I
 "Tax savings" =~~ Investment
 times ~ Capital ^ allowance ^ rate %
-times Tax ^ rate %
+times ~^ Tax ^ rate %
 .EN
 As the AIA allows for a 100% write down in the first year the equation can be
 reframed for this example as:

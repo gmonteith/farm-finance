@@ -249,19 +249,19 @@ TROE: task(1.0, 0.3, "Return on Equity") with .s at LN17.n
 .rt 
 .sp 3
 .ll 4i
-#ROE lm "Tax Burden" times "Interest Burden" times "EBIT Margin" times "Asset Turnover" #
+#ROE lm "Tax Burden" times ~^ "Interest Burden" times ~^ "EBIT Margin" times ~^ "Asset Turnover" #
 .sp -0.1v
-#lineup {hphantom {=~~ }} times "Leverage"#
+#lineup {hphantom {=~~ }} times ~^ "Leverage"#
 .sp 1.5v
-#lineup =~~ "Net Income" over EBT times EBT over EBIT times EBIT over Revenues times Revenues over "Total Assets" #
+#lineup =~~ "Net Income" over EBT times ~^ EBT over EBIT times ~^ EBIT over Revenues times ~^ Revenues over "Total Assets" #
 .sp 0.5v
-#lineup {hphantom {=~~ }} times "Total Assets" over Equity #
+#lineup {hphantom {=~~ }} times ~^ "Total Assets" over Equity #
 .sp 1.5v
-# lineup =~~ 21,694 over 27,118 times 27,118 over 32,750 times 32,750 over 233,800 times 233,800 over 195,623 #
+# lineup =~~ 21,694 over 27,118 times ~^ 27,118 over 32,750 times ~^ 32,750 over 233,800 times ~^ 233,800 over 195,623 #
 .sp 0.5v
-#lineup {hphantom {=~~ }} times 195,623 over 109,741 #
+#lineup {hphantom {=~~ }} times ~^ 195,623 over 109,741 #
 .sp 1.5v
-# lineup =~~ 0.8 times 0.828 times 0.140 times 1.195 times 1.783 #
+# lineup =~~ 0.8 times ~^ 0.828 times ~^ 0.140 times ~^ 1.195 times ~^ 1.783 #
 .sp 0.5v
 # lineup =~~ 0.1976 #
 .sp 0.5v
@@ -331,13 +331,13 @@ TROE: task(1.0, 0.3, "Return on Equity") with .s at LN17.n
 .
 .rt 
 .sp 3
-#ROE lm "Net Profit Margin" times "Asset Turnover" times "Leverage"#
+#ROE lm "Net Profit Margin" times ~^ "Asset Turnover" times ~^ "Leverage"#
 .sp 1.0v
-# lineup =~~ "Net Income" over Revenues times Revenues over "Total Assets" times "Total Assets" over Equity#
+# lineup =~~ "Net Income" over Revenues times ~^ Revenues over "Total Assets" times ~^ "Total Assets" over Equity#
 .sp 0.5v
-# lineup =~~ 21,694 over 223,800 times 233,800 over 195,623 times 195,623 over 109,741 #
+# lineup =~~ 21,694 over 223,800 times ~^ 233,800 over 195,623 times ~^ 195,623 over 109,741 #
 .sp 0.5v
-# lineup =~~ 0.093 times 1.195 times 1.783 #
+# lineup =~~ 0.093 times ~^ 1.195 times ~^ 1.783 #
 .sp 0.5v
 # lineup =~~ 0.1982 #
 .sp 0.5v
@@ -386,13 +386,13 @@ TROE: task(1.0, 0.3, "Return on Equity") with .s at LN17.n
 .
 .rt 
 .sp 3
-#ROE lm "Return on Assets" times "Leverage"#
+#ROE lm "Return on Assets" times ~^ "Leverage"#
 .sp 1.0v
-# lineup =~~ "Net Income" over "Total Assets" times "Total Assets" over Equity#
+# lineup =~~ "Net Income" over "Total Assets" times ~^ "Total Assets" over Equity#
 .sp 0.5v
-# lineup =~~ 21,694 over 195,623 times 195,623 over 109,741#
+# lineup =~~ 21,694 over 195,623 times ~^ 195,623 over 109,741#
 .sp 0.5v
-# lineup =~~ 0.111 times 1.783#
+# lineup =~~ 0.111 times ~^ 1.783#
 .sp 0.5v
 # lineup =~~ 0.1979 #
 .sp 0.5v
@@ -403,46 +403,46 @@ TROE: task(1.0, 0.3, "Return on Equity") with .s at LN17.n
 We will start first by examining the situation if there is no debt. If the 5
 step Dupont analysis is used the following ratios would be required:
 .EQ
-ROE lm "Tax Burden" times "Interest Burden"
-times "EBIT Margin" times "Asset Turnover" times Leverage
+ROE lm "Tax Burden" times ~^ "Interest Burden"
+times ~^ "EBIT Margin" times ~^ "Asset Turnover" times ~^ Leverage
 .EN
 .
 .EQ
 lineup =~~
 "Net Income" over EBT
-times
+times ~^
 EBT over EBIT
-times
+times ~^
 EBIT over Revenues
-times
+times ~^
 Revenues over "Total Assets"
-times
+times ~^
 "Total Assets" over Equity
 .EN
 .
 .EQ
 lineup =~~
 26,200 over 32,750
-times
+times ~^
 32,750 over 32,750
-times
+times ~^
 32,750 over 233,800
-times
+times ~^
 233,800 over 195,623
-times
+times ~^
 195,623 over 195,623
 .EN
 .
 .EQ 
 lineup =~~ 
 0.8
-times
+times ~^
 1
-times
+times ~^
 0.140
-times
+times ~^
 1.195
-times
+times ~^
 1
 .EN
 .sp -0.7v
@@ -481,15 +481,15 @@ equal to the total assets. Therefore, the "leverage" ratio is also equal to one.
 The ROE when there is no leverage is therefore simply:
 .EQ
 ROE lm 
-"Tax Burden" times "EBIT Margin" times "Asset Turnover"
+"Tax Burden" times ~^ "EBIT Margin" times ~^ "Asset Turnover"
 .EN
 .
 .EQ
 lineup =~~
 "Net Income" over EBT
-times
+times ~^
 EBIT over Revenues
-times
+times ~^
 Revenues over "Total Assets"
 .EN
 The interest burden or the ratio of the "net income" to the "EBT" will remain
@@ -518,14 +518,14 @@ The ratio remains constant because some of the factors can be cancelled out:
 "Tax Burden" lm
 "Net Income" over EBT
 =~~
-{ ( EBIT - interest ) times ( 1 - "tax rate%" ) }
+{ ( EBIT - interest ) times ~^ ( 1 - "tax rate%" ) }
 over 
 { ( EBIT - interest ) }
 .EN
 .sp -0.5v
 .EQ
 lineup =~~
-{ cancel { ( EBIT - interest ) } times ( 1 - "tax rate%" ) }
+{ cancel { ( EBIT - interest ) } times ~^ ( 1 - "tax rate%" ) }
 over 
 { cancel { ( EBIT - interest ) }  }
 .EN
@@ -538,28 +538,28 @@ Therefore ROE, if a company has no debt, can also be stated as:
 .EQ
 ROE lineup =~~
 ( 1 - "tax rate%" ) 
-times
+times ~^
 EBIT over Revenues
-times
+times ~^
 Revenues over "Total Assets"
 .EN
 This equation can be further simplified to:
 .EQ
 ROE lineup =~~
 ( 1 - "tax rate%" ) 
-times
+times ~^
 EBIT over "Total Assets"
 .EN
 .sp -0.7v
 .EQ
 lineup =~~
-0.8 times
+0.8 times ~^
 32,750 over 195,623
 .EN
 .sp -0.7v
 .EQ
 lineup =~~
-0.8 times 0.1674
+0.8 times ~^ 0.1674
 .EN
 .sp -0.7v
 .EQ
@@ -661,22 +661,22 @@ business and having low levels of interest cover in good times and lead to
 disaster in bad times due to the cyclical nature of the industry.
 .IP "Income Tax" 15
 The tax is subtracting the interest from the EBIT and multiplying by the tax
-rate # left [ EBIT - T sub a (%D) i sub d right ] times "tax rate" #. When
+rate # left [ EBIT - T sub a (%D) i sub d right ] times ~^ "tax rate" #. When
 there is 10% debt the calculation would be as follows: 
-# left [ 32,750 - 195623 (0.1) (0.1) ] times 0.2  = 6,159 #
+# left [ 32,750 - 195623 (0.1) (0.1) ] times ~^ 0.2  = 6,159 #
 .IP "Net Income" 15
 The net income is the EBIT value less the interest and the tax. This can be
 expressed with the following formula: # left [ EBIT - T sub a (%D) i sub d
-right ] times "1 - tax rate" #. When there is 10% debt the calculation would be
+right ] times ~^ "1 - tax rate" #. When there is 10% debt the calculation would be
 as follows: 
-# left [ 32,750 - 195623 (0.1) (0.1) ] times (1 - 0.2 )  = 24,635 #
+# left [ 32,750 - 195623 (0.1) (0.1) ] times ~^ (1 - 0.2 )  = 24,635 #
 .IP "Equity" 15
 If the debit in this instance is 10% the equity is going to be 90%. Therefore
 the equity can be expressed as: #T sub a ( 1 - %D ) # which will result in:
 #195,623 ( 1 - 0.1 ) = 176,061#
 .IP "ROE" 15
 The ROE we know is equal to the net income divided by the equity; 
-#{ left [ EBIT - T sub a (%D) i sub d right ] times "1 - tax rate" } over {  T
+#{ left [ EBIT - T sub a (%D) i sub d right ] times ~^ "1 - tax rate" } over {  T
 sub a ( 1 - %D ) } = { left [ 32,750 - 195,623 (0.1) (0.1) ] (1 - 0.2)
 } over { 195,623 ( 1 - 0.1 ) } ~=~ 13.99%#
 .IP "ROA" 15
@@ -694,7 +694,7 @@ The EVA has been previously defined as #NOPAT - ("Invested capital" - WACC)#.
 The NOPAT in this instance is equal to the #EBIT( 1 - "tax rate" )#.  The
 invested capital remains the sames as that as the base case of 179,185. The
 calculation is as follows for 10% debt: # 32,750( 1 - 0.2) - left [  179,185
-times 0.17 right ] = -4,261 #
+times ~^ 0.17 right ] = -4,261 #
 .LP
 .SH
 Points to take always from the table:
@@ -753,21 +753,21 @@ assets.
 This is logically going to be the percentage of net income that is not paid out
 in dividends multiplied by the total existing assets of the company.
 .EQ
-"Internal growth rate" lm { "Net income" times ( 1 - "dividend payout ratio" ) }
+"Internal growth rate" lm { "Net income" times ~^ ( 1 - "dividend payout ratio" ) }
 over "Total assets"
 .EN
 In the 5 step Dupont analysis ROA was shown to be: # "Net income" over
 "Total assets" #, therefore, we can express the internal growth rate as:
 .EQ
 "Internal growth rate" lineup =~~
-ROA times ( 1 - "dividend payout ratio" )
+ROA times ~^ ( 1 - "dividend payout ratio" )
 .EN
 .IP "Sustainable growth rate" 15
 The sustainable growth rate is the maximum growth rate when the intention is to
 maintain the current debt to equity ratio. We have previously established the
 relationship below:
 .EQ
-"Internal growth rate" lm { "Net income" times ( 1 - "dividend payout ratio" ) }
+"Internal growth rate" lm { "Net income" times ~^ ( 1 - "dividend payout ratio" ) }
 over "Total assets"
 .EN
 To calculate the sustainable growth rate we will have to multiply the internal
@@ -785,27 +785,27 @@ lineup =~~ 1 over { ( 1 - %D ) }
 .EN
 The sustainable growth rate can now be shown as:
 .EQ
-"Sustainable growth rate" lm { "Net income" times ( 1 - "dividend payout ratio" ) }
+"Sustainable growth rate" lm { "Net income" times ~^ ( 1 - "dividend payout ratio" ) }
 over T sub a 
-times 
+times ~^ 
 1 over { ( 1 - %D ) } 
 .EN
 .sp -0.5v
 .EQ
-lineup =~~ { "Net income" times ( 1 - "dividend payout ratio" ) }
+lineup =~~ { "Net income" times ~^ ( 1 - "dividend payout ratio" ) }
 over 
 { T sub a ( 1 - %D ) }
 .EN
 .sp -0.5v
 .EQ
-lineup =~~ { "Net income" times ( 1 - "dividend payout ratio" ) }
+lineup =~~ { "Net income" times ~^ ( 1 - "dividend payout ratio" ) }
 over 
 Equity
 .EN
 ROE is equal to # "Net Income" over Equity# therefore we can show the sustainable
 growth rate as:
 .EQ
-"Sustainable growth rate" lineup =~~ ROE times ( 1 - "dividend payout ratio" )
+"Sustainable growth rate" lineup =~~ ROE times ~^ ( 1 - "dividend payout ratio" )
 .EN
 .SH
 Conclusion
@@ -872,7 +872,7 @@ the equity. This causes the denominator and the numerator in the ROE equation #
 The ROA reduces towards zero as the net income is reduced towards zero.
 .IP \(bu
 The WACC reduces with the increased leverage until it reaches its limit: # i
-sub d ( 1 - t ) = 16.74% times ( 1 - 0.2 ) = 13.39% #
+sub d ( 1 - t ) = 16.74% times ~^ ( 1 - 0.2 ) = 13.39% #
 .IP \(bu
 There is no such thing as free lunch so the interest cover decreases with the
 additional leverage.
@@ -954,7 +954,7 @@ at the faster rate the denominator and the ROE to fall.
 The ROA reduces towards zero as the net income is reduced towards zero.
 .IP \(bu
 The WACC reduces with the increased leverage until it reaches its limit: # i
-sub d ( 1 - t ) = 17.00% times ( 1 - 0.2 ) = 13.60% #
+sub d ( 1 - t ) = 17.00% times ~^ ( 1 - 0.2 ) = 13.60% #
 .IP \(bu
 There is no such thing as free lunch so the interest cover decreases with the
 additional leverage.
@@ -1004,26 +1004,26 @@ The equation for ROE is:
 .EQ
 "Net income" over "Equity" 
 ~~=~~
-"Net income" over { "Total assets" times ( 1 - "tax rate"% ) }
+"Net income" over { "Total assets" times ~^ ( 1 - "tax rate"% ) }
 .EN
 The equation for ROA is:
 .EQ
 "Net income" over "Total assets"
 .EN
 It can bee seen that the only difference is in the denominator. The equity is
-expressed as, #"Total assets" times ( 1 - "tax rate" )# therefore, if we
+expressed as, #"Total assets" times ~^ ( 1 - "tax rate" )# therefore, if we
 multiply the ROE by #( 1 - "tax rate" ) # we will be left with ROA.
 .EQ 
-ROE times ( 1 - "tax rate"% ) lm
-"Net income" over { "Total assets" times ( 1 - "tax rate"% ) }
-times 
+ROE times ~^ ( 1 - "tax rate"% ) lm
+"Net income" over { "Total assets" times ~^ ( 1 - "tax rate"% ) }
+times ~^ 
 ( 1 - "tax rate" % )
 .EN
 .sp -0.5v
 .EQ 
 lineup =~~
-"Net income" over { "Total assets" times cancel { ( 1 - "tax rate"% ) } }
-times 
+"Net income" over { "Total assets" times ~^ cancel { ( 1 - "tax rate"% ) } }
+times ~^ 
 cancel { ( 1 - "tax rate" % ) }
 .EN
 .sp -0.5v
@@ -1033,7 +1033,7 @@ ROA
 .EN
 To summarise:
 .EQ
-ROE times ( 1 - "tax rate"% ) =~~ ROA
+ROE times ~^ ( 1 - "tax rate"% ) =~~ ROA
 .EN
 .
 .SH
@@ -1041,35 +1041,35 @@ Establish the ROE for a given amount of debt.
 .LP
 The 5 point DuPont analysis established ROE as:
 .EQ
-ROE lm "Tax Burden" times "Interest Burden"
-times "EBIT Margin" times "Asset Turnover" times Leverage
+ROE lm "Tax Burden" times ~^ "Interest Burden"
+times ~^ "EBIT Margin" times ~^ "Asset Turnover" times ~^ Leverage
 .EN
 .
 .EQ
 lineup =~~
 "Net Income" over EBT
-times
+times ~^
 EBT over EBIT
-times
+times ~^
 EBIT over Revenues
-times
+times ~^
 Revenues over "Total Assets"
-times
+times ~^
 "Total Assets" over Equity
 .EN
 We subsequently established that the ROE without leverage can be established
 using only three ratios:
 .EQ
 ROE sub u lm 
-"Tax Burden" times "EBIT Margin" times "Asset Turnover"
+"Tax Burden" times ~^ "EBIT Margin" times ~^ "Asset Turnover"
 .EN
 .
 .EQ
 lineup =~~
 "Net Income" over EBT
-times
+times ~^
 EBIT over Revenues
-times
+times ~^
 Revenues over "Total Assets"
 .EN
 It is not a large leap to suggest that the addition of leverage will only
@@ -1101,7 +1101,7 @@ The two equations can be combined if required:
 { EBIT - T sub a ( %D ) i sub d }
 over
 EBIT
-times 
+times ~^ 
 1
 over
 { 1 - %D }
@@ -1117,7 +1117,7 @@ the ROE for a given level of debt:
 { EBIT- T sub a ( %D ) i sub d }
 over
 { EBIT { ( 1 - %D ) } }
-times
+times ~^
 ROE sub u
 .EN
 .LP
@@ -1128,7 +1128,7 @@ funded by debt at 10% the ROE would be:
 { EBIT- T sub a ( %D ) i sub d }
 over
 { EBIT { ( 1 - %D ) } }
-times
+times ~^
 ROE sub u
 .EN
 .sp -0.5v
@@ -1137,7 +1137,7 @@ lineup =~~
 { 32,750 - 195,623( 0.4 ) 0.1 }
 over
 { 32,750 { ( 1 - 0.4 ) } }
-times
+times ~^
 13.39
 .EN
 .sp -0.5v
@@ -1146,12 +1146,12 @@ lineup =~~
 { 32,750 - 7,825 }
 over
 19,650
-times 13.39
+times ~^ 13.39
 .EN
 .sp -0.5v
 .EQ
 lineup =~~
-1.268 times 13.39
+1.268 times ~^ 13.39
 .EN
 .sp -0.7v
 .EQ

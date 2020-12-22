@@ -663,21 +663,21 @@ left [  1 +  { "Fixed costs" }  over { "Variable costs" } right ]
 .EQ I
 beta sub u
 lineup =~~
-"Pure business beta" times left [  1 +  FC over VC right ]
+"Pure business beta" times ~^ left [  1 +  FC over VC right ]
 .EN
 The levered beta or equity beta of a company is determined by both the
 riskiness of the business it operates in and the increase in risk caused by the
 financial leverage as shown below:
 .EQ I
-"Levered beta" lm "Unlevered beta" times 
-left [  1 + ( 1 - "Tax rate") times Debt over Equity right ]
+"Levered beta" lm "Unlevered beta" times ~^ 
+left [  1 + ( 1 - "Tax rate") times ~^ Debt over Equity right ]
 .EN
 .sp -0.6v
 .EQ I
 beta sub L
 lineup =~~
 beta sub u 
-left [  1 + ( 1 - t ) times D over E right ]
+left [  1 + ( 1 - t ) times ~^ D over E right ]
 .EN
 It can be seen above that the levered or equity beta is the unlevered or asset
 beta adjusted for the amount of financial leverage. The financial leverage
@@ -998,11 +998,11 @@ The equation is as follows:
 .EQ I
 "Cost of equity" lm 
 R sub f + left [ V left ( 1 + FC over VC right ) right ]
-times
+times ~^
 left [ 1 + ( 1 - t ) D over E right ]
-times
+times ~^
 P sub e
-times
+times ~^
 N sub d
 .EN
 .
@@ -1179,44 +1179,44 @@ and there is no debt in the capital structure. We will now fill in the formula:
 .EQ I
 "Cost of equity" lm 
 R sub f + left [ V left ( 1 + FC over VC right ) right ]
-times
+times ~^
 left [ 1 + ( 1 - t ) D over E right ]
-times
+times ~^
 P sub E
-times
+times ~^
 N sub d
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 0.015 + left [  0 ^ left ( 1 + 0.2 over 0.8 right ) right ]
-times
+times ~^
 left [ 1 + ( 1 - 0.3 ) 0 over 1 right ]
-times
+times ~^
 0.07
-times
+times ~^
 1.5
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 1.5 + left [  0 ^ ( 1.25 ) right ]
-times
+times ~^
 left [ 1 + ( 1 - 0.3 ) 0 right ]
-times
+times ~^
 0.07
-times
+times ~^
 1.5
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 0.015 + left [ 0 right ]
-times
+times ~^
 left [ 1 right ]
-times
+times ~^
 0.07 
-times
+times ~^
 1.5
 .EN
 .sp -0.6v
@@ -1250,50 +1250,50 @@ except for the value of #V# which we will set to 1:
 .EQ I
 "Cost of equity" lm 
 R sub f + left [ V left ( 1 + FC over VC right ) right ]
-times
+times ~^
 left [ 1 + ( 1 - t ) D over E right ]
-times
+times ~^
 P sub e
-times
+times ~^
 N sub d
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 0.015 + left [ 1 ^ left ( 1 + 0.2 over 0.8 right ) right ]
-times
+times ~^
 left [ 1 + ( 1 - 0.3 ) 0 over 1 right ]
-times
+times ~^
 0.07
-times
+times ~^
 1.5
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 1.5 + left [ 1 ^ ( 1.25 ) right ]
-times
+times ~^
 left [ 1 + ( 1 - 0.3 ) 0 right ]
-times
+times ~^
 0.07
-times
+times ~^
 1.5
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 0.015 + left [ 1.25 right ]
-times
+times ~^
 left [ 1 right ]
-times
+times ~^
 0.07
-times
+times ~^
 1.5
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
-0.015 + 1.25 times 0.07 times 1.5
+0.015 + 1.25 times ~^ 0.07 times ~^ 1.5
 .EN
 .sp -0.6v
 .EQ I
@@ -1304,7 +1304,7 @@ The impact been substantial with the cost of equity capital rising from 1.5% to
 14.6% even though there is no financial leverage. This model prices the cost of
 any equity in the business at 1.5 times the equity premium plus the risk free
 rate. Therefore the minimum cost of equity capital if #V# is equal to one, with
-our inputs, would be # 1.5% + 7% times 1.5 =~~ 12%#.
+our inputs, would be # 1.5% + 7% times ~^ 1.5 =~~ 12%#.
 .LP
 The 1.5 is a crude multiplier and rather simplistic and it is very unlikely
 that the risks to the equity move in such a simple manner. That withstanding it
@@ -1318,7 +1318,7 @@ investing in a savings vehicle.
 Equity is always more expensive than debt, so I would ensure that the equity
 risk premium #P sub e# multiplied by #N sub d# is always greater than your most
 expensive form of debt. If the bank charges you 15% for your overdraft then,
-using the inputs in this example, #0.07 times 1.5 =~~ 10.5%# is too low and I
+using the inputs in this example, #0.07 times ~^ 1.5 =~~ 10.5%# is too low and I
 would adjust #N sub d# to be greater than # 0.15 over 0.07 =~~ 2.14 # this will
 ensure that formula always returns a cost of equity that is greater than the
 cost of debt.
@@ -1360,44 +1360,44 @@ We can now complete the equation:
 .EQ I
 "Cost of equity" lm 
 R sub f + left [ V left ( 1 + FC over VC right ) right ]
-times
+times ~^
 left [ 1 + ( 1 - t ) D over E right ]
-times
+times ~^
 P sub e
-times
+times ~^
 N sub d
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 0.015 + left [ 0.5 ^ left ( 1 + 0.7 over 0.3 right ) right ]
-times
+times ~^
 left [ 1 + ( 1 - 0.3 ) 0.4 over 0.6 right ]
-times
+times ~^
 0.07
-times
+times ~^
 1.5
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 1.5 + left [ 0.5 ^ ( 3.33 ) right ]
-times
+times ~^
 left [ 1 + ( 1 - 0.3 ) 0.667 right ]
-times
+times ~^
 0.07
-times
+times ~^
 1.5
 .EN
 .sp -0.6v
 .EQ I
 lineup =~~
 0.015 + left [ 1.67 right ]
-times
+times ~^
 left [ 1.47 right ]
-times
+times ~^
 0.07
-times
+times ~^
 1.5
 .EN
 .sp -0.6v
@@ -1541,9 +1541,9 @@ much added value a company generated in a given period of time.
 Now that we can establish the cost of debt and the cost of equity the formula
 for calculating the weighted average cost of capital is logical enough:
 .EQ I
-WACC = left [ {left ( E over IC right )} times Re right ]
+WACC = left [ {left ( E over IC right )} times ~^ Re right ]
 ~+~
-left [ {left ( D over IC right ) } times Rd(1 - t) right ] 
+left [ {left ( D over IC right ) } times ~^ Rd(1 - t) right ] 
 .EN
 .EQ I
 WACC =
@@ -1579,9 +1579,9 @@ lineup =~~ { sum wx } over { sum w }
 .sp -0.6v
 .EQ I
 lineup =~~
-{ ( 50 times 5 )
-+ ( 25 times 10 )
-+ ( 25 times 15 ) } over 100 
+{ ( 50 times ~^ 5 )
++ ( 25 times ~^ 10 )
++ ( 25 times ~^ 15 ) } over 100 
 .EN
 .sp -0.6v
 .EQ I
@@ -1597,9 +1597,9 @@ lineup =~~
 This mathematics can also be completed like so
 .EQ I
 x bar lineup =~~
-{ { 50 times 5 } over 100 } 
-+ { { 25 times 10 } over 100 } 
-+ { { 25 times 15 } over 100 }
+{ { 50 times ~^ 5 } over 100 } 
++ { { 25 times ~^ 10 } over 100 } 
++ { { 25 times ~^ 15 } over 100 }
 .EN
 .sp -0.6v
 .EQ I
@@ -1637,9 +1637,9 @@ _
 The mathematics behind the table are broken down as follows:
 .EQ I
 "Pre Tax WACC" lineup =~~
-{ { 17 times 12 } over 100 }
-+ { { 22 times 7 } over 100 } 
-+ { { 61 times 24 } over 100 }
+{ { 17 times ~^ 12 } over 100 }
++ { { 22 times ~^ 7 } over 100 } 
++ { { 61 times ~^ 24 } over 100 }
 .EN
 .sp -0.7v
 .EQ I
@@ -1653,29 +1653,29 @@ lineup =~~
 .EN
 Tax has an impact on the cost of debt.
 .EQ I
-"Post Tax Cost" lineup =~~ Cost times (1 - "Tax Rate") 
+"Post Tax Cost" lineup =~~ Cost times ~^ (1 - "Tax Rate") 
 .EN
 .EQ I
 "Post Tax Overdraft" lineup =~~
-12 times (1 - 20/100)
+12 times ~^ (1 - 20/100)
 =~~
-12 times 0.8
+12 times ~^ 0.8
 =~~
 9.6
 .EN
 .sp -0.7v
 .EQ I
 "Post Tax Longterm Debt" lineup =~~
-7 times (1 - 20/100)
+7 times ~^ (1 - 20/100)
 =~~
-7 times 0.8 
+7 times ~^ 0.8 
 =~~
 5.6
 .EN
 .EQ I
-"Post Tax WACC" lineup =~~  { { 17 times 9.6 } over 100 }
-+ { { 22 times 5.6 } over 100 } 
-+ { { 61 times 24 } over 100 }
+"Post Tax WACC" lineup =~~  { { 17 times ~^ 9.6 } over 100 }
++ { { 22 times ~^ 5.6 } over 100 } 
++ { { 61 times ~^ 24 } over 100 }
 .EN
 .sp -0.7v
 .EQ I

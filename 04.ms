@@ -80,7 +80,7 @@ received at time period zero.
 .LP
 The factored form the series in our example is as follows:
 .EQ I
-250 times left [ 1
+250 times ~^ left [ 1
 + 1  over { (1 + i) sup 1 }
 + 1  over { (1 + i) sup 2 } 
 ...~~...~
@@ -157,9 +157,9 @@ PV sub ad lm
 .sp -0.6v
 .EQ I
 lineup =~~
-{ left ( 1 + { 5.2 over { 100 times 52 } }  right ) }
-{left ( 250 over { 5.2 over { 100 times 52 } } right ) } 
-{ left [ 1 - { 1 over { left ( 1 + { 5.2 over { 100 times 52 } } 
+{ left ( 1 + { 5.2 over { 100 times ~^ 52 } }  right ) }
+{left ( 250 over { 5.2 over { 100 times ~^ 52 } } right ) } 
+{ left [ 1 - { 1 over { left ( 1 + { 5.2 over { 100 times ~^ 52 } } 
 right ) sup 52 } } right ] } 
 .EN
 .sp -0.6v
@@ -400,7 +400,7 @@ The series has been reorganised from smallest to largest value for factoring as
 the common ratio is required to be greater than one as the series is
 compounding. The factored form of the series in our example is as follows:
 .EQ I
-800 times left [ ( 1 + i ) sup 1 + ( 1 + i ) sup 2 + ( 1 + i ) sup 3 
+800 times ~^ left [ ( 1 + i ) sup 1 + ( 1 + i ) sup 2 + ( 1 + i ) sup 3 
 ...~~... 
 + ( 1 + i ) sup 58 
 + ( 1 + i ) sup 59 
@@ -427,7 +427,7 @@ S sub n =~~ {  a({ r sup n } -1  ) } over { ( r - 1 ) }
 .EN
 Therefore:
 .EQ I
-FV lm PMT times {  a({ r sup n } -1  ) } over { ( r - 1 ) } 
+FV lm PMT times ~^ {  a({ r sup n } -1  ) } over { ( r - 1 ) } 
 .EN
 .sp -0.6v
 .EQ I
@@ -447,9 +447,9 @@ can solve the problem.
 FV sub ad = { PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
 over i
 ~~~=~~~
-{ 800 left ( 1 + { 5.0 over { 100 times 12 } } right ) 
-left ( { left ( 1 + { 5.0 over { 100 times 12 } } right ) sup 60 } - 1 right )} 
-over { left ( 5.0 over { 100 times 12 } right ) }
+{ 800 left ( 1 + { 5.0 over { 100 times ~^ 12 } } right ) 
+left ( { left ( 1 + { 5.0 over { 100 times ~^ 12 } } right ) sup 60 } - 1 right )} 
+over { left ( 5.0 over { 100 times ~^ 12 } right ) }
 ~~~=~~~ 
 \[Po]54,631.56
 .EN
