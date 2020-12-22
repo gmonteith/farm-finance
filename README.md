@@ -18,50 +18,50 @@ is show below:
 
 File name | Description
 --------- | -----------
-`draft/0000.ms` | Title page
-`draft/000.ms` | Preface
-`draft/00.ms` | Introduction
-`draft/01.ms` | Chapter 01, Time value of money
-`draft/02.ms` | Chapter 02, Equivalence
-`draft/03.ms` | Chapter 03, Ordinary Annuities
-`draft/04.ms` | Chapter 04, Annuities Due
-`draft/05.ms` | Chapter 05, Growing Ordinary Annuities
-`draft/06.ms` | Chapter 06, Growing Annuities Due
-`draft/07.ms` | Chapter 07, Declining Annuities
-`draft/08.ms` | Chapter 08, Perpetuities
-`draft/09.ms` | Chapter 09, Growing Perpetuities
-`draft/10.ms` | Chapter 10, Engineering economics
-`draft/11.ms` | Chapter 11, Nominal & effective rates
-`draft/12.ms` | Chapter 12, Costing your capital
-`draft/13.ms` | Chapter 13, Investment analysis
-`draft/14.ms` | Chapter 14, Structure of UK tax
-`draft/15.ms` | Chapter 15, Understanding the impact of tax
-`draft/16.ms` | Chapter 16, Investment cost equations
-`draft/17.ms` | Chapter 17, Using the investment cost equations
-`draft/18.ms` | Chapter 18, Equivalent annual cost
-`draft/19.ms` | Chapter 19, Mutually exclusive projects
-`draft/20.ms` | Chapter 20, Replacement analysis
-`draft/21.ms` | Chapter 21, Revenue cost & profit
-`draft/22.ms` | Chapter 22, Economic value and the measurement of financial performance
-`draft/23.ms` | Chapter 23, Return on equity
-`draft/A1.ms` | Appendix A, Impact of Writing Down Allowance (WDA) on Capital Costs
-`draft/B0.ms` | Appendix B, Introduction
-`draft/B1.ms` | Appendix B, Writing Down Allowance, Time Period 1
-`draft/B2.ms` | Appendix B, Annual Investment Allowance, Time Period 1
-`draft/B3.ms` | Appendix B, Single Asset Pool, Time Period 1
-`draft/B4.ms` | Appendix B, Investment Cost Equations, Time Period 1
-`draft/B6.ms` | Appendix B, Writing Down Allowance, Time Period 2
-`draft/B7.ms` | Appendix B, Annual Investment Allowance, Time Period 2
-`draft/B8.ms` | Appendix B, Single Asset Pool, Time Period 2
-`draft/C1.ms` | Appendix C, Engineering Economics Equations
-`draft/D1.ms` | Appendix D, Self Assessment Tax in Two Payments
-`draft/E1.ms` | Appendix E, Shareholder Value Added (SVA)
-`draft/F1.ms` | Appendix F, Workings Hitch
-`draft/G1.ms` | Appendix G, Loans
-`draft/H1.ms` | Appendix G, Inflation
-`draft/I1.ms` | Appendix I, Cumulative Dry Matter
-`draft/J1.ms` | Appendix J, Repair & Maintenance
-`draft/R1.ms` | Appendix R, References
+`data/0000.ms` | Title page
+`data/000.ms` | Preface
+`data/00.ms` | Introduction
+`data/01.ms` | Chapter 01, Time value of money
+`data/02.ms` | Chapter 02, Equivalence
+`data/03.ms` | Chapter 03, Ordinary Annuities
+`data/04.ms` | Chapter 04, Annuities Due
+`data/05.ms` | Chapter 05, Growing Ordinary Annuities
+`data/06.ms` | Chapter 06, Growing Annuities Due
+`data/07.ms` | Chapter 07, Declining Annuities
+`data/08.ms` | Chapter 08, Perpetuities
+`data/09.ms` | Chapter 09, Growing Perpetuities
+`data/10.ms` | Chapter 10, Engineering economics
+`data/11.ms` | Chapter 11, Nominal & effective rates
+`data/12.ms` | Chapter 12, Costing your capital
+`data/13.ms` | Chapter 13, Investment analysis
+`data/14.ms` | Chapter 14, Structure of UK tax
+`data/15.ms` | Chapter 15, Understanding the impact of tax
+`data/16.ms` | Chapter 16, Investment cost equations
+`data/17.ms` | Chapter 17, Using the investment cost equations
+`data/18.ms` | Chapter 18, Equivalent annual cost
+`data/19.ms` | Chapter 19, Mutually exclusive projects
+`data/20.ms` | Chapter 20, Replacement analysis
+`data/21.ms` | Chapter 21, Revenue cost & profit
+`data/22.ms` | Chapter 22, Economic value and the measurement of financial performance
+`data/23.ms` | Chapter 23, Return on equity
+`data/A1.ms` | Appendix A, Impact of Writing Down Allowance (WDA) on Capital Costs
+`data/B0.ms` | Appendix B, Introduction
+`data/B1.ms` | Appendix B, Writing Down Allowance, Time Period 1
+`data/B2.ms` | Appendix B, Annual Investment Allowance, Time Period 1
+`data/B3.ms` | Appendix B, Single Asset Pool, Time Period 1
+`data/B4.ms` | Appendix B, Investment Cost Equations, Time Period 1
+`data/B6.ms` | Appendix B, Writing Down Allowance, Time Period 2
+`data/B7.ms` | Appendix B, Annual Investment Allowance, Time Period 2
+`data/B8.ms` | Appendix B, Single Asset Pool, Time Period 2
+`data/C1.ms` | Appendix C, Engineering Economics Equations
+`data/D1.ms` | Appendix D, Self Assessment Tax in Two Payments
+`data/E1.ms` | Appendix E, Shareholder Value Added (SVA)
+`data/F1.ms` | Appendix F, Workings Hitch
+`data/G1.ms` | Appendix G, Loans
+`data/H1.ms` | Appendix G, Inflation
+`data/I1.ms` | Appendix I, Cumulative Dry Matter
+`data/J1.ms` | Appendix J, Repair & Maintenance
+`data/R1.ms` | Appendix R, References
 `macro/format.tmac` | Macros used in document layout
 `macro/equation.tmac` | Equation definitions
 `macro/equation.tmac` | Pic definitions
