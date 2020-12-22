@@ -32,9 +32,9 @@ lineup =~~
 .EN
 It is important to grasp the meaning of the numbers when the NPV is converted
 into an annuity. We are answering the question: given an NPV of \[Po]53,745
-what the annuity be over the same time period with the same interest rate? With
-our knowledge of equivalence from Chapter 2 we know that the annuity value and
-the NPV are equal.
+what would the annuity be over the same time period with the same interest
+rate? With our knowledge of equivalence from Chapter 2 we know that the annuity
+value and the NPV are equal.
 .LP
 Accountants tend to favour NPV and engineers the EAC or EAW, the difference in
 preference is purely down to familiarity and professional education as opposed
@@ -53,10 +53,10 @@ initial cost?" Equivalent annual costs make the analysis of this scenario clear
 and easy to understand.
 .LP
 Equivalent Annual Worth uses the same sign conventions as the NPV. If you are
-dealing only with costs, so you are calculating an equivalent annual cost
-(EAC), the convention is that the costs are all positive. The important rule is
-to be consistent with the signs that you use and not to mix EAC and EAW. If
-there are costs and benefits then use EAW.
+dealing only with costs, so you are calculating an EAC, the convention is that
+the costs are all positive. The important rule is to be consistent with the
+signs that you use and not to mix EAC and EAW. If there are costs and benefits
+then use EAW.
 .sp
 .
 .B1
