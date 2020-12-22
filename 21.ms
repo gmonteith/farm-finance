@@ -4650,5 +4650,3 @@ relationship between costs and profit. If you minimize your fixed costs, you
 can increase your profit without changing your sale price, contribution margin,
 or units sold. If you eliminated the fixed costs the entire contribution margin
 would go towards the profit!
-
-
