@@ -18,6 +18,10 @@ Inflation
 .LP
 At present inflation is rather benign, but this has not always been the case.
 In general terms inflation can be defined as:\(dd
+.FS
+\(dd This definition was taken from Wikipedia. 
+https://en.wikipedia.org/wiki/Inflation
+.FE
 .QP
 The term "inflation" originally referred to a rise in the general price level
 caused by an imbalance between the quantity of money and trade needs. However,
@@ -26,31 +30,27 @@ rise in the price level. An increase in the money supply may be called
 "monetary inflation", to distinguish it from rising prices, which may also for
 clarity be called "price inflation". Economists generally agree that in the
 long run, inflation is caused by increases in the money supply.
-.FS
-\(dd This definition was taken from Wikipedia. 
-https://en.wikipedia.org/wiki/Inflation
-.FE
 .LP
 However not all goods and services increase or decrease in price at the same
 rate, so the impact on a specific business maybe different to that of a basket
 of goods\(dg that represents the core inflation as stated by the government.
 .FS
 \(dg The government has two measures of inflation the Retail Price Index (RPI)
-and the Consumer Price Index (CPI) which contain different baskets of good.
+and the Consumer Price Index (CPI), which contain different baskets of goods.
 .FE
 .LP
 Since the financial crisis the governments measure of core inflation has been
 low, however, this may differ to that of the consumers view of inflation
-depending on what is included in the basket of goods. The policy of quantitative
-easing has lead, it can be argued to, rising asset prices, however, asset price
-inflation is not included in CPI or RPI.
+depending on what is included in the basket of goods. The policy of
+quantitative easing has lead, it can be argued, to rising asset prices,
+however, asset price inflation is not included in CPI or RPI.
 .
 .SH
-Inflation and the rate of return
+Inflation And The Rate Of Return
 .LP
 Typically there is a positive correlation between interest rates and inflation.
-As the inflation rate rises the investor expects a greater return to ensure the
-purchasing power of the money that is received in the future. There are two
+As the inflation rate rises the investor expects a greater return to maintain
+the purchasing power of the money that is received in the future. There are two
 methods of accounting for inflation within a discounted cash flow analysis:
 .IP "Nominal currency approach" 5
 When using this approach, all future cash flows, be they investments, costs or
@@ -65,15 +65,15 @@ a rate of return free of inflation.
 .LP
 Both approaches should yield the same net present value or equivalent annual
 cost if done correctly. Under conditions of high and unstable inflation the
-analysis is often done in real terms, however inflation is currently very low
+analysis is often done in real terms, however, inflation is currently very low
 and we will presume that all cash flows and the discount rate include inflation
-and are therefore nominal. There is no reason to pick one method over the other
-and we have selected the nominal approach as it seems more intuitive to us. You
-will also find that some scenario are easier with real rate and some with
-nominal rates so it is useful to understand both approaches.
+and are therefore nominal values. There is no reason to pick one method over
+the other and we have selected the nominal approach as it seems more intuitive
+to us. You will also find that some scenario are easier with real rate and some
+with nominal rates so it is useful to understand both approaches.
 .LP
 In periods of high inflation it is usually the case that nominal margins are
-higher than the "real" margins because the accounts assembled on an historic
+higher than the "real" margins because the accounts are assembled on a historic
 costs basis. The historic costs basis in an period of high inflation tends to
 under estimate the cost of replacing the inventory and the capital assets.
 .LP
@@ -84,13 +84,13 @@ offer limited opportunities to protect the "real" margin in periods of high
 inflation.
 .
 .SH 2
-The nominal discount rate
+The Nominal Discount Rate
 .LP
-We should now be quite familiar with the concept of the time value of money
-and discounting to establish the equivalent value of money received in
-different time periods. Inflation adds an addition complication as money is
-losing its purchasing power before we consider establishing its equivalent
-value with discounting.
+We should now be quite familiar with the concept of the time value of money and
+discounting to establish the equivalent value of money received in different
+time periods. Inflation adds an addition complication as money is losing its
+purchasing power before we consider establishing its equivalent value with
+discounting.
 .LP
 In an inflation free environment with a discount rate of 10% one hundred pounds
 received one year from now would have the following present value:
@@ -117,7 +117,7 @@ Purchasing ^ power
 The reduction in the purchasing power from the value of \[Po]100 pounds to
 \[Po]95.24 is due to the inflation. To establish the present value the
 \[Po]95.24 must be discounted by the 10% which is the "real" rate of return
-that we as the investor want to receive.
+that we, as the investor, want to receive.
 .EQ I
 PV 
 =~~
@@ -132,7 +132,7 @@ amount.
 .LP
 The general formula for the present value when using nominal cash flows is:
 .EQ I
-PV = 1 over { ( 1 + f ) } times 1 over { ( 1 + i sub r ) }
+PV =~~ 1 over { ( 1 + f ) } times ~^ 1 over { ( 1 + i sub r ) }
 .EN
 This equation can also be multiplied out to give:
 .EQ I
@@ -149,29 +149,29 @@ lineup =~~
 second binomial #(1 + i)# is multiplied in turn by each term of the first
 binomial #(1 +f)#. 
 .EQ I
-(1 + f)( 1 + i) ~~=~~ 1(1 + i) + f(1 + i) ~~=~~ 1 + i + f + fi.
+(1 + f)( 1 + i) =~~ 1(1 + i) + f(1 + i) =~~ 1 + i + f + fi.
 .EN
 Many people are taught the FOIL method of multiplying binomials horizontally.
 FOIL stands for First, Outer, Inner and Last. This gives:
 .EQ I
 ( 1 + f)( 1 + i)
-~~=~~~
-( 1 times 1 ) + (1 times i ) + ( f times 1 ) + ( f times i )
-~~=~~~
+=~~
+( 1 times ~^ 1 ) + (1 times ~^ i ) + ( f times ~^ 1 ) + ( f times ~^ i )
+=~~
 1 + i + f + fi 
 .EN
 .FE
 Typically the discount rate is stated as a percentage value to substitute into
-the the well know time value of money equation # PV = FV over { ( 1 + i ) sup n
-} # or # PV = FV( 1 + i ) sup -n #. If you wish to establish the correct
+the the well know time value of money equation # PV =~~ FV over { ( 1 + i ) sup
+n } # or # PV =~~ FV( 1 + i ) sup -n #. If you wish to establish the correct
 nominal value for #i# to use in the time value of money equation the formulas
 are stated below:
 .EQ I
-i sub n = ( 1 + f )( 1 + i sub r ) - 1 
+i sub n =~~ ( 1 + f )( 1 + i sub r ) - 1 
 .EN
 or
 .EQ I
-i sub n = i + f + fi sub r
+i sub n =~~ i sub r + f + fi sub r
 .EN
 If we return to our example we can quickly test our equations. In the example
 we want to establish the present value of \[Po]100 of nominal cash flow with an
@@ -192,7 +192,7 @@ lineup =~~
 0.155
 .EN
 We can now complete the discounted cash flow using the time value of money
-equation and out nominal interest rate of 15.5%:
+equation and our nominal interest rate of 15.5%:
 .EQ I
 PV =~~ FV over { ( 1 + i ) sup n }
 =~~
@@ -277,10 +277,11 @@ year, it is possible to have different inflation rates from year to year but it
 adds complexity and I am not sure if the additional work will give a more
 accurate value. Forecasting is a game that makes fools of us all and economics
 has long be called the dismal science for its poor record which does not
-encourage over elaborate models when one is not sure of the veracity of inputs.
+encourage over elaborate models when one is not sure of the veracity of the
+inputs.
 .
 .SH 2
-Estimating future cash flows
+Estimating Future Cash Flows
 .LP
 A large component of discounted cash flow is forecasting the future cash flows
 and inflation is simply another factor that must be considered in the process.
@@ -288,43 +289,44 @@ It is unlikely that that the cash flows can simply be increased by the general
 rate of inflation. Typically different cash flows will go up at different
 rates, which can be expressed as a multiplier of the general rate e.g 1.2 times
 or 0.8 times, and past records can be examined to see how certain costs and
-revenues change in relation to general inflation. 
+revenues change in relation to the general rate of inflation. 
 .LP
 Below is a list of points to consider when estimating nominal future cash
 flows: 
-.IP \(en 3
+.IP \(bu 3
 The total cash costs and revenues are the result of a price per unit and the
 number of units sold or bought. The adjustment for inflation to establish the
 nominal cash flows relates to the price per unit which is then multiplied by
 the number of units involved.
-.IP \(en
+.IP \(bu
 It maybe easier to group items into categories and then apply the appropriate
 multiplier that relates them to the general rate of inflation. For instance it
 maybe deemed that ground engaging parts increase at a rate of 1.8 times the
 general of inflation and filters at only 1.2 times the rate of inflation and
 third category at the rate of general inflation a multiplier of 1.0.
-.IP \(en
+.IP \(bu
 There maybe other factors that are contributing to the change in prices as well
 as inflation. Products tend to move through different price points in their
-life-cycle. The obvious example are drugs which can be very expensive when first
-released but if a generic drug is released after the patent has expired there
-is often a significant reduction in the price. On the other side of the coin
-there has been cases in the news of drug companies significantly increasing
-their drug prices when there is no obvious competition. Companies also have a
-choice on which products they bring to a market and they may withdraw a product
-you are using and replace it with a new and improved product at a higher price.
-.IP \(en
+life-cycle. The obvious example are drugs which can be very expensive when
+first released but if a generic drug is released after the patent has expired
+there is often a significant reduction in the price. On the other side of the
+coin there has been cases in the news of drug companies significantly
+increasing their drug prices when there is no obvious competition. Companies
+also have a choice on which products they bring to a market and they may
+withdraw a product you are using and replace it with a new and improved product
+at a higher price.
+.IP \(bu
 If you can fix the price of a product or service then you have no need to worry
 about inflation for a given period of time. Repair and maintenance contracts
 have become more common in the haulage and agricultural industries in the last
 decade helping to stabilise the operating costs over the economic life of the
 piecing of equipment.
-.IP \(en
+.IP \(bu
 The tax savings associated with a capital purchase are not affected by
 inflation. HMRC dictates that capital allowances are calculated on the
 undepreciated historic cost of the equipment and no adjustments are made of
 inflation and the subsequent increase in the replacement cost.
-.IP \(en
+.IP \(bu
 It is generally assumed that investment costs occur at year zero. This maybe
 the case for a piece of capital equipment but not the case when constructing a
 new yard or a large grain store. When the costs occur over a period of time the
@@ -332,7 +334,7 @@ nominal costs and the timings will need to be estimated taking into account any
 inflation expectations. The longer the project the more challenging the
 estimations become especially in period of high inflation when prices are not
 easy to predict over months let alone years.
-.IP \(en
+.IP \(bu
 Capital investments frequently require additional investments in working
 capital via cash and inventory. The cash that is received on the completion of
 the project will be the same nominal amount, it will of course have less real
@@ -344,8 +346,8 @@ earliest possible point in time due to the loss of purchasing power, caused by
 the inflation, therefore a large investment in inventory at the beginning of
 the project saves nominal incremental investments in the inventory in the
 future. There are various methods of accounting for the inventory and their
-impact which is discussed in a little more detail in Chapter XX.
-.IP \(en
+impact which is discussed in a little more detail in Chapter 22.
+.IP \(bu
 Inflation can also have a large impact on the expected salvage values. When
 prices are rising it tends to have a corresponding impact on the second hand
 value of the same item. The UK like many countries went through a period of
@@ -354,10 +356,10 @@ equipment exceeding its historic cost, however, this was offset by the
 significant increase in the replacement cost. 
 .
 .SH 2
-The acceptable rate of return
+The Acceptable Rate Of Return
 .LP
-In Chapter XX we discussed the concept of the opportunity cost of investing
-in your business. We also talked in brief about index funds and the possible
+In Chapter 12 we discussed the concept of the opportunity cost of investing in
+your business. We also talked in brief about index funds and the possible
 return expected from such investments. The returns which publicly listed
 investments, such as tracker funds, have achieved in the past are typically
 stated on a nominal basis. Therefore the rate includes both the risks of
@@ -405,22 +407,22 @@ a fall in interest rates will result in a rise in the price of the bond again
 to bring it in line with prevailing market interest rates. This fluctuation in
 the bond price can affect the return of the investor in both the short term, if
 they want to trade, and the long term by changing the yield to maturity.
-Investors require compensation for these risks and others and the difficulty in
-accurately forecasting them over longer time frames typically means that
-investors require higher returns to invest in longer dated bonds. Though, the
+Investors require compensation for these risks, and others, and the difficulty
+in accurately forecasting them over longer time frames typically means that
+investors require higher returns to invest in longer dated bonds. Though the
 government policy of quantitative easing, the purchase of longer term bonds in
 exchange for cash, has currently flattened the yield curve. I don't thing
 anybody foresaw that event.
 .FE
 .
 .SH 2
-Reconciling nominal and real rates.
+Reconciling Nominal And Real Rates.
 .LP
 As much as we are typically going to work with nominal rates, it pays to know
 how to work with both methods as often it is easier to work with real rates.
 .
 .SH 3
-A simple bond.
+A Simple Bond.
 .LP
 We will look at a simple bond. If you can buy a 10 year zero coupon bond today
 at 50.83 what is the yield? When examining bonds it is not unusual that the
@@ -463,7 +465,7 @@ FV over { ( 1 + f ) sup n }
 =~~
 100 over { ( 1 + 0.03 ) sup 10 }
 =~~
-74.41
+\[Po]74.41
 .EN
 The \[Po]100 that you receive in ten years time, allowing for a 3% rate of
 inflation, will have a purchasing power of \[Po]74.41.
@@ -482,13 +484,13 @@ PV( 1 + i sub r ) sup n
 =~~
 50.83 ( 1 + 0.0391 ) sup 10
 =~~
-74.59
+\[Po]74.59
 .EN
 We have a small rounding error but the methods both yield the same result.
 .RE
 .
 .SH 2
-Net present value.
+Net Present Value.
 .LP
 It is easy to get confused about what is happening when talking about
 inflation. Let us suppose an investment has the following cash flows:
@@ -507,8 +509,8 @@ _
 5@23,000
 _
 .TE
-You might have noticed these are the same cash flows we used in Chapter XX when
-discussing the net present value. In that example, as it was not stated
+You might have noticed these are the same cash flows we used in Chapter 13.3.1
+when discussing the net present value. In that example, as it was not stated
 otherwise, it was presumed that the 18% cost of capital was a nominal rate. We
 then went on to establish the following net present value:
 .TS
@@ -527,11 +529,11 @@ _
 4@20,000@0.516@10,320
 5@23,000@0.437@10,051
 _
-NPV@@@17,462
+NPV@@@\[Po]17,462
 _
 .TE
-If we now state that the nominal rate included expectations of 3% we can answer
-the three following questions:
+If we now state that the nominal rate included expectations of 3% inflation we
+can answer the following three questions:
 .IP 1. 3
 What is the real rate?
 .RS
@@ -618,7 +620,7 @@ _
 4@20,000@0.888@17,760@0.581@10,319
 5@23,000@0.863@19,849@0.507@10,063
 _
-NPV@@@@@17,481
+NPV@@@@@\[Po]17,481
 _
 .TE
 .RE
@@ -629,7 +631,7 @@ nominal value or real values, as long as you are consistent you should get the
 same net present value.
 .
 .SH 2
-Net present value 2
+Net Present Value 2
 .LP
 We will examine another example. You are looking at the viability of planting
 some short rotation poplar on the farm as a means of diversifying away from
@@ -639,11 +641,11 @@ business. To grow the trees the operating business will have to pay rent of
 \[Po]100 per year (payable at the start of the year) to the asset owning
 business. To maintain its purchasing power the asset owning business will
 increase the land rent at the same rate as the inflation rate, which is
-expected to be about 4% a year. After 7 years the poplars will be harvested you
-and project the plantation will produce 20 tons of chips per acre. The current
-price for chips is \[Po]100 per ton which also expect to move inline with the
-rate of inflation. What is the net present value of the project if you would
-like to earn a real rate of 8% on your investment?
+expected to be about 4% a year. After 7 years the poplars will be harvested and
+you project the plantation will produce 20 tons of chips per acre. The current
+price for chips is \[Po]100 per ton which you also expect to move inline with
+the rate of inflation. What is the net present value of the project if you
+would like to earn a real rate of 8% on your investment?
 .LP
 We will answer the question using both nominal values and real values. At time
 zero the cost will be:
@@ -662,14 +664,14 @@ nominal value of the rent in year 1 would be:
 .EQ I
 CF1 sub n
 =~~
-CF1 sub r times ( 1 + f ) sup n
+CF1 sub r times ~^ ( 1 + f ) sup n
 =~~
-100 times ( 1 + 0.04 ) sup 1
+100 times ~^ ( 1 + 0.04 ) sup 1
 =~~
 \[Po]104
 .EN
-The to create the net present value the real cash flows can be discounted by
-the 8% real rate of return. The present value for year 1 would be :
+To create the net present value the real cash flows can be discounted by the 8%
+real rate of return. The present value for year 1 would be :
 .EQ I
 PV 
 =~~
@@ -703,7 +705,7 @@ In year 7 the real value of harvest will be:
 .EQ I
 Harvest sub r
 =~~
-20 ~ tonnes times \[Po]100
+20 ~ tonnes times ~^ \[Po]100
 =~~
 \[Po]2,000
 .EN
@@ -711,15 +713,15 @@ or in nominal terms:
 .EQ I
 Harvest sub n
 =~~
-20 ~ tonnes times \[Po]100 times ( 1 + f ) sup n
+20 ~ tonnes times ~^ \[Po]100 times ~^ ( 1 + f ) sup n
 =~~
-2,000 times ( 1 + 0.04 ) sup 7
+2,000 times ~^ ( 1 + 0.04 ) sup 7
 =~~
 \[Po]2,631.86
 .EN
 There is no rent in the year seven as there was rent paid in year zero. There
-should be seven rent payments in total, which there is but the first payment
-was time period zero and not time period one.
+should be seven rent payments in total, which there is, but the first payment
+was at time period zero and not time period one.
 .LP
 Again the real cash flows in year seven can be discounted by the real interest
 rate of 8%
@@ -742,8 +744,7 @@ CF7 sub n over { ( 1 + i sub n ) sup 7 }
 =~~
 \[Po]1,166.89
 .EN
-.LP
-We can now assemble a table of the cash flows.
+We can now assemble a table of the cash flows on both a real and nominal basis:
 .TS
 tab (@) center;
 c c c c c
@@ -767,7 +768,7 @@ _
 6@(100.00)@(126.53)@(63.02)@(63.02)
 7@2,000.00@2,631.86@1,166.98@1,166.98
 _
-NPV@@@4.70@4.70
+NPV@@@\[Po]4.70@\[Po]4.70
 _
 .TE
 The net present value is positive so the investment earns the desired real rate
