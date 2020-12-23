@@ -11,7 +11,7 @@ the ms macro package and the preprocessors eqn, tbl, pic and grap.
 If you wish to view the pdf derived from the groff files please use the
 following link:
 
-https://1drv.ms/u/s!AoOgbX-hORgAbURCh_B81JfDlzo?e=bIn5IV
+[link to pdf](https://1drv.ms/u/s!AoOgbX-hORgAbURCh_B81JfDlzo?e=bIn5IV)
 
 ---
 
