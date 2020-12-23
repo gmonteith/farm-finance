@@ -8,10 +8,8 @@ information to make better capital allocation decisions.
 The document has been written using the groff document formatting system with
 the ms macro package and the preprocessors eqn, tbl, pic and grap.
 
-If you wish to view the pdf derived from the groff files please use the
-following link:
-
-[link to pdf](https://1drv.ms/u/s!AoOgbX-hORgAbURCh_B81JfDlzo?e=bIn5IV)
+If you wish to view the pdf derived from the groff files please click this
+[link](https://1drv.ms/u/s!AoOgbX-hORgAbURCh_B81JfDlzo?e=bIn5IV)
 
 ---
 
