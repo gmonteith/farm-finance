@@ -119,7 +119,7 @@ differently about the merits of this work. If you find something particularly
 egregious you may contact me via the following email address
 errata@posteo.co.uk or alternatively you can find the document on GitHub at the
 following address
-.pdfhref W -A , https://github.com/gmonteith/capital-allocation
+.pdfhref W -A , https://github.com/gmonteith/farm-finance
 where you can contact me or fork the work itself and make your own
 improvements.
 .LP
