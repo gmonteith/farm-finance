@@ -147,9 +147,9 @@ The command above can be yanked into register "q" with the following command in
 vim: `"qy$`
 
 Each time a change is made to the chapter/appendix/file it is saved and then
-the command in register "q" is run with '@q' to update the pdf.
+the command in register "q" is run with `@q` to update the pdf.
 
-The reason that the 'master-wip.ms' file is required is that the macro and
+The reason that the `master-wip.ms` file is required is that the macro and
 layout files, shown below, are only sourced in the master and not in the
 individual chapters/appendices.
 
@@ -161,7 +161,7 @@ You could of course source these files in each individual chapter but that
 would require more maintenace.
 
 Again, `groffer` will not be supported with the next release of groff so I may
-write a script and do away with the 'master-wip.ms' file. 
+write a script and do away with the `master-wip.ms` file. 
 
 A separate window can be used to open the pdf which will automatically refresh
 on each update to the underlying pdf document:
