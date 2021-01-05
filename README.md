@@ -26,7 +26,7 @@ File name | Description
 `data/0000.ms` | Title page
 `data/000.ms` | Preface
 `data/00.ms` | Introduction
-`data/01.ms` | Chapter 01, Time value of money
+`data/01.ms` | Chapter 01, Time Value Of Money
 `data/02.ms` | Chapter 02, Equivalence
 `data/03.ms` | Chapter 03, Ordinary Annuities
 `data/04.ms` | Chapter 04, Annuities Due
@@ -35,21 +35,21 @@ File name | Description
 `data/07.ms` | Chapter 07, Declining Annuities
 `data/08.ms` | Chapter 08, Perpetuities
 `data/09.ms` | Chapter 09, Growing Perpetuities
-`data/10.ms` | Chapter 10, Engineering economics
-`data/11.ms` | Chapter 11, Nominal & effective rates
-`data/12.ms` | Chapter 12, Costing your capital
-`data/13.ms` | Chapter 13, Investment analysis
-`data/14.ms` | Chapter 14, Structure of UK tax
-`data/15.ms` | Chapter 15, Understanding the impact of tax
+`data/10.ms` | Chapter 10, Engineering Economics
+`data/11.ms` | Chapter 11, Nominal & Effective Rates
+`data/12.ms` | Chapter 12, Costing Your Capital
+`data/13.ms` | Chapter 13, Investment Analysis
+`data/14.ms` | Chapter 14, Structure Of UK Tax
+`data/15.ms` | Chapter 15, Understanding The Impact Of Tax
 `data/16.ms` | Chapter 16, Investment cost equations
 `data/17.ms` | Chapter 17, Using the investment cost equations
-`data/18.ms` | Chapter 18, Equivalent annual cost
-`data/19.ms` | Chapter 19, Mutually exclusive projects
-`data/20.ms` | Chapter 20, Replacement analysis
-`data/21.ms` | Chapter 21, Revenue cost & profit
-`data/22.ms` | Chapter 22, Economic value and the measurement of financial performance
+`data/18.ms` | Chapter 18, Equivalent Annual Cost
+`data/19.ms` | Chapter 19, Mutually Exclusive Projects
+`data/20.ms` | Chapter 20, Replacement Analysis
+`data/21.ms` | Chapter 21, Revenue Cost & Profit
+`data/22.ms` | Chapter 22, Economic Value And The Measurement Of Financial Performance
 `data/23.ms` | Chapter 23, Return on equity
-`data/A1.ms` | Appendix A, Impact of Writing Down Allowance (WDA) on Capital Costs
+`data/A1.ms` | Appendix A, Impact Of Writing Down Allowance (WDA) On Capital Costs
 `data/B0.ms` | Appendix B, Introduction
 `data/B1.ms` | Appendix B, Writing Down Allowance, Time Period 1
 `data/B2.ms` | Appendix B, Annual Investment Allowance, Time Period 1
@@ -59,7 +59,7 @@ File name | Description
 `data/B7.ms` | Appendix B, Annual Investment Allowance, Time Period 2
 `data/B8.ms` | Appendix B, Single Asset Pool, Time Period 2
 `data/C1.ms` | Appendix C, Engineering Economics Equations
-`data/D1.ms` | Appendix D, Self Assessment Tax in Two Payments
+`data/D1.ms` | Appendix D, Self Assessment Tax In Two Payments
 `data/E1.ms` | Appendix E, Shareholder Value Added (SVA)
 `data/F1.ms` | Appendix F, Workings Hitch
 `data/G1.ms` | Appendix G, Loans
@@ -67,12 +67,12 @@ File name | Description
 `data/I1.ms` | Appendix I, Cumulative Dry Matter
 `data/J1.ms` | Appendix J, Repair & Maintenance
 `data/R1.ms` | Appendix R, References
-`macro/format.tmac` | Macros used in document layout
+`macro/format.tmac` | Macros used in creating the document layout
 `macro/equation.tmac` | Equation definitions
 `macro/equation.tmac` | Pic definitions
-`master.ms` | File to produce complete document
+`master.ms` | File to produce complete pdf document
 `master-wip.ms` | File that can be edited to output specific chapters/files
-`log.txt` | Recovered log file from corrupted repository
+`log.txt` | Recovered log file from the corrupted repository
 `README.md` | This file
 
 ---
@@ -141,9 +141,9 @@ cumbersome and slow to produce for editing individual chapters.
 
 Vim is my preferred text editor and I typically have a vertically split window
 with the chapter/appendix/file I am working on in one window and the
-`master-wip.ms` open in the other. The `master-limited.ms` is uncommented
-to print the file I am editing, and any other files I maybe interested in. I
-have the following command in the "q" register:
+`master-wip.ms` open in the other. The `master-wip.ms` is uncommented to print
+the file I am editing, and any other files I maybe interested in. I have the
+following command in the "q" register:
 
 `:!groffer -ms master-wip.ms -Tpdf --groff > ~/tmp/worktest.pdf`
 
@@ -153,9 +153,9 @@ vim: `"qy$`
 Each time a change is made to the chapter/appendix/file it is saved and then
 the command in register "q" is run with `@q` to update the pdf.
 
-The reason that the `master-wip.ms` file is required is that the macro and
-layout files, shown below, are only sourced in the master and not in the
-individual chapters/appendices.
+The reason that the `master-wip.ms` file is required is that the macro files,
+shown below, are only sourced in the master and not in the individual
+chapters/appendices.
 
 `macro/format.tmac`
 `macro/equation.tmac`
