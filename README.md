@@ -1,3 +1,7 @@
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/grahammonteith/)
+
+---
+
 ## Description:
 This is a **DRAFT** of a pdf called farm-finance.pdf
 
@@ -167,7 +171,3 @@ A separate window can be used to open the pdf which will automatically refresh
 on each update to the underlying pdf document:
 
 `zathura --fork ~/tmp/worktest.pdf; exit`
-
----
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/grahammonteith/)
