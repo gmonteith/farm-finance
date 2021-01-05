@@ -167,3 +167,7 @@ A separate window can be used to open the pdf which will automatically refresh
 on each update to the underlying pdf document:
 
 `zathura --fork ~/tmp/worktest.pdf; exit`
+
+---
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
