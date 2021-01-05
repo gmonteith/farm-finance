@@ -1,5 +1,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/grahammonteith/)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/gmonteith/farm-finance)
+![GitHub last commit](https://img.shields.io/github/last-commit/gmonteith/farm-finance)
 
 ## Description:
 This is a **DRAFT** of a pdf called farm-finance.pdf
