@@ -12,14 +12,14 @@ FV =~~ PV( 1 + i ) sup n
 =~~ 
 "Present Value" times ~^ ( 1 + "interest rate" ) sup "number of compound periods"
 .EN
-Most people may not know this equation as the basis of finance but we still
-place our money with banks and like to see it grow over time. It is this
-equation that leads to the increase in the value of savings over time. As I
-write this we are living in a period where the Government Bonds of Europe have
-negative yields, that with standing the equation is still the basis of finance.
-Below is a graph\(dg to show the impact of compounding on \[Po]1 deposited in a
-bank account that pays the unrealistically high interest rate \fIi\fP of 25%
-per year.
+Many people may not know this equation but they still place their money with
+banks and like to see it grow over time. It is this equation that leads to the
+increase in the value of savings over time. As I write this we are living in a
+period where the Government Bonds of Europe have negative yields, that
+withstanding the TVM equation is still the basis of finance. Below is a
+graph\(dg which shows the impact of compounding on \[Po]1 deposited in a bank
+account that pays the unrealistically high interest rate \fIi\fP of 25% per
+year.
 .FS
 \(dg This graph is taken from page 37 of Document Formatting and Typesetting on
 the UNIX System - Volume 2.
@@ -109,8 +109,18 @@ FV over PV
 lineup tf
 1 + i 
 =~~
-{ left [ FV over PV right ] } sup {1 over n}
+{ left [ FV over PV right ] } sup {{1 over n}\(dd}
 .EN
+.FS
+\(dd The fractional exponent can be a point of confusion. It is simply a root.
+#left ( x sup { 1 over 2 } ~^ right ) left ( x sup { 1 over 2 } right ) =~~ x
+sup { 1 over 2  + 1 over 2 } =~~ x #, using the law for multiplying terms with
+the same base. We also know that # \[sr]x times ~^ \[sr]x = x# therefore, #x
+sup { 1 over 2 } = \[sr]x #. Some calculators have a key for working with roots
+other than the square root, for instance  #"" sup 6 \[sr] x # , however some
+calculators do not. You can always calculate the root by raising the variable
+to the appropriate fractional power so I have used this notation.
+.FE
 .sp -0.6v
 .EQ I
 i lineup =~~
@@ -182,10 +192,10 @@ of 5.5 and therefore we look to find the end of the line 5.5 ticks up the #y#
 axis from 1891 on the #x# axis.
 .LP
 Constant growth rates are in reality unlikely to persist for long periods of
-time because of the rapid changes in the size which can be expected to impose
-limits on the growth over time. The limits may appear in forms of resource
-restriction, market size etc. Over time even very small constant growth rates
-will have a large impact. If inflation is 2% a year it will halve the real
+time because of the rapid changes in the size which can be expected, over time,
+to impose limits on the growth. The limits may appear in forms of resource
+restriction, market size etc. Over time even small constant growth rates will
+have a very large impact. If inflation is 2% a year it will halve the real
 value of money over a 35 year period.\(dg
 .FS
 \(dg The rule of 72 is often used in finance to estimate the doubling time of a
@@ -212,42 +222,61 @@ calculate the present value given a future value.
 PV =~~ FV over { ( 1 + i ) sup n }
 .EN
 There are tables published which include the discount factors for various
-interest/discount rates. As a basic check the factor in the tables should be
+interest/discount rates. As a basic check, the factor in the tables should be
 less than one if it is to be used for discounting and greater than one if it is
 to be used for compounding. Any number multiplied by a number less than one
-will get smaller which makes sense for discounting and conversely any number
-multiplied by a number greater than one will get bigger as you would expect
+will get smaller, which makes sense for discounting and conversely any number
+multiplied by a number greater than one will get bigger, as you would expect
 with compounding.
 .LP
-You can also calculate the discount factor yourself by setting the present
-value to 1 and resolving the time value of money equation.
+You can also calculate the discount factor yourself by setting the future value
+equal to 1 and resolving the time value of money equation for the present value
+with your desired interest rate.
 .KS
-The example below uses an discount rate of 10% as the interest #(i)# and shows
+The example below uses a discount rate of 10% as the interest #(i)# and shows
 the factor required to discount one #(FV)# pound back to today's value #(PV)#
-for years (n) zero, one, two and three:
+for years (n) zero, one, two and three years:
 .EQ I
-PV =~~ 1 over { ( 1 + 10/100 ) sup 0 } =~~ 1  over (1.1) sup 0 =~~ 1 over 1 =~~ 1
+PV
+=~~ FV over { ( 1 + i ) sup n } 
+=~~ 1 over { ( 1 + 10/100 ) sup 0 }
+=~~ 1  over (1.1) sup 0
+=~~ 1 over 1
+=~~ 1
 .EN
 .EQ I
-PV =~~ 1 over { ( 1 + 10/100 ) sup 1 } =~~ 1  over (1.1) sup 1 =~~ 1 over 1.1 =~~ 0.909
+PV
+=~~ FV over { ( 1 + i ) sup n } 
+=~~ 1 over { ( 1 + 10/100 ) sup 1 }
+=~~ 1  over (1.1) sup 1
+=~~ 1 over 1.1
+=~~ 0.909
 .EN
 .EQ I
-PV =~~ 1 over { ( 1 + 10/100 ) sup 2 } =~~ 1  over (1.1) sup 2 =~~ 1 over 1.21 =~~ 0.826
+PV
+=~~ FV over { ( 1 + i ) sup n } 
+=~~ 1 over { ( 1 + 10/100 ) sup 2 }
+=~~ 1  over (1.1) sup 2
+=~~ 1 over 1.21
+=~~ 0.826
 .EN
 .EQ I
-PV =~~ 1 over { ( 1 + 10/100 ) sup 3 } =~~ 1  over (1.1) sup 3 =~~ 1 over 1.331 
+PV
+=~~ FV over { ( 1 + i ) sup n } 
+=~~ 1 over { ( 1 + 10/100 ) sup 3 }
+=~~ 1  over (1.1) sup 3
+=~~ 1 over 1.331 
 =~~ 0.751
 .EN
 .KE
-As a side note any number raised to the power of zero is always equal to one.
+As a side note, any number raised to the power of zero is always equal to one.
 Year zero is typically taken to be the year than the investment commences.
-Using the information above we can calculate the value of 100 GBP received in 3
-years discounted to today at 10%.
+Using the information above we can calculate the value of \[Po]100 received in
+3 years discounted to today at 10%.
 .EQ I
 PV =~~ 100 times ~^ 0.751 =~~ \[Po]75.10
 .EN
 The TVM equation can also be rearranged to resolve for the number of years.
-.
 .EQ I
 FV lm PV(1 + i) sup n
 .EN
@@ -267,8 +296,10 @@ n lineup =~~
 {ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
 .EN
 .
-The equation can now be populated with the correct numbers and the solution
-found:
+As an exampe we will resolve Benjamin Franklin's investment for the number of
+years required to establish the future value. We of course allready know the
+answer is 100 years but that should only aid in the understanding. The
+equation can now be populated with the correct numbers and the solution found:
 .EQ I
 n lm {ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
 =~~
@@ -280,15 +311,15 @@ n lm {ln { left ( FV over PV right ) }} over {ln { ( 1 + i ) }}
 .EN
 .
 Another note on the logarithms, I have assumed a certain level of mathematical
-knowledge in writing this paper but I have also added some maths pointers where
-I felt there maybe some confusion. In the equation above where we confirmed the
-length of the compounding as 100 years the choice of logarithm is arbitrary. The
-HP12C is a financial calculator and has natural log #ln# key and its inverse
-#e# key to resolve continuous compounding problems. Many non financial
-calculators only have a log key for working with base 10, if you use the log
-key on your calculator you will get the same answer. Here is where it gets a
-little ugly as I am presuming you have both a basic understanding of logarithms
-and can remember a little about how to manipulate them.
+knowledge in writing this document but I have also added some maths pointers
+where I felt there maybe some confusion. In the equation above where we
+confirmed the length of the compounding as 100 years the choice of logarithm is
+arbitrary. The HP12C is a financial calculator and has natural log #ln# key and
+its inverse #e# key to resolve continuous compounding problems. Many non
+financial calculators only have a log key for working with base 10, if you use
+the log key on your calculator you will get the same answer. Here is where it
+gets a little ugly as I am presuming you have both a basic understanding of
+logarithms and can remember a little about how to manipulate them.
 .LP
 Given an equation # y =~~ a sup x # we call #a# the base and #x# the power or
 index. The equations # y =~~ a sup x # can be rewritten using logarithms in the
@@ -312,6 +343,7 @@ log sub a y =~~ { ln y } over { ln a }
 ~~~~
 log sub a y =~~ { log sub b y } over { log sub b a } 
 .EN
+.KS
 We have show three different formulas above, one using base 10, one using the
 natural logarithm and one using a random base #b#. It does not matter which
 base you use, we will complete the logic using an arbitrary base #b#:
@@ -321,9 +353,10 @@ tf
 log sub { ( 1 + i ) } y
 =~~ { log sub b { FV over PV } } over { log sub b (1 + i) } 
 .EN
+.KE
 Now if we recall that the the logarithm of a given number #y# or # FV over PV #
 in this instance, is the exponent, #n# in this instance, to which another fixed
-number # ( 1 + i ) #, the base #a# , must be raised, to produce that number.
+number # ( 1 + i ) #, the base, must be raised, to produce that number.
 Therefore:
 .EQ I
 log sub { ( 1 + i ) }  y =~~ n
@@ -349,7 +382,7 @@ with one cash outflow and one cash inflow:
 .PS
 A: [ box invis wid 0.25 ht 0.20 "0"
       arrow down 0.3 at last box.s 
-			"5,000" below at end of last arrow
+			"\[Po]5,000" below at end of last arrow
 			line right from last box.e
 			line right 
 			line right
@@ -361,13 +394,15 @@ A: [ box invis wid 0.25 ht 0.20 "0"
 			line right 
 			box invis wid 0.30 ht 0.20 "100"
 			arrow up 0.35 at last box.n
-			"322,000" above at end of last arrow
+			"\[Po]322,000" above at end of last arrow
 		]
 box invis "i = 4.25/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.2)
 box invis "n = 100" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
 .PE
-Which ever value (FV, PV, n, i) is unknown can then be resolved by using the
-appropriate arrangement of the TVM formula:
+The values of #i# and #n# in the diagram above are obviously dependent on the
+pattern of the cash flows under analysis. Which ever value #(FV, PV, n, i)# is
+unknown can then be resolved by using the appropriate arrangement of the TVM
+formula:
 .EQ I
 FV =~~ PV(1 + i ) sup n 
 ~~~~~~~~~~~~ PV =~~ FV over { (1 + i) sup n }
