@@ -10,10 +10,10 @@ to receive the future value, it is reasonable to suggest that the two
 alternative are equivalent.
 .LP
 Equivalence means that different cash flows at different times are equal in
-economic value at a given interest rate. Equivalence uses an interest rate or
-discount rate to adjust for the time value of money. Since 1 today and 1 in the
-future have different economic values, the adjustment must occur before the
-cash flows can be added together.
+economic value at a given interest rate. Equivalence uses an interest rate, or
+discount rate, as it is sometimes known, to adjust for the time value of money.
+Since \[Po]1 today and \[Po]1 in the future have different economic values, the
+adjustment must occur before the cash flows can be compared.
 .LP
 If your business had the opportunity to borrow \[Po]5,000 at 8% over 5 years a
 number of different types of debt instrument maybe available. We will presume
@@ -543,4 +543,4 @@ FV =~~ PV(1 + i) sup n
 .EN
 The \[Po]2,000 has to be compounded for 3 years to reach year 5. The total
 value now exceed \[Po]4,500 as the bank has extracted extra interest from you
-by extending the loan for 3 years.
+by extending the loan of \[Po]2,000 for 3 years.
