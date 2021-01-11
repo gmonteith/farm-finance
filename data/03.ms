@@ -36,30 +36,30 @@ A: [ box invis wid 0.25 ht 0.20 "0"
 			line right 0.3 from last box.e
 			box invis wid 0.25 ht 0.20 "1"
 			arrow up 0.3 at last box.n
-			"12,000" above at end of last arrow
+			"\[Po]12,000" above at end of last arrow
 			line right 0.3 from last box.e
 			box invis wid 0.25 ht 0.20 "2"
 			arrow up 0.3 at last box.n
-			"12,000" above at end of last arrow
+			"\[Po]12,000" above at end of last arrow
 			line right 0.3 from last box.e
 			box invis wid 0.25 ht 0.20 "3"
 			arrow up 0.3 at last box.n
-			"12,000" above at end of last arrow
+			"\[Po]12,000" above at end of last arrow
 			line right 0.3 from last box.e
 			box invis wid 0.25 ht 0.20 "4"
 			arrow up 0.3 at last box.n
-			"12,000" above at end of last arrow
+			"\[Po]12,000" above at end of last arrow
 			line right 0.3 from last box.e
 			box invis wid 0.25 ht 0.20 "5"
 			arrow up 0.3 at last box.n
-			"12,000" above at end of last arrow
+			"\[Po]12,000" above at end of last arrow
 		]
 box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.3)
 box invis "n = 5" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.3)
 .PE
 We know that this is an annuity because the cash flow is \[Po]12,000 in each
 time period. If the cash flows are not the same in each time period, it can not
-be definition be an annuity. The other important point is that the problem can
+by definition be an annuity. The other important point is that the problem can
 be solved by using the time value of money equation, that we have previously
 established, and resolving each individual cash flow for its present value.
 .LP
@@ -110,7 +110,7 @@ _
 Cash flows##12,000#12,000#12,000#12,000#12,000
 Discount factor##0.926#0.857#0.794#0.735#0.681
 _
-Present value##11,111#10,288#9,526#8,820#8,167
+Present value##\[Po]11,111#\[Po]10,288#\[Po]9,526#\[Po]8,820#\[Po]8,167
 _
 .TE
 .KE
@@ -163,7 +163,7 @@ sn(-1) mark =~~ -2 - 4 - 8 - 16
 .EN
 .sp -0.6v
 .EQ C
-sn(2) lineup { hphantom{=~~ -2}} ~+ 4 + 8 + 16 + 32
+sn(2) lineup { hphantom{=~~-2^}} ~+ 4 + 8 + 16 + 32
 .EN
 .sp -1.1v
 .in 2i
@@ -171,7 +171,7 @@ sn(2) lineup { hphantom{=~~ -2}} ~+ 4 + 8 + 16 + 32
 .in
 .sp -0.6v
 .EQ C
-Total lineup =~~ -2 hphantom{~+ 4 + 8 + 16} ~+ 32 
+Total lineup =~~ -2 hphantom{~+ 4 + 8 + 16} ~~+ 32 
 .EN
 The sum of the two remaining terms give us the answer, -2 + 32 = 30. You could
 of course simply skip the multiplication by -1 and subtract the original series
@@ -184,7 +184,7 @@ We can now define a geometric series in a more formal manner:
 A geometric series is one in which the ratio of any term to that which
 immediately precedes it is constant for the whole series.
 .IP \(bu 3
-The ratio is called the "common ratio" of the series. It may be positive or
+This ratio is called the "common ratio" of the series. It may be positive or
 negative. Thus each term of the series can be obtained by multiplying the term
 that precedes it by the common ration.  2,4,8,16............ common ratio= 2
 .IP \(bu 3
@@ -203,10 +203,17 @@ equation for the sum of a geometric series.
 .EQ I (eq.1)
 S sub n =~~ a + ar + ar sup 2 + ar sup 3 ... + ar sup {n -2} + ar sup {n -1}
 .EN
+.KS
 .B Note:
 In the series above and our simple doubling series it can be seen that each
-term of the series is the product of "a" and a power of "r" the index of which
+term* of the series is the product of "a" and a power of "r" the index of which
 is one less than the number of the term.
+.FS
+* A term is usually defined as either a single number of the product (or
+quotient) of several numbers or letters: #7, 5a, abc#. Terms are usually
+seperated by a sign of operation; # + or - #.
+.FE
+.KE
 .LP
 If n = any term then #n sup th# term = # ar sup { n - 1}#
 The forth term in our series, which is also the final term is 
@@ -274,8 +281,8 @@ S sub n =~~ { a( r sup n - 1 ) }  over{  ( r - 1 ) }
 =~~
 30  over 1 =~~ 30
 .EN
-Returning to the annuity series from the start of this chapter and shown below
-with the present value established:
+Returning to the annuity series from the start of this chapter which is shown
+below with the present value established:
 .EQ I
 PV \(dd
 =~~ \[Po]47,912
@@ -294,10 +301,10 @@ and the #n=1# informs us that the first sum should be # CF sub 1 over { ( 1 + i
 ) sup 1 } # or in this instance # 12,000 over { (1 + 8/100) sup 1 } # and the
 #n=5# that the last sum should be # 12,000 over { (1 + 8/100) sup 5 } #.
 .FE
-We can now use equation B to sum the series. First we must establish the values
-for "a", the first term and "r" the common ratio. By inspection we can see that
-# a =~~ 12,000 over { (1 + 8/100) sup 1 }# and as we are discounting # r =~~ 1
-over 1.08 #
+As this is a discounted series we can now use equation B to establish the sum.
+First we must establish the values for "a", the first term, and "r" the common
+ratio. By inspection we can see that # a =~~ 12,000 over { (1 + 8/100) sup 1 }#
+and that the common ratio #r# is # 1 over 1.08 #. 
 .EQ I 
 S sub n =~~ {  a(1 - r sup n ) } over { ( 1 - r ) }
 =~~
@@ -314,20 +321,21 @@ over
 0.07407
 =~~ \[Po]47,912
 .EN
-The equation as we know delivers the answer. However, the 12,000 which we will
-called the PMT as this is the button you would use on your calculator and is
-also the term used in many spreadsheet applications, is inside the equation and
-this makes it difficult to manipulate.
+The equation as we know delivers the answer. However, the \[Po]12,000 which we
+will called the PMT, as this is the button you would use on your calculator and
+is also the term used in many spreadsheet applications, is part of the
+numerator and this makes the equation harder to use.
 .LP
 To proceed some factoring of the annuity series will be required. A quick note
 on factoring.
 .IP \(bu 3
 The distributive law of mathematics states: "the product of an expression of
 two terms by a single factor is equal to the sum of the products of each term
-of the expression multiplied by the single factor", therefore,  a(b + c) = ab +
-ac
+of the expression multiplied by the single factor". This cumbersome statement
+means, #a(b + c) = ab + ac#
 .IP \(bu 3
-Factoring is simply the distributive law in reverse.
+Factoring is simply the distributive law in reverse and is best understood with
+an example:
 .EQ 
 10 + 15 + 20 lm 45
 .EN
@@ -339,6 +347,9 @@ Factoring is simply the distributive law in reverse.
 .EQ 
 5(2 + 3 + 2 sup 2 ) =~~ 5 times ~^ 9 lineup =~~ 45
 .EN
+To put it simple, if you start with #a(b + c)# and end up with #ab + ac# it is
+distributing. If you start with #ab + ac# and end up with #a(b + c)# it is
+factoring.
 .LP
 The factored form of the series in our example is as follows:
 .EQ I
@@ -364,7 +375,7 @@ tf
 r =~~ 1  over (1.08) 
 .EN
 The equation for the sum of a geometric series can now be used to establish
-the present value of the annuity.
+the present value of the annuity:
 .EQ I
 PV lm 12,000 times ~^ {  a(1 - r sup 5 ) } over { ( 1 - r ) }
 .EN
@@ -387,9 +398,9 @@ over { 0.08 over 1.08 \(dd } right }
 .EN
 .FS
 \(dd
-To add or subtract fractions they must have the same denominator. The left side
-of the expression is 1 and it is worth remembering that any number divided by
-itself is equal to 1 which means we can replace the 1 with a fraction that is
+To add or subtract fractions they must have the same denominator. When the left
+side of the expression is 1 it is worth remembering that any number divided by
+itself is equal to 1, which means we can replace the 1 with a fraction that is
 made up entirely of the required common denominator. Therefore,  # { 1 - 1 over
 1.08 } =~~ 1.08 over 1.08 - 1 over 1.08  =~~ 0.08 over 1.08 #
 .FE
@@ -417,20 +428,20 @@ lineup =~~
 .EN
 Note:
 .IP \(bu 3
-The common ratio is less than 1 in fact it is 0.926 { 1 \[di] (1 + 0.8) = 0.926
-} therefore the money is devaluing the longer the series runs. This is a useful
-check.
-.KS
+The common ratio is less than 1, in fact it is 0.926\(dg therefore the money is
+devaluing the longer the series runs. This is a useful check.
+.FS
+\(dg # 1 over { (1 + 0.8) } =~~ 0.926#
+.FE
 .IP \(bu 3
-The PV can not exceed the payment multiplied by the number of compound periods
-when you are calculating the PV. In this instance the answer can not be greater
-than 5 times 12,000 = 60,000, which it was not. The payment multiplied by the
-number of compound periods would be the amount if there was no discounting.
-.KE
+The PV can not exceed the payment multiplied by the number of compound periods.
+In this instance the answer can not be greater than 5 times 12,000 = 60,000,
+which it was not. The payment multiplied by the number of compound periods
+would be the amount if there was no discounting.
 .LP
-All this mathematics in the end, takes us to the general form for the equation
-for an ordinary annuity if We take the last transformation and substitute the
-PMT for the 12,000 and n for 5.
+All this mathematics, in the end, takes us to the general form for the equation
+for an ordinary annuity if we restate the last transformation and replace
+\[Po]12,000 with PMT 5 with #n#.
 .EQ I
 PV =~~ PMT over i left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
 .EN
@@ -503,15 +514,14 @@ should be greater than the PV. In this instance # 12,000 times ~^ 5 = \[Po]60,00
 The interest is obviously the total of the payments less the present value. 
 # Interest =~~ 60,000 - 47,912 =~~ \[Po]12,088 #
 .IP \(bu 3
-The equation to solve the PMT is also used to calculate the uniform annual cost
-or equivalent annual cost as it is more common known as in the UK. This is
+The equation to solve the PMT is also used to calculate the Uniform Annual Cost
+or Equivalent Annual Cost as it is more commonly known in the UK. This is
 particularly useful as a PV can be converted to equivalent annual payments for
 comparison with other costs and will be covered in Chapter 18.
 .IP \(bu 3
 There are tables of factors that can be used to convert a PV to the annual
 payment and these are often referred to as capital repayment factors.
 .
-.KS
 .XXXX 0 2 "n given the PV"
 .LP
 Lastly the formula for the PV of an ordinary annuity can be rearranged to
@@ -555,13 +565,13 @@ sup n =~~ a sup { m - n } # if # a \[!=] ^ 0 #. Therefore # a sup 3  over a sup
 =~~ a sup { 0 ~ - ~ +n } =~~ a sup -n #. Therefore, # 1 over { ( 1 + i ) sup n }
 # and # ( 1 + i ) sup -n # are equivalent. To eliminate the reciprocal ( the
 reciprocal of a number is one divided by the number ) we must place both
-sides of the equation under 1 again this leads the left side to equal # {
+sides of the equation under 1, this leads the left side to equal # {
 left ( 1 - PV(i) over PMT right ) } sup -1 # using exponents. The right side
 becomes, using exponents, # 1 over { ( 1 + i ) sup -n } =~~ { ( 1 + i ) sup 0
  } over { ( 1 + i) sup -n }  =~~ ( 1 + i ) sup { 0 ~ - ~ - n } =~~ ( 1 + i )
-sup n #. To clarify an example can be completed without exponents and with
+sup n #. To clarify we will complete an example without exponents and with
 simple numbers. We will remove the reciprocal from 1/2 using the same technique
-of putting the 1/2 under 1 giving #1 over 2 =~~ { 1 over 1 } over { 2 } =~~ { 1
+of putting the 1/2 under 1 giving #{ 1 over 1 } over { 2 } =~~ { 1
 over 1 } over { 1 over 2 } =~~ 1 over 1 times ~^ 2 over 1 =~~ 2#. The point is
 that whatever was under 1 will end up unchanged but the 1 will be eliminated.
 .FE
@@ -575,7 +585,6 @@ ln left [ left ( 1 -  PV(i) over PMT right ) sup -1 right ] =~~  n ln ( 1 + i )
 n lineup =~~ { ln left [ left ( 1 -  PV(i) over PMT right ) sup -1 right ] } 
 over { ln{ ( 1 + i ) } }
 .EN
-.KE
 The cash flow diagram below represents the following example, we are sticking
 with the same annuity and changing the scenario so you should have a fair idea
 of what the answer will be. You have take out a loan to purchase a truck for
@@ -783,9 +792,12 @@ should be greater than #(150 times ~^ 60 =~~ 9,000)#, which it is.
 .XXXX 0 2 "PMT given the FV"
 .LP
 You are planning to retire in 20 years. When you retire you wants a lump sum of
-\[Po]300,000. Your financial advisor suggests that 5% p.a is an achievable
+\[Po]300,000. Your financial advisor suggests that 5% p.a\(dg is an achievable
 interest rate. How much will you have to pay, per month, into your retirement
 fund?
+.FS
+\(dg per annum
+.FE
 .PS
 A: [ box invis wid 0.25 ht 0.20 "0"
 			line up 0.3 from last box.n
@@ -828,10 +840,9 @@ over { { left [ 1 + { left ( 5 over 100 right ) } over 12 right ] sup 240 } - 1}
 \[Po]729.87
 .EN
 .
-.KS
 .XXXX 0 2 "n given the FV"
 .LP
-The equation can be rearranged to resolve for the number of compound periods..
+The equation can be rearranged to resolve for the number of compound periods.
 .EQ I
 FV lm { PMT ( { { ( 1 + i ) sup n }  - 1 } ) } over i
 .EN
@@ -843,7 +854,7 @@ FV(i) =~~ { PMT ( { { ( 1 + i ) sup n }  - 1 } ) }
 .sp -0.6v
 .EQ I
 lineup tf
-FV(i) over PMT =~~ { ( { { ( 1 + i ) sup n }  - 1 } ) } 
+FV(i) over PMT =~~  ( 1 + i ) sup n  - 1   
 .EN
 .sp -0.6v
 .EQ I
@@ -861,10 +872,9 @@ n lineup =~~
 { ln left [ FV(i) over PMT  + 1 right ] } 
 over { ln ( 1 + i ) } 
 .EN
-.KE
 You want to save \[Po]15,000 for a deposit on a house and can afford to save
-350 pounds a month into your savings account that pays 4.5% interest. How long
-will you take to save the deposit?
+\[Po]350 pounds a month into your savings account that pays 4.5% interest. How
+long will you take to save the deposit?
 .PS
 A: [ box invis wid 0.25 ht 0.20 "0"
 			line up 0.3 from last box.n
@@ -914,11 +924,13 @@ Note:
 .IP \(bu 3
 As the payments are made on a monthly basis the interest rate has been divided
 by 12.
+.KS
 .IP \(bu 3
 The number of compounding periods and the interest rates must be consistent
 with each other. As the compounding is monthly the number of compound periods
 must match, therefore the number of years has been multiplied by 12 to convert
 to months.
+.KE
 .IP \(bu 3
 The answer is 39.82. If an HP12C was used for the calculation, the calculator
 would round up the answer to 40. The user has to decide if they want to make a
