@@ -27,10 +27,10 @@ tf
 =~~
 \[Po]0.01
 .EN
-We have demonstrated that 100 pounds, received in the future using a discount
+We have demonstrated that \[Po]100, received in the future using a discount
 rate of 10%, is worth only a solitary penny. It certainly highlights the fact
-that an offer of \[Po]100 pounds far into the future in this instance has
-little present value.
+that an offer of \[Po]100 pounds far enough into the future, in this instance,
+has little present value.
 .LP
 If we return to the equation for the PV of an ordinary annuity. We can
 calculate the PV of the annuity of \[Po]100 at a discount rate of 10% over an
@@ -46,7 +46,7 @@ lineup ~~~
 =~~
 1,000  ~times~  0.61446 
 =~~
-614,46
+\[Po]614,46
 .EN
 The annuity over 25 years:
 .EQ I
@@ -55,7 +55,7 @@ lineup ~~~
 =~~
 1,000  ~times~  0.90770
 =~~
-907.70
+\[Po]907.70
 .EN
 The annuity over 50 years:
 .EQ I
@@ -64,7 +64,7 @@ lineup ~~~
 =~~
 1,000  ~times~  0.99148
 =~~
-991.48
+\[Po]991.48
 .EN
 The annuity over 100 years:
 .EQ I
@@ -73,7 +73,7 @@ lineup ~~~
 =~~
 1,000  ~times~  0.99993
 =~~
-999.93
+\[Po]999.93
 .EN
 The annuity over 1,000 years:
 .EQ I
@@ -82,17 +82,19 @@ lineup ~~~
 =~~
 1,000  ~times~  1.00
 =~~
-1,000
+\[Po]1,000
 .EN
 As the time period of the annuity is extended we can see that the PV approaches
-a limit of 1,000. However, we can see the equation is composed of two parts, #
-100 over 0.1 #, which equals 1,000, and a coefficient which is approaching 1,
-in fact it never reaches 1 but the calculator shows it as 1. So, the longer the
-annuity the closer the right side of the equation moves towards 1. Therefore,
-the right side of the equation becomes irrelevant as anything multiplied by
-one is equal to itself. This would leads us to state that if a perpetuity is an
-annuity without end then it is simply the value of the left side of the equation
-or # PMT over i #.
+a limit of \[Po]1,000. We can also see from the examples that the equation is
+composed of two parts, # 100 over 0.1 #, which equals 1,000, and the result of
+the terms inside the square bracket which are approaching 1, in fact they never
+reach 1 but the calculator shows the result as 1. So, the longer the annuity
+the closer the result of the terms inside the square bracket get to 1.
+Therefore, the terms inside the square bracket become irrelevant with very
+large values of #n# as anything multiplied by one is equal to itself. This
+would leads us to state that if a perpetuity is an annuity without end then it
+is simply the value of the fraction outside the square bracket or # PMT over i
+#.
 .LP
 The equation can be rearranged as follows:
 .EQ I
@@ -105,20 +107,24 @@ PMT =~~ PV times ~^ i
 .XXXX \\n(cn 1 "Sum to infinity"
 .LP
 It was stated at the beginning that it maybe better to think of an annuity as a
-bit of a perpetuity. If we examine the equation again, the left side represents
-the perpetuity and the right side is always less than one. If you multiply any
-number by a number less than one then it will get smaller. So in effect to
-calculate the annuity the equation is calculating the value of the perpetuity
-and then multiplying by less than one to remove the part that is not relevant.
+bit of a perpetuity. If we examine the equation again, the fraction outside the
+square bracket represents the perpetuity and the result of the terms inside the
+square bracket is always less than one. If you multiply any number by a number
+less than one then it will get smaller. So in effect to calculate the annuity
+the equation is calculating the value of the perpetuity and then multiplying by
+less than one to remove the part that is not relevant.
 .LP
-If we look in more detail at the right side of the equation # left [ { 1 - 1
-over { ( 1 + i ) sup n  } } right ] # to be left with only #1# the  # 1 over {
-( 1 + i ) sup n  } # must be approaching #0# as # 1 - 0 =~~ 1 #.
-.LP
-The above suggests a general treatment for the sum of a geometric series where
-# r < 1 # from which the annuity equation was originally developed. The
-equation must have the terms placed over the common denominator so we can
-isolate the left and right terms.
+If we look in more detail at the terms inside the square bracket # left [ { 1 -
+1 over { ( 1 + i ) sup n  } } right ] # to be left with only #1# the  # 1 over
+{ ( 1 + i ) sup n  } # must be approaching #0# as # 1 - 0 =~~ 1 #. This
+information suggests a general treatment for the limit of the sum of a
+geometric series where # r < 1 #, from which the annuity equation was
+originally developed.
+.EQ I 
+S sub n lm {  a(1 - r sup n ) } over { ( 1 - r ) }
+.EN
+The equation must have the terms on the right side of the equals sign placed
+over the common denominator so we can isolate the components:
 .EQ I 
 S sub n lm {  a(1 - r sup n ) } over { ( 1 - r ) }
 .EN
@@ -137,8 +143,8 @@ a over { ( 1 - r ) }  - { ar sup n } over { ( 1 - r ) }
 lineup =~~
 a over { ( 1 - r ) }  - left [ a times ~^  { r sup n } over { ( 1 - r ) } right ]
 .EN
-We now have the equation showing a left hand side and a right hand side
-separated by a negative sign:
+We now have an expression on the right side of the equals sign consisting of
+two terms separated by a negative sign:
 .EQ I
 a over { ( 1 - r ) }  - left [ a times ~^  { r sup n } over { ( 1 - r ) } right ]
 .EN
@@ -146,7 +152,7 @@ If #r# is between #+1# and #-1# then #r sup n# diminishes as #n# increases.
 .EQ I
 "Thus as n" 
 ~~->~~ 
-\[if] 
+\[if]\(dg 
 ~~ "then"~~ 
 r sup n 
 ~~->~~
@@ -156,17 +162,20 @@ left [ a times ~^  { r sup n } over { ( 1 - r ) } right ]
 ~~->~~
 0
 .EN
-So the right hand side of the equation approaches 0 leaving only the left hand
-side of the equation equal to # a over { 1 -r } #. This is called the sum to
-infinity and usually expressed in the following manner:
+.FS
+\(dg The character \[if] represents infinity
+.FE
+So the right hand side of the expression approaches 0 leaving only the left
+hand side, # a over { 1 -r } #. This is called the sum to infinity and usually
+expressed in the following manner:
 .EQ I
 S sub \[if] =~~ a over { 1 -r }
 .EN
 Does this tie in with what we have already stated for the value of a
 perpetuity? It does. We have to remember that the equation for the PV of an
 ordinary annuity has been factored to remove the PMT from the series. In this
-instance # a =~~ PMT over {1 +i} =~~ 100 over { 1.10 } # and #r =~~ 1 over { 1
-+i } =~~ 1 over { 1.10}#
+instance of the series # a =~~ PMT over {1 +i} =~~ 100 over { 1.10 } # and #r
+=~~ 1 over { 1 +i } =~~ 1 over { 1.10}#
 .LP
 We can now proceed with the sum to infinity:
 .EQ I
@@ -178,7 +187,7 @@ S sub \[if] =~~ a over { 1 -r }
 =~~
 \[Po]1,000.00
 .EN
-Perpetuity formula:
+Which matches the result of the perpetuity formula:
 .EQ I
 PMT over i
 =~~
@@ -256,13 +265,12 @@ will be extracted in the first 10 years, the remainder will take an eternity to
 extract. In reality the costs of extraction will rise above the value of the
 ore and the mine will eventually be abandoned. 
 .FS
-The formula for the declining annuity is different from the ordinary annuity
-from which we have devised the sum to infinity. However, using the same logic,
-the left side of the equation for the declining annuity represents the
+\(dg The formula for the declining annuity is different from the ordinary
+annuity from which we have devised the sum to infinity. However, using the same
+logic, the left side of the equation for the declining annuity represents the
 perpetuity. #PV sub da =~~  PMT over { i + g } # this then gives a perpetuity
-value for the mine of #25 over { 0.08 + 0.25 } =~~ 75.76M# if we use the
-valuation criteria from Chapter 7, which is nearly the same as the 75M we
-calculated using the sum to infinity.
+value for the mine of #25 over { 0.08 + 0.25 } =~~ 75.76M#. As you can see
+these two numbers do not differ greatly from each other.
 .FE
 .LP
 Perpetuities are in reality rare, though the formula is used to value many cash
@@ -279,12 +287,12 @@ existence for 999 years.
 .LP
 We have gone to great length to emphasise that an annuity is simply part of a
 perpetuity. This leads to the very logical question; given an annuity how long
-will it take to receive a given percentage of the perpetuity value?  This is
-simply a case of setting the PV equal to the annuity and resolving for the
-number of compound periods. If we use "#p#" to represent the percentage of the
-equation we would start with:
+will it take to receive a given percentage of the perpetuity value? This is
+simply a case of setting the percentage of the perpetuity equal to the annuity
+and resolving for the number of compound periods. If we use "#z#" to represent
+the percentage of the equation we would start with:
 .EQ I
-PMT(p%)
+PMT(z)
 over i
 lm
 PMT over i left [ 1 - 1 over { ( 1 + i )  sup n } right ]
@@ -292,7 +300,7 @@ PMT over i left [ 1 - 1 over { ( 1 + i )  sup n } right ]
 .sp -0.6v
 .EQ I
 lineup tf
-{ PMT(p) i }
+{ PMT(z) i }
 over { i PMT}
 =~~
 left [ 1 - 1 over { ( 1 + i )  sup n } right ]
@@ -300,35 +308,35 @@ left [ 1 - 1 over { ( 1 + i )  sup n } right ]
 .sp -0.6v
 .EQ I
 lineup tf
-p%
+z
 =~~
 1 - 1 over { ( 1 + i )  sup n } 
 .EN
 .sp -0.6v
 .EQ I
 lineup tf
-p% - 1
+z - 1
 =~~
 - 1 over { ( 1 + i )  sup n }
 .EN
 .sp -0.6v
 .EQ I
 lineup tf
-1 - p%
+1 - z
 =~~
 1 over { ( 1 + i )  sup n }
 .EN
 .sp -0.6v
 .EQ I
 lineup tf
-ln ( 1 - p% )
+ln ( 1 - z )
 =~~
 "n"^ ln left ( 1 over {  1 + i  }  right )
 .EN
 .sp -0.6v
 .EQ I
 n lineup =~~
-{ ln ( 1 - p% ) }
+{ ln ( 1 - z ) }
 over
 {  ln left ( 1 over {  1 + i  }  right ) }
 .EN
@@ -338,7 +346,7 @@ interest rate of 10%, how many years would it take to receive 61.45% of the
 perpetuity value?
 .EQ I
 n lm
-{ ln ( 1 - p% ) }
+{ ln ( 1 - z ) }
 over
 {  ln left ( 1 over {  1 + i  }  right ) }
 .EN
@@ -359,6 +367,6 @@ lineup =~~
 lineup =~~
 10 ~ years
 .EN
-If you refer back to the start of this section you will see that we calculated
+If you refer back to the start of this chapter you will see that we calculated
 the value of this annuity over 10 years. 
 
