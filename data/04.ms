@@ -24,7 +24,7 @@ line dashed right 0.3 from last box.e
 .XXXX \\n(cn 1 "PV given an annuity due"
 .LP
 We will look at an example and then compare an annuity due with an ordinary
-annuity. You pays \[Po]250 rent per week at the beginning of the week. You are
+annuity. You pay \[Po]250 rent per week at the beginning of the week. You are
 considering paying a whole year's rent in advance. Given at interest rate of
 5.2%, how much would you have to pay in advance to cover the whole year's rent?
 The cash flow diagram is show below, you can see that the first payment is at
@@ -78,7 +78,7 @@ You should notice that the last term is # 1 over { ( 1 + i ) sup 51 } # there
 are 52 weeks in the year but the first payment is not discounted as it is
 received at time period zero.
 .LP
-The factored form the series in our example is as follows:
+The factored form of the series in our example is as follows:
 .EQ I
 250 times ~^ left [ 1
 + 1  over { (1 + i) sup 1 }
@@ -111,7 +111,7 @@ S sub n = {  a(1 - r sup n ) } over { ( 1 - r ) }
 Therefore:
 .
 .EQ I
-PV sub ad lm
+PV lm
 PMT ~   {  a(1 - r sup n ) } over { ( 1 - r ) }
 .EN
 .sp -0.6v
@@ -147,10 +147,10 @@ lineup =~~
 { left [ 1 - { 1  over { (1 + i ) sup n } } right ] }
 .EN
 .
-Now the formula for an annuity due has been established we can calculate the
-value of a years rent:
+Now the formula for the PV of an annuity due has been established we can
+calculate the value of a years rent:
 .EQ I
-PV sub ad lm
+PV lm
 ( 1 + i ) { PMT } over i
 { left [ 1 - { 1  over { (1 + i ) sup n } } right ] }
 .EN
@@ -274,7 +274,8 @@ ordinary annuity by dividing the present value of the annuity due by #(1 + i)#
 .
 .XXXX 0 2 "PMT given an PV"
 .LP
-The formula for the annuity due can be rearranged to resolve for the PMT:
+The formula for the PV of an annuity due can be rearranged to resolve for the
+PMT:
 .EQ I
 PV lm {( 1 + i ) }{PMT over i } 
 { left [ 1 - { 1 over { (1 + i) sup n } } right ] }
@@ -286,7 +287,7 @@ PV(i) =~~ ( 1 + i ) PMT { left [ 1 - { 1 over { (1 + i) sup n } } right ] }
 .EN
 .sp -0.6v
 .EQ I
-PMT sub ad lineup =~~
+PMT lineup =~~
 {PV(i) } over 
 { ( 1 + i ) left [ 1 - { 1 over { (1 + i) sup n } } right ] }
 .EN
@@ -336,7 +337,7 @@ ln left [ left ( 1- { PV(i) over { ( 1 + i ) PMT} } right ) sup -1 right ]
 .EN
 .sp -0.6v
 .EQ I
-n sub ad lineup =~~
+n lineup =~~
 { ln left [ left ( 1- { PV(i) over { ( 1 + i ) PMT} } right ) sup -1 right ] }
 over 
 { ln (1 + i) }
@@ -396,9 +397,8 @@ compounding:
 + 800 (1 + i) sup 2 
 ~~+~~ 800 (1 + i) sup 1
 .EN
-The series has been reorganised from smallest to largest value for factoring as
-the common ratio is required to be greater than one as the series is
-compounding. The factored form of the series in our example is as follows:
+The series has been reorganised into its natural sequence and the the factored
+form of the series is then as follows:
 .EQ I
 800 times ~^ left [ ( 1 + i ) sup 1 + ( 1 + i ) sup 2 + ( 1 + i ) sup 3 
 ...~~... 
@@ -407,13 +407,13 @@ compounding. The factored form of the series in our example is as follows:
 + ( 1 + i ) sup 60 right ]
 .EN
 The values for the first term "a" and the common ratio "r" can now be
-established from the series.
+established from the series:
 .EQ I
 a =~~ ( 1 + i ) 
 ~~~~~~~~~
 "Common Ratio: " left [ b over a = c over b right ]
 tf
-{ (1 + i ) sup 1 } over  { (1 + i ) sup 2 } 
+{ (1 + i ) sup 2 } over  { (1 + i ) sup 1 } 
 =~~ { ( 1 + i ) sup 3 } over { ( 1 + i ) sup 2 } 
 tf
 r =~~ ( 1 + i ) 
@@ -425,6 +425,7 @@ S sub n =~~ {  a({ r sup n } -1  ) } over { ( r - 1 ) }
 ~~~~~~~ 
 "where r > 1 (compounding)"
 .EN
+.KS
 Therefore:
 .EQ I
 FV lm PMT times ~^ {  a({ r sup n } -1  ) } over { ( r - 1 ) } 
@@ -441,10 +442,11 @@ lineup =~~
 { PMT (  1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
 over i
 .EN
+.KE
 Now the formula for the future value of an annuity due has been established we
 can solve the problem.  
 .EQ I
-FV sub ad = { PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
+FV  =~~ { PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
 over i
 ~~~=~~~
 { 800 left ( 1 + { 5.0 over { 100 times ~^ 12 } } right ) 
@@ -499,7 +501,7 @@ box invis "n = 60" wid 0.6 ht 0.25 with .n at A.s + (0.0,0.2)
 .PE
 .
 .EQ I
-FV sub ad = { PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
+FV =~~ { PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) } 
 over i
 .EN
 .sp
@@ -562,7 +564,6 @@ i)#
 The future value of an annuity due can be converted to the future value of an
 ordinary annuity by dividing the future value of the annuity due by #(1 + i)#
 .
-.KS
 .XXXX 0 2 "PMT given a FV"
 .LP
 The formula for the future value of an annuity due can be rearranged to resolve
@@ -578,10 +579,9 @@ FV(i) =  PMT  ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } )
 .EN
 .sp -0.6v
 .EQ I
-PMT sub ad lineup =~~
+PMT lineup =~~
 FV(i) over { ( 1 + i )({ { ( 1 + i ) sup n }  - 1 } ) }
 .EN
-.KE
 .
 .XXXX 0 2 "n given a FV"
 .LP
@@ -613,7 +613,7 @@ ln left [ FV(i) over { PMT  ( 1 + i ) } + 1 right ] =  "n ln"( 1 + i )
 .EN
 .sp -0.6v
 .EQ I
-n sub ad lineup =~~
+n  lineup =~~
 { ln left [ FV(i) over { PMT  ( 1 + i ) } + 1 right ] } over { ln( 1 + i ) }
 .EN
 
