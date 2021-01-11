@@ -1,8 +1,8 @@
 .
 There are also some instances of growing annuities such as valuation models
-where dividends grow at a constant rate for a given period of time. Another
-example would be commercial real estate leases where payment is at the period
-end with an upward only revision to the lease. \(dg
+that presume that dividends will grow at a constant rate for a given period of
+time. Another example would be commercial real estate leases where payment is
+at the period end with an upward only revision to the lease\(dg.
 .FS
 \(dg Typically leases are an annuity due, the payment is made in advance of the
 service. In this instance we have stated that the payment is at the period end,
@@ -12,7 +12,7 @@ so it is a type of ordinary annuity.
 .XXXX \\n(cn 1 "PV given an Growing Ordinary Annuity"
 .LP
 We will start from a point that we know, the factored form of an ordinary
-annuity which is shown below is:
+annuity which is shown below:
 .EQ I
 PMT times ~^ left [  1  over { (1 + i) sup 1 } 
 + 1  over { (1 + i) sup 2 } 
@@ -51,7 +51,7 @@ The equation for the sum of a geometric series can now be used to establish
 the present value of the annuity.
 .
 .EQ I
-PV sub ga lm
+PV lm
 PMT times ~^ { a(1 - r sup n ) } over { ( 1 - r ) } 
 .EN
 .sp -0.6v
@@ -86,10 +86,10 @@ left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]
 .EN
 .KS
 A suitably sketchy scenario. You have decided to invest in some commercial
-property. The terms of the lease investment are that the annual end of year
-lease payments for the next 10 years will increase by 5% a year. If the first
-years lease payment is \[Po]3,000 and an appropriate interest rate is 8%, what
-is the most you can pay for these lease payments? 
+property. The terms of the investment are that the annual end of year lease
+payments for the next 10 years will increase by 5% a year. If the first years
+lease payment is \[Po]3,000 and an appropriate interest rate is 8%, what is the
+most you can pay for this lease investment? 
 .PS
 A: [ box invis wid 0.25 ht 0.20 "0"
 			arrow down 0.5 from last box.s 
@@ -121,7 +121,7 @@ box invis "n = 10" wid 0.6 ht 0.25 with .n at A.s + (0.40,0.25)
 .KE
 .sp
 .EQ I
-PV sub ga =~~  PMT over { i - g } 
+PV =~~  PMT over { i - g } 
 left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
 =~~
 3000 over { 0.08 - 0.05 } 
@@ -139,9 +139,9 @@ right ]
 .
 .XXXX 0 3 "Growth rate exceeds the discount rate"
 .LP
-In the left side of the equation the denominator has the value #i - g# which
-leads to the question as to what would happen if the growth rate #g# exceeds
-the interest rate #i#.
+The denominator of the equation outside the square bracket has the value #i -
+g# which leads to the question; what would happen if the growth rate #g#
+exceeds the interest rate #i#?
 .LP
 The concept of the growth rate exceeding the interest creates some theoretical
 problems. It is generally accepted that industries with growth rates in excess
@@ -155,21 +155,23 @@ of #n# the more unrealistic the number returned by the equation. #n# represents
 the time frame, so the greater the value of #n# the longer the time period in
 which the growth rate is expected to exceed the discount rate.
 .LP
-The equation as presented here will return a positive number. The growth rate
-being in excess of the discount rate will cause both the left and right
-component of the equation to become negative. A negative multiplied by a
-negative results in a positive number. 
+The equation as presented here will return a positive number when the growth
+rate exceeds the discount rate. The expression on the right side of the equals
+sign consists of a fraction and two terms inside a square bracket. When the
+growth rate exceeds the discount rate the fraction outside the square bracket
+and the result of the terms inside the square bracket become negative. A
+negative multiplied by a negative results in a positive number. 
 .LP
 The larger the value of #n# the greater the negative value of #left [  1 - left
 ( { 1 + g } over { 1 + i } right ) sup n  right ]# which means the series never
 approaches a limit. In fact the series is diverging and the PV keeps rising
-with larger values of #n#. The lack of a limit is a problem. The very basis of
-the TVM equation is that money today is worth more than money tomorrow. It is
-the mathematical character of the series of discounted cash flows that creates
-the limit and cash flows far enough in the future become increasing worthless.
-Once the growth rate exceeds the interest rate, a cash flow can be greater than
-the one that preceded it which changes the character of the series and invites
-some philosophical financial discussions.
+with larger values of #n#. The lack of a limit creates a financial conundrum.
+The very basis of the TVM equation is that money today is worth more than money
+tomorrow. It is the mathematical character of a series of discounted cash flows
+that creates the limit as the cash flows further into the future become
+increasing worthless. Once the growth rate exceeds the interest rate, a cash
+flow can be greater than the one that preceded it which changes the character
+of the series and invites some philosophical financial discussions.
 .
 .XXXX 0 2 "Initial PMT given a PV"
 .LP
@@ -186,7 +188,7 @@ left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]
 .EN
 .sp -0.6v
 .EQ I
-PMT sub ga =~~
+PMT =~~
 { PV( i - g ) } over  
 left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
 .EN
@@ -196,7 +198,12 @@ equation: # PMT times ~^ ( 1 + g ) sup n-1 #
 .LP
 Therefore the payment in period 8 would be:
 .EQ I
-PMT sup 8 =~~ 3,000 times ~^ (1.05) sup 7 =~~ \[Po]4,221.30
+PMT sub 8 lm 3,000 times ~^ (1.05) sup 7
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+\[Po]4,221.30
 .EN
 .
 .XXXX 0 2 "n given a PV"
@@ -234,7 +241,7 @@ n ln left [ { 1 + g } over { 1 + i } right ]
 .EN
 .sp -0.6v
 .EQ I
-n sub ga =~~ { ln left [ 1 - { PV( i - g ) }  over  PMT right ] } 
+n =~~ { ln left [ 1 - { PV( i - g ) }  over  PMT right ] } 
 over
 { ln left [ { 1 + g } over { 1 + i } right ] }
 .EN
@@ -247,13 +254,13 @@ PV of the growing annuity the multiplication of this value by the TVM equation
 for FV will give the future value for the growing annuity. We are moving the PV
 "n" number of years into the future at the given interest rate.
 .EQ I
-FV sub ga =~~ PV sub ga ~ times ~~ (1 + i) sup n
+FV =~~ PV  ~ times ~^ (1 + i) sup n
 .EN
 We can now establish the equation for the future value of a growing annuity.
 .
 .
 .EQ I
-FV sub ga lm  PMT over { i - g } 
+FV lm  PMT over { i - g } 
 left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
 times ~^
 (1 + i) sup n
@@ -278,7 +285,7 @@ right ]
 .EN
 .sp -0.6v
 .EQ I
-FV sub ga lineup =~~
+FV  lineup =~~
 PMT 
 left [  
 { (1 + i ) sup n  - ( 1 + g ) sup n } 
@@ -288,11 +295,11 @@ right ]
 .EN
 .
 .KS
-You are making plans for your retirement in 25 years time. If the annual
-(year-end) amount you save each year increases at a 3%, the expected growth
-rate in your salary, and you propose to start with a \[Po]1,000 at the end of
-this year. If you can earn 8 % on your savings, how much will your travel fund
-be worth in 25 years?
+You are making plans to go travelling in your retirement in 25 years time. If
+the annual (year-end) amount you save each year increases at a 3%, the expected
+growth rate in your salary, and you propose to start with a \[Po]1,000 at the
+end of this year. If you can earn 8 % on your savings, how much will your
+travel fund be worth in 25 years?
 .PS
 A: [ box invis wid 0.25 ht 0.20 "0"
 			line right 0.7 from last box.e
@@ -324,7 +331,7 @@ box invis "n = 25" wid 0.6 ht 0.25 with .n at A.s + (0.40,0.35)
 .KE
 .sp
 .EQ I
-FV sub ga =~~ 
+FV =~~ 
 PMT 
 left [  
 { (1 + i ) sup n  - ( 1 + g ) sup n } 
@@ -344,7 +351,8 @@ right ]
 .
 .XXXX 0 2 "Initial PMT given a FV"
 .LP
-The formula can be rearranged to resolve for the initial payment:
+The formula for the FV of the annuity can be rearranged to resolve for the
+initial payment:
 .EQ I
 FV =~~ 
 PMT 
@@ -355,7 +363,7 @@ over
 right ]   
 .EN
 .EQ I
-PMT sub ga =~~
+PMT =~~
 FV over
 left [  
 { (1 + i ) sup n  - ( 1 + g ) sup n } 
@@ -376,6 +384,9 @@ left [
 over 
 { i - g } 
 right ]   
+.EN
+.sp -0.6v
+.EQ I
 tf
 PMT over FV
 =~~
@@ -384,7 +395,10 @@ left [
 over 
 { i - g } 
 right ]   
-tf
+.EN
+.sp -0.6v
+.EQ I
+tf 
 left ( PMT over FV right ) times ~^ left (  i - g right )
 =~~
 (1 + i ) sup n  - ( 1 + g ) sup n
@@ -394,10 +408,10 @@ The above equation resolves to:
 4.75 = 1.08 sup n - 1.03 sup n
 .EN
 .KS
-The only solution to the problem of the number of compound periods is to graph
-for incremental values of #n# on the right side of the equation. If the values
+The only solution to the problem of the number of compound periods is to plot
+result of the equation with incrementally larger values of #n#. If the values
 of #n# are set on the x axis the results can be set on the y axis. The
-incremental values of #n# should yield a graph from which the result can be
+increasing values of #n# should yield a graph from which the result can be
 read.
 .G1
 frame invis ht 2 wid 3 left solid bot solid
@@ -421,6 +435,6 @@ line dotted from R,FV(R) to 0,4.75
 arrow from (22.5, 5.4) to (R, FV(R)) 
 .G2
 .KE
-You could of course use a computer to resolve the problem, be that with a
-spreadsheet or by writing a little bit of code.
+You could of course use a computer to resolve the problem with a spreadsheet or
+by writing a little bit of code.
 
