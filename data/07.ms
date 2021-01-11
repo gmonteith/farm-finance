@@ -1,8 +1,9 @@
 .
 Annuities which are declining via a geometric progression are not so common in
 finance as the general premise is to look at industries and businesses that
-grow. However they are often found when looking at costs and therefore worth so
-some examination. The factored form for the series of an ordinary annuity is:
+grow. However, they are often found when looking at costs and therefore worth
+so some examination. The factored form for the series of an ordinary annuity
+is:
 .EQ I
 PMT times ~^ left [  1  over { (1 + i) sup 1 } 
 + 1  over { (1 + i) sup 2 } 
@@ -40,8 +41,8 @@ tf
 .EN
 .XXXX \\n(cn 1 "PV of declining annuity"
 .LP
-The equation for the sum of a geometric series can now be used to establish
-the present value of the annuity.
+The equation for the sum of a geometric series, where the common ration is less
+than one, can now be used to establish the present value of the annuity.
 .EQ I
 PV sub da lm PMT times ~^ { a(1 - r sup n ) } over { ( 1 - r ) } 
 .EN
@@ -76,7 +77,11 @@ left [  1 -  left ( { 1 - g } over { 1 + i } right ) sup n  right ]
 .KS
 The yearly output of a silver mine is declining by 25% per year. Using a
 discount rate of 8%, what is expected to be the present worth of the output of
-the mine over the next 10 years, if the initial output of the mine is \[Po]25M?
+the mine over the next 10 years, if the initial output of the mine is
+\[Po]25M\(dg?
+.FS
+\(dg I have used M to represent millions
+.FE
 .PS
 A: [ box invis wid 0.25 ht 0.20 "0"
 			line up 0.3 from last box.n
@@ -148,7 +153,14 @@ equation: # PMT times ~^ ( 1 - g ) sup n-1 #
 .LP
 Therefore the payment in period 5 would be:
 .EQ I
-PMT sup n =~~ 5 =~~ 25 times ~^ (0.75) sup { 5 - 1 }  =~~ \[Po]7.91M
+PMT sub 5
+lm
+25 times ~^ (0.75) sup { 5 - 1 }
+.EN
+.sp -0.6v
+.EQ I
+lineup =~~
+\[Po]7.91M
 .EN
 .
 .KS
@@ -192,8 +204,9 @@ over
 .EN
 .KE
 This equation would allow you to answer the following question. How long it
-would take to extract a PV of \[Po]56M from the mine using the same declining
-growth rate, discount rate and initial output.
+would take to extract a PV of \[Po]56M from the mine, in section 1 of this
+chapter, using the same declining growth rate, discount rate and initial
+output?
 .EQ I
 n =~~
 { ln left [ 1 - { PV( i + g ) }  over PMT right ] } 
