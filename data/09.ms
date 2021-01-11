@@ -2,29 +2,38 @@
 There are also growing perpetuities, the most common of which is the Gordon
 Growth Model or Dividend Discount Model as it is often known. The dividends are
 treated as a growing perpetuity and the PV is used to value the equity of the
-firm.
+firm\(dg.
+.FS
+\(dg The dividends from the equity must actually conform to the pattern of a
+growing perpetuity or you will generate rubbish. This rather limits the range
+of companies that can be valued using this technique. The other problem is that
+perpetuities don't really exist, so you have to be confident of the companies
+ability to increase their dividend over a reasonable period of time by either
+increasing the cash flow to equity.
+.FE
 .LP
 It would be logical with our knowledge of perpetuities to examine the equation
-for a growing ordinary annuity and see if the right side of the equation also
-tends toward 1 over a very long period of time.
+for the PV of a growing ordinary annuity and see if the result of the terms in
+the square bracket also tends toward 1 over a very long period of time.
 .EQ I
-PV sub ga =~~  PMT over { i - g } 
+PV =~~  PMT over { i - g } 
 left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
 .EN
 For the purposes of this test we are going to use the following values: #i =~~
 10% #, #g =~~ 5%#, #n =~~ \[Po]1,000# and #PMT =~~ 500#.
 .EQ I
-PV sub ga =~~  500 over { 0.1 - 0.05 } 
+PV =~~  500 over { 0.1 - 0.05 } 
 left [  1 -  left ( { 1.05 } over { 1.10 } right ) sup 1,000  right ]   
 =~~
 10,000 times ~^ 1
 =~~
 \[Po]10,000
 .EN
-The right side of the equation does tend towards one over long periods and this
-allows us to state that the PV of a growing annuity is:
+The result of the terms inside the square bracket does tend towards one with
+very large values of #n#. This allows us to state that the PV of a growing
+annuity is:
 .EQ I
-PV sub gp =~~ PMT over { i - g } 
+PV =~~ PMT over { i - g } 
 .EN
 To come up with a more formal derivation of the equation for the PV of a
 growing perpetuity we will look back to the previous work we have completed on
@@ -66,7 +75,7 @@ PV =~~ PMT times ~^  a over { 1 -r }
 Now we can plug the values of #a# and #r# into the formula for the sum to
 infinity.
 .EQ I
-PV sub gp lm
+PV lm
 PMT times ~^ left [ { 1  over { 1 + i }}
 over { 1 - { { 1 + g } over {  1 + i } } } right ]
 .EN
@@ -98,7 +107,7 @@ PMT over {  i - g  }
 After some work with the algebra we arrive at the same formula for the PV of a
 growing perpetuity that we established earlier.
 .EQ I
-PV sub gp =~~ PMT over { i - g } 
+PV =~~ PMT over { i - g } 
 .EN
 .
 .XXXX \\n(cn 1 "Growth rate exceeds the discount rate"
@@ -123,8 +132,8 @@ the discount rate completely loses its moorings in reality.
 .IP \(bu 3
 A perpetuity is an annuity without end. We have previously stated that the idea
 of the growth rate exceeding the discount rate was admissible for short periods
-of time. As the perpetuity is an annuity without end the growth rate exceeding
-the discount rate fails this basic proposition.
+of time. As the perpetuity is an annuity without end it fails this basic
+proposition.
 .IP \(bu 3
 Hypothetically, any business where the growth rate could reliably exceed the
 cost of capital would attract limitless amounts of capital and subsequently
