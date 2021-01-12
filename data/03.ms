@@ -209,7 +209,7 @@ In the series above and our simple doubling series it can be seen that each
 term* of the series is the product of "a" and a power of "r" the index of which
 is one less than the number of the term.
 .FS
-* A term is usually defined as either a single number of the product (or
+* A term is usually defined as either a single number or the product (or
 quotient) of several numbers or letters: #7, 5a, abc#. Terms are usually
 seperated by a sign of operation; # + or - #.
 .FE
