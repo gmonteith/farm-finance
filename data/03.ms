@@ -297,9 +297,9 @@ PV \(dd
 \(dd It is not uncommon to see the sum of a series of cash flows expressed
 using the summation symbol.  Which in this case would be # sum from n=1 to n=5
 CF sub n over { (1 + i) sup n }#. This is a compact way of writing long sums
-and the #n=1# informs us that the first sum should be # CF sub 1 over { ( 1 + i
-) sup 1 } # or in this instance # 12,000 over { (1 + 8/100) sup 1 } # and the
-#n=5# that the last sum should be # 12,000 over { (1 + 8/100) sup 5 } #.
+and the #n=1# informs us that the first term should be # CF sub 1 over { ( 1 +
+i) sup 1 } # or in this instance # 12,000 over { (1 + 8/100) sup 1 } # and that
+the last term should be # 12,000 over { (1 + 8/100) sup 5 } #.
 .FE
 As this is a discounted series we can now use equation B to establish the sum.
 First we must establish the values for "a", the first term, and "r" the common
