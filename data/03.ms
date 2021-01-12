@@ -347,6 +347,7 @@ an example:
 .EQ 
 5(2 + 3 + 2 sup 2 ) =~~ 5 times ~^ 9 lineup =~~ 45
 .EN
+.LP
 To put it simple, if you start with #a(b + c)# and end up with #ab + ac# it is
 distributing. If you start with #ab + ac# and end up with #a(b + c)# it is
 factoring.
