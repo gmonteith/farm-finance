@@ -11,7 +11,7 @@ due by multiplying by # (1 + i ) #. This same logic can be used to convert a
 growing ordinary annuity into a growing annuity due.
 .EQ I
 PV lm
-PV sub ga times ~^ ( 1 + i ) 
+"PV Growing Ordinary Annuity" times ~^ ( 1 + i ) 
 .EN
 .sp -0.6v
 .EQ I
