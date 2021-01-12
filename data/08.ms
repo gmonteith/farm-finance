@@ -288,15 +288,20 @@ existence for 999 years.
 We have gone to great length to emphasise that an annuity is simply part of a
 perpetuity. This leads to the very logical question; given an annuity how long
 will it take to receive a given percentage of the perpetuity value? This is
-simply a case of setting the percentage of the perpetuity equal to the annuity
-and resolving for the number of compound periods. If we use "#z#" to represent
-the percentage of the equation we would start with:
+simply a case of setting the given percentage of the perpetuity equal to the
+annuity and resolving for the number of compound periods. If we use "#z#" to
+represent the given percentage the equation becomes:
 .EQ I
-PMT(z)
-over i
+\(dg PMT(z) over i
 lm
 PMT over i left [ 1 - 1 over { ( 1 + i )  sup n } right ]
 .EN
+.FS
+\(dg The use of a percentage implies that the value of #z# is less than one,
+and as we know any number multiplied by a value less than 1 will get smaller. I
+have placed #z# above the fraction bar for simplicity but the equation could
+also be written as # z times ~^ PMT over i# if this helps.
+.FE
 .sp -0.6v
 .EQ I
 lineup tf
