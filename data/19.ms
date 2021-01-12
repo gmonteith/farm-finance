@@ -623,6 +623,7 @@ lineup =~~
 lineup =~~
 \[Po]90.04
 .EN
+.RE
 .
 .XXXX 0 3 "Credibility due to the estimated life"
 .LP
