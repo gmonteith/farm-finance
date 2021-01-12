@@ -5,11 +5,15 @@ treated as a growing perpetuity and the PV is used to value the equity of the
 firm\(dg.
 .FS
 \(dg The dividends from the equity must actually conform to the pattern of a
-growing perpetuity or you will generate rubbish. This rather limits the range
-of companies that can be valued using this technique. The other problem is that
-perpetuities don't really exist, so you have to be confident of the companies
-ability to increase their dividend over a reasonable period of time by either
-increasing the cash flow to equity.
+growing perpetuity or you will grossly over value the equity. This rather
+limits the range of companies that can be valued using this technique. The
+problem is that perpetuities don't really exist, so you have to be confident of
+the companies ability to increase their dividend over a reasonable period of
+time by increasing the cash flow to equity. An obvious example of a company
+that may conform to the pattern of a growing perpetuity is Coke. The brand has
+existed for a longtime and have been able to increase the value of its products
+inline with inflation and also increase sales on the back of demographics.
+However it may not necessarily represent the same perpetuity going forward.
 .FE
 .LP
 It would be logical with our knowledge of perpetuities to examine the equation
