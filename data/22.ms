@@ -453,10 +453,10 @@ NOPAT = Profit after tax - after-tax non-operating gains + after-tax
 non-operating losses + after-tax interest expense 
 .LP
 .EQ
-"After tax non-operating gains" = 7,000 times ~^ ( 1 - 0.2 ) = 5,600
+"After tax non-operating gains" =~~ 7,000 times ~^ ( 1 - 0.2 ) =~~ 5,600
 .EN
 .EQ
-"After tax interest expense" = 5,632 times ~^ ( 1 - 0.2 ) = 4,506
+"After tax interest expense" =~~ 5,632 times ~^ ( 1 - 0.2 ) =~~ 4,506
 .EN
 .
 .TS
@@ -492,10 +492,10 @@ NOPAT can be calculated by adding back the tax on the 7,000 of "other income",
 as it is not operating income, and removing the tax benefit on the interest of
 5,632.
 .EQ
-"Tax on other income" = 7,000 times ~^ 0.2 = 1,400
+"Tax on other income" =~~ 7,000 times ~^ 0.2 =~~ 1,400
 .EN
 .EQ
-"Tax benefit of interest" = 5,632 times ~^ 0.2 = 1,126
+"Tax benefit of interest" =~~ 5,632 times ~^ 0.2 =~~ 1,126
 .EN
 .
 .TS
@@ -642,7 +642,7 @@ INVESTED CAPITAL#179,185
 .sp 0.5
 \fBDirect Method\fP
 .EQ
-"Direct Method" = 
+"Direct Method" =~~ 
 "All interest bearing debts (both short and long term)" + "equity"
 .EN
 .sp
@@ -800,20 +800,20 @@ figure as a numerator and the Invested Capital as the denominator. This would
 lead to the following equation:
 .EQ
 ROIC = NOPAT over { "Invested Capital" }
-~~=~~
-26,200 over 179,185 = 14.62%
+=~~
+26,200 over 179,185 =~~ 14.62%
 .EN
 The reason that the EVA is so small is that the ROIC, at 12.61%, is only just
 greater than the WACC at 12.1%. If we subtract the WACC from the ROIC we can
 see the excess return (or loss) above the WACC.
 .EQ
-ROIC - WACC = 14.62% - 14.11% = 0.51%
+ROIC - WACC =~~ 14.62% - 14.11% =~~ 0.51%
 .EN
 The positive or negative return on invested capital can be converted back to an
 absolute value, which is the EVA, by multiplying the invested capital by the
 difference between the ROIC and the WACC, the excess return.
 .EQ
-"Excess return" times ~^ "Invested Capital" = 179,185 times ~^ 0.51% = 914
+"Excess return" times ~^ "Invested Capital" =~~ 179,185 times ~^ 0.51% =~~ 914
 .EN
 .
 .sp 
