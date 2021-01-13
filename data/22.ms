@@ -31,6 +31,39 @@ Earnings may be calculated using alternative but equally acceptable accounting
 methods: LIFO (last in, first out) vs FIFO (first in, first out) accounting for
 inventory, various methods of accounting for depreciation, capitalising of
 expenses such as research and accounting for acquisitions to name a few.
+Research would be classified as an intangible asset if it was capitalised on
+the balance sheet. The topic of intangibles is worth spending a little time on
+as accounting for it is a notoriously complicated affair often completed in a
+nebulous manner judging by the notes in the financial statements of public
+companies. The problem lies in the fact the decision to capitalise a particular
+piece of research or development is essentially at the discretion of
+management. As you can appreciate this creates an opportunity to present the
+accounts in a manner that benefits the management and does not truly reflect
+the underlying business. The principal private agent conundrum was previously
+mentioned in Chapter 12. For this reason, on the whole, intangibles such as
+software development, advertising and R&D are passed through the P%L.
+Unfortunately the accounting of intangibles through an acquisition is not
+consistent with this process. If one company buys another company (for more
+than the tangible value!) the difference between the price paid and the
+tangible value will either be recorded as intangible asset, if it can be
+appraised as such, or as goodwill, on the balance sheet of the acquiring
+company. This means that companies that grow through acquisition will tend to
+have large amounts of intangibles on the balance sheet and those that have
+grown their own brands will not*.
+.FS
+* This is part of a much broader debate about whether accounts truly show the
+value of intangibles such as brands, supplier networks etc. In the past
+companies deployed significant physical assets as factories, ships and
+railroads, to name a few, from which they derived their cash flows and
+corporate values. In the past the book value (total assets less total
+liabilities) in some way showed both the money invested in the company and the
+liquidation value taking into account the depreciation of the physical assets.
+Today the most valuable companies like Facebook, Amazon, Netflix and Google
+have arguably huge intangible assets and only limited tangible assets and these
+intangible assets are not adequately displayed in the company accounts. If you
+want to learn more about this subject I would recommend "Capitalism With
+Capital" by Johnathan Haskel and Stian Westlake.
+.FE
 .IP \(bu 3
 Accounting allocations often differ among companies and for a particular
 company over time. In any event these allocations (LIFO vs FIFO, straight line
