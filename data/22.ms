@@ -1350,4 +1350,18 @@ in is commoditised with low returns there is little that can be done about it.
 You can not make a industrial supplier of widgets generate the same return on
 capital as a brewery. However, you can take the dividends and deploy them in an
 area with a higher return.
-
+.LP
+We mentioned, in passing, that you always have the option to develop new
+products and move into new markets. Many companies have done this to adapt and
+stay relevant in a changing world. This can be seen been by examining the old
+names of listed companies. The large advertising agency WPP (Wire & Plastic
+Products) original started life as a manufacturer of baskets to the shopping
+industry. WPP has moved a longway from its roots in the wire and plastics
+business under the direction of Martin Sorrell. It is beyond the scope of this
+work to say much about the move into new products and services, however, if
+your industry is in terminal decline a change will be required either to
+liquidate the company or change its direction. I would advise you make sure
+that your existing business is performing as well as possible before exploring
+new and exciting avenues. Examining option B when option A is not being well
+executed can be construed as a lack of focus on the immediate as opposed to
+bold strategic thinking.
