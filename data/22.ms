@@ -560,9 +560,10 @@ financial statements.
 .LP
 The invested capital can be calculated for the entire business or divisions of
 the business as need. You may want to know how much capital is used in each
-division so that you can calculate their returns separately. We will start by
-presenting the complete balance sheet for our fictional agricultural and
-livestock haulage operation:
+division so that you can calculate their returns separately.
+.KS
+We will start by presenting the complete balance sheet for our fictional
+agricultural and livestock haulage operation:
 .TS
 tab (#) center;
 cp-3 s
@@ -626,6 +627,7 @@ lp-2 n.
 TOTAL EQUITY & LIABILITIES#\[Po]195,623
 =
 .TE
+.KE
 Typically when looking at invested capital you are looking at only the
 operating assets and are disregarding the non operating assets such as
 marketable securities or residential property, the same can be said for non
@@ -674,6 +676,7 @@ a n .
 INVESTED CAPITAL#\[Po]179,185
 .TE
 .sp 0.5
+.KS
 \fBDirect Method\fP
 .EQ I
 "Direct Method" =~~ 
@@ -709,6 +712,7 @@ lp-2 n
 a n .
 INVESTED CAPITAL#179,185
 .TE
+.KE
 .sp 0.5
 \fBIndirect Method\fP
 .EQ I
@@ -913,6 +917,7 @@ left [ (% debt) times ~^ ("cost of debt") times ~^ ( 1 - "tax rate"%) right ]
 +
 left [ ( 1 - % debt) times ~^ ( "cost of equity" ) right ]
 .EN
+.KS
 Use symbols to replace the words using the ledger below:
 .sp 0.5
 .mk
@@ -934,6 +939,7 @@ Use symbols to replace the words using the ledger below:
 .fi
 .br
 .sp 0.5v
+.KE
 .EQ I
 RONIC% lineup =~~
 %D sub ic ( i sub d ) ( 1 - t)
@@ -1022,9 +1028,9 @@ debt can not be removed from the business with out improving the ROIC.
 If the cost of capital is an integral part of capital budgeting it would make
 sense that it is also a necessary part of measuring the financial performance,
 however, it is not common to find companies that explicitly use a metric that
-takes into account the value of all capital in the business. I worked for John
-Deere who used a metric called SVA.\(dg On page 21 of the 2018 Annual Report
-John Deere states:
+takes into account the value of all capital in the business.
+I worked for John Deere who used a metric called SVA.\(dg On page 21 of the
+2018 Annual Report John Deere states:
 .FS 
 \(dg The SVA that John Deere uses is very similar to EVA and should not be
 confused with the SVA that Alfred Rappaport discusses in this book "Creating
@@ -1038,6 +1044,7 @@ business results and measure sustainable performance. To arrive at SVA, each
 equipment segment is assessed at a pretax cost of assets - generally 12% of
 average identifiable operating assets with inventory at standard cost.\fP
 .QP
+.KS
 .TS
 tab (#) center;
 l cp-3 
@@ -1077,6 +1084,7 @@ Cost of assets @12%#(1,347)
 _
 SVA#1,469
 .TE
+.KE
 .LP
 As the table above shows the EVA we have calculated uses NOPAT and John Deere
 use operating profit. The operating profit is typically very similar to EBIT
