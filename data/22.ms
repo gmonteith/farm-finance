@@ -1216,16 +1216,16 @@ ratio is moving the wrong way then you must asses your cost base and your
 commitment to the industry.
 .IP "Operational" 5
 Operation problems are often far easier to deal with. Management, tooling and
-processes can be or improved to return the company to profitability. If the
-market is growing fast then the impact of poor operational performance can be
-ameliorated by the fact that once the operational efficiency is restored there
-should be enough industry growth to satisfy all participants. If the industry
-is mature operational mistakes can lead to significant brand damage and market
-share loses. Some operation problems linger and there are cases of companies
-who seem tortured by their operational inefficiencies. As an example, Hornby,
-the toy maker, has been plagued for a number of years with recurring supply
-chain problems which have resulted in them not having the stock to sell at key
-times. Hornby's lack of stock has also often been accompanied by quality
+processes can be improved or replaced to return the company to profitability.
+If the market is growing fast then the impact of poor operational performance
+can be ameliorated by the fact that once the operational efficiency is restored
+there should be enough industry growth to satisfy all participants. If the
+industry is mature operational mistakes can lead to significant brand damage
+and market share loses. Some operation problems linger and there are cases of
+companies who seem tortured by their operational inefficiencies. As an example,
+Hornby, the toy maker, has been plagued for a number of years with recurring
+supply chain problems which have resulted in them not having the stock to sell
+at key times. Hornby's lack of stock has also often been accompanied by quality
 complaints. Complacency in the face of a perpetual inability to resolve
 operation problems and subsequently generate a profit can be lethal if the
 continued existence of the company is dependent on the forbearance of the
