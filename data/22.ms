@@ -1254,7 +1254,19 @@ are cyclical and at times the supply of their products moves out of kilter with
 the demand leading to a depression in the prices. The supply subsequent
 contracts and for a brief moment there is better pricing for the product but
 with limited barriers to entry and ready supply of capital this improved
-pricing will soon evaporate. 
+pricing will soon evaporate. It is worth noting that where a few companies
+dominate an industry the industry often returns to profitability far faster. An
+example might be the container ship industry which is dominated by a few very
+large participants. Because the industry is dominated by a few participants
+their choices will have a huge impact. If they collectively decide to layup
+ships the industry can quickly move back towards equilibrium. The bulk ship
+industry is not dominated in the same way as the container industry by a few
+large participants. This means more often than not that large numbers of small
+players continue to ply their trade in a downturn to earn cash to pay for their
+liabilities keeping rates at a low level for a prolonged period of time. The
+rates will eventually pick up due to factors such as: balance sheets are
+restructured, participants drop out of the market, old ships are retired and
+not replaced, demand starts to exceed supply.
 .IP "Increase the volume" 5
 This is an attractive notion, but must be achieved with the existing assets
 otherwise you are deploying more capital into an enterprise from which you are
