@@ -912,7 +912,7 @@ ROIC lineup =~~  WACC
 .EN
 Break down WACC into the individual components:
 .EQ I
-RONIC% lineup =~~
+RONIC lineup =~~
 left [ (% debt) times ~^ ("cost of debt") times ~^ ( 1 - "tax rate"%) right ]
 +
 left [ ( 1 - % debt) times ~^ ( "cost of equity" ) right ]
@@ -925,7 +925,7 @@ Use symbols to replace the words using the ledger below:
 .nf
 .in 0.2i
 .ta 0.4i
-\fI#%D sub ic#\fP	represents the % of invested capital that is debt.
+\fI#D sub ic#\fP	represents the % of invested capital that is debt.
 \fIt\fP	represents the tax rate.
 .fi
 .br
@@ -941,40 +941,40 @@ Use symbols to replace the words using the ledger below:
 .sp 0.5v
 .KE
 .EQ I
-RONIC% lineup =~~
-%D sub ic ( i sub d ) ( 1 - t)
+RONIC lineup =~~
+D sub ic ( i sub d ) ( 1 - t)
 +
-( 1 - %D sub ic ) ( i sub e )
+( 1 - D sub ic ) ( i sub e )
 .EN
 .sp -0.6v
 .EQ I
 lineup tf
-RONIC% =~~
-%D sub ic ( i sub d ) ( 1 - t)
+RONIC =~~
+D sub ic ( i sub d ) ( 1 - t)
 +
-i sub e  - %D sub ic ( i sub e )
+i sub e  - D sub ic ( i sub e )
 .EN
 .sp -0.6v
 .EQ I
 lineup tf
-RONIC% - i sub e =~~
-%D sub ic ( i sub d ) ( 1 - t)
+RONIC - i sub e =~~
+D sub ic ( i sub d ) ( 1 - t)
 -
-%D sub ic ( i sub e )
+D sub ic ( i sub e )
 .EN
 .sp -0.6v
 .EQ I
 lineup tf
-RONIC% - i sub e =~~
-%D sub ic  left [ i sub d ( 1 - t)
+RONIC - i sub e =~~
+D sub ic  left [ i sub d ( 1 - t)
 -
 i sub e right ]
 .EN
 .sp -0.6v
 .EQ I
-%D sub ic  
+D sub ic  
 lineup =~~
-{ RONIC% - i sub e }
+{ RONIC - i sub e }
 over 
 { left [ i sub d ( 1 - t) - i sub e right ] }
 .EN
@@ -996,7 +996,7 @@ We can now calculate the value for our livestock and haulage scenario:
 
 .EQ I
 "%debt for EVA to breakeven" lm
-{ RONIC% - i sub e }
+{ RONIC - i sub e }
 over 
 { left [ i sub d ( 1 - t) - i sub e right ] }
 .EN
