@@ -594,15 +594,15 @@ How many years will it take you to payback the loan?
 .PS
 A: [ box invis wid 0.25 ht 0.20 "0"
 		arrow up at last box.n
-		"47,912" above at end of last arrow
+		"\[Po]47,912" above at end of last arrow
 		line right 0.3 from last box.e
 		box invis wid 0.25 ht 0.20 "1"
 		arrow down 0.3 at last box.s
-		"12,000" below at end of last arrow
+		"\[Po]12,000" below at end of last arrow
 		line dashed right 0.3 from last box.e
 		box invis wid 0.25 ht 0.20 "2"
 		arrow down 0.3 at last box.s
-		"12,000" below at end of last arrow
+		"\[Po]12,000" below at end of last arrow
 		line dashed right 0.3 from last box.e
 		line down 0.20 dashed right 0.15
 		line up 0.40 dashed right 0.15
@@ -610,11 +610,11 @@ A: [ box invis wid 0.25 ht 0.20 "0"
 		line dashed right 0.3 
 		box invis wid 0.25 ht 0.20 "?"
 		arrow down 0.3 at last box.s
-		"12,000" below at end of last arrow
+		"\[Po]12,000" below at end of last arrow
 		line dashed right 0.3 from last box.e
 		box invis wid 0.25 ht 0.20 "?"
 		arrow down 0.3 at last box.s
-		"12,000" below at end of last arrow
+		"\[Po]12,000" below at end of last arrow
 		]
 box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.2,-0.2)
 box invis "n = ?" wid 0.6 ht 0.25 with .n at A.s + (0.2,0.1)
