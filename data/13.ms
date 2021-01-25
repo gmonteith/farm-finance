@@ -127,22 +127,22 @@ Foretasted cash flows might lose their purchasing power due to inflation.
 Cash flows after the payback period are ignored. If projects are rejected
 because of the length of the payback period large profits can be foregone.
 .TS
-tab (#) center;
+tab (@) center;
 l  cp-3 s  cp-3 s
 c | c c | c c
 ^ | c c | c c
 n | n n | n n .
-#Project A# Project B
+@Project A@ Project B
 _
-Year#Cash#Cumulative#Cash#Cumulative
-#Flow#Total#Flow#Total
+Year@Cash@Cumulative@Cash@Cumulative
+@Flow@Total@Flow@Total
 _
-0#(40,000)##(40,000)#
-1#10,000#(30,000)#25,000#(15,000)
-2#15,000#(15,000)#20,000#5,000
-3#16,000#1,000#5,000#10,000
-4#16,000#17,000#3,000#13,000
-5#17,000#34,000#2,000#15,000
+0@(40,000)@@(40,000)@
+1@10,000@(30,000)@25,000@(15,000)
+2@15,000@(15,000)@20,000@5,000
+3@16,000@1,000@5,000@10,000
+4@16,000@17,000@3,000@13,000
+5@17,000@34,000@2,000@15,000
 _
 .TE
 .
@@ -170,24 +170,24 @@ flows from different time periods with out making any adjustments you are not
 comparing apples with apples. This concept of equivalence was covered in
 Chapter 2.
 .TS
-tab (#) center;
+tab (@) center;
 l  cp-3  cp-3 
 c | c | c
 n | n | n .
-#Project C# Project D
+@Project C@ Project D
 _
-Year#Cash flows#Cash flows
+Year@Cash flows@Cash flows
 _
-0#(40,000)#(40,000)#
-1#25,000#10,000
-2#7,500#10,000
-3#7,500#20,000
-4#10,000#15,000
-5#10,000#5,000
+0@(40,000)@(40,000)@
+1@25,000@10,000
+2@7,500@10,000
+3@7,500@20,000
+4@10,000@15,000
+5@10,000@5,000
 _
 .T&
 l n n .
-#20,000#20,000
+@20,000@20,000
 _
 .TE
 .KE
