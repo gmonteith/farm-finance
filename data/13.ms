@@ -61,22 +61,22 @@ the simplest and perhaps, the most widely used method for appraising capital
 expenditure. It is the number of years required to recover the original cash
 outlay invested in a project. 
 .TS
-tab (#) center;
+tab (@) center;
 c c c c
 ^ c c ^
 n n n l .
 _
-Year#Cash#Cumulative#Payback
-#Flows#Total##
+Year@Cash@Cumulative@Payback
+@Flows@Total@@
 _
-0#(40,000)##T{
+0@(40,000)@@T{
 payback = 2.9 years
 T}
-1#10,000#(30,000)#\^
-2#15,000#(15,000)#\^
-3#16,000#1,000#\^
-4#16,000#17,000#\^
-5#17,000#34,000#\^
+1@10,000@(30,000)@\^
+2@15,000@(15,000)@\^
+3@16,000@1,000@\^
+4@16,000@17,000@\^
+5@17,000@34,000@\^
 _
 .TE
 .
