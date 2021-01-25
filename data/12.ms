@@ -1614,26 +1614,25 @@ lineup =~~
 Based on the discussions about the cost of equity, 24 percent has been chosen
 as a suitable value to create the table below:
 .TS
-tab (#) center;
+tab (@) center;
 lp-2 | cp-2 | cp-2 | cp-2 | cp-2 | cp-2 | cp-2
 ^ | cp-2 | cp-2 | cp-2 | ^ | cp-2 | cp-2
 l | n | n | n | n | n | n .
 _
-Type#Percent#Pre Tax#Pre Tax#Tax#Post Tax#Post Tax
-#Of Capital (weight) #Cost#Contribution##Cost#Contribution
+Type@Percent@Pre Tax@Pre Tax@Tax@Post Tax@Post Tax
+@Of Capital (weight) @Cost@Contribution@@Cost@Contribution
 _
 .sp 5p
-Overdraft#17%#12#2.04#20%#9.6#1.63
-Long-term Debt#22%#7#1.54#20%#5.6#1.23
-Equity#61%#24#14.64##24.0#14.64
+Overdraft@17%@12@2.04@20%@9.6@1.63
+Long-term Debt@22%@7@1.54@20%@5.6@1.23
+Equity@61%@24@14.64@@24.0@14.64
 _
 .sp 5p
 .T&
 l n n n n n n .
-WACC##100%#18.22###17.50
+WACC@@100%@18.22@@@17.50
 _
 .TE
-.tP "Cost of capital"
 The mathematics behind the table are broken down as follows:
 .EQ I
 "Pre Tax WACC" lineup =~~
