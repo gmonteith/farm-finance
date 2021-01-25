@@ -742,15 +742,15 @@ that the ranking is going to be affected by the size of this initial investment
 which can lead to answers that conflict with NPV when comparing mutually
 exclusive projects. There is a simple table below to clarify the conflict:
 .TS
-tab (#) center ;
+tab (@) center ;
 lp-2 cp-2 cp-2 cp-2 cp-2 
 lp-2 cp-2 cp-2 cp-2 cp-2 
 l n n n n .
-#_#_#_#_#
-#CF0#CF1#NPV at 10%#PI at 10%
+@_@_@_@_@
+@CF0@CF1@NPV at 10%@PI at 10%
 _
-Project 1#(10,000)#20,000#8,180#1.82
-Project 2#(20,000)#36,000#12,727#1.64
+Project 1@(10,000)@20,000@8,180@1.82
+Project 2@(20,000)@36,000@12,727@1.64
 _
 .TE
 The conflict is a result of the profitability index ranking projects by their
