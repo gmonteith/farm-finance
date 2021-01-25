@@ -250,25 +250,25 @@ tractors etc tend to have more predictable salvage values.
 I have complete the table below to include the salvage value and shown both the
 payback and the bailout.
 .TS
-tab (#) center;
+tab (@) center;
 c c c c c c c
 ^ c c ^ c c ^
 n n n l n n l .
 _
-Year#Cash#Cumulative#Payback#Salvage#Year end#Bailout
-#Flows#Total##Value#Total
+Year@Cash@Cumulative@Payback@Salvage@Year end@Bailout
+@Flows@Total@@Value@Total
 _
-0#(40,000)##T{
+0@(40,000)@@T{
 
 payback = 2.9 years
-T}###T{
+T}@@@T{
 bailout = 1.3 years
 T}
-1#10,000#(30,000)#\^#25,000#(5,000)#\^
-2#15,000#(15,000)#\^#20,000#5,000#\^
-3#16,000#1,000#\^#15,000#16,000#\^
-4#16,000#17,000#\^#10,000#27,000#\^
-5#17,000#34,000#\^#8,000#42,000#\^
+1@10,000@(30,000)@\^@25,000@(5,000)@\^
+2@15,000@(15,000)@\^@20,000@5,000@\^
+3@16,000@1,000@\^@15,000@16,000@\^
+4@16,000@17,000@\^@10,000@27,000@\^
+5@17,000@34,000@\^@8,000@42,000@\^
 _
 .TE
 .KE
