@@ -370,50 +370,50 @@ same but the projects were different. If we use discounted cash flow and assume
 a cost of capital of 10 percent we can see from the table below, that
 financially, project C is the better investment.
 .TS
-tab (#) center;
+tab (@) center;
 l  l cp-3  s cp-3 s
 c | c | c  c  | c  c
 n | n | n  n  | n  n .
-##Project C# Project D
+@@Project C@ Project D
 _
-Year#Factor#Cash flows#PV#Cash flows#PV
+Year@Factor@Cash flows@PV@Cash flows@PV
 _
-0#1.000#(40,000)#(40,000)#(40,000)#(40,000)
-1#0.909#25,000#22,725#10,000#9,090
-2#0.826#7,500#6,195#10,000#8,260
-3#0.751#7,500#5,633#20,000#15,020
-4#0.683#10,000#6,830#15,000#10,245
-5#0.621#10,000#6,210#5,000#3,105
+0@1.000@(40,000)@(40,000)@(40,000)@(40,000)
+1@0.909@25,000@22,725@10,000@9,090
+2@0.826@7,500@6,195@10,000@8,260
+3@0.751@7,500@5,633@20,000@15,020
+4@0.683@10,000@6,830@15,000@10,245
+5@0.621@10,000@6,210@5,000@3,105
 _
 .T&
 n n n n n n.
-Cash flow total##20,000##20,000#
-NPV###7,593##5,720
+Cash flow total@@20,000@@20,000@
+NPV@@@7,593@@5,720
 _
 .TE
 Below is a slight more involved example but the concept for calculating the NPV
 remains the same:
 .TS
-tab (#) center;
+tab (@) center;
 c c c c c c c c
 ^ c ^ c c c c c
 ^ c c c c c c c
 n n n n n n n n.
 _
-Year#Initial#Sales#Operating#Total Cash#18%#Present
-#Investment##Costs#Flow#Discount#Value
-#\[Po]#\[Po]#\[Po]#\[Po]#Factor#\[Po]
+Year@Initial@Sales@Operating@Total Cash@18%@Present
+@Investment@@Costs@Flow@Discount@Value
+@\[Po]@\[Po]@\[Po]@\[Po]@Factor@\[Po]
 _
-0#(40,000)####1#(40,000)
-1##100,000#85,000#15,000#0.847#12,705
-2##105,000#88,000#17,000#0.718#12,206
-3##110,000#90,000#20,000#0.609#12,180
-4##115,000#95,000#20,000#0.516#10,320
-5##120,000#97,000#23,000#0.437#10,051
+0@(40,000)@@@@1@(40,000)
+1@@100,000@85,000@15,000@0.847@12,705
+2@@105,000@88,000@17,000@0.718@12,206
+3@@110,000@90,000@20,000@0.609@12,180
+4@@115,000@95,000@20,000@0.516@10,320
+5@@120,000@97,000@23,000@0.437@10,051
 _
 .T&
 l n n n n n n .
-NPV######17,462
+NPV@@@@@@17,462
 _
 .TE
 .LP
