@@ -72,7 +72,7 @@ the cost of capital.
 .B2
 .
 .sp
-.XXXX \\n(cn 1 "Examples"
+.\" .XXXX \\n(cn 1 "Examples"
 .LP
 For the purposes of the following examples the government allowable
 depreciation or Writing Down Allowance is 18% as represented by #d#, the
@@ -94,7 +94,8 @@ you are working out the tax that "investment cost" has been placed on the
 balance sheet and is refereed to as a "capitalised cost". This "capitalised
 cost" refers to the cost of the asset on the balance sheet.
 .
-.XXXX 0 2 "No Salvage Value"
+.\" .XXXX 0 2 "No Salvage Value"
+.XXXX \\n(cn 1 "No Salvage Value"
 .LP
 You have decided that the slurry pump used in the diary needs replacing. The
 new slurry pump has an initial purchase cost of \[Po]70,000, it will cost
@@ -258,7 +259,7 @@ a little complexity at time period 2.
 In reality the tax effect would have little bearing on the decision to invest
 in the slurry pump and was probably unnecessary.
 .
-.XXXX 0 3 "Salvage Value"
+.XXXX 0 2 "Salvage Value"
 .LP
 You are thinking of investing in a GPS system for your arable operation. The
 system cost \[Po]15,000 to buy and you must also pay a neighbour \[Po]1,000 per
@@ -359,7 +360,7 @@ invest in the equipment. If there were tax concessions for investing in the
 equipment that could lower the internal investment cost then the tax would
 become a consideration.
 .
-.XXXX 0 3 "Salvage Value"
+.XXXX 0 2 "Salvage Value"
 .LP
 You have decided to purchase a new ATV for use in the sheep contracting
 business. The ATV cost \[Po]10,000 and you have opted to purchase a service
@@ -532,7 +533,7 @@ value has been included in the investment cost equation and the cost of the
 service plan must be reduced by the tax rate.
 .
 .KS
-.XXXX 0 3 "Salvage Value"
+.XXXX 0 2 "Salvage Value"
 .LP
 You have decided to investigate if it is worth installing a diesel tank on the
 farm as it would allow you to bulk buy your fuel. You use 90,000 litres a year
