@@ -1426,24 +1426,24 @@ will take a project to return the capital invested in the project at the given
 discount rate. In the below example the cash flows are discounted at rate of
 10%.
 .TS
-tab (#) center;
+tab (@) center;
 c c c c c c
 ^ c c c c ^
 n n n n n l .
 _
-Year#Factor#Cash#Present#Cumulative#Discounted Payback
-#10%#Flows#Value#Total#
+Year@Factor@Cash@Present@Cumulative@Discounted Payback
+@10%@Flows@Value@Total@
 _
-0#1.000#(40,000)#(40,000)##T{
+0@1.000@(40,000)@(40,000)@@T{
 
 Discounted
 payback = 4.7 years
 T}
-1#0.909#10,000#9,090#(30,910)#\^
-2#0.826#15,000#12,390#(18,520)#\^
-3#0.751#15,000#11,265#(7,255)#\^
-4#0.683#16,000#10,928#3,673#\^
-5#0.621#17,000#10,557#14,230#\^
+1@0.909@10,000@9,090@(30,910)@\^
+2@0.826@15,000@12,390@(18,520)@\^
+3@0.751@15,000@11,265@(7,255)@\^
+4@0.683@16,000@10,928@3,673@\^
+5@0.621@17,000@10,557@14,230@\^
 _
 .TE
 .
