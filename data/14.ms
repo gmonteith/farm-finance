@@ -30,16 +30,16 @@ You pay National Insurance (NI) contributions to qualify for certain benefits
 and the State Pension. Below is a table, which was correct when written in
 2019, of the structure of NI contributions:
 .TS
-tab (#) center;
+tab (@) center;
 l l .
 _
-Class#Payer
+Class@Payer
 _
-Class 1#Employees with earning above a threshold and under State Pension age.
-Class 1A/B#Employers pay these directly on their employee's expenses or benefits.
-Class 2#Self-employed - you do not have to pay if you earn less than a given threshold.
-Class 3#Voluntary contributions - to fill or avoid gaps in your National Insurance record.
-Class 4#Self-employed people earning profits over a given threshold.
+Class 1@Employees with earning above a threshold and under State Pension age.
+Class 1A/B@Employers pay these directly on their employee's expenses or benefits.
+Class 2@Self-employed - you do not have to pay if you earn less than a given threshold.
+Class 3@Voluntary contributions - to fill or avoid gaps in your National Insurance record.
+Class 4@Self-employed people earning profits over a given threshold.
 _
 .TE
 .IP "Capital Gains Tax" 5
