@@ -1463,25 +1463,25 @@ project as it disregards cash flows after the payback period ends.
 .LP
 It is also possible to create a discounted bailout table:
 .TS
-tab (#) center;
+tab (@) center;
 c c c c c c c c c
 c c c c c c c c c
 ^ c c c c c c c c
 c c c c c c c c c
 n n n n n n n n l .
 _
-A#B#C#D#E#F#G#H#I
+A@B@C@D@E@F@G@H@I
 _
-Year#Factor#Cash#PV#Cumulative#Salvage#PV#YE#Discounted
-#10%#Flows#CF#Total#Value#SV#Total#Bailout
-###B x C###B x F#E + G#
+Year@Factor@Cash@PV@Cumulative@Salvage@PV@YE@Discounted
+@10%@Flows@CF@Total@Value@SV@Total@Bailout
+@@@B x C@@@B x F@E + G@
 _
-0#1.000#(40,000)#(40,000)#####
-1#0.909#10,000#9,090#(30,910)#25,000#22,725#(8,185)#
-2#0.826#15,000#12,390#(18,520)#20,000#16,520#(2,000)#Discounted bailout
-3#0.751#15,000#11,265#(7,255)#15,000#11,265#4,010# = 2.2 years
-4#0.683#16,000#10,928#3,673#10,000#6,830#10,503#
-5#0.621#17,000#10,557#14,230#8,000#4,968#19,198#
+0@1.000@(40,000)@(40,000)@@@@@
+1@0.909@10,000@9,090@(30,910)@25,000@22,725@(8,185)@
+2@0.826@15,000@12,390@(18,520)@20,000@16,520@(2,000)@Discounted bailout
+3@0.751@15,000@11,265@(7,255)@15,000@11,265@4,010@ = 2.2 years
+4@0.683@16,000@10,928@3,673@10,000@6,830@10,503@
+5@0.621@17,000@10,557@14,230@8,000@4,968@19,198@
 _
 .TE
 Again, even though you have accounted for the time value of money, it is still
