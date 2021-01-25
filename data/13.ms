@@ -1005,33 +1005,33 @@ The modified internal rate of return is calculated with a investment rate of
 The first step is to calculate the net present value for the positive and
 negative cash flows.
 .TS
-tab (#) center;
+tab (@) center;
 l l cp-3 s cp-3 s
 l l cp-3 s| cp-3 s
 l l cp-3 s| cp-3 s
 c c | c c | c c
 ^ c | c c | c c
 n n | n n | n n .
-##_#_#
-##Negative Cash Flows# Positive Cash Flows
-##Investment#Reinvestment
+@@_@_@
+@@Negative Cash Flows@ Positive Cash Flows
+@@Investment@Reinvestment
 _
-Year#Cash#12%#Present#8%#Present
-#Flow#Discount#Value#Discount#Value
-#\[Po]#Factor#\[Po]#Factor#\[Po]
+Year@Cash@12%@Present@8%@Present
+@Flow@Discount@Value@Discount@Value
+@\[Po]@Factor@\[Po]@Factor@\[Po]
 _
-0#(100)#1.000#(100)#1.000#
-1#200#0.893##0.926#185#
-2#500#0.797##0.857#429#
-3#0#0.712##0.794##
-4#0#0.636##0.735##
-5#(700)#0.567#(397)#0.681#
-6#(800)#0.507#(405)#0.630#
-7#100#0.452##0.583#58
+0@(100)@1.000@(100)@1.000@
+1@200@0.893@@0.926@185@
+2@500@0.797@@0.857@429@
+3@0@0.712@@0.794@@
+4@0@0.636@@0.735@@
+5@(700)@0.567@(397)@0.681@
+6@(800)@0.507@(405)@0.630@
+7@100@0.452@@0.583@58
 _
 .T&
 l n n n n n .
-PV###(903)##672
+PV@@@(903)@@672
 _
 .TE
 Once you have calculated the net present values the second step is to calculate
@@ -1156,41 +1156,41 @@ plots the points for discount rates between 20% and 320%. The table shows
 discount rates be 0% and 260%.
 .FE
 .TS
-tab (#) center ;
+tab (@) center ;
 c c c c c c c c c c 
 n n n n n n n n n n .
 _
-i#CF0#CF1#CF2#CF3#CF4#CF5#CF6#CF7#NPV
+i@CF0@CF1@CF2@CF3@CF4@CF5@CF6@CF7@NPV
 _
-0#-100#200#500#0#0#-700#-800#100#-800
-10%#-100#182#413#0#0#-435#-452#51#-340
-12%#-100#179#399#0#0#-397#-405#45#-279
-20%#-100#167#347#0#0#-281#-268#28#-107
-29%*#-100#155#302#0#0#-198#-176#17#0
-30%#-100#154#296#0#0#-189#-166#16#12
-40%#-100#143#255#0#0#-130#-106#9#71
-50%#-100#133#222#0#0#-92#-70#6#99
-60%#-100#125#195#0#0#-67#-48#4#110
-70%#-100#118#173#0#0#-49#-33#2#111
-80%#-100#111#154#0#0#-37#-24#2#107
-90%#-100#105#139#0#0#-28#-17#1#101
-100%#-100#100#125#0#0#-22#-13#1#92
-110%#-100#95#113#0#0#-17#-9#1#84
-120%#-100#91#103#0#0#-14#-7#0#75
-130%#-100#87#95#0#0#-11#-5#0#67
-140%#-100#83#87#0#0#-9#-4#0#59
-150%#-100#80#80#0#0#-7#-3#0#51
-160%#-100#77#74#0#0#-6#-3#0#44
-170%#-100#74#69#0#0#-5#-2#0#38
-180%#-100#71#64#0#0#-4#-2#0#31
-190%#-100#69#59#0#0#-3#-1#0#26
-200%#-100#67#56#0#0#-3#-1#0#20
-210%#-100#65#52#0#0#-2#-1#0#15
-220%#-100#63#49#0#0#-2#-1#0#11
-230%#-100#61#46#0#0#-2#-1#0#6
-240%#-100#59#43#0#0#-2#-1#0#2
-250%#-100#57#41#0#0#-1#-0#0#-1
-260%#-100#56#39#0#0#-1#-0#0#-5
+0@-100@200@500@0@0@-700@-800@100@-800
+10%@-100@182@413@0@0@-435@-452@51@-340
+12%@-100@179@399@0@0@-397@-405@45@-279
+20%@-100@167@347@0@0@-281@-268@28@-107
+29%*@-100@155@302@0@0@-198@-176@17@0
+30%@-100@154@296@0@0@-189@-166@16@12
+40%@-100@143@255@0@0@-130@-106@9@71
+50%@-100@133@222@0@0@-92@-70@6@99
+60%@-100@125@195@0@0@-67@-48@4@110
+70%@-100@118@173@0@0@-49@-33@2@111
+80%@-100@111@154@0@0@-37@-24@2@107
+90%@-100@105@139@0@0@-28@-17@1@101
+100%@-100@100@125@0@0@-22@-13@1@92
+110%@-100@95@113@0@0@-17@-9@1@84
+120%@-100@91@103@0@0@-14@-7@0@75
+130%@-100@87@95@0@0@-11@-5@0@67
+140%@-100@83@87@0@0@-9@-4@0@59
+150%@-100@80@80@0@0@-7@-3@0@51
+160%@-100@77@74@0@0@-6@-3@0@44
+170%@-100@74@69@0@0@-5@-2@0@38
+180%@-100@71@64@0@0@-4@-2@0@31
+190%@-100@69@59@0@0@-3@-1@0@26
+200%@-100@67@56@0@0@-3@-1@0@20
+210%@-100@65@52@0@0@-2@-1@0@15
+220%@-100@63@49@0@0@-2@-1@0@11
+230%@-100@61@46@0@0@-2@-1@0@6
+240%@-100@59@43@0@0@-2@-1@0@2
+250%@-100@57@41@0@0@-1@-0@0@-1
+260%@-100@56@39@0@0@-1@-0@0@-5
 _
 .TE
 .KE
@@ -1225,16 +1225,16 @@ discounting weigh most heavily on the later years.
 The absolute change in the cash flows at a discount rate of 20% is shown in the
 table below:
 .TS
-tab (#) center ;
+tab (@) center ;
 c c c c c c c c c c
 n n n n n n n n n n .
 _
-i#CF0#CF1#CF2#CF3#CF4#CF5#CF6#CF7#NPV
+i@CF0@CF1@CF2@CF3@CF4@CF5@CF6@CF7@NPV
 _
-0#-100#200#500#0#0#-700#-800#100#-800
-20%#-100#167#347#0#0#-281#-268#28#-107
+0@-100@200@500@0@0@-700@-800@100@-800
+20%@-100@167@347@0@0@-281@-268@28@-107
 _
-Change #0#-33#-153#0#0#419#532#-72#693
+Change @0@-33@-153@0@0@419@532@-72@693
 _
 .TE
 .KE
@@ -1251,16 +1251,16 @@ to impact then and the net present value starts to reduce. The impact on the
 net present value between discount rates 70% and 80% is shown in the table
 below:
 .TS
-tab (#) center ;
+tab (@) center ;
 c c c c c c c c c c
 n n n n n n n n n n .
 _
-i#CF0#CF1#CF2#CF3#CF4#CF5#CF6#CF7#NPV
+i@CF0@CF1@CF2@CF3@CF4@CF5@CF6@CF7@NPV
 _
-70%#-100#118#173#0#0#-49#-33#2#111
-80%#-100#111#154#0#0#-37#-24#2#107
+70%@-100@118@173@0@0@-49@-33@2@111
+80%@-100@111@154@0@0@-37@-24@2@107
 _
-Change#0#-7#-19#0#0#12#9#0#-4
+Change@0@-7@-19@0@0@12@9@0@-4
 _
 .TE
 The bottom of the table shows that the cash flows in years five, six and seven
@@ -1290,33 +1290,33 @@ of the positive cash flows required to generate the net present value. There
 will obviously be a rounding error as we have not used the exact internal rate
 of return of 28.69%.
 .TS
-tab (#) center;
+tab (@) center;
 l l cp-3 s cp-3 s
 l l cp-3 s| cp-3 s
 l l cp-3 s| cp-3 s
 c c | c c | c c
 ^ c | c c | c c
 n n | n n | n n .
-##_#_#
-##Negative Cash Flows# Positive Cash Flows
-##Investment#Reinvestment
+@@_@_@
+@@Negative Cash Flows@ Positive Cash Flows
+@@Investment@Reinvestment
 _
-Year#Cash#29%#Present#29%#Present
-#Flow#Discount#Value#Discount#Value
-#\[Po]#Factor#\[Po]#Factor#\[Po]
+Year@Cash@29%@Present@29%@Present
+@Flow@Discount@Value@Discount@Value
+@\[Po]@Factor@\[Po]@Factor@\[Po]
 _
-0#(100)#1.000#(100)#1.000#
-1#200#0.775##0.775#155#
-2#500#0.601##0.601#301#
-3#0#0.466##0.466##
-4#0#0.361##0.361##
-5#(700)#0.280#(196)#0.280#
-6#(800)#0.217#(174)#0.217#
-7#100#0.168##0.168#17
+0@(100)@1.000@(100)@1.000@
+1@200@0.775@@0.775@155@
+2@500@0.601@@0.601@301@
+3@0@0.466@@0.466@@
+4@0@0.361@@0.361@@
+5@(700)@0.280@(196)@0.280@
+6@(800)@0.217@(174)@0.217@
+7@100@0.168@@0.168@17
 _
 .T&
 l n n n n n .
-PV###(470)##473
+PV@@@(470)@@473
 _
 .TE
 We can see in the table above that the present value of the cash inflows and
