@@ -840,15 +840,15 @@ if the projects have different initial investments. When there are different
 initial investments the internal rate of return will favour the one with the
 smaller initial investment as show below:
 .TS
-tab (#) center ;
+tab (@) center ;
 lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2
 lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2
 l n n n n n n .
-#_#_#_#_#_#_#
-#CF0#CF1#CF2#CF3#NPV at 14%#IRR
+@_@_@_@_@_@_@
+@CF0@CF1@CF2@CF3@NPV at 14%@IRR
 _
-Project 1 (P1)#(950,000)#370,000#510,000#330,000#50,477#17.07
-Project 2 (P2)#(1,850,000)#900,000#800,000#750,000#61,276#16.03
+Project 1 (P1)@(950,000)@370,000@510,000@330,000@50,477@17.07
+Project 2 (P2)@(1,850,000)@900,000@800,000@750,000@61,276@16.03
 _
 .TE
 Project 2 above has the higher net present value but because it has the higher
@@ -862,14 +862,14 @@ subtract Project 1 cash flows from Project 2 cash flows. The incremental
 internal rate of return is the internal rate of return of these incremental
 cash flows. 
 .TS
-tab (#) center ;
+tab (@) center ;
 lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2
 lp-2 cp-2 cp-2 cp-2 cp-2 cp-2 cp-2
 l n n n n n n .
-#_#_#_#_#_#_#
-#CF0#CF1#CF2#CF3#NPV at 14%#IRR
+@_@_@_@_@_@_@
+@CF0@CF1@CF2@CF3@NPV at 14%@IRR
 _
-P2 - P1#(900,000)#530,000#290,000#330,000#10,798#14.79
+P2 - P1@(900,000)@530,000@290,000@330,000@10,798@14.79
 _
 .TE
 The decision criteria is to accept the larger project when the incremental
