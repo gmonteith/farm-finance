@@ -98,19 +98,19 @@ the discount factor is set the future value equal to 1, as we showed in Chapter
 .KS
 It maybe easier to read in a table in which case it would look as follows:
 .TS
-tab (#) center ;
+tab (@) center ;
 l c c c c c c
 l cp-2 cp-2 cp-2 cp-2 cp-2 cp-2
 l n n n n n n 
 l r r r r r r
 l n n n n n n . 
-#_#_#_#_#_#_
-#CF0#CF1#CF2#CF3#CF4#CF5
+@_@_@_@_@_@_
+@CF0@CF1@CF2@CF3@CF4@CF5
 _
-Cash flows##12,000#12,000#12,000#12,000#12,000
-Discount factor##0.926#0.857#0.794#0.735#0.681
+Cash flows@@12,000@12,000@12,000@12,000@12,000
+Discount factor@@0.926@0.857@0.794@0.735@0.681
 _
-Present value##\[Po]11,111#\[Po]10,288#\[Po]9,526#\[Po]8,820#\[Po]8,167
+Present value@@\[Po]11,111@\[Po]10,288@\[Po]9,526@\[Po]8,820@\[Po]8,167
 _
 .TE
 .KE
