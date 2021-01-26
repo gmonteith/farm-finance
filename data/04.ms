@@ -344,7 +344,7 @@ over
 .EN
 .KE
 .
-.XXXX 0 2 "FV given and annuity due"
+.XXXX 0 2 "FV given an annuity due"
 .LP
 You have decided to pay \[Po]800 into an account at the beginning of each month
 for 5 years at the an interest rate of 5% per annum. What will the future
