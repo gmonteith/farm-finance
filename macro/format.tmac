@@ -1,135 +1,66 @@
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Page settings
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .nr PS 10
 .nr GROWPS 3
 .nr PSINCR 1.5p
 .nr PO 0.75i
 .nr LL 6.75i
-.nr FM 0.5i
-.\" .ds RF DRAFT
-.\" .ds CF %
-
-.ig
-Name: XXXX
-Function: print a numbered header at the required level and add the properly
-indented entry to the table of contents.
-Inputs:
-$1 - Indicates if header is the first of the chapter
-$2 - Header number
-$3 - header name
-.if $1=0 then it can not be the first header.
-.el $1>0 then the heading is the first of the chapter. The chapter number is
-always greater than zero, so this is used as an indicator.
-..
-.de XXXX
-.ie \\$1=0 \{\
-.NH \\$2\"										header level
-\\$3\"												header name
-.XS\"													start toc
-\h'\\$2-1'\\*[SN-DOT] \\$3\"	set indent and header name
-.XE\"													end toc
-.\}
-.el \{\
-.NH S \\$1 \\$2\"							set header number based on chapter
-\\$3\"												set header name
-.XS\"													start toc
-\h'1'\\*[SN-DOT] \\$3\"				set indent and header name
-.XE\"													end toc
-.\}
-..
-
-.\" Chapter number
+.OF ''%''
+.EF ''%''
+.
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Pdf settings
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.pdfview /PageMode /UseOutlines
+.pdfinfo /Title     Farm Finance
+.pdfinfo /Author    Graham Monteith
+.pdfinfo /Subject   A guide to making better capital allocation decisions
+.pdfinfo /Keywords  groff troff PDF pdfmark finance capital investment
+.
+.nr PDFOUTLINE.FOLDLEVEL 1
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Variables
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Chapter number. This variable increments by one.
 .nr cn 0 1
-
+. 
+.\" This is used to indicate if a running header is required. The default is to
+.\" produce a running header unless it is set to zero with NOH!
 .nr noheader 1
 .
+.\" This is used to turn off the production of all the running headers.
+.\" primarily this is for the preface and introduction
 .de NOH!
 .nr noheader 0
 .nr appendix 0
 ..
-.
-.
-.de PT
-.\" value of noheader \\n[noheader]
-.\" value of chapter \\n(cn
-.\" value of appendix \\n[appendix]
-.\" value of contents \\n[contents]
-.\" if statement checks that noheader and \\n(cn are > 0
-.if (\\n[noheader])&(\\n(cn) \{\
-.			ie o .tl '\fBDRAFT - Chapter \\n(cn: \\*(c?\fP''%'
-.			el   .tl '%''\fBDRAFT - Chapter \\n(cn: \\*(c?\fP'
-.\}
-.nr noheader 1
-.
-.\" if statement checks that noheader and appendix are > 0
-.if (\\n[noheader])&(\\n[appendix]) \{\
-.			ie o .tl '\fBDRAFT - Appendix \\n(#a: \\*(c?\fP''%'
-.			el   .tl '%''\fBDRAFT - Appendix \\n(#a: \\*(c?\fP'
-.nr appendix 1
-.\}
-.nr noheader 1
-.
-..
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" HEADER macro
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 .ig
-This section of code turns the page numbers displayed in the footer on and off.
-1=on 			
-0=off     the default is off
-Having the default as on creates problems, as you want the page numbers in the
-footer off more than you want them on. However, if you default to off it is
-causes issues with the preface, table of contents and intro. :(
-.
+This header macro is used when there is no chapter. In this document that is
+the preface and the introduction.
 ..
-.\" Footer page numbers off
-.nr nofooter 0
-.
-.\" Turn footer page numbers on
-.de togglefooter
-.nr nofooter 1
-..
-.
-.de BT
-.\" condition1: \\n[nofooter]
-.\" chapter: \\n(cn
-.\" appendix: \\n[appendix]
-.
-.\" turns on page numbers in the footer for pages with a chapter heading
-.if \\n[nofooter]=1 \{\
-.			tl ''%''
-.\}
-
-.\" turns on page numbers in the footer for pages that are not a chapter
-.\" if nofooter & chapterno > 1 then no footer page numbers
-.if \\n[nofooter]=0 \
- . if \\n(cn=0 \
- . if \\n[appendix]=0 \{\
-.			tl ''%''
-.\}
-.
-.\" ensures page numbers in the footer are kept off
-.nr nofooter 0
-.
-..
-.
-.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-.\" Preface/intro header
-.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .de HEADER
-.bp
+.NOH!
 .rs
 .sp |1.75i
 .ce
-\s+4\fB\\$1\fP\s0
-.sp 2
+.pdfbookmark 1 \\$1
 .XS
 \\$1
 .XE
+\s+4\fB\\$1\fP\s0
+.sp 2
 .LP
 ..
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-.\" Chapter headers
+.\" CHAPTER macro
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-.
+.ig
+This macro is used when the document is split into individual chapters
+..
 .de CHAPTER
 .NOH!
 .bp
@@ -137,6 +68,7 @@ causes issues with the preface, table of contents and intro. :(
 .sp |1.75i
 .ce
 \s+8\fBChapter \\n+(cn\fP\s0
+.pdfbookmark 1 \\n(cn . \\$1
 .XS
 \\n(cn . \\$1
 .XE
@@ -147,7 +79,27 @@ causes issues with the preface, table of contents and intro. :(
 .ds c? \\$1
 .LP
 ..
-
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" XXXX macro
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.ig
+this macro is used to number the sections in the chapters and makes use of the
+XN macro from the mspdf macro package to automatically create the TOC and
+relocate it to the beginning of the document
+..
+.de XXXX
+.ie \\$1=0 \{\
+.NH \\$2\"										header level
+.XN \\$3\"										header name
+.\}
+.el \{\
+.NH S \\$1 \\$2\"							set header number based on chapter
+.XN \\$3\"										set header name
+.\}
+..
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" APPENDIX macro
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .nr appendix 0
 .
@@ -166,6 +118,7 @@ causes issues with the preface, table of contents and intro. :(
 .XS
 APPENDIX \\n+(#a: \\$1
 .XE
+.pdfbookmark 1 \\n(#a . \\$1
 .ds c? \\$1
 .ds b \\$1
 .rs
@@ -178,8 +131,7 @@ APPENDIX \\n+(#a: \\$1
 .bp
 .LP
 ..
-
-
+.
 .de APPENDIX_SUB
 .\".ds c?
 .NOH!
@@ -195,12 +147,18 @@ APPENDIX \\n+(#a: \\$1
 \s+2\fB\\$1\s0\fP
 .bp
 ..
-
+.
 .de RESETNAME
 .ds x "
 ..
-
-.
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Spacing equations
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.ig
+This macro is used to lineup equations that span more than one line. I can not
+take any credit for this macro I took it from "A Guide to Typesetting
+Mathematics using GNU eqn" by Ted Harding
+..
 .de hphntmsrc
 .nr 0h 0
 .nr 0d 0
@@ -208,7 +166,13 @@ APPENDIX \\n+(#a: \\$1
 .nr 0skern 0
 .ds 0s \\&\h'\\n(0wu'
 ..
-.
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Strike through equations
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.ig
+This is used to draw a diagonal line through equations to emphasise how like
+factors can be canceled. This is taken from the man page.
+..
 .de Ca
 .ds 0s \
 \Z'\\*(0s'\
@@ -216,68 +180,73 @@ APPENDIX \\n+(#a: \\$1
 \D'l \\n(0wu -\\n(0hu-\\n(0du'\
 \v'\\n(0hu'
 ..
-
-.\" Macro for table numbers
-.nr g! 0 +1
-.de tP
-.ce
-.ta 0.6i
-\s-2Table \\n+(g!.	\\$1\s0
-.sp 0.5
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Running page headers
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.ig
+This is used to draw a diagonal line through equations to emphasise how like
+factors can be canceled. This is taken from the man page.
 ..
-
-.\" Macro for figures numbers
-.nr g! 0 +1
-.de fP
-.ce
-.ta 0.6i
-\s-2Figure \\n+(g!.	\\$1\s0
-.sp 0.5
+.de PT
+.if (\\n[noheader])&(\\n(cn) \{\
+.EH '%''\fBDRAFT - Chapter \\n(cn: \\*(c?\fP'
+.OH '\fBDRAFT - Chapter \\n(cn: \\*(c?\fP''%'
+.			ie o .tl \\*[pg*OH]
+.			el   .tl \\*[pg*EH]
+.\}
+.nr noheader 1
+.
+.\" if statement checks that noheader and appendix are > 0
+.if (\\n[noheader])&(\\n[appendix]) \{\
+.EH '%''\fBDRAFT - Appendix \\n(#a: \\*(c?\fP'
+.OH '\fBDRAFT - Appendix \\n(#a: \\*(c?\fP''%'
+.			ie o .tl \\*[pg*OH]
+.			el   .tl \\*[pg*EH]
+.nr appendix 1
+.\}
+.\" .nr noheader 1
+..
+.\" .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" 
+.ig
+This section of code turns the page numbers displayed in the footer on and off.
+1=on and	0=off, the default is off. Having the default as on creates problems,
+as you want the page numbers in the footer off more than you want them on.
+However, if you default to off it causes issues with the preface, table of
+contents and intro. :(
 ..
 .
-.\" .de NHTOC
-.\" .NH \\$1										\"  put the numbered header at its level
-.\" \\$4\"                       heading name
-.\" .ds \\$2 \\*[SN-NO-DOT]\"    set the header number 
-.\" .ds \\$3 \\n%\"              set the page number of the header
-.\" .XS\"                        add TOC entry with the header page,
-.\" \h'\\$1-1'\\*[SN-DOT] \\$4\" indented number and the name
-.\" .XE\"                        end of TOC entry
-.\" ..
-
-
-.\" Macro defitions to use with ms, i.e. EXTensions to MS
-.\"*****************************************************************************
-.ig
-Name: NHTOC
-Function: print a numbered header at the required level
-and save the header number and page as string
-variables, available to the user. Add the properly
-indented entry to the table of contents.
-Inputs:
-1 - level of the header, integer
-2 - header number, string variable
-3 - header page, string variable
-4 - header name, text string
+.\" Footer page numbers off
+.nr nofooter 0
+.
+.\" Turn footer page numbers on
+.de togglefooter
+.nr nofooter 1
 ..
-.\".de NHTOC
-.\".NH \\$1										\"  put the numbered header at its level
-.\"\\$2\"                       heading name
-.\".XS\"                        add TOC entry with the header page,
-.\"\h'\\$1-1'\\*[SN-DOT] \\$2\" indented number and the name
-.\".XE\"                        end of TOC entry
-.\"..
-.\" .NHTOC 2 sec:consu:num sec:consu:page "Instalment loan"
+.
+.de BT
+.\" turns on page numbers in the footer for pages with a chapter heading
+.if \\n[nofooter]=1 \{\
+.			ie o .tl \\*[pg*OF]
+.			el   .tl \\*[pg*EF]
+.\}
 
-.\" .de NHTOC!
-.\" .NH S \\$1 \\$2										\"  put the numbered header at its level
-.\" \\$3\"                       heading name
-.\" .XS\"                        add TOC entry with the header page,
-.\" \h'1'\\*[SN-DOT] \\$3\" indented number and the name
-.\" .\" \h'1+\\$2-1'\\*[SN-DOT] \\$3\" indented number and the name
-.\" .XE\"                        end of TOC entry
-.\" ..
-.\" .NHTOC! \\n(cn 1 x x "Zero coupon bond"
-
-.\" .EH '%''\fBChapter \\n(cn: \\*(c?\fP'
-.\" .OH '\fBChapter \\n(cn: \\*(c?\fP''%'
+.\" turns on page numbers in the footer for pages that are not a chapter
+.\" if nofooter & chapterno > 1 then no footer page numbers
+.if \\n[nofooter]=0 \
+. if \\n(cn=0 \
+. if \\n[appendix]=0 \{\
+.			ie o .tl \\*[pg*OF]
+.			el   .tl \\*[pg*EF]
+.\}
+.\" ensures page numbers in the footer are kept off
+.nr nofooter 0
+..
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Set spacing in TOC
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" These strings adjust the spacing in the TOC. The string variables are found
+.\" in the spdf.tmac file
+.ds XNVS2 0.0v  \" leading at nesting increment
+.ds XNVS3 0.0v  \" leading following nested group
