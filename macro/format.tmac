@@ -60,6 +60,12 @@ the preface and the introduction.
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .ig
 This macro is used when the document is split into individual chapters
+.
+The pdf cross reference for the chapter is in the form of chxx where xx are two
+numeral representing the required chapter. For instance ch12
+.
+Links can be created within the document using the basic stucture below:
+.pdfhref -L -D ch12 Please see chapter 12
 ..
 .de CHAPTER
 .NOH!
@@ -69,6 +75,7 @@ This macro is used when the document is split into individual chapters
 .ce
 \s+8\fBChapter \\n+(cn\fP\s0
 .pdfbookmark 1 \\n(cn . \\$1
+.pdfhref -M -N ch\\n(cn\"						pdf cross reference for the chapter
 .XS
 \\n(cn . \\$1
 .XE
@@ -86,15 +93,24 @@ This macro is used when the document is split into individual chapters
 this macro is used to number the sections in the chapters and makes use of the
 XN macro from the mspdf macro package to automatically create the TOC and
 relocate it to the beginning of the document
+.
+The pdf cross reference is in the form sec-x.x where x.x are two numerals
+referencing the section number, for instance sec-2.4
+
+Links can be created within the document using the basic stucture below:
+.pdfhref -L -D sec-2.4 Please see section 2.4
 ..
 .de XXXX
 .ie \\$1=0 \{\
-.NH \\$2\"										header level
-.XN \\$3\"										header name
+.NH \\$2\"														header level
+.\" .XN \\$3\"												header name
+.XN -N sec-\\*[SN-NO-DOT] -- \\$3\"	  pdf cross reference and header name
+.\" .pdfhref -M -N sec\\$2
 .\}
 .el \{\
-.NH S \\$1 \\$2\"							set header number based on chapter
-.XN \\$3\"										set header name
+.NH S \\$1 \\$2\"											set header number based on chapter
+.\" .XN \\$3\"												set header name
+.XN -N sec-\\*[SN-NO-DOT] -- \\$3\"	  pdf cross reference and header name
 .\}
 ..
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
