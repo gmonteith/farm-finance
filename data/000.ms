@@ -41,7 +41,7 @@ reflection could be done better. An appraisal can be found below:
 .LP
 Good
 .IP \(bu 3
-The book starts with the time value of money in Chapter 1 and follows this
+The book starts with the time value of money in chapter one and follows this
 thread through out the work.
 .IP \(bu 3
 All the equations that are used in the work are derived from a common point.
@@ -54,7 +54,7 @@ efficiently.
 Bad
 .IP \(bu 3
 As I never set out to write a book and I am not convinced I am well qualified
-for it and the document is in need of both and editor and a copy writer!
+for it and the document is in need of both an editor and a copy writer!
 .IP \(bu 3
 I have explained things as I understand them and with no background in teaching
 I do not know if that is how you will understand them.
@@ -76,16 +76,17 @@ As I did not set out to book, let alone a textbook or a reference book, there
 are not extensive references, though there is a bibliography at the back.
 Therefore, I would like to acknowledge the better work of others from which I
 have drawn inspiration and knowledge. I have lent most heavily on the books and
-blogs of Aswath Damodaran for Chapter 12 where we think about how to establish
-the cost of capital and other chapters when discuss discounting. The concept of
-the Capital Cost Tax Factors (CCTF) came from "A Practical Approach to the
-Appraisal of Capital Expenditures" by C. Geoffrey Edge and V. Bruce Irvine,
-and I have expanded the equations to suit my purposes. My thoughts in general
-about how to account for the large capital expenditures in business have been
-heavily influenced by "Engineering Economy, Third Edition, Applying Theory to
-Practice" by A Ted G. Eschenback. Lastly Appendix E quickly runs though the
-mathematics of Shareholder Value Added (SVA) as promoted by Alfred Rappaport in
-his book "Creating Shareholder Value, A Guide for Manager and Investors".
+blogs of Aswath Damodaran for chapter twelve where we think about how to
+establish the cost of capital and other chapters when discuss discounting. The
+concept of the Capital Cost Tax Factors (CCTF) came from "A Practical Approach
+to the Appraisal of Capital Expenditures" by C. Geoffrey Edge and V. Bruce
+Irvine, and I have expanded the equations to suit my purposes. My thoughts in
+general about how to account for the large capital expenditures in business
+have been heavily influenced by "Engineering Economy, Third Edition, Applying
+Theory to Practice" by A Ted G. Eschenback. Lastly Appendix E quickly runs
+though the mathematics of Shareholder Value Added (SVA) as promoted by Alfred
+Rappaport in his book "Creating Shareholder Value, A Guide for Manager and
+Investors".
 .IP \(bu 3
 My mathematics is more recreational than rigorous and the work has followed
 this pattern. Therefore, I have not defined many terms in their true
