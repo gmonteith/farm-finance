@@ -1,0 +1,16 @@
+# This file can be used to generate the pdf with the command ". create-pdf"
+# the command can be understood as:
+# -s																	preprocess with  soelim
+# -t																	preprocess with  tbl
+# -p																	preprocess with  pic
+# -e																	preprocess with  eqn
+# -G																	preprocess with  grap
+# -R																	preprocess with  refer
+# -dpaper=a4 -P-pa4										use a4 as the papersize (see groff_tmac)
+# --report														output the status of the stages of the pdf generation
+# -mspdf															use the mspdf macropackage
+# --stylesheet=macro/cover.tmac				use the cover.tmac macro to build the cover sheet
+# master.ms														the file used to source the data for the pdf
+# --pdf-output=farm-finance.pdf				the filename of the output file
+#
+pdfroff -s -t -p -e -G -R -dpaper=a4 -P-pa4 --report -mspdf --stylesheet=macro/cover.tmac master.ms --pdf-output=farm-finance-draft.pdf
