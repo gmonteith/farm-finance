@@ -13,9 +13,6 @@
 .\" .ce 0
 .\" .bp
 .
-.SH 1
-Shareholder Value Added
-.LP
 All of the following information is taken from Alfred Rappaport's book
 "Creating Shareholder Value" and I have simply abbreviated it and changed the
 currency to British Pounds to suit this short appendix. It may infact be easier
@@ -30,6 +27,7 @@ discounting its forecasted cash flows by the cost of capital.
 .
 .SH 2
 Shareholder Value Added (SVA)
+.\" .SHP 1 2 "Shareholder Value Added (SVA)"
 .LP
 The total economic value of an entity such as a company or business unit is the
 sum of the values of its debt and equity. This value of the business is called
@@ -253,10 +251,12 @@ revenue and expense items for book purposes and tax purposes. For example,
 straight line depreciation may be used for book purposes and an accelerated
 depreciation method (AIA\(dg) for calculating taxable operating profit.
 .FS
-\(dg Annual Investment Allowance, see Chapter 14
+\(dg Annual Investment Allowance, see 
+.pdfhref -L -D sec-14.4.2 Chapter 14.4.2
 .FE
 .IP "Cost of capital" 5
-This was covered in detail in Section 12.
+This was covered in detail in
+.pdfhref -L -A . -D ch12 chapter 12
 .IP "Residual value" 5
 The residual value is a perpetuity, the mathematics of which we covered in
 Chaper 8.
@@ -320,8 +320,9 @@ misleading results. This is particularly true of cyclical industries that
 move from boom to bust. To compensate for the volatility of any industry it is
 prudent to "normalise" the earnings over a number of years.
 
-.SH 2
-Shareholder Value Example
+.\" .SH 2
+.\" Shareholder Value Example
+.SHP 1 2 "Shareholder Value Example"
 .LP
 Consider a business with the following 5 year forecast:
 .TS
@@ -610,8 +611,11 @@ forecast period, and it therefore #58.69 - 52.00 =~~ 6.89#
 .LP
 .KS
 The total SVA can also be calculated by making use of the Geometric Gradient
-Present Worth equation from Chapter 10.7. The present value of total cash
-inflows over the forecast period can be represented by the series below:
+Present Worth equation from
+Chapter 10.7.
+.pdfhref -L -A . -D sec-10.4 Chapter 10.7
+The present value of total cash inflows over the forecast period can be
+represented by the series below:
 .EQ I
 { sM(1-t)(1+g) sup 1 }
 over
@@ -659,11 +663,14 @@ over
 { (1 + i) sup 5 }
 right ]
 .EN
-If you refer back to Chapter 5.1 for growing ordinary annuities you will see
-that the series above differs in that the growth starts at time period 1. To
-allow for this we can add an extra growth period #( 1 + g )# outside the
-bracket. Using the Engineering Economics equation from Chapter 10.7 we can now
-write the series as:
+If you refer back to
+.pdfhref -L -D sec-5.1 Chapter 5.1
+for growing ordinary annuities you will see that the series above differs in
+that the growth starts at time period 1. To allow for this we can add an
+extra growth period #( 1 + g )# outside the bracket. Using the Engineering
+Economics equation from
+.pdfhref -L -D sec-10.7 Chapter 10.7
+we can now write the series as:
 .EQ I
 "PV of total cash inflows during forecast period"
 .EN
@@ -737,9 +744,12 @@ over
 { (1 + i) sup 5 }
 right ]
 .EN
-If you again refer back to Chapter 5.1 for growing ordinary annuities you will
-see that the series above is the same. Using the Engineering Economics equation
-from Chapter 10.7 we can now write the series as:
+If you again refer back to
+.pdfhref -L -D sec-5.1 Chapter 5.1
+for growing ordinary annuities you will see that the series above is the same.
+Using the Engineering Economics equation from
+.pdfhref -L -D sec-10.7 Chapter 10.7
+we can now write the series as:
 .EQ I
 "PV of total cash out flows in forecast period"
 .EN
@@ -901,8 +911,9 @@ lineup =~~
 .EN
 .RE
 .
-.SH 2
-Threshold Margin
+.\" .SH 2
+.\" Threshold Margin
+.SHP 1 2 "Threshold Margin"
 .LP
 If we redo the example but use an operating margin "#M#" of 6% we can examine
 the impact on the SVA.
@@ -1400,7 +1411,8 @@ because the right side of the expression is larger than the left. At the
 incremental threshold margin the left side and the right side of the expression
 are equal. At rates above the incremental threshold margin the cost of capital
 has been covered and excess cash flow starts to contribute towards the SVA.
-Chapter 13.3.1.1 might help to clarify this point if the logic is not clear.
+.pdfhref -L -D sec-13.3.1.1 Chapter 13.3.1.1
+might help to clarify this point if the logic is not clear.
 .LP
 If we subtract the incremental threshold margin "#m sub it#" from the operating
 margin "#M#" we will be operating at a rate above the cost of the capital and
@@ -1567,9 +1579,10 @@ over
 ...
 right ]
 .EN
-If you refer to Chapter 5.1 you will see that the series above differs from the
-PV of growing ordinary annuity in that this series starts the compounding in
-period 2 not period 1.
+If you refer to
+.pdfhref -L -D sec-5.1 Chapter 5.1
+you will see that the series above differs from the PV of growing ordinary
+annuity in that this series starts the compounding in period 2 not period 1.
 .KS
 To compensate for this the factor outside the bracket is increased by #(1 + i)#
 to give:
@@ -1609,8 +1622,10 @@ lineup =~~
 lineup =~~
 \[Po]6.89 ^ mm
 .EN
-.SH 2
-The Shareholder Value Network
+.
+.\" .SH 2
+.\" The Shareholder Value Network
+.SHP 1 2 "The Shareholder Value Network"
 .LP
 The flowchart below that makes up the shareholder value network which depicts
 the essential link between the corporate objective of creating shareholder
