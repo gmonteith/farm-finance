@@ -2,8 +2,7 @@
 .nr HM 0.7i
 .
 .
-.SH 1
-Writing down allowance
+.SHP 1 3 "Flow Chart, WDA, Continuing Pool"
 .LP
 The flow chart for the WDA when it is assumed there is a continuing pool is as
 follows:
@@ -55,9 +54,6 @@ CGT: box "#space 0 cgt #" width 1.1 height 0.6 with .s at Y2.end
 
 .PE
 .
-.SH
-Flow chart
-.LP
 The flow chart shows the available options when using the WDA. The key points
 to understand in the logic of the flow chart are:
 .IP \(bu 3
@@ -131,8 +127,7 @@ Total#\[Po]31,463#\[Po]6,292
 .TE
 
 .
-.SH 2
-WDA - no salvage value
+.SHP 2 4 "WDA, No Salvage Value"
 .LP
 Again we are going to work through an example with the aid of a table and then
 look at the problem with some mathematics. For the purpose of this example
@@ -626,9 +621,9 @@ lineup =~~
 .EN
 .
 .IP "Operating Cash Flow" 15
-This is an annuity and we are going to use the equation from the section on
+This is an annuity and we are going to use the equation from the chapter on
 Engineering Economics using the notation for a Uniform Series Present Worth
-(P/A, i%, n).
+.pdfhref -L -A . -D sec-10.5 (P/A, i%, n)
 .
 .EQ I
 "Operating cash flow" sub P lm 25,000(P/A, 15%, 5)
@@ -792,8 +787,7 @@ of no real concern and the point of the exercise is to emphasise that the CCFTs
 calculate the tax savings to infinity and move the tax benefit to the asset in
 question to reveal the true investment cost.
 .
-.SH 2
-WDA salvage value
+.SHP 2 4 "WDA, Salvage Value"
 .LP
 We will now look at a scenario where there is a salvage value. We are now going
 to move away from calculating the NPV and focus on the tax benefits associated
@@ -1392,8 +1386,7 @@ lineup =~~
 .EN
 .RE
 .
-.SH 2
-WDA, salvage value with capital gains
+.SHP 2 4 "WDA, Salvage Value With Capital Gains"
 .LP
 Again, there is no graph for this section and we are simply going to complete
 the maths required to establish the investment cost equation. Again the maths
