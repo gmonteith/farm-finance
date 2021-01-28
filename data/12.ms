@@ -844,7 +844,7 @@ business owner to make suitable provisions to repay the principal.
 .FSP
 \(dd This is the installment loan from
 .pdfhref -L -A . -D sec-2.2 Chapter 2.2
-Loans are also covered in Appendix G.
+Loans are also covered in 
 .pdfhref -L -A . -D apG Appendix G
 .FE
 .LP
