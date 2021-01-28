@@ -15,16 +15,20 @@
 .\" .SH 1
 .\" Loans
 .\" .LP
-The Appendix looks at the amortisation of different types of loans from Chapter
-2. The term amortisation refers to loans where each payment is made up of both
-a principal and interest component.
-.SH
-Instalment Loan - Chapter 2.2
+The Appendix looks at the amortisation of different types of loans from
+.pdfhref -L -A . -D ch2 Chapter 2
+The term amortisation refers to loans where each payment is made up of both a
+principal and interest component.
+.
+.\" .SH
+.\" Instalment Loan
+.SHP 1 2 "Instalment Loan"
 .LP
-This is the most common common type of loan. At the beginning of the loan the
-interest component is at its largest and over time reduces as the principal is
-slowly paid down causing the percentage of the payment apportioned to the
-outstanding principal balance to increase.
+This is the most common common type of loan and we covered it in
+.pdfhref -L -A . -D sec-2.2 Chapter 2.2
+At the beginning of the loan the interest component is at its largest and over
+time reduces as the principal is slowly paid down causing the percentage of the
+payment apportioned to the outstanding principal balance to increase.
 .PS
 A: [  box invis wid 0.20 ht 0.20 "0"
 		arrow up 0.3 at last box.n
@@ -58,7 +62,8 @@ box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,-0.25)
 "Periodic payment" lm "Opening balance "^(A/P, 8%, 5)\(dd
 .EN
 .FS
-\(dd This is the Capital Recovery factor from Chapter 10.6
+\(dd This is the Capital Recovery factor from
+.pdfhref -L -D sec-10.6 Chapter 10.6
 .FE
 .sp -0.6v
 .EQ I
@@ -164,19 +169,19 @@ lineup =~~
 lineup =~~
 \[Po]1,260\(dg
 .EN
-.
 .KS
-.SH
-Fixed Principal Repayment - Chapter 3.4
+.
+.SHP 1 2 "Fixed Principal Repayment"
 .LP
-Fixed principal repayment loans are not so common. However, they do have some
-advantages, as the cash flow diagram shows the payments reduce with time as the
-interest burden decreases. The advantage of the constant principal repayment
-loan is that it matches the most uncertain cash flows with the smallest
-periodic payment. In other words, the further a cash flow appears in the future
-the less certain you are about it, and the smaller you would like the
-accompanying liability to be, which is what you get with a constant principal
-repayment.
+Fixed principal repayment loans are not so common but were covered in
+.pdfhref -L -A . -D sec-2.4 Chapter 2.4
+However, they do have some advantages, as the cash flow diagram shows the
+payments reduce with time as the interest burden decreases. The advantage of
+the constant principal repayment loan is that it matches the most uncertain
+cash flows with the smallest periodic payment. In other words, the further a
+cash flow appears in the future the less certain you are about it, and the
+smaller you would like the accompanying liability to be, which is what you get
+with a constant principal repayment.
 .PS
 A: [  box invis wid 0.20 ht 0.20 "0"
 		arrow up 0.3 at last box.n
@@ -307,13 +312,14 @@ The interest paid over the life of this loan is: \[Po]1,200. This is lower than
 fixed repayment loan because of the increased size of the periodic principal
 repayment which accelerates the reduction in the outstanding balance.
 .KS
-.SH
-Balloon Payment - Chapter 3.5
+.
+.SHP 1 2 "Balloon Payment"
 .LP
-Loans with a balloon payment have become more popular in recent years as it
-allows the lender to reduce the periodic payment due by the borrower. A loan
-incorporating a balloon payment is particularly popular when used to finance
-vehicles.
+Loans with a balloon payment, as covered in
+.pdfhref -L -A , -D sec-2.5 Chapter 2.5
+have become more popular in recent years as it allows the lender to reduce the
+periodic payment due by the borrower. A loan incorporating a balloon payment is
+particularly popular when used to finance vehicles.
 .LP
 A simple example for a debt with a balloon payment might be as follows. A small
 deposit is made and the borrower's repayment is used to finance the
