@@ -496,7 +496,7 @@ We have covered geometric gradients when we looked at at growing annuities. It
 is common for both annual revenues and annual costs to change, either up or
 down, by a constant percentage. We have previously presented the equation as
 follows in
-.pdfhref -L -A : -D sec-5.1 Chapter 5.5
+.pdfhref -L -A : -D sec-5.1 Chapter 5.1
 .EQ I
 PV sub ga =~~  PMT over { i - g } 
 left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
