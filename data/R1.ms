@@ -12,9 +12,6 @@
 .\" .ce 0
 .\" .bp
 .
-.SH 1
-References
-.LP
 .LP
 In compiling this work I am greatly indebted to the many authors who have
 written far better works than I.  In building up the main body of the work, I
