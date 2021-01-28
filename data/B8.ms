@@ -6,6 +6,8 @@
 .\" Single Asset Pool
 .\" .LP
 .KS
+.SHP 1 3 "Flow Chart, Single Asset Pool"
+.LP
 The flow chart for the writing down allowance when using a single asset pool is
 as follows:
 .
@@ -157,8 +159,7 @@ Total#\[Po]31,463#\[Po]6,292
 #_#_#
 .TE
 .
-.SH 2 
-No salvage value
+.SHP 2 4 "No Salvage Value"
 .LP
 In the fifth year the asset is disposed of with no salvage value. As the asset
 has been disposed off with no salvage value the asset has lost value faster
@@ -359,8 +360,7 @@ lineup =~~
 .RE
 .KE
 .
-.SH 2 
-Salvage value equal to the UCC
+.SHP 2 4 "Salvage Value Equal to the UCC"
 .LP
 As the salvage value exactly equals the UCC there is no tax adjustment
 required. The depreciation in the pool has exactly matched the depreciation in
@@ -518,8 +518,7 @@ lineup =~~
 .EN
 .RE
 .
-.SH 2
-Salvage value less than the UCC
+.SHP 2 4 "Salvage Value Less Than the UCC"
 .LP
 As the salvage value is less than the UCC there will be a balancing allowance
 equal to the difference between the salvage value and the UCC. In this example
@@ -783,8 +782,7 @@ lineup =~~
 .RE
 .
 .KS
-.SH 2
-Salvage greater than the UCC
+.SHP 2 4 "Salvage Greater Than the UCC"
 .LP
 In this instance the salvage value is greater than the UCC causing there to be
 a balancing charge. The balancing charge is equal to the difference between the
@@ -896,8 +894,7 @@ lineup =~~
 .EN
 .RE
 .
-.SH 2
-Salvage greater than the UCC with a capital gain
+.SHP 2 4 "Salvage Greater Than the UCC With a Capital Gain"
 .LP
 In this instance the salvage value is greater than the UCC causing there to be
 a balancing charge and the salvage value also exceeds the initial investment
