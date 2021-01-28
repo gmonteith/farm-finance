@@ -4,6 +4,7 @@
 .
 .\" .SH 1
 .\" AIA or Yearly Allowance (Time period 2)
+.SHP 1 3 "Flow Chart, AIA, Continuing Pool"
 .LP
 The flow chart for the AIA, at time period 2, when it is assumed there is a
 continuing pool is as follows:
@@ -77,8 +78,7 @@ ncctf2(0.18, 0.2, 0.15)
 The calculation for the CCTF will be covered in detail so do not fret that you
 have not been given an explanation at this stage.
 .
-.SH 2
-AIA - No salvage value
+.SHP 2 4 "AIA, No Salvage Value"
 .LP
 We are going to work through an example using both a table and then some
 mathematics. Many people feel more comfortable with the table and it can help
@@ -174,8 +174,7 @@ lineup =~~
 .EN
 .RE
 .
-.SH 2
-AIA - Salvage value
+.SHP 2 4 "AIA - Salvage Value"
 .LP
 We will now look at a scenario where there is a salvage value. Please assume
 the following for this example: the capital investment is \[Po]25,000 and the
@@ -395,8 +394,7 @@ lineup =~~
 .EN
 .RE
 .
-.SH 2 
-AIA - Salvage value with capital gains
+.SHP 2 4 "AIA - Salvage Value With Capital Gains"
 .LP
 The logic is that the pool would be large enough to allow the subtraction of
 the full salvage value and the capital gains is paid on the difference between
