@@ -65,7 +65,7 @@ on the control function of management. It is unlikely that any of the
 variables are inherently stable however if they are inherently unstable it
 makes the control of the process strenuous and it is subsequently unlikely that
 the implementation of model will deliver the outcome that you want. This
-uncertainty's aligns with the concept of risk as discussed in Chapter XX on the
+uncertainty's aligns with the concept of risk as discussed in Chapter 12 on the
 cost of equity.
 .LP
 It is a given that management must be suitably organised so that the plan can
@@ -209,7 +209,7 @@ FC over Q + VC
 .EN
 I have not included any graphs in this section which is somewhat of a failing
 but at the beginning it was said that this section used the laws of a straight
-line and you would subsequently expect the graphs to have straing lines. This
+line and you would subsequently expect the graphs to have straight lines. This
 is not always the case, the supply and demand functions are not always linear
 and the average cost function is often L shaped.
 .LP
@@ -324,10 +324,11 @@ the increase of 1,000 can be converted to an annuity using the Arithmetic
 Gradient Present Worth factor.\(dg
 .IP "Step 4:" 10
 Insurance is, usually, payable upfront as stated in this example. Therefore,
-the insurance is a type of annuity due as covered in Chapter 5. We learnt in
-Chapter 5 that a annuity due can be converted to an ordinary annuity by the
-inclusion of an extra compounding period. Subsequently, the insurance cost must
-be multiplied by the Single Payment Compound Amount factor.
+the insurance is a type of annuity due as covered in
+.pdfhref -L -A . -D ch4 Chapter 4
+We learnt in Chapter 4 that a annuity due can be converted to an ordinary
+annuity by the inclusion of an extra compounding period. Subsequently, the
+insurance cost must be multiplied by the Single Payment Compound Amount factor.
 .IP "Step 4:" 10
 The salvage value must be converted to a present value using the Single Payment
 Present Worth factor and an annuity using the Capital Recovery Factor.
@@ -924,12 +925,13 @@ lineup =~~
 .KE
 This is the same value as we calculated in the previous section as the weights
 are the same and we used the growth rate implied by 81 days in the previous
-section. You can either think in terms of days or growth rates as they are
-different sides of the same coin. As we have previously stated a growth rate
-implies a given number of days required to reach the finishing weight and the
-number of days implies the growth rate required to reach the finishing weight.
-We will change the growth rate to see the impact on the kilograms of dry
-matter. We will use a low growth rate of 0.09 kg per day.
+.pdfhref -L -A . -D sec-21.4.1.2  section
+You can either think in terms of days or growth rates as they are different
+sides of the same coin. As we have previously stated a growth rate implies a
+given number of days required to reach the finishing weight and the number of
+days implies the growth rate required to reach the finishing weight. We will
+change the growth rate to see the impact on the kilograms of dry matter. We
+will use a low growth rate of 0.09 kg per day.
 .EQ I
 DM sub { \[sum] 0.09 } lm
 { { k sub f - k sub s + r } over 2r }

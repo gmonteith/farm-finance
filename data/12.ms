@@ -69,7 +69,7 @@ safer than equity but anything can be made speculative and a junk bond*
 regardless of its position in the capital structure is riskier than the equity
 of a large well established company with a good market position in a stable
 industry. 
-.FS
+.FSP
 * A junk bond is a bond that is rated below investment by the credit rating
 agencies. Junk bonds are often called high yield debt and are more susceptible
 to default due to the general indebtedness of the company, deteriorating market
@@ -92,7 +92,7 @@ to whom the payments are due.
 When a company is calculating the level of its indebtedness the calculation
 would typically include any interest bearing debt regardless of the duration and
 any leases.\(dg
-.FS
+.FSP
 \(dg Leases are the purchase of assets with other peoples money. The lease may
 or may not appear on the balance sheet of the company but the payments to the
 leasing company will pass through the profit and loss account as an expense of
@@ -104,12 +104,14 @@ than not capitalised and included in the total debt of the company.
 In large corporations debt is usually raised via the bond market and depending
 on the covenants on the bond the debt maybe secured against the entire assets
 of the company, a specific division or a specific asset such as an office
-building. The pattern of cash flows associated with a bond were shown in
-Chapter 2. However, not all bonds have the same legal priority in the case of
-bankruptcy and some are "junior" or "subordinate" and rank below other bonds
-called "senior". Lastly debt has "promised" returns and only suffers from the
-risk of default*.
-.FS
+building. The pattern of cash flows associated with a coupon paying bond were
+shown in
+.pdfhref -L -D sec-2.3 Chapter 2.3
+However, not all bonds have the same legal priority in the case of bankruptcy
+and some are "junior" or "subordinate" and rank below other bonds called
+"senior". Lastly debt has "promised" returns and only suffers from the risk of
+default*.
+.FSP
 * The reason for debt having promised returns can be found in the long
 history of promissory notes which have existed for thousand of years. Bank
 notes are the most common form of promissory note encounter by us all in
@@ -136,6 +138,7 @@ but are still a means of returning money to shareholders. The shareholder
 benefits from the buyback as the number of shares in circulation is reduced and
 provided the profits stay the same the earnings per share will increase.
 .IP "Equity" 5
+.pddhref -M -N 12@1
 Equity in accounting terms is the surplus left after subtracting the total
 liabilities from the total assets. As the various forms of debt holders and
 preferred shares form part of the total liabilities it is logical that the
@@ -161,7 +164,7 @@ many new companies coming to the stock market\(dg. In the past it was not
 uncommon to encounter a tiered equity structure in public companies but the
 practice started to die out in the 1960s and is now having somewhat of a
 revival.
-.FS
+.FSP
 \(dg In the UK we refer to the stock market in general but talk about
 individual stocks as shares as opposed to the USA where the use of the word
 shares in not common.
@@ -210,9 +213,10 @@ investment would be required to return more than 10%.
 Discounting is the name for the process of using the "discount rate" to adjust
 money received in the future to today's value, so that all the cash flows are
 referenced to the same point in time. We covered this concept in some detail in
-Section 2. If cash flows are not discounted you are not comparing apples with
-apples. Once the cash flows have been discounted, the value of an investment
-can be established in terms of its present value. 
+.pdfhref -L -A . -D ch2 chapter 2
+If cash flows are not discounted you are not comparing apples with apples. Once
+the cash flows have been discounted, the value of an investment can be
+established in terms of its present value. 
 .IP "Cost structure" 5
 Cost structure refers to the various types of business expenses and is
 typically composed of fixed and variable costs. When discussing the cost
@@ -266,8 +270,9 @@ achieved.
 The flow of available funds cascades through the capital structure and if there
 is insufficient cash flow then the lowest rung will not get the return they
 expected and will have accepted too much risk for too little return.
-.FS
-\(dd Net Present Value (NPV) is covered in the next chapter.
+.FSP
+\(dd Net Present Value (NPV) is covered in the next
+.pdfhref -L -A . -D sec-13.3.1 chapter
 .FE
 .
 .XXXX \\n(cn 1 "Investing in your business"
@@ -385,7 +390,7 @@ offered to you by lenders to finance the project over the required time frame.
 .LP
 The cost of equity is an essential part of most discounted cash flow projection
 as it is not often possible to finance the investment entirely with debt\(dg.
-.FS
+.FSP
 \(dg There is a simple check as to the financial rational of a project to be
 found here. If the project you are examining could not pay the interest if 100%
 of the assets are financed with debt, if we suppose that the cost of debt does
@@ -431,7 +436,7 @@ market risks are those risks that affect the entire portfolio of assets or the
 all assets to change though not necessarily in the same direction or by the
 same amount. 
 .KE
-.FS
+.FSP
 * If an individual company has an unexpected plant closure the stock price
 maybe affected while the rest of the market is not. This is an example of
 idiosyncratic risk and can be diversified away by holding securities in
@@ -441,7 +446,7 @@ multiple unrelated firms.
 Harry Markovitz who devised modern portfolio theory noted that investors would
 have a better risk and reward relationship by holding a diversified portfolio
 than investing in individual shares\(dg.
-.FS
+.FSP
 \(dg Warren Buffett, a successful investor and longterm sceptic of modern
 portfolio theory, has referred to diversification as a defence against
 stupidity. This point of view is dependent on a having the competence and
@@ -504,7 +509,7 @@ gained from not diversifying and that each investor will hold a highly
 diversified portfolio of all the tradeable assets called the "market"
 portfolio. The risk of any asset then becomes the risk added to this "market
 portfolio" which is measured with beta.
-.FS
+.FSP
 \[**] In the real world there are tansactional costs and the gains from
 diversification also reduce with each additional investment so the advantages
 of diversification must be weighed against the cost of doing so.
@@ -541,12 +546,15 @@ should use a long dated government security and if the investment is over a
 shorter period then a suitable short dated government security. Lastly, On a
 risk free investment the actual return is equal to the expected return
 otherwise it would not be risk free!
-.FS
+.FSP
 \(dg In Chapter 2 we examined the cash flows on some different debt instruments
 in our explanation and examination of equivalence. If the zero-coupon bond in
-Chapter 2.1 and the coupon bond are to have the same future value, as they are
-shown to have, it is implied that the reinvestment rate is the same as the
-interest rate on the original bond. 
+.pdfhref -L -D sec-2.1 Chapter 2.1
+and the coupon bond in
+.pdfhref -L -D sec-2.3 Chapter 2.3
+are to have the same future value, as they are shown to have, it is implied
+that the reinvestment rate is the same as the interest rate on the original
+bond. 
 .FE
 .IP "Beta" 5
 The real and confusing question is what are betas and where do they come from?
@@ -561,7 +569,7 @@ portfolio they are typically established by running a regression\(dd of the
 past returns for the individual share against returns on a market index. The
 problem with these regression betas is that they are always backward looking as
 they use historic returns and estimated with error, nothing fits perfectly.
-.FS
+.FSP
 \(dd Simple linear regression attempts to model the relationship between two
 variables by establish the equation of a straight line which best fits the
 observed data. In essence this is not so different from our early school days
@@ -582,7 +590,7 @@ We now have enough information to construct a quick and simple example, the 10
 year gilt\[**] rate is 3.0% and we want to invest in the shares of company X
 with a beta of 1.2 and an equity risk premium of 5%. What minimum return should
 we expect?
-.FS
+.FSP
 \[**] The UK Debt Management Office defines a gilt as, "A UK government
 sterling denominated bond issued by HM Treasury. The term gilt (or gilt-edged)
 is a reference to the primary characteristic of gilts as an investment - their
@@ -833,9 +841,11 @@ funding, they are dependent on a few people to manage the business, they often
 have no brand, the list goes on and the lenders are aware of the risks and want
 there money returned as fast as possible and implicitly do not trust the small
 business owner to make suitable provisions to repay the principal.
-.FS
-\(dd This is the installment loan from Chapter 3. Loans are also covered in
-Appendix G.
+.FSP
+\(dd This is the installment loan from
+.pdfhref -L -A . -D sec-2.2 Chapter 2.2
+Loans are also covered in Appendix G.
+.pdfhref -L -A . -D apG Appendix G
 .FE
 .LP
 A consequence of the monthly payment containing a fraction of the principal is
@@ -909,7 +919,7 @@ variability of the cash flow from revenues. It should be clear that a higher
 level of interest cover is required for an industrial enterprise than a utility
 company. Further more the company may have other unavoidable fixed charges\(dd
 that must be made regardless of the economic circumstances.
-.FS
+.FSP
 \(dg The interest cover is typically expressed as #EBIT over interest#. 
 .br
 \(dd Fixed charges amongst other items include operational leases, interest and
@@ -951,7 +961,7 @@ lenders which they can draw down in a crisis. In some countries there is a
 "commercial paper" market that companies, with a good credit rating, can access
 with which to meet short term liquidity requirements. Public companies can also
 issue equity* to reduce their debt and improve their cash position.
-.FS
+.FSP
 * The ability of large companies to issue equity in a crisis is a point of
 interest. It implies that the capital structure was insufficiently resilient to
 endure under all economic conditions. It is conceivable that the company may
@@ -1433,7 +1443,7 @@ the reasons below:
 .IP \(bu 3
 Capital should never be lent to a business for no charge even if it is to
 yourself.\(dg
-.FS
+.FSP
 \(dg I flicked through a book once of interesting vignettes that had been found
 inscribed on the walls of public places. One read, "Don't lead money to your
 children, it gives them amnesia". This affliction can also strike business

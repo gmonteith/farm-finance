@@ -3,15 +3,18 @@ Equivalent Annual Cost (EAC) is the cost per year of owning and operating an
 asset over its entire lifespan. Equivalent Annual Worth (EAW) is the benefit of
 owning an asset over its lifetime. The EAC or EAW is calculated by multiplying
 the NPV, or Present Worth (PW) as it is sometimes known, of a project, by the
-Capital Recovery Factor established in Chapter 10.6 and shown below.
+Capital Recovery Factor established in
+.pdfhref -L -D sec-10.6 Chapter 10.6
+and shown below.
 .EQ I
 caprec(=)
 .EN
-If we turn back a few pages to Chapter 17.4 we can see that in the example we
-established a NPV of \[Po]53,745. If we wished to convert this to an Equivalent
-Annual Worth we would multiply the NPV by the Capital Recovery factor. In the
-example in Chapter 17.4 the interest rate #i# is 15%, and the number of years
-#n# is 5.
+If we turn back a few pages to
+.pdfhref -L -D sec-17.4 Chapter 17.4
+we can see that in the example we established a NPV of \[Po]53,745. If we
+wished to convert this to an Equivalent Annual Worth we would multiply the NPV
+by the Capital Recovery factor. In the example in Chapter 17.4 the interest
+rate #i# is 15%, and the number of years #n# is 5.
 .EQ I
 NPV lm 53,745 (A/P, 15%, 5)
 .EN
@@ -83,10 +86,12 @@ Use the Capital Cost Tax Factor flow charts in Appendix B to aid with the after
 tax calculations. Unless otherwise stated it is \fBalways\fP presumed that
 Corporation Tax commences at time period two.
 .LP
-This section and the ones following rely heavily on the equations from Chapter
-10 on Engineering Economics. I will usually state the chapter in which the
-equation was derived, but it may help to have the equations from Appendix C to
-hand to avoid too much page turning.
+This section and the ones following rely heavily on the equations from
+.pdfhref -L -D ch10 chapter 10
+on Engineering Economics. I will usually state the chapter in which the
+equation was derived, but it may help to have the equations from
+.pdfhref -L -D apC Appendix
+to hand to avoid too much page turning.
 .LP
 The last point is the use of the terms "investment cost" and "capital cost".
 When a project is made you would view it as an "investment cost". However, when
@@ -158,11 +163,15 @@ Add the equivalent annual cost of the investment to the annual operating costs.
 It is important to realise that the \[Po]12,000 is already an annual payment
 and therefore an annuity. If you were to create a present worth from an annuity
 and then convert the present worth back to an annuity you would end up where
-you started. If you revert back to Chapters 10.5 and 10.6 you will see that the
-equations for the Uniform Series Present Worth and Capital Recovery are
-reciprocals of each other\(dg. The implication of the \[Po]12,000 already being
-an annuity is that the series started at time period one to be consistent with
-the equation derived in Chapter 3. 
+you started. If you revert back to
+.pdfhref -L -D sec-10.5 Chapter 10.5
+and
+.pdfhref -L -D sec-10.6 10.6
+you will see that the equations for the Uniform Series Present Worth and
+Capital Recovery are reciprocals of each other\(dg. The implication of the
+\[Po]12,000 already being an annuity is that the series started at time period
+one to be consistent with the equation derived in
+.pdfhref -L -A . -D sec-3.1 Chapter 3.1
 .FS
 \(dg The reciprocal of a number is #1 over number#, which is its inverse.
 Therefore the reciprocal of #2# is #1 over 2#. If you multiple 10 by 2 and then
@@ -237,10 +246,11 @@ the order in which numbers are multiplied together. #2 times ~^ 3# and #3 times
 ~^ 2# give the same result.
 .sp 0.5v
 The tax benefits associated with the \[Po]12,000 cost appears to have gone
-through a strange transformation. If you refer back to Chapter 3 on ordinary
-annuities you will see that the series starts at time period 1 and creates a PV
-at time period zero. We have a tax benefit of \[Po]12,000(t) which is
-equivalent to an annuity where the series commenced at time period one,
+through a strange transformation. If you refer back to
+.pdfhref -L -D sec-3.1 Chapter 3.1
+on ordinary annuities you will see that the series starts at time period 1 and
+creates a PV at time period zero. We have a tax benefit of \[Po]12,000(t) which
+is equivalent to an annuity where the series commenced at time period one,
 however, in this scenario the first tax effect is a time period two so we use
 the Single Payment Present Worth factor and our knowledge of equivalence to
 discount by an extra period (P/F, 15%, 1).
@@ -662,7 +672,8 @@ benefits should both be calculated using positive values in this scenario.
 .RS
 .IP "Step 1:" 10
 First the salvage value of \[Po]2,000 must be discounted to create a present
-value using the Single Payment Present Worth factor in Chapter 10.2.
+value using the Single Payment Present Worth factor in
+.pdfhref -L -A . -D sec-10.2 Chapter 10.2
 .IP "Step 2:" 10
 Use the Capital Recovery factor to convert the present worth into an equivalent
 benefit.
@@ -954,8 +965,10 @@ Method 2 has less steps and is mathematically simpler.
 The reason that method 2 has one less step is that the \[Po]1,500 is stated in
 terms of its value at year 3, the start of the servicing cost. Therefore, it
 can be compound forward to reach a future value, is this is unclear refer back
-to Chapter 2, but when establishing a present value the \[Po]1,500 must be
-discounted to establish its equivalent value in terms of year zero.
+to
+.pdfhref -L -A , -D ch2 Chapter 2
+but when establishing a present value the \[Po]1,500 must be discounted to
+establish its equivalent value in terms of year zero.
 .IP \(bu 3
 In this scenario we are not proposing to capitalise the cost and the tax is not
 a consideration in the investment decision.

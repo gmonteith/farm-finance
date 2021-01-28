@@ -204,10 +204,11 @@ if found by rearranging the TVM equation for #n# with 1 as the PV and 2 as the
 FV. Therefore #n =~~ {ln { left ( FV over PV right ) }} over {ln { ( 1 + i )
 }} =~~ {ln { left ( 2 over 1 right ) }} over {ln { ( 1 + 0.02 ) }}# =~~ 35.
 The "\fIln\fP" refers to the natural logarithm #e# which is often used with
-patterns exhibiting exponential growth. In chapter 11 we will find an
-approximation of the  value of #e# when examining continuous compounding and
-the force of interest as discovered by Bernoulli. If working with continuous
-compounding 69 gives a better approximation than 72.
+patterns exhibiting exponential growth. In
+.pdfhref -L -D ch11 Chapter 11
+we will find an approximation of the  value of #e# when examining continuous
+compounding and the force of interest as discovered by Bernoulli. If working
+with continuous compounding 69 gives a better approximation than 72.
 .FE
 .
 Because of the limits to growth and the inherent instability of the world the
@@ -236,6 +237,7 @@ with your desired interest rate.
 The example below uses a discount rate of 10% as the interest #(i)# and shows
 the factor required to discount one #(FV)# pound back to today's value #(PV)#
 for years (n) zero, one, two and three years:
+.pdfhref -M -N 1@1
 .EQ I
 PV
 =~~ FV over { ( 1 + i ) sup n } 

@@ -95,7 +95,8 @@ It is generally assumed that tax is payable in arrears. The cash flow diagram
 below is a generalisation of tax paid in arrears. It also shows the
 accumulation of tax flows at the end of each period. The accumulation of cash
 flows at the end of the period is the same convention we used when discounting
-ordinary annuities in chapter 4.
+ordinary annuities in
+.pdfhref -L -A . -D ch4 Chapter 4
 .PS
 A: [ box invis wid 0.25 ht 0.25 "0"
 			arrow down 0.50 at last box.s
@@ -365,7 +366,8 @@ Engineering Economics from chapter 10.
 We are now going to examine the investment cost equations where the tax impact
 is at time period one. These equations would typically used when estimating an
 NPV under Self Assessment Tax, but they can also be used for Corporation Tax in
-instances previously discussed in section 3.2.
+instances previously discussed in
+.pdfhref -L -A . -D sec-3.2 section 3.2
 .
 .XXXX 0 4 "CCTF"
 .LP

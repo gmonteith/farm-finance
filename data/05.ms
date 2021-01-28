@@ -249,10 +249,12 @@ over
 .XXXX 0 2 "FV given a Growing Ordinary Annuity"
 .LP
 The future value of a growing annuity can be established by referring back to
-our earlier discourse on equivalence in chapter 2. Once we have established the
-PV of the growing annuity the multiplication of this value by the TVM equation
-for FV will give the future value for the growing annuity. We are moving the PV
-"n" number of years into the future at the given interest rate.
+our earlier discourse on equivalence in
+.pdfhref -L -A , -D ch2 Chapter 2
+Once we have established the PV of the growing annuity the multiplication of
+this value by the TVM equation for FV will give the future value for the
+growing annuity. We are moving the PV "n" number of years into the future at
+the given interest rate.
 .EQ I
 FV =~~ PV  ~ times ~^ (1 + i) sup n
 .EN

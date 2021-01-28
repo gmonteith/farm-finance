@@ -75,6 +75,7 @@ PMT over { i + g }
 left [  1 -  left ( { 1 - g } over { 1 + i } right ) sup n  right ]   
 .EN
 .KS
+.pdfhref -M -N 7@1
 The yearly output of a silver mine is declining by 25% per year. Using a
 discount rate of 8%, what is expected to be the present worth of the output of
 the mine over the next 10 years, if the initial output of the mine is
@@ -204,9 +205,10 @@ over
 .EN
 .KE
 This equation would allow you to answer the following question. How long it
-would take to extract a PV of \[Po]56M from the mine, in section 1 of this
-chapter, using the same declining growth rate, discount rate and initial
-output?
+would take to extract a PV of \[Po]56M from the mine, in
+.pdfhref -L -D sec-7.1 section 1
+of this chapter, using the same declining growth rate, discount rate and
+initial output?
 .EQ I
 n =~~
 { ln left [ 1 - { PV( i + g ) }  over PMT right ] } 

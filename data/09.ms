@@ -117,10 +117,11 @@ PV =~~ PMT over { i - g }
 .
 .XXXX \\n(cn 1 "Growth rate exceeds the discount rate"
 .LP
-We have previously discussed in Chapter 5 that it was plausible to have a
-growth rate #g# that exceeded the interest rate #i# for a short space of time.
-But, it presents some challenging theoretical problems which have been restated
-below:
+We have previously discussed in
+.pdfhref -L -D sec-5.1.1 Chapter 5.1.1
+that it was plausible to have a growth rate #g# that exceeded the interest rate
+#i# for a short space of time.  But, it presents some challenging theoretical
+problems which have been restated below:
 .IP \(bu 3
 The idea behind the PV is that the series of cash flows reaches a limit. If #g#
 exceeds #r# this logic breaks down. If your cash flow is growing faster than

@@ -156,9 +156,11 @@ Equity#109,741
 .sp 3
 .in 2.4i
 .ll 6i
-The assumptions to the left are taken from the save example we used to the
-previous section in the discussion about EVA. The difference is that the 7,000
-of other income has been removed and the figures adjusted accordingly.
+The assumptions on the left are taken from the same example we used
+in the previous
+.pdfhref -L -D sec-22.5.2 chapter
+in our discussions about EVA. The difference is that the \[Po]7,000 of other
+income has been removed and the figures adjusted accordingly.
 .sp 3
 .KS
 .XXXX 0 3 "5 Step Dupont Analysis"
@@ -1197,7 +1199,9 @@ lineup =~~
 lineup =~~
 16.98%
 .EN
-The answer can be checked in the table in section 23.3.1 in this chapter.
+The answer can be checked in the table in
+.pdfhref -L -D sec-23.3.1 section 23.3.1
+in this chapter.
 .
 .SH
 Growth rate.

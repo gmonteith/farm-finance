@@ -11,24 +11,25 @@ which changes the way they are presented. However, the advantage of the use of
 factors is that you only have to multiply values together\(dd as opposed to
 having to remember is you should be dividing for certain operations and
 multiplying for others.
-.FS
+.FSP
 \(dg A factor we can loosely define as quantity which is multiplied by another
 quantity. Tables of these values which are computed and often referred to as
 factor tables.
 .FE
-.FS
+.FSP
 \(dd Multiplication is easier than division both mentally and in terms of the
-computational effort. We have mentioned in a previous footnote in Chapter 3 the
-reciprocal and defined it as one divided by the number. If we take the simple
-division of # 10 over 2 # we know that it is #5#, however, we can change this
-into a simple multiplication by creating a reciprocal in which case the
+computational effort. We have mentioned in a previous footnote in
+.pdfhref -L -D ft3@7 Chapter 3
+the reciprocal and defined it as one divided by the number. If we take the
+simple division of # 10 over 2 # we know that it is #5#, however, we can change
+this into a simple multiplication by creating a reciprocal in which case the
 calculation would become # 10 times ~^ 1 over 2 =~~ 5 #. In reality this is
 fractions at work, to divide one fraction by another you multiply by the
 reciprocal of the divisor. Therefore the example of # 10 over 2 # will result
 in a reciprocal even if it is not explicit # { 10 over 1 } over { 2 over 1 }
-=~~ 10 over 1 times ~^ 1 over 2 =~~ 5 #. The real problem is that if you use only
-decimals it is far harder to see the relationship between #10 \[di] 2 # and #
-10 times ~^ 0.5 #.
+=~~ 10 over 1 times ~^ 1 over 2 =~~ 5 #. The real problem is that if you use
+only decimals it is far harder to see the relationship between #10 \[di] 2 #
+and # 10 times ~^ 0.5 #.
 .FE
 .LP
 The other difference is that there is a particular nomenclature used with
@@ -97,7 +98,8 @@ lineup =~~
 sppw(lineup =~~)
 .EN
 This is the TVM equation for the PV but presented with negative exponents,
-which we explained in a footnote in Chapter 3.
+which we explained in a footnote in
+.pdfhref -L -A . -D ft3@7 Chapter 3
 .EQ I
 PV =~~ FV over { ( 1 + i ) sup n } 
 " is equivalent to " 
@@ -140,8 +142,9 @@ lineup =~~
 A =~~ F left [ i over { { ( 1 + i ) sup n }  - 1  } right ] 
 .EN
 This is the formula for the PMT series of an ordinary annuity given a future
-value. We have already derived this equation in Chapter 3.5 and presented it
-as:
+value. We have already derived this equation in
+.pdfhref -L -D sec-3.6 Chapter 3.6
+and presented it as:
 .EQ I
 PMT =~~ FV(i) over { ( 1 + i ) sup n   - 1 }
 .EN
@@ -251,8 +254,9 @@ usca( =~~)
 This equation is used to establish the future value that is equivalent to a
 series of end of period payments. The equation that will be used is simply the
 reciprocal of the equation we have already established for the Uniform Series
-Sinking Fund. The equation below is the equation from Chapter 3.4 with a simple
-transformation to leave the PMT or A outside the bracket.
+Sinking Fund. The equation below is the equation from
+.pdfhref -L -D sec-3.5 Chapter 3.5
+with a simple transformation to leave the PMT or A outside the bracket.
 .EQ I
 FV =~~ { PMT ( { { ( 1 + i ) sup n }  - 1 } ) } over i
 .EN
@@ -301,7 +305,8 @@ uspw(=~~)
 This formula is used to calculate the present value of a series of equal end of
 period amounts. Even thought this is quite different this is in fact the
 equation we have already derived and used to establish the present value of an
-ordinary annuity in Chapter 3.1.
+ordinary annuity in
+.pdfhref -L -A . -D sec-3.1.1 Chapter 3.1.1
 .EQ I
 PV =~~ PMT over i left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
 .EN
@@ -373,7 +378,9 @@ A =~~ P left [ { i( 1 + i ) sup n  } over {  (1 + i ) sup n -1  } right ]
 The equation is used to calculate the annuity which is equivalent to a given
 present value. This equation is also a reciprocal but this time of the fraction
 that makes up the equation for the Uniform Series Present Worth. We have come
-accross this equation in Chapter 3.2 as:
+accross this equation in
+.pdfhref -L  -D sec-3.2 Chapter 3.2
+as:
 .EQ I
 PMT =~~ PV(i) over left [ { 1 - 1 over { ( 1 + i ) sup n  } } right ]
 .EN
@@ -488,7 +495,8 @@ payment of the geometric gradient and not a uniform series of payments.
 We have covered geometric gradients when we looked at at growing annuities. It
 is common for both annual revenues and annual costs to change, either up or
 down, by a constant percentage. We have previously presented the equation as
-follows in Chapter 5.1:
+follows in
+.pdfhref -L -A : -D sec-5.1 Chapter 5.5
 .EQ I
 PV sub ga =~~  PMT over { i - g } 
 left [  1 -  left ( { 1 + g } over { 1 + i } right ) sup n  right ]   
@@ -507,8 +515,9 @@ over { i - g }
 .EN
 The second presentation looks at little more complicated, but this is only due
 to the use of the negative exponents to create a less complicated fraction. We
-have discussed negative exponents in a footnote in Chapter 3, however, if we
-focus on only the numerator of the fraction then:
+have discussed negative exponents in a footnote in
+.pdfhref -L -A , -D ft3@7 Chapter 3
+however, if we focus on only the numerator of the fraction then:
 .EQ I
 1 -  left ( { 1 + g } over { 1 + i } right ) sup n
 =~~
@@ -559,10 +568,11 @@ lineup =~~
 If you have a present value (P) you can use the capital recovery factor (A/P,
 i%, n) to calculate the payment. However, you will now have a uniform gradient
 present value, the P, and by using the capital recovery factory you have
-created a uniform series of payments. If you refer back to Section 5.1 it is
-only possible to calculate the initial PMT as the series is growing from period
-to period. Therefore, make sure you are aware of what you have calculated, and
-that it is what you wanted.
+created a uniform series of payments. If you refer back to
+.pdfhref -L -D sec-5.1 section 5.1
+it is only possible to calculate the initial PMT as the series is growing from
+period to period. Therefore, make sure you are aware of what you have
+calculated, and that it is what you wanted.
 .
 .XXXX 0 2 "Geometric Gradient Initial Annuity\ - (A/P, g, i%, n)"
 .LP
@@ -657,7 +667,8 @@ over
 { i - g } 
 right ]   
 .EN
-This uses the equation we have previously established from Chapter 5.4:
+This uses the equation we have previously established from
+.pdfhref -L -A : -D sec-5.4 Chapter 5.4
 .EQ I
 FV sub ga =~~  
 PMT 
@@ -847,7 +858,8 @@ lineup =~~
 .EN
 This point is worth bearing in mind as it is ever present with coupon bonds and
 will be reexamined more directly when discussing Internal Rate of Return (IRR)
-in Chapter 13.
+in
+.pdfhref -L -A . -D sec-13.3.3 Chapter 13.3.3
 .
 .XXXX 0 2 "Declining Geometric Gradients \ - (P/A, -g%, i%, n)"
 .LP
@@ -856,7 +868,8 @@ P =~~  A sub 1 left [ {  1 -  left ( ( 1 - g ) sup n ( 1 + i ) sup -n right ) }
 over { i + g } right ] 
 .EN
 We have briefly discussed declining annuities and used a mine as an example in
-Chapter 7 where we presented the equation as:
+.pdfhref -L -D sec-7.1 Chapter 7.1
+where we presented the equation as:
 .EQ I
 PV sub da =~~  PMT over { i + g } 
 left [  1 -  left ( { 1 - g } over { 1 + i } right ) sup n  right ]   
@@ -874,7 +887,7 @@ over { i + g }
 .EN
 The second presentation looks at little more complicated but this is only due
 to the use of the negative exponents which we have covered in this chapter in
-section 7:
+.pdfhref -L -A : -D sec-10.7 section 7
 .EQ I
 P =~~  A sub 1 left [ {  1 -  left ( ( 1 - g ) sup n ( 1 + i ) sup -n right ) }
 over { i + g } right ] 
@@ -915,9 +928,11 @@ P =~~ A over i
 .EN
 Capitalised costs refers to the present value of a single amount that is equal
 to a perpetual series. The equation used here is the same equation we devised
-for a perpetuity in Chapter 8. The most common use is to account for long lease
-holds that are not present on the balance sheet of the company, though the
-laws are changing surrounding the presentation of the lease expenses.
+for a perpetuity in
+.pdfhref -L -A . -D sec-8.1 Chapter 8.1
+The most common use is to account for long lease holds that are not present on
+the balance sheet of the company, though the laws are changing surrounding the
+presentation of the lease expenses.
 .LP
 If a company has lease payments of \[Po]700,000 a year for the foreseeable
 future. What is the present value of these lease payments? The company has a
@@ -999,7 +1014,9 @@ ones she has the most confidence in ...
 .LP
 We could of course establish the present value by calculating the present value
 for each individual cash flow, by using the single payment present worth factor
-from section 2 in this chapter, and then summing the series as shown below:
+from
+.pdfhref -L -D sec-10.2 section 2
+in this chapter, and then summing the series as shown below:
 .EQ
 P\(dg lm 50(P/F, 8%, 1)
 + 75(P/F, 8%, 2)
@@ -1093,9 +1110,10 @@ A: [ box invis wid 0.20 ht 0.20 "0"
 		]
 box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.0)
 .PE
-.LP
 We know how to calculate the annuity of 50 using the uniform series present
-worth factor from section 5 in this chapter:
+worth factor from
+.pdfhref -L -D sec-10.5 section 5
+in this chapter:
 .EQ I
 P lm 50 (P/A, 8%, 5)
 .EN
@@ -1151,10 +1169,12 @@ left [
 + 4  over { (1 + i ) sup 5 }
 right ]
 .EN
-In Section 3.2 we used a trick whereby me multiplied the series by a common
-ratio to create a second equation. Then we subtracted one equation from the
-other to get the sum of the series. We are going to use this trick again, but
-this time we are going to multiply the equation by #(1 +i)#:
+In
+.pdfhref -L -D sec-3.2 section 3.2
+we used a trick whereby me multiplied the series by a common ratio to create a
+second equation. Then we subtracted one equation from the other to get the sum
+of the series. We are going to use this trick again, but this time we are going
+to multiply the equation by #(1 +i)#:
 .EQ 
 P(1 + i) lineup =~~
 25 ~
@@ -1221,9 +1241,11 @@ left [
 4  over { (1 + i ) sup 5 }
 right ]
 .EN
-In Chapter 3.2 the subtraction of the one equation from the other left only the
-first and last terms, in this case it is not immediately apparent what the
-subtraction will leave.
+In
+.pdfhref -L -D sec-3.2 Chapter 3.2
+the subtraction of the one equation from the other left only the first and last
+terms, in this case it is not immediately apparent what the subtraction will
+leave.
 .LP
 We will have a look at what has happened.
 .IP \(bu
@@ -1285,7 +1307,7 @@ left [
 right ]
 .EN
 The series on the right of the equal sign is the same series we discovered in
-Chapter 3.2: 
+.pdfhref -L -A : -D sec-3.1.1 Chapter 3.1.1
 .EQ
 left [ 
 1 over { (1 + i ) sup 1 }
@@ -1295,8 +1317,9 @@ left [
 right ]
 .EN
 We learnt it can be summed with an annuity equation and we are therefore going
-to replace this series with the Uniform Series Present Worth factor from 5 in
-this chapter:
+to replace this series with the Uniform Series Present Worth factor from
+.pdfhref -L -A : -D sec-10.5 section 5
+in this chapter:
 .EQ
 P(i) lineup =~~
 25 ~
@@ -1666,9 +1689,14 @@ agus(lm)
 .EN
 This equation is used to establish the annuity #A# that is equal to the present
 value of a arithmetic gradient. The equation is derived by using our knowledge
-of equivalence learnt in Chapter 2, and the formula we have previously derived
-in the last section (12) for the present value of an arithmetic series, with
-the capital recovery factor from section 6 in this chapter. 
+of equivalence learnt in
+.pdfhref -L -A , -D ch2 Chapter 2
+and the formula we have previously derived in the last
+.pdfhref -L -D sec-10.12 section (12)
+for the present value of an arithmetic series, with the capital recovery factor
+from
+.pdfhref -L -D sec-10.6 section 6
+in this chapter. 
 .EQ I
 A lm (P/G, i%, n) times ~^ (A/P, i%, n)
 .EN
@@ -1794,7 +1822,10 @@ lineup =~~
 lineup =~~
 \[Po]1,252
 .EN
-We have now converted the loan in Chapter 2.4 to the loan in Chapter 2.2
+We have now converted the loan in
+.pdfhref -L -D sec-2.4 Chapter 2.4
+to the loan in
+.pdfhref -L -A . -D sec-2.2 Chapter 2.2
 .
 .XXXX 0 2 "Arithmetic Gradients Future Worth \ - (F/G, i%, n)"
 .LP
@@ -1804,8 +1835,10 @@ agfw(lm)
 This equation is used to establish the FV of a given series of cash flows which
 are increasing by a fixed value. The equation is derived by using our knowledge
 of equivalence, to combine the formula we have previously derived for the
-present value of an arithmetic series from section 12, with the single payment
-compound amount from section 1. 
+present value of an arithmetic series from
+.pdfhref -L -A , -D sec-10.12 section 12
+with the single payment compound amount from
+.pdfhref -L -A . -D sec-10.1 section 1
 .EQ I
 F lm (P/G, i%, n) times ~^ (F/P, i%, n)
 .EN
@@ -1883,7 +1916,7 @@ box invis "i = 8/100" wid 0.6 ht 0.25 with .s at A.n + (0.0,0.0)
 .PE
 \fBRemember\fP that the gradient only covers the incremental increase. The base
 amount must be calculated with the uniform series compound amount equation from
-section 4.
+.pdfhref -L -A . -D sec-10.4 section 4
 .
 .EQ I
 F sub A lm 1,000(F/A, 12%, 5)
@@ -1937,13 +1970,14 @@ lineup =~~
 \[Po]7,480
 .EN
 There solution can also be found by using a similar technique to the one used
-in section 13. The gradient is converted to an annuity using the arithmetic
-gradient uniform series factor from 13 this is then added to the base annuity.
-This provides a yearly annuity which can be converted to the future value with
-the uniform series compound amount factor from section 4.
-.LP
-.EQ I
-A =~~ 1,000
+in
+.pdfhref -L -A . -D sec-10.13 section 13
+The gradient is converted to an annuity using the arithmetic gradient uniform
+series factor from 13 this is then added to the base annuity. This provides a
+yearly annuity which can be converted to the future value with the uniform
+series compound amount factor from
+.pdfhref -L -A . -D sec-10.4 section 4
+.EQ I A =~~ 1,000
 .EN
 .
 .EQ I
@@ -2191,9 +2225,12 @@ The first point to notice is that as we are dealing exclusivly with costs we
 have used positive numbers and not negative numbers. There is also an easy trap
 to fall into in this example. The present value of annuity of \[Po]10,000 is
 easy enough to calculate. The gradient is were the confusion lies. If we refer
-back to section 12 we can see that the present value of the gradient starts in
-year two and is discounted back to year zero. In this instance the warranty
-free period expires in year 3, therefore the gradient commences in year 4. The
-arithmetic gradient present worth factor will create a present value in year 2
-and this will need to be discounted to year zero with the single payment
-present worth factor (P/F, 13%, 2) from section 2.
+back to
+.pdfhref -L -D sec-10.12 section 12
+we can see that the present value of the gradient starts in year two and is
+discounted back to year zero. In this instance the warranty free period expires
+in year 3, therefore the gradient commences in year 4. The arithmetic gradient
+present worth factor will create a present value in year 2 and this will need
+to be discounted to year zero with the single payment present worth factor
+(P/F, 13%, 2) from
+.pdfhref -L -A . -D sec-10.2 section 2

@@ -88,8 +88,8 @@ lineup =~~
 .EN
 The question can also be answered by placing the information in a table and
 establishing the discount factor independently. All you need to do to establish
-the discount factor is set the future value equal to 1, as we showed in Chapter
-1:
+the discount factor is set the future value equal to 1, as we showed in
+.pdfhref -L -A : -D 1@1 Chapter 1
 .EQ I
 "Discount factor cash flow 1: " =~~ 1 over { ( 1 + i ) sup n } 
 =~~ 1 over { ( 1 + 0.08 ) sup 1 } 
@@ -125,7 +125,7 @@ equation allows us to sum the series without the aid of a spreadsheet and
 laborious process of individually adding the discounted cash flows. To proceed
 we must spend some time examining the geometric series.
 .
-.XXXX 0 2 "Geometric series"
+.XXXX 0 3 "Geometric series"
 .LP
 It is worth taking the time to appreciate the mathematics at the beginning then
 we can use the equations with more confidence in the future. The annuity in
@@ -208,7 +208,7 @@ S sub n =~~ a + ar + ar sup 2 + ar sup 3 ... + ar sup {n -2} + ar sup {n -1}
 In the series above and our simple doubling series it can be seen that each
 term* of the series is the product of "a" and a power of "r" the index of which
 is one less than the number of the term.
-.FS
+.FSP
 * A term is usually defined as either a single number or the product (or
 quotient) of several numbers or letters: #7, 5a, abc#. Terms are usually
 seperated by a sign of operation; # + or - #.
@@ -238,7 +238,7 @@ S sub n ( r - 1 ) lineup =~~
 a( r sup n - 1 )\(dg
 .EN
 .sp -0.6v
-.FS
+.FSP
 \(dg The #S sub n# and the #a# have both been factored out of the bracket.
 Factoring is covered later in this section.
 .FE
@@ -293,7 +293,7 @@ PV \(dd
 + 12,000 over { (1 + 8/100) sup 4 } 
 + 12,000 over { (1 + 8/100) sup 5 } 
 .EN
-.FS
+.FSP
 \(dd It is not uncommon to see the sum of a series of cash flows expressed
 using the summation symbol.  Which in this case would be # sum from n=1 to n=5
 CF sub n over { (1 + i) sup n }#. This is a compact way of writing long sums
@@ -397,7 +397,7 @@ lineup =~~
 left { { 1 over 1.08 left [ 1 - { left ( 1 over 1.08 right ) sup 5 } right ] } 
 over { 0.08 over 1.08 \(dd } right } 
 .EN
-.FS
+.FSP
 \(dd
 To add or subtract fractions they must have the same denominator. When the left
 side of the expression is 1 it is worth remembering that any number divided by
@@ -431,7 +431,7 @@ Note:
 .IP \(bu 3
 The common ratio is less than 1, in fact it is 0.926\(dg therefore the money is
 devaluing the longer the series runs. This is a useful check.
-.FS
+.FSP
 \(dg # 1 over { (1 + 0.8) } =~~ 0.926#
 .FE
 .IP \(bu 3
@@ -518,7 +518,8 @@ The interest is obviously the total of the payments less the present value.
 The equation to solve the PMT is also used to calculate the Uniform Annual Cost
 or Equivalent Annual Cost as it is more commonly known in the UK. This is
 particularly useful as a PV can be converted to equivalent annual payments for
-comparison with other costs and will be covered in Chapter 18.
+comparison with other costs and will be covered in
+.pdfhref -L -A . -D ch18 Chapter 18
 .IP \(bu 3
 There are tables of factors that can be used to convert a PV to the annual
 payment and these are often referred to as capital repayment factors.
@@ -545,7 +546,7 @@ PV(i) over PMT =~~ 1 - 1 over { ( 1 + i ) sup n  }
 lineup tf
 1 - { PV(i) over PMT }  =~~  1 over { ( 1 + i ) sup n  } \(dg
 .EN
-.FS
+.FSP
 \(dg There has been a transformation which has not been shown. -1 has been
 added to both sides of the previous equation to give: # PV(i) over PMT - 1 =~~
 - ^ 1 over { ( 1 + i ) sup n  } # this has resulted in a negative fraction on
@@ -559,7 +560,7 @@ simplicity giving # 1 - PV(i) over PMT  =~~  1 over { ( 1 + i ) sup n  } #.
 lineup tf
 { left ( 1 - PV(i) over PMT right ) } sup -1 =~~  { ( 1 + i ) sup n } \(dd
 .EN
-.FS
+.FSP
 \(dd One of the fundamental rules of exponents states that # a sup m \[di] ~ a
 sup n =~~ a sup { m - n } # if # a \[!=] ^ 0 #. Therefore # a sup 3  over a sup
 2 =~~ a sup { 3 - 2 =~ 1 } # and # 1 over a sup n =~~ a sup 0 over { a sup n }
@@ -796,7 +797,7 @@ You are planning to retire in 20 years. When you retire you wants a lump sum of
 \[Po]300,000. Your financial advisor suggests that 5% p.a\(dg is an achievable
 interest rate. How much will you have to pay, per month, into your retirement
 fund?
-.FS
+.FSP
 \(dg per annum
 .FE
 .PS
@@ -831,7 +832,7 @@ box invis "n = 20x12" wid 0.6 ht 0.25 with .n at A.s + (0.25,0.05)
 .PE
 .
 .EQ I
-PMT =~~ FV(i) over { ( { { ( 1 + i ) sup n }  - 1 } ) }
+PMT =~~ FV(i) over { ( 1 + i ) sup n - 1 }
 =~~~
 { 300,000 ^ { left ( 5 over 100 right ) } over 12  } 
 over { { left [ 1 + { left ( 5 over 100 right ) } over 12 right ] sup 240 } - 1}

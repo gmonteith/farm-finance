@@ -26,8 +26,9 @@
 .\" .APPENDIX "Impact of Writing Down Allowance (WDA) on capital costs"
 .\" .
 This appendix shows the mathematics behind the table below encountered in
-chapter 15.3. Understanding the mathematics is useful if you wish to know more
-about the Capital Cost Tax Factors (CCTF).
+.pdfhref -L -A . -D sec-15.3 Chapter 15.3
+Understanding the mathematics is useful if you wish to know more about the
+Capital Cost Tax Factors (CCTF).
 .TS
 tab (#) center;
 l c c c c c

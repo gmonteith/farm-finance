@@ -244,7 +244,7 @@ lineup =~~
 \[Po]7,347
 .EN
 .
-.XXXX 0 2 "Constant principal repayment"
+.XXXX 0 2 "Fixed Principal Repayment"
 .LP
 .PS
 A: [  box invis wid 0.25 ht 0.20 "0"
@@ -456,7 +456,7 @@ PV =~~ FV over { (1 +i) sup n }
 .LP
 If you notice the amount paid back is less than \[Po]4,500 which is the
 original payment values of \[Po]2,000 and \[Po]2,500. This is because the money
-has been paid back early depriving the bank of interest.  However, as the bank
+has been paid back early depriving the bank of interest. However, as the bank
 has received the money early they can lend it out again and get back the
 interest from the early repayment therefore restoring the future value. We
 have, as we did in the previous section, assumed there is no "reinvestment
@@ -544,3 +544,6 @@ FV =~~ PV(1 + i) sup n
 The \[Po]2,000 has to be compounded for 3 years to reach year 5. The total
 value now exceed \[Po]4,500 as the bank has extracted extra interest from you
 by extending the loan of \[Po]2,000 for 3 years.
+.LP
+sec-\*[SN-NO-DOT]
+.pdfhref -L -D sec-2.4 another test

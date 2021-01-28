@@ -210,9 +210,10 @@ shown in Appendix F.
 .XXXX 0 2 "Equivalent Annual Annuities"
 .LP
 We should be quite happy with the concept of an Equivalent Annual Annuity from
-Chapter 18. The Capital Recovery factor from Chapter 10.6 is used to convert
-the NPV into an annuity. Once the two NPVs have been converted into annuities
-we can compare them directly.
+Chapter 18. The Capital Recovery factor from
+.pdfhref -L -D sec-10.6 Chapter 10.6
+is used to convert the NPV into an annuity. Once the two NPVs have been
+converted into annuities we can compare them directly.
 .LP
 Project E
 .EQ I
@@ -257,12 +258,15 @@ many people.
 .
 .XXXX 0 2 "Resolve EAC to Replacement Chain"
 .LP
-If we return to the example in section 2, of this chapter, we can see that
-project E had an NPV of \[Po]6,497 and Project F \[Po]8,823 when extended out
-over the same 6 years. Using our knowledge of equivalence that we established
-in Chapter 2, we can then convert the EAW for Project F (\[Po]2,147) to a
-present valuing using the Uniform Series Present Worth factor, from Chapter
-10.5, it should then equal the NPV established by the Replacement Chain Method.
+If we return to the example in
+.pdfhref -L -A , -D sec-19.2 section 2
+of this chapter, we can see that project E had an NPV of \[Po]6,497 and Project
+F \[Po]8,823 when extended out over the same 6 years. Using our knowledge of
+equivalence that we established in Chapter 2, we can then convert the EAW for
+Project F (\[Po]2,147) to a present valuing using the Uniform Series Present
+Worth factor, from
+.pdfhref -L -A , -D sec-10.5 Chapter 10.5
+it should then equal the NPV established by the Replacement Chain Method.
 .LP
 The logic being that if the costs and revenue relationship does not change when
 the annuity payment is extended to six years it should generate the same NPV as
@@ -287,7 +291,7 @@ In the Replacement Chain Method we explicitly stated that the study period was
 six years, which as the LCM of 3 and 6. With the EAW the study period was
 implicit, and specifically the EAW is same for any integer multiple of its life
 if identical repetitions are assumed. This is also consistent with the methods
-developed in Chapter.
+developed in this Chapter.
 .LP
 The implicit study period is the least common multiple of the lives of the
 mutually exclusive alternatives. Therefore, in this example, it is taken that
@@ -578,9 +582,10 @@ It would appear that the adjust to the time period from 100 to 60 years has
 changed the cost by 2 pence! What is more the theoretical life for comparison
 is 150 years and we have halved the life with little impact on the result.
 .LP
-The explanation can be found in our previous work. We learnt in Chapter 8 that
-a perpetuity was an annuity without end, and therefore an annuity is a bit of a
-perpetuity. From this we learnt that if discounting is done over very long
+The explanation can be found in our previous work. We learnt in
+.pdfhref -L -D ch8 Chapter 8
+that a perpetuity was an annuity without end, and therefore an annuity is a bit
+of a perpetuity. From this we learnt that if discounting is done over very long
 periods of time values far enough in the future have little impact on the
 present value. This can be seen in Method 1: 
 .EQ I
@@ -634,10 +639,11 @@ the limit of the time that the costs and revenues are to be considered over,
 but the life of the product maybe far longer.
 .LP
 The life of each alternative is not known exactly and the study period is also
-not precise. Therefore it make little sense to take the approach of section
-5.1.1, where we calculated the EAC over different lives using residual values.
-The work was done to show how to use the residual values and the limited impact
-of the computation. The preferred method is to assume an indefinite life and
+not precise. Therefore it make little sense to take the approach of
+.pdfhref -L -A , -D sec-5.1.1 section 5.1.1
+where we calculated the EAC over different lives using residual values.  The
+work was done to show how to use the residual values and the limited impact of
+the computation. The preferred method is to assume an indefinite life and
 calculate the EACs or EAWs. 
 .LP
 The lives of alternatives are often adapted to match changing circumstances.

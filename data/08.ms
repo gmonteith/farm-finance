@@ -244,9 +244,11 @@ S sub \[if] =~~ a over { 1 -r }
 190 ^ m
 .EN
 A more practical example, returning to the silver mine we used as as an example
-in Chapter 7. The yearly output of the silver mine is found to be decreasing by
-25% of its previous years output. What is the expected total output out the
-mine if the current output is \[Po]25M?
+in 
+.pdfhref -L -A . -D ch7 Chapter 7
+The yearly output of the silver mine is found to be decreasing by 25% of its
+previous years output. What is the expected total output out the mine if the
+current output is \[Po]25M?
 .LP
 The value of #a =~~ 25M times ~^ 0.75#. It is important to remember that to make
 something smaller you do not have to always subtract another value, you can
@@ -258,10 +260,12 @@ S sub \[if] =~~ a over { 1 -r }
 =~~
 \[Po]75 ^ M
 .EN
-In Chapter 7 we used the formula for a declining annuity\(dg to calculate the
-output of the mine for 10 years was \[Po]73.78M. We have now show that the
-total output of the mine is \[Po]75M. So 98.4% of the total output of the mine
-will be extracted in the first 10 years, the remainder will take an eternity to
+In
+.pdfhref -L -D sec-7.1 section 7.1
+we used the formula for a declining annuity\(dg to calculate the output of the
+mine for 10 years was \[Po]73.78M. We have now show that the total output of
+the mine is \[Po]75M. So 98.4% of the total output of the mine will be
+extracted in the first 10 years, the remainder will take an eternity to
 extract. In reality the costs of extraction will rise above the value of the
 ore and the mine will eventually be abandoned. 
 .FS
@@ -372,6 +376,7 @@ lineup =~~
 lineup =~~
 10 ~ years
 .EN
-If you refer back to the start of this chapter you will see that we calculated
-the value of this annuity over 10 years. 
+If you refer back to the start of this
+.pdfhref -L -D ch8 chapter
+you will see that we calculated the value of this annuity over 10 years. 
 

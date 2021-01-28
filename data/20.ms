@@ -337,7 +337,8 @@ to age, wear, deterioration, and obsolescence. Depreciation tends to be
 greatest in the early years due to the release of new technology and the loss
 of prestige associated with new equipment. We are interested in depreciation in
 so far as as we need to estimate the salvage value. We do not use depreciation
-in the capital recovery, if you are unsure on this point see chapter XX
+in the capital recovery, if you are unsure on this point see
+.pdfhref -L -A . -D sec-13.3.1.1 Chapter 13.3.1.1
 .
 .RE
 .IP "Variable/operating costs" 5

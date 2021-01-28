@@ -114,11 +114,11 @@ It is important to understand that in the UK, HMRC does not allow depreciation
 as an expense. There is depreciation in the company accounts\(dd but it is
 added back for the purpose of calculating the Income Tax. The UK instead has a
 system of capital allowances.
-.FS
+.FSP
 \(dd There are many different types of accounts: company accounts for
 investors, management accounts for the officers of the company and tax accounts
 for HMRC. Each set of accounts is designed to satisfy the needs of those using
-	them.
+them.
 .FE
 .LP
 You can claim plant and machinery allowances if you have a business and you buy
@@ -175,7 +175,9 @@ want to claim the full value you can claim part of it using writing down
 allowances. You can utilise the writing down allowance at any time as long as
 you still own the item. We will now talk in a little more depth about the types
 of allowances, we will not go into detail in this chapter as the logic is
-covered in detail in Appendix B.
+covered in detail in
+.pdfhref -L -A . -D apB Appendix B
+.
 .IP "First year allowance" 5
 .RS
 .IP \(bu 3

@@ -168,7 +168,7 @@ The timing of cash flows during the payback period is ignored. Payback fails to
 take into account the time value of money. That is say that if you compare cash
 flows from different time periods with out making any adjustments you are not
 comparing apples with apples. This concept of equivalence was covered in
-Chapter 2.
+.pdfhref -L -A .-D ch2 Chapter 2
 .TS
 tab (@) center;
 l  cp-3  cp-3 
@@ -346,7 +346,8 @@ in understanding the value of the NPV in capital allocation.
 .IP \(bu 3
 Estimate the cash flows during the \fBlife\fP of the asset.
 .IP \(bu 3
-Estimate the discount rate. This was the topic of the previous chapter.
+Estimate the discount rate. This was the topic of the previous
+.pdfhref -L -A . -D ch12 chapter
 .LP
 We will now examine a number of methods that utilise the concept of discounted
 cash flow to decide on whether to investment in a project. 
@@ -810,9 +811,11 @@ flows will be reinvested at the same rate of return as the internal rate of
 return.
 .sp 0.3
 In the previous Chapter we discussed the problem of establishing the risk free
-rate, and in a footnote we discussed the problem of the reinvestment rate when
-comparing a zero coupon bond with a coupon bond. This is another illustration
-of the implied reinvestment rate.
+rate, and in a
+.pdfhref -L -D ft12@10 footnote
+we discussed the problem of the reinvestment rate when comparing a zero coupon
+bond with a coupon bond. This is another illustration of the implied
+reinvestment rate.
 .sp 0.3
 If you invested your money in a project that yielded 15% but on receipt of the
 the interim cash flows the only available option was a bank account paying 2%

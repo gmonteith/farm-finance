@@ -645,14 +645,16 @@ I do not propose to go through every eventuality that business can throw up and
 how to use the investment cost equations. Mostly I expect the investment cost
 equations to be used within the continuing pool and either the AIA or the WDA
 to be utilised. There is nothing to stop you splitting an investment between
-the AIA and the WDA. With our knowledge of equivalence gained in chapter 2
+the AIA and the WDA. With our knowledge of equivalence gained in
+.pdfhref -L -D ch2 Chapter 2
 there is nothing to stop you starting the WDA at point other than period 1,
 provided there is no salvage value, and moving the tax benefit to period zero.
 .LP
-Appendix B aims to be comprehensive and contains flow charts, graphs, tables
-and the maths behind the investment cost equations. With this information it
-should be possible to build your own tools to calculate the tax benefits
-accruing in any given situation.  
+.pdfhref -L -D apB Appendix B
+aims to be comprehensive and contains flow charts, graphs, tables and the maths
+behind the investment cost equations. With this information it should be
+possible to build your own tools to calculate the tax benefits accruing in any
+given situation.  
 .
 .XXXX 0 2 "The false precision of numbers"
 .LP
@@ -662,9 +664,11 @@ disappointing distance from roughly right. The NPV is a number which is
 masquerading as reliable when it is highly dependent on both the veracity of
 the assumptions and the vicissitudes of the future.
 .LP
-In the conclusion (section 13.5) to chapter 13 on Investment Analysis we
-discussed some of the pitfalls of discounted cash flow and I want to highlight
-again some of the many issues that can lead to a wildly misleading NPV.
+In the conclusion
+.pdfhref -L -P ( -A ) -D sec-13.5 section 5
+to Chapter 13 on investment analysis we discussed some of the pitfalls of
+discounted cash flow and I want to highlight again some of the many issues that
+can lead to a wildly misleading NPV.
 .IP "Discount rate" 15
 The discount rate is easy to calculate when working with only debt. The cost of
 equity is challenging to determine with confidence. However, money can not be
