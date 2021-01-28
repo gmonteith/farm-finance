@@ -18,20 +18,23 @@
 .\" .ce 0
 .\" .bp
 .
-.SH
-Structure of the Appendix
+.\" .SH
+.\" Structure of the Appendix
+.SHP 1 2 "Structure of the Appendix"
 .LP
 This appendix is made of two parts.
 .IP "Equations time period 1" 5
 These are more often used by those who pay their tax under Self Assessment
 where it is assumed the investment is at time period zero and the first tax
-effect is at time period one as discussed in Chapter 16.3.1
+effect is at time period one as discussed in
+.pdfhref -L -A . -D sec-16.3 Chapter 16.3
 .IP "Equations time period 2" 5
 These are more often used by those who have a limited company and therefore are
 interest in the effects of Corporation Tax. It is generally assumed with
 Corporation Tax that the investment is at time period zero but the first tax
 effect is not until time period two. This is the general case and not an
-absolute rule, the timing of tax payments is covered in Chapter 16.
+absolute rule, the timing of tax payments is covered in
+.pdfhref -L -A . -D sec-16.3 Chapter 16.3
 .LP
 The section covering the investment cost equations for time period one is more
 comprehensive and includes graphs. The section for the equations at time period
@@ -56,7 +59,7 @@ equations developed for single asset pools include both balancing charges and
 balancing allowances.
 .
 .SH
-How to work with the flow charts.
+How to work with the flow charts
 .LP
 The flow charts have been written to be sign agnostic. In the tables we have
 typically written the original investment costs as negative, however, when
@@ -163,7 +166,7 @@ and an appropriate leger as been assembled below:
 .LP
 .sp
 .SH
-Constants used in the examples:
+Constants used in the examples
 .IP \(bu 3
 The rate of taxation, represented by #t#, is 20%.
 .IP \(bu
@@ -205,7 +208,8 @@ capital allowances. The flat spot in the graph when there is a salvage value is
 caused by there being no writing down before the salvage value is deducted from
 the pool.
 .
-.SH Claiming
+.SH
+Claiming
 .LP
 To claim AIA
 .IP \(bu 3
