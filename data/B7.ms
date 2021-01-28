@@ -5,6 +5,7 @@
 .\" .SH 1
 .\" Writing down allowance
 .\" .LP
+.SHP 1 3 "Flow Chart, WDA, Continuing Pool"
 .LP
 The flow chart for the WDA when it is assumed there is a continuing pool is as
 follows:
@@ -97,8 +98,7 @@ Total#\[Po]31,463#\[Po]6,292
 .TE
 
 .
-.SH 2
-WDA - no salvage value
+.SHP 2 4 "WDA, No Salvage Value"
 .LP
 Again we are going to work through an example with the aid of a table and then
 look at the problem with some mathematics. For the purpose of this example
@@ -214,8 +214,7 @@ lineup =~~
 .EN
 .RE
 .
-.SH 2
-Salvage value
+.SHP 2 4 "WDA, Salvage Value"
 .LP
 We will now look at a scenario where there is a salvage value. We are not going
 to move away from calculating the NPV and focus on the tax benefits associated
@@ -437,8 +436,7 @@ lineup =~~
 .EN
 .RE
 .
-.SH 2
-Salvage value with capital gains
+.SHP 2 4 "WDA, Salvage Value With Capital Gains"
 .LP
 Again there is no graph for this section and we are simply going to complete
 the maths required to establish the investment cost equation. Again the maths
