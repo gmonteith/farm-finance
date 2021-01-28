@@ -16,7 +16,8 @@
 .\" .SH 1
 .\" Workings hitch
 .\" .LP
-This Appendix provides the workings for the table in Chapter 19.5.1.1
+This Appendix provides the workings for the table in
+.pdfhref -L -A . -D sec-19.5.1.1 Chapter 19.5.1.1
 .LP
 You have a hay and straw business, and you run trucks with a draw bar trailer.
 The couplings between the tractor unit and the trailer have a limited life
@@ -208,8 +209,10 @@ lineup =~~
 .FS
 \(dg This calculation is unnecessary as it yields the same value as year 5 for
 brand A. Any multiple of 5 years will yield the same result, therefore, years
-5, 10 and 15 share the same EAC. The logic for this was established in Section
-17.4.  I have shown the calculation to demonstrate that the logic holds true.
+5, 10 and 15 share the same EAC. The logic for this was established in the
+example in 
+.pdfhref -L -A . -D sec-18.1 chapter 18.1
+I have shown the calculation to demonstrate that the logic holds true.
 .FE
 .RE
 .
@@ -402,8 +405,8 @@ lineup =~~
 \(dd This calculation is unnecessary as it yields the same value as year 3 for
 brand B. Any multiple of 3 years will yield the same result, therefore, years
 3, 6, 9, 12 and 15 share the same EAC. The logic for this was established in
-Chapter 19.4. I have shown the calculation to demonstrate that the logic holds
-true.
+.pdfhref -L -A . -D sec-19.4 Chapter 19.4
+I have shown the calculation to demonstrate that the logic holds true.
 .FE
 .RE
 .
