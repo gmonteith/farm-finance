@@ -346,7 +346,8 @@ earliest possible point in time due to the loss of purchasing power, caused by
 the inflation, therefore a large investment in inventory at the beginning of
 the project saves nominal incremental investments in the inventory in the
 future. There are various methods of accounting for the inventory and their
-impact which is discussed in a little more detail in Chapter 22.
+impact which is discussed in a little more detail in
+.pdfhref -L -A . -D sec-22.1 Chapter 22.1
 .IP \(bu
 Inflation can also have a large impact on the expected salvage values. When
 prices are rising it tends to have a corresponding impact on the second hand
@@ -509,7 +510,8 @@ _
 5@23,000
 _
 .TE
-You might have noticed these are the same cash flows we used in Chapter 13.3.1
+You might have noticed these are the same cash flows we used in
+.pdfhref -L -D sec-13.3.1 Chapter 13.3.1
 when discussing the net present value. In that example, as it was not stated
 otherwise, it was presumed that the 18% cost of capital was a nominal rate. We
 then went on to establish the following net present value:
