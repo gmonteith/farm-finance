@@ -13,6 +13,8 @@
 .\" AIA or Yearly Allowance
 .\" .XE
 .\" .LP
+.SHP 1 3 "Flow chart, AIA, Continuing Pool"
+.LP
 The flow chart for the AIA when it is assumed there is a continuing pool is as
 follows:
 .PS C
@@ -62,9 +64,6 @@ CGT: box "#space 0 cgt #" width 1.1 height 0.6 with .s at Y2.end
 		AR2: arrow from CGT.n to F.s
 
 .PE
-.SH
-Flow chart
-.LP
 The flow chart shows the available options when using the AIA. The key points
 to understand in the logic of the flow chart are:
 .IP \(bu 3
@@ -118,8 +117,7 @@ CCTF sub WDA lineup =~~ cctf
 The calculation for the CCTF will be covered in detail so do not fret that you
 have not been given an explanation at this stage.
 .
-.SH 2
-AIA - No salvage value
+.SHP 2 4 "AIA - No Salvage Value"
 .LP
 We are going to work through an example using both a table and then some
 mathematics. Many people feel more comfortable with the table and it can help
@@ -617,9 +615,9 @@ lineup =~~
 .
 .KS
 .IP "Operating Cash Flow" 15
-This is an annuity and we are going to use the equation from the section on
-Engineering Economics using the notation for a Uniform Series Present Worth
-(P/A, i%, n).
+This is an annuity and we are going to use the equation from the chapter on
+Engineering Economics using the notation for a uniform series present worth
+.pdfhref -L -A . -D sec-10.5 (P/A, i%, n)
 .
 .EQ I
 "Operating cash flow" sub P lm 25,000(P/A, 15%, 5)
@@ -697,8 +695,7 @@ CCTF sub AIA lm
 left [ cctfaia right ] 
 .EN
 .
-.SH 2
-AIA - Salvage value
+.SHP 2 4 "AIA - Salvage Value"
 .LP
 We will now look at a scenario where there is a salvage value. We are not going
 to move away from calculating the NPV and focus only on the tax benefits
@@ -1300,8 +1297,7 @@ lineup =~~
 .EN
 .RE
 .
-.SH 2 
-AIA - Salvage value with capital gains
+.SHP 2 4 "AIA - Salvage Value With Capital Gains"
 .LP
 There is no graph for this eventuality as it is simply the same as the last
 graph. The logic is that the pool would be large enough to allow the
