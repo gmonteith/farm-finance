@@ -13,10 +13,7 @@
 .\" .ce 0
 .\" .bp
 .
-.SH 1
-Self Assessment Tax in two payments.
-.LP
-It is possible to create a CCTF for the Self Assessment Tax which accounts for
+It is possible to create a CCTF for the self assessment tax which accounts for
 their being two tax payments. The logic on which the calculation is based is
 outlined below:
 .IP \(bu 3
