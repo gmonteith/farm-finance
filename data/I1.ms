@@ -13,9 +13,6 @@
 .\" .ce 0
 .\" .bp
 .
-.SH 1
-Cumulative dry matter formulas
-.LP
 This Appendix examines how the cumulative dry matter formulas are derived.
 .SH 
 Symbols
@@ -146,8 +143,9 @@ lineup =~~
 We will now start to build up some useful formulas for calculating the dry
 matter requirements.
 .
-.SH
-Dry matter over number of days given a start and finish weight.
+.\" .SH
+.\" Dry matter over number of days given a start and finish weight.
+.SHP 2 2 "Dry Matter Over Number of Days Given a Start and Finish Weight"
 .LP
 This formula, when established, allows us to sum the "Cumulative DM" column in
 the table by providing only a start weight, finish weight and the number of
@@ -262,8 +260,9 @@ can be checked below:
 0.15 ~kg ^day
 .EN
 .
-.SH
-Dry matter given a growth rate and a start and finish weight.
+.\" .SH
+.\" Dry matter given a growth rate and a start and finish weight.
+.SHP 2 2 "Dry Matter Given a Growth Rate and a Start and Finish Weight"
 .LP
 This formula, when established, allows us to sum the "Cumulative DM" column in
 the table by providing only a start weight, finish weight and a growth rate.
@@ -367,8 +366,9 @@ left [ { 32.10 - 30.00 } over 0.15 right ] + 1
 15
 .EN
 .
-.SH
-Dry matter over a time period.
+.\" .SH
+.\" Dry matter over a time period.
+.SHP 2 2 "Dry Matter Over a Time Period"
 .LP
 This formula, when established, is useful for calculating the amount of dry
 matter required between day 1 and day 30, for instance, if you are calculating
