@@ -72,9 +72,9 @@ Links can be created within the document using the basic stucture below:
 .NOH!
 .bp
 .togglefooter
-\\n+(cn
+.\" \\n+(cn
 .sp |1.75i
-.pdfbookmark 1 \\n(cn . \\$1
+.pdfbookmark 1 \\n+(cn . \\$1
 .pdfhref -M -N ch\\n(cn\"						pdf cross reference for the chapter
 .ce
 \s+8\fBChapter \\n(cn\fP\s0
@@ -86,7 +86,7 @@ Links can be created within the document using the basic stucture below:
 \s+6\fB\\$1\fP\s0
 .sp 3
 .ds c? \\$1
-.nr fn 0\" 													sets the pdf footmark ref to zero
+.nr fn 0\"												sets the pdf footmark ref to zero
 .LP
 ..
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -164,7 +164,12 @@ APPENDIX \\n+(#a: \\$1
 .rs
 .sp |5.0i
 .ce
+.pdfbookmark 2 \\$1
 \s+2\fB\\$1\s0\fP
+.XS
+.in +0.2i
+\\$1
+.XE
 .bp
 ..
 .
@@ -285,4 +290,39 @@ Links can be created within the document using the basic stucture below:
 .de FSP
 .FS
 .pdfhref -M -N ft\\n(cn@\\n+(fn\"						pdf cross reference for the chapter
+..
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Add sub heading pdfmarks
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.ig
+This macro is used in the appendixs where there are no numbered headings. It
+sets the indent for the table of contents and adds the bookmarks for the pdf.
+..
+.
+.de SHP
+.
+.SH \\$1
+\\$3
+.pdfbookmark \\$2 \\$3
+.
+.if \\$2=2 \{\
+.XS
+.in +0.2i
+\\$3
+.XE
+\}
+.if \\$2=3 \{\
+.XS
+.in +0.3i
+\\$3
+.XE
+\}
+.if \\$2=4 \{\
+.XS
+.in +0.4i
+\\$3
+.XE
+\}
+.
+.in
 ..
