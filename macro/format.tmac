@@ -40,7 +40,8 @@
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .ig
 This header macro is used when there is no chapter. In this document that is
-the preface and the introduction.
+the preface and the introduction. These two sections do not have a running
+header.
 ..
 .de HEADER
 .NOH!
@@ -62,7 +63,7 @@ the preface and the introduction.
 This macro is used when the document is split into individual chapters
 .
 The pdf cross reference for the chapter is in the form of chxx where xx are two
-numeral representing the required chapter. For instance ch12
+numerals representing the required chapter. For instance ch12
 .
 Links can be created within the document using the basic stucture below:
 .pdfhref -L -D ch12 Please see chapter 12
@@ -71,11 +72,12 @@ Links can be created within the document using the basic stucture below:
 .NOH!
 .bp
 .togglefooter
+\\n+(cn
 .sp |1.75i
-.ce
-\s+8\fBChapter \\n+(cn\fP\s0
 .pdfbookmark 1 \\n(cn . \\$1
 .pdfhref -M -N ch\\n(cn\"						pdf cross reference for the chapter
+.ce
+\s+8\fBChapter \\n(cn\fP\s0
 .XS
 \\n(cn . \\$1
 .XE
@@ -84,6 +86,7 @@ Links can be created within the document using the basic stucture below:
 \s+6\fB\\$1\fP\s0
 .sp 3
 .ds c? \\$1
+.nr fn 0\" 													sets the pdf footmark ref to zero
 .LP
 ..
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -135,6 +138,7 @@ Links can be created within the document using the basic stucture below:
 APPENDIX \\n+(#a: \\$1
 .XE
 .pdfbookmark 1 \\n(#a . \\$1
+.pdfhref -M -N ap\\n(#a\"						pdf cross reference for the appendix
 .ds c? \\$1
 .ds b \\$1
 .rs
@@ -266,3 +270,19 @@ contents and intro. :(
 .\" in the spdf.tmac file
 .ds XNVS2 0.0v  \" leading at nesting increment
 .ds XNVS3 0.0v  \" leading following nested group
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.\" Add footnote pdfmark
+.\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.ig
+The pdf cross reference for the footnote is in the form of fty@x where y
+represents the chapter number and x the footnote number.
+.
+Links can be created within the document using the basic stucture below:
+.pdfhref -L -D ft2@3 please see the footnote
+..
+.nr fn 1 1
+.
+.de FSP
+.FS
+.pdfhref -M -N ft\\n(cn@\\n+(fn\"						pdf cross reference for the chapter
+..
