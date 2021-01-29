@@ -118,7 +118,7 @@ the file I am editing, and any other files I maybe interested in. I have the
 following command in the "q" register:
 
 `:!pdfroff -s -t -p -e -G -R -dpaper=a4 -P-pa4 --report -mspdf
---stylesheet=macro/cover.tmac master-wip.ms > ~/tmp/worktest.pdf'
+--stylesheet=macro/cover.tmac master-wip.ms > ~/tmp/worktest.pdf`
 
 The command above can be yanked into register "q" with the following command in
 vim: `"qy$`
