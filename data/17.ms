@@ -31,12 +31,12 @@ Multiply the investment cost by the appropriate equation.
 Multiply the positive cash flows by the appropriate rate of taxation.
 .LP
 As an illustration we will use the same cash flows from an example from
-Appendix B on the AIA in time period one. You make an investment of \[Po]15,000
-in a piece of capital equipment and an accompanying investment in working
-capital of \[Po]8,000 which will be returned at the end of the investment life.
-The investment after costs yields a surplus of \[Po]25,000 each year. The
-investment has a life of 5 years and no salvage value, the rate of taxation is
-20% and the discount rate 15%. 
+.pdfhref -L -A . -D apB.3 appendix B on the AIA in time period one
+You make an investment of \[Po]15,000 in a piece of capital equipment and an
+accompanying investment in working capital of \[Po]8,000 which will be returned
+at the end of the investment life.  The investment after costs yields a surplus
+of \[Po]25,000 each year. The investment has a life of 5 years and no salvage
+value, the rate of taxation is 20% and the discount rate 15%. 
 .
 .XXXX 0 2 "No salvage value"
 .LP
@@ -511,19 +511,21 @@ _
 Self Assessment Tax creates some problems because of the personal allowance and
 the different tax rates dependent on the earnings of the business. We will
 start with the the problem of the personal allowance sheltering some of the
-income from taxation. Appendix F looks at how to calculate the rate of taxation
-in some detail.
+income from taxation.
+.pdfhref -L -D apF Appendix F
+looks at how to calculate the rate of taxation in some detail.
 .
 .XXXX 0 3 "Personal allowance incorporated into rate of taxation"
 .LP
-You can create a flat rate of taxation using the method show in Appendix K if
-you accept that the investment is going to utilise the personal allowance, and
-that the personal allowance has not been applied to other earnings in the
-business. Once you have created this flat rate of tax you can use it the normal
-way in the investment cost equations. However, it can be argued that if you
-earnings change so will the rate of taxation. This is true, however, as the
-table below shows from Appendix K it is possible to calculate the flat of tax
-incorporating the personal allowance for a range of earnings. 
+You can create a flat rate of taxation using the method show in
+.pdfhref -L -D apK appendix K
+if you accept that the investment is going to utilise the personal allowance,
+and that the personal allowance has not been applied to other earnings in the
+business. Once you have created this flat rate of tax you can use it the
+normal way in the investment cost equations. However, it can be argued that
+if you earnings change so will the rate of taxation. This is true, however,
+as the table below shows from Appendix K it is possible to calculate the
+flat of tax incorporating the personal allowance for a range of earnings. 
 .TS
 tab (#) center;
 l n n n n n n n .
@@ -562,14 +564,15 @@ for this project.
 .
 .XXXX 0 3 "Earnings across two tax bands."
 .LP
-This scenario is covered again in Appendix K. The basic logic is that you will
-need to calculate a weighted average of the tax rates. Again, as the earnings
-with which the tax rate is dependent on are a projection into the future it
-pays to be confident that the earnings will materialise and push you well into
-the next tax rate. Currently there is a change in the tax rate at \[Po]50,000
-it would not add much to the accuracy of the NPV by calculating the weighted
-average of the rate of taxation if the earnings were projected to be
-\[Po]51,000. 
+This scenario is covered again in
+.pdfhref -L -A . -D apK appendix K
+The basic logic is that you will need to calculate a weighted average of the
+tax rates. Again, as the earnings with which the tax rate is dependent on are a
+projection into the future it pays to be confident that the earnings will
+materialise and push you well into the next tax rate. Currently there is a
+change in the tax rate at \[Po]50,000 it would not add much to the accuracy of
+the NPV by calculating the weighted average of the rate of taxation if the
+earnings were projected to be \[Po]51,000. 
 .
 .XXXX 0 2 "Limited taxation"
 .LP
@@ -712,8 +715,9 @@ pretax cash flow. This is a valid point and the more complex a business the
 more difficult it is to tie tax benefits to individual investments. More often
 than not, for simplicity, the management of a company measures EBIT or
 operating profit and if there is a requirement to calculate after tax cash flow
-the the EBIT is multiplied by (1 - tax rate). Appendix E looks into SVA which
-uses EBIT to establish if an investment should be pursued.
+the the EBIT is multiplied by (1 - tax rate).
+.pdfhref -L -D apE Appendix E
+looks into SVA which uses EBIT to establish if an investment should be pursued.
 .LP
 In smaller companies where there are not multiple disparate divisions working
 in different tax jurisdictions the investment cost equations offer a quick and

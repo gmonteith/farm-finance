@@ -749,7 +749,8 @@ the parenthesis are removed it becomes # \[Po]4,542 + \[Po]4,448 # which equals
 # \[Po]8,990#! If you made the costs negative and the benefits positive you
 would have to add the results together. # \[Po]4,542 + (-\[Po]4,448) # becomes
 # \[Po]4,542 - \[Po]4,448) # which equals \[Po]94. There is a footnote in
-Appendix B which covers very briefly the logic of mathematical signs.
+.pdfhref -L -D ftB@1 appendix B
+which covers very briefly the logic of mathematical signs.
 .FE
 .sp -0.6v
 .EQ I

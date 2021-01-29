@@ -251,9 +251,11 @@ Breakeven is a widely used business tool but it is not without its limitations.
 Traditionally breakeven analysis uses zero earnings as the breakeven point,
 this ignores the cost of capital and investment requirements beyond the initial
 investment. Therefore, break-even can \fBnot\fP be used to allocate capital.
-In Appendix E we examine SVA as devised by Alfred Rappaport which is a form of
-breakeven which includes the time value of money and can be used to allocated
-capital within a business.
+In
+.pdfhref -L -D apE appendix E
+we examine SVA as devised by Alfred Rappaport which is a form of breakeven
+which includes the time value of money and can be used to allocated capital
+within a business.
 .LP
 I am presuming that the cost of capital has been included in the fixed costs
 using the information for the preceding Chapters. Therefore even if the
@@ -739,7 +741,8 @@ left [ { k sub f - k sub s } over r right ] + 1
 .EN
 The formulas above can be combined with the formula for an arithmetic series to
 calculate the dry matter requirements over given time periods. The formulas have
-been derived in Appendix N.
+been derived in
+.pdfhref -L -A . -D apI appendix I
 .
 .XXXX 0 4 "Dry matter per lamb"
 .LP
@@ -796,9 +799,10 @@ lineup =~~
 .
 .XXXX 0 4 "Dry matter over number of days given a start and finish weight"
 .LP
-The equation below has been derived in Appendix N and allows us to calculate
-the amount of dry matter a lamb will consume over a given number of days to
-reach a given weight.
+The equation below has been derived in
+.pdfhref -L -D apI.1 appendix I
+and allows us to calculate the amount of dry matter a lamb will consume over a
+given number of days to reach a given weight.
 .EQ I
 DM sub { \[sum] d } lm
 d over 2 left [ k sub s + k sub f  right ] %bw
@@ -883,9 +887,10 @@ implies that the lamb will reach finishing weight in a given number of days.
 .
 .XXXX 0 4 "Dry matter given a growth rate and a start and finish weight"
 .LP
-The equation below has been derived in Appendix N and allows us to calculate
-the amount of dry matter a lamb will consume to reach a finishing weight if the
-start weight and growth rate are known.
+The equation below has been derived in
+.pdfhref -L -D apI.2 appendix I
+and allows us to calculate the amount of dry matter a lamb will consume to
+reach a finishing weight if the start weight and growth rate are known.
 .EQ I
 DM sub { \[sum] r }  lm
 { { k sub f - k sub s + r } over 2r }
@@ -982,8 +987,9 @@ increase in the dry matter requirement.
 .
 .XXXX 0 4 "Dry matter over a time period"
 .LP
-The equation below has been derived in Appendix N and allows us to calculate
-the amount of dry matter, in kilograms, required over a time period in days.
+The equation below has been derived in
+.pdfhref -L -D apI.3 appendix I
+and allows us to calculate the amount of dry matter, in kilograms, required over a time period in days.
 .EQ I
 DM sub { s\[->]f } lm
 {  d sub f - d sub s  + 1  } over 2

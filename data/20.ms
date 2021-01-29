@@ -270,9 +270,10 @@ selection of sources to get the best idea of the salvage value.
 At present inflation is rather benign, but this has not always been the case.
 It has to be expected that there will be some form of inflation, in the general
 economy and in the costs, over the life of a piece of equipment. Inflation and
-how to account for it has been covered in more detail in Appendix K. In general
-we will always use nominal rates for the both the cash flows and the discount
-rate includes which means they include the inflation expectations.
+how to account for it has been covered in more detail in
+.pdfhref -L -A . -D apK appendix K
+In general we will always use nominal rates for the both the cash flows and the
+discount rate includes which means they include the inflation expectations.
 .
 .XXXX 0 3 "Costs to include"
 .LP

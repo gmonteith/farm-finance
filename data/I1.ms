@@ -264,6 +264,7 @@ can be checked below:
 .\" Dry matter given a growth rate and a start and finish weight.
 .SHP 2 2 "Dry Matter Given a Growth Rate and a Start and Finish Weight"
 .LP
+\n(#a.\n(sh
 This formula, when established, allows us to sum the "Cumulative DM" column in
 the table by providing only a start weight, finish weight and a growth rate.
 .LP

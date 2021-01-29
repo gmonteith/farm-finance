@@ -1820,8 +1820,10 @@ rate)# or some other measure of the operating profit less the tax. The tax must
 be taken into account because the weighted average cost of capital includes the
 tax benefit from interest being tax deductible.
 .IP "Nominal vs real" 5
-Inflation is covered in Appendix H but you must ensure that you match a nominal
-rate to a nominal cash flow and vice versa.
+Inflation is covered in
+.pdfhref -L -D apH appendix H
+but you must ensure that you match a nominal rate to a nominal cash flow and
+vice versa.
 .IP "Pre tax vs post tax" 5
 If the cash flow is subject to tax then you should be using a discount rate
 that has also been adjusted for tax.

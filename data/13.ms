@@ -526,10 +526,11 @@ cost of capital.
 .LP
 We can purse the line of thought that the investment recovery is like the
 repayment of the principal of a loan. If we restructure the \[Po]40,000
-investment so that it has the cash flows below it would resemble the same
-basic structure as a instalment loan as shown in Appendix G. The capital
-recovery represents the principal payment and the cost of capital is the
-interest.
+investment so that it has the cash flows below it would resemble the same basic
+structure as a instalment loan as shown in
+.pdfhref -L -A . -D apG appendix G
+The capital recovery represents the principal payment and the cost of capital
+is the interest.
 .KS
 .TS
 tab (@) center;

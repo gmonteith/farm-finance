@@ -1037,7 +1037,8 @@ I worked for John Deere who used a metric called SVA.\(dg On page 21 of the
 \(dg The SVA that John Deere uses is very similar to EVA and should not be
 confused with the SVA that Alfred Rappaport discusses in this book "Creating
 Shareholder Value". If you would like to know a little about SVA as devised by
-Alfred Rappaport please see Appendix E.
+Alfred Rappaport please see
+.pdfhref -L -A . -D apE appendix E
 .FE
 .QP
 \fIShareholder Value Added (SVA) - essentially, the difference between operating

@@ -203,8 +203,10 @@ horizon is picked that is not a Lowest Common Multiple of the alternatives. In
 most cases using the Lowest Common Multiple is preferable to assuming arbitart
 residual values\(dd.
 .FS
-\(dd The example used in 19.5.1.1 uses residual values. The full workings are
-shown in Appendix F.
+\(dd The example used in
+.pdfhref -L -D sec-19.5.1.1 19.5.1.1
+uses residual values. The full workings are shown in
+.pdfhref -L -A . -D apF appendix F
 .FE
 .
 .XXXX 0 2 "Equivalent Annual Annuities"
@@ -359,7 +361,8 @@ Salvage after 4 years#200#0
 _
 .TE
 We will now calculate the EACs for 3, 4, 5, 8, 11 and 15 year study periods. The
-calculations for the table below are shown in Appendix F.
+calculations for the table below are shown in
+.pdfhref -L -A . -D apF appendix F
 .TS
 tab (#) center ;
 l cp-3 s s 

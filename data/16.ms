@@ -1,8 +1,10 @@
 .
 The purpose of this chapter is to use some mathematics to reduce the amount of
 work required to estimate the NPV of a given investment, where tax is a
-consideration. The mathematics behind the equations is covered in Appendix A
-and B.
+consideration. The mathematics behind the equations is covered in
+.pdfhref -L -D apA Appendix A
+&
+.pdfhref -L -A . -D apB B
 .LP
 It is important to understand that the investment cost equations come in two
 forms, positive and negative. In the preface we discussed the sign conventions
@@ -25,7 +27,10 @@ use of the capital allowances to infinity. The tax benefits are calculated to
 infinity because in the main pool it is not possible to generate a balancing
 allowance unless the business ceases to trade which means that there could be
 tax benefits available to the business after the asset has been disposed of.
-The mathematics behind the CCTFs are covered in Appendix A and Appendix B.
+The mathematics behind the CCTFs are covered in
+.pdfhref -L -D apA Appendix A
+&
+.pdfhref -L -A . -D apB B
 .
 .XXXX 0 2 "Types of Pool"
 .LP
@@ -80,7 +85,8 @@ The disposal of the asset can generate a balancing allowance or a balancing
 charge.
 .IP \(bu
 The equation is the same if there is a balancing allowance or balancing charge,
-the maths behind this is covered in Appendix B.
+the maths behind this is covered in
+.pdfhref -L -A . -D apB appendix B
 .IP \(bu
 The same capital gains logic that was used with continuous pools applies to
 single asset pools.
@@ -283,7 +289,9 @@ arrow dashed left 0.2 at last box.w
 .PE
 The above situation is worth contemplation as it is not uncommon that
 investments are made at the end of the accounting period to make use of capital
-allowances. The flow charts in Appendix B allow for this occurrence.
+allowances. The flow charts in
+.pdfhref -L -D apB appendix B
+allow for this occurrence.
 .LP
 If the first cash flow is on the 1st day of the accounting period then first
 tax impact is at time period 2.

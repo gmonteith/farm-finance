@@ -1173,7 +1173,8 @@ the enclosed terms.
 When removing parenthesis preceded by a minus sign drop the minus sign and
 parenthesis, and change the sign of each enclosed term\(dg.
 .RE
-.FS
+.
+.FSP
 \(dg It is important to remember that there are two signs in mathematics. The
 sign of operation, representing addition and subtraction, and the sign of
 quality, informing us whether the number is positive or negative. It is
@@ -1186,6 +1187,7 @@ with #b# is explicit and in the expression # a - ( b + c ) = a - b
 1 and 2 with regards to the sign of operation and the first sign, implied or
 otherwise, is if the sign of operation and quality are the same then they can
 be consolidated into a + sign, and if they are different a - sign.
+.\" \n(#a@\n(#f
 .FE
 As we do not wish to make changes to the terms inside the brackets we will
 precede the expression with a + sign:

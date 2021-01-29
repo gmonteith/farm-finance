@@ -235,8 +235,10 @@ It is easier to establish the investment cost.
 .KE
 .
 .LP
-In Appendix A we examined the impact of the WDA on the tax. The tax savings
-before discounting were found to be:
+In
+.pdfhref -L -D apA Appendix A
+we examined the impact of the WDA on the tax. The tax savings before
+discounting were found to be:
 .EQ I
 "Tax savings" =~~ Idt
 .EN
@@ -297,9 +299,12 @@ _
 The NPV can again be calculated using equations. The investment has to be
 multiplied by the Capital Cost Tax Factor (CCTF) for the AIA and the annuity
 and gradient components by the tax rate. Do not worry that you have not
-encountered the CCTFs before they are equations that are derived in Appendix A
-& B to aid in establish the true cost of a capital purchase. You will become
-more familiar with them over the rest of the document.
+encountered the CCTFs before they are equations that are derived in
+.pdfhref -L -D apA Appendix A
+&
+.pdfhref -L -D apB B
+to aid in establish the true cost of a capital purchase. You will become more
+familiar with them over the rest of the document.
 .EQ I
 NPV lm Investment ( CCTF sub AIA )\(dg + left [ PV sub Annuity + PV sub Gradient right ]
 ( 1 - "tax rate" )
@@ -411,10 +416,11 @@ a capital asset on the balance sheet from which a claim is made against tax
 utilising the writing down allowance at 18% has at after tax cost of \[Po]836,
 or \[Po]1,000 - \[Po]164, which is the capital cost less the tax saving.
 .LP
-Appendix A includes information concerning the mathematics behind the table
-which are used in the construction of the Capital Cost Tax Factors (CCTF)
-required to simplify the tax calculations. The tax saving for the \[Po]1,000
-investment are shown in the table below:
+.pdfhref -L -D apA Appendix A
+includes information concerning the mathematics behind the table which are used
+in the construction of the Capital Cost Tax Factors (CCTF) required to simplify
+the tax calculations. The tax saving for the \[Po]1,000 investment are shown in
+the table below:
 .TS
 tab (#) center;
 l c c c c
@@ -442,8 +448,9 @@ Total#\[Po]548#\[Po]164
 However, the table above terminates at year 5 and we need to calculate the tax
 savings available in the future. Do not worry that you have not seen the
 equation used to calculate the tax savings onto infinity before, the logic
-behind it is found in Appendix A but it is not important to be familiar with
-it.
+behind it is found in
+.pdfhref -L -D apA appendix A
+but it is not important to be familiar with it.
 .KS
 .EQ I
 "Tax savings to infinity" lm
