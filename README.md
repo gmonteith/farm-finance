@@ -101,7 +101,7 @@ You will also require a pdf viewer, I use both evince and zathura:
 
 ## Usage
 To view the entire document, from inside the directory where you have
-downloaded the rep,  you can simply type:
+downloaded the rep0,  you can simply type:
 
 `. create pdf; evince farm-finance-draft.pdf`
 
@@ -117,8 +117,8 @@ with the chapter/appendix/file I am working on in one window and the
 the file I am editing, and any other files I maybe interested in. I have the
 following command in the "q" register:
 
-`<div> :!pdfroff -s -t -p -e -G -R -dpaper=a4 -P-pa4 --report -mspdf
---stylesheet=macro/cover.tmac master-wip.ms > ~/tmp/worktest.pdf <div>`
+`:!pdfroff -s -t -p -e -G -R -dpaper=a4 -P-pa4 --report -mspdf
+--stylesheet=macro/cover.tmac master-wip.ms > ~/tmp/worktest.pdf'
 
 The command above can be yanked into register "q" with the following command in
 vim: `"qy$`
