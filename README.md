@@ -23,10 +23,10 @@ reflect this:
 
 File name | Description
 --------- | -----------
-`data/0000.ms` | Title page
+`data/0000.ms` | No Longer Required
 `data/000.ms` | Preface
 `data/00.ms` | Introduction
-`data/01.ms` | Chapter 01, Time Value Of Money
+`data/01.ms` | Chapter 01, Time Value of Money
 `data/02.ms` | Chapter 02, Equivalence
 `data/03.ms` | Chapter 03, Ordinary Annuities
 `data/04.ms` | Chapter 04, Annuities Due
@@ -39,17 +39,17 @@ File name | Description
 `data/11.ms` | Chapter 11, Nominal & Effective Rates
 `data/12.ms` | Chapter 12, Costing Your Capital
 `data/13.ms` | Chapter 13, Investment Analysis
-`data/14.ms` | Chapter 14, Structure Of UK Tax
-`data/15.ms` | Chapter 15, Understanding The Impact Of Tax
-`data/16.ms` | Chapter 16, Investment cost equations
-`data/17.ms` | Chapter 17, Using the investment cost equations
+`data/14.ms` | Chapter 14, Structure of UK Tax
+`data/15.ms` | Chapter 15, Understanding the Impact of Tax
+`data/16.ms` | Chapter 16, Investment Cost Equations
+`data/17.ms` | Chapter 17, Using the Investment Cost Equations
 `data/18.ms` | Chapter 18, Equivalent Annual Cost
 `data/19.ms` | Chapter 19, Mutually Exclusive Projects
 `data/20.ms` | Chapter 20, Replacement Analysis
 `data/21.ms` | Chapter 21, Revenue Cost & Profit
-`data/22.ms` | Chapter 22, Economic Value And The Measurement Of Financial Performance
-`data/23.ms` | Chapter 23, Return on equity
-`data/A1.ms` | Appendix A, Impact Of Writing Down Allowance (WDA) On Capital Costs
+`data/22.ms` | Chapter 22, Economic Value and the Measurement of Financial Performance
+`data/23.ms` | Chapter 23, Return on Equity
+`data/A1.ms` | Appendix A, Impact of Writing Down Allowance (WDA) on Capital Costs
 `data/B0.ms` | Appendix B, Introduction
 `data/B1.ms` | Appendix B, Writing Down Allowance, Time Period 1
 `data/B2.ms` | Appendix B, Annual Investment Allowance, Time Period 1
@@ -59,7 +59,7 @@ File name | Description
 `data/B7.ms` | Appendix B, Annual Investment Allowance, Time Period 2
 `data/B8.ms` | Appendix B, Single Asset Pool, Time Period 2
 `data/C1.ms` | Appendix C, Engineering Economics Equations
-`data/D1.ms` | Appendix D, Self Assessment Tax In Two Payments
+`data/D1.ms` | Appendix D, Self Assessment Tax in Two Payments
 `data/E1.ms` | Appendix E, Shareholder Value Added (SVA)
 `data/F1.ms` | Appendix F, Workings Hitch
 `data/G1.ms` | Appendix G, Loans
@@ -67,12 +67,17 @@ File name | Description
 `data/I1.ms` | Appendix I, Cumulative Dry Matter
 `data/J1.ms` | Appendix J, Repair & Maintenance
 `data/R1.ms` | Appendix R, References
-`macro/format.tmac` | Macros used in creating the document layout
-`macro/equation.tmac` | Equation definitions
-`macro/equation.tmac` | Pic definitions
-`master.ms` | File to produce complete pdf document
-`master-wip.ms` | File that can be edited to output specific chapters/files
-`log.txt` | Recovered log file from the corrupted repository
+`refer/main.ref` | Bibliography, Document References
+`refer/maths.ref` | Bibliography, Math References
+`refer/typesetting.ref` | Bibliography, Typesetting References
+`macro/format.tmac` | Macros Used in Creating the Document Layout
+`macro/equation.tmac` | Equation Definitions
+`macro/equation.tmac` | Pic Definitions
+`macro/cover.tmac` | Macro to Create the Title Page
+`master.ms` | File to Produce Complete pdf Document
+`master-wip.ms` | File That Can be Edited to Output Specific Chapters/Files
+'create-pdf | File That Can Be Run to Create the pdf
+`log.txt` | Recovered Log File From the Corrupted Repository
 `README.md` | This file
 
 ---
@@ -92,52 +97,19 @@ You will also require a pdf viewer, I use both evince and zathura:
 
 `sudo apt-get install evince zathura`
 
-Groff outputs the table of contents at the end of the document and I move them
-to the beginning with pdftk:
-
-`sudo apt-get install pdftk`
-
 ---
 
 ## Usage
-To view the entire document you can simply type:
+To view the entire document, from inside the directory where you have
+downloaded the rep,  you can simply type:
 
-`groffer -ms master.ms`
-
-This will produce the entire document but the table of contents will be at the
-end of the document.
-
-To view the entire document with the table of contents in its more natural
-place I have a function in my bashrc:
-
-```
-complete-ff()
-{
-groffer -ms master.ms -Tpdf --groff > ~/tmp/complete.pdf
-
-pdftk ~/tmp/complete.pdf cat 1 2 r5-r1 3-r6 output ~/tmp/farm-finance.pdf
-
-evince ~/tmp/farm-finance.pdf
-}
-```
-
-There is very little to like about the process above and if the pdf changes in
-length the pdftk command has to be rewritten. I have been meaning to work on a
-better solution using pdfmark which would also improve the usability of the pdf
-document, however, I am currently short of time.
-
-`groffer` will not be supported in the next release of groff, version 1.23.0,
-so this particular method of outputting the pdf will stop working in the
-future. `groffer` is a wrapper around groff and the entire pdf can be created,
-with the table of contents at the end, using the following groff command:
-
-`groff -Tpdf -s -t -e -p -G -R -ms master.ms > farm-finance.pdf`
+`. create pdf; evince farm-finance-draft.pdf`
 
 ---
 
 ### Workflow when editing:
 The `master-wip.ms` exists because the entire document is rather large,
-cumbersome and slow to produce for editing individual chapters.
+cumbersome and slow to produce for editing individual files.
 
 Vim is my preferred text editor and I typically have a vertically split window
 with the chapter/appendix/file I am working on in one window and the
@@ -145,7 +117,8 @@ with the chapter/appendix/file I am working on in one window and the
 the file I am editing, and any other files I maybe interested in. I have the
 following command in the "q" register:
 
-`:!groffer -ms master-wip.ms -Tpdf --groff > ~/tmp/worktest.pdf`
+`<div> :!pdfroff -s -t -p -e -G -R -dpaper=a4 -P-pa4 --report -mspdf
+--stylesheet=macro/cover.tmac master-wip.ms > ~/tmp/worktest.pdf <div>`
 
 The command above can be yanked into register "q" with the following command in
 vim: `"qy$`
@@ -162,12 +135,18 @@ chapters/appendices.
 `macro/pic.tmac`
 
 You could of course source these files in each individual chapter but that
-would require more maintenace.
-
-Again, `groffer` will not be supported with the next release of groff so I may
-write a script and do away with the `master-wip.ms` file. 
+would require more maintenance.
 
 A separate window can be used to open the pdf which will automatically refresh
 on each update to the underlying pdf document:
 
 `zathura --fork ~/tmp/worktest.pdf; exit`
+
+---
+
+### Bugs:
+There are some blank pages between the cover sheet and the table of contents.
+This is obviously an unwanted feature, however, I am not sure exactly what is
+causing it. I think it may be the interaction between the BT, PT and TC macros
+within the ms macro package. I have not had time to give it the consideration
+it deserves at this time. Sorry
