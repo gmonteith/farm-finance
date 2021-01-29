@@ -76,7 +76,7 @@ File name | Description
 `macro/cover.tmac` | Macro to Create the Title Page
 `master.ms` | File to Produce Complete pdf Document
 `master-wip.ms` | File That Can be Edited to Output Specific Chapters/Files
-'create-pdf | File That Can Be Run to Create the pdf
+'create-pdf` | File That Can Be Run to Create the pdf
 `log.txt` | Recovered Log File From the Corrupted Repository
 `README.md` | This file
 
