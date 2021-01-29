@@ -24,6 +24,10 @@
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .\" Chapter number. This variable increments by one.
 .nr cn 0 1
+.
+.\" Sub heading number. This is used to create unique pdf cross references for
+.\" the macro .SHP
+.nr sh 1 1
 . 
 .\" This is used to indicate if a running header is required. The default is to
 .\" produce a running header unless it is set to zero with NOH!
@@ -62,10 +66,11 @@ header.
 .ig
 This macro is used when the document is split into individual chapters
 .
-The pdf cross reference for the chapter is in the form of chxx where xx are two
-numerals representing the required chapter. For instance ch12
+The pdf cross reference for the chapter is in the form of chx where x
+represents the one or two numerals required to identify the chapter. 
+For instance ch12 or ch5
 .
-Links can be created within the document using the basic stucture below:
+Links can be created within the document using the basic structure below:
 .pdfhref -L -D ch12 Please see chapter 12
 ..
 .de CHAPTER
@@ -97,10 +102,10 @@ this macro is used to number the sections in the chapters and makes use of the
 XN macro from the mspdf macro package to automatically create the TOC and
 relocate it to the beginning of the document
 .
-The pdf cross reference is in the form sec-x.x where x.x are two numerals
-referencing the section number, for instance sec-2.4
+The pdf cross reference is in the form sec-x.y where x represents the chapter
+and y and section number. For instance sec-2.4
 
-Links can be created within the document using the basic stucture below:
+Links can be created within the document using the basic structure below:
 .pdfhref -L -D sec-2.4 Please see section 2.4
 ..
 .de XXXX
@@ -132,13 +137,15 @@ Links can be created within the document using the basic stucture below:
 .
 .de APPENDIX
 .NOH!
+.nr sh 0\"										restarts the numbering for the .SHP macro
+.nr #f 0\"										sets the pdf footmark ref to zero
 .bp
 .APP
 .XS
 APPENDIX \\n+(#a: \\$1
 .XE
 .pdfbookmark 1 \\n(#a . \\$1
-.pdfhref -M -N ap\\n(#a\"						pdf cross reference for the appendix
+.pdfhref -M -N ap\\n(#a\"				pdf cross reference for the appendix
 .ds c? \\$1
 .ds b \\$1
 .rs
@@ -209,8 +216,14 @@ factors can be canceled. This is taken from the man page.
 .\" Running page headers
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .ig
-This is used to draw a diagonal line through equations to emphasise how like
-factors can be canceled. This is taken from the man page.
+This is used to create the running headers that appear at the top of the
+chapters and appendices. The PT macro is a part of the ms macro package. There
+is a small amount of information concerning the .PT macro in the man page
+groff_ms
+
+The use of the PT macro causes some strange behaviour in the TOC. I have not
+looked hard at it and you may notices the TOC has no page numbers!!
+https://www.mail-archive.com/bug-groff@gnu.org/msg03992.html
 ..
 .de PT
 .if (\\n[noheader])&(\\n(cn) \{\
@@ -240,6 +253,9 @@ This section of code turns the page numbers displayed in the footer on and off.
 as you want the page numbers in the footer off more than you want them on.
 However, if you default to off it causes issues with the preface, table of
 contents and intro. :(
+.
+The .BT macro is a part of the ms macro package. There is a small amount of
+information concerning the .BT macro in the man page groff_ms
 ..
 .
 .\" Footer page numbers off
@@ -281,22 +297,44 @@ contents and intro. :(
 .ig
 The pdf cross reference for the footnote is in the form of fty@x where y
 represents the chapter number and x the footnote number.
+or
+ftY@x where Y represents the capital letter reference for the appendix and x
+the number of the footnote
 .
-Links can be created within the document using the basic stucture below:
-.pdfhref -L -D ft2@3 please see the footnote
+Links can be created within the document using the basic structure below:
+.pdfhref -L -D ft2@3 please see chapter footnote
+.pdfhref -L -D ftB@3 please see appendix footnote
+
+\n(#a@\n(#fn
 ..
 .nr fn 1 1
+.nr #f 1 1
 .
 .de FSP
 .FS
-.pdfhref -M -N ft\\n(cn@\\n+(fn\"						pdf cross reference for the chapter
+.ie \\n(cn > 0 \{\
+.pdfhref -M -N ft\\n(cn@\\n+(fn\"			pdf cross reference for the chapter
+\}
+.el \{\
+.pdfhref -M -N ft\\n(#a@\\n+(#f\"		  pdf cross reference for the appendix
+\}
 ..
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .\" Add sub heading pdfmarks
 .\" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .ig
-This macro is used in the appendixs where there are no numbered headings. It
+This macro is used in the appendix where there are no numbered headings. It
 sets the indent for the table of contents and adds the bookmarks for the pdf.
+
+The pdf cross reference is in the form apY.x where Y refers to capital letter
+identifying the appendix and x to the number of the heading
+
+Links can be created within the document using the basic structure below:
+.pdfhref -L -D apB.2 appendix B AIA
+
+There is no easy way to identify the heading. I temporarily put the following
+at the beginning of the first sentence after the heading to output the required
+reference: \n(#a.\n(sh
 ..
 .
 .de SHP
@@ -304,6 +342,7 @@ sets the indent for the table of contents and adds the bookmarks for the pdf.
 .SH \\$1
 \\$3
 .pdfbookmark \\$2 \\$3
+.pdfhref -M -N ap\\n(#a.\\n+(sh\"						pdf cross reference for the appendix
 .
 .if \\$2=2 \{\
 .XS
