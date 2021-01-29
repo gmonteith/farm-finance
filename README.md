@@ -101,43 +101,38 @@ You will also require a pdf viewer, I use both evince and zathura:
 
 ## Usage
 To view the entire document, from inside the directory where you have
-downloaded the rep0,  you can simply type:
+downloaded the repo,  you can simply type:
 
-`. create pdf; evince farm-finance-draft.pdf`
+`. create-pdf; evince farm-finance-draft.pdf`
 
 ---
 
-### Workflow when editing:
-The `master-wip.ms` exists because the entire document is rather large,
+### Workflow When Editing:
+The *master-wip.ms* file exists because the entire document is rather large,
 cumbersome and slow to produce for editing individual files.
 
 Vim is my preferred text editor and I typically have a vertically split window
 with the chapter/appendix/file I am working on in one window and the
-`master-wip.ms` open in the other. The `master-wip.ms` is uncommented to print
-the file I am editing, and any other files I maybe interested in. I have the
-following command in the "q" register:
+*master-wip.ms* file open in the other. The *master-wip.ms* file is uncommented
+to print the file I am editing, and any other files I maybe interested in.
 
-```
-!pdfroff -s -t -p -e -G -R -dpaper=a4 -P-pa4 --report -mspdf
---stylesheet=macro/cover.tmac master-wip.ms > ~/tmp/worktest.pdf
-```
+I run the command below inside vim to create a pdf file called *worktest.pdf*
+in the *tmp* directory in my home folder. If you do not have this directory you
+can either create it or edit the *create-wip-pdf* file to direct the output to
+a different location.
 
-The command above can be yanked into register "q" with the following command in
-vim: `"qy$`
+`!. create-wip-pdf`
 
 Each time a change is made to the chapter/appendix/file it is saved and then
-the command in register "q" is run with `@q` to update the pdf.
+the command above is rerun.
 
-The reason that the `master-wip.ms` file is required is that the macro files,
-shown below, are only sourced in the master and not in the individual
-chapters/appendices.
+The reason the *master-wip.ms* file is required is that the macro files,
+*macro/format.tmac*, *macro/equation.tmac* and *macro/pic.tmac* are only
+sourced in the master files  and not in the individual chapters/appendices
+files.
 
-`macro/format.tmac`
-`macro/equation.tmac`
-`macro/pic.tmac`
-
-You could of course source these files in each individual chapter but that
-would require more maintenance.
+You could of course source these files in each individual chapter or data file
+but that would require more maintenance.
 
 A separate window can be used to open the pdf which will automatically refresh
 on each update to the underlying pdf document:
