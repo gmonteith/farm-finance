@@ -7,7 +7,6 @@ Farm Finance
 .AU Graham Monteith
 .CE
 .
-.nr PDFOUTLINE.FOLDLEVEL 1
 .\" .so data/0000.ms \" Title
 .
 .\".bp 1
@@ -20,42 +19,42 @@ Farm Finance
 .
 .CHAPTER "Time Value of Money"
 .so data/01.ms \" Time value of money
- .
-.CHAPTER "Equivalence"
-.so data/02.ms \" Equivalence
 .
-.CHAPTER "Ordinary Annuities"
-.so data/03.ms \" Ordinary Annuities
-.
-.CHAPTER "Annuities Due"
-.so data/04.ms \" Annuities Due
-.
-.CHAPTER "Growing Ordinary Annuities"
-.so data/05.ms \" Growing Ordinary Annuities
-.
-.CHAPTER "Growing Annuities Due"
-.so data/06.ms \" Growing Annuities Due
-.
-.CHAPTER "Declining Annuities"
-.so data/07.ms \" Declining Annuities
-.
-.CHAPTER "Perpetuities"
-.so data/08.ms \" Perpetuities
-.
-.CHAPTER "Growing Perpetuities"
-.so data/09.ms \" Growing Perpetuities
-.
-.CHAPTER "Engineering Economics"
-.so data/10.ms \" Engineering economics
-.
-.CHAPTER "Nominal & Effective Rates"
-.so data/11.ms \" Nominal & effective rates
-.
-.CHAPTER "Costing Your Capital"
-.so data/12.ms \" Costing your capital
-.
-.CHAPTER "Investment Analysis"
-.so data/13.ms \" Investment analysis
+.\" .CHAPTER "Equivalence"
+.\" .so data/02.ms \" Equivalence
+.\" .
+.\" .CHAPTER "Ordinary Annuities"
+.\" .so data/03.ms \" Ordinary Annuities
+.\" .
+.\" .CHAPTER "Annuities Due"
+.\" .so data/04.ms \" Annuities Due
+.\" .
+.\" .CHAPTER "Growing Ordinary Annuities"
+.\" .so data/05.ms \" Growing Ordinary Annuities
+.\" .
+.\" .CHAPTER "Growing Annuities Due"
+.\" .so data/06.ms \" Growing Annuities Due
+.\" .
+.\" .CHAPTER "Declining Annuities"
+.\" .so data/07.ms \" Declining Annuities
+.\" .
+.\" .CHAPTER "Perpetuities"
+.\" .so data/08.ms \" Perpetuities
+.\" .
+.\" .CHAPTER "Growing Perpetuities"
+.\" .so data/09.ms \" Growing Perpetuities
+.\" .
+.\" .CHAPTER "Engineering Economics"
+.\" .so data/10.ms \" Engineering economics
+.\" .
+.\" .CHAPTER "Nominal & Effective Rates"
+.\" .so data/11.ms \" Nominal & effective rates
+.\" .
+.\" .CHAPTER "Costing Your Capital"
+.\" .so data/12.ms \" Costing your capital
+.\" .
+.\" .CHAPTER "Investment Analysis"
+.\" .so data/13.ms \" Investment analysis
 .\" .
 .\" .CHAPTER "Structure of UK Tax"
 .\" .so data/14.ms \" Structure of UK tax
@@ -65,7 +64,7 @@ Farm Finance
 .\" .
 .\" .CHAPTER "Investment Cost Equations"
 .\" .so data/16.ms \" Investment cost equations
-.\" .\" .
+.\" .
 .\" .CHAPTER "Using The Investment Cost Equations"
 .\" .so data/17.ms \" Using the investment cost equations
 .\" .
@@ -142,7 +141,9 @@ Farm Finance
 .\" .
 .\" .APPENDIX "References"
 .\" .so data/R1.ms \" References
-.\" .nr appendix 0
-.\" .\" .af .pn i
 .\" .
-.TC
+.\" .NOH!
+.\" .nr cn 0
+.\" .rm PT @]
+.\" .rm BT @[
+.\" .TC
