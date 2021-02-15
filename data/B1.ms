@@ -1,4 +1,4 @@
-.I
+I
 .\" .so Format/format.tmac
 .\" .so Format/equation.tmac
 .\" .so Format/pic.tmac
@@ -209,15 +209,15 @@ label bot "Years"
 ###############################################################################
 # Variables that CAN be changed.
 ###############################################################################
-H=20000					# Existing balance in the pool
-I=15000 				# Investment, this is always at year zero
-S=0000 				# Salvage value. If set to 99999 then UCC=S in single asset
-D=0.18 					# Declining balance rate
-Y=5 						# Year at which disposal takes place
-E=15 						# End of the time period
-W=2 						# Number of prior years
-T=1							# 1 = AIA
-F=0							# 1 = single asset pool
+H=20000         # Existing balance in the pool
+I=15000         # Investment, this is always at year zero
+S=0000          # Salvage value. If set to 99999 then UCC=S in single asset
+D=0.18          # Declining balance rate
+Y=5             # Year at which disposal takes place
+E=15            # End of the time period
+W=2             # Number of prior years
+T=1             # 1 = AIA
+F=0             # 1 = single asset pool
 
 ###############################################################################
 # Axis
@@ -240,7 +240,7 @@ if W == 0 then {
 	ticks bot out at 0
 }
 
-#circle at Y,14321 radius .05 	# For debugging
+#circle at Y,14321 radius .05  # For debugging
 ###############################################################################
 # Capital allowance curves
 ###############################################################################
@@ -297,9 +297,9 @@ X
 # Legend
 ###############################################################################
 # Variables for the ledger
-lby=(H+I)				#y axis (height)
-lbxf=E*0.65			#from x axis
-lbxt=E*0.70			#to x axis
+lby=(H+I)    #y axis (height)
+lbxf=E*0.65   #from x axis
+lbxt=E*0.70   #to x axis
 
 # Permanent parts of the ledger.
 coline(solid, black, 2.5, lbxf,lby, lbxt,lby)
@@ -318,7 +318,7 @@ X
 ###############################################################################
 # Previous years
 ###############################################################################
-if W == 0 then {						# If W = 0 do nothing. Avoids initialization error.
+if W == 0 then {      # If W = 0 do nothing. Avoids initialization error.
 } else {
 	for i from -W to 0 by +1 do
 	{
@@ -362,11 +362,11 @@ nx=pa(t,Y-1)-S
 ###############################################################################
 # if AIA = yes && single asset pool = no && salvage = 0
 if T == 1 && F == 0 && S == 0 then {
-		# Vertical line investment
+   # Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
 		legend(blue, 0.8,New investment)
 
-		# Solid line from year 0 to end
+  # Solid line from year 0 to end
 		capcurve(solid, 0, E, t, 0) # line year 0 to Y
 
 } else {
@@ -374,14 +374,14 @@ if T == 1 && F == 0 && S == 0 then {
 
 # if AIA = yes && single asset pool = no && salvage > 0
 if T == 1 && F == 0 && S != 0 then {
-		# Vertical line investment
+  # Vertical line investment
 		coline(solid, blue, 2.5, 0,t, 0,t+I)
 		legend(blue, 0.8,New investment)
 
 		capcurve(solid, 0, Y-1, t, 0) # line year 0 to Y-1
 		flat(solid, Y-1, Y, qx)
 
-		# Draws marker circles   
+    # Draws marker circles   
 		if W == 0 then {
 			marker(1, Y-1, H, 0)
 		} else { 
@@ -389,28 +389,28 @@ if T == 1 && F == 0 && S != 0 then {
 		}
 
 		if S <= qx then {
-			# circle at Y,n radius .15 	# For debugging
-			# Vertical line salvage
+      # circle at Y,n radius .15  # For debugging
+      # Vertical line salvage
 			coline(solid, green, 2.5, Y,qx, Y,nx)
 			legend(green, 0.7,Salvage value)
 
-			# Declining balance line after salvage year Y to end
+     # Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, nx, -Y)
 
-			# Theoretical line after salvage year Y to end
+     # Theoretical line after salvage year Y to end
 			capcurve(dotted, Y-1, E, qx, -Y+1)
 
 			} else {
 
-				# Vertical line salvage
+       # Vertical line salvage
 				coline(solid, green, 2.5, Y,S, Y,0)
 				legend(green, 0.7,Salvage value)
 
-				# Vertical line balancing charge
+       # Vertical line balancing charge
 				coline(solid, red, 2.5, Y+(2/12),qx, Y+(2/12),S)
 				legend(red, 0.6,Balancing charge)
 
-				# Theoretical line after salvage year Y to end
+       # Theoretical line after salvage year Y to end
 				capcurve(dotted, Y-1, E, qx, -Y+1)
 
 			}
@@ -421,14 +421,14 @@ if T == 1 && F == 0 && S != 0 then {
 
 # if AIA = no && single asset pool = no && salvage = 0
 if T == 0 && F == 0 && S == 0 then {
-	# Vertical line new investment
+  # Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
 	legend(blue, 0.8,New investment)
 
-	# Solid line Year 0 
+  # Solid line Year 0 
 	capcurve(solid, 0, E, v, 0)
 
-	# Theoretical line before new investment at year 0 to end of time period.
+  # Theoretical line before new investment at year 0 to end of time period.
 	capcurve(dotted, 0, E, t, 0)
 
 } else {
@@ -436,15 +436,15 @@ if T == 0 && F == 0 && S == 0 then {
 
 # if AIA = no && single asset pool = no && salvage > 0
 if T == 0 && F == 0 && S != 0 then {
-	# Vertical line new investment
+  # Vertical line new investment
 	coline(solid, blue, 2.5, 0,t, 0,t+I)
 	legend(blue, 0.8,New investment)
 
-	# Solid line Year 0 
+ # Solid line Year 0 
 	capcurve(solid, 0, Y-1, v, 0)
 	flat(solid, Y-1, Y, ux)
 
-		# Draws marker circles.
+  # Draws marker circles.
 		if W == 0 then {
 			marker(1, Y-1, H+I, 0)
 		} else { 
@@ -452,12 +452,12 @@ if T == 0 && F == 0 && S != 0 then {
 		}
 
 		if S <= ux then {
-			# circle at Y,n radius .15 	# For debugging
+  # circle at Y,n radius .15 	# For debugging
 			# Vertical line salvage
 			coline(solid, green, 2.5, Y,ux, Y,zx)
 			legend(green, 0.7,Salvage value)
 
-			# Declining balance line after salvage year Y to end
+  # Declining balance line after salvage year Y to end
 			capcurve(solid, Y, E, zx, -Y)
 
 			# Theoretical line after salvage year Y to end
